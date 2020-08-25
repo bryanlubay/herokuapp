@@ -1292,11 +1292,11 @@ function App() {
                       <b>Increase distance and limit duration of contact between employees and visitors in the facility.</b> Whenever possible, people should maintain at least 6 feet of distance between each other at the facility, including instructors teaching lessons. Allow for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> and avoid large numbers of people within the facility, including in employee-only areas.
                     </li>
                     
-                    {/*
                     <li>
                       <br>Visitors and employees should wear masks </br>to protect others especially where social distancing measures are difficult to maintain. Wearing a mask does NOT replace the need to practice social distancing.
                     </li>
                     
+                    {/*
                     
                     <li>
                       <b>Set up hand hygiene stations</b> at the entrance and within the facility, so that employees and people entering can clean their hands before they enter. Employees should <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash hands</ a> regularly with soap and water for at least 20 seconds. An alcohol-based hand sanitizer containing at least 60% alcohol can be used, but if hands are visibly dirty, they should be washed with soap and water before using an alcohol-based hand sanitizer. Examples of hand hygiene stations may be a hose and soap located at entrances to allow for handwashing before entry.
