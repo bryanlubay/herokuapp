@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stats-text {
+  width: fit-content;
+}
+
+.info-buttons {
+
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+
+.submit-button {
+
+  align-self: start;
+  align-content: inherit;
+  margin-left: 10px;
+ 
+}
+
+.card {
+
+  margin-bottom: 10px;
+
+}
+
+.enter-state{
+  margin-right: 10px;
+}
+
+.alerts {
+  margin-top: 10px;
+}
+
+.alert-headings {
+  font-weight: bolder;
+  font-size : xx-large;
+}
+
+.alert-subjects{
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.alerts-li {
+  text-align: left;
+  font-size: large;
+}
+
+.alerts-nested-li {
+  text-align: left;
+  font-size : medium
+}
+
+.accordion-header{
+
+}
+
+.accordion-question {
+  text-align: left;
+  margin: inherit;
+}
+
+.accordion-answer {
+  text-align: left;
+  margin: inherit;
+}
