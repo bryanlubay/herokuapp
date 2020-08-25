@@ -1308,13 +1308,13 @@ function App() {
                     </li>
 
 
-                        <li>
+                        {/* <li>
                         If traveling to a new facility, <b>limit contact between people, horses, tack, equipment, and other supplies</b> from different facilities, and maintain a distance of at least 6 feet between horses and riders.
                           <ul>
                             <li>Follow state and local guidance on travel. People who are sick should not travel to other facilities.</li>
                             <li>People visiting other facilities should follow the same precautions as they would normally, including maintaining at least 6 feet of distance between each other, wearing a mask to protect others, and washing hands frequently with soap and water.</li>
                           </ul>
-                        </li> 
+                        </li>  */}
 
 
                     {/* <li>If other animals, such as barn cats, are present at the facility, be aware that a small number of <a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">pets</a> have been reported to be infected with the virus that causes COVID-19, mostly after contact with people with COVID-19.
