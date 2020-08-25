@@ -1,4 +1,4 @@
 all:
-	git add . && git commit -m "23 August" && git push origin master && origin open && origin repo:purge_cache 
+	git add . && git commit -m "23 August" && git push origin master 
 
 	# I am a fresh college graduate and veteran of the United States Army. I graduated at the University of Nevada Las Vegas with a Bachelor of Science in Computer Science and also at the Full Stack Engineering coding bootcamp Code Platoon. In my senior year of college I have created a small Unity based video game and contributed to a group project that was chosen by the university to present and represent the school at the Consumer Electronics Show (CES). My passions include learning, coding and problem solving and I am excited for a bright future in the software industry!
