@@ -1275,37 +1275,48 @@ function App() {
                     <li><b>Encourage employees and other visitors, including boarders, owners, farriers, veterinarians, and those taking lessons, not to enter the facility if they are sick</b>. Employees should not return to work until the <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/disposition-in-home-patients.html">criteria to discontinue home isolation</a> are met, after talking with their doctor. Implement sick leave policies that are flexible, nonpunitive, and consistent with public health guidance, allowing employees to stay home if they have symptoms of respiratory infection.
                     </li>
 
-                    { <li><b>Consider conducting daily health checks (e.g., symptom and/or temperature screening) of employees and others visiting the facility before they enter the premises.</b> People with a fever of 100.40(38.00C) or above or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">signs of illness</a> should not be admitted to the premises. If implementing health checks, conduct them safely and respectfully. See <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/general-business-faq.html">General Business FAQ</a> for more information.<br></br><ul><li>Employees or visitors who appear to have symptoms upon arrival or who become sick during their visit should immediately be separated from other employees and visitors and sent home.</li></ul>
+                    <li><b>Consider conducting daily health checks (e.g., symptom and/or temperature screening) of employees and others visiting the facility before they enter the premises.</b> People with a fever of 100.40(38.00C) or above or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">signs of illness</a> should not be admitted to the premises. If implementing health checks, conduct them safely and respectfully. See <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/general-business-faq.html">General Business FAQ</a> for more information.<br></br><ul><li>Employees or visitors who appear to have symptoms upon arrival or who become sick during their visit should immediately be separated from other employees and visitors and sent home.</li></ul>
                     
                     </li>
-/*
+
                     <li>
                       <b>Limit the number of people entering the facility.</b> Consider staggering lesson and visiting times to limit the number of people in the facility and potential for person-to-person contact. If possible, you can also take steps to decrease high-traffic areas by limiting areas open to visitors/owners or staggering use of common areas like grooming or wash stalls and tack rooms.
                     </li>
+                    
                     <li>
                       <b>Increase distance and limit duration of contact between employees and visitors in the facility.</b> Whenever possible, people should maintain at least 6 feet of distance between each other at the facility, including instructors teaching lessons. Allow for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> and avoid large numbers of people within the facility, including in employee-only areas.
                     </li>
+                    
                     <li>
                       <br>Visitors and employees should wear masks </br>to protect others especially where social distancing measures are difficult to maintain. Wearing a mask does NOT replace the need to practice social distancing.
                     </li>
+                    
+                    
                     <li>
                       <b>Set up hand hygiene stations</b> at the entrance and within the facility, so that employees and people entering can clean their hands before they enter. Employees should <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash hands</ a> regularly with soap and water for at least 20 seconds. An alcohol-based hand sanitizer containing at least 60% alcohol can be used, but if hands are visibly dirty, they should be washed with soap and water before using an alcohol-based hand sanitizer. Examples of hand hygiene stations may be a hose and soap located at entrances to allow for handwashing before entry.
                     </li>
+
+                    
                     <li>
                       <b>Clean and disinfect frequently touched surfaces</b> such as grooming tools, halters, lead ropes, shared tack and equipment, and door handles/gates (including those to stall doors and pasture/turn out areas) on a routine basis. To disinfect, use products that meet <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA's criteria for use against the </a> virus that causes COVID-19 and are appropriate for the surface, diluted household bleach solutions prepared according to the manufacturer’s label for disinfection, or alcohol solutions with at least 70% alcohol. Follow manufacturer’s directions for use, especially regarding product contact time and protections from chemical hazards posed by cleaners and disinfectants.
                     </li>
+
+
+
                     <li>
                       <b>Follow local guidance</b> on shelter in place and travel recommendations when traveling for showing, training, or trail riding.
-                    </li> */}
-                        {/* <li>
+                    </li>
+
+
+                        <li>
                         If traveling to a new facility, <b>limit contact between people, horses, tack, equipment, and other supplies</b> from different facilities, and maintain a distance of at least 6 feet between horses and riders.
                           <ul>
                             <li>Follow state and local guidance on travel. People who are sick should not travel to other facilities.</li>
                             <li>People visiting other facilities should follow the same precautions as they would normally, including maintaining at least 6 feet of distance between each other, wearing a mask to protect others, and washing hands frequently with soap and water.</li>
                           </ul>
                         </li> */}
-                    {/* <li>If other animals, such as barn cats, are present at the facility, be aware that a small number of <a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">pets</a> have been reported to be infected with the virus that causes COVID-19, mostly after contact with people with COVID-19.
-                    </li> */}
+                    <li>If other animals, such as barn cats, are present at the facility, be aware that a small number of <a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">pets</a> have been reported to be infected with the virus that causes COVID-19, mostly after contact with people with COVID-19.
+                    </li>
                   </ul>
                   For more information, see <a href="https://www.osha.gov/Publications/OSHA3990.pdf">Guidance on Preparing Workplaces for Covid-19</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html"> Interim Guidance for Businesses and Employers to Plan and Respond to Coronavirus Disease 2019</a>
                   </Card.Body>
