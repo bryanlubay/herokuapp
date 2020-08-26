@@ -1199,28 +1199,43 @@ function App() {
                 What should I do if my pet gets sick and I think it's COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="87">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">There is a small number of animals around the world reported to be infected with the virus that causes COVID-19, mostly after having contact with a person with COVID-19. Talk to your veterinarian about any health concerns you have about your pets.<br></br><br></br>If your pet gets sick after contact with a person with COVID-19, <b>do not take your pet to the veterinary clinic yourself.</b> Call your veterinarian and let them know the pet was around a person with COVID-19. Some veterinarians may offer telemedicine consultations or other plans for seeing sick pets. Your veterinarian can evaluate your pet and determine the next steps for your pet’s treatment and care.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="88">
                 Why are animals being tested when many people can't get tested?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="88">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Animals are only being tested in very rare circumstances. Routine testing of animals is not recommended at this time, and any tests done on animals are done on a case by case basis. For example, if the pet of a COVID-19 patient has a new, concerning illness with symptoms similar to those of COVID-19, the animal’s veterinarian might consult with public health and animal health officials to determine if testing is needed.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="89">
                 Are pets from a shelter safe to adopt?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="89">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low. There is no reason to think that any animals, including shelter pets, play a significant role in spreading the virus that causes COVID-19.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="90">
                 What should I do if there are pets at my long-term care facility or assisted living facility?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="90">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low. However, it appears that the virus that causes COVID-19 can spread from people to animals after close contact with people with COVID-19.<br></br><br></br>
+                  Until we learn more about how this virus affects animals, use similar precautions for pets and other animals in your facility as you would for other people in your facility. This will help protect both people and pets in your facility from COVID-19.<br></br>
+                  <ul>
+                    <li>Do not let pets in the facility interact with sick people.</li>
+                    <li>Pets or other animals should not be allowed to roam freely around the facility.</li>
+                    <li>Residents should avoid letting their pets interact with people as much as possible.</li>
+                    <li>Dogs should be walked on a leash at least 6 feet (2 meters) away from others.</li>
+                    <li>People sick with COVID-19 should <b>avoid contact with pets and other animals.</b></li>
+                    <li>Do not allow pets into common areas of the facility such as cafeterias and social areas.</li>
+                    <li>Cats should be kept indoors to prevent them from interacting with other animals or people outside of the facility.</li>
+                  </ul>
+                  Talk to a veterinarian <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">if a pet in your facility gets sick</a> or if you have any concerns about the health of any pets in the facility. If you think a pet in the facility was exposed to or is showing <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">signs</a> consistent with COVID-19, contact your <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state health official</a> to discuss guidance on testing pets or other animals for the virus that causes COVID-19.<br></br><br></br>
+                  People who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness</a> from COVID-19 should avoid providing care for sick pets, if possible.<br></br><br></br>
+                  For more information, visit CDC’s <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">If You Have Pets</a> webpage.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="91">
