@@ -1227,21 +1227,32 @@ function App() {
                 What about imported animals or animal products?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="91">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  CDC does not have any evidence to suggest that imported animals or animal products pose a risk for spreading COVID-19 in the United States. This is a rapidly evolving situation and information will be updated as it becomes available. CDC, the U. S. Department of Agriculture (USDA), and the U.S. Fish and Wildlife Service (FWS) play distinct but complementary roles in regulating the importation of live animals and animal products into the United States.<br></br><br></br>
+                  <ul>
+                    <li><a href="https://www.cdc.gov/importation/index.html">CDC regulates</a>animals and animal products that pose a threat to human health,</li>
+                    <li><a href="https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/animal-and-animal-product-import-information/ct_animal_imports_home">USDA regulates</a> animals and animal products that pose a threat to agriculture; and</li>
+                    <li><a href="https://www.fws.gov/le/businesses.html">FWS regulates</a> importation of endangered species and wildlife that can harm the health and welfare of humans, the interests of agriculture, horticulture, or forestry, and the welfare and survival of wildlife resources.</li>
+                  </ul>
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="92">
                 Can I travel to the United States with dogs or import dogs into the United States during the COVID-19 outbreak?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="92">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Please refer to <a href="https://www.cdc.gov/importation/bringing-an-animal-into-the-united-states/index.html">CDC's requirements for brining a dog to the United States</a>. The current <a href="https://www.cdc.gov/importation/bringing-an-animal-into-the-united-states/rabies-vaccine.html">requirements for rabies vaccination</a> apply to dogs imported from high-risk countries for rabies.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="93">
                 What precautions should be taken for animals that have recently been imported from outside the United States (for example, by shelters, rescues, or as personal pets)?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="93">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Imported animals will need to meet <a href="https://www.cdc.gov/importation/bringing-an-animal-into-the-united-states/index.html">CDC</a> and <a href="https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/animal-and-animal-product-import-information/live-animal-imports/import-live-animals">USDA</a> requirements for entering the United States. At this time, there is no evidence that companion animals, including pets and service animals, can spread the virus that causes COVID-19. As with any animal introduced to a new environment, animals recently imported should be observed daily for signs of illness. If an animal becomes ill, the animal should be examined by a veterinarian. Call your local veterinary clinic <b>before</b> bringing the animal into the clinic and let them know that the animal was recently imported from another country.<br></br><br></br>
+                  This is a rapidly evolving situation and information will be updated as it becomes available.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="94">
