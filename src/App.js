@@ -1248,14 +1248,25 @@ function App() {
                 Can wild animals spread the virus that causes COVID-19 to people or pets?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="94">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Currently, there is no evidence to suggest the virus that causes COVID-19 is circulating in free-living wildlife in the United States, or that wildlife might be a source of infection for people in the United States. The first case of a wild animal testing positive for the virus in the United States was a tiger with a respiratory illness at a zoo in New York City. However, this tiger was in a captive zoo environment ,and public health officials believe the tiger became sick after being exposed to a zoo employee who was infected and spreading the virus.<br></br><br></br>
+                  If a wild animal were to become infected with the virus, we don’t know whether the infection could then spread among wildlife or if it could spread to other animals, including pets. Further studies are needed to understand if and how different animals, including wildlife, could be affected by COVID-19. Because wildlife can carry other diseases, even without looking sick, it is always important to enjoy wildlife from a distance.<br><br></br></br>
+                  Take steps to prevent getting sick from wildlife in the United States:<br></br><br></br>
+                  <ul>
+                    <li>Keep your family, including pets, a safe distance away from wildlife.</li>
+                    <li>Do not feed wildlife or touch wildlife droppings.</li>
+                    <li>Always wash your hands and supervise children washing their hands after working or playing outside.</li>
+                    <li>Leave orphaned animals alone. Often, the parents are close by and will return for their young.</li>
+                    <li>Consult your state wildlife agency’s guidance if you are preparing or consuming legally harvested game meat.</li>
+                    <li>Do not approach or touch a sick or dead animal – contact your state wildlife agency instead.</li>
+                  </ul>
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="95">
                 Can bats in United States get the virus that causes COVID-19, and can they spread it back to people?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="95">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Other coronaviruses have been found in North American bats in the past, but there is currently no evidence that the virus that causes COVID-19 is present in any free-living wildlife in the United States, including bats. In general, coronaviruses do not cause illness or death in bats, but we don’t yet know if this new coronavirus would make North American species of bats sick. Bats are an important part of natural ecosystems, and their populations are already declining in the United States. Bat populations could be further threatened by the disease itself or by harm inflicted on bats resulting from a misconception that bats are spreading COVID-19. However, there is no evidence that bats in the United States are a source of the virus that causes COVID-19 for people. Further studies are needed to understand if and how bats could be affected by COVID-19.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="96">
