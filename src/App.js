@@ -1181,7 +1181,7 @@ function App() {
                   <Card.Body className="accordion-answer"></Card.Body>
                 </Accordion.Collapse>
 
-                {/* <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="85">
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="85">
                 Can I take my dog to a dog park?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="85">
@@ -1201,9 +1201,9 @@ function App() {
                   </ul>
                   See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a> 
                   </Card.Body>
-                </Accordion.Collapse> */}
+                </Accordion.Collapse>
 
-                {/* <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="86">
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="86">
                 Can I take my dog to daycare or a groomer?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="86">
@@ -1224,23 +1224,23 @@ function App() {
                   If you think your pet is sick, call your veterinarian. Some veterinarians may offer telemedicine consultations or other plans for seeing sick pets. Your veterinarian can evaluate your pet and determine the next steps for your pet’s treatment and care.<br></br><br></br>
                   See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a> and recommendations for how to help keep your pet safe.
                   </Card.Body>
-                </Accordion.Collapse> */}
+                </Accordion.Collapse>
 
 
-                {/* <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="87">
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="87">
                 What should I do if my pet gets sick and I think it's COVID-19?
                 </Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="87">
                   <Card.Body className="accordion-answer">There is a small number of animals around the world reported to be infected with the virus that causes COVID-19, mostly after having contact with a person with COVID-19. Talk to your veterinarian about any health concerns you have about your pets.<br></br><br></br>If your pet gets sick after contact with a person with COVID-19, <b>do not take your pet to the veterinary clinic yourself.</b> Call your veterinarian and let them know the pet was around a person with COVID-19. Some veterinarians may offer telemedicine consultations or other plans for seeing sick pets. Your veterinarian can evaluate your pet and determine the next steps for your pet’s treatment and care.</Card.Body>
-                </Accordion.Collapse> */}
+                </Accordion.Collapse>
 
-                {/* <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="88">
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="88">
                 Why are animals being tested when many people can't get tested?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="88">
                   <Card.Body className="accordion-answer">Animals are only being tested in very rare circumstances. Routine testing of animals is not recommended at this time, and any tests done on animals are done on a case by case basis. For example, if the pet of a COVID-19 patient has a new, concerning illness with symptoms similar to those of COVID-19, the animal’s veterinarian might consult with public health and animal health officials to determine if testing is needed.</Card.Body>
-                </Accordion.Collapse> */}
+                </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="89">
                 Are pets from a shelter safe to adopt?</Accordion.Toggle>
