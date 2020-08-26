@@ -1262,7 +1262,25 @@ function App() {
                 Is hunter-harvested game meat safe to eat during the COVID-19 pandemic?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="96">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Currently, there is no evidence that you can get infected with the virus that causes COVID-19 by eating food, including wild hunted game meat. However, hunters can get infected with other diseases when processing or eating game.  Hunters should always practice good hygiene when processing animals by following these food safety recommendations:<br></br>
+                  <ul>
+                    <li>Do not harvest animals that appear sick or are found dead.</li>
+                    <li>Keep game meat clean and cool the meat down as soon as possible after harvesting the animal.</li>
+                    <li>Avoid cutting through the backbone and spinal tissues and do not eat the brains of any wild animal.</li>
+                    <li>When handling and cleaning game:<br></br>
+                    <ul>
+                      <li>Wear rubber or disposable gloves.</li>
+                      <li>Do not eat, drink, or smoke.</li></ul></li>
+                      <li>When finished handling and cleaning game:<br></br>
+                      <ul>
+                        <li>Wash your hands thoroughly with soap and water.</li>
+                        <li>Clean knives, equipment, and surfaces that were in contact with game meat with soap and water and then disinfect them. While these recommendations apply to general food safety practices, if you are concerned about COVID-19, you may use a product on the <a href="https://www.epa.gov/newsroom/list-n-disinfectants-use-against-sars-cov-2">EPA list of disinfectants for use against the COVID-19 Virus</a></li>
+                        <li>Cook all game meat thoroughly (<a href="https://www.cdc.gov/foodsafety/keep-food-safe.html">to an internal temperature of 165 Fahrenheit</a></li>
+                        </ul></li>
+                        <li>Check with your state wildlife agency regarding any testing requirements for other diseases and for any specific instructions regarding preparing, transporting, and consuming game meat.</li>
+                  </ul>
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="97">
