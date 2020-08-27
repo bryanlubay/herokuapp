@@ -1136,53 +1136,81 @@ function App() {
                 Can I get COVID-19 from my pets or other animals?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="78">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low.  A small number of pets have been reported to be infected with the virus that causes COVID-19, mostly after contact with people with COVID-19.<br></br><br></br>
+                  Pets have other types of coronaviruses that can make them sick, like canine and feline coronaviruses. These other coronaviruses cannot infect people and are not related to the current COVID-19 outbreak.<br></br><br></br>
+                  However, since animals can spread other diseases to people, it’s always a good idea to practice <a href="https://www.cdc.gov/healthypets/publications/stay-healthy-pets.html">healthy habits</a> around pets and other animals, such as washing your hands and maintaining good hygiene. For more information on the many benefits of pet ownership, as well as staying safe and healthy around animals including pets, livestock, and wildlife, visit CDC’s <a href="https://www.cdc.gov/healthypets/index.html">Healthy Pets, Healthy People website</a>.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="79">
                 Do I need to get my pet tested for Covid-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="79">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">No. At this time, routine testing of animals for COVID-19 is not recommended.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="80">
                 Can animals carry the virus that causes COVID-19 on their skin or fur?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="80">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Although we know certain bacteria and fungi can be carried on fur and hair, there is no evidence that viruses, including the virus that causes COVID-19, can spread to people from the skin, fur, or hair of pets.<br></br><br></br>
+                  However, because animals can sometimes carry other germs that can make people sick, it’s always a good idea to practice <a href="https://www.cdc.gov/healthypets/publications/stay-healthy-pets.html">healthy habits</a> around pets and other animals, including washing hands before and after interacting with them.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="81">
                 Should I avoid contact with pets or other animals if I am sick with COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="81">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  We are still learning about this virus, but it appears that it can spread from people to animals in some situations. Until we learn more about this new coronavirus, you should restrict contact with pets and other animals while you are sick with COVID-19, just like you would with people. When possible, have another member of your household care for your animals while you are sick. If you are sick with COVID-19, avoid contact with your pet, including<br></br>
+                  <ul>
+                    <li>Petting</li>
+                    <li>Snuggling</li>
+                    <li>Being kissed or licked</li>
+                    <li>Sharing food or bedding</li>
+                  </ul>
+                  If you must care for your pet or be around animals while you are sick, wash your hands before and after you interact with pets and wear a mask.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="82">
                 What animals can get COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="82">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  We don’t know for sure which animals can be infected with the virus that causes COVID-19. CDC is aware of a small number of pets, including dogs and cats, reported to be infected with the virus that causes COVID-19, mostly after close contact with people with COVID-19. A tiger at a zoo in New York has also tested positive for the virus.<br></br><br></br>
+                  Recent research shows that ferrets, cats, and golden Syrian hamsters can be experimentally infected with the virus and can spread the infection to other animals of the same species in laboratory settings. Pigs, chickens, and ducks did not become infected or spread the infection based on results from these studies. Data from one study suggested dogs are not as likely to become infected with the virus as cats and ferrets. These findings were based on a small number of animals, and do not show whether animals can spread infection to people.<br></br><br></br>
+                  At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low. Further studies are needed to understand if and how different animals could be affected by the virus that causes COVID-19 and the role animals may play in the spread of COVID-19.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="83">
                 Should I worry about my pet cat?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="83">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  We are still learning about this virus and how it spreads, but it appears it can spread from humans to animals in some situations. CDC is aware of a small number of pets, including cats, reported to be infected with the virus that causes COVID-19, mostly after close contact with people with COVID-19. Most of these animals had contact with a person with COVID-19. A tiger at a New York zoo has also tested positive for the virus that causes COVID-19.<br></br><br></br>
+                  At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited data available, the risk of animals spreading COVID-19 to people is considered to be low. The virus that causes COVID-19 spreads mainly from person to person, typically through respiratory droplets from coughing, sneezing, or talking.<br></br><br></br>
+                  People sick with COVID-19 should isolate themselves from other people and animals, including pets, during their illness until we know more about how this virus affects animals. If you must care for your pet or be around animals while you are sick, wear a mask and wash your hands before and after you interact with pets.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="84">
                 Can I walk my dog during the COVID-19 pandemic?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="84">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Walking your dog is important for both animal and human health and wellbeing. Walk dogs on a leash, and stay at least 6 feet (2 meters) away from others. Do not gather in groups, stay out of crowded places, and avoid mass gatherings. To help maintain social distancing, do not let other people pet your dog when you are out for a walk.<br></br><br></br>
+                  See "<b>Can I take my dog to a dog park?</b>" for information on dog parks.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="85">
-                Can I take my dog to a dog park?</Accordion.Toggle>
+                Can I take my dog to a dog park?
+                </Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="85">
                   <Card.Body className="accordion-answer">
