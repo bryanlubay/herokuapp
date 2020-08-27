@@ -1061,70 +1061,86 @@ function App() {
                 What is the difference between cleaning and disinfecting?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="68">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                    <i>Cleaning</i> with soap and water removes germs, dirt, and impurities from surfaces. It lowers the risk of spreading infection. <i>Disinfecting</i> kills germs on surfaces. By killing germs on a surface after cleaning, it can further lower the risk of spreading infection.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="69">
                 Is it safe to vacuum in a school, business, or community facility after someone with suspected or confirmed COVID-19 has been present?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="69">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  The risk of transmitting or spreading SARS-CoV-2, the virus that causes COVID-19, during vacuuming is unknown. In order to reduce the need for cleaning, disinfection, and vacuuming, consider removing area rugs completely, if possible. At this time, there are no reported cases of COVID-19 associated with vacuuming. If vacuuming is necessary or required in a school, business, or community facility that was used by a person with suspected or confirmed COVID-19, first follow the CDC recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/cleaning-disinfection.html#Cleaning">Cleaning and Disinfection for Community Facilities</a> that apply, which includes a wait time of 24 hours, or as long as practical.<br></br><br></br>
+                  After cleaning and disinfection, the following recommendations may help reduce the risk to workers and other individuals when vacuuming:<br></br>
+                  <ul>
+                    <li>Use a vacuum equipped with a high-efficiency particulate air (HEPA) filter, if available.</li>
+                    <li>Do not vacuum a room or space that has people in it. Wait until the room or space is empty to vacuum, such as at night, for common spaces, or during the day for private rooms.</li>
+                    <li>Wear disposable gloves to clean and disinfect. For soft (porous) surfaces, such as carpeted floors or rugs, clean the surface using soap and water or with cleaners appropriate for use on these surfaces, according to the textile’s label. After cleaning, disinfect with an appropriate EPA-registered disinfectant on <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2-covid-19">List N: Disinfectants for use against SARS-CoV-2</a>. Soft and porous materials, like carpet, are generally not as easy to disinfect as hard and non-porous surfaces. EPA has listed a limited number of products approved for disinfection for use on soft and porous materials on List N. Follow the disinfectant manufacturer’s safety instructions (such as wearing gloves and ensuring adequate ventilation), concentration level, application method and contact time. Allow sufficient drying time if vacuum is not intended for wet surfaces.</li>
+                    <li>Temporarily turn off in-room, window-mounted, or on-wall recirculation HVAC to avoid contamination of the HVAC units.</li>
+                    <li>Do NOT deactivate central HVAC systems. These systems tend to provide better filtration capabilities and introduce outdoor air into the areas that they serve.</li>
+
+                  </ul>
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="70">
                 What is routine cleaning? How frequently should facilities be cleaned to reduce the potential spread of COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="70">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Routine cleaning is the everyday cleaning practices that businesses and communities normally use to maintain a healthy environment. Surfaces frequently touched by multiple people, such as door handles, bathroom surfaces, and handrails, should be cleaned with soap and water or another detergent at least daily when facilities are in use. More frequent cleaning and disinfection may be required based on level of use. For example, certain surfaces and objects in public spaces, such as shopping carts and point of sale keypads, should be cleaned and disinfected before each use. Cleaning <i>removes</i> dirt and impurities, including germs, from surfaces. Cleaning alone does not kill germs, but it reduces the number of germs on a surface.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="71">
                 Is cleaning alone effective against the virus that causes COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="71">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Cleaning does not kill germs, but by removing them, it lowers their numbers and the risk of spreading infection. If a surface may have gotten the virus on it from a person with or suspected to have COVID-19, the surface should be cleaned and disinfected. Disinfecting kills germs on surfaces.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="72">
                 Who should clean and disinfect community spaces?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="72">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Regular cleaning staff can clean and disinfect community spaces. Cleaning staff should be trained on appropriate use of cleaning and disinfection chemicals and provided with the personal protective equipment (PPE) required for the chemicals used.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="73">
                 How long do companies need to close for disinfection after an exposure? How long before other workers can come back to work?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="73">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Companies do not necessarily need to close after a person with confirmed or suspected COVID-19 has been in a company facility. The area(s) used or visited by the ill person should be closed for 24 hours or as long as possible. Open outside doors and windows as much as possible ensuring that doing so does not pose a safety risk to children using the facility (i.e. make sure that children are not able to enter the closed off area through any windows or doors). and use ventilating fans to increase air circulation in the area. Once the area has been <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/disinfecting-building-facility.html">appropriately disinfected</a>, it can be opened for use. Workers without close contact with the person with confirmed or suspected COVID-19 can return to work immediately after disinfection is completed.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="74">
                 How effective are alternative disinfection methods, such as ultrasonic waves, high intensity UV radiation, and LED blue light?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="74">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">The efficacy of these disinfection methods against the virus that causes COVID-19 is not known. EPA only recommends use of the <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">surface disinfectants identified on List N</a> against the virus that causes COVID-19. EPA does not routinely review the safety or efficacy of pesticidal devices, such as UV lights, LED lights, or ultrasonic devices. Therefore, EPA cannot confirm whether, or under what circumstances, such products might be effective against the spread of COVID-19.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="75">
                 Should outdoor playgrounds, like those at schools or in parks, be cleaned and disinfected to prevent COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="75">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">Outdoor areas generally require normal routine cleaning and do not require disinfection. Spraying disinfectant on outdoor playgrounds is not an efficient use of disinfectant supplies and has not been proven to reduce the risk of COVID-19 to the public. You should maintain existing cleaning and hygiene practices for outdoor areas. If practical, high touch surfaces made of plastic or metal, such as grab bars and railings, should be cleaned routinely. Cleaning and disinfection of wooden surfaces (e.g., play structures, benches, tables) or groundcovers (e.g., mulch, sand) is not recommended.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="76">
                 Can sanitizing tunnels be used at building entrances or exits to prevent the spread of COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="76">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">CDC does not recommend the use of sanitizing tunnels. There is no evidence that they are effective in reducing the spread of COVID-19. Chemicals used in sanitizing tunnels could cause skin, eye, or respiratory irritation or damage.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="77">
                 Should sidewalks and roads be disinfected to prevent COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="77">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">CDC does not recommend disinfection of sidewalks or roads. Spraying disinfectant on sidewalks and roads is not an efficient use of disinfectant supplies and has not been proven to reduce the risk of COVID-19 to the public. The risk of spreading the virus that causes COVID-19 from these surfaces is very low and disinfection is not effective on these surfaces.</Card.Body>
                 </Accordion.Collapse>
 
 
