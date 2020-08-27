@@ -1021,35 +1021,58 @@ function App() {
                 Am I at risk if I go to a funeral or visitiation service for someone who died of COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="63">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  There is currently no known risk associated with being in the same room at a funeral or visitation service with the body of someone who died of COVID-19.<br></br><br></br>
+                  See <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a> to learn how to protect yourself from respiratory illnesses, like COVID-19, if you decide to attend a funeral or visitation.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="64">
                 Am I at risk if I touch someone who died of COVID-19 after they have passed away?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="64">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  COVID-19 is a new disease and <b>we are still learning how it spreads</b>. The virus that causes COVID-19 is thought to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">spread</a> mainly from person-to-person through respiratory droplets produced when an infected person coughs, sneezes, or talks. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. This type of spread is not a concern after death. <br></br><br></br>
+                  It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes. This is not thought to be the main way the virus spreads.<br></br><br></br>
+                  People should consider not touching the body of someone who has died of COVID-19. Older people and people of all ages with severe underlying health conditions are at higher risk of severe illness from COVID-19. There may be less of a chance of the virus spreading from certain types of touching, such as holding the hand or hugging after the body has been prepared for viewing. Other activities, such as kissing, washing, and shrouding should be avoided before, during, and after the body has been prepared, if possible. If washing the body or shrouding are important religious or cultural practices, families are encouraged to work with their community’s cultural and religious leaders and funeral home staff on how to reduce their exposure as much as possible. At a minimum, people conducting these activities should wear disposable gloves. If splashing of fluids is expected, additional personal protective equipment (PPE) may be required (such as disposable gown, face shield, or goggles and N-95 respirator).
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="65">
                 How can loved ones safely handle belongings of someone who died from COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="65">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  If desired, you may retrieve the belongings of a loved one who has died of COVID-19 outside their home (for example, in a hospital setting). Depending on local rules and regulations, family members may retrieve these belongings at the funeral home or the healthcare facility.<br></br><br></br>
+                  You should use gloves and practice good hand hygiene when handling your loved ones’ belongings. Depending on the type of belongings, such as electronics, you should also follow the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">household item-specific cleaning and disinfection guidelines</a> when handling these items.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="66">
                 What should I do if my family member died from COVID-19 while overseas?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="66">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">When a US citizen dies outside the United States, the deceased person’s next of kin or legal representative should notify US consular officials at the Department of State. Consular personnel are available 24 hours a day, 7 days a week, to provide assistance to US citizens for overseas emergencies. If a family member, domestic partner, or legal representative is in a different country from the deceased person, he or she should call the Department of State’s Office of Overseas Citizens Services in Washington, DC, from 8 am to 5 pm Eastern time, Monday through Friday, at 888-407-4747 (toll-free) or 202-501-4444. For emergency assistance after working hours or on weekends and holidays, call the Department of State switchboard at 202-647-4000 and ask to speak with the Overseas Citizens Services duty officer. In addition, the <a href="https://www.usembassy.gov/">US Embassy</a> closest to or in the country where the US citizen died can provide assistance.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="67">
                 My family member died from COVID-19 while overseas. What are the requirements for returning the body to the United States?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="67">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">CDC does not require an autopsy before the remains of a person who died overseas are returned to the United States. Depending on the circumstances surrounding the death, some countries may require an autopsy. Sources of support to the family include the local consulate or embassy, travel insurance provider, tour operator, faith-based and aid organizations, and the deceased’s employer. There likely will need to be an official identification of the body and official documents issued by the consular office.<br></br><br></br>
+                  CDC requirements for importing human remains depend upon if the body has been embalmed, cremated, or if the person died from a <a href="https://www.cdc.gov/quarantine/aboutlawsregulationsquarantineisolation.html">quarantinable communicable disease</a>.<br></br><br></br>
+                  At this time, COVID-19 is a quarantinable communicable disease in the United States and the remains must meet the standards for importation found in 42 Code of Federal Regulations Part 71.55 and may be cleared, released, and authorized for entry into the United States only under the following conditions:<br></br>
+                  <ul>
+                    <li>The remains are cremated; OR</li>
+                    <li>The remains are properly embalmed and placed in a leak-proof container; OR</li>
+                    <li>The remains are accompanied by a permit issued by the CDC Director. The CDC permit (if applicable) must accompany the human remains at all times during shipment.</li>
+                    <ul>
+                      <li>Permits for the importation of the remains of a person known or suspected to have died from a quarantinable communicable disease may be obtained through the CDC Division of Global Migration and Quarantine by calling the CDC Emergency Operations Center at 770-488-7100 or emailing dgmqpolicyoffice@cdc.gov.</li>
+                    </ul>
+                  </ul>
+                  Please see <a href="http://www.cdc.gov/importation/human-remains.html">CDC's guidance</a> for additional information.
+                  </Card.Body>
                 </Accordion.Collapse>
 
 
