@@ -608,35 +608,54 @@ function App() {
             Is it okay for me to donate blood?</Accordion.Toggle>
             
             <Accordion.Collapse eventKey="12">
-              <Card.Body className="accordion-answer"></Card.Body>
+              <Card.Body className="accordion-answer">In healthcare settings across the United States, donated blood is a lifesaving, essential part of caring for patients. The need for donated blood is constant, and blood centers are open and in urgent need of donations. CDC encourages people who are well to continue to donate blood if they are able, even if they are practicing social distancing because of COVID-19. CDC is supporting blood centers by providing recommendations that will keep donors and staff safe. Examples of these recommendations include spacing donor chairs 6 feet apart, thoroughly adhering to environmental cleaning practices, and encouraging donors to make donation appointments ahead of time.</Card.Body>
             </Accordion.Collapse>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="13">
             Should contact lens wearers take special precautions to prevent COVID-19?</Accordion.Toggle>
             
             <Accordion.Collapse eventKey="13">
-              <Card.Body className="accordion-answer"></Card.Body>
+              <Card.Body className="accordion-answer">
+                <ul>
+                  <li>Currently there is no evidence to suggest contact lens wearers are more at risk for acquiring COVID-19 than eyeglass wearers.</li>
+                  <li>Contact lens wearers should continue to <a href="https://www.cdc.gov/contactlenses/protect-your-eyes.html">practice safe contact lens wear and care hygiene habits</a> to help prevent against transmission of any contact lens-related infections, such as always washing hands with soap and water before handling lenses.</li>
+                  <li>People who are healthy can continue to wear and care for their contact lenses as prescribed by their eye care professional.</li>
+                </ul>
+                Find more information about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html">how coronavirus spreads</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html">how to protect yourself</a>.<br></br><br></br>
+                Visit <a href="https://www.cdc.gov/contactlenses/index.html">CDC's contact lens website</a> for more information on healthy contact lens wear and care.
+              </Card.Body>
             </Accordion.Collapse>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="14">
             Is contact lens disinfecting solution effective against COVID-19?</Accordion.Toggle>
             
             <Accordion.Collapse eventKey="14">
-              <Card.Body className="accordion-answer"></Card.Body>
+              <Card.Body className="accordion-answer">
+                <ul>
+                  <li><a href="https://www.cdc.gov/contactlenses/care-systems.html">Hydrogen peroxide-based systems</a> for cleaning, disinfecting, and storing contact lenses should be effective against the virus that causes COVID-19.</li>
+                  <ul>
+                    <li>For other disinfection methods, such as multipurpose solution and ultrasonic cleaners, there is currently not enough scientific evidence to determine efficacy against the virus.</li>
+                  </ul>
+                  <li><a href="https://www.cdc.gov/contactlenses/care-systems.html">Always use solution</a> to disinfect your contact lenses and case to kill germs that may be present.</li>
+                  <li>Handle your lenses over a surface that has been cleaned and disinfected.</li>
+                </ul>
+                Find more information about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html">how coronavirus spreads</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html">how to protect yourself</a>.<br></br><br></br>
+                Visit <a href="https://www.cdc.gov/contactlenses/index.html">CDC's contact lens website</a> for more information on healthy contact lens wear and care.
+              </Card.Body>
             </Accordion.Collapse>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="15">
             Should I use soap and water or hand sanitizer to protect against COVID-19?</Accordion.Toggle>
             
             <Accordion.Collapse eventKey="15">
-              <Card.Body className="accordion-answer"></Card.Body>
+              <Card.Body className="accordion-answer">Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</Card.Body>
             </Accordion.Collapse>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="16">
             What cleaning products should I use to protect against COVID-19?</Accordion.Toggle>
             
             <Accordion.Collapse eventKey="16">
-              <Card.Body className="accordion-answer"></Card.Body>
+              <Card.Body className="accordion-answer">Clean and disinfect frequently touched surfaces such as tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.  If surfaces are dirty, clean them using detergent or soap and water prior to disinfection. To disinfect, most common EPA-registered household disinfectants will work. See CDC’s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">for household cleaning and disinfection</a>.</Card.Body>
             </Accordion.Collapse>
 
 
@@ -649,7 +668,28 @@ function App() {
               What should I do if I get sick or someone in my house gets sick?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="17">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">Most people who get COVID-19 will be able to recover at home. <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-prevent-spread.html">CDC has directions</a> for people who are recovering at home and their caregivers, including:<br></br>
+                <ul>
+                  <li>Stay home when you are sick, except to get medical care.</li>
+                  <li>Use a separate room and bathroom for sick household members (if possible).</li>
+                  <li>Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food.</li>
+                  <li>If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty.</li>
+                  <li>Provide your sick household member with clean disposable facemasks to wear at home, if available, to help prevent spreading COVID-19 to others.</li>
+                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/home/cleaning-disinfection.html">Clean the sick room and bathroom</a>, as needed, to avoid unnecessary contact with the sick person.</li>
+                  </ul>
+                  However, some people may need emergency medical attention. Watch for symptoms and learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">when to seek emergency medical attention</a>.<br></br><br></br>
+                  When to Seek Emergency Medical Attention<br></br><br></br>
+                  Look for <b>emergency warning signs* </b>for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately</b><br></br>
+                  <ul>
+                    <li>Trouble breathing</li>
+                    <li>Persistent pain or pressure in the chest</li>
+                    <li>New confusion</li>
+                    <li>Inability to wake or stay awake</li>
+                    <li>Bluish lips or face</li>
+                  </ul>
+                  *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br><br></br>
+                  <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="18">
@@ -657,6 +697,10 @@ function App() {
               
               <Accordion.Collapse eventKey="18">
                 <Card.Body className="accordion-answer">
+                  <ul>
+                    <li>Be alert for symptoms. Watch for fever, cough, shortness of breath, or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19.</li>
+                    <li>Take your temperature and follow CDC guidance if you have symptoms.</li>
+                  </ul>
                 </Card.Body>
               </Accordion.Collapse>
 
@@ -670,126 +714,252 @@ function App() {
               What is the risk of my child becoming sick with COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="19">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Based on available evidence, children do not appear to be at higher risk for COVID-19 than adults. While some children and infants have been sick with COVID-19, adults make up most of the known cases to date. However, a few children have developed <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">multisystem inflammatory syndrome (MIS-C)</a>. Currently, information about this syndrome is limited. CDC is working with state and local health departments to learn more about MIS-C.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="20">
               How can I protect my child from COVID-19 infection?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="20">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy.<br></br>
+                <ul>
+                  <li>Avoid close contact with people who are sick.</li>
+                  <li>Stay home when you are sick, except to get medical care.</li>
+                  <li>Cover your coughs and sneezes with a tissue and throw the tissue in the trash.</li>
+                  <li>Wash your hands often with soap and water for at least 20 seconds.</li>
+                  <li>If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</li>
+                  <li>Clean and disinfect frequently touched surfaces and objects, like tables, countertops, light switches, doorknobs, and cabinet handles).</li>
+                </ul>
+                You can find additional information on preventing COVID-19 at <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a>. Additional information on how COVID-19 is spread is available at <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html">How COVID-19 Spreads</a>.<br></br><br></br>
+                More information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keeping Children Healthy during the COVID19 Outbreak</a> is available online.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="21">
               Are the symptoms of COVID-19 different in children than in adults?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="21">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                No. The symptoms of COVID-19 are similar in children and adults. COVID-19 can look different in different people. For many people, being sick with COVID-19 would be a little bit like having the flu. People can get a fever, cough, or have a hard time taking deep breaths. Most people who have gotten COVID-19 have not gotten very sick. Only a small group of people who get it have had more serious problems.<br></br><br></br>
+                CDC and partners are investigating cases of multisystem inflammatory syndrome in children (MIS-C) associated with COVID-19. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">COVID-19 and multisystem inflammatory syndrome in children (MIS-C)</a>.</Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="22">
               Should children wear masks?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="22">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">CDC recommends that everyone 2 years and older wear a mask that covers their nose and mouth in public settings when around people not living in your household, particularly where other social distancing measures are difficult to maintain. Masks should NOT be put on babies or children younger than 2 because of the danger of suffocation. Children younger than 2 years of age are listed as an exception as well as anyone who has trouble breathing or is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="23">
               How do I prepare my children in case of COVID-19 outbreak in our community?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="23">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Outbreaks can be stressful for adults and children. When you talk with your child, try to stay calm, and reassure them that they are safe. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/talking-with-children.html">Talk to your children</a> about COVID-19 and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">help them cope with stress</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="24">
               What is multisystem inflammatory syndrome in children (MIS-C) and who is at risk?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="24">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                  <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">Multisystem inflammatory syndrome in children (MIS-C)</a> is a condition where different body parts can become inflamed, including the heart, lungs, kidneys, brain, skin, eyes, or gastrointestinal organs. We do not yet know what causes MIS-C. However, we know that many children with MIS-C had the virus that causes <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a>, or had been around someone with COVID-19. MIS-C can be serious, even deadly, but most children who were diagnosed with this condition have gotten better with medical care.<br></br><br></br>
+                  <b>Contact your child’s doctor, nurse, or clinic right away</b> if your child is showing <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">symptoms</a> <b>of MIS-C. Seek emergency care right away</b> if your child is showing any of these <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">emergency warning signs of MIS-C</a> or other concerning signs.</Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="25">
               Can my child hang out with their friends?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="25">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                The key to slowing the spread of COVID-19 is to practice social distancing. While school is out, children should not have in-person playdates with children from other households. If children are playing outside their own homes, it is essential that they remain 6 feet from anyone who is not in their own household. Some children with certain underlying <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">medical conditions</a> are at higher risk for severe illness from COVID-19.<br></br><br></br>
+                Make sure children practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive behaviors</a>, such as washing their hands often with soap and water. Remember, if children meet outside of school in groups, it can put everyone at risk. <br></br><br></br>
+                For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Help Stop the Spread of COVID-19 in Children</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="26">
               How can I help my child continue learning?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="26">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                  <ul>
+                    <li>Stay in touch with your child’s school.
+                      <ul>
+                        <li>Many schools are offering lessons online (virtual learning). Review assignments from the school, and help your child establish a reasonable pace for completing the work. You may need to assist your child with turning on devices, reading instructions, and typing answers.</li>
+                      </ul>
+                    </li>
+                    <li>Create a schedule and routine for learning at home, but remain flexible.</li>
+                    <li>Consider the needs and adjustment required for your child’s age group.
+                      <ul>
+                        <li>The transition to being at home will be different for preschoolers, K-5, middle school students, and high school students. Talk to your child about expectations and how they are adjusting to being at home versus at school.</li>
+                      </ul>
+                    </li>
+                    <li>Look for ways to make learning fun.</li>
+                  </ul>
+                  For moe information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn at Home</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="27">
               Will kids have access to school meals?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="27">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Check with your school on plans to continue meal services during the school dismissal. Many schools are keeping school facilities open to allow families to pick up meals or are providing grab-and-go meals at a central location.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="28">
               How can I keep my children healthy?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="28">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                  <ul>
+                    <li><b>Watch your child for any signs of illness.</b></li>
+                    <li><b>Watch for signs of stress in your child.</b></li>
+                    <li><b>Teach and reinforce <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>.</b></li>
+                    <li><b>Help your child stay active.</b></li>
+                    <li><b>Help your child stay socially connected.</b></li>
+                  </ul>
+                  For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy during the COVID-19 Outbreak</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="29">
               Limit time with older adults, including relatives, and people with chronic medical conditions.</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="29">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                  <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">Older adults and people who have serious underlying medical conditions</a> are at highest risk of getting sick from COVID-19.<br></br>
+                  <ul>
+                    <li>If others in your home are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness from COVID-19</a>, consider extra precautions to separate your child from those people.</li>
+                    <li>If you are unable to stay home with your child during school dismissals and someone at higher risk for severe illness from COVID-19 will be providing care (older adult or someone with a serious underlying medical condition), limit your children’s contact with other people.</li>
+                  <li>Consider postponing visits or trip to see older family members and grandparents. Connect virtually or by writing letters and sending via mail.</li>
+                  </ul>
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="30">
               Is my child with an underlying medical condition at higher risk for severe illness from COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="30">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                It’s not known yet whether all children with underlying medical conditions are at higher risk for severe illness from COVID-19.<br></br><br></br>
+                Although most COVID-19 cases in children are not severe, serious illness that needs to be treated at the hospital still happens. Some data on children reported that the majority who needed hospitalization for COVID-19 had at least one underlying medical condition. The most common underlying conditions reported among children with COVID-19 include chronic lung disease (including asthma), heart disease, and conditions that weaken the immune system. This information suggests that children with these underlying medical conditions may be at risk for more severe illness from COVID-19.<br></br><br></br>
+                More data are needed to learn which underlying or complex medical conditions may put children at increased risk. CDC is monitoring new information as it becomes available and will provide updates as needed.<br></br><br></br>
+                Learn more about caring for <a href="https://www.cdc.gov/childrenindisasters/children-with-special-healthcare-needs.html">children with special healthcare needs during a disaster</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/people-at-higher-risk.html">people who are at higher risk for severe illness from COVID-19</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="31">
               What additional steps should families that have a child with an underlying medical condition take?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="31">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                In addition to following the recommendations to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">prevent getting sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, families should take extra steps recommended for persons with <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">higher risk of severe COVID-19 illness</a> and steps outlined for those with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">potential COVID-19 exposure or confirmed illness</a>.
+                <br></br>
+                <ul>
+                  <li>Identify potential alternative caregivers, if you or other regular caregivers become sick and are unable to care for your child. If possible, these alternative caregivers would not be at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk of severe illness from COVID-19</a> themselves.</li>
+                  <li>Try to have at least one month of medication and medical supplies on hand. Some health plans allow for a 90-day supply of prescription medications. Consider discussing this option with your child’s healthcare provider.</li>
+                  <li>Review any care plans for your child, such as an asthma action plan, and make sure caregivers and backup caregivers are familiar with these plans.</li>
+                  <li>If you do not have <a href="https://www.cdc.gov/childrenindisasters/children-with-special-healthcare-needs.html">care plans or an emergency notebook</a>, try to make them. They typically include important information about your child’s medical conditions, how to manage those conditions, how to get in touch with your child’s doctors, allergies, information on medications (names, dosages, and administration instructions), preferences (food and other) or special needs, daily routines and activities, friends, and details about routines that are important to support behavioral and emotional health.</li>
+                  <li>Learn if your child’s healthcare providers, including doctors and therapists, have new ways to be contacted or new ways of providing appointments. If they offer telemedicine visits, find out how those are arranged and any additional information you need.</li>
+                  <li>If your child receives any support care services in the home that need to be continued, make plans for what you will do if those direct care providers get sick, or if persons in your household are sick.</li>
+                  <li>Discuss with the support care agencies and the providers ways to minimize risk for exposure to the virus that causes COVID-19.</li><br></br>
+                  <ul>
+                    <li>If your child or other persons in your household are sick with COVID-19 and are able to recover at home, inform your direct care providers and consider postponing or rescheduling services until the criteria for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">discontinuing home isolation</a> have been met.</li>
+                    <li>Ask service providers if they are experiencing any <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>, or if they have been in contact with someone who has COVID-19.</li>
+                    <li>Tell the service provider to:
+                      <ul>
+                        <li>
+                        Wear a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-faq.html">mask</a> if they will be close (less than 6 feet) to you or persons in your household. Their mask helps protect you if they are infected but do not have symptoms.
+                        </li>
+                        <li>Ask them to wash their hands with soap and water or, if unavailable, use hand sanitizer with at least 60% alcohol when they enter your home, before and after helping your child (dressing, bathing/showering, transferring, toileting and/or diapering, feeding), after handling tissues, and after changing linens or doing laundry. <a href="https://www.youtube.com/watch?v=d914EnpU4Fo">Learn more about proper handwashing</a>.</li>
+                      </ul>
+                    </li>
+                    <li>Service providers and families should:
+                      <ul>
+                        <li>Routinely clean and disinfect frequently touched objects and surfaces (counters, tabletops, doorknobs, bathroom fixtures, toilets, phones, keyboards, tablets, bedside tables), and equipment such as wheelchairs, scooters, walkers, oxygen tanks and tubing, communication boards, and other assistive devices. Refer to CDC’s recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Cleaning and Disinfecting Your Home</a>.</li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </ul>
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="32">
               What can I do if my child has difficulties adjusting to new routines and following recommendations?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="32">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">Helping children understand and follow recommendations, like social distancing and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">wearning masks</a>, can be challenging if your child has intellectual disabilities, sensory issues, or other special healthcare needs.<br></br><br></br>
+                <ul>
+                  <li>Keeping children at home can lower stress created by social distancing and mask recommendations. Reach out to others for help in running essential errands.</li>
+                  <li>Behavioral techniques can be used to address behavioral challenges and to develop new routines. These include social stories, video modeling, picture schedules, and visual cues. Try rewarding your child in small ways with his or her favorite non-food treat or activities to help switch routines and to follow recommendations.</li>
+                  <li>Many of the organizations you turn to for information and support around your child’s complex, chronic medical condition may have information on their websites to help families address issues related to COVID-19.</li>
+                  <li>Your child’s therapist(s) and teachers may also have resources to help successfully introduce new routines to your child.</li>
+                  <li>While learning at home, continue special education services, accommodations, or services received in school through your child’s 504 plan or Individualized Educational Plan (IEP), as much as possible. Many schools are continuing interventions like speech therapy, small group classes, extended time and more. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/developmental-behavioral-disorders.html">supporting children with distance learning</a></li>
+                </ul>
+                Additional information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">caring for children</a> and on <a href="https://www.cdc.gov/ncbddd/childdevelopment/conditions.html">child development specific conditions</a> are available.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="33">
               How can my family cope with the added stress?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="33">
-                <Card.Body className="accordion-answer"></Card.Body>
-              </Accordion.Collapse>
+                <Card.Body className="accordion-answer">
+                Supporting children with special healthcare needs can put additional demands and stress on families, especially during emergency situations. You have likely found ways to manage the stress and challenges unique to your family’s situation. It is important to continue your family’s coping methods, including reaching out to other family members, friends, support groups, and organizations that have been helpful in the past.<br></br><br></br>
+                See information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">helping children cope</a> and coping with stress (such as <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">visiting parks, trails, or open spaces</a>) and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">making your family stronger</a><br></br><br></br>
+                If you, or someone you care about, are feeling overwhelmed with emotions like sadness, depression, or anxiety, or feel like you want to harm yourself or others:<br></br>
+                <ul>
+                  <li>Call 911</li>
+                  <li>Visit the <a href="https://www.samhsa.gov/disaster-preparedness">Disaster Distress Helpline</a></li>, call 1-800-985-5990, or text TalkWithUs to 66746
+                  <li>Visit the <a href="https://www.thehotline.org/">National Domestic Violence Hotline</a> or call 1-800-799-7233 and TTY 1-800-787-3224</li>
+                </ul>
+                </Card.Body></Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="34">
               What if my child or someone else in my home is sick with symptoms of COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="34">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                If your child with special healthcare needs becomes sick with <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>, contact your child’s healthcare provider. If your child has new or worsening <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">emergency warning signs</a>, such as trouble breathing, pain or pressure in the chest, confusion or inability to wake them up, or bluish lips or face, call 911. If you think your child may have COVID-19, notify the operator so that first responders may be appropriately prepared to protect themselves and others.<br></br><br></br>
+                Notify your child’s healthcare provider if someone else in your house becomes sick with COVID-19, so they can provide any advice specific for your child.<br></br><br></br>
+                See additional information if <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">someone in the home is sick with COVID-19</a> or suspected of having COVID-19.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="35">
               What if my child's symptoms of their underlying medical condition or complex, chronic medical condition get worse?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="35">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                  <ul>
+                    <li>Call your child’s healthcare provider if you have any concerns about your child’s medical conditions. If you need emergency help, call 911.</li>
+                    <li>Emergency departments have infection prevention plans to protect you and your child from getting COVID-19 if your child needs care for medical conditions not related to COVID-19. Do not delay getting emergency care for your child’s underlying condition or complex medical condition because you are afraid of getting exposed to COVID-19 when visiting the healthcare setting.</li>
+                  </ul>
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="36">
               What if my child needs to go to the hospital?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="36">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                If your child’s healthcare provider tells you to go to the hospital for any health problem, including COVID-19<br></br>
+                <ul>
+                  <li>Ask the healthcare provider to let the hospital know you are coming and to share important information about caring for your child.</li>
+                  <li>Visiting policies may have changed due to COVID-19. If your child’s hospital policy does not allow an adult to stay with a child, ask your child’s healthcare provider for a statement explaining your child’s need for a familiar adult to be present.</li>
+                  <li>Bring your care plans/emergency notebook with you along with paper and pen to write down questions you have during your time at the hospital.</li>
+                </ul>
+                </Card.Body>
               </Accordion.Collapse>
 
 
@@ -803,28 +973,48 @@ function App() {
             How can I prepare for an outbreak in my area?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="37">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Create a household plan of action to help protect your health and the health of those you care about in the event of an outbreak of COVID-19 in your community:<br></br>
+                <ul>
+                  <li>Talk with the people who need to be included in your plan, and discuss what to do if a COVID-19 outbreak occurs in your community.</li>
+                  <li>Plan ways to care for those who might be at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">greater risk for serious complications</a>.</li>
+                  <ul>
+                    <li>Make sure they have access to 2 weeks of medications and supplies in case you need to stay home for prolonged periods of time.</li>
+                  </ul>
+                  <li>Get to know your neighbors and find out if your neighborhood has a website or social media page to stay connected.</li>
+                  <li>Create a list of local organizations that you and your household can contact in the event you need access to information, healthcare services, support, and resources.</li>
+                  <li>Create an emergency contact list of family, friends, neighbors, carpool drivers, health care providers, teachers, employers, the local public health department, and other community resources.</li>
+                </ul>
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="38">
               How can I prepare for COVID-19 at work?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="38">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Plan for potential changes at your workplace. Talk to your employer about their emergency operations plan, including sick-leave policies and telework options. <a href="https://www.cdc.govhttps//www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html">Learn how businesses and employers can plan for and respond to COVID-19</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="39">
               Should I make my own hand sanitizer if I can't find it in stores?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="39">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                CDC does not encourage the production and use of homemade hand sanitizer products <a href="https://www.fda.gov/media/136118/download">because of concerns over the correct use of the ingredients</a> and the need to work under sterile conditions to make the product. Local industries that are looking into producing hand sanitizer to fill in for commercial shortages can refer to the <a href="https://www.who.int/gpsc/5may/Guide_to_Local_Production.pdf">World Health Organization guidance</a>. Organizations should revert to the use of commercially produced, FDA-approved product once such supplies again become available. <br></br>
+                <ul>
+                  <li>To be effective against killing some types of germs, <a href="https://www.cdc.gov/handwashing/show-me-the-science-hand-sanitizer.html">hand sanitizers</a> need to have a strength of at least 60% alcohol and be used when hands are not visibly dirty or greasy.</li>
+                  <li>Do not rely on “Do It Yourself” or “DIY” recipes based solely on essential oils or formulated without correct compounding practices.</li>
+                  <li>Do not use hand sanitizer to disinfect frequently touched surfaces and objects. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">See CDC's information for cleaning and sanitizing your home</a>.</li>
+                </ul>
+                </Card.Body>
               </Accordion.Collapse>
 
 
 
 
             </Card>
-
 
             <Card><Card.Header>Symptoms and Emergency Warning Signs</Card.Header>
             
@@ -834,26 +1024,39 @@ function App() {
               What are the symptoms and complications that cause COVID-19 can cause?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="40">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear <b>2-14 days after exposure to the virus</b>. If you have fever, cough, or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>, you might have COVID-19.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="41">
               When should I seek emergency care if I have COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="41">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately</b> <br></br>
+                <ul>
+                  <li>Trouble breathing</li>
+                  <li>Persistent pain or pressure in the chest</li>
+                  <li>New confusion</li>
+                  <li>Inability to wake or stay awake</li>
+                  <li>Bluish lips or face</li>
+                  
+                </ul>
+                *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.
+                <b>Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19.</b>
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="42">
               Is it possible to have the flu and COVID-19 at the same time?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="42">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">Yes. It is possible to test positive for flu (as well as other respiratory infections) and COVID-19 at the same time.</Card.Body>
               </Accordion.Collapse>
 
 
             </Card>
-
 
             <Card><Card.Header>Testing</Card.Header>
             
@@ -862,28 +1065,49 @@ function App() {
               Should I be tested for a current infection?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="43">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Maybe; not everyone needs to be tested for COVID-19.<br></br><br></br>
+                If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and want to get tested, call your healthcare provider first. Most people will have mild illness and can recover at home without medical care and may not need to be tested.<br></br><br></br>
+                CDC has guidance for who should be tested, but decisions about testing are made by state and local health departments and healthcare providers.<br></br><br></br>
+                You can also visit your <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/open-america/hd-search/">state or local health department's website</a> to look for the latest local information on testing.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="44">
               How can I get tested for a current infection (viral test) and what does my test mean?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="44">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Decisions about testing are made by <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state</a> and <a href="https://www.naccho.org/membership/lhd-directory">local</a> health departments or healthcare providers. If you have symptoms of COVID-19 and are not tested, it is important to stay home. <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a>.<br></br><br></br>
+                COVID-19 testing differs by location. If you have symptoms of COVID-19 and want to get tested, call your healthcare provider first. You can also visit your <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state</a> or <a href="https://www.naccho.org/membership/lhd-directory">local</a> health department’s website to look for the latest local information on testing. The U.S. Food and Drug Administration (FDA) has authorized viral tests that let you collect either a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-test-patient-home-sample-collection">nasal swab</a> or a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-diagnostic-test-using-home-collection-saliva">saliva sample</a> at home. However, you will still need to send your sample to a laboratory for analysis.<br></br><br></br>
+                <b>If you test positive for COVID-19</b>, know what protective steps to take <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">if you are sick or caring for someone</a>.<br></br><br></br>
+                <b>If you test negative for COVID-19</b>, you probably were not infected at the time your sample was collected. However, that does not mean you will not get sick. The test result only means that you did not have COVID-19 at the time of testing. You might test negative if the sample was collected early in your infection and test positive later during your illness. You could also be exposed to COVID-19 after the test and get infected then. This means you could still spread the virus. If you develop symptoms later, you might need another test to determine if you are infected with the virus that causes COVID-19.<br></br><br></br>
+                For more information about viral tests, please visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Test for Current Infection</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="45">
               How can I get tested for a past infection (antibody test) and what does my test mean?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="45">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Antibody tests for COVID-19 are available through healthcare providers and laboratories. Check with your healthcare provider to see if they offer antibody tests and whether you should get one.<br></br><br></br>
+                A positive test result shows you might have antibodies from an infection with the virus that causes COVID-19. However, there is a chance a positive result means that you have antibodies from an infection with a virus from the same family of viruses (called coronaviruses), such as the one that causes the common cold.<br></br><br></br>
+                Having antibodies to the virus that causes COVID-19 might provide protection from getting infected with the virus again. If it does, we do not know how much protection the antibodies might provide or how long this protection might last.<br></br><br></br>
+                You should continue to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">protect yourself and others</a> since you could get infected with the virus again. <br></br><br></br>
+                If you test negative, you might not have ever had COVID-19. Talk with your healthcare provider about your test result and the type of test you took to understand what your result means.<br></br><br></br>
+                Regardless of whether you test positive or negative, the results do not confirm whether or not you are able to spread the virus that causes COVID-19. Until we know more, continue to take steps to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a>.<br></br><br></br>
+                If you want more information about antibody tests, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/serology-overview.html">Test for Past Infection</a>.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="46">
               Can someone test negative and later test positive on a viral test for COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="46">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                Yes, it is possible. You may test negative if the sample was collected early in your infection and test positive later during this illness. You could also be exposed to COVID-19 after the test and get infected then. Even if you test negative, you still should take steps to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a>. See <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Testing for Current Infection</a> for more information.
+                </Card.Body>
               </Accordion.Collapse>
 
 
@@ -896,21 +1120,40 @@ function App() {
               Who is at higher risk for serious illness from COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="47">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                COVID-19 is a new disease and there is limited information regarding risk factors for severe disease. Based on currently available information and clinical expertise, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> and <b>people with underlying </b><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">medical conditions</a> are at higher risk for severe illness from COVID-19.
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="48">
               What should people at higher risk of serious illness with COVID-19 do?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="48">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                  If you are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-increased-risk.html">higher risk for severe illness</a> from COVID-19, you should: <br></br>
+                  <li>Limit your interactions with other people as much as possible.</li>
+                  <li>Take <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">precautions to prevent getting</a> COVID-19 when you do interact with others.</li>
+                  <li>If you decide to engage in public activities, continue to protect yourself by <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practicing everyday preventive actions</a>.</li>
+                  <li>Keep these items on hand and use them when venturing out: a mask, tissues, and a hand sanitizer with at least 60% alcohol, if possible.</li>
+                  <li>If possible, avoid others who are not wearing <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">masks</a> or ask others around you to wear masks</li>
+                  <li>Delay or cancel a visit if you or your visitors have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or have been exposed to someone with COVID-19 in the last 14 days.</li>
+                  <li>Anyone who has had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/public-health-recommendations.html">close contact</a> with a person with COVID-19 should <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">stay home and monitor for symptoms</a>.</li>
+                  <li><b>Continue your medicines</b> and do not change your treatment plan without talking to your healthcare provider.</li>
+                  <li><b>Have at least a 30-day supply</b> of prescription and non-prescription medicines.</li>
+                  <li><b>Do not delay getting emergency care for your underlying medical condition</b> because of COVID-19. Emergency departments have contingency infection prevention plans to protect you from getting COVID-19 if you need care.</li>
+                </Card.Body>
               </Accordion.Collapse>
 
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="49">
               Are people with disabilities at higher risk?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="49">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">Most people with disabilities are not inherently at higher risk for becoming infected with or having severe illness from COVID-19.  Some people with physical limitations or other disabilities might be at a higher risk of infection because of their underlying medical condition.<br></br>
+                <ul>
+                  <li>People with certain disabilities might experience higher rates of chronic health conditions that put them at higher risk of serious illness and poorer outcomes from COVID-19. Adults with disabilities are three times more likely to have heart disease, stroke, diabetes, or cancer than adults without disabilities.</li>
+                </ul>
+                You should talk with your healthcare provider if you have a question about your health or how your health condition is being managed.
+                </Card.Body>
               </Accordion.Collapse>
 
 
