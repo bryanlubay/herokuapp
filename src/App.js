@@ -656,7 +656,8 @@ function App() {
               What should I do if I have had close contact with someone who has COVID-19?</Accordion.Toggle>
               
               <Accordion.Collapse eventKey="18">
-                <Card.Body className="accordion-answer"></Card.Body>
+                <Card.Body className="accordion-answer">
+                </Card.Body>
               </Accordion.Collapse>
 
 
@@ -921,49 +922,121 @@ function App() {
                 What is contact tracing?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="50">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Contact tracing has been used for decades by state and local health departments to slow or stop the spread of infectious diseases.<br></br><br></br>
+                  Contact tracing slows the spread of COVID-19 by<br></br>
+                  <ul>
+                    <li>Letting people know they may have been exposed to COVID-19 and should monitor their health for signs and <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a></li>
+                    <li>Helping people who may have been exposed to COVID-19 get tested</li>
+                    
+                    <li>Asking people to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">self-isolate</a> if they have COVID-19 or <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">self-quarantine</a> if they are a close contact of someone with COVID-19</li>
+                  </ul>
+                  During contact tracing, the health department staff will not ask you for
+                  <uL>
+                    <li>Money</li>
+                    <li>Social Security number</li>
+                    <li>Bank account information</li>
+                    <li>Salary information</li>
+                    <li>Credit card numbers</li>
+                  </uL>
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="52">
                 What will happen with my personal information during contact tracing?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="52">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Discussions with health department staff are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your health care provider.<br></br><br></br>
+                  If you have been diagnosed with COVID-19, your name will not be shared with those you came in contact with. The health department will only notify people you were in close contact with (within 6 feet for more than 15 minutes) that they might have been exposed to COVID-19. Each state and jurisdiction use their own method for collecting and protecting health information. To learn more, contact your state or local health department.<br></br><br></br>
+                  You may also be interested in: <b>If I participate contact tracing for COVID-19 using a digital tool, is my personal health information secure?</b>
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="53">
                 Who is considered a close contact to someone with COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="53">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">For COVID-19, a close contact is anyone who was within 6 feet of an infected person for at least 15 minutes. An infected person can spread COVID-19 starting 48 hours (or 2 days) before the person had any symptoms or tested positive for COVID-19.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="54">
                 Am I considered a close contact if I was wearing a mask?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="54">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Yes, you are still considered a close contact even if you were wearing a mask while you were around someone with COVID-19. Masks are meant to protect other people in case you are infected, and not to protect you from becoming infected.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="55">
                 If I am a close contact, will I be tested for COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="55">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  If you have been around someone who is sick with COVID-19, CDC recommends that you get tested for COVID-19. Get tested for COVID-19 as soon as you know that you have been around a person diagnosed with COVID-19. The health department may be able to provide resources for testing in your area.
+                  <ul>
+                    <li>While you are waiting for your COVID-19 test result, stay home away from others (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">self-quarantine</a>) and monitor your health <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">for symptoms of COVID-19</a>to protect your friends, family, and others from possibly getting COVID-19.</li>
+                    <li>If your <b>test is positive</b>, you should continue to stay home and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">self-isolate</a> away from others and monitor your health. If you have symptoms of COVID-19 and they worsen or become severe, you should seek emergency medical care. Severe symptoms include trouble breathing, persistent pain or pressure in the chest, confusion, inability to wake or stay awake, or bluish lips or face. Someone from the health department may call you to<br></br>
+                      <ul>
+                        <li>Check on your health,</li>
+                        <li>Discuss who you have been around, and</li>
+                        <li>Ask where you have spent time while you may have been able to spread COVID-19 to others</li>
+                      </ul>
+                    </li>
+                    <li>If your <b>test is negative</b> and you <b>don't have symptoms</b> you should continue to stay home and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">self-quarantine</a> away from others for 14 days after your last exposure to COVID-19 and follow all recommendations from the health department. This is important because symptoms can appear up to 14 days after you’ve been exposed and are infected. A negative result before the end of your quarantine period does not rule out possible infection. Additionally, you do not need a repeat test unless you develop symptoms, or if you require a test to return to work.</li>
+                    <li>If your <b>test is negative</b> and you<b>have symptoms</b> you should continue to self-quarantine away from others and follow all recommendations from the health department. A second test and additional medical consultation may be needed if your symptoms do not improve.</li>
+                  </ul>
+
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="56">
                 What will happen during contact tracing if I am diagnosed with COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="56">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                If you are diagnosed with COVID-19, someone from the health department may call you to check on your health, discuss who you have been around, and ask where you spent time while you may have been able to spread COVID-19 to others. You will also be asked to continue to stay at home and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">self-isolate</a>, away from others.<br></br>
+                <ul>
+                  <li>Your name <b>will not</b>be shared with those you came in contact with.</li>
+                  <li>The health department staff <b>will not</b> ask you for
+                    <ul>
+                      <li>Money</li>
+                      <li>Bank account information</li>
+                      <li>Salary information, or</li>
+                      <li>Credit card numbers</li>
+                    </ul>
+                  </li>
+                  <li>Self-isolation means staying at home in a specific room away from other people and <a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">pets</a>, and using a separate bathroom, if possible.</li>
+                  <li>Self-isolation helps slow the spread of COVID-19 and can help protect the health of your family, friends, neighbors, and others you may come in contact.</li>
+                  <li>If you need support or assistance while in self-isolation, your health department or community organizations may be able to provide assistance.</li>
+                </ul>
+                Watch for or monitor your <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. If your symptoms worsen or become severe, you should seek medical care.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="56">
                 What will happen during contact tracing if I have been around someone with COVID-19?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="56">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  If you were around someone who has been diagnosed with COVID-19, someone from the health department may call you to let you know that you may have been exposed to COVID-19. <br></br><br></br>
+                  Stay home away from others for 14 days (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">self-quarantine</a>) after your last contact with that person. Health department staff will help identify the dates for your self-quarantine. Health department staff can also provide resources for COVID-19 testing in your area.<br></br>
+                  <ul>
+                    <li>Self-quarantine means staying home away from others and monitoring your health.</li>
+                    <li>If you need to be around other people or animals in or outside of the home, wear a mask. This will help protect the people around you.</li>
+                    <li>If you need support or assistance while in self-quarantine, your health department or community organizations may be able to provide assistance.</li>
+                  </ul>
+                  Monitor your health and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. Remember, symptoms may appear 2-14 days after you were exposed to COVID-19. Tell the health department if you develop any symptoms. Tell people you were around recently if you become ill, so they can monitor their health. If your symptoms worsen or become severe, seek medical care. <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">Severe symptoms</a> include trouble breathing, persistent pain or pressure in the chest, new confusion, inability to wake or stay awake, or bluish lips or face.<br></br><br></br>
+                  The health department staff <b>will not</b> ask you for <br></br>
+                  <ul>
+                    <li>Money</li>
+                    <li>Social Security number</li>
+                    <li>Bank account information</li>
+                    <li>Salary information, or</li>
+                    <li>Credit card numbers</li>
+                  </ul>
+                  </Card.Body>
                 </Accordion.Collapse>
 
 
@@ -971,42 +1044,62 @@ function App() {
                 I was around someone who has COVID-19, and my COVID-19 test came back negative. Do I still need to quarantine for 14 days after I was last exposed?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="57">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Yes. You should still self-quarantine for 14 days since your last exposure. It can take up to 14 days after exposure to the virus for a person to develop COVID-19 symptoms. A negative result before end of the 14-day quarantine period does not rule out possible infection. By self-quarantining for 14 days, you lower the chance of possibly exposing others to COVID-19.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="58">
                 I was recently around someone who has COVID-19, but I feel fine. Why should I stay at home?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="58">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">People with COVID-19 can still spread the virus even if they don’t have any symptoms. If you were around someone who had COVID-19, it is critical that you stay home and away from others for 14 days from the last day that you were around that person. Staying home and away from others at all times helps your health department in the fight against COVID-19 and helps protect you, your family, and your community.</Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="59">
                 What if I have been around someone who was identified as a close contact?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="59">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  If you have been around someone who was identified as a close contact to a person with COVID-19, closely monitor yourself for any <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. You do not need to self-quarantine unless you develop symptoms or if the person identified as a close contact develops COVID-19.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="60">
                 Will there be a national app for contact tracing?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="60">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  No, there will not be a national app for contact tracing. There are many options available now, and it is up to each state and individual to decide which tools best fit their needs.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="61">
                 If I participate in contact tracing for COVID-19 using a digital tool, is my personal health information secure?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="61">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  Yes, if you agree to participate in contact tracing for COVID-19 with the health department, your information is secure.
+                  Discussions with health department staff are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your health care provider. Your name will not be shared with those you came in contact with. If you have been diagnosed with COVID-19, the health department will only notify people you were in close contact with (within 6 feet for more than 15 minutes) that they might have been exposed to COVID-19.<br></br><br></br>
+                  Health departments may use <i>case management tools</i>to help make the contact tracing process more efficient. If you choose to provide information through one of these tools, your information is secure and stored with the health department. These tools also help health departments quickly receive and analyze information about COVID-19. Case management tools are under the same laws and regulations for all sensitive health information use (e.g. HIPPA). You must provide consent for the health department to collect information using a case management tool. Just like traditional contact tracing, digital tools will not collect information regarding money, Social Security numbers, bank account information, salary information, or credit card numbers.<br></br><br></br>
+                  <i>Exposure notification tools</i> may be an app that you can download on your personal cell phone. If you choose to download an exposure <i>notification</i> app for COVID-19, your information is secure. Exposure notification apps are developed in collaboration with or endorsed by health departments. These apps undergo rigorous testing to determine their trustworthiness, security, and ability to protect people’s privacy. Until you give consent to share information with your local health department, any information you have entered into the app is stored <i>only</i> on your personal phone. Your information is stored only on your own phone and is not sent to the health department or any other third party. <b>The app and your information can be deleted any time.</b> When you consent to share your information with the local health department, your information is secure.
+                  </Card.Body>
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="62">
                 Will I be required to download a contact training app for COVID-19 on my phone?</Accordion.Toggle>
                 
                 <Accordion.Collapse eventKey="62">
-                  <Card.Body className="accordion-answer"></Card.Body>
+                  <Card.Body className="accordion-answer">
+                  No, you are not required to download an app to give information for contact tracing for COVID-19. Health departments commonly use <i>case management tools</i> to make the contact tracing process more efficient. These types of tools are not downloaded on personal cell phones. <br></br><br></br>
+                  If you choose to give information to your local or state health department for contact tracing for COVID-19, you do not need to download an app on your cell phone. The health department staff may call you to <br></br>
+                  <ul>
+                    <li>Check on your health,</li>
+                    <li>Discuss who you have been around, and</li>
+                    <li>Ask where you have spent time while you may have been able to spread COVID-19 to others.</li>
+                  </ul>
+                  It is up to you to decide if you download an <i>exposure notification</i> app for COVID-19.
+                  </Card.Body>
                 </Accordion.Collapse>
 
 
