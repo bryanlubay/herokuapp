@@ -465,7 +465,7 @@ function App() {
         <p>
 
         <Table>
-          <a href="#Top"><thead>On This Page</thead></a>
+          <a id="Top"><thead>On This Page</thead></a>
         {/* <Link to="#Top"><thead>On This Page</thead></Link> */}
           <tbody>
             <tr>
@@ -506,8 +506,7 @@ function App() {
 
         <Accordion>
 
-          <Card>
-            <Card.Header>Basics</Card.Header>
+          <Card><Card.Header>Basics</Card.Header>
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
               What is a novel coronavirus?
             </Accordion.Toggle>
@@ -523,7 +522,6 @@ function App() {
             <Card.Body className="accordion-answer">On February 11, 2020 the World Health Organization <a target="_blank" href="https://twitter.com/DrTedros/status/1227297754499764230">announced</a> an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.<br></br><br></br>There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.</Card.Body>
             </Accordion.Collapse>
           </Card>
-
 
           <Card><Card.Header>Spread</Card.Header>
 
@@ -1964,7 +1962,7 @@ Empowering businesses, schools, and community organizations to take recommended 
                   </Card.Body>
                 </Accordion.Collapse>
 
-                <a id="Top">Return to Top</a>
+                <a href="#Top">Return to Top</a>
               {/* <div id="Top">
                 <p>Return to Top</p>
               </div> */}
