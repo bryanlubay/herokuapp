@@ -466,7 +466,7 @@ function App() {
 
         <Table className="table">
           <a id="Top"><thead className="alert-headings">On This Page</thead></a>
-          <tbody>
+          <tbody className="table">
             <tr>
               <a href="#Basics"><td>Basics</td></a>
               <a href="#People-at-Higher-Risk-for-Severe-Illness"><td>People at Higher Risk for Severe Illness</td></a>
