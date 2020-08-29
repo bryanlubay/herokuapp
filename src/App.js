@@ -471,6 +471,10 @@ function App() {
             <td>table data 2</td>
           </tr>
         </tbody>
+        <tr>table row 2
+          <td>td 3</td>
+          <td>td 4</td>
+        </tr>
       </Table>
 
         <Table className="table">
