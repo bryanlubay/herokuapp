@@ -107,8 +107,11 @@
 .table {
   border: 1px solid black;
   border-collapse: collapse;
-  column-count: 2;
-  column-rule-color: black;
-  columns: 2;
+}
+
+.table-row {
+  border: 1px solid black;
+  border-collapse: collapse;
   text-align: left;
+
 }
