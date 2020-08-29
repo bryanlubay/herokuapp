@@ -465,7 +465,7 @@ function App() {
         <p>
 
         <Table>
-          <a id="Top"><thead>On This Page</thead></a>
+          <a id="Top"><thead className="alert-headings">On This Page</thead></a>
           <tbody>
             <tr>
               <a href="#Basics"><td>Basics</td></a>
