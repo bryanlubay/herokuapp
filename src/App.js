@@ -469,7 +469,7 @@ function App() {
           <tbody className="table">
             <tr className="table">
             <td><a href="#Basics">Basics</a></td>
-              <a href="#People-at-Higher-Risk-for-Severe-Illness"><td>People at Higher Risk for Severe Illness</td></a>
+            <td><a href="#People-at-Higher-Risk-for-Severe-Illness">People at Higher Risk for Severe Illness</a></td>
             </tr>
             <tr className="table">
               <a href="#Spread"><td>Spread</td></a>
