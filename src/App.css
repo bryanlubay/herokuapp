@@ -107,4 +107,6 @@
 .table {
   border: 1px solid black;
   border-collapse: collapse;
+  column-count: 2;
+  column-rule-color: black;
 }
