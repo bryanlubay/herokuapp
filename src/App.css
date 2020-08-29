@@ -103,3 +103,7 @@
   text-align: left;
   margin: inherit;
 }
+
+.table {
+  border: 1px solid black;
+}
