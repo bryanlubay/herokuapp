@@ -468,7 +468,8 @@ function App() {
           <a id="Top"><thead>On This Page</thead></a>
           <tbody>
             <tr>
-              <td>Basics</td>
+
+              <a href="#Basics"><td>Basics</td></a>
               <td>People at Higher Risk for Severe Illness</td>
             </tr>
             <tr>
