@@ -1,8 +1,8 @@
 // heroku git:remote -a bryanlubay
 
 import React, { useEffect, useState } from 'react';
-import {Card, Form, Button, Alert, Accordion, Table} from 'react-bootstrap';
-
+import { Card, Form, Button, Alert, Accordion, Table} from 'react-bootstrap';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -467,8 +467,8 @@ function App() {
           <thead>On This Page</thead>
           <tbody>
             <tr>
-              <td>Basics</td>
-              <td>People at Higher Risk for Severe Illness</td>
+              <AnchorLink href='#Basics'><td>Basics</td></AnchorLink>
+              <AnchorLink href='#People-at-Higher-Risk-for-Severe-Illness'><td>People at Higher Risk for Severe Illness</td></AnchorLink>
             </tr>
             <tr>
               <td>Spread</td>
