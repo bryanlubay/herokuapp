@@ -469,7 +469,7 @@ function App() {
           <tbody>
             <tr>
               <a href="#Basics"><td>Basics</td></a>
-              <a href="#People-at-Higher-Risk-for-Severe"><td>People at Higher Risk for Severe Illness</td></a>
+              <a href="#People-at-Higher-Risk-for-Severe-Illness"><td>People at Higher Risk for Severe Illness</td></a>
             </tr>
             <tr>
               <a href="#Spread"><td>Spread</td></a>
@@ -497,7 +497,7 @@ function App() {
             </tr>
             <tr>
               <a href="#Testing"><td>Testing</td></a>
-              <a href="#More"><td>More</td></a>
+              {/* <a href="#More"><td>More</td></a> */}
             </tr>
           </tbody>
         </Table>
@@ -1911,6 +1911,7 @@ Empowering businesses, schools, and community organizations to take recommended 
                   </Card.Body>
                 </Accordion.Collapse>
 
+                <a href="#Top">Return to Top</a>
 
             </Card>
 
