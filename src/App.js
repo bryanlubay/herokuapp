@@ -483,6 +483,7 @@ function App() {
             <tr className="table-row">
               <a href="#Basics"><td className="td">Basics</td></a>
               <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="td">People at Higher Risk for Severe Illness</td></a>
+              <td>TD</td>
             </tr>
             <tr className="table-row">
               <a href="#Spread"><td className="td">Spread</td></a>
@@ -512,6 +513,12 @@ function App() {
               <a href="#Testing"><td>Testing</td></a>
               {/* <a href="#More"><td>More</td></a> */}
             </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
           </tbody>
         </Table>
 
