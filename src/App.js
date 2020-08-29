@@ -471,31 +471,31 @@ function App() {
               <a href="#Basics"><td>Basics</td></a>
               <a href="#People-at-Higher-Risk-for-Severe-Illness"><td>People at Higher Risk for Severe Illness</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#Spread"><td>Spread</td></a>
               <a href="#Contact-Tracing"><td>Contact Tracing</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#Prevention"><td>Prevention</td></a>
               <a href="#Funerals"><td>Funerals</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td></a>
               <a href="#Cleaning-and-Disinfection"><td>Cleaning and Disinfection</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#Children"><td>Children</td></a>
               <a href="#Pets-and-Animals"><td>Pets and Animals</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#Preparing-for-an-Outbreak"><td>Preparing for an Outbreak</td></a>
               <a href="#Community-Mitigation"><td>Community Mitigation</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#Symptoms-and-Emergency-Warning-Signs"><td>Symptoms and Emergency Warning Signs</td></a>
               <a href="#Water"><td>Water</td></a>
             </tr>
-            <tr>
+            <tr className="table">
               <a href="#Testing"><td>Testing</td></a>
               {/* <a href="#More"><td>More</td></a> */}
             </tr>
