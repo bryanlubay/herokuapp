@@ -468,39 +468,37 @@ function App() {
           <a id="Top"><thead>On This Page</thead></a>
           <tbody>
             <tr>
-
               <a href="#Basics"><td>Basics</td></a>
-              <td>People at Higher Risk for Severe Illness</td>
+              <a href="#People-at-Higher-Risk-for-Severe"><td>People at Higher Risk for Severe Illness</td></a>
             </tr>
             <tr>
-              <td>Spread</td>
-              <td>Contact Tracing</td>
+              <a href="#Spread"><td>Spread</td></a>
+              <a href="#Contact-Tracing"><td>Contact Tracing</td></a>
             </tr>
             <tr>
-              <td>Prevention</td>
-              <td>Funerals</td>
+              <a href="#Prevention"><td>Prevention</td></a>
+              <a href="#Funerals"><td>Funerals</td></a>
             </tr>
             <tr>
-              <td>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td>
-              <td>CLeaning and Disinfection</td>
+              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td></a>
+              <a href="#Cleaning-and-Disinfection"><td>Cleaning and Disinfection</td></a>
             </tr>
             <tr>
-              <td>Children</td>
-              <td>Pets and Animals</td>
+              <a href="#Children"><td>Children</td></a>
+              <a href="#Pets-and-Animals"><td>Pets and Animals</td></a>
             </tr>
             <tr>
-              <td>Preparing for an Outbreak</td>
-              <td>Community Mitigation</td>
+              <a href="#Preparing-for-an-Outbreak"><td>Preparing for an Outbreak</td></a>
+              <a href="#Community-Mitigation"><td>Community Mitigation</td></a>
             </tr>
             <tr>
-              <td>Symptoms and Emergency Warning SIgns</td>
-              <td>Water</td>
+              <a href="#Symptoms-and-Emergency-Warning-Signs"><td>Symptoms and Emergency Warning Signs</td></a>
+              <a href="#Water"><td>Water</td></a>
             </tr>
             <tr>
-              <td>Testing</td>
-              <td>More</td>
+              <a href="#Testing"><td>Testing</td></a>
+              <a href="#More"><td>More</td></a>
             </tr>
-
           </tbody>
         </Table>
 
@@ -528,7 +526,7 @@ function App() {
 
           </Card>
 
-          <Card><Card.Header>Spread</Card.Header>
+          <Card><a id="Spread"><Card.Header>Spread</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="3">
               How does the virus spread?
@@ -579,7 +577,7 @@ function App() {
 
           </Card>
 
-          <Card><Card.Header>Prevention</Card.Header>
+          <Card><a id="Prevention"><Card.Header>Prevention</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="8">
               How can I protect myself?
@@ -704,7 +702,7 @@ function App() {
 
           </Card>
 
-          <Card><Card.Header>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</Card.Header>
+          <Card><a id="If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><Card.Header>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</Card.Header></a>
             
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="17">
               What should I do if I get sick or someone in my house gets sick?</Accordion.Toggle>
@@ -750,7 +748,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Children</Card.Header>
+          <Card><a id="Children"><Card.Header>Children</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="19">
               What is the risk of my child becoming sick with COVID-19?</Accordion.Toggle>
@@ -1008,7 +1006,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Preparing for an Outbreak</Card.Header>
+          <Card><a id="Preparing-for-an-Outbreak"><Card.Header>Preparing for an Outbreak</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="37">
             How can I prepare for an outbreak in my area?</Accordion.Toggle>
@@ -1056,7 +1054,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Symptoms and Emergency Warning Signs</Card.Header>
+          <Card><a id="Symptoms-and-Emergency-Warning-Signs"><Card.Header>Symptoms and Emergency Warning Signs</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="40">
               What are the symptoms and complications that cause COVID-19 can cause?</Accordion.Toggle>
@@ -1097,7 +1095,8 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Testing</Card.Header>
+          <Card><a id="Testing"><Card.Header>Testing</Card.Header></a>
+
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="43">
               Should I be tested for a current infection?</Accordion.Toggle>
@@ -1152,7 +1151,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>People at Higher Risk for Severe Illness</Card.Header>
+          <Card><a id="People-at-Higher-Risk-for-Severe-Illness"><Card.Header>People at Higher Risk for Severe Illness</Card.Header></a>
             
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="47">
@@ -1199,7 +1198,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Contact Tracing</Card.Header>
+          <Card><a id="Contact-Tracing"><Card.Header>Contact Tracing</Card.Header></a>
             
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="50">
                 What is contact tracing?</Accordion.Toggle>
@@ -1388,7 +1387,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Funerals</Card.Header>
+          <Card><a id="Funerals"><Card.Header>Funerals</Card.Header></a>
             
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="63">
@@ -1453,7 +1452,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Cleaning and Disinfection</Card.Header>
+          <Card><a id="Cleaning-and-Disinfection"><Card.Header>Cleaning and Disinfection</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="68">
                 What is the difference between cleaning and disinfecting?</Accordion.Toggle>
@@ -1545,7 +1544,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Pets and Animals</Card.Header>
+          <Card><a id="Pets-and-Animals"><Card.Header>Pets and Animals</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="78">
                 Can I get COVID-19 from my pets or other animals?</Accordion.Toggle>
@@ -1871,7 +1870,7 @@ function App() {
 
             </Card>
 
-          <Card><Card.Header>Community Mitigation</Card.Header>
+          <Card><a id="Community-Mitigation"><Card.Header>Community Mitigation</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="98">
                 What is community mitigation?</Accordion.Toggle>
@@ -1915,7 +1914,7 @@ Empowering businesses, schools, and community organizations to take recommended 
 
             </Card>
 
-            <Card><Card.Header>Water</Card.Header>
+          <Card><a id="Water"><Card.Header>Water</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="101">
                 Can the virus that causes COVID-19 spread through treated drinking water?</Accordion.Toggle>
