@@ -108,19 +108,26 @@
   columns: 2;
   column-count: 2;
   border: 1px solid black;
+  border-collapse: separate;
 }
 
 .tbody {
   columns: 2;
   column-count: 2;
+  border-collapse: separate;
+
 }
 
 .td {
   border: black;
+  border-collapse: separate;
+
 }
 
 .table-row {
   border: 1px solid black;
   text-align: left;
+  border-collapse: separate;
+
 
 }

@@ -464,7 +464,7 @@ function App() {
         <Alert.Heading className="alert-headings">Frequently Asked Questions</Alert.Heading>
         <p>
 
-      <Table>
+      {/* <Table>
         <tbody>
           <tr>table row
             <td>table data</td>
@@ -475,7 +475,7 @@ function App() {
           <td>td 3</td>
           <td>td 4</td>
         </tr>
-      </Table>
+      </Table> */}
 
         <Table className="table">
           <a id="Top"><thead className="alert-headings">On This Page</thead></a>
