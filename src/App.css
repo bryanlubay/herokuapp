@@ -110,4 +110,5 @@
   column-count: 2;
   column-rule-color: black;
   columns: 2;
+  text-align: left;
 }
