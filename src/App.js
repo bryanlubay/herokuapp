@@ -1963,9 +1963,9 @@ Empowering businesses, schools, and community organizations to take recommended 
                   </Card.Body>
                 </Accordion.Collapse>
 
-              <div id="Top">
+              {/* <div id="Top">
                 <p>Return to Top</p>
-              </div>
+              </div> */}
 
 
             </Card>
