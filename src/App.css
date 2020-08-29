@@ -105,7 +105,14 @@
 }
 
 .table {
+  columns: 2;
+  column-count: 2;
   border: 1px solid black;
+}
+
+.tbody {
+  columns: 2;
+  column-count: 2;
 }
 
 .table-row {
