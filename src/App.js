@@ -463,6 +463,10 @@ function App() {
         <Alert.Heading>Frequently Asked Questions</Alert.Heading>
         <p>
 
+        <Table>
+          <thead>On This Page</thead>
+        </Table>
+
         <Accordion>
 
           <Card>
