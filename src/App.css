@@ -109,4 +109,5 @@
   border-collapse: collapse;
   column-count: 2;
   column-rule-color: black;
+  columns: 2;
 }
