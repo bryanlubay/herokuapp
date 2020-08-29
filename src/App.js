@@ -465,6 +465,41 @@ function App() {
 
         <Table>
           <thead>On This Page</thead>
+          <tbody>
+            <tr>
+              <td>Basics</td>
+              <td>People at Higher Risk for Severe Illness</td>
+            </tr>
+            <tr>
+              <td>Spread</td>
+              <td>Contact Tracing</td>
+            </tr>
+            <tr>
+              <td>Prevention</td>
+              <td>Funerals</td>
+            </tr>
+            <tr>
+              <td>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td>
+              <td>CLeaning and Disinfection</td>
+            </tr>
+            <tr>
+              <td>Children</td>
+              <td>Pets and Animals</td>
+            </tr>
+            <tr>
+              <td>Preparing for an Outbreak</td>
+              <td>Community Mitigation</td>
+            </tr>
+            <tr>
+              <td>Symptoms and Emergency Warning SIgns</td>
+              <td>Water</td>
+            </tr>
+            <tr>
+              <td>Testing</td>
+              <td>More</td>
+            </tr>
+
+          </tbody>
         </Table>
 
         <Accordion>
