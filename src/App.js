@@ -466,7 +466,6 @@ function App() {
 
         <Table>
           <a id="Top"><thead>On This Page</thead></a>
-        {/* <Link to="#Top"><thead>On This Page</thead></Link> */}
           <tbody>
             <tr>
               <td>Basics</td>
@@ -506,7 +505,8 @@ function App() {
 
         <Accordion>
 
-          <Card><Card.Header>Basics</Card.Header>
+          <Card><a id="Basics"><Card.Header>Basics</Card.Header></a>
+
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
               What is a novel coronavirus?
             </Accordion.Toggle>
@@ -518,9 +518,13 @@ function App() {
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1">
                 Why is the disease being called coronavirus disease 2019, COVID-19?
             </Accordion.Toggle>
+
             <Accordion.Collapse eventKey="1">
             <Card.Body className="accordion-answer">On February 11, 2020 the World Health Organization <a target="_blank" href="https://twitter.com/DrTedros/status/1227297754499764230">announced</a> an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.<br></br><br></br>There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.</Card.Body>
             </Accordion.Collapse>
+
+            <a href="#Top">Return to Top</a>
+
           </Card>
 
           <Card><Card.Header>Spread</Card.Header>
@@ -570,6 +574,7 @@ function App() {
               </Card.Body>
             </Accordion.Collapse>
 
+            <a href="#Top">Return to Top</a>
 
           </Card>
 
@@ -632,7 +637,6 @@ function App() {
               </Card.Body>
             </Accordion.Collapse>
 
-
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="11">
               Am I at risk for COVID-19 from mail, packages, or products?
             </Accordion.Toggle>
@@ -640,7 +644,6 @@ function App() {
             <Accordion.Collapse eventKey="11">
               <Card.Body className="accordion-answer">There is still a lot that is unknown about COVID-19 and how it spreads. Coronaviruses are thought to be spread most often by respiratory droplets. Although the virus can survive for a short period on some surfaces, it is unlikely to be spread from domestic or international mail, products or packaging. However, it may be possible that people can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads.<br></br><br></br>Learn more about <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">safe handling of deliveries and mail</a>.</Card.Body>
             </Accordion.Collapse>
-
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="12">
             Is it okay for me to donate blood?</Accordion.Toggle>
@@ -696,6 +699,7 @@ function App() {
               <Card.Body className="accordion-answer">Clean and disinfect frequently touched surfaces such as tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.  If surfaces are dirty, clean them using detergent or soap and water prior to disinfection. To disinfect, most common EPA-registered household disinfectants will work. See CDC’s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">for household cleaning and disinfection</a>.</Card.Body>
             </Accordion.Collapse>
 
+            <a href="#Top">Return to Top</a>
 
           </Card>
 
@@ -741,6 +745,7 @@ function App() {
                 </Card.Body>
               </Accordion.Collapse>
 
+              <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -998,8 +1003,7 @@ function App() {
                 </Card.Body>
               </Accordion.Collapse>
 
-
-
+              <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1008,35 +1012,35 @@ function App() {
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="37">
             How can I prepare for an outbreak in my area?</Accordion.Toggle>
               
-              <Accordion.Collapse eventKey="37">
-                <Card.Body className="accordion-answer">
-                Create a household plan of action to help protect your health and the health of those you care about in the event of an outbreak of COVID-19 in your community:<br></br>
+            <Accordion.Collapse eventKey="37">
+              <Card.Body className="accordion-answer">
+              Create a household plan of action to help protect your health and the health of those you care about in the event of an outbreak of COVID-19 in your community:<br></br>
+              <ul>
+                <li>Talk with the people who need to be included in your plan, and discuss what to do if a COVID-19 outbreak occurs in your community.</li>
+                <li>Plan ways to care for those who might be at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">greater risk for serious complications</a>.</li>
                 <ul>
-                  <li>Talk with the people who need to be included in your plan, and discuss what to do if a COVID-19 outbreak occurs in your community.</li>
-                  <li>Plan ways to care for those who might be at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">greater risk for serious complications</a>.</li>
-                  <ul>
-                    <li>Make sure they have access to 2 weeks of medications and supplies in case you need to stay home for prolonged periods of time.</li>
-                  </ul>
-                  <li>Get to know your neighbors and find out if your neighborhood has a website or social media page to stay connected.</li>
-                  <li>Create a list of local organizations that you and your household can contact in the event you need access to information, healthcare services, support, and resources.</li>
-                  <li>Create an emergency contact list of family, friends, neighbors, carpool drivers, health care providers, teachers, employers, the local public health department, and other community resources.</li>
+                  <li>Make sure they have access to 2 weeks of medications and supplies in case you need to stay home for prolonged periods of time.</li>
                 </ul>
-                </Card.Body>
-              </Accordion.Collapse>
+                <li>Get to know your neighbors and find out if your neighborhood has a website or social media page to stay connected.</li>
+                <li>Create a list of local organizations that you and your household can contact in the event you need access to information, healthcare services, support, and resources.</li>
+                <li>Create an emergency contact list of family, friends, neighbors, carpool drivers, health care providers, teachers, employers, the local public health department, and other community resources.</li>
+              </ul>
+              </Card.Body>
+            </Accordion.Collapse>
 
-              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="38">
-              How can I prepare for COVID-19 at work?</Accordion.Toggle>
-              
-              <Accordion.Collapse eventKey="38">
-                <Card.Body className="accordion-answer">
-                Plan for potential changes at your workplace. Talk to your employer about their emergency operations plan, including sick-leave policies and telework options. <a href="https://www.cdc.govhttps//www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html">Learn how businesses and employers can plan for and respond to COVID-19</a>.
-                </Card.Body>
-              </Accordion.Collapse>
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="38">
+            How can I prepare for COVID-19 at work?</Accordion.Toggle>
+            
+            <Accordion.Collapse eventKey="38">
+              <Card.Body className="accordion-answer">
+              Plan for potential changes at your workplace. Talk to your employer about their emergency operations plan, including sick-leave policies and telework options. <a href="https://www.cdc.govhttps//www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html">Learn how businesses and employers can plan for and respond to COVID-19</a>.
+              </Card.Body>
+            </Accordion.Collapse>
 
-              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="39">
-              Should I make my own hand sanitizer if I can't find it in stores?</Accordion.Toggle>
-              
-              <Accordion.Collapse eventKey="39">
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="39">
+            Should I make my own hand sanitizer if I can't find it in stores?</Accordion.Toggle>
+            
+            <Accordion.Collapse eventKey="39">
                 <Card.Body className="accordion-answer">
                 CDC does not encourage the production and use of homemade hand sanitizer products <a href="https://www.fda.gov/media/136118/download">because of concerns over the correct use of the ingredients</a> and the need to work under sterile conditions to make the product. Local industries that are looking into producing hand sanitizer to fill in for commercial shortages can refer to the <a href="https://www.who.int/gpsc/5may/Guide_to_Local_Production.pdf">World Health Organization guidance</a>. Organizations should revert to the use of commercially produced, FDA-approved product once such supplies again become available. <br></br>
                 <ul>
@@ -1047,56 +1051,53 @@ function App() {
                 </Card.Body>
               </Accordion.Collapse>
 
-
-
+              <a href="#Top">Return to Top</a>
 
             </Card>
 
           <Card><Card.Header>Symptoms and Emergency Warning Signs</Card.Header>
-            
-
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="40">
               What are the symptoms and complications that cause COVID-19 can cause?</Accordion.Toggle>
               
-              <Accordion.Collapse eventKey="40">
-                <Card.Body className="accordion-answer">
-                People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear <b>2-14 days after exposure to the virus</b>. If you have fever, cough, or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>, you might have COVID-19.
-                </Card.Body>
-              </Accordion.Collapse>
+            <Accordion.Collapse eventKey="40">
+              <Card.Body className="accordion-answer">
+              People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear <b>2-14 days after exposure to the virus</b>. If you have fever, cough, or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>, you might have COVID-19.
+              </Card.Body>
+            </Accordion.Collapse>
 
-              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="41">
-              When should I seek emergency care if I have COVID-19?</Accordion.Toggle>
-              
-              <Accordion.Collapse eventKey="41">
-                <Card.Body className="accordion-answer">
-                Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately</b> <br></br>
-                <ul>
-                  <li>Trouble breathing</li>
-                  <li>Persistent pain or pressure in the chest</li>
-                  <li>New confusion</li>
-                  <li>Inability to wake or stay awake</li>
-                  <li>Bluish lips or face</li>
-                  
-                </ul>
-                *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.
-                <b>Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19.</b>
-                </Card.Body>
-              </Accordion.Collapse>
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="41">
+            When should I seek emergency care if I have COVID-19?</Accordion.Toggle>
+            
+            <Accordion.Collapse eventKey="41">
+              <Card.Body className="accordion-answer">
+              Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately</b> <br></br>
+              <ul>
+                <li>Trouble breathing</li>
+                <li>Persistent pain or pressure in the chest</li>
+                <li>New confusion</li>
+                <li>Inability to wake or stay awake</li>
+                <li>Bluish lips or face</li>
+                
+              </ul>
+              *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.
+              <b>Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19.</b>
+              </Card.Body>
+            </Accordion.Collapse>
 
-              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="42">
-              Is it possible to have the flu and COVID-19 at the same time?</Accordion.Toggle>
-              
-              <Accordion.Collapse eventKey="42">
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="42">
+            Is it possible to have the flu and COVID-19 at the same time?</Accordion.Toggle>
+            
+            <Accordion.Collapse eventKey="42">
                 <Card.Body className="accordion-answer">Yes. It is possible to test positive for flu (as well as other respiratory infections) and COVID-19 at the same time.</Card.Body>
               </Accordion.Collapse>
 
+              <a href="#Top">Return to Top</a>
 
             </Card>
 
           <Card><Card.Header>Testing</Card.Header>
             
-
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="43">
               Should I be tested for a current infection?</Accordion.Toggle>
               
@@ -1146,6 +1147,7 @@ function App() {
                 </Card.Body>
               </Accordion.Collapse>
 
+              <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1155,35 +1157,35 @@ function App() {
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="47">
               Who is at higher risk for serious illness from COVID-19?</Accordion.Toggle>
               
-              <Accordion.Collapse eventKey="47">
-                <Card.Body className="accordion-answer">
-                COVID-19 is a new disease and there is limited information regarding risk factors for severe disease. Based on currently available information and clinical expertise, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> and <b>people with underlying </b><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">medical conditions</a> are at higher risk for severe illness from COVID-19.
-                </Card.Body>
-              </Accordion.Collapse>
+            <Accordion.Collapse eventKey="47">
+              <Card.Body className="accordion-answer">
+              COVID-19 is a new disease and there is limited information regarding risk factors for severe disease. Based on currently available information and clinical expertise, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> and <b>people with underlying </b><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">medical conditions</a> are at higher risk for severe illness from COVID-19.
+              </Card.Body>
+            </Accordion.Collapse>
 
-              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="48">
-              What should people at higher risk of serious illness with COVID-19 do?</Accordion.Toggle>
-              
-              <Accordion.Collapse eventKey="48">
-                <Card.Body className="accordion-answer">
-                  If you are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-increased-risk.html">higher risk for severe illness</a> from COVID-19, you should: <br></br>
-                  <li>Limit your interactions with other people as much as possible.</li>
-                  <li>Take <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">precautions to prevent getting</a> COVID-19 when you do interact with others.</li>
-                  <li>If you decide to engage in public activities, continue to protect yourself by <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practicing everyday preventive actions</a>.</li>
-                  <li>Keep these items on hand and use them when venturing out: a mask, tissues, and a hand sanitizer with at least 60% alcohol, if possible.</li>
-                  <li>If possible, avoid others who are not wearing <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">masks</a> or ask others around you to wear masks</li>
-                  <li>Delay or cancel a visit if you or your visitors have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or have been exposed to someone with COVID-19 in the last 14 days.</li>
-                  <li>Anyone who has had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/public-health-recommendations.html">close contact</a> with a person with COVID-19 should <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">stay home and monitor for symptoms</a>.</li>
-                  <li><b>Continue your medicines</b> and do not change your treatment plan without talking to your healthcare provider.</li>
-                  <li><b>Have at least a 30-day supply</b> of prescription and non-prescription medicines.</li>
-                  <li><b>Do not delay getting emergency care for your underlying medical condition</b> because of COVID-19. Emergency departments have contingency infection prevention plans to protect you from getting COVID-19 if you need care.</li>
-                </Card.Body>
-              </Accordion.Collapse>
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="48">
+            What should people at higher risk of serious illness with COVID-19 do?</Accordion.Toggle>
+            
+            <Accordion.Collapse eventKey="48">
+              <Card.Body className="accordion-answer">
+                If you are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-increased-risk.html">higher risk for severe illness</a> from COVID-19, you should: <br></br>
+                <li>Limit your interactions with other people as much as possible.</li>
+                <li>Take <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">precautions to prevent getting</a> COVID-19 when you do interact with others.</li>
+                <li>If you decide to engage in public activities, continue to protect yourself by <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practicing everyday preventive actions</a>.</li>
+                <li>Keep these items on hand and use them when venturing out: a mask, tissues, and a hand sanitizer with at least 60% alcohol, if possible.</li>
+                <li>If possible, avoid others who are not wearing <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">masks</a> or ask others around you to wear masks</li>
+                <li>Delay or cancel a visit if you or your visitors have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or have been exposed to someone with COVID-19 in the last 14 days.</li>
+                <li>Anyone who has had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/public-health-recommendations.html">close contact</a> with a person with COVID-19 should <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">stay home and monitor for symptoms</a>.</li>
+                <li><b>Continue your medicines</b> and do not change your treatment plan without talking to your healthcare provider.</li>
+                <li><b>Have at least a 30-day supply</b> of prescription and non-prescription medicines.</li>
+                <li><b>Do not delay getting emergency care for your underlying medical condition</b> because of COVID-19. Emergency departments have contingency infection prevention plans to protect you from getting COVID-19 if you need care.</li>
+              </Card.Body>
+            </Accordion.Collapse>
 
-              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="49">
-              Are people with disabilities at higher risk?</Accordion.Toggle>
-              
-              <Accordion.Collapse eventKey="49">
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="49">
+            Are people with disabilities at higher risk?</Accordion.Toggle>
+            
+            <Accordion.Collapse eventKey="49">
                 <Card.Body className="accordion-answer">Most people with disabilities are not inherently at higher risk for becoming infected with or having severe illness from COVID-19.  Some people with physical limitations or other disabilities might be at a higher risk of infection because of their underlying medical condition.<br></br>
                 <ul>
                   <li>People with certain disabilities might experience higher rates of chronic health conditions that put them at higher risk of serious illness and poorer outcomes from COVID-19. Adults with disabilities are three times more likely to have heart disease, stroke, diabetes, or cancer than adults without disabilities.</li>
@@ -1192,6 +1194,7 @@ function App() {
                 </Card.Body>
               </Accordion.Collapse>
 
+              <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1318,7 +1321,6 @@ function App() {
                   </Card.Body>
                 </Accordion.Collapse>
 
-
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="57">
                 I was around someone who has COVID-19, and my COVID-19 test came back negative. Do I still need to quarantine for 14 days after I was last exposed?</Accordion.Toggle>
                 
@@ -1381,8 +1383,7 @@ function App() {
                   </Card.Body>
                 </Accordion.Collapse>
 
-
-
+                <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1447,6 +1448,7 @@ function App() {
                   </Card.Body>
                 </Accordion.Collapse>
 
+                <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1538,6 +1540,7 @@ function App() {
                   <Card.Body className="accordion-answer">CDC does not recommend disinfection of sidewalks or roads. Spraying disinfectant on sidewalks and roads is not an efficient use of disinfectant supplies and has not been proven to reduce the risk of COVID-19 to the public. The risk of spreading the virus that causes COVID-19 from these surfaces is very low and disinfection is not effective on these surfaces.</Card.Body>
                 </Accordion.Collapse>
 
+                <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1664,7 +1667,6 @@ function App() {
                   See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a> and recommendations for how to help keep your pet safe.
                   </Card.Body>
                 </Accordion.Collapse>
-
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="87">
                 What should I do if my pet gets sick and I think it's COVID-19?
@@ -1864,7 +1866,7 @@ function App() {
                   </Card.Body>
                 </Accordion.Collapse>
 
-
+                <a href="#Top">Return to Top</a>
 
             </Card>
 
@@ -1963,11 +1965,6 @@ Empowering businesses, schools, and community organizations to take recommended 
                 </Accordion.Collapse>
 
                 <a href="#Top">Return to Top</a>
-              {/* <div id="Top">
-                <p>Return to Top</p>
-              </div> */}
-
-
             </Card>
 
 
