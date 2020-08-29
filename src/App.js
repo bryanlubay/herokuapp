@@ -461,7 +461,7 @@ function App() {
       </Alert>
 
       <Alert className="alerts" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
-        <Alert.Heading>Frequently Asked Questions</Alert.Heading>
+        <Alert.Heading className="alert-headings">Frequently Asked Questions</Alert.Heading>
         <p>
 
         <Table>
