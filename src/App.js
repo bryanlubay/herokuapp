@@ -1,7 +1,7 @@
 // heroku git:remote -a bryanlubay
 
 import React, { useEffect, useState } from 'react';
-import {Card, Form, Button, Alert, Accordion} from 'react-bootstrap';
+import {Card, Form, Button, Alert, Accordion, Table} from 'react-bootstrap';
 
 
 
