@@ -516,7 +516,7 @@ function App() {
 
         <Accordion>
 
-          <Card><a id="Basics"><Card.Header>Basics</Card.Header></a>
+          <Card><a id="Basics"><Card.Header className="alert-subjects">Basics</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
               What is a novel coronavirus?
