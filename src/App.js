@@ -493,7 +493,7 @@ function App() {
               <a href="#Funerals"><td className="tdright" >Funerals</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdleft" >If You or Someone You Know is Sick<br></br> or Had Contact with Someone who Has COVID-19</td></a>
+              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdleft" >If You or Someone You Know is Sick or Had<br></br> Contact with Someone who Has COVID-19</td></a>
               <a href="#Pets-and-Animals"><td className="tdright" >Pets and Animals</td></a>
               </tr>
             <tr className="table-row">
