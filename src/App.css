@@ -123,11 +123,11 @@
   align-self: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  position: absolute;
+  position: left;
 }
 
 .tdright {
-  position: absolute;
+  position: right;
   border: 1px solid black;
   align-self: flex-end;
   align-content: flex-end;
