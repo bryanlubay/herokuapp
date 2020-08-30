@@ -267,6 +267,8 @@ function show_prevent () {
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
+  document.getElementById("ifshow_if_you_are_sick").hidden = true
+
 }
 
 function hide_prevent () {
@@ -277,6 +279,7 @@ function show_frequently_asked_questions () {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = false
   document.getElementById("masks").hidden = true
+  document.getElementById("ifshow_if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
 }
 
@@ -288,6 +291,7 @@ function show_masks () {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = false
+  document.getElementById("ifshow_if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
 }
 
@@ -299,6 +303,7 @@ function show_if_you_are_sick () {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
+  document.getElementById("symptoms").hidden = true
   document.getElementById("ifshow_if_you_are_sick").hidden = false
 }
 
