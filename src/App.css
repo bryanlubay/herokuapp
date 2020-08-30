@@ -123,6 +123,10 @@
   float: left;
 }
 
+.tdcenter {
+  border: 1px solid black;
+}
+
 .tdright {
   float: right;
 }

@@ -482,12 +482,12 @@ function App() {
           <tbody>
             <tr className="table-row">
               <a href="#Basics"><td className="tdleft" >Basics</td></a>
-              <a href="#People-at-Higher-Risk-for-Severe-Illness"><td >People at Higher Risk<br></br>  for Severe Illness</td></a>
+              <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk<br></br>  for Severe Illness</td></a>
               <a href="#Spread"><td className="tdleft" >Spread</td></a>
             </tr>
             <tr className="table-row">
               <a href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
-              <a href="#Prevention"><td >Prevention</td></a>
+              <a href="#Prevention"><td className="tdcenter">Prevention</td></a>
               <a href="#Funerals"><td className="tdright" >Funerals</td></a>
 
             </tr>
@@ -495,20 +495,20 @@ function App() {
             </tr> */}
             <tr className="table-row">
               <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdleft" >If You or Someone You Know<br></br>  is Sick or Had Contact <br></br> with Someone who Has COVID-19</td></a>
-              <a href="#Pets-and-Animals"><td  >Pets and Animals</td></a>
+              <a href="#Pets-and-Animals"><td  className="tdcenter">Pets and Animals</td></a>
               <a href="#Cleaning-and-Disinfection"><td className="tdleft" >Cleaning and Disinfection</td></a>
 
               </tr>
             <tr className="table-row">
               <a href="#Children"><td className="tdright" >Children</td></a>
-              <a href="#Symptoms-and-Emergency-Warning-Signs"><td  >Symptoms and Emergency Warning Signs</td></a>
+              <a href="#Symptoms-and-Emergency-Warning-Signs"><td  className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
               <a href="#Water"><td className="tdright" >Water</td></a>
             </tr>
             {/* <tr className="table-row">
             </tr> */}
             <tr className="table-row">
               <a href="#Preparing-for-an-Outbreak"><td className="tdleft" >Preparing for an Outbreak</td></a>
-              <a href="#Community-Mitigation"><td  >Community Mitigation</td></a>
+              <a href="#Community-Mitigation"><td  className="tdcenter">Community Mitigation</td></a>
               <a href="#Testing"><td className="tdright">Testing</td></a>
 
             {/* </tr>
