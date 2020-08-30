@@ -267,7 +267,7 @@ function show_prevent() {
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
-  document.getElementById("if_show_if_you_are_sick").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
 
 }
 
@@ -279,7 +279,7 @@ function show_frequently_asked_questions() {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = false
   document.getElementById("masks").hidden = true
-  document.getElementById("if_show_if_you_are_sick").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
 }
 
@@ -291,7 +291,7 @@ function show_masks() {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = false
-  document.getElementById("if_show_if_you_are_sick").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
 }
 
@@ -304,18 +304,18 @@ function show_if_you_are_sick() {
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
-  document.getElementById("if_show_if_you_are_sick").hidden = false
+  document.getElementById("if_you_are_sick").hidden = false
 }
 
 function hide_if_you_are_sick() {
-  document.getElementById("if_show_if_you_are_sick").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
 }
 
 function show_symptoms () {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
-  document.getElementById("if_show_if_you_are_sick").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = false
 }
 
