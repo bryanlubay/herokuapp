@@ -106,24 +106,25 @@
 
 .table {
   border: 1px solid black;
-  column-width: auto;
+  column-width: inherit;
   column-span: inherit;
   
 }
 
 .tbody {
-  column-width: auto;
+  column-width: inherit;
   column-span: inherit;
 }
 
 .td {
   border: 1px solid black;
-  column-width: auto;
+  column-width: inherit;
   column-span: inherit;
 
 }
 
 .table-row {
   border: 1px solid black;
+  column-width: inherit;
   column-span: inherit;
 }
