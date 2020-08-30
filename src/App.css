@@ -118,8 +118,7 @@
 
 .td {
   border: 1px solid black;
-  column-width: inherit;
-  column-span: inherit;
+  width: auto;
 
 }
 
