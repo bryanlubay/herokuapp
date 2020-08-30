@@ -1993,20 +1993,26 @@ Empowering businesses, schools, and community organizations to take recommended 
         </p>
       </Alert>
 
-      <Alert className="alerts" id="masks" variant="warning" onClose={() => hide_masks()} dismissible hidden="true">
-        <Alert.Heading>Masks</Alert.Heading>
+      <Alert className="alerts" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
+        <Alert.Heading className="alert-headings">Masks</Alert.Heading>
         <p>
          Masks stuff go here :)
         </p>
       </Alert>
 
-      <Alert className="alerts" id="symptoms" variant="danger" onClose={() => hide_symptoms()} dismissible hidden="true">
+      <Alert className="alerts" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
         <Alert.Heading>prevent</Alert.Heading>
         <p>
          Symptoms go here :)
         </p>
       </Alert>
 
+      <Alert className="alerts" id="if_you_are_sick" variant="danger" onClose={() => hide_symptoms()} dismissible hidden="true">
+        <Alert.Heading>If You Are Sick</Alert.Heading>
+        <p>
+         If you are sick :(
+        </p>
+      </Alert>
 
       </div>
       <p>Sources: 
