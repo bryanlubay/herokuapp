@@ -478,15 +478,16 @@ function App() {
       </Table> */}
 
         <Table className="table">
-          <a id="Top"><thead className="alert-headings">On This Page</thead></a><br></br>
+          <a id="Top"><thead className="alert-headings">On This Page</thead></a><br></br><br></br>
           <tbody>
             <tr className="table-row">
               <a href="#Basics"><td className="tdleft" >Basics</td></a>
               <a href="#Spread"><td className="tdright" >Spread</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Contact-Tracing"><td className="tdleft" >Contact Tracing</td></a>
               <a href="#Funerals"><td className="tdright" >Funerals</td></a>
+              <a href="#Water"><td className="tdleft" >Water</td></a>
+
 
             </tr>
             <tr className="table-row">
@@ -501,8 +502,9 @@ function App() {
               </tr>
             <tr className="table-row">
             <a href="#Community-Mitigation"><td className="tdleft">Community Mitigation</td></a>
+            <a href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
 
-              <a href="#Water"><td className="tdright" >Water</td></a>
+
             </tr>
 
             <tr className="table-row">
