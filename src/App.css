@@ -120,14 +120,8 @@
 
 .td {
   border: black;
-  border-collapse: collapse;
-
 }
 
 .table-row {
   border: 1px solid black;
-  text-align: left;
-  border-collapse: collapse;
-
-
 }
