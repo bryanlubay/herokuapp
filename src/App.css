@@ -105,17 +105,13 @@
 }
 
 .table {
-  columns: 2;
-  column-count: 2;
   border: 1px solid black;
-  border-collapse: collapse;
+  column-width: auto;
 }
 
 .tbody {
-  columns: 2;
-  column-count: 2;
+  column-width: auto;
   border-collapse: collapse;
-
 }
 
 .td {

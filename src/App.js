@@ -538,7 +538,7 @@ function App() {
 
           </Card>
 
-          <Card><a id="Spread"><Card.Header>Spread</Card.Header></a>
+          <Card><a id="Spread"><Card.Header className="alert-subjects">Spread</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="3">
               How does the virus spread?
@@ -589,7 +589,7 @@ function App() {
 
           </Card>
 
-          <Card><a id="Prevention"><Card.Header>Prevention</Card.Header></a>
+          <Card><a id="Prevention"><Card.Header className="alert-subjects">Prevention</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="8">
               How can I protect myself?
@@ -714,7 +714,7 @@ function App() {
 
           </Card>
 
-          <Card><a id="If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><Card.Header>If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</Card.Header></a>
+          <Card><a id="If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><Card.Header className="alert-subjects">If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</Card.Header></a>
             
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="17">
               What should I do if I get sick or someone in my house gets sick?</Accordion.Toggle>
@@ -760,7 +760,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Children"><Card.Header>Children</Card.Header></a>
+          <Card><a id="Children"><Card.Header className="alert-subjects">Children</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="19">
               What is the risk of my child becoming sick with COVID-19?</Accordion.Toggle>
@@ -1018,7 +1018,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Preparing-for-an-Outbreak"><Card.Header>Preparing for an Outbreak</Card.Header></a>
+          <Card><a id="Preparing-for-an-Outbreak"><Card.Header className="alert-subjects">Preparing for an Outbreak</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="37">
             How can I prepare for an outbreak in my area?</Accordion.Toggle>
@@ -1066,7 +1066,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Symptoms-and-Emergency-Warning-Signs"><Card.Header>Symptoms and Emergency Warning Signs</Card.Header></a>
+          <Card><a id="Symptoms-and-Emergency-Warning-Signs"><Card.Header className="alert-subjects">Symptoms and Emergency Warning Signs</Card.Header></a>
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="40">
               What are the symptoms and complications that cause COVID-19 can cause?</Accordion.Toggle>
@@ -1107,7 +1107,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Testing"><Card.Header>Testing</Card.Header></a>
+          <Card><a id="Testing"><Card.Header className="alert-subjects">Testing</Card.Header></a>
 
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="43">
@@ -1163,7 +1163,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="People-at-Higher-Risk-for-Severe-Illness"><Card.Header>People at Higher Risk for Severe Illness</Card.Header></a>
+          <Card><a id="People-at-Higher-Risk-for-Severe-Illness"><Card.Header className="alert-subjects">People at Higher Risk for Severe Illness</Card.Header></a>
             
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="47">
@@ -1210,7 +1210,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Contact-Tracing"><Card.Header>Contact Tracing</Card.Header></a>
+          <Card><a id="Contact-Tracing"><Card.Header className="alert-subjects">Contact Tracing</Card.Header></a>
             
               <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="50">
                 What is contact tracing?</Accordion.Toggle>
@@ -1399,7 +1399,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Funerals"><Card.Header>Funerals</Card.Header></a>
+          <Card><a id="Funerals"><Card.Header className="alert-subjects">Funerals</Card.Header></a>
             
 
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="63">
@@ -1464,7 +1464,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Cleaning-and-Disinfection"><Card.Header>Cleaning and Disinfection</Card.Header></a>
+          <Card><a id="Cleaning-and-Disinfection"><Card.Header className="alert-subjects">Cleaning and Disinfection</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="68">
                 What is the difference between cleaning and disinfecting?</Accordion.Toggle>
@@ -1556,7 +1556,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Pets-and-Animals"><Card.Header>Pets and Animals</Card.Header></a>
+          <Card><a id="Pets-and-Animals"><Card.Header className="alert-subjects">Pets and Animals</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="78">
                 Can I get COVID-19 from my pets or other animals?</Accordion.Toggle>
@@ -1882,7 +1882,7 @@ function App() {
 
             </Card>
 
-          <Card><a id="Community-Mitigation"><Card.Header>Community Mitigation</Card.Header></a>
+          <Card><a id="Community-Mitigation"><Card.Header className="alert-subjects">Community Mitigation</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="98">
                 What is community mitigation?</Accordion.Toggle>
@@ -1927,7 +1927,7 @@ Empowering businesses, schools, and community organizations to take recommended 
 
             </Card>
 
-          <Card><a id="Water"><Card.Header>Water</Card.Header></a>
+          <Card><a id="Water"><Card.Header className="alert-subjects">Water</Card.Header></a>
             
             <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="101">
                 Can the virus that causes COVID-19 spread through treated drinking water?</Accordion.Toggle>
