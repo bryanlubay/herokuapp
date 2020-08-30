@@ -480,7 +480,7 @@ function App() {
         <Table className="table">
           <a id="Top"><thead className="alert-headings">On This Page</thead></a><br></br>
           <tbody>
-            <tr className="table-row">
+            <tr >
             <a href="#Water"><td className="tdleft" >Water</td></a>
 
               <a href="#Testing"><td className="tdright">Testing</td></a>
