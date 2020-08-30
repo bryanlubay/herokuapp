@@ -123,7 +123,7 @@
   align-self: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  position: left;
+  position: absolute;
 }
 
 .tdright {
