@@ -490,23 +490,24 @@ function App() {
 
             </tr>
             <tr className="table-row">
-            <a href="#Community-Mitigation"><td className="tdleft">Community Mitigation</td></a>
+            <a href="#Children"><td className="tdleft" >Children</td></a>
             <a href="#Prevention"><td className="tdright">Prevention</td></a>
 
             </tr>
             <tr className="table-row">
               <a href="#Pets-and-Animals"><td  className="tdleft">Pets and Animals</td></a>
-              <a href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
+              <a href="#Testing"><td className="tdright">Testing</td></a>
 
               </tr>
             <tr className="table-row">
-              <a href="#Children"><td className="tdleft" >Children</td></a>
+            <a href="#Community-Mitigation"><td className="tdleft">Community Mitigation</td></a>
+
               <a href="#Water"><td className="tdright" >Water</td></a>
             </tr>
 
             <tr className="table-row">
               <a href="#Preparing-for-an-Outbreak"><td className="tdleft" >Preparing for an Outbreak</td></a>
-              <a href="#Testing"><td className="tdright">Testing</td></a>
+              <a href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
 
             </tr>
             <tr className="table-row">
@@ -514,11 +515,11 @@ function App() {
             </tr>
 
             <tr className="table-row">
-            <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
+            <a href="#Symptoms-and-Emergency-Warning-Signs"><td  className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
             </tr>
 
             <tr className="table-row">
-            <a href="#Symptoms-and-Emergency-Warning-Signs"><td  className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
+            <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
 
             </tr>
           </tbody>
