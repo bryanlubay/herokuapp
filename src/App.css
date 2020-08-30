@@ -120,12 +120,12 @@
 
 .td {
   border: 1px solid black;
-  width: max-content;
+  width: 100px;
   padding: 10px;
 }
 
 .table-row {
   border: 1px solid black;
-  width: auto;
+  width: 100px;
   padding: 10px;
 }
