@@ -478,7 +478,7 @@ function App() {
       </Table> */}
 
         <Table className="table">
-          <a id="Top"><thead className="alert-headings">On This Page</thead></a><br></br>
+          <a id="Top"><thead >On This Page</thead></a><br></br>
           <tbody>
             <tr >
             <a href="#Water"><td className="tdleft" >Water</td></a>
