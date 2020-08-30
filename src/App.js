@@ -483,27 +483,32 @@ function App() {
             <tr className="table-row">
               <a href="#Basics"><td className="td" >Basics</td></a>
               <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="td" >People at Higher Risk for Severe Illness</td></a>
-              <a href="#Spread"><td className="td" >Spread</td></a>
             </tr>
             <tr className="table-row">
+              <a href="#Spread"><td className="td" >Spread</td></a>
               <a href="#Contact-Tracing"><td className="td" >Contact Tracing</td></a>
+            </tr>
+            <tr className="table-row">
               <a href="#Prevention"><td className="td" >Prevention</td></a>
               <a href="#Funerals"><td className="td" >Funerals</td></a>
-
             </tr>
             <tr className="table-row">
               <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="td" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td></a>
+              <a href="#Pets-and-Animals"><td className="td" >Pets and Animals</td></a>
+              </tr>
+            <tr className="table-row">
               <a href="#Cleaning-and-Disinfection"><td className="td" >Cleaning and Disinfection</td></a>
               <a href="#Children"><td className="td" >Children</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Pets-and-Animals"><td className="td" >Pets and Animals</td></a>
+              <a href="#Symptoms-and-Emergency-Warning-Signs"><td className="td" >Symptoms and Emergency Warning Signs</td></a>
+              <a href="#Water"><td className="td" >Water</td></a>              
+            </tr>
+            <tr className="table-row">
               <a href="#Preparing-for-an-Outbreak"><td className="td" >Preparing for an Outbreak</td></a>
               <a href="#Community-Mitigation"><td className="td" >Community Mitigation</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Symptoms-and-Emergency-Warning-Signs"><td className="td" >Symptoms and Emergency Warning Signs</td></a>
-              <a href="#Water"><td className="td" >Water</td></a>
               <a href="#Testing"><td className="td">Testing</td></a>
             </tr>
           </tbody>
