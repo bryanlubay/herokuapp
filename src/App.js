@@ -478,21 +478,23 @@ function App() {
       </Table> */}
 
         <Table className="table">
-          <a id="Top"><thead className="alert-headings">On This Page</thead></a><br></br><br></br>
+          <br></br><a id="Top"><thead className="alert-headings">On This Page</thead></a><br></br><br></br>
           <tbody>
             <tr className="table-row">
-              <a href="#Basics"><td className="tdleft" >Basics</td></a>
-              <a href="#Spread"><td className="tdright" >Spread</td></a>
+            <a href="#Water"><td className="tdleft" >Water</td></a>
+
+              <a href="#Testing"><td className="tdright">Testing</td></a>
             </tr>
             <tr className="table-row">
+            <a href="#Basics"><td className="tdleft" >Basics</td></a>
+
               <a href="#Funerals"><td className="tdright" >Funerals</td></a>
-              <a href="#Water"><td className="tdleft" >Water</td></a>
 
 
             </tr>
             <tr className="table-row">
             <a href="#Children"><td className="tdleft" >Children</td></a>
-            <a href="#Testing"><td className="tdright">Testing</td></a>
+            <a href="#Spread"><td className="tdright" >Spread</td></a>
 
             </tr>
             <tr className="table-row">
