@@ -509,7 +509,7 @@ function App() {
               <a href="#Community-Mitigation"><td className="tdright" >Community Mitigation</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Testing"><td className="tdleft">Testing</td></a>
+              <a href="#Testing"><td>Testing</td></a>
             </tr>
           </tbody>
         </Table>
