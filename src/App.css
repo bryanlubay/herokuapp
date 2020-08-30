@@ -107,18 +107,24 @@
 .table {
   border: 1px solid black;
   column-width: auto;
+  column-span: all;
 }
 
 .tbody {
   column-width: auto;
+  column-span: all;
   border-collapse: collapse;
 }
 
 .td {
   border: 1px solid black;
   column-width: auto;
+  column-span: all;
+
 }
 
 .table-row {
   border: 1px solid black;
+  column-span: all;
+
 }
