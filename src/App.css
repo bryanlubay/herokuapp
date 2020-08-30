@@ -119,7 +119,7 @@
 }
 
 .td {
-  border: black;
+  border: 1px solid black;
   column-rule-color: black;
 }
 
