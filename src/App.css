@@ -107,24 +107,23 @@
 .table {
   border: 1px solid black;
   column-width: auto;
-  column-span: all;
+  column-span: inherit;
+  
 }
 
 .tbody {
   column-width: auto;
-  column-span: all;
-  border-collapse: collapse;
+  column-span: inherit;
 }
 
 .td {
   border: 1px solid black;
   column-width: auto;
-  column-span: all;
+  column-span: inherit;
 
 }
 
 .table-row {
   border: 1px solid black;
-  column-span: all;
-
+  column-span: inherit;
 }
