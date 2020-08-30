@@ -483,10 +483,10 @@ function App() {
             <tr className="table-row">
               <a href="#Basics"><td className="tdleft" >Basics</td></a>
               <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk<br></br>  for Severe Illness</td></a>
-              <a href="#Spread"><td className="tdleft" >Spread</td></a>
+              <a href="#Spread"><td className="tdright" >Spread</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
+              <a href="#Contact-Tracing"><td className="tdleft" >Contact Tracing</td></a>
               <a href="#Prevention"><td className="tdcenter">Prevention</td></a>
               <a href="#Funerals"><td className="tdright" >Funerals</td></a>
 
@@ -496,11 +496,11 @@ function App() {
             <tr className="table-row">
               <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdleft" >If You or Someone You Know<br></br>  is Sick or Had Contact <br></br> with Someone who Has COVID-19</td></a>
               <a href="#Pets-and-Animals"><td  className="tdcenter">Pets and Animals</td></a>
-              <a href="#Cleaning-and-Disinfection"><td className="tdleft" >Cleaning and Disinfection</td></a>
+              <a href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
 
               </tr>
             <tr className="table-row">
-              <a href="#Children"><td className="tdright" >Children</td></a>
+              <a href="#Children"><td className="tdleft" >Children</td></a>
               <a href="#Symptoms-and-Emergency-Warning-Signs"><td  className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
               <a href="#Water"><td className="tdright" >Water</td></a>
             </tr>
