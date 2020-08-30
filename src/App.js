@@ -295,17 +295,27 @@ function hide_masks () {
   document.getElementById("masks").hidden = true
 }
 
-function show_symptoms () {
+function show_if_you_are_sick () {
   document.getElementById("prevent").hidden = true
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
-  document.getElementById("symptoms").hidden = false
+  document.getElementById("ifshow_if_you_are_sick").hidden = false
 }
 
-function hide_symptoms () {
-  document.getElementById("symptoms").hidden = true
+function hide_if_you_are_sick () {
+  document.getElementById("ifshow_if_you_are_sick").hidden = true
 }
 
+// function show_symptoms () {
+//   document.getElementById("prevent").hidden = true
+//   document.getElementById("frequently_asked_questions").hidden = true
+//   document.getElementById("masks").hidden = true
+//   document.getElementById("symptoms").hidden = false
+// }
+
+// function hide_symptoms () {
+//   document.getElementById("symptoms").hidden = true
+// }
 
 function App() {
 
@@ -350,8 +360,9 @@ function App() {
       <div>
       <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick </Button>
       <Button className="info-buttons" variant="primary" onClick={() => show_frequently_asked_questions()}>Frequently Asked Questions</Button>
-      <Button className="info-buttons" variant="warning" onClick={() => show_masks()}>Masks</Button>
-      <Button className="info-buttons" variant="danger" onClick={() => show_symptoms()}>Symptoms</Button>
+      <Button className="info-buttons" variant="secondary" onClick={() => show_masks()}>Masks</Button>
+      <Button className="info-buttons" variant="warning" onClick={() => show_symptoms()}>Symptoms</Button>
+      <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
 
       <Alert className="alerts" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
         <Alert.Heading className="alert-headings">Prevent Getting Sick</Alert.Heading>
@@ -2007,7 +2018,7 @@ Empowering businesses, schools, and community organizations to take recommended 
         </p>
       </Alert>
 
-      <Alert className="alerts" id="if_you_are_sick" variant="danger" onClose={() => hide_symptoms()} dismissible hidden="true">
+      <Alert className="alerts" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
         <Alert.Heading>If You Are Sick</Alert.Heading>
         <p>
          If you are sick :(
