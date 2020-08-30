@@ -120,12 +120,11 @@
 
 .td {
   border: 1px solid black;
-
+  width: 50px;
   padding: 10px;
 }
 
 .table-row {
   border: 1px solid black;
-  width: 100px;
   padding: 10px;
 }
