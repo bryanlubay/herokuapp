@@ -481,35 +481,35 @@ function App() {
           <a id="Top"><thead className="alert-headings">On This Page</thead></a>
           <tbody>
             <tr className="table-row">
-              <a href="#Basics"><td className="td" >Basics</td></a>
-              <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="td" >People at Higher Risk for Severe Illness</td></a>
+              <a href="#Basics"><td className="tdleft" >Basics</td></a>
+              <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdright" >People at Higher Risk for Severe Illness</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Spread"><td className="td" >Spread</td></a>
-              <a href="#Contact-Tracing"><td className="td" >Contact Tracing</td></a>
+              <a href="#Spread"><td className="tdleft" >Spread</td></a>
+              <a href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Prevention"><td className="td" >Prevention</td></a>
-              <a href="#Funerals"><td className="td" >Funerals</td></a>
+              <a href="#Prevention"><td className="tdleft" >Prevention</td></a>
+              <a href="#Funerals"><td className="tdright" >Funerals</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="td" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td></a>
-              <a href="#Pets-and-Animals"><td className="td" >Pets and Animals</td></a>
+              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdleft" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19</td></a>
+              <a href="#Pets-and-Animals"><td className="tdright" >Pets and Animals</td></a>
               </tr>
             <tr className="table-row">
-              <a href="#Cleaning-and-Disinfection"><td className="td" >Cleaning and Disinfection</td></a>
-              <a href="#Children"><td className="td" >Children</td></a>
+              <a href="#Cleaning-and-Disinfection"><td className="tdleft" >Cleaning and Disinfection</td></a>
+              <a href="#Children"><td className="tdright" >Children</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Symptoms-and-Emergency-Warning-Signs"><td className="td" >Symptoms and Emergency Warning Signs</td></a>
-              <a href="#Water"><td className="td" >Water</td></a>              
+              <a href="#Symptoms-and-Emergency-Warning-Signs"><td className="tdleft" >Symptoms and Emergency Warning Signs</td></a>
+              <a href="#Water"><td className="tdright" >Water</td></a>              
             </tr>
             <tr className="table-row">
-              <a href="#Preparing-for-an-Outbreak"><td className="td" >Preparing for an Outbreak</td></a>
-              <a href="#Community-Mitigation"><td className="td" >Community Mitigation</td></a>
+              <a href="#Preparing-for-an-Outbreak"><td className="tdleft" >Preparing for an Outbreak</td></a>
+              <a href="#Community-Mitigation"><td className="tdright" >Community Mitigation</td></a>
             </tr>
             <tr className="table-row">
-              <a href="#Testing"><td className="td">Testing</td></a>
+              <a href="#Testing"><td className="tdleft">Testing</td></a>
             </tr>
           </tbody>
         </Table>
