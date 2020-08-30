@@ -119,19 +119,11 @@
 }
 
 .tdleft {
-  border: 1px solid black;
-  align-self: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
   float: left;
 }
 
 .tdright {
   float: right;
-  border: 1px solid black;
-  align-self: flex-end;
-  align-content: flex-end;
-  align-items: flex-end;
 }
 
 .table-row {
