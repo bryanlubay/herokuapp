@@ -120,6 +120,7 @@
 
 .td {
   border: black;
+  column-rule-color: black;
 }
 
 .table-row {
