@@ -494,9 +494,9 @@ function App() {
             {/* <tr className="table-row">
             </tr> */}
             <tr className="table-row">
-              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdleft" >If You or Someone You Know <br></br>is Sick or Had Contact with <br></br>Someone who Has COVID-19  </td></a>
+              <a href="#Pets-and-Animals"><td  className="tdleft">Pets and Animals</td></a>
+              <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdcenter" >If You or Someone You Know <br></br>is Sick or Had Contact with <br></br>Someone who Has COVID-19  </td></a>
               {/*  */}
-              <a href="#Pets-and-Animals"><td  className="tdcenter">Pets and Animals</td></a>
               <a href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
 
               </tr>
