@@ -121,13 +121,17 @@
 .td {
   border: 1px solid black;
   padding-left: 5px;
-  
+  margin: auto;
   /* column-width: 10px;
   column-span: 10px;
   column-gap: 10px; */
 
   /* padding-right: 5px; */
   /* padding: 10px; */
+}
+
+.tdright {
+  
 }
 
 .table-row {
