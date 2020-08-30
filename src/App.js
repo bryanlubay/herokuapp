@@ -483,11 +483,11 @@ function App() {
             <tr >
             <a href="#Water"><td className="tdleft" >Water</td></a>
 
-              <a href="#Testing"><td className="tdright">Testing</td></a>
+            <a href="#Spread"><td className="tdright" >Spread</td></a>
             </tr>
             <tr className="table-row">
             <a href="#Basics"><td className="tdleft" >Basics</td></a>
-            <a href="#Spread"><td className="tdright" >Spread</td></a>
+            <a href="#Testing"><td className="tdright">Testing</td></a>
 
 
 
