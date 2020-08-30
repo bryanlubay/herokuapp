@@ -492,12 +492,13 @@ function App() {
             </tr>
             <tr className="table-row">
             <a href="#Children"><td className="tdleft" >Children</td></a>
-            <a href="#Prevention"><td className="tdright">Prevention</td></a>
+            <a href="#Testing"><td className="tdright">Testing</td></a>
 
             </tr>
             <tr className="table-row">
               <a href="#Pets-and-Animals"><td  className="tdleft">Pets and Animals</td></a>
-              <a href="#Testing"><td className="tdright">Testing</td></a>
+              <a href="#Prevention"><td className="tdright">Prevention</td></a>
+
 
               </tr>
             <tr className="table-row">
@@ -513,7 +514,8 @@ function App() {
 
             </tr>
             <tr className="table-row">
-            <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdcenter" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19 </td></a>
+            <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
+
             </tr>
 
             <tr className="table-row">
@@ -521,7 +523,7 @@ function App() {
             </tr>
 
             <tr className="table-row">
-            <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
+            <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdcenter" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19 </td></a>
 
             </tr>
           </tbody>
