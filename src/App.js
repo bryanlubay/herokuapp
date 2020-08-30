@@ -518,7 +518,7 @@ function App() {
             </tr>
 
             <tr className="table-row">
-            <a href="#Symptoms-and-Emergency-Warning-Signs"><td  className="tdright">Symptoms and Emergency Warning Signs</td></a>
+            <a href="#Symptoms-and-Emergency-Warning-Signs"><td  className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
 
             </tr>
           </tbody>
