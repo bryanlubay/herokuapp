@@ -464,18 +464,6 @@ function App() {
         <Alert.Heading className="alert-headings">Frequently Asked Questions</Alert.Heading>
         <p>
 
-      {/* <Table>
-        <tbody>
-          <tr>table row
-            <td>table data</td>
-            <td>table data 2</td>
-          </tr>
-        </tbody>
-        <tr>table row 2
-          <td>td 3</td>
-          <td>td 4</td>
-        </tr>
-      </Table> */}
 
         <Table className="table">
           <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br>
