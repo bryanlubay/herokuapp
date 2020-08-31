@@ -1,7 +1,7 @@
 // heroku git:remote -a bryanlubay
 
 import React, { useEffect, useState } from 'react';
-import { Card, Form, Button, Alert, Accordion, Table } from 'react-bootstrap';
+import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { HashLink as Link } from 'react-router-hash-link';
 
