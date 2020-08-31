@@ -2016,12 +2016,13 @@ function App() {
             <p>
             <b className="alert-subjects">Overview</b><br></br>
             <ul>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
               <li className="alerts-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
               <li className="alerts-li">Wear the mask over your nose and mouth and secure it under your chin</li>
               <li className="alerts-li">Masks should be worn by people two years and older</li>
               <li className="alerts-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
               <li className="alerts-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </ul>
             <b className="alert-subjects">How to Select</b><br></br>
             <p className="masks-p">When selecting a mask, there are many choices. Here are some do’s and don’ts</p>
@@ -2034,7 +2035,13 @@ function App() {
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image>
 
             </div>
-            
+            <b className="alert-subjects">How to Wear</b><br></br>
+            <p className="masks-p">Wear a mask correctly and consistently for the best protection.<br></br>
+            <ul>
+              <li className="alerts-li">Be sure to wash your hands before putting on a mask</li>
+              <li className="alerts-li">Do <b>NOT</b> touch the mask when wearing it</li>
+            </ul>
+            </p>
         </p>
           </Alert>
 
