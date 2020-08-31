@@ -2021,7 +2021,7 @@ function App() {
               <li className="alerts-li">Wear the mask over your nose and mouth and secure it under your chin</li>
               <li className="alerts-li">Masks should be worn by people two years and older</li>
               <li className="alerts-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
-              <li className="alerts-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li>
+              <li className="alerts-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </ul>
             <b className="alert-subjects">How to Select</b><br></br>
@@ -2031,7 +2031,7 @@ function App() {
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-NOT-choose-masks-medium.jpg"></Image>
               <br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image><br></br>
+              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image>
 
             </div>
