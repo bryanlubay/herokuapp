@@ -2016,13 +2016,13 @@ function App() {
             <p>
             <b className="alert-subjects">Overview</b><br></br>
             <ul>
-              <li>Wear masks with two or more layers to stop the spread of COVID-19</li>
-              <li>Wear the mask over your nose and mouth and secure it under your chin</li>
-              <li>Masks should be worn by people two years and older</li>
-              <li>Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
-              <li>Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li>
+              <li className="alerts-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
+              <li className="alerts-li">Wear the mask over your nose and mouth and secure it under your chin</li>
+              <li className="alerts-li">Masks should be worn by people two years and older</li>
+              <li className="alerts-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
+              <li className="alerts-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li>
             </ul>
-              How to Select
+            <b className="alert-subjects">How to Select</b><br></br>
         </p>
           </Alert>
 
