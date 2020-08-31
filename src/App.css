@@ -53,7 +53,7 @@
   align-self: start;
   align-content: inherit;
   margin-left: 10px;
- 
+  margin-top: auto;
 }
 
 .card {
@@ -88,6 +88,10 @@
 .alerts-nested-li {
   text-align: left;
   font-size : medium
+}
+
+.masks-p {
+  font-size: large;
 }
 
 .accordion-header{
