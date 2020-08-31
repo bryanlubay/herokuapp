@@ -364,6 +364,7 @@ function App() {
         </Card>
 
         <div>
+                                   
           <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick </Button>
           <Button className="info-buttons" variant="primary" onClick={() => show_frequently_asked_questions()}>Frequently Asked Questions</Button>
           <Button className="info-buttons" variant="secondary" onClick={() => show_masks()}>Masks</Button>
@@ -2013,7 +2014,8 @@ function App() {
           <Alert className="alerts" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Masks</Alert.Heading>
             <p>
-              Masks stuff go here :)
+            <b className="alert-subjects">Overview</b>
+              
         </p>
           </Alert>
 
