@@ -2023,7 +2023,8 @@ function App() {
               <li className="alerts-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li>
             </ul>
             <b className="alert-subjects">How to Select</b><br></br>
-            When selecting a mask, there are many choices. Here are some do’s and don’ts
+            <p>When selecting a mask, there are many choices. Here are some do’s and don’ts</p>
+            
         </p>
           </Alert>
 
