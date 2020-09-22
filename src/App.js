@@ -2071,6 +2071,14 @@ function App() {
         </p>
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.
 
+        <b className="alert-subjects">How to Wear Masks</b><br></br>
+
+        <b className="alert-subjects">Washing Masks</b><br></br>
+
+        <b className="alert-subjects">Making Masks</b><br></br>
+
+        <b className="alert-subjects">Considerations for Wearing Masks</b><br></br>
+
           </Alert>
 
           <Alert className="alerts" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
