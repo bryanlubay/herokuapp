@@ -2051,7 +2051,7 @@ function App() {
           <li className="alerts-li">Covers your nose and mouth and secure it under your chin</li>
           <li className="alerts-li">Fits snugly against the sides of your face</li>
         </ul>
-        For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.
+        For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image>
         </p>
         <p className="masks-p">Do NOT wear a mask that<br></br>
