@@ -2069,7 +2069,7 @@ function App() {
         </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">How to Wash Masks</a> web page.
         </p>
-        For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.
+        For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br>
 
         <b className="alert-subjects">How to Wear Masks</b><br></br>
 
