@@ -2054,6 +2054,15 @@ function App() {
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image>
         </p>
+        <p className="masks-p">Do NOT wear a mask that<br></br>
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image>
+        </p>
+        <p className="masks-p">How to take off a mask<br></br>
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image>
+        </p>
+
+
+
           </Alert>
 
           <Alert className="alerts" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
