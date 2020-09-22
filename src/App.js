@@ -2052,6 +2052,7 @@ function App() {
           <li className="alerts-li">Fits snugly against the sides of your face</li>
         </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image>
         </p>
           </Alert>
 
