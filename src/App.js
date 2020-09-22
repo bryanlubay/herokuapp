@@ -2060,8 +2060,16 @@ function App() {
         <p className="masks-p">How to take off a mask<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image>
         </p>
-
-
+        <p className="masks-p">How to Clean<br></br>
+        Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
+        <ul>
+          <li className="alerts-li">Include your mask with your regular laundry</li>
+          <li className="alerts-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask</li>
+          <li className="alerts-li">Use the highest heat setting and leave in the dryer until completely dry</li>
+        </ul>
+        For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">How to Wash Masks</a> web page.
+        </p>
+        For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.
 
           </Alert>
 
