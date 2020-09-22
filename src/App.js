@@ -2085,6 +2085,7 @@ function App() {
             <Alert.Heading>Symptoms</Alert.Heading>
             <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white'  data-cdc-language='en-us'></div>
 <script src='https://t.cdc.gov/1M1B'></script>
+        hello
           </Alert>
 
           <Alert className="alerts" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
