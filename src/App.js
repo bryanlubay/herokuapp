@@ -2072,6 +2072,15 @@ function App() {
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br>
 
         <b className="alert-subjects">How to Wear Masks</b><br></br>
+        Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
+        <ul>
+        <li className="alerts-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
+        <li className="alerts-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
+        <li className="alerts-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+
+        </ul>
+
+
 
         <b className="alert-subjects">Washing Masks</b><br></br>
 
