@@ -5,6 +5,7 @@ import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootst
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { HashLink as Link } from 'react-router-hash-link';
 import 'react-widgets/dist/css/react-widgets.css';
+import Iframe from 'react-iframe'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
