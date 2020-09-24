@@ -2094,7 +2094,7 @@ function App() {
           <Alert className="alerts" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             <Alert.Heading>Symptoms</Alert.Heading>
         hello
-        <iframe>
+        <iframe src='https://t.cdc.gov/1M1B' width='560' height='315'>
 
         <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-blue'  data-cdc-language='en-us'></div>
           <script src='https://t.cdc.gov/1M1B'></script>
