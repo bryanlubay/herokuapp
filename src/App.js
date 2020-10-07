@@ -2123,8 +2123,136 @@ function App() {
 
 
         <b className="alert-subjects">Washing Masks</b><br></br>
+        Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
+
+        Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
+
+        How to Clean
+        <ul>
+
+        Washing Machine
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
+        <ul>
+          <li className="alerts-li">You can include your mask with your regular laundry.</li>
+          <li className="alerts-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
+        </ul>
+
+        Washing by Hand
+        <ul>
+          <li className="alerts-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
+          <ul>
+            <li className="alerts-nested-li">Use bleach containing 5.25%–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
+            <li className="alerts-nested-li">Ensure the bleach product is not past its expiration date. Never mix household bleach with ammonia or any other cleanser.</li>
+            <li className="alerts-nested-li">Ensure adequate ventilation.</li>
+          </ul>
+          </li>
+          <li className="alerts-li">Prepare a bleach solution by mixing:
+          <ul>
+          <li className="alerts-nested-li">5 tablespoons (1/3rd cup) of 5.25%–8.25% bleach per gallon of room temperature water or</li>
+          <li className="alerts-nested-li">4 teaspoons of 5.25%–8.25% bleach per quart of room temperature water</li>
+            </ul></li>
+          <li className="alerts-li">Soak the mask in the bleach solution for 5 minutes.</li>
+          <li className="alerts-li">Discard the bleach solution down the drain and rinse the mask thoroughly with cool or room temperature water.</li>
+          <li className="alerts-li"><b>Make sure to completely dry the mask after washing.</b></li>
+
+          Using Bleach Safely:
+          <ul>
+            <li className="alerts-li">Always read and follow the directions on the label to ensure safe and effective use.</li>
+            <li className="alerts-li">Be aware that bleach can damage cloth fabric over time.</li>
+            <li className="alerts-li">Wear skin protection and consider eye protection for potential splash hazards.</li>
+            <li className="alerts-li">Use water at room temperature for dilution (unless stated otherwise on the label).</li>
+            <li className="alerts-li">Store and use bleach out of the reach of children and pets.</li>
+            <li className="alerts-li">Special considerations should be made for people with asthma and they should not be present when cleaning and disinfecting is happening as this can trigger asthma exacerbations. Learn more about <a href="https://www.cdc.gov/asthma/reduce_triggers.html">reducing asthma triggers</a>.</li>
+            <li className="alerts-li">See <a href="https://www.epa.gov/pesticide-registration/six-steps-safe-effective-disinfectant-use">EPA's 6 Steps for Safe and Effective Disinfectant Use</a></li>
+          </ul>
+        </ul>
+
+
+
+
+
+
+        </ul>
+        How to Dry
+        <ul>
+          Dryer
+          <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
+          <ul>
+            <li className="alerts-li">Use the highest heat setting and leave in the dryer until completely dry.</li>
+          </ul>
+          Air Dryer
+          <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-04-drying-sun.png"></Image>
+          <ul>
+          <li className="alerts-li">Lay flat and allow to completely dry. If possible, place the mask in direct sunlight.</li>
+          </ul>
+        </ul>
 
         <b className="alert-subjects">Making Masks</b><br></br>
+        CDC on Homemade Masks<br></br>
+
+        CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
+        Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
+        Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.
+        <ul>
+          <li className="alerts-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
+          <li className="alerts-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing,</b> is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
+          <li className="alerts-li"><b>Do NOT use a mask meant for a healthcare worker.</b> Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+
+        </ul>
+        Sew and No Sew Instructions <br></br>
+        Sewn Mask<br></br>
+        Materials
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
+        <ul>
+          <li className="alerts-li">Two 10”x6” rectangles of cotton fabric</li>
+          <li className="alerts-li">Two 6” pieces of elastic (or rubber bands, string, cloth strips, or hair ties)</li>
+          <li className="alerts-li">Needle and thread (or bobby pin)</li>
+          <li className="alerts-li">Scissors</li>
+          <li className="alerts-li">Sewing machine</li>
+        </ul>
+
+        Tutorial <br></br>
+
+        <b>1.</b> Cut out two 10-by-6-inch rectangles of cotton fabric. Use tightly woven cotton, such as quilting fabric or cotton sheets. T-shirt fabric will work in a pinch. Stack the two rectangles; you will sew the mask as if it was a single piece of fabric
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image>
+
+  
+        <b>2.</b> Fold over the long sides ¼ inch and hem. Then fold the double layer of fabric over ½ inch along the short sides and stitch down.
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-03.png"></Image>
+
+        <b>3.</b> Run a 6-inch length of 1/8-inch wide elastic through the wider hem on each side of the mask. These will be the ear loops. Use a large needle or a bobby pin to thread it through. Tie the ends tight.
+Don’t have elastic? Use hair ties or elastic head bands. If you only have string, you can make the ties longer and tie the mask behind your head.
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-04.png"></Image>
+
+        <b>4.</b> Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image>
+
+      Non-sewn Mask<br></br>
+      Materials
+      <ul>
+        <li className="alerts-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
+        <li className="alerts-li">Rubber bands (or hair ties)</li>
+        <li className="alerts-li">Scissors (if you are cutting your own cloth)</li>
+      </ul>
+      Tutorial
+      <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-01.png"></Image>
+      <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-02.png"></Image>
+      <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-03.png"></Image>
+      <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-04.png"></Image>
+      <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-05.png"></Image>
+      <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-06.png"></Image>
+
+      Makre sure your mask:
+      <ul>
+        <li className="alerts-li">fits snugly but comfortably against the side of the face</li>
+        <li className="alerts-li">completely covers the nose and mouth</li>
+        <li className="alerts-li">is secured with ties or ear loops</li>
+        <li className="alerts-li">includes multiple layers of fabric</li>
+        <li className="alerts-li">allows for breathing without restriction</li>
+        <li className="alerts-li">can be laundered and machine dried without damage or change to shape</li>
+      </ul>
+
+      See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
         <b className="alert-subjects">Considerations for Wearing Masks</b><br></br>
 
