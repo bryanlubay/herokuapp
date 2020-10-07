@@ -444,6 +444,8 @@ function App() {
                 <li className="alerts-li">Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
 
               </ul>
+              Wear Your Mask correctly
+              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
 
               <b className="alert-subjects">Cover Coughs And Sneezes</b>
               <ul>
@@ -2078,7 +2080,6 @@ function App() {
         <li className="alerts-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
         <li className="alerts-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
         <li className="alerts-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
-
         </ul>
 
 
