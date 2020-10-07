@@ -2310,8 +2310,51 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         The purpose of masks is to keep respiratory droplets from reaching others to aid with source control. However, masks with one-way valves or vents allow air to be exhaled through a hole in the material, which can result in expelled respiratory droplets that can reach others.  This type of mask does not prevent the person wearing the mask from transmitting COVID-19 to others. Therefore, CDC does not recommend using masks for source control if they have an exhalation valve or vent.
         
         Face Shields<br></br>
+        <ul>
+          <li className="alerts-li">A face shield is primarily used for eye protection for the person wearing it. At this time, it is not known what level of protection a face shield provides to people nearby from the spray of respiratory droplets from the wearer. There is currently not enough evidence to support the effectiveness of face shields for source control. Therefore, CDC <b>does not currently recommend</b> use of face shields as a substitute for masks.</li>
+          <li className="alerts-li">However, wearing a mask may not be feasible in every situation for some people for example, people who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired. Here are some considerations for individuals who must wear a face shield instead of a mask:
+          <ul>
+            <li className="alerts-nested-li">Although evidence on face shields is limited, the available data suggest that the following face shields may provide better source control than others:
+            <ul>
+              <li>Face shields that wrap around the sides of the wearer’s face and extend below the chin.</li>
+              <li>Hooded face shields.</li>
+            </ul>
+            </li>
+            <li className="alerts-nested-li">Face shield wearers should wash their hands before and after removing the face shield and avoid touching their eyes, nose and mouth when removing it.</li>
+            <li className="alerts-nested-li">Disposable face shields should only be worn for a single use and disposed of according to manufacturer instructions.</li>
+            <li className="alerts-nested-li">Reusable face shields should be cleaned and disinfected after each use according to manufacturer instructions or by following <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/eye-protection.html">CDC face shield cleaning instructions.</a></li>
+            <li className="alerts-nested-li"><b>Plastic face shields for newborns and infants are NOT recommended.</b></li>
+          </ul>
+          </li>
+        </ul>
 
+        Surgical Masks <br></br>
+        Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br>
 
+        Recent Studies:
+        <ul>
+
+          <li className="alerts-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
+          <li className="alerts-li">Zou L, Ruan F, Huang M, et al. SARS-CoV-2 Viral Load in Upper Respiratory Specimens of Infected Patients. The New England journal of medicine. 2020;382(12):1177-1179. <a href="https://pubmed.ncbi.nlm.nih.gov/32074444/">PMID: 32074444</a></li>
+          <li className="alerts-li">Pan X, Chen D, Xia Y, et al. Asymptomatic cases in a family cluster with SARS-CoV-2 infection. The Lancet Infectious diseases. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32087116/">PMID: 32087116</a></li>
+          <li className="alerts-li">Bai Y, Yao L, Wei T, et al. Presumed Asymptomatic Carrier Transmission of COVID-19. Jama. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32083643/">PMID: 32083643</a></li>
+          <li className="alerts-li">Kimball A HK, Arons M, et al. Asymptomatic and Presymptomatic SARS-CoV-2 Infections in Residents of a Long-Term Care Skilled Nursing Facility — King County, Washington, March 2020. MMWR Morbidity and mortality weekly report. 2020; ePub: 27 March 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32240128/">PMID: 32240128</a></li>
+          <li className="alerts-li">Wei WE LZ, Chiew CJ, Yong SE, Toh MP, Lee VJ. Presymptomatic Transmission of SARS-CoV-2 — Singapore, January 23–March 16, 2020. MMWR Morbidity and Mortality Weekly Report. 2020;ePub: 1 April 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32271722/">PMID: 32271722</a></li>
+          <li className="alerts-li">Li R, Pei S, Chen B, et al. Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SARS-CoV2). Science (New York, NY). 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32179701/">PMID: 32179701</a></li>
+          <li className="alerts-li">Furukawa NW, Brooks JT, Sobel J. Evidence Supporting Transmission of Severe Acute Respiratory Syndrome Coronavirus 2 While Presymptomatic or Asymptomatic [published online ahead of print, 2020 May 4]. Emerg Infect Dis. 2020;26(7):10.3201/eid2607.201595. <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-1595_article">Link</a></li>
+          <li className="alerts-li">Oran DP, Topol Prevalence of Asymptomatic SARS-CoV-2 Infection: A Narrative Review [published online ahead of print, 2020 Jun 3]. Ann Intern Med. 2020;M20-3012. <a href="https://pubmed.ncbi.nlm.nih.gov/32491919/">PMID: 32491919</a></li>
+          <li className="alerts-li">National Academies of Sciences, Engineering, and Medicine. 2020. Rapid Expert Consultation on the Possibility of Bioaerosol Spread of SARS-CoV-2 for the COVID-19 Pandemic (April 1, 2020). Washington, DC: The National Academies Press. <a href="https://doi.org/10.17226/25769">https://doi.org/10.17226/25769</a></li>
+          <li className="alerts-li">Schwartz KL, Murti M, Finkelstein M, et al. Lack of COVID-19 transmission on an international flight. CMAJ. 2020;192(15):E410. <a href="https://pubmed.ncbi.nlm.nih.gov/32392504/">PMID: 32392504</a></li>
+          <li className="alerts-li">Anfinrud P, Stadnytskyi V, Bax CE, Bax A. Visualizing Speech-Generated Oral Fluid Droplets with Laser Light Scattering. N Engl J Med. 2020 Apr 15. doi:10.1056/NEJMc2007800. <a href="https://pubmed.ncbi.nlm.nih.gov/32294341/">PMID: 32294341</a></li>
+          <li className="alerts-li">Davies A, Thompson KA, Giri K, Kafatos G, Walker J, Bennett A. Testing the efficacy of homemade masks: would they protect in an influenza pandemic? Disaster Med Public Health Prep. 2013;7(4):413-8. <a href="https://pubmed.ncbi.nlm.nih.gov/24229526/">PMID: 24229526</a></li>
+          <li className="alerts-li">Konda A, Prakash A, Moss GA, Schmoldt M, Grant GD, Guha S. Aerosol Filtration Efficiency of Common Fabrics Used in Respiratory Cloth Masks. ACS Nano. 2020 Apr 24. <a href="https://pubmed.ncbi.nlm.nih.gov/32329337/">PMID 32329337</a></li>
+          <li className="alerts-li">Aydin O, Emon B, Saif MTA. Performance of fabrics for home-made masks against spread of respiratory infection through droplets: a quantitative mechanistic study. medRxiv preprint doi: https://doi.org/10.1101/2020.04.19.20071779, posted April 24, 2020.</li>
+          <li className="alerts-li">Ma QX, Shan H, Zhang HL, Li GM, Yang RM, Chen JM. Potential utilities of mask-wearing and instant hand hygiene for fighting SARS-CoV-2. J Med Virol. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32232986/">PMID: 32232986</a></li>
+          <li className="alerts-li">Leung, N.H.L., Chu, D.K.W., Shiu, E.Y.C. <i>et al</i>.al.Respiratory virus shedding in exhaled breath and efficacy of face masks. Nat Med. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32371934/">PMID: 32371934</a></li>
+          <li className="alerts-li">Johnson DF, Druce JD, Birch C, Grayson ML. A quantitative assessment of the efficacy of surgical and N95 masks to filter influenza virus in patients with acute influenza infection. Clin Infect Dis. 2009 Jul 15;49(2):275-7. <a href="https://pubmed.ncbi.nlm.nih.gov/19522650/">PMID: 19522650</a></li>
+          <li className="alerts-li">Green CF, Davidson CS, Panlilio AL, et al. Effectiveness of selected surgical masks in arresting vegetative cells and endospores when worn by simulated contagious patients. Infect Control Hosp Epidemiol. 2012;33(5):487‐494. <a href="https://pubmed.ncbi.nlm.nih.gov/22476275/">PMID: 22476275</a></li>
+
+        </ul>
 
           </Alert>
 
