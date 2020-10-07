@@ -2122,7 +2122,6 @@ function App() {
         </ul>
 
 
-
         <b className="alert-subjects">Washing Masks</b><br></br>
 
         <b className="alert-subjects">Making Masks</b><br></br>
