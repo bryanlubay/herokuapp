@@ -446,6 +446,45 @@ function App() {
               </ul>
               Wear Your Mask correctly
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
+              <ul>
+                <li className="alerts-li">Wash your hands before putting on your mask</li>
+                <li className="alerts-li">Put it over your nose and mouth and secure it under your chin</li>
+                <li className="alerts-li">Try to fit it snugly against the sides of your face</li>
+                <li className="alerts-li">Make sure you can breathe easily</li>
+                <li className="alerts-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
+              </ul>
+
+              Wear a Mask to Protect Others
+              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
+              <ul>
+                <li className="alerts-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
+                <li className="alerts-li">Wear a mask in public settings when around people who don’t live in your household, especially when it may be difficult for you to stay six feet apart</li>
+                <li className="alerts-li">Wear a mask correctly for maximum protection</li>
+                <li className="alerts-li">Don’t put the mask around your neck or up on your forehead</li>
+                <li className="alerts-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
+              </ul>
+
+              Follow Everyday Health Habits
+              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
+              <ul>
+                <li className="alerts-li">Stay at least 6 feet away from others</li>
+                <li className="alerts-li">Avoid contact with people who are sick</li>
+                <li className="alerts-li">Wash your hands often, with soap and water, for at least 20 seconds each time</li>
+                <li className="alerts-li">Use hand sanitizer if soap and water are not available</li>
+              </ul>
+
+              Take Off Your Mask Carefully, When You’re Home
+              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
+              <ul>
+                <li className="alerts-li">Untie the strings behind your head or stretch the ear loops</li>
+                <li className="alerts-li">Handle only by the ear loops or ties</li>
+                <li className="alerts-li">Fold outside corners together</li>
+                <li className="alerts-li">Place mask in the washing machine (learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">how to wash masks</a>)</li>
+                <li className="alerts-li">Be careful not to touch your eyes, nose, and mouth when removing and wash hands immediately after removing.</li>
+              </ul>
+
+
+
 
               <b className="alert-subjects">Cover Coughs And Sneezes</b>
               <ul>
