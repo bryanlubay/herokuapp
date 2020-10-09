@@ -372,61 +372,61 @@ function App() {
           <Button className="info-buttons" variant="warning" onClick={() => show_symptoms()}>Symptoms</Button>
           <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
 
-          <Alert className="alerts" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
+          <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Prevent Getting Sick</Alert.Heading>
             <p>
 
               <b className="alert-subjects">How It Spreads</b>
               <ul>
-                <li className="alerts-li">There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
-                <li className="alerts-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
-                <li className="alerts-li">The virus is thought to spread mainly from person-to-person.
+                <li className="alert-li">There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
+                <li className="alert-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
+                <li className="alert-li">The virus is thought to spread mainly from person-to-person.
             <ul>
-                    <li className="alerts-nested-li">Between people who are in close contact with one another (within about 6 feet).</li>
-                    <li className="alerts-nested-li">Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
-                    <li className="alerts-nested-li">These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
-                    <li className="alerts-nested-li">Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
+                    <li className="alert-nested-li">Between people who are in close contact with one another (within about 6 feet).</li>
+                    <li className="alert-nested-li">Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
+                    <li className="alert-nested-li">These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
+                    <li className="alert-nested-li">Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
                   </ul>
                 </li>
               </ul>
 
               <b className="alert-subjects">Wash Your Hands Often</b>
               <ul>
-                <li className="alerts-li">
+                <li className="alert-li">
                   <a target="_blank" href="https://www.cdc.gov/handwashing/when-how-handwashing.html" target="_blank">Wash your hands</a> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
-                <li className="alerts-li">It’s especially important to wash:
+                <li className="alert-li">It’s especially important to wash:
             <ul>
-                    <li className="alerts-nested-li">Before eating or preparing food</li>
-                    <li className="alerts-nested-li">Before touching your face</li>
-                    <li className="alerts-nested-li">After using the restroom</li>
-                    <li className="alerts-nested-li">After leaving a public place</li>
-                    <li className="alerts-nested-li">After blowing your nose, coughing, or sneezing</li>
-                    <li className="alerts-nested-li">After handling your mask</li>
-                    <li className="alerts-nested-li">After changing a diaper</li>
-                    <li className="alerts-nested-li">After caring for someone sick</li>
-                    <li className="alerts-nested-li">After touching animals or pets</li>
+                    <li className="alert-nested-li">Before eating or preparing food</li>
+                    <li className="alert-nested-li">Before touching your face</li>
+                    <li className="alert-nested-li">After using the restroom</li>
+                    <li className="alert-nested-li">After leaving a public place</li>
+                    <li className="alert-nested-li">After blowing your nose, coughing, or sneezing</li>
+                    <li className="alert-nested-li">After handling your mask</li>
+                    <li className="alert-nested-li">After changing a diaper</li>
+                    <li className="alert-nested-li">After caring for someone sick</li>
+                    <li className="alert-nested-li">After touching animals or pets</li>
                   </ul>
                 </li>
-                <li className="alerts-li">If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.</li>
-                <li className="alerts-li"><b>Avoid touching your eyes, nose, and mouth with unwashed hands.</b></li>
+                <li className="alert-li">If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+                <li className="alert-li"><b>Avoid touching your eyes, nose, and mouth with unwashed hands.</b></li>
               </ul>
 
 
               <b className="alert-subjects">Avoid Close Contact</b>
               <ul>
 
-                <li className="alerts-li"><b>Inside your home: </b>avoid close contact with people who are sick.
+                <li className="alert-li"><b>Inside your home: </b>avoid close contact with people who are sick.
             <ul>
-                    <li className="alerts-nested-li">If possible, maintain 6 feet between the person who is sick and other household members.</li>
+                    <li className="alert-nested-li">If possible, maintain 6 feet between the person who is sick and other household members.</li>
                   </ul>
                 </li>
 
 
-                <li className="alerts-li"><b>Outside your home: </b>Put 6 feet of distance between yourself and people who don’t live in your household.
+                <li className="alert-li"><b>Outside your home: </b>Put 6 feet of distance between yourself and people who don’t live in your household.
             <ul>
-                    <li className="alerts-nested-li">Remember that some people without symptoms may be able to spread virus.</li>
-                    <li className="alerts-nested-li"><a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms' length) from other people.</a></li>
-                    <li className="alerts-nested-li">Keeping distance from others is especially important for <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk of getting very sick.</a></li>
+                    <li className="alert-nested-li">Remember that some people without symptoms may be able to spread virus.</li>
+                    <li className="alert-nested-li"><a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms' length) from other people.</a></li>
+                    <li className="alert-nested-li">Keeping distance from others is especially important for <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk of getting very sick.</a></li>
                   </ul>
                 </li>
               </ul>
@@ -434,14 +434,14 @@ function App() {
               <b className="alert-subjects">Cover Your Mouth And Nose With A Mask When Around Others</b>
               <ul>
 
-                <li className="alerts-li">You could spread COVID-19 to others even if you do not feel sick.</li>
-                <li className="alerts-li">The mask is meant to protect other people in case you are infected.</li>
-                <li className="alerts-li">Everyone should wear a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html"></a>mask in public settings and when around people who don’t live in your household, especially when other <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing measures are difficult to maintain.</a></li>
+                <li className="alert-li">You could spread COVID-19 to others even if you do not feel sick.</li>
+                <li className="alert-li">The mask is meant to protect other people in case you are infected.</li>
+                <li className="alert-li">Everyone should wear a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html"></a>mask in public settings and when around people who don’t live in your household, especially when other <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing measures are difficult to maintain.</a></li>
                 <ul>
-                  <li className="alerts-nested-li">Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li>
+                  <li className="alert-nested-li">Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li>
                 </ul>
-                <li className="alerts-li">Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
-                <li className="alerts-li">Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
+                <li className="alert-li">Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+                <li className="alert-li">Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
 
               </ul>
 
@@ -451,38 +451,38 @@ function App() {
               <b className="alert-subjects">Cover Coughs And Sneezes</b>
               <ul>
 
-                <li className="alerts-li"><b>Always cover your mouth and nose </b>with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
-                <li className="alerts-li"><b>Throw used tissues </b>in the trash.</li>
-                <li className="alerts-li">Immediately<b> wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+                <li className="alert-li"><b>Always cover your mouth and nose </b>with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
+                <li className="alert-li"><b>Throw used tissues </b>in the trash.</li>
+                <li className="alert-li">Immediately<b> wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
               </ul>
 
               <b className="alert-subjects">Clean And Disinfect</b>
               <ul>
 
-                <li className="alerts-li"><b>Clean AND disinfect<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html"> frequently touched surfaces</a> daily.</b>  This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
-                <li className="alerts-li"><b>If surfaces are dirty, clean them.</b> Use detergent or soap and water prior to disinfection.</li>
-                <li className="alerts-li"><b>Then, use a household disinfectant.</b> Most common <a target="_blank" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered household disinfectants</a> will work.</li>
+                <li className="alert-li"><b>Clean AND disinfect<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html"> frequently touched surfaces</a> daily.</b>  This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+                <li className="alert-li"><b>If surfaces are dirty, clean them.</b> Use detergent or soap and water prior to disinfection.</li>
+                <li className="alert-li"><b>Then, use a household disinfectant.</b> Most common <a target="_blank" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered household disinfectants</a> will work.</li>
               </ul>
 
               <b className="alert-subjects">Monitor Your Health Daily</b>
               <ul>
 
-                <li className="alerts-li"><b>Be alert for symptoms.</b> Watch for fever, cough, shortness of breath, or <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a><b> of COVID-19.</b>
+                <li className="alert-li"><b>Be alert for symptoms.</b> Watch for fever, cough, shortness of breath, or <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a><b> of COVID-19.</b>
                   <ul>
-                    <li className="alerts-nested-li">Especially important if you are <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, going into the office or workplace, and in settings where it may be difficult to keep a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">physical distance of 6 feet.</a></li>
+                    <li className="alert-nested-li">Especially important if you are <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, going into the office or workplace, and in settings where it may be difficult to keep a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">physical distance of 6 feet.</a></li>
                   </ul></li>
-                <li className="alerts-li"><b>Take your temperature</b> if symptoms develop.</li>
+                <li className="alert-li"><b>Take your temperature</b> if symptoms develop.</li>
                 <ul>
-                  <li className="alerts-nested-li">Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
+                  <li className="alert-nested-li">Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
                 </ul>
-                <li className="alerts-li">Follow <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidance</a> if symptoms develop.</li>
+                <li className="alert-li">Follow <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidance</a> if symptoms develop.</li>
               </ul>
 
             </p>
 
           </Alert>
 
-          <Alert className="alerts" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
+          <Alert className="alert" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Frequently Asked Questions</Alert.Heading>
             <p>
 
@@ -2015,17 +2015,17 @@ function App() {
             </p>
           </Alert>
 
-          <Alert className="alerts" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
+          <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Masks</Alert.Heading>
             <p>
             <b className="alert-subjects">Overview</b><br></br>
             <ul>
 
-              <li className="alerts-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
-              <li className="alerts-li">Wear the mask over your nose and mouth and secure it under your chin</li>
-              <li className="alerts-li">Masks should be worn by people two years and older</li>
-              <li className="alerts-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
-              <li className="alerts-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
+              <li className="alert-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
+              <li className="alert-li">Wear the mask over your nose and mouth and secure it under your chin</li>
+              <li className="alert-li">Masks should be worn by people two years and older</li>
+              <li className="alert-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
+              <li className="alert-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </ul>
             <b className="alert-subjects">How to Select</b><br></br>
@@ -2044,16 +2044,16 @@ function App() {
             <b className="alert-subjects">How to Wear</b><br></br>
             <p className="masks-p">Wear a mask correctly and consistently for the best protection.<br></br>
             <ul>
-              <li className="alerts-li">Be sure to wash your hands before putting on a mask</li>
-              <li className="alerts-li">Do <b>NOT</b> touch the mask when wearing it</li>
+              <li className="alert-li">Be sure to wash your hands before putting on a mask</li>
+              <li className="alert-li">Do <b>NOT</b> touch the mask when wearing it</li>
             </ul>
             </p>
         </p>
 
         <p className="masks-p">Do wear a mask that<br></br>
         <ul>
-          <li className="alerts-li">Covers your nose and mouth and secure it under your chin</li>
-          <li className="alerts-li">Fits snugly against the sides of your face</li>
+          <li className="alert-li">Covers your nose and mouth and secure it under your chin</li>
+          <li className="alert-li">Fits snugly against the sides of your face</li>
         </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image>
@@ -2067,9 +2067,9 @@ function App() {
         <p className="masks-p">How to Clean<br></br>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
         <ul>
-          <li className="alerts-li">Include your mask with your regular laundry</li>
-          <li className="alerts-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask</li>
-          <li className="alerts-li">Use the highest heat setting and leave in the dryer until completely dry</li>
+          <li className="alert-li">Include your mask with your regular laundry</li>
+          <li className="alert-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask</li>
+          <li className="alert-li">Use the highest heat setting and leave in the dryer until completely dry</li>
         </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">How to Wash Masks</a> web page.
         </p>
@@ -2078,47 +2078,47 @@ function App() {
         <b className="alert-subjects">How to Wear Masks</b><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
         <ul>
-        <li className="alerts-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
-        <li className="alerts-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
-        <li className="alerts-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+        <li className="alert-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
+        <li className="alert-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
+        <li className="alert-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
         </ul>
         Wear Your Mask correctly
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
               <ul>
-                <li className="alerts-li">Wash your hands before putting on your mask</li>
-                <li className="alerts-li">Put it over your nose and mouth and secure it under your chin</li>
-                <li className="alerts-li">Try to fit it snugly against the sides of your face</li>
-                <li className="alerts-li">Make sure you can breathe easily</li>
-                <li className="alerts-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
+                <li className="alert-li">Wash your hands before putting on your mask</li>
+                <li className="alert-li">Put it over your nose and mouth and secure it under your chin</li>
+                <li className="alert-li">Try to fit it snugly against the sides of your face</li>
+                <li className="alert-li">Make sure you can breathe easily</li>
+                <li className="alert-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
               </ul>
 
               Wear a Mask to Protect Others
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
               <ul>
-                <li className="alerts-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
-                <li className="alerts-li">Wear a mask in public settings when around people who don’t live in your household, especially when it may be difficult for you to stay six feet apart</li>
-                <li className="alerts-li">Wear a mask correctly for maximum protection</li>
-                <li className="alerts-li">Don’t put the mask around your neck or up on your forehead</li>
-                <li className="alerts-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
+                <li className="alert-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
+                <li className="alert-li">Wear a mask in public settings when around people who don’t live in your household, especially when it may be difficult for you to stay six feet apart</li>
+                <li className="alert-li">Wear a mask correctly for maximum protection</li>
+                <li className="alert-li">Don’t put the mask around your neck or up on your forehead</li>
+                <li className="alert-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
               </ul>
 
               Follow Everyday Health Habits
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
               <ul>
-                <li className="alerts-li">Stay at least 6 feet away from others</li>
-                <li className="alerts-li">Avoid contact with people who are sick</li>
-                <li className="alerts-li">Wash your hands often, with soap and water, for at least 20 seconds each time</li>
-                <li className="alerts-li">Use hand sanitizer if soap and water are not available</li>
+                <li className="alert-li">Stay at least 6 feet away from others</li>
+                <li className="alert-li">Avoid contact with people who are sick</li>
+                <li className="alert-li">Wash your hands often, with soap and water, for at least 20 seconds each time</li>
+                <li className="alert-li">Use hand sanitizer if soap and water are not available</li>
               </ul>
 
               Take Off Your Mask Carefully, When You’re Home
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
               <ul>
-                <li className="alerts-li">Untie the strings behind your head or stretch the ear loops</li>
-                <li className="alerts-li">Handle only by the ear loops or ties</li>
-                <li className="alerts-li">Fold outside corners together</li>
-                <li className="alerts-li">Place mask in the washing machine (learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">how to wash masks</a>)</li>
-                <li className="alerts-li">Be careful not to touch your eyes, nose, and mouth when removing and wash hands immediately after removing.</li>
+                <li className="alert-li">Untie the strings behind your head or stretch the ear loops</li>
+                <li className="alert-li">Handle only by the ear loops or ties</li>
+                <li className="alert-li">Fold outside corners together</li>
+                <li className="alert-li">Place mask in the washing machine (learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">how to wash masks</a>)</li>
+                <li className="alert-li">Be careful not to touch your eyes, nose, and mouth when removing and wash hands immediately after removing.</li>
               </ul>
 
 
@@ -2133,37 +2133,37 @@ function App() {
         Washing Machine
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
         <ul>
-          <li className="alerts-li">You can include your mask with your regular laundry.</li>
-          <li className="alerts-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
+          <li className="alert-li">You can include your mask with your regular laundry.</li>
+          <li className="alert-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
         </ul>
 
         Washing by Hand
         <ul>
-          <li className="alerts-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
+          <li className="alert-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
           <ul>
-            <li className="alerts-nested-li">Use bleach containing 5.25%–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
-            <li className="alerts-nested-li">Ensure the bleach product is not past its expiration date. Never mix household bleach with ammonia or any other cleanser.</li>
-            <li className="alerts-nested-li">Ensure adequate ventilation.</li>
+            <li className="alert-nested-li">Use bleach containing 5.25%–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
+            <li className="alert-nested-li">Ensure the bleach product is not past its expiration date. Never mix household bleach with ammonia or any other cleanser.</li>
+            <li className="alert-nested-li">Ensure adequate ventilation.</li>
           </ul>
           </li>
-          <li className="alerts-li">Prepare a bleach solution by mixing:
+          <li className="alert-li">Prepare a bleach solution by mixing:
           <ul>
-          <li className="alerts-nested-li">5 tablespoons (1/3rd cup) of 5.25%–8.25% bleach per gallon of room temperature water or</li>
-          <li className="alerts-nested-li">4 teaspoons of 5.25%–8.25% bleach per quart of room temperature water</li>
+          <li className="alert-nested-li">5 tablespoons (1/3rd cup) of 5.25%–8.25% bleach per gallon of room temperature water or</li>
+          <li className="alert-nested-li">4 teaspoons of 5.25%–8.25% bleach per quart of room temperature water</li>
             </ul></li>
-          <li className="alerts-li">Soak the mask in the bleach solution for 5 minutes.</li>
-          <li className="alerts-li">Discard the bleach solution down the drain and rinse the mask thoroughly with cool or room temperature water.</li>
-          <li className="alerts-li"><b>Make sure to completely dry the mask after washing.</b></li>
+          <li className="alert-li">Soak the mask in the bleach solution for 5 minutes.</li>
+          <li className="alert-li">Discard the bleach solution down the drain and rinse the mask thoroughly with cool or room temperature water.</li>
+          <li className="alert-li"><b>Make sure to completely dry the mask after washing.</b></li>
 
           Using Bleach Safely:
           <ul>
-            <li className="alerts-li">Always read and follow the directions on the label to ensure safe and effective use.</li>
-            <li className="alerts-li">Be aware that bleach can damage cloth fabric over time.</li>
-            <li className="alerts-li">Wear skin protection and consider eye protection for potential splash hazards.</li>
-            <li className="alerts-li">Use water at room temperature for dilution (unless stated otherwise on the label).</li>
-            <li className="alerts-li">Store and use bleach out of the reach of children and pets.</li>
-            <li className="alerts-li">Special considerations should be made for people with asthma and they should not be present when cleaning and disinfecting is happening as this can trigger asthma exacerbations. Learn more about <a href="https://www.cdc.gov/asthma/reduce_triggers.html">reducing asthma triggers</a>.</li>
-            <li className="alerts-li">See <a href="https://www.epa.gov/pesticide-registration/six-steps-safe-effective-disinfectant-use">EPA's 6 Steps for Safe and Effective Disinfectant Use</a></li>
+            <li className="alert-li">Always read and follow the directions on the label to ensure safe and effective use.</li>
+            <li className="alert-li">Be aware that bleach can damage cloth fabric over time.</li>
+            <li className="alert-li">Wear skin protection and consider eye protection for potential splash hazards.</li>
+            <li className="alert-li">Use water at room temperature for dilution (unless stated otherwise on the label).</li>
+            <li className="alert-li">Store and use bleach out of the reach of children and pets.</li>
+            <li className="alert-li">Special considerations should be made for people with asthma and they should not be present when cleaning and disinfecting is happening as this can trigger asthma exacerbations. Learn more about <a href="https://www.cdc.gov/asthma/reduce_triggers.html">reducing asthma triggers</a>.</li>
+            <li className="alert-li">See <a href="https://www.epa.gov/pesticide-registration/six-steps-safe-effective-disinfectant-use">EPA's 6 Steps for Safe and Effective Disinfectant Use</a></li>
           </ul>
         </ul>
 
@@ -2178,12 +2178,12 @@ function App() {
           Dryer
           <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
           <ul>
-            <li className="alerts-li">Use the highest heat setting and leave in the dryer until completely dry.</li>
+            <li className="alert-li">Use the highest heat setting and leave in the dryer until completely dry.</li>
           </ul>
           Air Dryer
           <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-04-drying-sun.png"></Image>
           <ul>
-          <li className="alerts-li">Lay flat and allow to completely dry. If possible, place the mask in direct sunlight.</li>
+          <li className="alert-li">Lay flat and allow to completely dry. If possible, place the mask in direct sunlight.</li>
           </ul>
         </ul>
 
@@ -2194,9 +2194,9 @@ function App() {
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
         Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.
         <ul>
-          <li className="alerts-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
-          <li className="alerts-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing,</b> is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
-          <li className="alerts-li"><b>Do NOT use a mask meant for a healthcare worker.</b> Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+          <li className="alert-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
+          <li className="alert-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing,</b> is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
+          <li className="alert-li"><b>Do NOT use a mask meant for a healthcare worker.</b> Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
 
         </ul>
         Sew and No Sew Instructions <br></br>
@@ -2204,11 +2204,11 @@ function App() {
         Materials
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
         <ul>
-          <li className="alerts-li">Two 10”x6” rectangles of cotton fabric</li>
-          <li className="alerts-li">Two 6” pieces of elastic (or rubber bands, string, cloth strips, or hair ties)</li>
-          <li className="alerts-li">Needle and thread (or bobby pin)</li>
-          <li className="alerts-li">Scissors</li>
-          <li className="alerts-li">Sewing machine</li>
+          <li className="alert-li">Two 10”x6” rectangles of cotton fabric</li>
+          <li className="alert-li">Two 6” pieces of elastic (or rubber bands, string, cloth strips, or hair ties)</li>
+          <li className="alert-li">Needle and thread (or bobby pin)</li>
+          <li className="alert-li">Scissors</li>
+          <li className="alert-li">Sewing machine</li>
         </ul>
 
         Tutorial <br></br>
@@ -2230,9 +2230,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
       Non-sewn Mask<br></br>
       Materials
       <ul>
-        <li className="alerts-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
-        <li className="alerts-li">Rubber bands (or hair ties)</li>
-        <li className="alerts-li">Scissors (if you are cutting your own cloth)</li>
+        <li className="alert-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
+        <li className="alert-li">Rubber bands (or hair ties)</li>
+        <li className="alert-li">Scissors (if you are cutting your own cloth)</li>
       </ul>
       Tutorial
       <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-01.png"></Image>
@@ -2244,12 +2244,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
       Makre sure your mask:
       <ul>
-        <li className="alerts-li">fits snugly but comfortably against the side of the face</li>
-        <li className="alerts-li">completely covers the nose and mouth</li>
-        <li className="alerts-li">is secured with ties or ear loops</li>
-        <li className="alerts-li">includes multiple layers of fabric</li>
-        <li className="alerts-li">allows for breathing without restriction</li>
-        <li className="alerts-li">can be laundered and machine dried without damage or change to shape</li>
+        <li className="alert-li">fits snugly but comfortably against the side of the face</li>
+        <li className="alert-li">completely covers the nose and mouth</li>
+        <li className="alert-li">is secured with ties or ear loops</li>
+        <li className="alert-li">includes multiple layers of fabric</li>
+        <li className="alert-li">allows for breathing without restriction</li>
+        <li className="alert-li">can be laundered and machine dried without damage or change to shape</li>
       </ul>
 
       See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
@@ -2262,11 +2262,11 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         <b className="alert-subjects">Considerations for Wearing Masks</b><br></br>
 
         <ul>
-          <li className="alerts-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
-          <li className="alerts-li">Masks may help prevent people who have COVID-19 from spreading the virus to others.</li>
-          <li className="alerts-li">Masks are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.</li>
-          <li className="alerts-li">Masks should NOT be worn by children under the age of 2 or anyone who has trouble breathing, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
-          <li className="alerts-li">Masks with exhalation valves or vents should NOT be worn to help prevent the person wearing the mask from spreading COVID-19 to others (source control)</li>
+          <li className="alert-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
+          <li className="alert-li">Masks may help prevent people who have COVID-19 from spreading the virus to others.</li>
+          <li className="alert-li">Masks are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.</li>
+          <li className="alert-li">Masks should NOT be worn by children under the age of 2 or anyone who has trouble breathing, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
+          <li className="alert-li">Masks with exhalation valves or vents should NOT be worn to help prevent the person wearing the mask from spreading COVID-19 to others (source control)</li>
         </ul>
 
         Evidence for Effectiveness of Masks<br></br>
@@ -2276,34 +2276,34 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         Who Should Wear A Mask?
         <ul>
           General Public
-          <li className="alerts-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
-          <li className="alerts-nested-li">COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to wear masks in public settings and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> (staying at least 6 feet away from other people).</li>
-          <li className="alerts-nested-li">While masks are strongly encouraged to reduce the spread of COVID-19, CDC recognizes there are specific instances when wearing a mask may not be feasible. In these instances, <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#feasibility-adaptations">adaptations and alternatives</a> should be considered whenever possible (see below for examples).</li>
+          <li className="alert-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
+          <li className="alert-nested-li">COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to wear masks in public settings and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> (staying at least 6 feet away from other people).</li>
+          <li className="alert-nested-li">While masks are strongly encouraged to reduce the spread of COVID-19, CDC recognizes there are specific instances when wearing a mask may not be feasible. In these instances, <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#feasibility-adaptations">adaptations and alternatives</a> should be considered whenever possible (see below for examples).</li>
           <iframe width="339" height="191" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           People who know or think they might have COVID-19
-          <li className="alerts-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">If you are sick</a> with COVID-19 or think you might have COVID-19, do not visit public areas. Stay home except to get medical care. As much as possible stay in a specific room and away from other people and pets in your home. If you need to be around other people or animals, wear a mask (including in your home).</li>
-          <li className="alerts-nested-li">The mask helps prevent a person who is sick from spreading the virus to others. It helps keep respiratory droplets contained and from reaching other people.</li>
+          <li className="alert-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">If you are sick</a> with COVID-19 or think you might have COVID-19, do not visit public areas. Stay home except to get medical care. As much as possible stay in a specific room and away from other people and pets in your home. If you need to be around other people or animals, wear a mask (including in your home).</li>
+          <li className="alert-nested-li">The mask helps prevent a person who is sick from spreading the virus to others. It helps keep respiratory droplets contained and from reaching other people.</li>
 
           Caregivers of people with COVID-19
-          <li className="alerts-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">Those caring for someone who is sick with COVID-19 at home or in a non-healthcare setting</a> may also wear a mask. However, the protective effects—how well the mask protects healthy people from breathing in the virus—are unknown. To prevent getting sick, caregivers should also continue to practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>: avoid close contact as much as possible, clean hands often; avoid touching your eyes, nose, and mouth with unwashed hands; and frequently clean and disinfect surfaces.</li>
+          <li className="alert-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">Those caring for someone who is sick with COVID-19 at home or in a non-healthcare setting</a> may also wear a mask. However, the protective effects—how well the mask protects healthy people from breathing in the virus—are unknown. To prevent getting sick, caregivers should also continue to practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>: avoid close contact as much as possible, clean hands often; avoid touching your eyes, nose, and mouth with unwashed hands; and frequently clean and disinfect surfaces.</li>
         </ul>
         Who Should Not Wear a Mask<br></br>
         <ul>
-          <li className="alerts-li">Children younger than 2 years old</li>
-          <li className="alerts-li">Anyone who has trouble breathing</li>
-          <li className="alerts-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
+          <li className="alert-li">Children younger than 2 years old</li>
+          <li className="alert-li">Anyone who has trouble breathing</li>
+          <li className="alert-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
         </ul>
         Feasibility and Adaptations<br></br>
         CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br>
         For example,
         <ul>
-        <li className="alerts-li">People who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired—may be unable to wear masks if they rely on lipreading to communicate. In this situation, consider using a clear mask. If a clear mask isn’t available, consider whether you can use written communication, use closed captioning, or decrease background noise to make communication possible while wearing a mask that blocks your lips.</li>
-        <li className="alerts-li">Some people, such as people with intellectual and developmental disabilities, mental health conditions or other sensory sensitivities, may have challenges wearing a mask. They should consult with their healthcare provider for advice about wearing masks.</li>
-        <li className="alerts-li">Younger children (e.g., preschool or early elementary aged) may be unable to wear a mask properly, particularly for an extended period of time. Wearing of masks may be prioritized at times when it is difficult to maintain a distance of 6 feet from others (e.g., during carpool drop off or pick up, or when standing in line at school). Ensuring proper mask size and fit and providing children with frequent reminders and education on the importance and proper wear of masks may help address these issues.</li>
-        <li className="alerts-li">People should not wear masks while engaged in activities that may cause the mask to become wet, like when <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/parks-rec/public-beaches.html">swimming at the beach or pool</a>. A wet mask may make it difficult to breathe. For activities like swimming, it is particularly important to maintain physical distance from others when in the water.</li>
-        <li className="alerts-li">People who are engaged in high intensity activities, like running, may not be able to wear a mask if it causes difficulty breathing. If unable to wear a mask, consider conducting the activity in a location with greater ventilation and air exchange (for instance, outdoors versus indoors) and where it is possible to maintain physical distance from others.</li>
-        <li className="alerts-li">People who work in a setting where masks may increase the risk of <a href="https://www.cdc.gov/niosh/topics/heatstress/">heat-related illness</a> or cause safety concerns due to introduction of a hazard (for instance, straps getting caught in machinery) may consult with an occupational safety and health professional to determine the appropriate mask for their setting. Outdoor workers may prioritize use of masks when in close contact with other people, like during group travel or shift meetings, and remove masks when social distancing is possible. <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/meat-poultry-processing-workers-employers.html">Find more information here</a> and below.</li>
+        <li className="alert-li">People who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired—may be unable to wear masks if they rely on lipreading to communicate. In this situation, consider using a clear mask. If a clear mask isn’t available, consider whether you can use written communication, use closed captioning, or decrease background noise to make communication possible while wearing a mask that blocks your lips.</li>
+        <li className="alert-li">Some people, such as people with intellectual and developmental disabilities, mental health conditions or other sensory sensitivities, may have challenges wearing a mask. They should consult with their healthcare provider for advice about wearing masks.</li>
+        <li className="alert-li">Younger children (e.g., preschool or early elementary aged) may be unable to wear a mask properly, particularly for an extended period of time. Wearing of masks may be prioritized at times when it is difficult to maintain a distance of 6 feet from others (e.g., during carpool drop off or pick up, or when standing in line at school). Ensuring proper mask size and fit and providing children with frequent reminders and education on the importance and proper wear of masks may help address these issues.</li>
+        <li className="alert-li">People should not wear masks while engaged in activities that may cause the mask to become wet, like when <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/parks-rec/public-beaches.html">swimming at the beach or pool</a>. A wet mask may make it difficult to breathe. For activities like swimming, it is particularly important to maintain physical distance from others when in the water.</li>
+        <li className="alert-li">People who are engaged in high intensity activities, like running, may not be able to wear a mask if it causes difficulty breathing. If unable to wear a mask, consider conducting the activity in a location with greater ventilation and air exchange (for instance, outdoors versus indoors) and where it is possible to maintain physical distance from others.</li>
+        <li className="alert-li">People who work in a setting where masks may increase the risk of <a href="https://www.cdc.gov/niosh/topics/heatstress/">heat-related illness</a> or cause safety concerns due to introduction of a hazard (for instance, straps getting caught in machinery) may consult with an occupational safety and health professional to determine the appropriate mask for their setting. Outdoor workers may prioritize use of masks when in close contact with other people, like during group travel or shift meetings, and remove masks when social distancing is possible. <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/meat-poultry-processing-workers-employers.html">Find more information here</a> and below.</li>
         Masks are a critical preventive measure and are most essential in times when social distancing is difficult. If masks cannot be used, make sure to take other measures to reduce the risk of COVID-19 spread, including social distancing, frequent hand washing, and cleaning and disinfecting frequently touched surfaces.
         </ul>
         Masks with Exhalation Valves or Vents<br></br>
@@ -2311,19 +2311,19 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         
         Face Shields<br></br>
         <ul>
-          <li className="alerts-li">A face shield is primarily used for eye protection for the person wearing it. At this time, it is not known what level of protection a face shield provides to people nearby from the spray of respiratory droplets from the wearer. There is currently not enough evidence to support the effectiveness of face shields for source control. Therefore, CDC <b>does not currently recommend</b> use of face shields as a substitute for masks.</li>
-          <li className="alerts-li">However, wearing a mask may not be feasible in every situation for some people for example, people who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired. Here are some considerations for individuals who must wear a face shield instead of a mask:
+          <li className="alert-li">A face shield is primarily used for eye protection for the person wearing it. At this time, it is not known what level of protection a face shield provides to people nearby from the spray of respiratory droplets from the wearer. There is currently not enough evidence to support the effectiveness of face shields for source control. Therefore, CDC <b>does not currently recommend</b> use of face shields as a substitute for masks.</li>
+          <li className="alert-li">However, wearing a mask may not be feasible in every situation for some people for example, people who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired. Here are some considerations for individuals who must wear a face shield instead of a mask:
           <ul>
-            <li className="alerts-nested-li">Although evidence on face shields is limited, the available data suggest that the following face shields may provide better source control than others:
+            <li className="alert-nested-li">Although evidence on face shields is limited, the available data suggest that the following face shields may provide better source control than others:
             <ul>
               <li>Face shields that wrap around the sides of the wearer’s face and extend below the chin.</li>
               <li>Hooded face shields.</li>
             </ul>
             </li>
-            <li className="alerts-nested-li">Face shield wearers should wash their hands before and after removing the face shield and avoid touching their eyes, nose and mouth when removing it.</li>
-            <li className="alerts-nested-li">Disposable face shields should only be worn for a single use and disposed of according to manufacturer instructions.</li>
-            <li className="alerts-nested-li">Reusable face shields should be cleaned and disinfected after each use according to manufacturer instructions or by following <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/eye-protection.html">CDC face shield cleaning instructions.</a></li>
-            <li className="alerts-nested-li"><b>Plastic face shields for newborns and infants are NOT recommended.</b></li>
+            <li className="alert-nested-li">Face shield wearers should wash their hands before and after removing the face shield and avoid touching their eyes, nose and mouth when removing it.</li>
+            <li className="alert-nested-li">Disposable face shields should only be worn for a single use and disposed of according to manufacturer instructions.</li>
+            <li className="alert-nested-li">Reusable face shields should be cleaned and disinfected after each use according to manufacturer instructions or by following <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/eye-protection.html">CDC face shield cleaning instructions.</a></li>
+            <li className="alert-nested-li"><b>Plastic face shields for newborns and infants are NOT recommended.</b></li>
           </ul>
           </li>
         </ul>
@@ -2334,31 +2334,31 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         Recent Studies:
         <ul>
 
-          <li className="alerts-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
-          <li className="alerts-li">Zou L, Ruan F, Huang M, et al. SARS-CoV-2 Viral Load in Upper Respiratory Specimens of Infected Patients. The New England journal of medicine. 2020;382(12):1177-1179. <a href="https://pubmed.ncbi.nlm.nih.gov/32074444/">PMID: 32074444</a></li>
-          <li className="alerts-li">Pan X, Chen D, Xia Y, et al. Asymptomatic cases in a family cluster with SARS-CoV-2 infection. The Lancet Infectious diseases. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32087116/">PMID: 32087116</a></li>
-          <li className="alerts-li">Bai Y, Yao L, Wei T, et al. Presumed Asymptomatic Carrier Transmission of COVID-19. Jama. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32083643/">PMID: 32083643</a></li>
-          <li className="alerts-li">Kimball A HK, Arons M, et al. Asymptomatic and Presymptomatic SARS-CoV-2 Infections in Residents of a Long-Term Care Skilled Nursing Facility — King County, Washington, March 2020. MMWR Morbidity and mortality weekly report. 2020; ePub: 27 March 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32240128/">PMID: 32240128</a></li>
-          <li className="alerts-li">Wei WE LZ, Chiew CJ, Yong SE, Toh MP, Lee VJ. Presymptomatic Transmission of SARS-CoV-2 — Singapore, January 23–March 16, 2020. MMWR Morbidity and Mortality Weekly Report. 2020;ePub: 1 April 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32271722/">PMID: 32271722</a></li>
-          <li className="alerts-li">Li R, Pei S, Chen B, et al. Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SARS-CoV2). Science (New York, NY). 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32179701/">PMID: 32179701</a></li>
-          <li className="alerts-li">Furukawa NW, Brooks JT, Sobel J. Evidence Supporting Transmission of Severe Acute Respiratory Syndrome Coronavirus 2 While Presymptomatic or Asymptomatic [published online ahead of print, 2020 May 4]. Emerg Infect Dis. 2020;26(7):10.3201/eid2607.201595. <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-1595_article">Link</a></li>
-          <li className="alerts-li">Oran DP, Topol Prevalence of Asymptomatic SARS-CoV-2 Infection: A Narrative Review [published online ahead of print, 2020 Jun 3]. Ann Intern Med. 2020;M20-3012. <a href="https://pubmed.ncbi.nlm.nih.gov/32491919/">PMID: 32491919</a></li>
-          <li className="alerts-li">National Academies of Sciences, Engineering, and Medicine. 2020. Rapid Expert Consultation on the Possibility of Bioaerosol Spread of SARS-CoV-2 for the COVID-19 Pandemic (April 1, 2020). Washington, DC: The National Academies Press. <a href="https://doi.org/10.17226/25769">https://doi.org/10.17226/25769</a></li>
-          <li className="alerts-li">Schwartz KL, Murti M, Finkelstein M, et al. Lack of COVID-19 transmission on an international flight. CMAJ. 2020;192(15):E410. <a href="https://pubmed.ncbi.nlm.nih.gov/32392504/">PMID: 32392504</a></li>
-          <li className="alerts-li">Anfinrud P, Stadnytskyi V, Bax CE, Bax A. Visualizing Speech-Generated Oral Fluid Droplets with Laser Light Scattering. N Engl J Med. 2020 Apr 15. doi:10.1056/NEJMc2007800. <a href="https://pubmed.ncbi.nlm.nih.gov/32294341/">PMID: 32294341</a></li>
-          <li className="alerts-li">Davies A, Thompson KA, Giri K, Kafatos G, Walker J, Bennett A. Testing the efficacy of homemade masks: would they protect in an influenza pandemic? Disaster Med Public Health Prep. 2013;7(4):413-8. <a href="https://pubmed.ncbi.nlm.nih.gov/24229526/">PMID: 24229526</a></li>
-          <li className="alerts-li">Konda A, Prakash A, Moss GA, Schmoldt M, Grant GD, Guha S. Aerosol Filtration Efficiency of Common Fabrics Used in Respiratory Cloth Masks. ACS Nano. 2020 Apr 24. <a href="https://pubmed.ncbi.nlm.nih.gov/32329337/">PMID 32329337</a></li>
-          <li className="alerts-li">Aydin O, Emon B, Saif MTA. Performance of fabrics for home-made masks against spread of respiratory infection through droplets: a quantitative mechanistic study. medRxiv preprint doi: https://doi.org/10.1101/2020.04.19.20071779, posted April 24, 2020.</li>
-          <li className="alerts-li">Ma QX, Shan H, Zhang HL, Li GM, Yang RM, Chen JM. Potential utilities of mask-wearing and instant hand hygiene for fighting SARS-CoV-2. J Med Virol. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32232986/">PMID: 32232986</a></li>
-          <li className="alerts-li">Leung, N.H.L., Chu, D.K.W., Shiu, E.Y.C. <i>et al</i>.al.Respiratory virus shedding in exhaled breath and efficacy of face masks. Nat Med. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32371934/">PMID: 32371934</a></li>
-          <li className="alerts-li">Johnson DF, Druce JD, Birch C, Grayson ML. A quantitative assessment of the efficacy of surgical and N95 masks to filter influenza virus in patients with acute influenza infection. Clin Infect Dis. 2009 Jul 15;49(2):275-7. <a href="https://pubmed.ncbi.nlm.nih.gov/19522650/">PMID: 19522650</a></li>
-          <li className="alerts-li">Green CF, Davidson CS, Panlilio AL, et al. Effectiveness of selected surgical masks in arresting vegetative cells and endospores when worn by simulated contagious patients. Infect Control Hosp Epidemiol. 2012;33(5):487‐494. <a href="https://pubmed.ncbi.nlm.nih.gov/22476275/">PMID: 22476275</a></li>
+          <li className="alert-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
+          <li className="alert-li">Zou L, Ruan F, Huang M, et al. SARS-CoV-2 Viral Load in Upper Respiratory Specimens of Infected Patients. The New England journal of medicine. 2020;382(12):1177-1179. <a href="https://pubmed.ncbi.nlm.nih.gov/32074444/">PMID: 32074444</a></li>
+          <li className="alert-li">Pan X, Chen D, Xia Y, et al. Asymptomatic cases in a family cluster with SARS-CoV-2 infection. The Lancet Infectious diseases. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32087116/">PMID: 32087116</a></li>
+          <li className="alert-li">Bai Y, Yao L, Wei T, et al. Presumed Asymptomatic Carrier Transmission of COVID-19. Jama. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32083643/">PMID: 32083643</a></li>
+          <li className="alert-li">Kimball A HK, Arons M, et al. Asymptomatic and Presymptomatic SARS-CoV-2 Infections in Residents of a Long-Term Care Skilled Nursing Facility — King County, Washington, March 2020. MMWR Morbidity and mortality weekly report. 2020; ePub: 27 March 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32240128/">PMID: 32240128</a></li>
+          <li className="alert-li">Wei WE LZ, Chiew CJ, Yong SE, Toh MP, Lee VJ. Presymptomatic Transmission of SARS-CoV-2 — Singapore, January 23–March 16, 2020. MMWR Morbidity and Mortality Weekly Report. 2020;ePub: 1 April 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32271722/">PMID: 32271722</a></li>
+          <li className="alert-li">Li R, Pei S, Chen B, et al. Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SARS-CoV2). Science (New York, NY). 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32179701/">PMID: 32179701</a></li>
+          <li className="alert-li">Furukawa NW, Brooks JT, Sobel J. Evidence Supporting Transmission of Severe Acute Respiratory Syndrome Coronavirus 2 While Presymptomatic or Asymptomatic [published online ahead of print, 2020 May 4]. Emerg Infect Dis. 2020;26(7):10.3201/eid2607.201595. <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-1595_article">Link</a></li>
+          <li className="alert-li">Oran DP, Topol Prevalence of Asymptomatic SARS-CoV-2 Infection: A Narrative Review [published online ahead of print, 2020 Jun 3]. Ann Intern Med. 2020;M20-3012. <a href="https://pubmed.ncbi.nlm.nih.gov/32491919/">PMID: 32491919</a></li>
+          <li className="alert-li">National Academies of Sciences, Engineering, and Medicine. 2020. Rapid Expert Consultation on the Possibility of Bioaerosol Spread of SARS-CoV-2 for the COVID-19 Pandemic (April 1, 2020). Washington, DC: The National Academies Press. <a href="https://doi.org/10.17226/25769">https://doi.org/10.17226/25769</a></li>
+          <li className="alert-li">Schwartz KL, Murti M, Finkelstein M, et al. Lack of COVID-19 transmission on an international flight. CMAJ. 2020;192(15):E410. <a href="https://pubmed.ncbi.nlm.nih.gov/32392504/">PMID: 32392504</a></li>
+          <li className="alert-li">Anfinrud P, Stadnytskyi V, Bax CE, Bax A. Visualizing Speech-Generated Oral Fluid Droplets with Laser Light Scattering. N Engl J Med. 2020 Apr 15. doi:10.1056/NEJMc2007800. <a href="https://pubmed.ncbi.nlm.nih.gov/32294341/">PMID: 32294341</a></li>
+          <li className="alert-li">Davies A, Thompson KA, Giri K, Kafatos G, Walker J, Bennett A. Testing the efficacy of homemade masks: would they protect in an influenza pandemic? Disaster Med Public Health Prep. 2013;7(4):413-8. <a href="https://pubmed.ncbi.nlm.nih.gov/24229526/">PMID: 24229526</a></li>
+          <li className="alert-li">Konda A, Prakash A, Moss GA, Schmoldt M, Grant GD, Guha S. Aerosol Filtration Efficiency of Common Fabrics Used in Respiratory Cloth Masks. ACS Nano. 2020 Apr 24. <a href="https://pubmed.ncbi.nlm.nih.gov/32329337/">PMID 32329337</a></li>
+          <li className="alert-li">Aydin O, Emon B, Saif MTA. Performance of fabrics for home-made masks against spread of respiratory infection through droplets: a quantitative mechanistic study. medRxiv preprint doi: https://doi.org/10.1101/2020.04.19.20071779, posted April 24, 2020.</li>
+          <li className="alert-li">Ma QX, Shan H, Zhang HL, Li GM, Yang RM, Chen JM. Potential utilities of mask-wearing and instant hand hygiene for fighting SARS-CoV-2. J Med Virol. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32232986/">PMID: 32232986</a></li>
+          <li className="alert-li">Leung, N.H.L., Chu, D.K.W., Shiu, E.Y.C. <i>et al</i>.al.Respiratory virus shedding in exhaled breath and efficacy of face masks. Nat Med. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32371934/">PMID: 32371934</a></li>
+          <li className="alert-li">Johnson DF, Druce JD, Birch C, Grayson ML. A quantitative assessment of the efficacy of surgical and N95 masks to filter influenza virus in patients with acute influenza infection. Clin Infect Dis. 2009 Jul 15;49(2):275-7. <a href="https://pubmed.ncbi.nlm.nih.gov/19522650/">PMID: 19522650</a></li>
+          <li className="alert-li">Green CF, Davidson CS, Panlilio AL, et al. Effectiveness of selected surgical masks in arresting vegetative cells and endospores when worn by simulated contagious patients. Infect Control Hosp Epidemiol. 2012;33(5):487‐494. <a href="https://pubmed.ncbi.nlm.nih.gov/22476275/">PMID: 22476275</a></li>
 
         </ul>
 
           </Alert>
 
-          <Alert className="alerts" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
+          <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             <Alert.Heading>Symptoms</Alert.Heading>
         hello
         <iframe width='560' height='315'>
@@ -2369,7 +2369,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         </iframe>
           </Alert>
 
-          <Alert className="alerts" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
+          <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading>If You Are Sick</Alert.Heading>
             <p>
               If you are sick :(
