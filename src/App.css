@@ -94,6 +94,11 @@
   font-size: large;
 }
 
+.masks-subject-header {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
 .accordion-header{
 
 }
