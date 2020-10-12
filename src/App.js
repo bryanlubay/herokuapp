@@ -341,6 +341,7 @@ function App() {
 
         <h3 id="loading">Loading . . .</h3>
 
+        {/* STATE SEARCH */}
         <Form id="formStateInput" onSubmit={e => { update_data(); e.preventDefault(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
@@ -372,6 +373,7 @@ function App() {
           <Button className="info-buttons" variant="warning" onClick={() => show_symptoms()}>Symptoms</Button>
           <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
 
+          {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Prevent Getting Sick</Alert.Heading>
             <p>
@@ -481,7 +483,9 @@ function App() {
             </p>
 
           </Alert>
+          {/* END PREVENT */}
 
+          {/* START FREQUENTLY ASKED QUESTIONS */}
           <Alert className="alert" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Frequently Asked Questions</Alert.Heading>
             <p>
@@ -2014,7 +2018,9 @@ function App() {
 
             </p>
           </Alert>
+          {/* END FREQUENTLY ASKED QUESTIONS */}
 
+          {/* START MASKS */}
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Masks</Alert.Heading>
             <p>
@@ -2357,7 +2363,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
         </ul>
 
           </Alert>
+          {/* END MASKS */}
 
+          {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             <Alert.Heading>Symptoms</Alert.Heading>
         hello
@@ -2368,13 +2376,16 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
         </iframe>
           </Alert>
+          {/* END SYMPTOMS */}
 
+          {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading>If You Are Sick</Alert.Heading>
             <p>
               If you are sick :(
         </p>
           </Alert>
+          {/* END IF SICK */}
 
         </div>
         <p>Sources:
