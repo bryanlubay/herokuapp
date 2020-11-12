@@ -2135,7 +2135,7 @@ function App() {
 
         <ul>
 
-              Washing Machine
+              Washing <br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="alert-li">You can include your mask with your regular laundry.</li>
@@ -2178,14 +2178,15 @@ function App() {
 
 
             </ul>
-        How to Dry
+          <b className="alert-subjects">How to Dry</b>
+
         <ul>
-              Dryer
+              Dryer<br></br>
           <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
               <ul>
                 <li className="alert-li">Use the highest heat setting and leave in the dryer until completely dry.</li>
               </ul>
-          Air Dryer
+          Air Dryer<br></br>
           <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-04-drying-sun.png"></Image>
               <ul>
                 <li className="alert-li">Lay flat and allow to completely dry. If possible, place the mask in direct sunlight.</li>
@@ -2206,7 +2207,7 @@ function App() {
             </ul>
         Sew and No Sew Instructions <br></br>
         Sewn Mask<br></br>
-        Materials
+        Materials<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
             <ul>
               <li className="alert-li">Two 10”x6” rectangles of cotton fabric</li>
