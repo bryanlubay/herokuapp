@@ -2041,7 +2041,6 @@ function App() {
 
 
                 <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image>
-                <br></br>
                 <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
                 <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image>
               </div>
@@ -2055,10 +2054,10 @@ function App() {
               </p>
             </p>
 
-            <p className="alert-subjects">Do wear a mask that<br></br>
+            <p className="masks-p">Do wear a mask that<br></br>
               <ul>
-                <li >Covers your nose and mouth and secure it under your chin</li>
-                <li >Fits snugly against the sides of your face</li><br></br>
+                <li className="alert-li">Covers your nose and mouth and secure it under your chin</li>
+                <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
               </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br>
