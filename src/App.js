@@ -2061,13 +2061,13 @@ function App() {
           <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
         </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
-        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image>
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br>
         </p>
         <p className="alert-subjects">Do NOT wear a mask that<br></br>
-        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image>
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br>
         </p>
         <p className="alert-subjects">How to take off a mask<br></br>
-        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image>
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br>
         </p>
         <p className="alert-subjects">How to Clean<br></br>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
@@ -2132,7 +2132,6 @@ function App() {
 
         Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
 
-        How to Clean
         <ul>
 
         Washing Machine
