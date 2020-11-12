@@ -2050,7 +2050,7 @@ function App() {
             <p className="masks-p">Wear a mask correctly and consistently for the best protection.<br></br>
             <ul>
               <li className="alert-li">Be sure to wash your hands before putting on a mask</li>
-              <li className="alert-li">Do <b>NOT</b> touch the mask when wearing it</li>
+              <li className="alert-li">Do <b>NOT</b> touch the mask when wearing it</li><br></br>
             </ul>
             </p>
         </p>
@@ -2058,7 +2058,7 @@ function App() {
         <p className="masks-p">Do wear a mask that<br></br>
         <ul>
           <li className="alert-li">Covers your nose and mouth and secure it under your chin</li>
-          <li className="alert-li">Fits snugly against the sides of your face</li>
+          <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
         </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image>
