@@ -2067,7 +2067,7 @@ function App() {
             <p className="masks-p">Do NOT wear a mask that<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
             </p>
-            <p className="alert-subjects">How to take off a mask<br></br>
+            <p className="masks-p">How to take off a mask<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
             </p>
             <p className="alert-subjects">How to Clean</p>
@@ -2247,7 +2247,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-05.png"></Image>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-06.png"></Image>
 
-      Makre sure your mask:
+      <br></br>Make sure your mask:
       <ul>
               <li className="alert-li">fits snugly but comfortably against the side of the face</li>
               <li className="alert-li">completely covers the nose and mouth</li>
@@ -2259,7 +2259,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
       See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
-      <iframe width="710" height="399" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br></br><iframe width="710" height="399" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
 
 
@@ -2275,7 +2275,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
 
         Evidence for Effectiveness of Masks<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image>
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
         Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.<br></br>
 
         Who Should Wear A Mask?
@@ -2284,7 +2284,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <li className="alert-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
               <li className="alert-nested-li">COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to wear masks in public settings and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> (staying at least 6 feet away from other people).</li>
               <li className="alert-nested-li">While masks are strongly encouraged to reduce the spread of COVID-19, CDC recognizes there are specific instances when wearing a mask may not be feasible. In these instances, <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#feasibility-adaptations">adaptations and alternatives</a> should be considered whenever possible (see below for examples).</li>
-              <iframe width="339" height="191" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <br></br><iframe width="339" height="191" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
           People who know or think they might have COVID-19
           <li className="alert-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">If you are sick</a> with COVID-19 or think you might have COVID-19, do not visit public areas. Stay home except to get medical care. As much as possible stay in a specific room and away from other people and pets in your home. If you need to be around other people or animals, wear a mask (including in your home).</li>
@@ -2300,7 +2300,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
             </ul>
         Feasibility and Adaptations<br></br>
-        CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br>
+        CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br><br></br>
         For example,
         <ul>
               <li className="alert-li">People who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired—may be unable to wear masks if they rely on lipreading to communicate. In this situation, consider using a clear mask. If a clear mask isn’t available, consider whether you can use written communication, use closed captioning, or decrease background noise to make communication possible while wearing a mask that blocks your lips.</li>
@@ -2334,7 +2334,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
 
         Surgical Masks <br></br>
-        Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br>
+        Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
         Recent Studies:
         <ul>
