@@ -2061,13 +2061,13 @@ function App() {
                 <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
               </ul>
         For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br>
+              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
             
             
-            <p className="masks-p">Do NOT wear a mask that<br></br>
+            <p className="masks-p">Do NOT wear a mask that<br></br><br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br>
             </p>
-            <p className="alert-subjects">How to take off a mask<br></br>
+            <p className="alert-subjects">How to take off a mask<br></br><br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br>
             </p>
             <p className="alert-subjects">How to Clean</p>
@@ -2135,14 +2135,14 @@ function App() {
 
         <ul>
 
-              Washing <br></br>
+              Washing Machine<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="alert-li">You can include your mask with your regular laundry.</li>
                 <li className="alert-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
               </ul>
 
-        Washing by Hand
+        <br></br>Washing by Hand
         <ul>
                 <li className="alert-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
           <ul>
@@ -2160,7 +2160,7 @@ function App() {
                 <li className="alert-li">Discard the bleach solution down the drain and rinse the mask thoroughly with cool or room temperature water.</li>
                 <li className="alert-li"><b>Make sure to completely dry the mask after washing.</b></li>
 
-          Using Bleach Safely:
+          <br></br>Using Bleach Safely:
           <ul>
                   <li className="alert-li">Always read and follow the directions on the label to ensure safe and effective use.</li>
                   <li className="alert-li">Be aware that bleach can damage cloth fabric over time.</li>
