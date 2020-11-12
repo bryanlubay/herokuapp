@@ -2046,6 +2046,7 @@ function App() {
               </div>
 
               <b className="alert-subjects">How to Wear</b><br></br>
+
               <p className="masks-p">Wear a mask correctly and consistently for the best protection.<br></br>
                 <ul>
                   <li className="alert-li">Be sure to wash your hands before putting on a mask</li>
@@ -2054,7 +2055,7 @@ function App() {
               </p>
             </p>
 
-            <p className="masks-p">Do wear a mask that</p><br></br>
+            <p className="masks-p">Do wear a mask that</p>
               <ul>
                 <li className="alert-li">Covers your nose and mouth and secure it under your chin</li>
                 <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
@@ -2069,7 +2070,7 @@ function App() {
             <p className="alert-subjects">How to take off a mask<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br>
             </p>
-            <p className="alert-subjects">How to Clean<br></br>
+            <p className="alert-subjects">How to Clean</p><br></br>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
         <ul>
                 <li className="alert-li">Include your mask with your regular laundry</li>
@@ -2077,7 +2078,7 @@ function App() {
                 <li className="alert-li">Use the highest heat setting and leave in the dryer until completely dry</li>
               </ul>
         For more information, visit our <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">How to Wash Masks</a> web page.
-        </p>
+        
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br>
 
             <b className="alert-subjects">How to Wear Masks</b><br></br>
