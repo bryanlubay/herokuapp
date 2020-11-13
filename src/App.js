@@ -336,7 +336,11 @@ function App() {
 
 
     <div className="App" >
+      <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <link rel="stylesheet prefetch" href="https://tools.cdc.gov/TemplatePackage/contrib/libs/bootstrap/latest/css/bootstrap.min.css"></link>
+      <link rel="stylesheet prefetch" href="https://tools.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css?v=20-11-02T19:44:43Z"></link>
+      </head>
       <header className="App-header">
 
         <h3 id="loading">Loading . . .</h3>
