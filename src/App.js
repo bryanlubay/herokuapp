@@ -2098,7 +2098,7 @@ function App() {
               <li className="alert-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
             </ul>
 
-              Wear a Mask to Protect Others<br></br>
+              <br></br>Wear a Mask to Protect Others<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
             <ul>
               <li className="alert-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
@@ -2108,7 +2108,7 @@ function App() {
               <li className="alert-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
             </ul>
 
-              Follow Everyday Health Habits<br></br>
+              <br></br>Follow Everyday Health Habits<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="alert-li">Stay at least 6 feet away from others</li>
@@ -2117,7 +2117,7 @@ function App() {
               <li className="alert-li">Use hand sanitizer if soap and water are not available</li>
             </ul>
 
-              Take Off Your Mask Carefully, When You’re Home<br></br>
+              <br></br>Take Off Your Mask Carefully, When You’re Home<br></br>
               <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
             <ul>
               <li className="alert-li">Untie the strings behind your head or stretch the ear loops</li>
@@ -2128,14 +2128,14 @@ function App() {
             </ul>
 
 
-            <b className="alert-subjects">Washing Masks</b><br></br>
+            <br></br><b className="alert-subjects">Washing Masks</b><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
 
         Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
 
         <ul>
 
-              Washing Machine<br></br>
+              <br></br>Washing Machine<br></br>
         <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="alert-li">You can include your mask with your regular laundry.</li>
@@ -2186,7 +2186,7 @@ function App() {
               <ul>
                 <li className="alert-li">Use the highest heat setting and leave in the dryer until completely dry.</li>
               </ul>
-          Air Dryer<br></br>
+          <br></br>Air Dryer<br></br>
           <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-04-drying-sun.png"></Image>
               <ul>
                 <li className="alert-li">Lay flat and allow to completely dry. If possible, place the mask in direct sunlight.</li>
@@ -2264,7 +2264,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <b className="alert-subjects">Considerations for Wearing Masks</b><br></br>
+            <br></br><b className="alert-subjects">Considerations for Wearing Masks</b><br></br>
 
             <ul>
               <li className="alert-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
@@ -2278,7 +2278,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
         Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.<br></br>
 
-        Who Should Wear A Mask?
+        <br></br>Who Should Wear A Mask?
         <ul>
               General Public
           <li className="alert-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
