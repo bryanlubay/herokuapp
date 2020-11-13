@@ -2055,7 +2055,7 @@ function App() {
               </p>
             </p>
 
-            <p className="masks-p"><b>Do wear a mask that</b></p>
+            <p className="masks-p"><u>Do wear a mask that</u></p>
               <ul>
                 <li className="alert-li">Covers your nose and mouth and secure it under your chin</li>
                 <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
