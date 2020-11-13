@@ -2081,7 +2081,7 @@ function App() {
         
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
-            <b className="alert-subjects">How to Wear Masks</b><br></br>
+            <p className="alert-subjects">How to Wear Masks</p><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
         <ul>
               <li className="alert-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
@@ -2178,7 +2178,7 @@ function App() {
 
 
             </ul>
-          <b className="alert-subjects">How to Dry</b><br></br>
+          <p className="alert-subjects">How to Dry</p><br></br>
 
         <ul>
               <b>Dryer</b><br></br>
@@ -2193,7 +2193,7 @@ function App() {
               </ul>
             </ul>
 
-            <br></br><b className="alert-subjects">Making Masks</b><br></br>
+            <br></br><p className="alert-subjects">Making Masks</p><br></br>
 
         CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
@@ -2254,7 +2254,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li">includes multiple layers of fabric</li>
               <li className="alert-li">allows for breathing without restriction</li>
               <li className="alert-li">can be laundered and machine dried without damage or change to shape</li>
-            </ul>
+            </ul><br></br>
 
       See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
@@ -2263,7 +2263,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <br></br><b className="alert-subjects">Considerations for Wearing Masks</b><br></br>
+            <br></br><p className="alert-subjects">Considerations for Wearing Masks</p><br></br>
 
             <ul>
               <li className="alert-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
@@ -2298,7 +2298,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li">Anyone who has trouble breathing</li>
               <li className="alert-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
             </ul><br></br>
-        Feasibility and Adaptations<br></br>
+        <b>Feasibility and Adaptations</b><br></br>
         CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br><br></br>
         For example,
         <ul>
@@ -2309,11 +2309,11 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li">People who are engaged in high intensity activities, like running, may not be able to wear a mask if it causes difficulty breathing. If unable to wear a mask, consider conducting the activity in a location with greater ventilation and air exchange (for instance, outdoors versus indoors) and where it is possible to maintain physical distance from others.</li>
               <li className="alert-li">People who work in a setting where masks may increase the risk of <a href="https://www.cdc.gov/niosh/topics/heatstress/">heat-related illness</a> or cause safety concerns due to introduction of a hazard (for instance, straps getting caught in machinery) may consult with an occupational safety and health professional to determine the appropriate mask for their setting. Outdoor workers may prioritize use of masks when in close contact with other people, like during group travel or shift meetings, and remove masks when social distancing is possible. <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/meat-poultry-processing-workers-employers.html">Find more information here</a> and below.</li>
         Masks are a critical preventive measure and are most essential in times when social distancing is difficult. If masks cannot be used, make sure to take other measures to reduce the risk of COVID-19 spread, including social distancing, frequent hand washing, and cleaning and disinfecting frequently touched surfaces.
-        </ul><br></br>
-        Masks with Exhalation Valves or Vents<br></br>
+        </ul><br></br><br></br>
+        <b>Masks with Exhalation Valves or Vents</b><br></br>
         The purpose of masks is to keep respiratory droplets from reaching others to aid with source control. However, masks with one-way valves or vents allow air to be exhaled through a hole in the material, which can result in expelled respiratory droplets that can reach others.  This type of mask does not prevent the person wearing the mask from transmitting COVID-19 to others. Therefore, CDC does not recommend using masks for source control if they have an exhalation valve or vent.
 
-        <br></br>Face Shields<br></br>
+        <br></br><br></br><b>Face Shields</b><br></br>
             <ul>
               <li className="alert-li">A face shield is primarily used for eye protection for the person wearing it. At this time, it is not known what level of protection a face shield provides to people nearby from the spray of respiratory droplets from the wearer. There is currently not enough evidence to support the effectiveness of face shields for source control. Therefore, CDC <b>does not currently recommend</b> use of face shields as a substitute for masks.</li>
               <li className="alert-li">However, wearing a mask may not be feasible in every situation for some people for example, people who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired. Here are some considerations for individuals who must wear a face shield instead of a mask:
@@ -2332,10 +2332,10 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               </li>
             </ul>
 
-        Surgical Masks <br></br>
+        <br></br><b>Surgical Masks </b><br></br>
         Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
-        Recent Studies:
+        <b>Recent Studies:</b>
         <ul>
 
               <li className="alert-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
