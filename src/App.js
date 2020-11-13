@@ -2372,13 +2372,32 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             <Alert.Heading>Symptoms</Alert.Heading>
-        hello
-        <iframe width='560' height='315'>
+        {/* <iframe width='560' height='315'>
 
               <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-blue' data-cdc-language='en-us'></div>
               <script src='https://t.cdc.gov/1M1B'></script>
 
-            </iframe>
+            </iframe> */}
+
+
+<iframe id="frame" frameborder="0" width="100%" height="270" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
           </Alert>
           {/* END SYMPTOMS */}
 
