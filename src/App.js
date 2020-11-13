@@ -2081,7 +2081,7 @@ function App() {
         
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
-            <p className="alert-subjects">How to Wear Masks</p><br></br>
+            <p className="alert-subjects">How to Wear Masks</p>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
         <ul>
               <li className="alert-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
@@ -2178,7 +2178,7 @@ function App() {
 
 
             </ul>
-          <p className="alert-subjects">How to Dry</p><br></br>
+          <p className="alert-subjects">How to Dry</p>
 
         <ul>
               <b>Dryer</b><br></br>
@@ -2193,7 +2193,7 @@ function App() {
               </ul>
             </ul>
 
-            <br></br><p className="alert-subjects">Making Masks</p><br></br>
+            <br></br><p className="alert-subjects">Making Masks</p>
 
         CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
@@ -2231,8 +2231,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <b>4.</b> Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.
             <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br>
 
-      Non-sewn Mask<br></br>
-      Materials
+      <b>Non-sewn Mask</b><br></br><br></br>
+      <b>Materials</b>
       <ul>
               <li className="alert-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
               <li className="alert-li">Rubber bands (or hair ties)</li>
@@ -2263,7 +2263,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <br></br><p className="alert-subjects">Considerations for Wearing Masks</p><br></br>
+            <br></br><p className="alert-subjects">Considerations for Wearing Masks</p>
 
             <ul>
               <li className="alert-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
