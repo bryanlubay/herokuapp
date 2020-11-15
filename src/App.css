@@ -158,4 +158,6 @@
   display: -webkit-box;
   height: 600px;
   margin: auto;
+  width: 700px;
+  border: none;
 }
