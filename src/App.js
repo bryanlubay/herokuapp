@@ -2379,7 +2379,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             </iframe> */}
 
-            <iframe id="frame" frameborder="1" width="100%" height="600px" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en" style="display: block;">
+            <iframe id="frame" className="iframe" frameborder="1" width="100%" height="600px" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
               <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white'  data-cdc-language='en-us'></div>
           <script src='https://t.cdc.gov/1M1B'></script>
