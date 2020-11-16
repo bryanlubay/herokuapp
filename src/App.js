@@ -2392,7 +2392,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="alert-li"><b>Older adults and people who have severe underlying medical conditions</b> like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.</li>
            </ul><br></br>
             <b className="alert-subjects">Watch for symptoms</b><br></br>
-            People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:
+            People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:<br></br>
             <ul>
             <li className="alert-li">Fever or chills</li>
             <li className="alert-li">Cough</li>
@@ -2408,7 +2408,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19.
             </ul><br></br>
             <b className="alert-subjects">When to seek emergency medical attention</b><br></br>
-            Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
+            Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b><br></br>
             <ul>
             <li className="alert-li">Trouble breathing</li>
             <li className="alert-li">Persistent pain or pressure in the chest</li>
