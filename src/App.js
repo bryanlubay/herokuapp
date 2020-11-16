@@ -348,7 +348,7 @@ function App() {
         <h3 id="loading">Loading . . .</h3>
 
         {/* STATE SEARCH */}
-        <Form id="formStateInput" style="margin:auto;" onSubmit={e => { update_data(); e.preventDefault(); }}>
+        <Form id="formStateInput" className="state_form" onSubmit={e => { update_data(); e.preventDefault(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State</Form.Label><br></br>
