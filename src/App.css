@@ -48,21 +48,10 @@
 
 }
 
-.submit-button {
-
-  align-self: start;
-  align-content: inherit;
-  margin: auto;
-}
-
 .card {
 
   margin: 2%;
 
-}
-
-.enter-state{
-  margin: auto;
 }
 
 .alert {
@@ -166,9 +155,16 @@
 }
 
 .state-form {
-  margin: 2%;
 }
 
 .form-control {
+  margin: 1%;
+}
+
+.enter-state{
+  margin: auto;
+}
+
+.submit-button {
   margin: auto;
 }
