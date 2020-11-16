@@ -166,5 +166,6 @@
 }
 
 .submit-button {
-  /* margin: auto; */
+  margin: auto;
+  margin-top: 1%;
 }
