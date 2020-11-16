@@ -352,8 +352,8 @@ function App() {
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State</Form.Label><br></br>
-              <Form.Control id="input" type="text" defaultValue="ca"></Form.Control><br></br>
-              <Button className="submit-button" variant="light" type="submit" >Submit</Button>
+              <Form.Control id="input" type="text" defaultValue="ca"></Form.Control>
+              <br></br><br></br><Button className="submit-button" variant="light" type="submit" >Submit</Button>
             </div>
           </Form.Group>
         </Form>
