@@ -165,6 +165,10 @@
   margin-top: 25%
 }
 
-.state_form {
+.state-form {
   margin: 2%;
+}
+
+.form-control {
+  margin: auto;
 }
