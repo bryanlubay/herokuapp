@@ -353,7 +353,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <br></br><Button className="submit-button" variant="light" type="submit" > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" > Submit</Button>
             </div>
           </Form.Group>
         </Form>
