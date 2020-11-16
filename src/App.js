@@ -2404,7 +2404,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="alert-li">Sore throat</li>
             <li className="alert-li">Congestion or runny nose</li>
             <li className="alert-li">Nausea or vomiting</li>
-            <li className="alert-li">Diarrhea</li><br></br>
+            <li className="alert-li">Diarrhea</li>
             This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19.
             </ul><br></br>
             <b className="alert-subjects">When to seek emergency medical attention</b><br></br>
@@ -2415,7 +2415,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="alert-li">New confusion</li>
             <li className="alert-li">Inability to wake or stay awake</li>
             <li className="alert-li">Bluish lips or face</li>
-            </ul><br></br>
+            </ul>
             *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
             <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.<br></br>
             <br></br><b className="alert-subjects">Caring for yourself or others</b>
