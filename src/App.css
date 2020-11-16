@@ -52,8 +52,7 @@
 
   align-self: start;
   align-content: inherit;
-  margin-left: 10px;
-  margin-top: auto;
+  margin: auto;
 }
 
 .card {
@@ -63,7 +62,7 @@
 }
 
 .enter-state{
-  margin-right: 10px;
+  margin-right: auto;
 }
 
 .alert {
