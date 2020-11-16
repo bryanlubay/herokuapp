@@ -158,14 +158,15 @@
 }
 
 .form-control {
-  /* margin: 1%; */
+  margin: auto;
+  margin-right: 10px;
 }
 
 .enter-state{
-  /* margin: auto; */
+  margin: auto;
+  margin-right: 10px;
 }
 
 .submit-button {
   margin: auto;
-  margin-top: 1%;
 }
