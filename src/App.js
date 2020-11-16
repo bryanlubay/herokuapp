@@ -2442,8 +2442,17 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading>If You Are Sick</Alert.Heading>
             <p>
-              If you are sick :(
-        </p>
+            <b className="alert-subjects">What to Do If You Are Sick</b><br></br>
+            <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
+            <b className="alert-subjects">When to Quarantine</b><br></br>
+            <b className="alert-subjects">Caring for Someone at Home</b><br></br>
+            <b className="alert-subjects">Disinfecting Your Home If Someone Is Sick</b><br></br>
+            <b className="alert-subjects">Parents or Caregivers Who Are Sick</b><br></br>
+            <b className="alert-subjects">When You Can Be Around Others</b><br></br>
+            <b className="alert-subjects">Potential Treatments for Severe Illness</b><br></br>
+            <b className="alert-subjects">Long-Term Effects</b><br></br>
+            <b className="alert-subjects">Reinfection</b><br></br>
+            </p>
           </Alert>
           {/* END IF SICK */}
 
