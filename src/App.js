@@ -351,9 +351,9 @@ function App() {
         <Form id="formStateInput" className="state_form" onSubmit={e => { update_data(); e.preventDefault(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
-              <Form.Label className="enter-state">Enter State</Form.Label><br></br>
+              <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" type="text" defaultValue="ca"></Form.Control>
-              <br></br><Button className="submit-button" variant="light" type="submit" >Submit</Button>
+              <br></br><Button className="submit-button" variant="light" type="submit" > Submit</Button>
             </div>
           </Form.Group>
         </Form>
