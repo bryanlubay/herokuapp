@@ -2434,9 +2434,17 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            <Alert.Heading>If You Are Sick</Alert.Heading>
+            <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
             <p>
             <b className="alert-subjects">What to Do If You Are Sick</b><br></br>
+            Stay home except to get medical care
+            <ul>
+              <li className="alert-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
+              <li className="alert-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
+              <li className="alert-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other emergency warning signs, or if you think it is an emergency.</li>
+              <li className="alert-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
+            </ul>
+            Separate yourself from other people
             <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
             <b className="alert-subjects">When to Quarantine</b><br></br>
             <b className="alert-subjects">Caring for Someone at Home</b><br></br>
