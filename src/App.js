@@ -2445,6 +2445,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
             </ul>
             Separate yourself from other people
+            <p>As much as possible, stay in a specific room and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.</p>
+
             <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
             <b className="alert-subjects">When to Quarantine</b><br></br>
             <b className="alert-subjects">Caring for Someone at Home</b><br></br>
