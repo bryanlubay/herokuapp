@@ -57,6 +57,7 @@
 .alert {
   margin-top: 10px;
   margin: auto;
+  width: 85%;
 }
 
 .alert-headings {
