@@ -2452,8 +2452,38 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li>See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
               <li>If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
             </ul>
-
             </p>
+            Monitor your symptoms
+          <ul>
+            <li className="alert-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
+            <li className="alert-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
+          </ul>
+          <p className="sick-p">
+          When to seek emergency medical attention<br></br>
+          Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
+          <ul>
+            <li>Trouble breathing</li>
+            <li>Persistent pain or pressure in the chest</li>
+            <li>New confusion</li>
+            <li>Inability to wake or stay awake</li>
+            <li>Bluish lips or face</li>
+          </ul><br></br>
+          *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
+          <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
+          </p>
+          Call ahead before visiting your doctor
+          <ul>
+            <li className="alert-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
+            <li className="alert-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
+          </ul><br></br>
+          If you are sick, wear a mask over your nose and mouth
+          <ul>
+            <li className="alert-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
+            <li className="alert-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
+            <li className="alert-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
+          </ul><br></br>
+            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p>
+
             <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
             <b className="alert-subjects">When to Quarantine</b><br></br>
             <b className="alert-subjects">Caring for Someone at Home</b><br></br>
