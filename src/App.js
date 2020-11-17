@@ -2047,7 +2047,7 @@ function App() {
 
 
                 <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image>
-                <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image><br></br>
+                <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image>
                 <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               </div>
 
@@ -2289,7 +2289,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <li className="alert-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
               <li className="alert-nested-li">COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to wear masks in public settings and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> (staying at least 6 feet away from other people).</li>
               <li className="alert-nested-li">While masks are strongly encouraged to reduce the spread of COVID-19, CDC recognizes there are specific instances when wearing a mask may not be feasible. In these instances, <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#feasibility-adaptations">adaptations and alternatives</a> should be considered whenever possible (see below for examples).</li>
-              <br></br><iframe width="339" height="191" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+              <br></br><iframe width="50%" height="300px" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
           People who know or think they might have COVID-19
           <li className="alert-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">If you are sick</a> with COVID-19 or think you might have COVID-19, do not visit public areas. Stay home except to get medical care. As much as possible stay in a specific room and away from other people and pets in your home. If you need to be around other people or animals, wear a mask (including in your home).</li>
