@@ -2435,7 +2435,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
-            <p>
+            
             <b className="alert-subjects">What to Do If You Are Sick</b><br></br>
             Stay home except to get medical care
             <ul>
@@ -2445,7 +2445,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
             </ul>
             Separate yourself from other people
-            <p>As much as possible, stay in a specific room and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.</p>
+            <p className="sick-p">As much as possible, stay in a specific room and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.</p>
 
             <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
             <b className="alert-subjects">When to Quarantine</b><br></br>
@@ -2456,7 +2456,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <b className="alert-subjects">Potential Treatments for Severe Illness</b><br></br>
             <b className="alert-subjects">Long-Term Effects</b><br></br>
             <b className="alert-subjects">Reinfection</b><br></br>
-            </p>
+  
           </Alert>
           {/* END IF SICK */}
 
