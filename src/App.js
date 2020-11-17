@@ -374,8 +374,8 @@ function App() {
         <div>
 
           <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick </Button>
-          <Button className="info-buttons" variant="primary" onClick={() => show_frequently_asked_questions()}>Frequently Asked Questions</Button>
-          <Button className="info-buttons" variant="secondary" onClick={() => show_masks()}>Masks</Button><br></br>
+          <Button className="info-buttons" variant="primary" onClick={() => show_frequently_asked_questions()}>Frequently Asked Questions</Button><br></br>
+          <Button className="info-buttons" variant="secondary" onClick={() => show_masks()}>Masks</Button>
           <Button className="info-buttons" variant="warning" onClick={() => show_symptoms()}>Symptoms</Button>
           <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
 
