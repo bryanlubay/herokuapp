@@ -2067,7 +2067,7 @@ function App() {
               <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
             </ul>
         For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
+            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
 
 
             <p className="masks-p"><b>Do NOT wear a mask that</b><br></br>
@@ -2115,7 +2115,7 @@ function App() {
             </ul>
 
             <br></br>Follow Everyday Health Habits<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
+            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="alert-li">Stay at least 6 feet away from others</li>
               <li className="alert-li">Avoid contact with people who are sick</li>
@@ -2124,7 +2124,7 @@ function App() {
             </ul>
 
             <br></br>Take Off Your Mask Carefully, When You’re Home<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
+            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
             <ul>
               <li className="alert-li">Untie the strings behind your head or stretch the ear loops</li>
               <li className="alert-li">Handle only by the ear loops or ties</li>
