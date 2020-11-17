@@ -49,9 +49,9 @@
 }
 
 .card {
-
   margin: 2%;
-
+  margin-top: 0;
+  margin-bottom: 1%;
 }
 
 .alert {
