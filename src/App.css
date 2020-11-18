@@ -84,7 +84,7 @@
 }
 
 .masks-p {
-  font-size: x-large;
+  font-size: calc(10px + 1vw);
 }
 
 .masks-subject-header {
