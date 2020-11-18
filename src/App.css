@@ -93,8 +93,8 @@
 }
 
 .masks-image {
-  height: 75%;
-  width: 75%;
+  height: 50%;
+  width: 50%;
 }
 
 .masks-big-image {
@@ -113,6 +113,10 @@
   width: 50%;
 }
 
+.masks-video {
+  height: 30vw;
+  width: 30vw;
+}
 /* END Maskss */
 
 .stats-text {
