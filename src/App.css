@@ -44,7 +44,7 @@
 /* START Prevent Getting Sick */
 
 .prevent-header {
-  font-size: 4vmax;
+  font-size: calc(10px + 2vw);
   font-weight: bold;
 
 }
