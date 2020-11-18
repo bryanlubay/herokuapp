@@ -38,23 +38,23 @@
 }
 
 .card-top-heading {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: bolder;
 }
 /* START Prevent Getting Sick */
 
 .prevent-header {
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 
 .prevent-li {
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   text-align: left;
 }
 
 .prevent-li-li {
-  font-size: 1vw;
+  font-size: 2vw;
   text-align: left;
 }
 
