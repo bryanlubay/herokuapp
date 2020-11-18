@@ -44,18 +44,18 @@
 /* START Prevent Getting Sick */
 
 .prevent-header {
-  font-size: calc(1px + 3vw);
+  font-size: calc(15px + 2vw);
   font-weight: bold;
 
 }
 
 .prevent-li {
-  font-size: calc(1px + 3vw);
+  font-size: calc(10px + 2vw);
   text-align: left;
 }
 
 .prevent-li-li {
-  font-size: calc(1px + 3vw);
+  font-size: calc(10px + 1vw);
   text-align: left;
 }
 
