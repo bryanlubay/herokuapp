@@ -38,24 +38,24 @@
 }
 
 .card-top-heading {
-  font-size: calc(14px + 3vw);
+  font-size: calc(10px + 3vw);
   font-weight: bolder;
 }
 /* START Prevent Getting Sick */
 
 .prevent-header {
-  font-size: calc(15px + 2vw);
+  font-size: calc(10px + 2vw);
   font-weight: bold;
 
 }
 
 .prevent-li {
-  font-size: calc(10px + 2vw);
+  font-size: calc(10px + 1vw);
   text-align: left;
 }
 
 .prevent-li-li {
-  font-size: calc(10px + 1vw);
+  font-size: calc(10px + 0.5vw);
   text-align: left;
 }
 

@@ -380,7 +380,6 @@ function App() {
 
               <h1 className="prevent-header">How It Spreads</h1>
               <ul>
-                <li className="prevent-li">There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
                 <li className="prevent-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
                 <li className="prevent-li">The virus is thought to spread mainly from person-to-person.
             <ul>
@@ -2415,7 +2414,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="alert-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a></li><br></br><br></br>
             <b className="alert-subjects">What is the difference between Influenza (Flu) and COVID-19?</b><br></br>
             Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. COVID-19 is caused by infection with a new coronavirus (called SARS-CoV-2) and flu is caused by infection with <a href="https://www.cdc.gov/flu/about/viruses/index.htm">influenza viruses</a>.<br></br>
-            There are some key differences between flu and COVID-19. COVID-19 seems to spread more easily than flu and causes more serious illnesses in some people. It can also take longer before people show symptoms and people can be contagious for longer. Another important difference is there is a vaccine to protect against flu. There is currently no vaccine to prevent COVID-19. The best way to prevent infection is to avoid being exposed to the virus. More information about differences between flu and COVID-19 is available in the different sections below.<br></br>
+            There are some key differences between flu and COVID-19. COVID-19 seems to spread more easily than flu and causes more serious illnesses in some people. It can also take longer before people show symptoms and people can be contagious for longer. Another important difference is there is a vaccine to protect against flu. The best way to prevent infection is to avoid being exposed to the virus. More information about differences between flu and COVID-19 is available in the different sections below.<br></br>
             Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and <a href="https://www.cdc.gov/flu/symptoms/testing.htm#anchor_1596736120603">testing</a> may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics, but there are some key differences between the two.<br></br>
             While more is learned every day, there is still a lot that is unknown about COVID-19 and the virus that causes it. This page compares COVID-19 and flu, given the best available information to date.
 
