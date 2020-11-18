@@ -2086,7 +2086,7 @@ function App() {
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
-            </ul>
+            </ul><br></br>
         Wear Your Mask correctly<br></br>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
             <ul>
@@ -2134,7 +2134,7 @@ function App() {
 
         <ul>
 
-              <br></br><b>Washing Machine</b><br></br>
+              <br></br><p className="masks-p">Washing Machine</p><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="masks-li">You can include your mask with your regular laundry.</li>
@@ -2214,7 +2214,7 @@ function App() {
               <li className="masks-li">Sewing machine</li>
             </ul>
 
-            <b>Tutorial</b> <br></br>
+            <p class="masks-p">Tutorial</p> <br></br>
 
             <b>1.</b> Cut out two 10-by-6-inch rectangles of cotton fabric. Use tightly woven cotton, such as quilting fabric or cotton sheets. T-shirt fabric will work in a pinch. Stack the two rectangles; you will sew the mask as if it was a single piece of fabric
         <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image><br></br>
