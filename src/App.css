@@ -81,6 +81,7 @@
 
 .masks-subjects {
   font-size: calc(10px + 1vw);
+  font-weight: bold;
 }
 
 .masks-p {
