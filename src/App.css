@@ -47,6 +47,14 @@
   font-size: 2vw
 }
 
+.prevent-li {
+  font-size: 1.5vw;
+}
+
+.prevent-li-li {
+  font-size: 1vw;
+}
+
 /* END Prevent Getting Sick */
 
 .stats-text {

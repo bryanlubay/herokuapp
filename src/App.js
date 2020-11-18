@@ -378,16 +378,16 @@ function App() {
             <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading>
             <p>
 
-              <h1 className="alert-suh1jects">How It Spreads</h1>
+              <h1 className="prevent-header">How It Spreads</h1>
               <ul>
-                <li className="alert-li">There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
-                <li className="alert-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
-                <li className="alert-li">The virus is thought to spread mainly from person-to-person.
+                <li className="prevent-li">There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
+                <li className="prevent-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
+                <li className="prevent-li">The virus is thought to spread mainly from person-to-person.
             <ul>
-                    <li className="alert-nested-li">Between people who are in close contact with one another (within about 6 feet).</li>
-                    <li className="alert-nested-li">Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
-                    <li className="alert-nested-li">These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
-                    <li className="alert-nested-li">Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
+                    <li className="prevent-li-li">Between people who are in close contact with one another (within about 6 feet).</li>
+                    <li className="prevent-li-li">Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
+                    <li className="prevent-li-li">These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
+                    <li className="prevent-li-li">Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
                   </ul>
                 </li>
               </ul>
