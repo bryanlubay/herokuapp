@@ -137,6 +137,11 @@
   font-size: calc(10px + 0.5vw);
   text-align: left;
 }
+
+.masks-p {
+  font-size: calc(10px + 1vw);
+}
+
 /* END Symptoms */
 
 
