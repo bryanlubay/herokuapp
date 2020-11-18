@@ -38,7 +38,7 @@
 }
 
 .card-top-heading {
-  font-size: 5vmax;
+  font-size: calc(10px + 4vw);
   font-weight: bolder;
 }
 /* START Prevent Getting Sick */
