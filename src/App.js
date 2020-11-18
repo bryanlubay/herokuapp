@@ -2023,13 +2023,13 @@ function App() {
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             <Alert.Heading className="card-top-heading">Masks</Alert.Heading>
             <p>
-              <b className="alert-subjects">Overview</b><br></br>
+              <b className="masks-header">Overview</b><br></br>
               <ul>
-                <li className="alert-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
-                <li className="alert-li">Wear the mask over your nose and mouth and secure it under your chin</li>
-                <li className="alert-li">Masks should be worn by people two years and older</li>
-                <li className="alert-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
-                <li className="alert-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
+                <li className="masks-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
+                <li className="masks-li">Wear the mask over your nose and mouth and secure it under your chin</li>
+                <li className="masks-li">Masks should be worn by people two years and older</li>
+                <li className="masks-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
+                <li className="masks-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
                 <iframe width="50%" height="300px" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </ul>
               <b className="alert-subjects">How to Select</b><br></br>

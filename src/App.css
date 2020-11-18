@@ -69,7 +69,49 @@
 
 /* START Maskss */
 
+.masks-header {
+  font-size: calc(10px + 2vw);
+  font-weight: bold;
+}
 
+.masks-li {
+  font-size: calc(10px + 1vw);
+  text-align: left;
+}
+
+.masks-subject {
+
+}
+
+.masks-p {
+  font-size: x-large;
+}
+
+.masks-subject-header {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.masks-image {
+  height: 75%;
+  width: 75%;
+}
+
+.masks-big-image {
+  height: 25%;
+  width: 25%;
+}
+
+.masks-big-image1 {
+  height: 25%;
+  width: 25%;
+  margin-bottom: 164px;
+}
+
+.masks-big-image2 {
+  height: 50%;
+  width: 50%;
+}
 
 /* END Maskss */
 
@@ -117,14 +159,6 @@
   font-size : large;
 }
 
-.masks-p {
-  font-size: x-large;
-}
-
-.masks-subject-header {
-  font-weight: bolder;
-  font-size: xx-large;
-}
 
 .accordion-header{
 
@@ -210,26 +244,6 @@
   margin: auto;
 }
 
-.masks-image {
-  height: 75%;
-  width: 75%;
-}
-
-.masks-big-image {
-  height: 25%;
-  width: 25%;
-}
-
-.masks-big-image1 {
-  height: 25%;
-  width: 25%;
-  margin-bottom: 164px;
-}
-
-.masks-big-image2 {
-  height: 50%;
-  width: 50%;
-}
 
 .sick-p {
   font-size: 20px;
