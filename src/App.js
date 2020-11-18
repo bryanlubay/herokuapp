@@ -392,92 +392,92 @@ function App() {
                 </li>
               </ul>
 
-              <b className="alert-subjects">Wash Your Hands Often</b>
+              <h1 className="prevent-header">Wash Your Hands Often</h1>
               <ul>
-                <li className="alert-li">
+                <li className="prevent-li">
                   <a target="_blank" href="https://www.cdc.gov/handwashing/when-how-handwashing.html" target="_blank">Wash your hands</a> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
-                <li className="alert-li">It’s especially important to wash:
+                <li className="prevent-li">It’s especially important to wash:
             <ul>
-                    <li className="alert-nested-li">Before eating or preparing food</li>
-                    <li className="alert-nested-li">Before touching your face</li>
-                    <li className="alert-nested-li">After using the restroom</li>
-                    <li className="alert-nested-li">After leaving a public place</li>
-                    <li className="alert-nested-li">After blowing your nose, coughing, or sneezing</li>
-                    <li className="alert-nested-li">After handling your mask</li>
-                    <li className="alert-nested-li">After changing a diaper</li>
-                    <li className="alert-nested-li">After caring for someone sick</li>
-                    <li className="alert-nested-li">After touching animals or pets</li>
+                    <li className="prevent-li-li">Before eating or preparing food</li>
+                    <li className="prevent-li-li">Before touching your face</li>
+                    <li className="prevent-li-li">After using the restroom</li>
+                    <li className="prevent-li-li">After leaving a public place</li>
+                    <li className="prevent-li-li">After blowing your nose, coughing, or sneezing</li>
+                    <li className="prevent-li-li">After handling your mask</li>
+                    <li className="prevent-li-li">After changing a diaper</li>
+                    <li className="prevent-li-li">After caring for someone sick</li>
+                    <li className="prevent-li-li">After touching animals or pets</li>
                   </ul>
                 </li>
-                <li className="alert-li">If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.</li>
-                <li className="alert-li"><b>Avoid touching your eyes, nose, and mouth with unwashed hands.</b></li>
+                <li className="prevent-li">If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+                <li className="prevent-li"><b>Avoid touching your eyes, nose, and mouth with unwashed hands.</b></li>
               </ul>
 
 
-              <b className="alert-subjects">Avoid Close Contact</b>
+              <h1 className="prevent-header">Avoid Close Contact</h1>
               <ul>
 
-                <li className="alert-li"><b>Inside your home: </b>avoid close contact with people who are sick.
+                <li className="prevent-li"><b>Inside your home: </b>avoid close contact with people who are sick.
             <ul>
-                    <li className="alert-nested-li">If possible, maintain 6 feet between the person who is sick and other household members.</li>
+                    <li className="prevent-li-li">If possible, maintain 6 feet between the person who is sick and other household members.</li>
                   </ul>
                 </li>
 
 
-                <li className="alert-li"><b>Outside your home: </b>Put 6 feet of distance between yourself and people who don’t live in your household.
+                <li className="prevent-li"><b>Outside your home: </b>Put 6 feet of distance between yourself and people who don’t live in your household.
             <ul>
-                    <li className="alert-nested-li">Remember that some people without symptoms may be able to spread virus.</li>
-                    <li className="alert-nested-li"><a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms' length) from other people.</a></li>
-                    <li className="alert-nested-li">Keeping distance from others is especially important for <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk of getting very sick.</a></li>
+                    <li className="prevent-li-li">Remember that some people without symptoms may be able to spread virus.</li>
+                    <li className="prevent-li-li"><a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms' length) from other people.</a></li>
+                    <li className="prevent-li-li">Keeping distance from others is especially important for <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk of getting very sick.</a></li>
                   </ul>
                 </li>
               </ul>
 
-              <b className="alert-subjects">Cover Your Mouth And Nose With A Mask When Around Others</b>
+              <b className="prevent-header">Cover Your Mouth And Nose With A Mask When Around Others</b>
               <ul>
 
-                <li className="alert-li">You could spread COVID-19 to others even if you do not feel sick.</li>
-                <li className="alert-li">The mask is meant to protect other people in case you are infected.</li>
-                <li className="alert-li">Everyone should wear a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html"></a>mask in public settings and when around people who don’t live in your household, especially when other <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing measures are difficult to maintain.</a></li>
+                <li className="prevent-li">You could spread COVID-19 to others even if you do not feel sick.</li>
+                <li className="prevent-li">The mask is meant to protect other people in case you are infected.</li>
+                <li className="prevent-li">Everyone should wear a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html"></a>mask in public settings and when around people who don’t live in your household, especially when other <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing measures are difficult to maintain.</a></li>
                 <ul>
-                  <li className="alert-nested-li">Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li>
+                  <li className="prevent-li-li">Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li>
                 </ul>
-                <li className="alert-li">Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
-                <li className="alert-li">Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
+                <li className="prevent-li">Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+                <li className="prevent-li">Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
 
               </ul>
 
 
 
 
-              <b className="alert-subjects">Cover Coughs And Sneezes</b>
+              <b className="prevent-header">Cover Coughs And Sneezes</b>
               <ul>
 
-                <li className="alert-li"><b>Always cover your mouth and nose </b>with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
-                <li className="alert-li"><b>Throw used tissues </b>in the trash.</li>
-                <li className="alert-li">Immediately<b> wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+                <li className="prevent-li"><b>Always cover your mouth and nose </b>with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
+                <li className="prevent-li"><b>Throw used tissues </b>in the trash.</li>
+                <li className="prevent-li">Immediately<b> wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
               </ul>
 
-              <b className="alert-subjects">Clean And Disinfect</b>
+              <b className="prevent-header">Clean And Disinfect</b>
               <ul>
 
-                <li className="alert-li"><b>Clean AND disinfect<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html"> frequently touched surfaces</a> daily.</b>  This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
-                <li className="alert-li"><b>If surfaces are dirty, clean them.</b> Use detergent or soap and water prior to disinfection.</li>
-                <li className="alert-li"><b>Then, use a household disinfectant.</b> Most common <a target="_blank" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered household disinfectants</a> will work.</li>
+                <li className="prevent-li"><b>Clean AND disinfect<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html"> frequently touched surfaces</a> daily.</b>  This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+                <li className="prevent-li"><b>If surfaces are dirty, clean them.</b> Use detergent or soap and water prior to disinfection.</li>
+                <li className="prevent-li"><b>Then, use a household disinfectant.</b> Most common <a target="_blank" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered household disinfectants</a> will work.</li>
               </ul>
 
-              <b className="alert-subjects">Monitor Your Health Daily</b>
+              <b className="prevent-header">Monitor Your Health Daily</b>
               <ul>
 
-                <li className="alert-li"><b>Be alert for symptoms.</b> Watch for fever, cough, shortness of breath, or <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a><b> of COVID-19.</b>
+                <li className="prevent-li"><b>Be prevent for symptoms.</b> Watch for fever, cough, shortness of breath, or <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a><b> of COVID-19.</b>
                   <ul>
-                    <li className="alert-nested-li">Especially important if you are <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, going into the office or workplace, and in settings where it may be difficult to keep a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">physical distance of 6 feet.</a></li>
+                    <li className="prevent-li-li">Especially important if you are <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, going into the office or workplace, and in settings where it may be difficult to keep a <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">physical distance of 6 feet.</a></li>
                   </ul></li>
-                <li className="alert-li"><b>Take your temperature</b> if symptoms develop.</li>
+                <li className="prevent-li"><b>Take your temperature</b> if symptoms develop.</li>
                 <ul>
-                  <li className="alert-nested-li">Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
+                  <li className="prevent-li-li">Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
                 </ul>
-                <li className="alert-li">Follow <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidance</a> if symptoms develop.</li>
+                <li className="prevent-li">Follow <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidance</a> if symptoms develop.</li>
               </ul>
 
             </p>

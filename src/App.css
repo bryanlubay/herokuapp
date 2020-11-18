@@ -44,15 +44,18 @@
 /* START Prevent Getting Sick */
 
 .prevent-header {
-  font-size: 2vw
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .prevent-li {
   font-size: 1.5vw;
+  text-align: left;
 }
 
 .prevent-li-li {
   font-size: 1vw;
+  text-align: left;
 }
 
 /* END Prevent Getting Sick */
