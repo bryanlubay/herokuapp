@@ -2069,7 +2069,7 @@ function App() {
             <p className="masks-p"><b>How to take off a mask</b><br></br>
               <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
             </p>
-            <p className="masks-subjects">How to Clean</p>
+            <p className="masks-header">How to Clean</p>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
         <ul>
               <li className="masks-li">Include your mask with your regular laundry</li>
@@ -2080,7 +2080,7 @@ function App() {
 
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
-            <p className="masks-subjects">How to Wear Masks</p>
+            <p className="masks-header">How to Wear Masks</p>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
         <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
@@ -2127,7 +2127,7 @@ function App() {
             </ul>
 
 
-            <br></br><b className="masks-subjects">Washing Masks</b><br></br>
+            <br></br><b className="masks-header">Washing Masks</b><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
 
         Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
@@ -2177,7 +2177,7 @@ function App() {
 
 
             </ul>
-            <p className="masks-subjects">How to Dry</p>
+            <p className="masks-header">How to Dry</p>
 
             <ul>
               <b>Dryer</b><br></br>
@@ -2192,7 +2192,7 @@ function App() {
               </ul>
             </ul>
 
-            <br></br><p className="masks-subjects">Making Masks</p>
+            <br></br><p className="masks-header">Making Masks</p>
 
         CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
