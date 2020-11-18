@@ -49,13 +49,15 @@
 }
 
 .card {
-
   margin: 2%;
-
+  margin-top: 0;
+  margin-bottom: 1%;
 }
 
 .alert {
   margin-top: 10px;
+  margin: auto;
+  width: 60%;
 }
 
 .alert-headings {
@@ -169,4 +171,29 @@
 
 .submit-button {
   margin: auto;
+}
+
+.masks-image {
+  height: 75%;
+  width: 75%;
+}
+
+.masks-big-image {
+  height: 25%;
+  width: 25%;
+}
+
+.masks-big-image1 {
+  height: 25%;
+  width: 25%;
+  margin-bottom: 164px;
+}
+
+.masks-big-image2 {
+  height: 50%;
+  width: 50%;
+}
+
+.sick-p {
+  font-size: 20px;
 }

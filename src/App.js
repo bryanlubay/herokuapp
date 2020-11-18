@@ -2031,18 +2031,18 @@ function App() {
                 <li className="alert-li">Masks should be worn by people two years and older</li>
                 <li className="alert-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
                 <li className="alert-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="50%" height="300px" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </ul>
               <b className="alert-subjects">How to Select</b><br></br>
               <p className="masks-p">When selecting a mask, there are many choices. Here are some do’s and don’ts</p>
               <div>
-                <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-choose-masks-medium.jpg"></Image>
-                <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-NOT-choose-masks-medium.jpg"></Image>
+                <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-choose-masks-medium.jpg"></Image>
+                <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-NOT-choose-masks-medium.jpg"></Image><br></br>
 
 
-                <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image><br></br>
-                <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image><br></br>
-                <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
+                <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image>
+                <Image className="masks-big-image1" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image><br></br>
+                <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               </div>
 
               <b className="alert-subjects">How to Wear</b><br></br>
@@ -2061,14 +2061,14 @@ function App() {
               <li className="alert-li">Fits snugly against the sides of your face</li><br></br>
             </ul>
         For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
+            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
 
 
             <p className="masks-p"><b>Do NOT wear a mask that</b><br></br>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
+              <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
             </p>
             <p className="masks-p"><b>How to take off a mask</b><br></br>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
+              <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
             </p>
             <p className="alert-subjects">How to Clean</p>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
@@ -2109,7 +2109,7 @@ function App() {
             </ul>
 
             <br></br>Follow Everyday Health Habits<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="alert-li">Stay at least 6 feet away from others</li>
               <li className="alert-li">Avoid contact with people who are sick</li>
@@ -2118,7 +2118,7 @@ function App() {
             </ul>
 
             <br></br>Take Off Your Mask Carefully, When You’re Home<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
             <ul>
               <li className="alert-li">Untie the strings behind your head or stretch the ear loops</li>
               <li className="alert-li">Handle only by the ear loops or ties</li>
@@ -2136,7 +2136,7 @@ function App() {
         <ul>
 
               <br></br><b>Washing Machine</b><br></br>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
+              <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="alert-li">You can include your mask with your regular laundry.</li>
                 <li className="alert-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
@@ -2182,12 +2182,12 @@ function App() {
 
             <ul>
               <b>Dryer</b><br></br>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
+              <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
               <ul>
                 <li className="alert-li">Use the highest heat setting and leave in the dryer until completely dry.</li>
               </ul>
               <br></br><b>Air Dryer</b><br></br>
-              <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-04-drying-sun.png"></Image>
+              <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-04-drying-sun.png"></Image>
               <ul>
                 <li className="alert-li">Lay flat and allow to completely dry. If possible, place the mask in direct sunlight.</li>
               </ul>
@@ -2238,7 +2238,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="alert-li">Rubber bands (or hair ties)</li>
               <li className="alert-li">Scissors (if you are cutting your own cloth)</li>
             </ul>
-      Tutorial
+      Tutorial<br></br>
       <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-01.png"></Image>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-02.png"></Image>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-03.png"></Image>
@@ -2258,7 +2258,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
       See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
-      <br></br><iframe width="710" height="399" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+      <br></br><iframe width="50%" height="300px" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
 
 
@@ -2274,7 +2274,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
 
             <b>Evidence for Effectiveness of Masks</b><br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
         Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.<br></br>
 
             <br></br><b>Who Should Wear A Mask?</b><br></br>
@@ -2283,7 +2283,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <li className="alert-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
               <li className="alert-nested-li">COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to wear masks in public settings and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> (staying at least 6 feet away from other people).</li>
               <li className="alert-nested-li">While masks are strongly encouraged to reduce the spread of COVID-19, CDC recognizes there are specific instances when wearing a mask may not be feasible. In these instances, <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#feasibility-adaptations">adaptations and alternatives</a> should be considered whenever possible (see below for examples).</li>
-              <br></br><iframe width="339" height="191" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+              <br></br><iframe width="50%" height="300px" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
           People who know or think they might have COVID-19
           <li className="alert-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">If you are sick</a> with COVID-19 or think you might have COVID-19, do not visit public areas. Stay home except to get medical care. As much as possible stay in a specific room and away from other people and pets in your home. If you need to be around other people or animals, wear a mask (including in your home).</li>
@@ -2366,12 +2366,6 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">Symptoms</Alert.Heading>
-            {/* <iframe width='560' height='315'>
-
-              <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-blue' data-cdc-language='en-us'></div>
-              <script src='https://t.cdc.gov/1M1B'></script>
-
-            </iframe> */}
             <p className="iframe">
             <iframe id="frame" className="iframe" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
@@ -2434,9 +2428,56 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            <Alert.Heading>If You Are Sick</Alert.Heading>
-            <p>
+            <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
+            
             <b className="alert-subjects">What to Do If You Are Sick</b><br></br>
+            Stay home except to get medical care
+            <ul>
+              <li className="alert-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
+              <li className="alert-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
+              <li className="alert-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
+              <li className="alert-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
+            </ul>
+            Separate yourself from other people
+            <p className="sick-p"><b>As much as possible, stay in a specific room</b> and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.<br></br>
+              <b>Tell your <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Contact-Tracing">close contacts</a></b> that they may have been exposed to COVID-19. An infected person can spread COVID-19 starting 48 hours (or 2 days) before the person has any symptoms or tests positive. By letting your close contacts know they may have been exposed to COVID-19, you are helping to protect everyone.
+              <ul>
+              <li>Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
+              <li>See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
+              <li>If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
+            </ul>
+            </p>
+            Monitor your symptoms
+          <ul>
+            <li className="alert-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
+            <li className="alert-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
+          </ul>
+          <p className="sick-p">
+          When to seek emergency medical attention<br></br>
+          Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
+          <ul>
+            <li>Trouble breathing</li>
+            <li>Persistent pain or pressure in the chest</li>
+            <li>New confusion</li>
+            <li>Inability to wake or stay awake</li>
+            <li>Bluish lips or face</li>
+          </ul><br></br>
+          *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
+          <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
+          </p>
+          Call ahead before visiting your doctor
+          <ul>
+            <li className="alert-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
+            <li className="alert-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
+          </ul><br></br>
+          If you are sick, wear a mask over your nose and mouth
+          <ul>
+            <li className="alert-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
+            <li className="alert-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
+            <li className="alert-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
+          </ul><br></br>
+            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p>
+
             <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
             <b className="alert-subjects">When to Quarantine</b><br></br>
             <b className="alert-subjects">Caring for Someone at Home</b><br></br>
@@ -2446,7 +2487,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <b className="alert-subjects">Potential Treatments for Severe Illness</b><br></br>
             <b className="alert-subjects">Long-Term Effects</b><br></br>
             <b className="alert-subjects">Reinfection</b><br></br>
-            </p>
+  
           </Alert>
           {/* END IF SICK */}
 
