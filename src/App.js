@@ -2364,7 +2364,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
-            <Alert.Heading className="alert-headings">Symptoms</Alert.Heading>
+            <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading>
             <p className="iframe">
             <iframe id="frame" className="iframe" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
@@ -2373,46 +2373,46 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             </iframe>
             </p>
-            <br></br><b className="alert-subjects">What you need to know</b><br></br>
+            <br></br><b className="symptoms-header">What you need to know</b><br></br>
             <ul>
-                <li className="alert-li">Anyone can have mild to severe symptoms.</li>
-                <li className="alert-li"><b>Older adults and people who have severe underlying medical conditions</b> like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.</li>
+                <li className="symptoms-li">Anyone can have mild to severe symptoms.</li>
+                <li className="symptoms-li"><b>Older adults and people who have severe underlying medical conditions</b> like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.</li>
            </ul><br></br>
-            <b className="alert-subjects">Watch for symptoms</b><br></br>
+            <b className="symptoms-header">Watch for symptoms</b><br></br>
             People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:<br></br>
             <ul>
-            <li className="alert-li">Fever or chills</li>
-            <li className="alert-li">Cough</li>
-            <li className="alert-li">Shortness of breath or difficulty breathing</li>
-            <li className="alert-li">Fatigue</li>
-            <li className="alert-li">Muscle or body aches</li>
-            <li className="alert-li">Headache</li>
-            <li className="alert-li">New loss of taste or smell</li>
-            <li className="alert-li">Sore throat</li>
-            <li className="alert-li">Congestion or runny nose</li>
-            <li className="alert-li">Nausea or vomiting</li>
-            <li className="alert-li">Diarrhea</li>
+            <li className="symptoms-li">Fever or chills</li>
+            <li className="symptoms-li">Cough</li>
+            <li className="symptoms-li">Shortness of breath or difficulty breathing</li>
+            <li className="symptoms-li">Fatigue</li>
+            <li className="symptoms-li">Muscle or body aches</li>
+            <li className="symptoms-li">Headache</li>
+            <li className="symptoms-li">New loss of taste or smell</li>
+            <li className="symptoms-li">Sore throat</li>
+            <li className="symptoms-li">Congestion or runny nose</li>
+            <li className="symptoms-li">Nausea or vomiting</li>
+            <li className="symptoms-li">Diarrhea</li>
             This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19.
             </ul><br></br>
-            <b className="alert-subjects">When to seek emergency medical attention</b><br></br>
+            <b className="symptoms-header">When to seek emergency medical attention</b><br></br>
             Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b><br></br>
             <ul>
-            <li className="alert-li">Trouble breathing</li>
-            <li className="alert-li">Persistent pain or pressure in the chest</li>
-            <li className="alert-li">New confusion</li>
-            <li className="alert-li">Inability to wake or stay awake</li>
-            <li className="alert-li">Bluish lips or face</li>
+            <li className="symptoms-li">Trouble breathing</li>
+            <li className="symptoms-li">Persistent pain or pressure in the chest</li>
+            <li className="symptoms-li">New confusion</li>
+            <li className="symptoms-li">Inability to wake or stay awake</li>
+            <li className="symptoms-li">Bluish lips or face</li>
             </ul>
             *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
             <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.<br></br>
-            <br></br><b className="alert-subjects">Caring for yourself or others</b>
+            <br></br><b className="symptoms-header">Caring for yourself or others</b>
             <ul>
 
             </ul>
-            <li className="alert-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to protect yourself</a></li>
-            <li className="alert-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">How to care for someone who is sick</a></li>
-            <li className="alert-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a></li><br></br><br></br>
-            <b className="alert-subjects">What is the difference between Influenza (Flu) and COVID-19?</b><br></br>
+            <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to protect yourself</a></li>
+            <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">How to care for someone who is sick</a></li>
+            <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a></li><br></br><br></br>
+            <b className="symptoms-header">What is the difference between Influenza (Flu) and COVID-19?</b><br></br>
             Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. COVID-19 is caused by infection with a new coronavirus (called SARS-CoV-2) and flu is caused by infection with <a href="https://www.cdc.gov/flu/about/viruses/index.htm">influenza viruses</a>.<br></br>
             There are some key differences between flu and COVID-19. COVID-19 seems to spread more easily than flu and causes more serious illnesses in some people. It can also take longer before people show symptoms and people can be contagious for longer. Another important difference is there is a vaccine to protect against flu. The best way to prevent infection is to avoid being exposed to the virus. More information about differences between flu and COVID-19 is available in the different sections below.<br></br>
             Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and <a href="https://www.cdc.gov/flu/symptoms/testing.htm#anchor_1596736120603">testing</a> may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics, but there are some key differences between the two.<br></br>

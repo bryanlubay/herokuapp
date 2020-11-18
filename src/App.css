@@ -120,6 +120,26 @@
 }
 /* END Maskss */
 
+/* START Symptoms */
+
+.symptoms-header {
+  font-size: calc(10px + 2vw);
+  font-weight: bold;
+
+}
+
+.symptoms-li {
+  font-size: calc(10px + 1vw);
+  text-align: left;
+}
+
+.symptoms-li-li {
+  font-size: calc(10px + 0.5vw);
+  text-align: left;
+}
+/* END Symptoms */
+
+
 .stats-text {
   width: fit-content;
 }
