@@ -85,7 +85,7 @@
 }
 
 .masks-p {
-  font-size: calc(10px + .5vw);
+  font-size: calc(10px + 1vw);
 }
 
 .masks-subject-header {
@@ -94,8 +94,8 @@
 }
 
 .masks-image {
-  height: 50%;
-  width: 50%;
+  height: 25%;
+  width: 25%;
 }
 
 .masks-big-image {
