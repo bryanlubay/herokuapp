@@ -37,6 +37,18 @@
   }
 }
 
+.card-top-heading {
+  font-size: 3vw;
+  font-weight: bolder;
+}
+/* START Prevent Getting Sick */
+
+.prevent-header {
+  font-size: 2vw
+}
+
+/* END Prevent Getting Sick */
+
 .stats-text {
   width: fit-content;
 }
@@ -57,7 +69,7 @@
 .alert {
   margin-top: 10px;
   margin: auto;
-  width: 60%;
+  width: 90%;
 }
 
 .alert-headings {

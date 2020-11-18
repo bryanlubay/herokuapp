@@ -375,10 +375,10 @@ function App() {
 
           {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
-            <Alert.Heading className="alert-headings">Prevent Getting Sick</Alert.Heading>
+            <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading>
             <p>
 
-              <b className="alert-subjects">How It Spreads</b>
+              <h1 className="alert-suh1jects">How It Spreads</h1>
               <ul>
                 <li className="alert-li">There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
                 <li className="alert-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
