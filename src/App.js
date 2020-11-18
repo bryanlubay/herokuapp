@@ -2392,8 +2392,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="symptoms-li">Congestion or runny nose</li>
             <li className="symptoms-li">Nausea or vomiting</li>
             <li className="symptoms-li">Diarrhea</li>
-            <p className="symptoms-p"></p>
-            This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19.
+            <p className="symptoms-p">This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19.</p>
+            
             </ul><br></br>
             <b className="symptoms-header">When to seek emergency medical attention</b><br></br>
             <p className="symptoms-p">Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b><br></br></p>
@@ -2404,9 +2404,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="symptoms-li">Inability to wake or stay awake</li>
             <li className="symptoms-li">Bluish lips or face</li>
             </ul>
-            <p className="symptoms-p">*This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br></p>
-            <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.<br></br>
-            <br></br><b className="symptoms-header">Caring for yourself or others</b>
+            <p className="symptoms-p">*This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
+            <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.<br></br></p>
+                        <br></br><b className="symptoms-header">Caring for yourself or others</b>
             <ul>
 
             </ul>
