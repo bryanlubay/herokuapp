@@ -486,7 +486,7 @@ function App() {
 
           {/* START FREQUENTLY ASKED QUESTIONS */}
           <Alert className="alert" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
-            <Alert.Heading className="alert-headings">Frequently Asked Questions</Alert.Heading>
+            <Alert.Heading className="card-top-heading">Frequently Asked Questions</Alert.Heading>
             <p>
 
 
@@ -2021,7 +2021,7 @@ function App() {
 
           {/* START MASKS */}
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
-            <Alert.Heading className="alert-headings">Masks</Alert.Heading>
+            <Alert.Heading className="card-top-heading">Masks</Alert.Heading>
             <p>
               <b className="alert-subjects">Overview</b><br></br>
               <ul>
