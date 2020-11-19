@@ -151,24 +151,27 @@
   font-weight: bold;
 }
 
-.sick-li {
-  font-size: calc(10px + 1vw);
-  text-align: left;
+.sick-subject-header {
+  font-weight: bolder;
+  font-size: calc(10px + 3vw);
 }
+
 
 .sick-subjects {
   font-size: calc(10px + 1vw);
   font-weight: bold;
 }
 
+.sick-li {
+  font-size: calc(10px + 1vw);
+  text-align: left;
+}
+
+
 .sick-p {
   font-size: calc(10px + 1vw);
 }
 
-.sick-subject-header {
-  font-weight: bolder;
-  font-size: xx-large;
-}
 
 .sick-image {
   height: 75%;
