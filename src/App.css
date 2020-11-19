@@ -38,7 +38,7 @@
 }
 
 .card-top-heading {
-  font-size: calc(10px + 3vw);
+  font-size: calc(10px + 3.5vw);
   font-weight: bolder;
 }
 /* START Prevent Getting Sick */
@@ -149,7 +149,7 @@
 
 .sick-subject-header {
   font-weight: bolder;
-  font-size: calc(10px + 2vw);
+  font-size: calc(10px + 2.5vw);
 }
 
 
@@ -323,9 +323,4 @@
 
 .submit-button {
   margin: auto;
-}
-
-
-.sick-p {
-  font-size: 20px;
 }

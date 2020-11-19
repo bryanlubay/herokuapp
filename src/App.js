@@ -2428,9 +2428,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br>
+            <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br>
             
-            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br><br></br>
+            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
             <p className="sick-subjects">Stay home except to get medical care</p>
             
             <ul>
