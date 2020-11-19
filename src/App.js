@@ -2446,7 +2446,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="sick-li">Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
               <li className="sick-li">See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
               <li className="sick-li">If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
-            </ul><br></br><br></br>
+            </ul><br></br>
             
             <p className="sick-subjects">Monitor your symptoms</p>
           <ul>
@@ -2477,8 +2477,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="sick-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
             <li className="sick-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
             <li className="sick-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
-          </ul><br></br>
-            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p>
+          </ul>
+            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p><br></br>
             <p className="sick-subjects">Cover your coughs and sneezes</p>
             <ul>
               <li className="sick-li"><b>Cover your mouth and nose</b> with a tissue when you cough or sneeze.</li>
@@ -2510,7 +2510,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="sick-li">Most EPA-registered household disinfectants should be effective. A full list of disinfectants can be found <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2"></a>here.</li>
                 <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Complete Disinfection Guidance</a></li>
               </ul>
-            </ul>
+            </ul><br></br>
 
             <b className="sick-subjects">Isolate If You Are Sick</b><br></br>
             <b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
