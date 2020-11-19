@@ -2546,19 +2546,71 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected.</p>
 
             <br></br><p className="sick-subjects">When you can be around others after you had or likely had COVID-19</p>
-            <p className="sick-p">When you can be around others (end home isolation) depends on different factors for different situations.<br></br>Find CDC’s recommendations for your situation below.</p>
+            <p className="sick-p">When you can be around others (end home isolation) depends on different factors for different situations.<br></br></p>
             <br></br>
             
             <Accordion>
-            <Card><a id="Basics"><Card.Header className="alert-subjects">Basics</Card.Header></a>
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Find CDC’s recommendations for your situation below.</Card.Header></a>
 
-            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
-              What is a novel coronavirus?
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="200">
+            I think or know I had COVID-19, and I had symptoms
             </Accordion.Toggle>
 
-            <Accordion.Collapse eventKey="0">
-              <Card.Body className="accordion-answer">A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the <a target="_blank" href="https://www.cdc.gov/coronavirus/types.html">coronaviruses that commonly circulate among humans</a> and cause mild illness, like the common cold.</Card.Body>
+            <Accordion.Collapse eventKey="200">
+              <Card.Body className="accordion-answer">
+                <p className="sick-p">You can be with others after
+                <ul>
+                  <li className="sick-li">At least 10 days since symptoms first appeared <b>and</b></li>
+                  <li className="sick-li">At least 24 hours with no fever without fever-reducing medication <b>and</b></li>
+                  <li className="sick-li">Other symptoms of COVID-19 are improving**Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation</li>
+                </ul>
+                If you had severe illness from COVID-19 (you were admitted to a hospital and needed oxygen), your healthcare provider may recommend that you stay in isolation for longer than 10 days after your symptoms first appeared (possibly up to 20 days) and you may need to finish your period of isolation at home.
+                </p>
+                
+              </Card.Body>
             </Accordion.Collapse>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="201">
+            I tested positive for COVID-19 but had no symptoms
+            </Accordion.Toggle>
+
+            <Accordion.Collapse eventKey="201">
+              <Card.Body className="accordion-answer">
+              <p className="sick-p">If you continue to have no symptoms, you can be with others after:
+                <ul>
+                  <li className="sick-li">10 days have passed since the date you had your positive test</li>
+                </ul>
+                If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID, and I had symptoms.
+                </p>
+
+              </Card.Body>
+            </Accordion.Collapse>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="202">
+            I had COVID-19 or I tested positive for COVID-19 and I have a weakened immune system
+            </Accordion.Toggle>
+
+            <Accordion.Collapse eventKey="202">
+              <Card.Body className="accordion-answer">
+                <p className="sick-p">
+                If you have a <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">weakened immune system (immunocompromised)</a> due to a health condition or medication, you might need to stay home and isolate longer than 10 days. Talk to your healthcare provider for more information.<br></br>Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
+                </p>
+              </Card.Body>
+            </Accordion.Collapse>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="203">
+            Getting testing again for COVID-19
+            </Accordion.Toggle>
+
+            <Accordion.Collapse eventKey="203">
+              <Card.Body className="accordion-answer">
+                <p className="sick-p">
+                If you have recovered from your symptoms after testing positive for COVID-19, you may continue to test positive for three months or more without being contagious to others. For this reason, you should be tested only if you develop new symptoms of possible COVID-19. Getting tested again should be discussed with your healthcare provider, especially if you have been in close contact with another person who has tested positive for COVID-19 in the last 14 days.<br></br>If you have symptoms and test positive for COVID-19, follow the guidance above for “I think or know I had COVID, and I had symptoms.” Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
+                </p>
+              </Card.Body>
+            </Accordion.Collapse>
+
+
             </Card>
             </Accordion>
 
