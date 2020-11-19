@@ -2624,16 +2624,33 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
             <p className="sick-subjects">Who needs to quarantine?</p>
-            <p className="sick-p"></p>
+            <p className="sick-p">
+
+              <b>People who have been in <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months.</b><br></br>People who have tested positive for COVID-19 do not need to quarantine or get tested again for up to 3 months as long as they do not develop symptoms again. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.<br></br><b>What counts as <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact?</a></b>
+              <ul>
+                <li className="sick-li">You were within 6 feet of someone who has COVID-19 for a total of 15 minutes or more</li>
+                <li className="sick-li">You provided care at home to someone who is sick with COVID-19</li>
+                <li className="sick-li">You had direct physical contact with the person (hugged or kissed them)</li>
+                <li className="sick-li">You shared eating or drinking utensils</li>
+                <li className="sick-li">They sneezed, coughed, or somehow got respiratory droplets on you</li>
+              </ul>
+            </p>
 
             <p className="sick-subjects">Steps to take</p>
-            <p className="sick-p"></p>
+            <p className="sick-p">
+              <b>Stay home and monitor your health</b>
+              <ul>
+                <li className="sick-li">Stay home for 14 days after your last contact with a person who has COVID-19</li>
+                <li className="sick-li">Watch for fever (100.4◦F), cough, shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a> of COVID-19</li>
+                <li className="sick-li">If possible, stay away from others, especially people who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk</a> for getting very sick from COVID-19</li>
+              </ul>
+            </p>
 
             <p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
-            <p className="sick-p"></p>
+            <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected.</p>
 
             <p className="sick-subjects">When to start and end quarantine</p>
-            <p className="sick-p"></p>
+            <p className="sick-p"> You should stay home for 14 days after your last contact with a person who has COVID-19.<br></br><b>For all of the following scenarios, even if you test negative for COVID-19 or feel healthy, you should stay home (quarantine) since symptoms may appear 2 to 14 days after exposure to the virus.</b><br></br>See scenarios below to determine when you can end quarantine and be around others.</p>
 
             <p className="sick-subjects">Scenario 1: Close contact with someone who has COVID-19—will not have further close contact</p>
             <p className="sick-p"></p>
