@@ -144,7 +144,59 @@
 
 /* END Symptoms */
 
+/* START If You Are Sick */
 
+.sick-header {
+  font-size: calc(10px + 2vw);
+  font-weight: bold;
+}
+
+.sick-li {
+  font-size: calc(10px + 1vw);
+  text-align: left;
+}
+
+.sick-subjects {
+  font-size: calc(10px + 1vw);
+  font-weight: bold;
+}
+
+.sick-p {
+  font-size: calc(10px + 1vw);
+}
+
+.sick-subject-header {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.sick-image {
+  height: 75%;
+  width: 75%;
+}
+
+.sick-big-image {
+  height: 25%;
+  width: 25%;
+}
+
+.sick-big-image1 {
+  height: 25%;
+  width: 25%;
+  margin-bottom: 164px;
+}
+
+.sick-big-image2 {
+  height: 50%;
+  width: 50%;
+}
+
+.sick-video {
+  height: 30vw;
+  width: 30vw;
+}
+
+/* END If You Are Sick */
 .stats-text {
   width: fit-content;
 }

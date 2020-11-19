@@ -2430,13 +2430,13 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
             
-            <b className="alert-subjects">What to Do If You Are Sick</b><br></br>
+            <b className="sick-subjects">What to Do If You Are Sick</b><br></br>
             Stay home except to get medical care
             <ul>
-              <li className="alert-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
-              <li className="alert-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
-              <li className="alert-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
-              <li className="alert-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
+              <li className="sick-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
+              <li className="sick-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
+              <li className="sick-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
+              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
             </ul>
             Separate yourself from other people
             <p className="sick-p"><b>As much as possible, stay in a specific room</b> and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.<br></br>
@@ -2449,8 +2449,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </p>
             Monitor your symptoms
           <ul>
-            <li className="alert-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
-            <li className="alert-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
+            <li className="sick-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
+            <li className="sick-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
           </ul>
           <p className="sick-p">
           When to seek emergency medical attention<br></br>
@@ -2467,42 +2467,42 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           </p>
           Call ahead before visiting your doctor
           <ul>
-            <li className="alert-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
-            <li className="alert-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
+            <li className="sick-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
+            <li className="sick-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
           </ul><br></br>
           If you are sick, wear a mask over your nose and mouth
           <ul>
-            <li className="alert-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
-            <li className="alert-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
-            <li className="alert-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
+            <li className="sick-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
+            <li className="sick-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
+            <li className="sick-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
           </ul><br></br>
             <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p>
             Cover your coughs and sneezes
             <ul>
-              <li className="alert-li"><b>Cover your mouth and nose</b> with a tissue when you cough or sneeze.</li>
-              <li className="alert-li"><b>Throw away used tissues</b> in a lined trash can.</li>
-              <li className="alert-li"><b>Immediately wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not available, clean your hands with an alcohol-based hand sanitizer that contains at least 60% alcohol.</li>
+              <li className="sick-li"><b>Cover your mouth and nose</b> with a tissue when you cough or sneeze.</li>
+              <li className="sick-li"><b>Throw away used tissues</b> in a lined trash can.</li>
+              <li className="sick-li"><b>Immediately wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not available, clean your hands with an alcohol-based hand sanitizer that contains at least 60% alcohol.</li>
             </ul><br></br>
             Clean your hands often
             <ul>
-              <li className="alert-li"><b>Wash your hands</b> often with soap and water for at least 20 seconds. This is especially important after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food.</li>
-              <li className="alert-li"><b>Use hand sanitizer</b> if soap and water are not available. Use an alcohol-based hand sanitizer with at least 60% alcohol, covering all surfaces of your hands and rubbing them together until they feel dry.</li>
-              <li className="alert-li"><b>Soap and water</b> are the best option, especially if hands are visibly dirty.</li>
-              <li className="alert-li"><b>Avoid touching</b> your eyes, nose, and mouth with unwashed hands.</li>
-              <li className="alert-li"><a href="https://www.cdc.gov/handwashing/index.html">Handwashing Tips</a></li>
+              <li className="sick-li"><b>Wash your hands</b> often with soap and water for at least 20 seconds. This is especially important after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food.</li>
+              <li className="sick-li"><b>Use hand sanitizer</b> if soap and water are not available. Use an alcohol-based hand sanitizer with at least 60% alcohol, covering all surfaces of your hands and rubbing them together until they feel dry.</li>
+              <li className="sick-li"><b>Soap and water</b> are the best option, especially if hands are visibly dirty.</li>
+              <li className="sick-li"><b>Avoid touching</b> your eyes, nose, and mouth with unwashed hands.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/handwashing/index.html">Handwashing Tips</a></li>
             </ul><br></br>
             Avoid sharing personal household items
             <ul>
-              <li className="alert-li"><b>Do not share</b> dishes, drinking glasses, cups, eating utensils, towels, or bedding with other people in your home.</li>
-              <li className="alert-li"><b>Wash these items thoroughly after using them</b> with soap and water or put in the dishwasher.</li>
+              <li className="sick-li"><b>Do not share</b> dishes, drinking glasses, cups, eating utensils, towels, or bedding with other people in your home.</li>
+              <li className="sick-li"><b>Wash these items thoroughly after using them</b> with soap and water or put in the dishwasher.</li>
             </ul><br></br>
             Clean all “high-touch” surfaces everyday
             <ul>
-              <li className="alert-li"><b>Clean and disinfect</b> high-touch surfaces in your “sick room” and bathroom; wear disposable gloves. Let someone else clean and disinfect surfaces in common areas, but you should clean your bedroom and bathroom, if possible.</li>
-              <li className="alert-li"><b>If a caregiver or other person needs to clean and disinfect</b> a sick person’s bedroom or bathroom, they should do so on an as-needed basis. The caregiver/other person should wear a mask and disposable gloves prior to cleaning. They should wait as long as possible after the person who is sick has used the bathroom before coming in to clean and use the bathroom.</li>
+              <li className="sick-li"><b>Clean and disinfect</b> high-touch surfaces in your “sick room” and bathroom; wear disposable gloves. Let someone else clean and disinfect surfaces in common areas, but you should clean your bedroom and bathroom, if possible.</li>
+              <li className="sick-li"><b>If a caregiver or other person needs to clean and disinfect</b> a sick person’s bedroom or bathroom, they should do so on an as-needed basis. The caregiver/other person should wear a mask and disposable gloves prior to cleaning. They should wait as long as possible after the person who is sick has used the bathroom before coming in to clean and use the bathroom.</li>
               High-touch surfaces include phones, remote controls, counters, tabletops, doorknobs, bathroom fixtures, toilets, keyboards, tablets, and bedside tables.
-              <li className="alert-li"><b>Clean and disinfect areas that may have blood, stool, or body fluids on them.</b></li>
-              <li className="alert-li"><b>Use household cleaners and disinfectants.</b> Clean the area or item with soap and water or another detergent if it is dirty. Then, use a household disinfectant.</li>
+              <li className="sick-li"><b>Clean and disinfect areas that may have blood, stool, or body fluids on them.</b></li>
+              <li className="sick-li"><b>Use household cleaners and disinfectants.</b> Clean the area or item with soap and water or another detergent if it is dirty. Then, use a household disinfectant.</li>
               <ul>
                 <li>Be sure to follow the instructions on the label to ensure safe and effective use of the product. Many products recommend keeping the surface wet for several minutes to ensure germs are killed. Many also recommend precautions such as wearing gloves and making sure you have good ventilation during use of the product.</li>
                 <li>Most EPA-registered household disinfectants should be effective. A full list of disinfectants can be found <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2"></a>here.</li>
@@ -2510,20 +2510,21 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               </ul>
             </ul>
 
-            <b className="alert-subjects">Isolate If You Are Sick</b><br></br>
+            <b className="sick-subjects">Isolate If You Are Sick</b><br></br>
             <b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
 
-            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b>
+            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b><br></br>
 
 
-            <b className="alert-subjects">When to Quarantine</b><br></br>
-            <b className="alert-subjects">Caring for Someone at Home</b><br></br>
-            <b className="alert-subjects">Disinfecting Your Home If Someone Is Sick</b><br></br>
-            <b className="alert-subjects">Parents or Caregivers Who Are Sick</b><br></br>
-            <b className="alert-subjects">When You Can Be Around Others</b><br></br>
-            <b className="alert-subjects">Potential Treatments for Severe Illness</b><br></br>
-            <b className="alert-subjects">Long-Term Effects</b><br></br>
-            <b className="alert-subjects">Reinfection</b><br></br>
+
+            <br></br><b className="sick-subjects">When to Quarantine</b><br></br>
+            <br></br><b className="sick-subjects">Caring for Someone at Home</b><br></br>
+            <br></br><b className="sick-subjects">Disinfecting Your Home If Someone Is Sick</b><br></br>
+            <br></br><b className="sick-subjects">Parents or Caregivers Who Are Sick</b><br></br>
+            <br></br><b className="sick-subjects">When You Can Be Around Others</b><br></br>
+            <br></br><b className="sick-subjects">Potential Treatments for Severe Illness</b><br></br>
+            <br></br><b className="sick-subjects">Long-Term Effects</b><br></br>
+            <br></br><b className="sick-subjects">Reinfection</b><br></br>
   
           </Alert>
           {/* END IF SICK */}
