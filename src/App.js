@@ -2430,22 +2430,22 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
             
-            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br><br></br>
+            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
             <p className="sick-subjects">Stay home except to get medical care</p>
             
             <ul>
               <li className="sick-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
               <li className="sick-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
               <li className="sick-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
-              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
+              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li><br></br>
             </ul>
             <p className="sick-subjects">Separate yourself from other people</p>
             <p className="sick-p"><b>As much as possible, stay in a specific room</b> and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.<br></br>
               <b>Tell your <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Contact-Tracing">close contacts</a></b> that they may have been exposed to COVID-19. An infected person can spread COVID-19 starting 48 hours (or 2 days) before the person has any symptoms or tests positive. By letting your close contacts know they may have been exposed to COVID-19, you are helping to protect everyone.
               <ul>
-              <li>Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
-              <li>See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
-              <li>If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
+              <li className="sick-li">Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
+              <li className="sick-li">See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
+              <li className="sick-li">If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
             </ul><br></br>
             </p>
             <p className="sick-subjects">Monitor your symptoms</p>
@@ -2457,11 +2457,11 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <p className="sick-subjects">When to seek emergency medical attention</p><br></br>
           Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
           <ul>
-            <li>Trouble breathing</li>
-            <li>Persistent pain or pressure in the chest</li>
-            <li>New confusion</li>
-            <li>Inability to wake or stay awake</li>
-            <li>Bluish lips or face</li>
+            <li className="sick-li">Trouble breathing</li>
+            <li className="sick-li">Persistent pain or pressure in the chest</li>
+            <li className="sick-li">New confusion</li>
+            <li className="sick-li">Inability to wake or stay awake</li>
+            <li className="sick-li">Bluish lips or face</li>
           </ul><br></br>
           <p className="sick-subjects">
           *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
@@ -2505,9 +2505,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="sick-li"><b>Clean and disinfect areas that may have blood, stool, or body fluids on them.</b></li>
               <li className="sick-li"><b>Use household cleaners and disinfectants.</b> Clean the area or item with soap and water or another detergent if it is dirty. Then, use a household disinfectant.</li>
               <ul>
-                <li>Be sure to follow the instructions on the label to ensure safe and effective use of the product. Many products recommend keeping the surface wet for several minutes to ensure germs are killed. Many also recommend precautions such as wearing gloves and making sure you have good ventilation during use of the product.</li>
-                <li>Most EPA-registered household disinfectants should be effective. A full list of disinfectants can be found <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2"></a>here.</li>
-                <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Complete Disinfection Guidance</a></li>
+                <li className="sick-li">Be sure to follow the instructions on the label to ensure safe and effective use of the product. Many products recommend keeping the surface wet for several minutes to ensure germs are killed. Many also recommend precautions such as wearing gloves and making sure you have good ventilation during use of the product.</li>
+                <li className="sick-li">Most EPA-registered household disinfectants should be effective. A full list of disinfectants can be found <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2"></a>here.</li>
+                <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Complete Disinfection Guidance</a></li>
               </ul>
             </ul>
 
