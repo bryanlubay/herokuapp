@@ -2430,8 +2430,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
             
-            <b className="sick-subjects">What to Do If You Are Sick</b><br></br>
-            Stay home except to get medical care
+            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
+            <p className="sick-subjects">Stay home except to get medical care</p>
+            
             <ul>
               <li className="sick-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
               <li className="sick-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
@@ -2517,14 +2518,14 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <br></br><b className="sick-subjects">When to Quarantine</b><br></br>
-            <br></br><b className="sick-subjects">Caring for Someone at Home</b><br></br>
-            <br></br><b className="sick-subjects">Disinfecting Your Home If Someone Is Sick</b><br></br>
-            <br></br><b className="sick-subjects">Parents or Caregivers Who Are Sick</b><br></br>
-            <br></br><b className="sick-subjects">When You Can Be Around Others</b><br></br>
-            <br></br><b className="sick-subjects">Potential Treatments for Severe Illness</b><br></br>
-            <br></br><b className="sick-subjects">Long-Term Effects</b><br></br>
-            <br></br><b className="sick-subjects">Reinfection</b><br></br>
+            <br></br><b className="sick-subject-header">When to Quarantine</b><br></br>
+            <br></br><b className="sick-subject-header">Caring for Someone at Home</b><br></br>
+            <br></br><b className="sick-subject-header">Disinfecting Your Home If Someone Is Sick</b><br></br>
+            <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
+            <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>
+            <br></br><b className="sick-subject-header">Potential Treatments for Severe Illness</b><br></br>
+            <br></br><b className="sick-subject-header">Long-Term Effects</b><br></br>
+            <br></br><b className="sick-subject-header">Reinfection</b><br></br>
   
           </Alert>
           {/* END IF SICK */}
