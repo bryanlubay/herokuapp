@@ -2682,14 +2682,6 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <p className="sick-p">If you are caring for someone with COVID-19 at home or in a non-healthcare setting, follow this advice to protect yourself and others. Learn what to do when someone has <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or when someone has been diagnosed with the virus. This information also should be followed when caring for people who have tested positive but are not showing symptoms.<br></br><b>*Note:</b> <i><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">Older adults and people of any age with serious underlying medical conditions</a> are at higher risk for developing more severe illness from COVID-19. People at higher risk of severe illness should call their doctor as soon as symptoms start.</i></p>
 
 
-            <br></br><p className="sick-subjects"></p>
-            <p className="sick-p"></p>
-
-            <br></br><p className="sick-subjects"></p>
-            <p className="sick-p"></p>
-
-
-
 
             <br></br><p className="sick-subjects">Help cover basic needs</p>
             <ul>
@@ -2737,23 +2729,67 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
             <br></br><p className="sick-subjects">Limit contact</p>
-            <p className="sick-p"></p>
+            <p className="sick-p">
+            COVID-19 spreads between people who are in close contact (within about 6 feet) through respiratory droplets, created when someone talks, coughs or sneezes. Staying away from others helps stop the spread of COVID-19.
+
+<br></br>The caregiver, when possible, should not be someone who is at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness from COVID-19</a>.
+
+<br></br><b>The person who is sick should isolate</b>
+
+<br></br>The sick person should separate themselves from others in the home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">when and how to isolate.</a>
+
+<ul>
+  <li className="sick-li">If possible, have the person who is sick use a separate bedroom and bathroom. If possible, have the person who is sick stay in their own “sick room” or area and away from others. Try to stay at least 6 feet away from the sick person.</li>
+  <li className="sick-li">Shared space: If you have to share space, make sure the room has good air flow.
+  <ul>
+    <li className="sick-li-li">Open the window to increase air circulation.</li>
+    <li className="sick-li-li">Improving ventilation helps remove respiratory droplets from the air.</li>
+    
+    </ul></li>
+  <li className="sick-li">Avoid having visitors. Avoid having any unnecessary visitors, especially visits by <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk for severe illness</a>.</li>
+</ul>
+<b>Caregivers should quarantine</b><br></br>
+
+Caregivers and anyone who has been in close contact with someone who has COVID-19 should stay home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">when and how to quarantine</a>.
+            </p>
 
 
             <br></br><p className="sick-subjects">When it's safe for a person who has been sick to be around others</p>
-            <p className="sick-p"></p>
+            <p className="sick-p">Deciding when it is safe to be around others is different for different situations. Find out when someone who is sick can <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">safely end home isolation</a>.</p>
 
 
             <br></br><p className="sick-subjects">Eat in separate rooms or areas</p>
-            <p className="sick-p"></p>
+            <ul>
+              <li className="sick-li"><b>Stay separated:</b> The person who is sick should eat (or be fed) in their room, if possible.</li>
+              <li className="sick-li"><b>Wash dishes and utensils using gloves and hot water:</b> Handle any dishes, cups/glasses, or silverware used by the person who is sick with gloves. Wash them with soap and hot water or in a dishwasher.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Clean hands</a> after taking off gloves or handling used items.</li>
+            </ul>
 
 
             <br></br><p className="sick-subjects">Avoid sharing personal items</p>
-            <p className="sick-p"></p>
+            <ul>
+              <li className="sick-li"><b>Do not share:</b> Do not share dishes, cups/glasses, silverware, towels, bedding, or electronics (like a cell phone) with the person who is sick.</li>
+            </ul>
 
 
             <br></br><p className="sick-subjects">When to wear a mask or gloves</p>
-            <p className="sick-p"></p>
+            <p className="sick-p">
+              <b>The person who is sick</b>
+              <ul>
+                <li className="sick-li">The person who is sick should wear a mask when they are around other people at home and out (including before they enter a doctor’s office).</li>
+                <li className="sick-li">The mask helps prevent a person who is sick from spreading the virus to others. It keeps respiratory droplets contained and from reaching other people.</li>
+                <li className="sick-li">masks should not be placed on young children under age 2, anyone who has trouble breathing, or is not able to remove the covering without help.</li>
+              </ul>
+              <b>Caregiver</b>
+              <ul>
+                <li className="sick-li">Put on a mask and ask the sick person to put on a mask  before entering the room.</li>
+                <li className="sick-li">Wear gloves when you touch or have contact with the sick person’s blood, stool, or body fluids, such as saliva, mucus, vomit, and urine. Throw out gloves into a lined trash can and wash your hands right away.
+                <ul>
+                  <li className="sick-li-li">Practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> to keep from getting sick:  wash your hands often; avoid touching your eyes, nose, and mouth; and frequently clean and disinfect surfaces.</li></ul></li>
+              </ul>
+              <b>Note:</b> During the COVID-19 pandemic, medical grade masks are reserved for healthcare workers and some first responders.
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/IFqx9SG6TkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
 
 
             <br></br><p className="sick-subjects">Clean your hands often</p>
