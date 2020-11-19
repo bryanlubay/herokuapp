@@ -2039,7 +2039,7 @@ function App() {
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-NOT-choose-masks-medium.jpg"></Image><br></br>
 
 
-                <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image>
+                <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-children-medium.jpg"></Image><br></br>
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/special-situations-glasses-medium.jpg"></Image><br></br>
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               </div><br></br>
@@ -2272,11 +2272,11 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="masks-li">Masks with exhalation valves or vents should NOT be worn to help prevent the person wearing the mask from spreading COVID-19 to others (source control)</li>
             </ul>
 
-            <p className="masks-subjects">Evidence for Effectiveness of Masks</p><br></br>
+            <p className="masks-subjects">Evidence for Effectiveness of Masks</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
         Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.<br></br>
 
-            <br></br><p className="masks-subjects">Who Should Wear A Mask?</p><br></br>
+            <br></br><p className="masks-subjects">Who Should Wear A Mask?</p>
             <ul>
               <b>General Public</b>
           <li className="masks-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
@@ -2291,14 +2291,14 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <br></br><b>Caregivers of people with COVID-19</b>
           <li className="masks-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">Those caring for someone who is sick with COVID-19 at home or in a non-healthcare setting</a> may also wear a mask. However, the protective effects—how well the mask protects healthy people from breathing in the virus—are unknown. To prevent getting sick, caregivers should also continue to practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>: avoid close contact as much as possible, clean hands often; avoid touching your eyes, nose, and mouth with unwashed hands; and frequently clean and disinfect surfaces.</li>
             </ul>
-            <p className="masks-subjects">Who Should Not Wear a Mask</p><br></br>
+            <p className="masks-subjects">Who Should Not Wear a Mask?</p>
             <ul>
               <li className="masks-li">Children younger than 2 years old</li>
               <li className="masks-li">Anyone who has trouble breathing</li>
               <li className="masks-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
             </ul><br></br>
             <b>Feasibility and Adaptations</b><br></br>
-        CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br><br></br>
+        CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br>
         <b>For example:</b>
         <ul>
               <li className="masks-li">People who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired—may be unable to wear masks if they rely on lipreading to communicate. In this situation, consider using a clear mask. If a clear mask isn’t available, consider whether you can use written communication, use closed captioning, or decrease background noise to make communication possible while wearing a mask that blocks your lips.</li>
@@ -2308,7 +2308,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="masks-li">People who are engaged in high intensity activities, like running, may not be able to wear a mask if it causes difficulty breathing. If unable to wear a mask, consider conducting the activity in a location with greater ventilation and air exchange (for instance, outdoors versus indoors) and where it is possible to maintain physical distance from others.</li>
               <li className="masks-li">People who work in a setting where masks may increase the risk of <a href="https://www.cdc.gov/niosh/topics/heatstress/">heat-related illness</a> or cause safety concerns due to introduction of a hazard (for instance, straps getting caught in machinery) may consult with an occupational safety and health professional to determine the appropriate mask for their setting. Outdoor workers may prioritize use of masks when in close contact with other people, like during group travel or shift meetings, and remove masks when social distancing is possible. <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/meat-poultry-processing-workers-employers.html">Find more information here</a> and below.</li>
         Masks are a critical preventive measure and are most essential in times when social distancing is difficult. If masks cannot be used, make sure to take other measures to reduce the risk of COVID-19 spread, including social distancing, frequent hand washing, and cleaning and disinfecting frequently touched surfaces.
-        </ul><br></br><br></br>
+        </ul><br></br>
             <b>Masks with Exhalation Valves or Vents</b><br></br>
         The purpose of masks is to keep respiratory droplets from reaching others to aid with source control. However, masks with one-way valves or vents allow air to be exhaled through a hole in the material, which can result in expelled respiratory droplets that can reach others.  This type of mask does not prevent the person wearing the mask from transmitting COVID-19 to others. Therefore, CDC does not recommend using masks for source control if they have an exhalation valve or vent.
 
