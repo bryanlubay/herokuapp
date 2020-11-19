@@ -375,7 +375,7 @@ function App() {
 
           {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading>
+            {/* <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading> */}
             <p>
 
               <h1 className="prevent-header">How It Spreads</h1>
@@ -486,7 +486,7 @@ function App() {
 
           {/* START FREQUENTLY ASKED QUESTIONS */}
           <Alert className="alert" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Frequently Asked Questions</Alert.Heading>
+            {/* <Alert.Heading className="card-top-heading">Frequently Asked Questions</Alert.Heading> */}
             <p>
 
 
@@ -2021,7 +2021,7 @@ function App() {
 
           {/* START MASKS */}
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Masks</Alert.Heading>
+            {/* <Alert.Heading className="card-top-heading">Masks</Alert.Heading> */}
             <p>
               <b className="masks-header">Overview</b><br></br>
               <ul>
@@ -2364,7 +2364,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading>
+            {/* <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading> */}
             <p className="iframe">
               <iframe id="frame" border="1px solid black" className="iframe" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
@@ -2428,7 +2428,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br>
+            {/* <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br> */}
 
             <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
             <p className="sick-subjects">Stay home except to get medical care</p>
@@ -2547,8 +2547,20 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             <br></br><p className="sick-subjects">When you can be around others after you had or likely had COVID-19</p>
             <p className="sick-p">When you can be around others (end home isolation) depends on different factors for different situations.<br></br>Find CDC’s recommendations for your situation below.</p>
+            <br></br>
+            
+            <Accordion>
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Basics</Card.Header></a>
 
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
+              What is a novel coronavirus?
+            </Accordion.Toggle>
 
+            <Accordion.Collapse eventKey="0">
+              <Card.Body className="accordion-answer">A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the <a target="_blank" href="https://www.cdc.gov/coronavirus/types.html">coronaviruses that commonly circulate among humans</a> and cause mild illness, like the common cold.</Card.Body>
+            </Accordion.Collapse>
+            </Card>
+            </Accordion>
 
 
             <br></br><b className="sick-subject-header">When to Quarantine</b><br></br>
