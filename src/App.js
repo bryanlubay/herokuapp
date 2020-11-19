@@ -2616,6 +2616,40 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
             <br></br><b className="sick-subject-header">When to Quarantine</b><br></br>
+            <p className="sick-p"><b>Quarantine</b> is used to keep someone <i>who might have been exposed to COVID-19</i> away from others. Quarantine helps prevent spread of disease that can occur before a person knows they are sick or if they are infected with the virus without feeling symptoms. People in quarantine should stay home, separate themselves from others, monitor their health, and follow directions from their state or local health department.</p>
+            
+            <br></br><p className="sick-subjects">Quarantine or isolation: What's the difference?</p>
+            <p className="sick-p"><b>Quarantine</b> keeps someone who might have been exposed to the virus away from others.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">Isolation</a> keeps someone who is infected with the virus away from others, even in their home.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+
+
+            <p className="sick-subjects">Who needs to quarantine?</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">Steps to take</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">When to start and end quarantine</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">Scenario 1: Close contact with someone who has COVID-19—will not have further close contact</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">Scenario 2: Close contact with someone who has COVID-19—live with the person but can avoid further close contact</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">Scenario 3. Under quarantine and had additional close contact with someone who has COVID-19</p>
+            <p className="sick-p"></p>
+
+            <p className="sick-subjects">Scenario 4: Live with someone who has COVID-19 and cannot avoid continued close contact</p>
+            <p className="sick-p"></p>
+
+
+
+
             <br></br><b className="sick-subject-header">Caring for Someone at Home</b><br></br>
             <br></br><b className="sick-subject-header">Disinfecting Your Home If Someone Is Sick</b><br></br>
             <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
