@@ -2230,7 +2230,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <b>4.</b> Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.
             <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br><br></br>
 
-            <b>Non-sewn Mask</b><br></br><br></br>
+            <b>Non-sewn Mask</b><br></br>
             <b>Materials</b>
             <ul>
               <li className="masks-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
@@ -2334,7 +2334,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><b>Surgical Masks </b><br></br>
         Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
-            <b>Recent Studies:</b>
+            <p className="masks-header">Recent Studies:</p>
             <ul>
 
               <li className="masks-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
