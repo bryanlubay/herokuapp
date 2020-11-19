@@ -2679,6 +2679,101 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
             <br></br><b className="sick-subject-header">Caring for Someone at Home</b><br></br>
+            <p className="sick-p">If you are caring for someone with COVID-19 at home or in a non-healthcare setting, follow this advice to protect yourself and others. Learn what to do when someone has <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or when someone has been diagnosed with the virus. This information also should be followed when caring for people who have tested positive but are not showing symptoms.<br></br><b>*Note:</b> <i><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">Older adults and people of any age with serious underlying medical conditions</a> are at higher risk for developing more severe illness from COVID-19. People at higher risk of severe illness should call their doctor as soon as symptoms start.</i></p>
+
+
+            <br></br><p className="sick-subjects"></p>
+            <p className="sick-p"></p>
+
+            <br></br><p className="sick-subjects"></p>
+            <p className="sick-p"></p>
+
+
+
+
+            <br></br><p className="sick-subjects">Help cover basic needs</p>
+            <ul>
+              <li className="sick-li">Help the person who is sick follow their doctor’s instructions for care and medicine.
+              <ul>
+                <li className="sick-li-li">For <i>most</i> people, symptoms last a few days, and people usually feel better after a week.</li>
+                </ul></li>
+              <li className="sick-li">See if over-the-counter medicines for fever help the person feel better.</li>
+              <li className="sick-li">Make sure the person who is sick drinks a lot of fluids and rests.</li>
+              <li className="sick-li">Help them with grocery shopping, filling prescriptions, and getting other items they may need. Consider having the items delivered through a delivery service, if possible.</li>
+              <li className="sick-li">Take care of their pet(s), and limit contact between the person who is sick and their pet(s) when possible.</li>
+            </ul>
+
+            <br></br><p className="sick-subjects"></p>
+            <p className="sick-p">
+
+            </p>
+
+
+
+            <br></br><p className="sick-subjects">Watch for warning signs</p>
+            <p className="sick-p">
+              <ul>
+                <li className="sick-li">Have their doctor’s phone number on hand.</li>
+                <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Use CDC’s self-checker tool</a> to help you make decisions about seeking appropriate medical care.</li>
+                <li className="sick-li">Call their doctor if the person keeps getting sicker. For medical emergencies, call 911 and tell the dispatcher that the person has or might have COVID-19.</li>
+              </ul>
+            </p>
+
+
+
+            <br></br><p className="sick-subjects">When to seek emergency medical attention</p>
+            <p className="sick-p">Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
+            <ul>
+              <li className="sick-li">Trouble breathing</li>
+              <li className="sick-li">Persistent pain or pressure in the chest</li>
+              <li className="sick-li">New confusion</li>
+              <li className="sick-li">Inability to wake or stay awake</li>
+              <li className="sick-li">Bluish lips or face</li>
+            </ul>
+            *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
+            <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
+            </p>
+
+
+
+            <br></br><p className="sick-subjects">Limit contact</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">When it's safe for a person who has been sick to be around others</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">Eat in separate rooms or areas</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">Avoid sharing personal items</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">When to wear a mask or gloves</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">Clean your hands often</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">Clean and then disinfect</p>
+            <p className="sick-p"></p>
+
+
+            <br></br><p className="sick-subjects">Wash and dry laundry</p>
+            <p className="sick-p"></p>
+
+            <br></br><p className="sick-subjects">Use lined trash can</p>
+            <p className="sick-p"></p>
+
+            <br></br><p className="sick-subjects">Track your own health</p>
+            <p className="sick-p"></p>
+
+
             <br></br><b className="sick-subject-header">Disinfecting Your Home If Someone Is Sick</b><br></br>
             <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
             <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>
