@@ -2430,7 +2430,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
             
-            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
+            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br><br></br>
             <p className="sick-subjects">Stay home except to get medical care</p>
             
             <ul>
@@ -2446,15 +2446,15 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="sick-li">Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
               <li className="sick-li">See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
               <li className="sick-li">If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
-            </ul><br></br>
+            </ul><br></br><br></br>
             
             <p className="sick-subjects">Monitor your symptoms</p>
           <ul>
             <li className="sick-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
             <li className="sick-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
-          </ul>
+          </ul><br></br>
           
-          <p className="sick-subjects">When to seek emergency medical attention<br></br>
+          <p className="sick-subjects">When to seek emergency medical attention
           Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b></p>
           <ul>
             <li className="sick-li">Trouble breathing</li>
@@ -2467,7 +2467,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
           <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.</p>
 
-          <br></br><p className="sick-subjects">Call ahead before visiting your doctor</p><br></br>
+          <br></br><p className="sick-subjects">Call ahead before visiting your doctor</p>
           <ul>
             <li className="sick-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
             <li className="sick-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
