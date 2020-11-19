@@ -2462,7 +2462,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="sick-li">New confusion</li>
             <li className="sick-li">Inability to wake or stay awake</li>
             <li className="sick-li">Bluish lips or face</li>
-          </ul><br></br>
+          </ul>
           <p className="sick-subjects">
           *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
           <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.</p>
