@@ -2512,7 +2512,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               </ul>
             </ul><br></br>
 
-            <b className="sick-subjects">Isolate If You Are Sick</b><br></br>
+            <b className="sick-subject-header">Isolate If You Are Sick</b><br></br>
             <b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
 
             People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b><br></br>
