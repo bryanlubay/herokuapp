@@ -2521,7 +2521,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <p className="sick-subjects">Who needs to isolate?</p>
+            <br></br><p className="sick-subjects">Who needs to isolate?</p>
             <p className="sick-p">People who have COVID-19
             <ul>
               <li className="sick-li">People who have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and are able to recover at home</li>
@@ -2529,7 +2529,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               </ul></p>
 
 
-              <p className="sick-subjects">Steps to take</p>
+              <br></br><p className="sick-subjects">Steps to take</p>
             <p className="sick-p"><b>Stay home except to get medical care</b>
             <ul>
             <li className="sick-li">Monitor your symptoms. If you have an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a> (including trouble breathing), seek emergency medical care immediately</li>
@@ -2541,6 +2541,14 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
             <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">Learn more about what to do if you are sick.</a>
             </p>
+
+            <br></br><p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected.</p>
+
+            <br></br><p className="sick-subjects">When you can be around others after you had or likely had COVID-19</p>
+            <p className="sick-p">When you can be around others (end home isolation) depends on different factors for different situations.<br></br>Find CDC’s recommendations for your situation below.</p>
+
+
 
 
             <br></br><b className="sick-subject-header">When to Quarantine</b><br></br>
