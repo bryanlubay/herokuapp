@@ -2430,7 +2430,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="alert-headings">If You Are Sick</Alert.Heading>
             
-            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
+            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br><br></br>
             <p className="sick-subjects">Stay home except to get medical care</p>
             
             <ul>
@@ -2439,22 +2439,22 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="sick-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
               <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
             </ul>
-            Separate yourself from other people
+            <p className="sick-subjects">Separate yourself from other people</p>
             <p className="sick-p"><b>As much as possible, stay in a specific room</b> and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.<br></br>
               <b>Tell your <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Contact-Tracing">close contacts</a></b> that they may have been exposed to COVID-19. An infected person can spread COVID-19 starting 48 hours (or 2 days) before the person has any symptoms or tests positive. By letting your close contacts know they may have been exposed to COVID-19, you are helping to protect everyone.
               <ul>
               <li>Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
               <li>See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
               <li>If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
-            </ul>
+            </ul><br></br>
             </p>
-            Monitor your symptoms
+            <p className="sick-subjects">Monitor your symptoms</p>
           <ul>
             <li className="sick-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
             <li className="sick-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
           </ul>
-          <p className="sick-p">
-          When to seek emergency medical attention<br></br>
+          
+          <p className="sick-subjects">When to seek emergency medical attention</p><br></br>
           Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
           <ul>
             <li>Trouble breathing</li>
@@ -2463,15 +2463,15 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li>Inability to wake or stay awake</li>
             <li>Bluish lips or face</li>
           </ul><br></br>
+          <p className="sick-subjects">
           *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
           <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
-          </p>
-          Call ahead before visiting your doctor
+          <br></br>Call ahead before visiting your doctor</p>
           <ul>
             <li className="sick-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
             <li className="sick-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
           </ul><br></br>
-          If you are sick, wear a mask over your nose and mouth
+          <p className="sick-subjects">If you are sick, wear a mask over your nose and mouth</p>
           <ul>
             <li className="sick-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
             <li className="sick-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
