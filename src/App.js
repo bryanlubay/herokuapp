@@ -2452,9 +2452,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <ul>
             <li className="sick-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
             <li className="sick-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
-          </ul><br></br>
+          </ul>
           
-          <p className="sick-subjects">When to seek emergency medical attention
+          <p className="sick-p">When to seek emergency medical attention
           Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b></p>
           <ul>
             <li className="sick-li">Trouble breathing</li>
@@ -2463,7 +2463,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="sick-li">Inability to wake or stay awake</li>
             <li className="sick-li">Bluish lips or face</li>
           </ul>
-          <p className="sick-subjects">
+          <p className="sick-p">
           *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
           <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.</p>
 
