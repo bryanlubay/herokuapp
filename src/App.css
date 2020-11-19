@@ -247,7 +247,7 @@
 
 .iframe {
   display: -webkit-box;
-  height: 600px;
+  height: 40vw;
   margin: auto;
   width: 90%;
   border: none;
