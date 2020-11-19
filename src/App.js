@@ -2634,7 +2634,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="sick-li">You shared eating or drinking utensils</li>
                 <li className="sick-li">They sneezed, coughed, or somehow got respiratory droplets on you</li>
               </ul>
-            </p>
+            </p><br></br>
 
             <p className="sick-subjects">Steps to take</p>
             <p className="sick-p">
@@ -2646,24 +2646,35 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               </ul>
             </p>
 
-            <p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <br></br><p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected.</p>
 
-            <p className="sick-subjects">When to start and end quarantine</p>
+            <br></br><p className="sick-subjects">When to start and end quarantine</p>
             <p className="sick-p"> You should stay home for 14 days after your last contact with a person who has COVID-19.<br></br><b>For all of the following scenarios, even if you test negative for COVID-19 or feel healthy, you should stay home (quarantine) since symptoms may appear 2 to 14 days after exposure to the virus.</b><br></br>See scenarios below to determine when you can end quarantine and be around others.</p>
 
-            <p className="sick-subjects">Scenario 1: Close contact with someone who has COVID-19—will not have further close contact</p>
-            <p className="sick-p"></p>
+            <br></br><p className="sick-subjects">Scenario 1: Close contact with someone who has COVID-19—will not have further close contact</p>
+            <p className="sick-p">I had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19 and will not have further contact or interactions with the person while they are sick (e.g., co-worker, neighbor, or friend).<br></br>Your last day of quarantine is 14 days from the date you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>.<br></br>Date of last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with person who has COVID-19 + 14 days= end of quarantine
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-no-further-contact.png"></Image>
+            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
+            
 
-            <p className="sick-subjects">Scenario 2: Close contact with someone who has COVID-19—live with the person but can avoid further close contact</p>
-            <p className="sick-p"></p>
 
-            <p className="sick-subjects">Scenario 3. Under quarantine and had additional close contact with someone who has COVID-19</p>
-            <p className="sick-p"></p>
+            <br></br><p className="sick-subjects">Scenario 2: Close contact with someone who has COVID-19—live with the person but can avoid further close contact</p>
+            <p className="sick-p">
+            I live with someone who has COVID-19 (e.g., roommate, partner, family member), and that person has isolated by staying in a separate bedroom. I have had no <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person since they isolated.<br></br>Your last day of quarantine is 14 days from when the person with COVID-19 began home isolation<br></br>Date person with COVID-19 began home isolation + 14 days = end of quarantine
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-start-home-isolation.png"></Image>
+            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
-            <p className="sick-subjects">Scenario 4: Live with someone who has COVID-19 and cannot avoid continued close contact</p>
-            <p className="sick-p"></p>
+            <br></br><p className="sick-subjects">Scenario 3. Under quarantine and had additional close contact with someone who has COVID-19</p>
+            <p className="sick-p">I live with someone who has COVID-19 and started my 14-day quarantine period because we had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>. What if I ended up having <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person who is sick during my quarantine? What if another household member gets sick with COVID-19? Do I need to restart my quarantine?<br></br>Yes. You will have to restart your quarantine from the last day you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with anyone in your house who has COVID-19. <b>Any time a new household member gets sick with COVID-19 and you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>, you will need to restart your quarantine.</b><br></br>Date of additional <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with person who has COVID-19 + 14 days = end of quarantine
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-additional-contact.png"></Image>
+            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
+
+            <br></br><p className="sick-subjects">Scenario 4: Live with someone who has COVID-19 and cannot avoid continued close contact</p>
+            <p className="sick-p">I live in a household where I cannot avoid <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person who has COVID-19. I am providing direct care to the person who is sick, don’t have a separate bedroom to isolate the person who is sick, or live in close quarters where I am unable to keep a physical distance of 6 feet.<br></br>You should avoid contact with others outside the home while the person is sick, and quarantine for 14 days after the person who has COVID-19 meets the <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">criteria to end home isolation</a>.<br></br>Date the person with COVID-19 ends home isolation + 14 days = end of quarantine
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-continued-contact.png"></Image>
+            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
 
 
