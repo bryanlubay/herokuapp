@@ -146,19 +146,15 @@
 
 /* START If You Are Sick */
 
-.sick-header {
-  font-size: calc(10px + 2vw);
-  font-weight: bold;
-}
 
 .sick-subject-header {
   font-weight: bolder;
-  font-size: calc(10px + 2.5vw);
+  font-size: calc(10px + 2vw);
 }
 
 
 .sick-subjects {
-  font-size: calc(10px + 1vw);
+  font-size: calc(10px + 1.5vw);
   font-weight: bold;
 }
 
