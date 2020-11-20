@@ -2793,18 +2793,60 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
 
 
             <br></br><p className="sick-subject">Clean your hands often</p>
-            <p className="sick-p"></p>
-
+            <ul>
+              <li className="sick-li"><b>Wash hands:</b> Wash your hands often with soap and water for at least 20 seconds. Tell everyone in the home to do the same, especially after being near the person who is sick.</li>
+              <li className="sick-li"><b>Hand sanitizer:</b> If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+              <li className="sick-li"><b>Hands off:</b> Avoid touching your eyes, nose, and mouth with unwashed hands.</li>
+              <li className="sick-li">Learn more about <a href="https://www.cdc.gov/handwashing/index.html">handwashing.</a></li>
+            </ul>
 
             <br></br><p className="sick-subject">Clean and then disinfect</p>
-            <p className="sick-p"></p>
+            <p className="sick-p">
+              <b>Around the house</b>
+            </p>
+            <ul>
+              <li className="sick-li"><b>Clean and disinfect “high-touch” surfaces and items every day:</b> This includes tables, doorknobs, light switches, handles, desks, toilets, faucets, sinks, and electronics.</li>
+              <li className="sick-li">Clean the area or item with <b>soap and water</b> if it is dirty. <b>Then, use a household disinfectant.</b></li>
+              <ul>
+                <li className="sick-li-li">Be sure to <b>follow the instructions on the label</b> to ensure safe and effective use of the product. Many products recommend keeping the surface wet for several minutes to kill germs. Many also recommend wearing gloves, making sure you have good air flow, and wiping or rinsing off the product after use.</li>
+                <li className="sick-li-li">Most household disinfectants should be effective. See a list of <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered disinfectants</a>.</li>
+                <li className="sick-li-li"><b>To clean electronics,</b> follow the manufacturer’s instructions for all cleaning and disinfection products. If those directions are not available, use alcohol-based wipes or spray containing at least 70% alcohol.</li>
+                <li className="sick-li-li">Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">cleaning and disinfecting your home</a>.</li>
+              </ul>
+            </ul>
+            <p className="sick-p">
+              <b>Bed and bathroom</b>
+            </p>
+            <ul>
+              <li className="sick-li"><b>If you are using a separate bedroom and bathroom:</b> Only clean the area around the person who is sick when needed, such as when the area is soiled. This will help limit your contact with the sick person.
+              <ul>
+                  <li className="sick-li-li">If they feel up to it, the person who is sick can clean their own space. Give the person who is sick <b>personal cleaning supplies</b> such as tissues, paper towels, cleaners, and <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered disinfectants</a>.</li>
+                </ul>
+              </li>
+              <li className="sick-li"><b>If sharing a bathroom:</b> The person who is sick should clean and then disinfect after each use. If this is not possible, wear a mask and wait as long as possible after the sick person has used the bathroom before coming in to clean and use the bathroom.</li>
+            </ul>
 
 
             <br></br><p className="sick-subject">Wash and dry laundry</p>
-            <p className="sick-p"></p>
+            <ul>
+              <li className="sick-li">Do not shake dirty laundry.</li>
+              <li className="sick-li">Wear disposable gloves while handling dirty laundry.</li>
+              <li className="sick-li">Dirty laundry from a person who is sick can be washed with other people’s items.</li>
+              <li className="sick-li">Wash items according to the label instructions. Use the warmest water setting you can.</li>
+              <li className="sick-li">Remove gloves, and wash hands right away.</li>
+              <li className="sick-li">Dry laundry, on hot if possible, completely.</li>
+              <li className="sick-li">Wash hands after putting clothes in the dryer.</li>
+              <li className="sick-li">Clean and disinfect clothes hampers. Wash hands afterwards.</li>
+            </ul>
 
             <br></br><p className="sick-subject">Use lined trash can</p>
-            <p className="sick-p"></p>
+            <ul>
+              <li className="sick-li">Place used disposable gloves and other contaminated items in a lined trash can.</li>
+              <li className="sick-li">Use gloves when removing garbage bags, and handling and disposing of trash. Wash hands afterwards.</li>
+              <li className="sick-li">Place all used disposable gloves, masks, and other contaminated items in a lined trash can.</li>
+              <li className="sick-li">If possible, dedicate a lined trash can for the person who is sick.</li>
+
+            </ul>
 
             <br></br><p className="sick-subject">Track your own health</p>
             <p className="sick-p"></p>
