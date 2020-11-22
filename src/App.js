@@ -3085,6 +3085,48 @@ Other products are being studied as potential treatments for COVID-19. Informati
 
 
             <br></br><b className="sick-subject-header">Long-Term Effects</b><br></br>
+            <p className="sick-p">
+            CDC is actively working to learn more about the whole range of short- and long-term health effects associated with COVID-19. As the pandemic unfolds, we are learning that many organs besides the lungs are affected by COVID-19 and there are many ways the infection can affect someone’s health.<br></br>
+
+While most persons with COVID-19 recover and return to normal health, some patients can have symptoms that can last for weeks or even months after recovery from acute illness. Even people who are not hospitalized and who have mild illness can experience persistent or late symptoms. Multi-year studies are underway to further investigate. CDC continues to work to identify how common these symptoms are, who is most likely to get them, and whether these symptoms eventually resolve.<br></br>
+
+The most commonly reported long-term symptoms include:
+<ul>
+  <li className="sick-li">Fatigue</li>
+  <li className="sick-li">Shortness of breath</li>
+  <li className="sick-li">Cough</li>
+  <li className="sick-li">Joint pain</li>
+  <li className="sick-li">Chest pain</li>
+</ul>
+
+Other reported long-term symptoms include:
+<ul>
+  <li className="sick-li">Difficulty with thinking and concentration (sometimes referred to as “brain fog”)</li>
+  <li className="sick-li">Depression</li>
+  <li className="sick-li">Muscle pain</li>
+  <li className="sick-li">Headache</li>
+  <li className="sick-li">Intermittent fever</li>
+  <li className="sick-li">Fast-beating or pounding heart (also known as heart palpitations)</li>
+</ul>
+
+
+More serious long-term complications appear to be less common but have been reported. These have been noted to affect different organ systems in the body. These include:
+<ul>
+  <li className="sick-li">Cardiovascular: inflammation of the heart muscle</li>
+  <li className="sick-li">Respiratory: lung function abnormalities</li>
+  <li className="sick-li">Renal: acute kidney injury</li>
+  <li className="sick-li">Dermatologic: rash, hair loss</li>
+  <li className="sick-li">Neurological: smell and taste problems, sleep issues, difficulty with concentration, memory problems</li>
+  <li className="sick-li">Psychiatric: depression, anxiety, changes in mood</li>
+</ul>
+
+
+The long-term significance of these effects is not yet known. CDC will continue active investigation and provide updates as new data emerge, which can inform COVID-19 clinical care as well as the public health response to COVID-19.
+            </p>
+
+          <p className="sick-subject">Preventing COVID-19</p>
+          <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
+
             <br></br><b className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</b><br></br>
 
           </Alert>
