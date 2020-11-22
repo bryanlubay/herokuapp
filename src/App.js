@@ -3128,6 +3128,34 @@ The long-term significance of these effects is not yet known. CDC will continue 
           <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
             <br></br><b className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</b><br></br>
+            <p className="sick-subject">What we know about MIS-A</p>
+            <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
+
+Like children, adults who have been infected with the virus that causes COVID-19 can develop symptoms of MIS-A days to weeks after getting sick. MIS-A is a condition where problems can occur in different parts of the body like the heart, gastrointestinal tract, skin, or brain. Adults with MIS-A may have various signs and symptoms including:
+<ul>
+  <li className="sick-li">Fever</li>
+  <li className="sick-li">Low blood pressure</li>
+  <li className="sick-li">Abdominal (gut) pain</li>
+  <li className="sick-li">Vomiting</li>
+  <li className="sick-li">Diarrhea</li>
+  <li className="sick-li">Neck pain</li>
+  <li className="sick-li">Rash</li>
+  <li className="sick-li">Chest tightness/pain</li>
+  <li className="sick-li">Feeling very tired</li>
+</ul>
+MIS-A can be very serious, so it is important to seek medical care as soon as possible.
+</p>
+
+            <p className="sick-subject">What we don’t know about MIS-A</p>
+            <p className="sick-p">CDC is still learning about MIS-A and how it affects adults, so we do not know why some adults have gotten sick with MIS-A and others have not. We also do not know if adults with certain health conditions are more likely to develop MIS-A. These are among the many questions CDC is working to understand.</p>
+
+            <p className="sick-subject">What CDC is doing about MIS-A</p>
+            <p className="sick-p">CDC is working with state, local, and territorial health departments; U.S. and international scientists; healthcare providers; and other partners to learn more about MIS-A. Through these partnerships, we are learning about how to recognize MIS-A in adults, how often it happens, and who is likely to get MIS-A.<br></br>
+
+All CDC recommendations are based on the best data and science available at the time, and we will update them as we learn more.</p>
+
+            <p className="sick-subject">How to protect yourself from MIS-A</p>
+            <p className="sick-p">Based on what we know now about MIS-A, the best way you can <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself is by taking everyday actions to protect yourself from getting the virus that causes COVID-19</a>.</p>
 
           </Alert>
           {/* END IF SICK */}
