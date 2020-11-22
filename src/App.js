@@ -2868,7 +2868,73 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
 
             <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
 
-            <p className="sick=header"></p>
+            <p className="sick=header">If a parent or a sole caregiver has COVID-19</p>
+            <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
+
+            If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
+
+            <p className="sick=header">Older children</p>
+            <p className="sick-p">The child should avoid physical contact with the sick parent or caregiver until all sick people have <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">ended their home isolation</a>. For the child to safely have no interaction with the parent or caregiver, the child should be old enough to legally be home alone and mature enough to care for themselves.</p>
+
+            <p className="sick=header">Younger Children</p>
+            <p className="sick-p">
+            If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
+            <ul>
+              <li className="sick-li">Young children should be supervised at all times.</li>
+              <li className="sick-li">If the parent or the sole caregiver is too ill to care for the child, they should see if there is a caregiver outside of the home with whom the child can stay. The caregiver should not be someone who is <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">at higher risk for severe illness</a> from COVID-19, as the child has likely been exposed to the virus. The caregiver will need to help the child quarantine for 14 days since they last had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> (within 6 feet way from someone for a total of 15 minutes or more) with the sick person.</li>
+            </ul>
+            </p>
+
+            <p className="sick=header">Children staying in the home with the sick parent or caregiver</p>
+            <p className="sick-p">
+            If a child needs to stay in the home with you (the parent or caregiver who is sick):
+            <ul>
+              <li className="sick-li">Both you and the child should wear a mask while in the same room.</li>
+              <li className="sick-li">Note that masks should not be placed on:
+              <ul>
+                <li className="sick-li-li">Children younger than 2 years old</li>
+                <li className="sick-li-li">Anyone who has trouble breathing or is unconscious</li>
+                <li className="sick-li-li">Anyone who is incapacitated or otherwise unable to remove the mask without assistance</li>
+                </ul></li>
+              <li className="sick-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> frequently with soap and water for at least 20 seconds. If soap and water are not available, use hand sanitizer containing at least 60% alcohol and rub your hands together until they are dry.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Try to stay 6 feet away</a> from the child, if possible and if safe.</li>
+              <li className="sick-li">Increase ventilation by opening a window in a room that you are in.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Disinfect any items</a> that you need to bring to the child.</li>
+              <li className="sick-li">Do not disinfect food that you bring to the child.</li>
+              <li className="sick-li">Watch for symptoms.              
+               <ul>
+                <li className="sick-li-li">During this time caregivers should monitor themselves for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>.</li>
+                <li className="sick-li-li">Check the child’s temperature twice a day and watch for symptoms of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
+                <li className="sick-li-li">If the child develops symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
+                </ul></li>
+              <li className="sick-li">If possible, the child should stay away from people who are at higher-risk for getting very sick from COVID-19.</li>
+            </ul>
+            </p>
+
+            <p className="sick=header">Children staying outside the home with a temporary caregiver</p>
+            <p className="sick-p">
+            If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
+            <ul>
+              <li className="sick-li">The child should stay inside the caregiver’s home until 14 days after their last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the sick person.</li>
+              <li className="sick-li">Watch for symptoms.
+                <ul>
+                  <li className="sick-li-li">During this time the caregiver should monitor themselves for symptoms and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>.</li>
+                  <li className="sick-li-li">Check the child’s temperature twice a day and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
+                  <li className="sick-li-li">If the child does develop symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
+                </ul>
+              </li>
+              <li className="sick-li">
+              If possible, the child should stay away from people who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher-risk</a> for getting very sick from COVID-19.<br></br>
+The caregiver should then quarantine for 14 days after the last day the caregiver had contact with the sick child.<br></br>
+
+ 
+
+*COVID-19 <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> can look different in different people. For many people, being sick with COVID-19 would be a little bit like having the flu. People can get a fever, cough, or have a hard time taking deep breaths. Most people who have gotten COVID-19 have not gotten very sick. Only a small group of people who get it have had more serious problems. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">More information on children and COVID-19</a>.
+              </li>
+            </ul>
+            </p>
+
+
 
 
             <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>
