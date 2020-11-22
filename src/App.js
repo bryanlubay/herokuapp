@@ -2940,7 +2940,7 @@ The caregiver should then quarantine for 14 days after the last day the caregive
             <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>\
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
 
-            <p className="sick-subjects">I think or know I had COVID-19, and I had symptoms</p>
+            <p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
             <p className="sick-p">You can be around others after:
 <ul>
   <li className="sick-li">10 days since symptoms first appeared and</li>
@@ -2954,17 +2954,17 @@ Most people do not require testing to decide when they can be around others; how
 
 Note that these recommendations do not apply to persons with severe COVID-19 or with severely weakened immune systems (immunocompromised). These persons should follow the guidance below for “I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?”</p>
 
-            <p className="sick-subjects">I tested positive for COVID-19 but had no symptoms</p>
+            <p className="sick-subject">I tested positive for COVID-19 but had no symptoms</p>
             <p className="sick-p">If you continue to have no symptoms, you can be with others after 10 days have passed since you had a positive viral test for COVID-19. Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
 
 If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID-19, and I had symptoms.”</p>
 
-            <p className="sick-subjects">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
+            <p className="sick-subject">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
             <p className="sick-p">People who are severely ill with COVID-19 might need to stay home longer than 10 days and up to 20 days after symptoms first appeared. <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">Persons who are severely immunocompromised</a> may require testing to determine when they can be around others. Talk to your healthcare provider for more information. If testing is available in your community, it may be recommended by your healthcare provider. Your healthcare provider will let you know if you can resume being around other people based on the results of your testing.<br></br>
 
 Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert or your local health department</a> to determine whether testing will be necessary before you can be around others.</p>
 
-            <p className="sick-subjects">For Anyone Who Has Been Around a Person with COVID-19</p>
+            <p className="sick-subject">For Anyone Who Has Been Around a Person with COVID-19</p>
             <p className="sick-p">Anyone who has had close contact with someone with COVID-19 should stay home for 14 days <b>after their last exposure</b> to that person.<br></br>
 
 However, anyone who has had close contact with someone with COVID-19 and who meets the following criteria does <b>NOT</b> need to stay home.
@@ -2974,21 +2974,21 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
   <li className="sick-li">Remains without COVID-19 symptoms (for example, cough, shortness of breath)</li>
 </ul></p>
 
-            <p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected
             </p>
 
-            <p className="sick-subjects">For Healthcare Professionals</p>
+            <p className="sick-subject">For Healthcare Professionals</p>
             <p className="sick-p">If you are a healthcare professional who thinks or knows you had COVID-19, you should follow the same recommendations listed above for when you can resume being around others outside the workplace. When you can return to work depends on different factors and situations. For information on when you can return to work, see the following:<br></br>
 
 <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/return-to-work.html">Criteria for Return to Work for Healthcare Personnel with SARS-CoV-2 Infection (Interim Guidance)</a></p>
 
-            <p className="sick-subjects">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
+            <p className="sick-subject">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
             <p className="sick-p">If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/HNgDirLLZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
-            <p className="sick-subjects">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
+            <p className="sick-subject">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
             <p className="sick-p">
             If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -2996,6 +2996,66 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
 
 
             <br></br><b className="sick-subject-header">Potential Treatments for Severe Illness</b><br></br>
+            <p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
+            <ul>
+              <li className="sick-li">Wash your hands often.</li>
+              <li className="sick-li">Avoid close contact with people who are sick and people who don’t live in your household.</li>
+              <li className="sick-li">Cover your mouth and nose with a mask when around others.</li>
+              <li className="sick-li">Cover your coughs and sneezes.</li>
+              <li className="sick-li">Clean and disinfect frequently touched surfaces.</li>
+              <li className="sick-li">Monitor your health daily.</li>
+            </ul>
+
+            <p className="sick-subject">Getting a flu vaccine is more important than ever this flu season to protect yourself, your family and your community from flu.</p>
+            <p className="sick-p">A flu vaccine can also help reduce the burden on our healthcare systems responding to the COVID-19 pandemic and save medical resources for care of COVID-19 patients.</p>
+
+            <p className="sick-subject">If you think you may have been exposed to a person with COVID-19, contact your healthcare provider.</p>
+            <ul>
+              <li className="sick-li">Stay home and away from the people you live with as much as possible.</li>
+              <li className="sick-li">Consider getting tested.</li>
+              <li className="sick-li">Monitor your symptoms.</li>
+              <li className="sick-li">If you show an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a>, seek emergency medical care immediately. Call 911 or call ahead to your local emergency facility. Emergency warning signs include:
+                <ul>
+                  <li className="sick-li-li">Trouble breathing</li>
+                  <li className="sick-li-li">Persistent pain or pressure in the chest</li>
+                  <li className="sick-li-li">New confusion</li>
+                  <li className="sick-li-li">Inability to wake or stay awake</li>
+                  <li className="sick-li-li">Bluish lips or face.</li>
+                </ul>
+              </li>
+            </ul>
+            <p className="sick-p">The Food and Drug Administration (FDA) has approved one drug, remdesivir (Veklury), to treat COVID-19. The FDA can also issue <a href="https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">emergency use authorizations</a> (EUAs) to allow healthcare providers to use products that are not yet approved, or that are approved for other uses, to treat patients with COVID-19 if certain legal requirements are met.</p>
+
+            <p className="sick-subject">Any treatments that are used for COVID-19 should be taken under the care of a healthcare provider.</p>
+            <p className="sick-p">
+            People have been <a href="https://emergency.cdc.gov/han/2020/han00431.asp">seriously harmed and even died</a> after taking unapproved products to self-treat.<br></br>
+
+The National Institutes of Health (NIH) has developed and regularly updates <a href="https://www.covid19treatmentguidelines.nih.gov/introduction/">Treatment Guidelines</a> to help guide healthcare providers caring for patients with COVID-19, including when clinicians might consider using one of the products under an EUA. Currently, there are several approaches for treating patients with severe COVID-19 who are being cared for in the hospital. In studies, some drugs have shown some benefit in reducing the severity of illness or risk of death by:
+<ul>
+  <li className="sick-li"><i>Slowing the virus</i>. Antiviral medications reduce the ability of the virus to multiply and spread through the body.
+  <ul>
+    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a620033.html">Remdesivir</a> (Veklury) is an antiviral medication approved by the FDA to treat COVID-19, that is recommended in the current <a href="https://www.covid19treatmentguidelines.nih.gov/antiviral-therapy/remdesivir/">NIH Treatment Guidelines</a> for certain patients who are hospitalized with COVID-19. Remdesivir is given to patients by infusion through their veins.</li>
+  </ul>
+  </li>
+  <li className="sick-li"><i>Reducing an overactive immune response</i>. In patients with severe COVID-19, the body’s immune system may overreact to the threat of the virus, worsening the disease. This can cause damage to the body’s organs and tissues. Some treatments can help reduce this overactive immune response.
+  <ul>
+    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a682792.html">Dexamethasone</a> is a steroid medication, similar to a natural hormone produced by the body. The <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/corticosteroids/">NIH Treatment Guidelines</a> recommend dexamethasone, or a similar medication, to prevent or reduce injury to the body for some hospitalized patients with severe COVID-19. Dexamethasone is recommended for patients who need supplemental oxygen.</li>
+    </ul></li>
+  <li className="sick-li"><i>Treating complications</i>. The virus that causes COVID-19 can damage the heart, blood vessels, kidneys, brain, skin, eyes, and gastrointestinal organs. It also can cause other complications. Depending on the complications, additional treatments might be used for severely ill hospitalized patients, such as blood thinners to prevent or treat blood clots.</li>
+  <li className="sick-li"><i>Supporting the body’s immune function</i>. Antibodies from patients who have recovered from COVID-19 (convalescent plasma) or antibodies manufactured to treat COVID-19 (like monoclonal antibodies) can attach to parts of the virus. This could help the immune system recognize and respond more effectively to the virus, but currently the <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/">NIH Treatment Guidelines</a> find there is not enough evidence to recommend these treatments.
+</li>
+  <li className="sick-li"><i>Relieving symptoms and supporting the body’s natural defenses.</i>
+  <ul>
+    <li className="sick-li-li">Taking medications, like acetaminophen or ibuprofen, can reduce fever.</li>
+    <li className="sick-li-li">Drinking water or receiving intravenous fluids can help patients stay hydrated.</li>
+    <li className="sick-li-li">Getting plenty of rest can help the body fight the virus.</li>
+    </ul></li>
+</ul>
+
+Other products are being studied as potential treatments for COVID-19. Information about these ongoing studies can be found at <a href="https://clinicaltrials.gov/ct2/results?recrs=ab&cond=covid-19&term=&cntry=US&state=&city=&dist=">ClinicalTrials.gov</a>
+            </p>
+
+
             <br></br><b className="sick-subject-header">Reinfection</b><br></br>
             <br></br><b className="sick-subject-header">Long-Term Effects</b><br></br>
             <br></br><b className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</b><br></br>
