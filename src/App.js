@@ -2937,7 +2937,64 @@ The caregiver should then quarantine for 14 days after the last day the caregive
 
 
 
-            <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>
+            <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>\
+            <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
+
+            <p className="sick-subjects">I think or know I had COVID-19, and I had symptoms</p>
+            <p className="sick-p">You can be around others after:
+<ul>
+  <li className="sick-li">10 days since symptoms first appeared and</li>
+  <li className="sick-li">24 hours with no fever without the use of fever-reducing medications and</li>
+  <li className="sick-li">Other symptoms of COVID-19 are improving*</li>
+</ul>
+
+*Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation​<br></br>
+
+Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
+
+Note that these recommendations do not apply to persons with severe COVID-19 or with severely weakened immune systems (immunocompromised). These persons should follow the guidance below for “I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?”</p>
+
+            <p className="sick-subjects">I tested positive for COVID-19 but had no symptoms</p>
+            <p className="sick-p">If you continue to have no symptoms, you can be with others after 10 days have passed since you had a positive viral test for COVID-19. Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
+
+If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID-19, and I had symptoms.”</p>
+
+            <p className="sick-subjects">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
+            <p className="sick-p">People who are severely ill with COVID-19 might need to stay home longer than 10 days and up to 20 days after symptoms first appeared. <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">Persons who are severely immunocompromised</a> may require testing to determine when they can be around others. Talk to your healthcare provider for more information. If testing is available in your community, it may be recommended by your healthcare provider. Your healthcare provider will let you know if you can resume being around other people based on the results of your testing.<br></br>
+
+Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert or your local health department</a> to determine whether testing will be necessary before you can be around others.</p>
+
+            <p className="sick-subjects">For Anyone Who Has Been Around a Person with COVID-19</p>
+            <p className="sick-p">Anyone who has had close contact with someone with COVID-19 should stay home for 14 days <b>after their last exposure</b> to that person.<br></br>
+
+However, anyone who has had close contact with someone with COVID-19 and who meets the following criteria does <b>NOT</b> need to stay home.
+<ul>
+  <li className="sick-li">Has COVID-19 illness within the previous 3 months and</li>
+  <li className="sick-li">Has recovered and</li>
+  <li className="sick-li">Remains without COVID-19 symptoms (for example, cough, shortness of breath)</li>
+</ul></p>
+
+            <p className="sick-subjects">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected
+            </p>
+
+            <p className="sick-subjects">For Healthcare Professionals</p>
+            <p className="sick-p">If you are a healthcare professional who thinks or knows you had COVID-19, you should follow the same recommendations listed above for when you can resume being around others outside the workplace. When you can return to work depends on different factors and situations. For information on when you can return to work, see the following:<br></br>
+
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/return-to-work.html">Criteria for Return to Work for Healthcare Personnel with SARS-CoV-2 Infection (Interim Guidance)</a></p>
+
+            <p className="sick-subjects">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
+            <p className="sick-p">If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HNgDirLLZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+            <p className="sick-subjects">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
+            <p className="sick-p">
+            If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+
             <br></br><b className="sick-subject-header">Potential Treatments for Severe Illness</b><br></br>
             <br></br><b className="sick-subject-header">Reinfection</b><br></br>
             <br></br><b className="sick-subject-header">Long-Term Effects</b><br></br>
