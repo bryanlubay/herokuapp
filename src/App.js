@@ -2626,7 +2626,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <p className="sick-subject">Who needs to quarantine?</p>
             <p className="sick-p">
 
-              <b>People who have been in <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months.</b><br></br>People who have tested positive for COVID-19 do not need to quarantine or get tested again for up to 3 months as long as they do not develop symptoms again. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.<br></br><b>What counts as <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact?</a></b>
+              <b>People who have been in <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months.</b><br></br>People who have tested positive for COVID-19 do not need to quarantine or get tested again for up to 3 months as long as they do not develop symptoms again. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.<br></br> <br></br><b>What counts as <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact?</a></b>
               <ul>
                 <li className="sick-li">You were within 6 feet of someone who has COVID-19 for a total of 15 minutes or more</li>
                 <li className="sick-li">You provided care at home to someone who is sick with COVID-19</li>
@@ -2694,11 +2694,6 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="sick-li">Help them with grocery shopping, filling prescriptions, and getting other items they may need. Consider having the items delivered through a delivery service, if possible.</li>
               <li className="sick-li">Take care of their pet(s), and limit contact between the person who is sick and their pet(s) when possible.</li>
             </ul>
-
-            <br></br><p className="sick-subject"></p>
-            <p className="sick-p">
-
-            </p>
 
 
 
@@ -2868,15 +2863,15 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
 
             <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
 
-            <p className="sick=header">If a parent or a sole caregiver has COVID-19</p>
+            <p className="sick-header">If a parent or a sole caregiver has COVID-19</p>
             <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
 
             If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
 
-            <p className="sick=header">Older children</p>
+            <p className="sick-header">Older children</p>
             <p className="sick-p">The child should avoid physical contact with the sick parent or caregiver until all sick people have <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">ended their home isolation</a>. For the child to safely have no interaction with the parent or caregiver, the child should be old enough to legally be home alone and mature enough to care for themselves.</p>
 
-            <p className="sick=header">Younger Children</p>
+            <p className="sick-header">Younger Children</p>
             <p className="sick-p">
             If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
             <ul>
@@ -2885,7 +2880,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
             </p>
 
-            <p className="sick=header">Children staying in the home with the sick parent or caregiver</p>
+            <p className="sick-header">Children staying in the home with the sick parent or caregiver</p>
             <p className="sick-p">
             If a child needs to stay in the home with you (the parent or caregiver who is sick):
             <ul>
@@ -2911,7 +2906,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
             </p>
 
-            <p className="sick=header">Children staying outside the home with a temporary caregiver</p>
+            <p className="sick-header">Children staying outside the home with a temporary caregiver</p>
             <p className="sick-p">
             If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
             <ul>
