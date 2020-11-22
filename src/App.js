@@ -2849,8 +2849,22 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
 
             <br></br><p className="sick-subject">Track your own health</p>
-            <p className="sick-p"></p>
+            <ul>
+              <li className="sick-li">Caregivers should stay home and monitor their health for COVID-19 symptoms while caring for the person who is sick.
+                <ul>
+                  <li className="sick-li-li"><a href="https://wcms-wp.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> include fever, cough, and shortness of breath but other symptoms may be present as well. Trouble breathing is a more serious warning sign that you need medical attention.</li>
+                </ul>
+              </li>
+              <li className="sick-li">Caregivers should continue to stay home after care is complete. Caregivers can leave their home 14 days after their last close contact with the person who is sick (based on the time it takes to develop illness), or 14 days after the person who is sick meets the <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">criteria to end home isolation</a>.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Use CDC’s self-checker tool</a> to help you make decisions about seeking appropriate medical care.
 
+              </li>
+              <li className="sick-li"><b>If you are having trouble breathing, call 911.</b>
+              <ul>
+                  <li className="sick-li-li">Call your doctor or emergency room and tell them your symptoms before going in. They will tell you what to do.</li>
+                </ul>
+              </li>
+            </ul>
 
             <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
 
