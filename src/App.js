@@ -3057,6 +3057,33 @@ Other products are being studied as potential treatments for COVID-19. Informati
 
 
             <br></br><b className="sick-subject-header">Reinfection</b><br></br>
+            <p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
+            <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
+            <ul>
+              <li className="sick-li">How likely is reinfection</li>
+              <li className="sick-li">How often reinfection occurs</li>
+              <li className="sick-li">How soon after the first infection can reinfection take place</li>
+              <li className="sick-li">How severe are cases of reinfection</li>
+              <li className="sick-li">Who might be at higher risk for reinfection</li>
+              <li className="sick-li">What reinfection means for a person’s immunity</li>
+              <li className="sick-li">If a person is able to spread COVID-19 to other people when reinfected</li>
+              </ul></p>
+
+            <p className="sick-subject">What CDC is doing</p>
+            <p className="sick-p">CDC is actively working to learn more about reinfection to inform public health action. CDC developed recommendations for public health professionals to help decide when and how to test someone for suspected reinfection. CDC has also provided information for state and local health departments to help investigate suspected cases of reinfection. We will update this guidance as we learn more about reinfection.</p>
+
+            <p className="sick-subject">Prevention</p>
+            <p className="sick-p">At this time, whether you have had COVID-19 or not, the best way to prevent infection is to take steps to protect yourself:
+            <ul>
+              <li className="sick-li">Wear a mask in public places</li>
+              <li className="sick-li">Stay at least 6 feet away from other people</li>
+              <li className="sick-li">Wash your hands</li>
+              <li className="sick-li">Avoid crowds and confined spaces</li>
+              </ul></p>
+
+
+
+
             <br></br><b className="sick-subject-header">Long-Term Effects</b><br></br>
             <br></br><b className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</b><br></br>
 
