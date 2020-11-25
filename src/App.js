@@ -2054,18 +2054,19 @@ function App() {
               </p>
             </p>
 
-            <p className="masks-p"><b>Do wear a mask that</b></p>
+            <p className="masks-p"><b>Do wear a mask that</b>
             <ul>
               <li className="masks-li">Covers your nose and mouth and secure it under your chin</li>
               <li className="masks-li">Fits snugly against the sides of your face</li><br></br>
             </ul>
-        For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
+        For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br></p>
+        <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
+
 
 
         <p className="masks-p"><b>How NOT to wear a mask</b></p>
         <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
 
-            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
 
             <p className="masks-p"><b>How to take off a mask</b><br></br>
               <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
