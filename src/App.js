@@ -2128,12 +2128,13 @@ function App() {
             </ul>
 
 
-            <br></br><p className="masks-subject-header">Washing Masks</p><br></br>
-        Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
+            <br></br><p className="masks-subject-header">Storing and Washing Masks</p><br></br>
 
-        Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
+        <p className="masks-p">Store your cloth mask properly and wash it regularly to keep it clean. Consider having more than one mask on hand so that you can easily replace a dirty mask with a clean one. Make sure to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a>
+         after touching a used mask.</p>
+        
 
-        <ul>
+        
 
               <br></br><p className="masks-p"><b>Washing Machine</b></p><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
@@ -2177,7 +2178,7 @@ function App() {
 
 
 
-            </ul>
+            
             <p className="masks-subject-header">How to Dry</p><br></br>
             <ul>
               <b>Dryer</b><br></br>
