@@ -2517,7 +2517,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b><br></br></p>
             <p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Quarantine</a> keeps someone who might have been exposed to the virus away from others.<br></br>Isolation keeps someone who is infected with the virus away from others, even in their home.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+            <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
 
 

@@ -303,9 +303,9 @@
 
 .iframe {
   display: -webkit-box;
-  height: 40vw;
+  height: auto;
   margin: auto;
-  width: 90%;
+  width: auto;
   border: none;
 }
 
