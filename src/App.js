@@ -2863,15 +2863,15 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
 
             <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
 
-            <p className="sick-header">If a parent or a sole caregiver has COVID-19</p>
+            <p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
             <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
 
             If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
 
-            <p className="sick-header">Older children</p>
+            <p className="sick-subject">Older children</p>
             <p className="sick-p">The child should avoid physical contact with the sick parent or caregiver until all sick people have <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">ended their home isolation</a>. For the child to safely have no interaction with the parent or caregiver, the child should be old enough to legally be home alone and mature enough to care for themselves.</p>
 
-            <p className="sick-header">Younger Children</p>
+            <p className="sick-subject">Younger Children</p>
             <p className="sick-p">
             If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
             <ul>
@@ -2880,7 +2880,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
             </p>
 
-            <p className="sick-header">Children staying in the home with the sick parent or caregiver</p>
+            <p className="sick-subject">Children staying in the home with the sick parent or caregiver</p>
             <p className="sick-p">
             If a child needs to stay in the home with you (the parent or caregiver who is sick):
             <ul>
@@ -2906,7 +2906,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
             </p>
 
-            <p className="sick-header">Children staying outside the home with a temporary caregiver</p>
+            <p className="sick-subject">Children staying outside the home with a temporary caregiver</p>
             <p className="sick-p">
             If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
             <ul>
