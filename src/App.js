@@ -2274,7 +2274,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <br></br><p className="masks-subject">Considerations for Wearing Masks</p>
+            <br></br><p className="masks-subject-header">Considerations for Wearing Masks</p>
 
             <ul>
               <li className="masks-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
