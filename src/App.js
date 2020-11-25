@@ -2930,9 +2930,7 @@ The caregiver should then quarantine for 14 days after the last day the caregive
             </p>
 
 
-
-
-            <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>\
+            <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
 
             <br></br><p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
