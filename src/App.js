@@ -432,7 +432,7 @@ function App() {
                 </li>
               </ul>
 
-              <b className="prevent-header">Cover Your Mouth And Nose With A Mask When Around Others</b>
+              <p className="prevent-header">Cover Your Mouth And Nose With A Mask When Around Others</p>
               <ul>
 
                 <li className="prevent-li">You could spread COVID-19 to others even if you do not feel sick.</li>
@@ -449,7 +449,7 @@ function App() {
 
 
 
-              <b className="prevent-header">Cover Coughs And Sneezes</b>
+              <p className="prevent-header">Cover Coughs And Sneezes</p>
               <ul>
 
                 <li className="prevent-li"><b>Always cover your mouth and nose </b>with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
@@ -457,7 +457,7 @@ function App() {
                 <li className="prevent-li">Immediately<b> wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
               </ul>
 
-              <b className="prevent-header">Clean And Disinfect</b>
+              <p className="prevent-header">Clean And Disinfect</p>
               <ul>
 
                 <li className="prevent-li"><b>Clean AND disinfect<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html"> frequently touched surfaces</a> daily.</b>  This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
@@ -465,7 +465,7 @@ function App() {
                 <li className="prevent-li"><b>Then, use a household disinfectant.</b> Most common <a target="_blank" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered household disinfectants</a> will work.</li>
               </ul>
 
-              <b className="prevent-header">Monitor Your Health Daily</b>
+              <p className="prevent-header">Monitor Your Health Daily</p>
               <ul>
 
                 <li className="prevent-li"><b>Be prevent for symptoms.</b> Watch for fever, cough, shortness of breath, or <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a><b> of COVID-19.</b>
@@ -2023,7 +2023,7 @@ function App() {
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">Masks</Alert.Heading> */}
             <p>
-              <b className="masks-subject-header">Overview</b><br></br>
+              <p className="masks-subject-header">Overview</p><br></br>
               <ul>
                 <li className="masks-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
                 <li className="masks-li">Wear the mask over your nose and mouth and secure it under your chin</li>
@@ -2032,7 +2032,7 @@ function App() {
                 <li className="masks-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
                 <iframe className="iframe" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </ul>
-              <b className="masks-subject">How to Select</b><br></br>
+              <p className="masks-subject">How to Select</p><br></br>
               <p className="masks-p">When selecting a mask, there are many choices. Here are some do’s and don’ts</p>
               <div>
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-choose-masks-medium.jpg"></Image>
@@ -2044,7 +2044,7 @@ function App() {
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               </div><br></br>
 
-              <b className="masks-subject">How to Wear</b><br></br>
+              <p className="masks-subject">How to Wear</p><br></br>
 
               <p className="masks-p"><b>Wear a mask correctly and consistently for the best protection.</b><br></br>
                 <ul>
@@ -2129,7 +2129,7 @@ function App() {
             </ul>
 
 
-            <br></br><b className="masks-subject-header">Washing Masks</b><br></br>
+            <br></br><p className="masks-subject-header">Washing Masks</p><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
 
         Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
@@ -2373,12 +2373,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <script src='https://t.cdc.gov/1M1B'></script>
 
               </iframe>
-            <br></br><b className="symptoms-header">What you need to know</b><br></br>
+            <br></br><p className="symptoms-header">What you need to know</p><br></br>
             <ul>
               <li className="symptoms-li">Anyone can have mild to severe symptoms.</li>
               <li className="symptoms-li"><b>Older adults and people who have severe underlying medical conditions</b> like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.</li>
             </ul><br></br>
-            <b className="symptoms-header">Watch for symptoms</b><br></br>
+            <p className="symptoms-header">Watch for symptoms</p><br></br>
             <p className="symptoms-p">People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:<br></br></p>
             <ul>
               <li className="symptoms-li">Fever or chills</li>
@@ -2395,7 +2395,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <p className="symptoms-p">This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19.</p>
 
             </ul><br></br>
-            <b className="symptoms-header">When to seek emergency medical attention</b><br></br>
+            <p className="symptoms-header">When to seek emergency medical attention</p><br></br>
             <p className="symptoms-p">Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b><br></br></p>
             <ul>
               <li className="symptoms-li">Trouble breathing</li>
@@ -2406,14 +2406,14 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
             <p className="symptoms-p">*This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
               <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.<br></br></p>
-            <br></br><b className="symptoms-header">Caring for yourself or others</b>
+            <br></br><p className="symptoms-header">Caring for yourself or others</p>
             <ul>
 
             </ul>
             <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to protect yourself</a></li>
             <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">How to care for someone who is sick</a></li>
             <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a></li><br></br><br></br>
-            <b className="symptoms-header">What is the difference between Influenza (Flu) and COVID-19?</b><br></br>
+            <p className="symptoms-header">What is the difference between Influenza (Flu) and COVID-19?</p><br></br>
             <p className="symptoms-p">Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. COVID-19 is caused by infection with a new coronavirus (called SARS-CoV-2) and flu is caused by infection with <a href="https://www.cdc.gov/flu/about/viruses/index.htm">influenza viruses</a>.<br></br>
             There are some key differences between flu and COVID-19. COVID-19 seems to spread more easily than flu and causes more serious illnesses in some people. It can also take longer before people show symptoms and people can be contagious for longer. Another important difference is there is a vaccine to protect against flu. The best way to prevent infection is to avoid being exposed to the virus. More information about differences between flu and COVID-19 is available in the different sections below.<br></br>
             Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and <a href="https://www.cdc.gov/flu/symptoms/testing.htm#anchor_1596736120603">testing</a> may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics, but there are some key differences between the two.<br></br>
@@ -2430,7 +2430,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br> */}
 
-            <b className="sick-subject-header">What to Do If You Are Sick</b><br></br>
+            <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
             <p className="sick-subject">Stay home except to get medical care</p>
 
             <ul>
@@ -2512,7 +2512,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               </ul>
             </ul><br></br>
 
-            <b className="sick-subject-header">Isolate If You Are Sick</b><br></br>
+            <p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
             <p className="sick-p"><b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
             People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b><br></br></p>
             <p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
@@ -2615,7 +2615,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </Accordion>
 
 
-            <br></br><b className="sick-subject-header">When to Quarantine</b><br></br>
+            <br></br><p className="sick-subject-header">When to Quarantine</p><br></br>
             <p className="sick-p"><b>Quarantine</b> is used to keep someone <i>who might have been exposed to COVID-19</i> away from others. Quarantine helps prevent spread of disease that can occur before a person knows they are sick or if they are infected with the virus without feeling symptoms. People in quarantine should stay home, separate themselves from others, monitor their health, and follow directions from their state or local health department.</p>
             
             <br></br><p className="sick-subject">Quarantine or isolation: What's the difference?</p>
@@ -2678,7 +2678,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <br></br><b className="sick-subject-header">Caring for Someone</b><br></br>
+            <br></br><p className="sick-subject-header">Caring for Someone</p><br></br>
             <p className="sick-p">If you are caring for someone with COVID-19 at home or in a non-healthcare setting, follow this advice to protect yourself and others. Learn what to do when someone has <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or when someone has been diagnosed with the virus. This information also should be followed when caring for people who have tested positive but are not showing symptoms.<br></br><b>*Note:</b> <i><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">Older adults and people of any age with serious underlying medical conditions</a> are at higher risk for developing more severe illness from COVID-19. People at higher risk of severe illness should call their doctor as soon as symptoms start.</i></p>
 
 
@@ -2861,7 +2861,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
               </li>
             </ul>
 
-            <br></br><b className="sick-subject-header">Parents or Caregivers Who Are Sick</b><br></br>
+            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p><br></br>
 
             <p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
             <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
@@ -2930,7 +2930,7 @@ The caregiver should then quarantine for 14 days after the last day the caregive
             </p>
 
 
-            <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>
+            <br></br><p className="sick-subject-header">When You Can Be Around Others</p><br></br>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
 
             <br></br><p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
@@ -2988,7 +2988,7 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
             </p>
 
 
-            <br></br><b className="sick-subject-header">Potential Treatments for Severe Illness</b><br></br>
+            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p><br></br>
             <p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
             <ul>
               <li className="sick-li">Wash your hands often.</li>
@@ -3049,7 +3049,7 @@ Other products are being studied as potential treatments for COVID-19. Informati
             </p>
 
 
-            <br></br><b className="sick-subject-header">Reinfection</b><br></br>
+            <br></br><p className="sick-subject-header">Reinfection</p><br></br>
             <p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
             <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
             <ul>
@@ -3077,7 +3077,7 @@ Other products are being studied as potential treatments for COVID-19. Informati
 
 
 
-            <br></br><b className="sick-subject-header">Long-Term Effects</b><br></br>
+            <br></br><p className="sick-subject-header">Long-Term Effects</p><br></br>
             <p className="sick-p">
             CDC is actively working to learn more about the whole range of short- and long-term health effects associated with COVID-19. As the pandemic unfolds, we are learning that many organs besides the lungs are affected by COVID-19 and there are many ways the infection can affect someone’s health.<br></br>
 
@@ -3120,7 +3120,7 @@ The long-term significance of these effects is not yet known. CDC will continue 
             <br></br><p className="sick-subject">Preventing COVID-19</p>
           <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
-            <br></br><b className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</b><br></br>
+            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p><br></br>
             <p className="sick-subject">What we know about MIS-A</p>
             <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
 
