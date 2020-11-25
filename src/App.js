@@ -2508,9 +2508,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <ul>
               <li className="sick-li"><b>Do not share</b> dishes, drinking glasses, cups, eating utensils, towels, or bedding with other people in your home.</li>
               <li className="sick-li"><b>Wash these items thoroughly after using them</b> with soap and water or put in the dishwasher.</li>
-            </ul><br></br>
-
-            <p className="sick-subject">Clean all “high-touch” surfaces everyday</p><ul>
+            </ul>
+            <br></br><p className="sick-subject">Clean all “high-touch” surfaces everyday</p><ul>
               <li className="sick-li"><b>Clean and disinfect</b> high-touch surfaces in your “sick room” and bathroom; wear disposable gloves. Let someone else clean and disinfect surfaces in common areas, but you should clean your bedroom and bathroom, if possible.</li>
               <li className="sick-li"><b>If a caregiver or other person needs to clean and disinfect</b> a sick person’s bedroom or bathroom, they should do so on an as-needed basis. The caregiver/other person should wear a mask and disposable gloves prior to cleaning. They should wait as long as possible after the person who is sick has used the bathroom before coming in to clean and use the bathroom.</li>
               High-touch surfaces include phones, remote controls, counters, tabletops, doorknobs, bathroom fixtures, toilets, keyboards, tablets, and bedside tables.
@@ -2521,12 +2520,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="sick-li">Most EPA-registered household disinfectants should be effective. A full list of disinfectants can be found <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2"></a>here.</li>
                 <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Complete Disinfection Guidance</a></li>
               </ul>
-            </ul><br></br>
+            </ul>
 
-            <p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
+            <br></br><p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
             <p className="sick-p"><b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
-            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b><br></br></p>
-            <p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
+            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b></p>
+            <br></br><p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Quarantine</a> keeps someone who might have been exposed to the virus away from others.<br></br>Isolation keeps someone who is infected with the virus away from others, even in their home.</p>
             <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
@@ -2631,10 +2630,10 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             
             <br></br><p className="sick-subject">Quarantine or isolation: What's the difference?</p>
             <p className="sick-p"><b>Quarantine</b> keeps someone who might have been exposed to the virus away from others.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">Isolation</a> keeps someone who is infected with the virus away from others, even in their home.</p>
-            <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+            <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-            <p className="sick-subject">Who needs to quarantine?</p>
+            <br></br><p className="sick-subject">Who needs to quarantine?</p>
             <p className="sick-p">
 
               <b>People who have been in <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months.</b><br></br>People who have tested positive for COVID-19 do not need to quarantine or get tested again for up to 3 months as long as they do not develop symptoms again. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.<br></br> <br></br><b>What counts as <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact?</a></b>
@@ -2645,9 +2644,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="sick-li">You shared eating or drinking utensils</li>
                 <li className="sick-li">They sneezed, coughed, or somehow got respiratory droplets on you</li>
               </ul>
-            </p><br></br>
+            </p>
 
-            <p className="sick-subject">Steps to take</p>
+            <br></br><p className="sick-subject">Steps to take</p>
             <p className="sick-p">
               <b>Stay home and monitor your health</b>
               <ul>
@@ -2999,8 +2998,8 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
             </p>
 
 
-            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p><br></br>
-            <p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
+            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p>
+            <br></br><p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
             <ul>
               <li className="sick-li">Wash your hands often.</li>
               <li className="sick-li">Avoid close contact with people who are sick and people who don’t live in your household.</li>
@@ -3060,8 +3059,8 @@ Other products are being studied as potential treatments for COVID-19. Informati
             </p>
 
 
-            <br></br><p className="sick-subject-header">Reinfection</p><br></br>
-            <p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
+            <br></br><p className="sick-subject-header">Reinfection</p>
+            <br></br><p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
             <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
             <ul>
               <li className="sick-li">How likely is reinfection</li>
@@ -3131,8 +3130,8 @@ The long-term significance of these effects is not yet known. CDC will continue 
             <br></br><p className="sick-subject">Preventing COVID-19</p>
           <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
-            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p><br></br>
-            <p className="sick-subject">What we know about MIS-A</p>
+            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p>
+            <br></br><p className="sick-subject">What we know about MIS-A</p>
             <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
 
 Like children, adults who have been infected with the virus that causes COVID-19 can develop symptoms of MIS-A days to weeks after getting sick. MIS-A is a condition where problems can occur in different parts of the body like the heart, gastrointestinal tract, skin, or brain. Adults with MIS-A may have various signs and symptoms including:
