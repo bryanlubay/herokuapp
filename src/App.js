@@ -2429,25 +2429,25 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br> */}
 
-            <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
-            <p className="sick-subject">Stay home except to get medical care</p>
+            <p className="sick-subject-header">What to Do If You Are Sick</p>
+            <br></br><p className="sick-subject">Stay home except to get medical care</p>
 
             <ul>
               <li className="sick-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
               <li className="sick-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
               <li className="sick-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
-              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li><br></br>
+              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
             </ul>
-            <p className="sick-subject">Separate yourself from other people</p>
+            <br></br><p className="sick-subject">Separate yourself from other people</p>
             <p className="sick-p"><b>As much as possible, stay in a specific room</b> and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.<br></br>
               <b>Tell your <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Contact-Tracing">close contacts</a></b> that they may have been exposed to COVID-19. An infected person can spread COVID-19 starting 48 hours (or 2 days) before the person has any symptoms or tests positive. By letting your close contacts know they may have been exposed to COVID-19, you are helping to protect everyone.</p>
             <ul>
               <li className="sick-li">Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
               <li className="sick-li">See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
               <li className="sick-li">If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
-            </ul><br></br>
+            </ul>
 
-            <p className="sick-subject">Monitor your symptoms</p>
+            <br></br><p className="sick-subject">Monitor your symptoms</p>
             <ul>
               <li className="sick-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
               <li className="sick-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
@@ -2470,29 +2470,29 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <ul>
               <li className="sick-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
               <li className="sick-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
-            </ul><br></br>
-            <p className="sick-subject">If you are sick, wear a mask over your nose and mouth</p>
+            </ul>
+            <br></br><p className="sick-subject">If you are sick, wear a mask over your nose and mouth</p>
             <ul>
               <li className="sick-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
               <li className="sick-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
               <li className="sick-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
             </ul>
-            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p><br></br>
-            <p className="sick-subject">Cover your coughs and sneezes</p>
+            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p>
+            <br></br><p className="sick-subject">Cover your coughs and sneezes</p>
             <ul>
               <li className="sick-li"><b>Cover your mouth and nose</b> with a tissue when you cough or sneeze.</li>
               <li className="sick-li"><b>Throw away used tissues</b> in a lined trash can.</li>
               <li className="sick-li"><b>Immediately wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not available, clean your hands with an alcohol-based hand sanitizer that contains at least 60% alcohol.</li>
-            </ul><br></br>
-            <p className="sick-subject">Clean your hands often</p>
+            </ul>
+            <br></br><p className="sick-subject">Clean your hands often</p>
             <ul>
               <li className="sick-li"><b>Wash your hands</b> often with soap and water for at least 20 seconds. This is especially important after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food.</li>
               <li className="sick-li"><b>Use hand sanitizer</b> if soap and water are not available. Use an alcohol-based hand sanitizer with at least 60% alcohol, covering all surfaces of your hands and rubbing them together until they feel dry.</li>
               <li className="sick-li"><b>Soap and water</b> are the best option, especially if hands are visibly dirty.</li>
               <li className="sick-li"><b>Avoid touching</b> your eyes, nose, and mouth with unwashed hands.</li>
               <li className="sick-li"><a href="https://www.cdc.gov/handwashing/index.html">Handwashing Tips</a></li>
-            </ul><br></br>
-            <p className="sick-subject">Avoid sharing personal household items</p>
+            </ul>
+            <br></br><p className="sick-subject">Avoid sharing personal household items</p>
             <ul>
               <li className="sick-li"><b>Do not share</b> dishes, drinking glasses, cups, eating utensils, towels, or bedding with other people in your home.</li>
               <li className="sick-li"><b>Wash these items thoroughly after using them</b> with soap and water or put in the dishwasher.</li>
@@ -2860,17 +2860,17 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
               </li>
             </ul>
 
-            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p><br></br>
+            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p>
 
-            <p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
+            <br></br><p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
             <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
 
             If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
 
-            <p className="sick-subject">Older children</p>
+            <br></br><p className="sick-subject">Older children</p>
             <p className="sick-p">The child should avoid physical contact with the sick parent or caregiver until all sick people have <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">ended their home isolation</a>. For the child to safely have no interaction with the parent or caregiver, the child should be old enough to legally be home alone and mature enough to care for themselves.</p>
 
-            <p className="sick-subject">Younger Children</p>
+            <br></br><p className="sick-subject">Younger Children</p>
             <p className="sick-p">
             If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
             <ul>
@@ -2879,7 +2879,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
             </p>
 
-            <p className="sick-subject">Children staying in the home with the sick parent or caregiver</p>
+            <br></br><p className="sick-subject">Children staying in the home with the sick parent or caregiver</p>
             <p className="sick-p">
             If a child needs to stay in the home with you (the parent or caregiver who is sick):
             <ul>
@@ -2905,7 +2905,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
             </p>
 
-            <p className="sick-subject">Children staying outside the home with a temporary caregiver</p>
+            <br></br><p className="sick-subject">Children staying outside the home with a temporary caregiver</p>
             <p className="sick-p">
             If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
             <ul>
