@@ -2067,9 +2067,9 @@ function App() {
         <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
 
 
-            <p className="masks-p"><b>How to take off a mask</b><br></br>
+            <p className="masks-p"><b>How to take off a mask</b></p><br></br>
               <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
-            </p>
+            
             <p className="masks-subject">How to Clean</p>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
         <ul>
@@ -2148,7 +2148,7 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
             <p className="masks-subject">Wash your mask</p>
             <p className="masks-p">Wash your cloth mask whenever it gets dirty or at least daily. If you have a disposable face mask, throw it away after wearing it once.</p>
 
-              <br></br><p className="masks-subject"><b>Using a washing machine</b></p><br></br>
+              <br></br><p className="masks-subject">Using a washing machine</p><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="masks-li">You can include your mask with your regular laundry.</li>
@@ -2156,6 +2156,7 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
               </ul>
 
               <br></br><b>Washing by Hand</b>
+              <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/detergent.png"></Image>
               <ul>
                 <li className="masks-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
           <ul>
@@ -2188,10 +2189,8 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
 
 
 
-
-
             
-            <p className="masks-subject-header">How to Dry</p><br></br>
+            <p className="masks-subject">How to Dry</p><br></br>
             <ul>
               <b>Dryer</b><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
@@ -2206,18 +2205,18 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
             </ul>
 
             <br></br><p className="masks-subject-header">Making Masks</p><br></br>
-
-        CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
+            <p className="masks-p">CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
-        Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.
+        Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.</p>
+        
         <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing,</b> is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker.</b> Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
 
             </ul>
-            <b>Sewn Mask</b><br></br>
-        Materials<br></br>
+            <p className="masks-subject">Sewn Mask</p><br></br>
+        <p className="masks-p">Materials</p><br></br>
             <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
             <ul>
               <li className="masks-li">Two 10”x6” rectangles of cotton fabric</li>
@@ -2227,7 +2226,7 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
               <li className="masks-li">Sewing machine</li>
             </ul>
 
-            <p class="masks-p"><b>Tutorial</b></p>
+            <p class="masks-p">Tutorial</p>
 
             <b>1.</b> Cut out two 10-by-6-inch rectangles of cotton fabric. Use tightly woven cotton, such as quilting fabric or cotton sheets. T-shirt fabric will work in a pinch. Stack the two rectangles; you will sew the mask as if it was a single piece of fabric
         <br></br><Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image><br></br><br></br>
@@ -2243,14 +2242,14 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <b>4.</b> Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.
             <br></br><Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br><br></br>
 
-            <b>Non-sewn Mask</b><br></br>
-            <b>Materials</b>
+            <p className="masks-subject">Non-sewn Mask</p><br></br>
+            <p className="masks-p">Materials</p>
             <ul>
               <li className="masks-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
               <li className="masks-li">Rubber bands (or hair ties)</li>
               <li className="masks-li">Scissors (if you are cutting your own cloth)</li>
             </ul>
-            <p className="masks-p"><b>Tutorial</b></p><br></br>
+            <p className="masks-p">Tutorial</p><br></br>
             <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-01.png"></Image>
             <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-02.png"></Image>
             <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-03.png"></Image>
