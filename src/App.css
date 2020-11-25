@@ -313,7 +313,7 @@
   display: -webkit-box;
   height: 600px;
   margin: auto;
-  width: auto;
+  width: -webkit-fill-available;
   border: none;
 
 }
