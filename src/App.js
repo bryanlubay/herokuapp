@@ -2986,7 +2986,7 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
             <p className="sick-subject">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
             <p className="sick-p">
             If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className="iframe" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
 
