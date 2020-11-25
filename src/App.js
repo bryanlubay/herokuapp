@@ -2032,7 +2032,7 @@ function App() {
                 <li className="masks-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
                 <iframe className="iframe" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </ul>
-              <p className="masks-subject">How to Select</p><br></br>
+              <p className="masks-subject">How to Select</p>
               <p className="masks-p">When selecting a mask, there are many choices. Here are some do’s and don’ts</p>
               <div>
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-choose-masks-medium.jpg"></Image>
@@ -2044,8 +2044,7 @@ function App() {
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               </div><br></br>
 
-              <p className="masks-subject">How to Wear</p><br></br>
-
+              <p className="masks-subject">How to Wear</p>
               <p className="masks-p"><b>Wear a mask correctly and consistently for the best protection.</b><br></br>
                 <ul>
                   <li className="masks-li">Be sure to wash your hands before putting on a mask</li>
@@ -2082,14 +2081,14 @@ function App() {
 
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
-            <p className="masks-subject-header">How to Wear Masks</p>
+            <p className="masks-subject-header">How to Wear Masks</p><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
         <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
             </ul><br></br>
-        <p className="masks-subject">Wear Your Mask correctly</p><br></br>
+        <p className="masks-subject">Wear Your Mask correctly</p>
             <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
             <ul>
               <li className="masks-li">Wash your hands before putting on your mask</li>
@@ -2099,7 +2098,7 @@ function App() {
               <li className="masks-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
             </ul>
 
-            <br></br><p className="masks-subject">Wear a Mask to Protect Others</p><br></br>
+            <br></br><p className="masks-subject">Wear a Mask to Protect Others</p>
             <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
             <ul>
               <li className="masks-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
@@ -2109,7 +2108,7 @@ function App() {
               <li className="masks-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
             </ul>
 
-            <br></br><p className="masks-subject">Follow Everyday Health Habits</p><br></br>
+            <br></br><p className="masks-subject">Follow Everyday Health Habits</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="masks-li">Stay at least 6 feet away from others</li>
@@ -2118,7 +2117,7 @@ function App() {
               <li className="masks-li">Use hand sanitizer if soap and water are not available</li>
             </ul>
 
-            <br></br><p className="masks-subject">Take Off Your Mask Carefully, When You’re Home</p><br></br>
+            <br></br><p className="masks-subject">Take Off Your Mask Carefully, When You’re Home</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
             <ul>
               <li className="masks-li">Untie the strings behind your head or stretch the ear loops</li>
@@ -2179,8 +2178,7 @@ function App() {
 
 
             </ul>
-            <p className="masks-subject-header">How to Dry</p>
-
+            <p className="masks-subject-header">How to Dry</p><br></br>
             <ul>
               <b>Dryer</b><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
@@ -2194,7 +2192,7 @@ function App() {
               </ul>
             </ul>
 
-            <br></br><p className="masks-subject-header">Making Masks</p>
+            <br></br><p className="masks-subject-header">Making Masks</p><br></br>
 
         CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
@@ -2336,7 +2334,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><b>Surgical Masks </b><br></br>
         Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
-            <p className="masks-subject-header">Recent Studies:</p>
+            <p className="masks-subject-header">Recent Studies:</p><br></br>
             <ul>
 
               <li className="masks-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
