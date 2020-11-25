@@ -309,6 +309,15 @@
   border: none;
 }
 
+.self-checker {
+  display: -webkit-box;
+  height: 600px;
+  margin: auto;
+  width: auto;
+  border: none;
+
+}
+
 .cdc-widget-color-white {
   margin-top: 25%
 }
