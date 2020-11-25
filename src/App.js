@@ -2071,7 +2071,7 @@ function App() {
             <p className="masks-p"><b>How to take off a mask</b><br></br>
               <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
             </p>
-            <p className="masks-subject-header">How to Clean</p>
+            <p className="masks-subject">How to Clean</p>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
         <ul>
               <li className="masks-li">Include your mask with your regular laundry</li>
@@ -2089,7 +2089,7 @@ function App() {
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
             </ul><br></br>
-        Wear Your Mask correctly<br></br>
+        <p className="masks-subject">Wear Your Mask correctly</p><br></br>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
             <ul>
               <li className="masks-li">Wash your hands before putting on your mask</li>
@@ -2099,7 +2099,7 @@ function App() {
               <li className="masks-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
             </ul>
 
-            <br></br>Wear a Mask to Protect Others<br></br>
+            <br></br><p className="masks-subject">Wear a Mask to Protect Others</p><br></br>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
             <ul>
               <li className="masks-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
@@ -2109,7 +2109,7 @@ function App() {
               <li className="masks-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
             </ul>
 
-            <br></br>Follow Everyday Health Habits<br></br>
+            <br></br><p className="masks-subject">Follow Everyday Health Habits</p><br></br>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="masks-li">Stay at least 6 feet away from others</li>
@@ -2118,7 +2118,7 @@ function App() {
               <li className="masks-li">Use hand sanitizer if soap and water are not available</li>
             </ul>
 
-            <br></br>Take Off Your Mask Carefully, When You’re Home<br></br>
+            <br></br><p className="masks-subject">Take Off Your Mask Carefully, When You’re Home</p><br></br>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
             <ul>
               <li className="masks-li">Untie the strings behind your head or stretch the ear loops</li>
