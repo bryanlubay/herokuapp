@@ -2935,7 +2935,7 @@ The caregiver should then quarantine for 14 days after the last day the caregive
             <br></br><b className="sick-subject-header">When You Can Be Around Others</b><br></br>\
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
 
-            <p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
+            <br></br><p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
             <p className="sick-p">You can be around others after:
 <ul>
   <li className="sick-li">10 days since symptoms first appeared and</li>
@@ -2949,17 +2949,17 @@ Most people do not require testing to decide when they can be around others; how
 
 Note that these recommendations do not apply to persons with severe COVID-19 or with severely weakened immune systems (immunocompromised). These persons should follow the guidance below for “I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?”</p>
 
-            <p className="sick-subject">I tested positive for COVID-19 but had no symptoms</p>
+<br></br><p className="sick-subject">I tested positive for COVID-19 but had no symptoms</p>
             <p className="sick-p">If you continue to have no symptoms, you can be with others after 10 days have passed since you had a positive viral test for COVID-19. Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
 
 If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID-19, and I had symptoms.”</p>
 
-            <p className="sick-subject">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
+<br></br><p className="sick-subject">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
             <p className="sick-p">People who are severely ill with COVID-19 might need to stay home longer than 10 days and up to 20 days after symptoms first appeared. <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">Persons who are severely immunocompromised</a> may require testing to determine when they can be around others. Talk to your healthcare provider for more information. If testing is available in your community, it may be recommended by your healthcare provider. Your healthcare provider will let you know if you can resume being around other people based on the results of your testing.<br></br>
 
 Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert or your local health department</a> to determine whether testing will be necessary before you can be around others.</p>
 
-            <p className="sick-subject">For Anyone Who Has Been Around a Person with COVID-19</p>
+<br></br><p className="sick-subject">For Anyone Who Has Been Around a Person with COVID-19</p>
             <p className="sick-p">Anyone who has had close contact with someone with COVID-19 should stay home for 14 days <b>after their last exposure</b> to that person.<br></br>
 
 However, anyone who has had close contact with someone with COVID-19 and who meets the following criteria does <b>NOT</b> need to stay home.
@@ -2969,21 +2969,21 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
   <li className="sick-li">Remains without COVID-19 symptoms (for example, cough, shortness of breath)</li>
 </ul></p>
 
-            <p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+<br></br><p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected
             </p>
 
-            <p className="sick-subject">For Healthcare Professionals</p>
+            <br></br><p className="sick-subject">For Healthcare Professionals</p>
             <p className="sick-p">If you are a healthcare professional who thinks or knows you had COVID-19, you should follow the same recommendations listed above for when you can resume being around others outside the workplace. When you can return to work depends on different factors and situations. For information on when you can return to work, see the following:<br></br>
 
 <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/return-to-work.html">Criteria for Return to Work for Healthcare Personnel with SARS-CoV-2 Infection (Interim Guidance)</a></p>
 
-            <p className="sick-subject">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
+<br></br><p className="sick-subject">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
             <p className="sick-p">If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
             <iframe className="iframe" src="https://www.youtube.com/embed/HNgDirLLZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
-            <p className="sick-subject">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
+            <br></br><p className="sick-subject">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
             <p className="sick-p">
             If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
             <iframe className="iframe" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -3001,10 +3001,10 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
               <li className="sick-li">Monitor your health daily.</li>
             </ul>
 
-            <p className="sick-subject">Getting a flu vaccine is more important than ever this flu season to protect yourself, your family and your community from flu.</p>
+            <br></br><p className="sick-subject">Getting a flu vaccine is more important than ever this flu season to protect yourself, your family and your community from flu.</p>
             <p className="sick-p">A flu vaccine can also help reduce the burden on our healthcare systems responding to the COVID-19 pandemic and save medical resources for care of COVID-19 patients.</p>
 
-            <p className="sick-subject">If you think you may have been exposed to a person with COVID-19, contact your healthcare provider.</p>
+            <br></br><p className="sick-subject">If you think you may have been exposed to a person with COVID-19, contact your healthcare provider.</p>
             <ul>
               <li className="sick-li">Stay home and away from the people you live with as much as possible.</li>
               <li className="sick-li">Consider getting tested.</li>
@@ -3021,7 +3021,7 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
             </ul>
             <p className="sick-p">The Food and Drug Administration (FDA) has approved one drug, remdesivir (Veklury), to treat COVID-19. The FDA can also issue <a href="https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">emergency use authorizations</a> (EUAs) to allow healthcare providers to use products that are not yet approved, or that are approved for other uses, to treat patients with COVID-19 if certain legal requirements are met.</p>
 
-            <p className="sick-subject">Any treatments that are used for COVID-19 should be taken under the care of a healthcare provider.</p>
+            <br></br><p className="sick-subject">Any treatments that are used for COVID-19 should be taken under the care of a healthcare provider.</p>
             <p className="sick-p">
             People have been <a href="https://emergency.cdc.gov/han/2020/han00431.asp">seriously harmed and even died</a> after taking unapproved products to self-treat.<br></br>
 
@@ -3064,10 +3064,10 @@ Other products are being studied as potential treatments for COVID-19. Informati
               <li className="sick-li">If a person is able to spread COVID-19 to other people when reinfected</li>
               </ul></p>
 
-            <p className="sick-subject">What CDC is doing</p>
+              <br></br> <p className="sick-subject">What CDC is doing</p>
             <p className="sick-p">CDC is actively working to learn more about reinfection to inform public health action. CDC developed recommendations for public health professionals to help decide when and how to test someone for suspected reinfection. CDC has also provided information for state and local health departments to help investigate suspected cases of reinfection. We will update this guidance as we learn more about reinfection.</p>
 
-            <p className="sick-subject">Prevention</p>
+            <br></br><p className="sick-subject">Prevention</p>
             <p className="sick-p">At this time, whether you have had COVID-19 or not, the best way to prevent infection is to take steps to protect yourself:
             <ul>
               <li className="sick-li">Wear a mask in public places</li>
@@ -3119,7 +3119,7 @@ More serious long-term complications appear to be less common but have been repo
 The long-term significance of these effects is not yet known. CDC will continue active investigation and provide updates as new data emerge, which can inform COVID-19 clinical care as well as the public health response to COVID-19.
             </p>
 
-          <p className="sick-subject">Preventing COVID-19</p>
+            <br></br><p className="sick-subject">Preventing COVID-19</p>
           <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
             <br></br><b className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</b><br></br>
@@ -3141,15 +3141,15 @@ Like children, adults who have been infected with the virus that causes COVID-19
 MIS-A can be very serious, so it is important to seek medical care as soon as possible.
 </p>
 
-            <p className="sick-subject">What we don’t know about MIS-A</p>
+<br></br><p className="sick-subject">What we don’t know about MIS-A</p>
             <p className="sick-p">CDC is still learning about MIS-A and how it affects adults, so we do not know why some adults have gotten sick with MIS-A and others have not. We also do not know if adults with certain health conditions are more likely to develop MIS-A. These are among the many questions CDC is working to understand.</p>
 
-            <p className="sick-subject">What CDC is doing about MIS-A</p>
+            <br></br><p className="sick-subject">What CDC is doing about MIS-A</p>
             <p className="sick-p">CDC is working with state, local, and territorial health departments; U.S. and international scientists; healthcare providers; and other partners to learn more about MIS-A. Through these partnerships, we are learning about how to recognize MIS-A in adults, how often it happens, and who is likely to get MIS-A.<br></br>
 
 All CDC recommendations are based on the best data and science available at the time, and we will update them as we learn more.</p>
 
-            <p className="sick-subject">How to protect yourself from MIS-A</p>
+<br></br><p className="sick-subject">How to protect yourself from MIS-A</p>
             <p className="sick-p">Based on what we know now about MIS-A, the best way you can <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself is by taking everyday actions to protect yourself from getting the virus that causes COVID-19</a>.</p>
 
           </Alert>
