@@ -69,8 +69,13 @@
 
 /* START Maskss */
 
-.masks-header {
-  font-size: calc(10px + 2vw);
+.masks-subject-header {
+  font-weight: bolder;
+  font-size: calc(10px + 2.5vw);
+}
+
+.masks-subject {
+  font-size: calc(10px + 1.5vw);
   font-weight: bold;
 }
 
@@ -79,18 +84,13 @@
   text-align: left;
 }
 
-.masks-subjects {
-  font-size: calc(10px + 1vw);
-  font-weight: bold;
+.masks-li-li {
+  font-size: calc(10px + .5vw);
+  text-align: left;
 }
 
 .masks-p {
   font-size: calc(10px + 1vw);
-}
-
-.masks-subject-header {
-  font-weight: bolder;
-  font-size: xx-large;
 }
 
 .masks-image {
@@ -114,10 +114,6 @@
   width: 50%;
 }
 
-.masks-video {
-  height: 30vw;
-  width: 30vw;
-}
 /* END Maskss */
 
 /* START Symptoms */
@@ -168,11 +164,9 @@
   text-align: left;
 }
 
-
 .sick-p {
   font-size: calc(10px + 1vw);
 }
-
 
 .sick-image {
   height: 75%;
@@ -193,11 +187,6 @@
 .sick-big-image2 {
   height: 50%;
   width: 50%;
-}
-
-.sick-video {
-  height: 30vw;
-  width: 30vw;
 }
 
 /* END If You Are Sick */
