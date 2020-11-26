@@ -125,7 +125,6 @@
 .symptoms-header {
   font-size: calc(10px + 2vw);
   font-weight: bold;
-
 }
 
 .symptoms-li {
@@ -138,8 +137,44 @@
   text-align: left;
 }
 
+.symptoms-subjects {
+  font-size: calc(10px + 1vw);
+  font-weight: bold;
+}
+
 .symptoms-p {
   font-size: calc(10px + 1vw);
+}
+
+.symptoms-subject-header {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.symptoms-image {
+  height: 75%;
+  width: 75%;
+}
+
+.symptoms-big-image {
+  height: 25%;
+  width: 25%;
+}
+
+.symptoms-big-image1 {
+  height: 25%;
+  width: 25%;
+  margin-bottom: 164px;
+}
+
+.symptoms-big-image2 {
+  height: 50%;
+  width: 50%;
+}
+
+.symptoms-video {
+  height: 30vw;
+  width: 30vw;
 }
 
 /* END Symptoms */
