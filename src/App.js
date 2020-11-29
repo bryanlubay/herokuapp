@@ -2023,16 +2023,16 @@ function App() {
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">Masks</Alert.Heading> */}
             <p>
-              <p className="masks-header">Overview</p>
+              <p className="masks-subject-header">Overview</p><br></br>
               <ul>
                 <li className="masks-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
                 <li className="masks-li">Wear the mask over your nose and mouth and secure it under your chin</li>
                 <li className="masks-li">Masks should be worn by people two years and older</li>
                 <li className="masks-li">Masks should NOT be worn by children younger than two, people who have trouble breathing, or people who cannot remove the mask without assistance</li>
                 <li className="masks-li">Do <b>NOT</b> wear masks intended for healthcare workers, for example, N95 respirators</li><br></br>
-                <iframe height="300" width="300" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="iframe" src="https://www.youtube.com/embed/ML3n1c0FHDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </ul>
-              <p className="masks-header">How to Select</p><br></br>
+              <p className="masks-subject">How to Select</p>
               <p className="masks-p">When selecting a mask, there are many choices. Here are some do’s and don’ts</p>
               <div>
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-choose-masks-medium.jpg"></Image>
@@ -2044,8 +2044,7 @@ function App() {
                 <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/caution-gaiters-face-shields-medium.jpg"></Image>
               </div><br></br>
 
-              <p className="masks-header">How to Wear</p><br></br>
-
+              <p className="masks-subject">How to Wear</p>
               <p className="masks-p"><b>Wear a mask correctly and consistently for the best protection.</b><br></br>
                 <ul>
                   <li className="masks-li">Be sure to wash your hands before putting on a mask</li>
@@ -2054,22 +2053,24 @@ function App() {
               </p>
             </p>
 
-            <p className="masks-p"><b>Do wear a mask that</b></p>
+            <p className="masks-p"><b>Do wear a mask that</b>
             <ul>
               <li className="masks-li">Covers your nose and mouth and secure it under your chin</li>
               <li className="masks-li">Fits snugly against the sides of your face</li><br></br>
             </ul>
-            For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
-            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
+        For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br></p>
+        <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
 
 
-            <p className="masks-p"><b>Do NOT wear a mask that</b><br></br>
-              <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
-            </p>
-            <p className="masks-p"><b>How to take off a mask</b><br></br>
+
+        <p className="masks-p"><b>How NOT to wear a mask</b></p>
+        <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
+
+
+            <p className="masks-p"><b>How to take off a mask</b></p><br></br>
               <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
-            </p>
-            <p className="masks-header">How to Clean</p>
+            
+            <p className="masks-subject">How to Clean</p>
         Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
         <ul>
               <li className="masks-li">Include your mask with your regular laundry</li>
@@ -2080,15 +2081,15 @@ function App() {
 
         For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
-            <p className="masks-header">How to Wear Masks</p>
+            <p className="masks-subject-header">How to Wear Masks</p><br></br>
         Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
         <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
             </ul><br></br>
-        Wear Your Mask correctly<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
+        <p className="masks-subject">Wear Your Mask correctly</p>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
             <ul>
               <li className="masks-li">Wash your hands before putting on your mask</li>
               <li className="masks-li">Put it over your nose and mouth and secure it under your chin</li>
@@ -2097,8 +2098,8 @@ function App() {
               <li className="masks-li">CDC does not recommend use of masks or cloth masks for source control if they have an exhalation valve or vent</li>
             </ul>
 
-            <br></br>Wear a Mask to Protect Others<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
+            <br></br><p className="masks-subject">Wear a Mask to Protect Others</p>
+            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
             <ul>
               <li className="masks-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
               <li className="masks-li">Wear a mask in public settings when around people who don’t live in your household, especially when it may be difficult for you to stay six feet apart</li>
@@ -2107,7 +2108,7 @@ function App() {
               <li className="masks-li">Don’t touch the mask, and, if you do, wash your hands or use hand sanitizer to disinfect</li>
             </ul>
 
-            <br></br>Follow Everyday Health Habits<br></br>
+            <br></br><p className="masks-subject">Follow Everyday Health Habits</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="masks-li">Stay at least 6 feet away from others</li>
@@ -2116,7 +2117,7 @@ function App() {
               <li className="masks-li">Use hand sanitizer if soap and water are not available</li>
             </ul>
 
-            <br></br>Take Off Your Mask Carefully, When You’re Home<br></br>
+            <br></br><p className="masks-subject">Take Off Your Mask Carefully, When You’re Home</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/05_take_off-01.jpg"></Image>
             <ul>
               <li className="masks-li">Untie the strings behind your head or stretch the ear loops</li>
@@ -2127,21 +2128,35 @@ function App() {
             </ul>
 
 
-            <br></br><p className="masks-header">Washing Masks</p><br></br>
-        Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
+            <br></br><p className="masks-subject-header">Storing and Washing Masks</p><br></br>
 
-        Masks should be washed regularly. It is important to always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
+        <p className="masks-p">Store your cloth mask properly and wash it regularly to keep it clean. Consider having more than one mask on hand so that you can easily replace a dirty mask with a clean one. Make sure to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a>
+         after touching a used mask.</p>
+        
 
-        <ul>
+        <p className="masks-subject">Store wet or dirty masks in a plastic bag</p>
+        <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-mask.png"></Image><br></br>
+        <p className="masks-p">If your mask is wet or dirty from sweat, saliva, make-up, or other liquids or substances, keep it in a sealed plastic bag until you can wash it. Wash wet or dirty masks as soon as possible to prevent them from becoming moldy. Wet masks can be hard to breathe through and are less effective than dry masks.</p><br></br>
 
-              <br></br><p className="masks-p"><b>Washing Machine</b></p><br></br>
+      <p className="masks-subject">Store masks that are not wet or dirty in a paper bag</p>
+
+    <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/mask-storage.png"></Image>
+    <p className="masks-p">You can store your mask temporarily to reuse later. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">Remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a> after touching a used mask. Keep it in a dry, breathable bag (like a paper or mesh fabric bag) to keep it clean between uses. When reusing your mask, keep the same side facing out.<br></br>
+
+If you are taking off your mask to eat or drink outside of your home, you can place it somewhere safe to keep it clean, such as your pocket, purse, or paper bag. Make sure to wash or sanitize your hands after removing your mask. After eating, put the mask back on with the same side facing out. Be sure to wash or sanitize your hands again after putting your mask back on.</p>
+
+            <p className="masks-subject">Wash your mask</p>
+            <p className="masks-p">Wash your cloth mask whenever it gets dirty or at least daily. If you have a disposable face mask, throw it away after wearing it once.</p>
+
+              <br></br><p className="masks-subject">Using a washing machine</p><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
               <ul>
                 <li className="masks-li">You can include your mask with your regular laundry.</li>
                 <li className="masks-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
               </ul>
 
-              <br></br><b>Washing by Hand</b>
+              <br></br><b>Washing by Hand</b><br></br>
+              <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/detergent.png"></Image>
               <ul>
                 <li className="masks-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
           <ul>
@@ -2174,11 +2189,8 @@ function App() {
 
 
 
-
-
-            </ul>
-            <p className="masks-header">How to Dry</p>
-
+            
+            <p className="masks-subject">How to Dry</p><br></br>
             <ul>
               <b>Dryer</b><br></br>
               <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-03-dryer.png"></Image>
@@ -2192,20 +2204,20 @@ function App() {
               </ul>
             </ul>
 
-            <br></br><p className="masks-header">Making Masks</p>
-
-        CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
+            <br></br><p className="masks-subject-header">Making Masks</p><br></br>
+            <p className="masks-p">CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
         Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
-        Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.
+        Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.</p>
+        
         <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing,</b> is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker.</b> Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
 
             </ul>
-            <b>Sewn Mask</b><br></br>
-        Materials<br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
+            <p className="masks-subject">Sewn Mask</p><br></br>
+        <p className="masks-p">Materials</p><br></br>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
             <ul>
               <li className="masks-li">Two 10”x6” rectangles of cotton fabric</li>
               <li className="masks-li">Two 6” pieces of elastic (or rubber bands, string, cloth strips, or hair ties)</li>
@@ -2214,36 +2226,36 @@ function App() {
               <li className="masks-li">Sewing machine</li>
             </ul>
 
-            <p class="masks-p"><b>Tutorial</b></p>
+            <p class="masks-p">Tutorial</p>
 
             <b>1.</b> Cut out two 10-by-6-inch rectangles of cotton fabric. Use tightly woven cotton, such as quilting fabric or cotton sheets. T-shirt fabric will work in a pinch. Stack the two rectangles; you will sew the mask as if it was a single piece of fabric
-        <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image><br></br><br></br>
+        <br></br><Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image><br></br><br></br>
 
 
             <b>2.</b> Fold over the long sides ¼ inch and hem. Then fold the double layer of fabric over ½ inch along the short sides and stitch down.
-            <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-03.png"></Image><br></br><br></br>
+            <br></br><Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-03.png"></Image><br></br><br></br>
 
             <b>3.</b> Run a 6-inch length of 1/8-inch wide elastic through the wider hem on each side of the mask. These will be the ear loops. Use a large needle or a bobby pin to thread it through. Tie the ends tight.
 Don’t have elastic? Use hair ties or elastic head bands. If you only have string, you can make the ties longer and tie the mask behind your head.
-<br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-04.png"></Image><br></br><br></br>
+<br></br><Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-04.png"></Image><br></br><br></br>
 
             <b>4.</b> Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.
-            <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br><br></br>
+            <br></br><Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br><br></br>
 
-            <b>Non-sewn Mask</b><br></br>
-            <b>Materials</b>
+            <p className="masks-subject">Non-sewn Mask</p><br></br>
+            <p className="masks-p">Materials</p>
             <ul>
               <li className="masks-li">Washable, breathable fabric (cut approximately 20”x20”)</li>
               <li className="masks-li">Rubber bands (or hair ties)</li>
               <li className="masks-li">Scissors (if you are cutting your own cloth)</li>
             </ul>
-            <p className="masks-p"><b>Tutorial</b></p><br></br>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-01.png"></Image>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-02.png"></Image>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-03.png"></Image>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-04.png"></Image>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-05.png"></Image>
-            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-06.png"></Image>
+            <p className="masks-p">Tutorial</p><br></br>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-01.png"></Image>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-02.png"></Image>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-03.png"></Image>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-04.png"></Image>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-05.png"></Image>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-bandanna-06.png"></Image>
 
             <br></br><b>Make sure your mask:</b>
             <ul>
@@ -2257,12 +2269,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
       See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
-      <br></br><iframe width="50%" height="300px" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+      <br></br><iframe className="iframe" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
 
 
 
-            <br></br><p className="masks-subjects">Considerations for Wearing Masks</p>
+            <br></br><p className="masks-subject-header">Considerations for Wearing Masks</p>
 
             <ul>
               <li className="masks-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
@@ -2272,17 +2284,18 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="masks-li">Masks with exhalation valves or vents should NOT be worn to help prevent the person wearing the mask from spreading COVID-19 to others (source control)</li>
             </ul>
 
-            <p className="masks-subjects">Evidence for Effectiveness of Masks</p>
+            <p className="masks-subject">Evidence for Effectiveness of Masks</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
-        Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.<br></br>
+            <p className="masks-p">Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.</p>
+        
 
-            <br></br><p className="masks-subjects">Who Should Wear A Mask?</p>
+            <br></br><p className="masks-subject">Who Should Wear A Mask?</p>
             <ul>
               <b>General Public</b>
               <li className="masks-nested-li">CDC recommends all people 2 years of age and older wear a mask in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
               <li className="masks-nested-li">COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to wear masks in public settings and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> (staying at least 6 feet away from other people).</li>
               <li className="masks-nested-li">While masks are strongly encouraged to reduce the spread of COVID-19, CDC recognizes there are specific instances when wearing a mask may not be feasible. In these instances, <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#feasibility-adaptations">adaptations and alternatives</a> should be considered whenever possible (see below for examples).</li>
-              <br></br><iframe width="50%" height="300px" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+              <br></br><iframe className="iframe" src="https://www.youtube.com/embed/tnS9yC_bYHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
               <br></br><b>People who know or think they might have COVID-19</b>
               <li className="masks-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">If you are sick</a> with COVID-19 or think you might have COVID-19, do not visit public areas. Stay home except to get medical care. As much as possible stay in a specific room and away from other people and pets in your home. If you need to be around other people or animals, wear a mask (including in your home).</li>
@@ -2291,7 +2304,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <br></br><b>Caregivers of people with COVID-19</b>
               <li className="masks-nested-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">Those caring for someone who is sick with COVID-19 at home or in a non-healthcare setting</a> may also wear a mask. However, the protective effects—how well the mask protects healthy people from breathing in the virus—are unknown. To prevent getting sick, caregivers should also continue to practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>: avoid close contact as much as possible, clean hands often; avoid touching your eyes, nose, and mouth with unwashed hands; and frequently clean and disinfect surfaces.</li>
             </ul>
-            <p className="masks-subjects">Who Should Not Wear a Mask?</p>
+            <p className="masks-subject">Who Should Not Wear a Mask?</p>
             <ul>
               <li className="masks-li">Children younger than 2 years old</li>
               <li className="masks-li">Anyone who has trouble breathing</li>
@@ -2334,7 +2347,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><b>Surgical Masks </b><br></br>
         Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
-            <p className="masks-header">Recent Studies:</p>
+            <p className="masks-subject">Recent Studies:</p><br></br>
             <ul>
 
               <li className="masks-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
@@ -2365,14 +2378,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading> */}
-            <p className="iframe">
-              <iframe id="frame" border="1px solid black" className="iframe" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
+              <iframe id="frame" border="1px solid black" className="self-checker" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
                 <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white' data-cdc-language='en-us'></div>
                 <script src='https://t.cdc.gov/1M1B'></script>
 
               </iframe>
-            </p>
             <br></br><p className="symptoms-header">What you need to know</p><br></br>
             <ul>
               <li className="symptoms-li">Anyone can have mild to severe symptoms.</li>
@@ -2430,25 +2441,25 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br> */}
 
-            <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
-            <p className="sick-subject">Stay home except to get medical care</p>
+            <p className="sick-subject-header">What to Do If You Are Sick</p>
+            <br></br><p className="sick-subject">Stay home except to get medical care</p>
 
             <ul>
               <li className="sick-li"><b>Stay home.</b> Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
               <li className="sick-li"><b>Take care of yourself.</b> Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
               <li className="sick-li"><b>Stay in touch with your doctor.</b> Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#warning-signs">emergency warning signs</a>, or if you think it is an <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html#emergency">emergency</a>.</li>
-              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li><br></br>
+              <li className="sick-li"><b>Avoid public transportation</b>, ride-sharing, or taxis.</li>
             </ul>
-            <p className="sick-subject">Separate yourself from other people</p>
+            <br></br><p className="sick-subject">Separate yourself from other people</p>
             <p className="sick-p"><b>As much as possible, stay in a specific room</b> and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.<br></br>
               <b>Tell your <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Contact-Tracing">close contacts</a></b> that they may have been exposed to COVID-19. An infected person can spread COVID-19 starting 48 hours (or 2 days) before the person has any symptoms or tests positive. By letting your close contacts know they may have been exposed to COVID-19, you are helping to protect everyone.</p>
             <ul>
               <li className="sick-li">Additional guidance is available for those living in <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">close quarters</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">shared housing.</a></li>
               <li className="sick-li">See <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#COVID-19-and-Animals">COVID-19 and Animals</a> if you have questions about pets.</li>
               <li className="sick-li">If you are diagnosed with COVID-19, someone from the health department may call you. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html#you-are-diagnosed">Answer the call</a> to slow the spread.</li>
-            </ul><br></br>
+            </ul>
 
-            <p className="sick-subject">Monitor your symptoms</p>
+            <br></br><p className="sick-subject">Monitor your symptoms</p>
             <ul>
               <li className="sick-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> of COVID-19 include fever, cough, or other symptoms.</b></li>
               <li className="sick-li"><b>Follow care instructions from your healthcare provider and local health department.</b> Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
@@ -2471,35 +2482,34 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <ul>
               <li className="sick-li"><b>Call ahead.</b> Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
               <li className="sick-li"><b>If you have a medical appointment that cannot be postponed, call your doctor’s office,</b> and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
-            </ul><br></br>
-            <p className="sick-subject">If you are sick, wear a mask over your nose and mouth</p>
+            </ul>
+            <br></br><p className="sick-subject">If you are sick, wear a mask over your nose and mouth</p>
             <ul>
               <li className="sick-li">You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
               <li className="sick-li">You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
               <li className="sick-li">Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
             </ul>
-            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p><br></br>
-            <p className="sick-subject">Cover your coughs and sneezes</p>
+            <p className="sick-p"><b>Note:</b> During the COVID-19 pandemic, medical grade facemasks are reserved for healthcare workers and some first responders</p>
+            <br></br><p className="sick-subject">Cover your coughs and sneezes</p>
             <ul>
               <li className="sick-li"><b>Cover your mouth and nose</b> with a tissue when you cough or sneeze.</li>
               <li className="sick-li"><b>Throw away used tissues</b> in a lined trash can.</li>
               <li className="sick-li"><b>Immediately wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not available, clean your hands with an alcohol-based hand sanitizer that contains at least 60% alcohol.</li>
-            </ul><br></br>
-            <p className="sick-subject">Clean your hands often</p>
+            </ul>
+            <br></br><p className="sick-subject">Clean your hands often</p>
             <ul>
               <li className="sick-li"><b>Wash your hands</b> often with soap and water for at least 20 seconds. This is especially important after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food.</li>
               <li className="sick-li"><b>Use hand sanitizer</b> if soap and water are not available. Use an alcohol-based hand sanitizer with at least 60% alcohol, covering all surfaces of your hands and rubbing them together until they feel dry.</li>
               <li className="sick-li"><b>Soap and water</b> are the best option, especially if hands are visibly dirty.</li>
               <li className="sick-li"><b>Avoid touching</b> your eyes, nose, and mouth with unwashed hands.</li>
               <li className="sick-li"><a href="https://www.cdc.gov/handwashing/index.html">Handwashing Tips</a></li>
-            </ul><br></br>
-            <p className="sick-subject">Avoid sharing personal household items</p>
+            </ul>
+            <br></br><p className="sick-subject">Avoid sharing personal household items</p>
             <ul>
               <li className="sick-li"><b>Do not share</b> dishes, drinking glasses, cups, eating utensils, towels, or bedding with other people in your home.</li>
               <li className="sick-li"><b>Wash these items thoroughly after using them</b> with soap and water or put in the dishwasher.</li>
-            </ul><br></br>
-
-            <p className="sick-subject">Clean all “high-touch” surfaces everyday</p><ul>
+            </ul>
+            <br></br><p className="sick-subject">Clean all “high-touch” surfaces everyday</p><ul>
               <li className="sick-li"><b>Clean and disinfect</b> high-touch surfaces in your “sick room” and bathroom; wear disposable gloves. Let someone else clean and disinfect surfaces in common areas, but you should clean your bedroom and bathroom, if possible.</li>
               <li className="sick-li"><b>If a caregiver or other person needs to clean and disinfect</b> a sick person’s bedroom or bathroom, they should do so on an as-needed basis. The caregiver/other person should wear a mask and disposable gloves prior to cleaning. They should wait as long as possible after the person who is sick has used the bathroom before coming in to clean and use the bathroom.</li>
               High-touch surfaces include phones, remote controls, counters, tabletops, doorknobs, bathroom fixtures, toilets, keyboards, tablets, and bedside tables.
@@ -2510,36 +2520,36 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="sick-li">Most EPA-registered household disinfectants should be effective. A full list of disinfectants can be found <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2"></a>here.</li>
                 <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Complete Disinfection Guidance</a></li>
               </ul>
-            </ul><br></br>
+            </ul>
 
-            <p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
+            <br></br><p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
             <p className="sick-p"><b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
-            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b><br></br></p>
-            <p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
+            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b></p>
+            <br></br><p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Quarantine</a> keeps someone who might have been exposed to the virus away from others.<br></br>Isolation keeps someone who is infected with the virus away from others, even in their home.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+            <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
 
 
             <br></br><p className="sick-subject">Who needs to isolate?</p>
             <p className="sick-p">People who have COVID-19
             <ul>
-                <li className="sick-li">People who have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and are able to recover at home</li>
-                <li className="sick-li">People who have no symptoms (are asymptomatic) but have tested positive for infection with SARS-CoV-2</li>
+              <li className="sick-li">People who have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and are able to recover at home</li>
+              <li className="sick-li">People who have no symptoms (are asymptomatic) but have tested positive for infection with SARS-CoV-2</li>
               </ul></p>
 
 
-            <br></br><p className="sick-subject">Steps to take</p>
+              <br></br><p className="sick-subject">Steps to take</p>
             <p className="sick-p"><b>Stay home except to get medical care</b>
-              <ul>
-                <li className="sick-li">Monitor your symptoms. If you have an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a> (including trouble breathing), seek emergency medical care immediately</li>
-                <li className="sick-li">Stay in a separate room from other household members, if possible</li>
-                <li className="sick-li">Use a separate bathroom, if possible</li>
-                <li className="sick-li">Avoid contact with other members of the household and pets</li>
-                <li className="sick-li">Don’t share personal household items, like cups, towels, and utensils</li>
-                <li className="sick-li">Wear a mask when around other people, if you are able to</li>
-              </ul>
-              <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">Learn more about what to do if you are sick.</a>
+            <ul>
+            <li className="sick-li">Monitor your symptoms. If you have an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a> (including trouble breathing), seek emergency medical care immediately</li>
+            <li className="sick-li">Stay in a separate room from other household members, if possible</li>
+            <li className="sick-li">Use a separate bathroom, if possible</li>
+            <li className="sick-li">Avoid contact with other members of the household and pets</li>
+            <li className="sick-li">Don’t share personal household items, like cups, towels, and utensils</li>
+            <li className="sick-li">Wear a mask when around other people, if you are able to</li>
+            </ul>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">Learn more about what to do if you are sick.</a>
             </p>
 
             <br></br><p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
@@ -2548,85 +2558,85 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><p className="sick-subject">When you can be around others after you had or likely had COVID-19</p>
             <p className="sick-p">When you can be around others (end home isolation) depends on different factors for different situations.<br></br></p>
             <br></br>
-
+            
             <Accordion>
-              <Card><a id="Basics"><Card.Header className="alert-subjects">Find CDC’s recommendations for your situation below.</Card.Header></a>
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Find CDC’s recommendations for your situation below.</Card.Header></a>
 
-                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="200">
-                  I think or know I had COVID-19, and I had symptoms
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="200">
+            I think or know I had COVID-19, and I had symptoms
             </Accordion.Toggle>
 
-                <Accordion.Collapse eventKey="200">
-                  <Card.Body className="accordion-answer">
-                    <p className="sick-p">You can be with others after
+            <Accordion.Collapse eventKey="200">
+              <Card.Body className="accordion-answer">
+                <p className="sick-p">You can be with others after
                 <ul>
-                        <li className="sick-li">At least 10 days since symptoms first appeared <b>and</b></li>
-                        <li className="sick-li">At least 24 hours with no fever without fever-reducing medication <b>and</b></li>
-                        <li className="sick-li">Other symptoms of COVID-19 are improving**Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation</li>
-                      </ul>
+                  <li className="sick-li">At least 10 days since symptoms first appeared <b>and</b></li>
+                  <li className="sick-li">At least 24 hours with no fever without fever-reducing medication <b>and</b></li>
+                  <li className="sick-li">Other symptoms of COVID-19 are improving**Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation</li>
+                </ul>
                 If you had severe illness from COVID-19 (you were admitted to a hospital and needed oxygen), your healthcare provider may recommend that you stay in isolation for longer than 10 days after your symptoms first appeared (possibly up to 20 days) and you may need to finish your period of isolation at home.
                 </p>
+                
+              </Card.Body>
+            </Accordion.Collapse>
 
-                  </Card.Body>
-                </Accordion.Collapse>
-
-                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="201">
-                  I tested positive for COVID-19 but had no symptoms
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="201">
+            I tested positive for COVID-19 but had no symptoms
             </Accordion.Toggle>
 
-                <Accordion.Collapse eventKey="201">
-                  <Card.Body className="accordion-answer">
-                    <p className="sick-p">If you continue to have no symptoms, you can be with others after:
+            <Accordion.Collapse eventKey="201">
+              <Card.Body className="accordion-answer">
+              <p className="sick-p">If you continue to have no symptoms, you can be with others after:
                 <ul>
-                        <li className="sick-li">10 days have passed since the date you had your positive test</li>
-                      </ul>
+                  <li className="sick-li">10 days have passed since the date you had your positive test</li>
+                </ul>
                 If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID, and I had symptoms.
                 </p>
 
-                  </Card.Body>
-                </Accordion.Collapse>
+              </Card.Body>
+            </Accordion.Collapse>
 
-                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="202">
-                  I had COVID-19 or I tested positive for COVID-19 and I have a weakened immune system
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="202">
+            I had COVID-19 or I tested positive for COVID-19 and I have a weakened immune system
             </Accordion.Toggle>
 
-                <Accordion.Collapse eventKey="202">
-                  <Card.Body className="accordion-answer">
-                    <p className="sick-p">
-                      If you have a <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">weakened immune system (immunocompromised)</a> due to a health condition or medication, you might need to stay home and isolate longer than 10 days. Talk to your healthcare provider for more information.<br></br>Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
+            <Accordion.Collapse eventKey="202">
+              <Card.Body className="accordion-answer">
+                <p className="sick-p">
+                If you have a <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">weakened immune system (immunocompromised)</a> due to a health condition or medication, you might need to stay home and isolate longer than 10 days. Talk to your healthcare provider for more information.<br></br>Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
                 </p>
-                  </Card.Body>
-                </Accordion.Collapse>
+              </Card.Body>
+            </Accordion.Collapse>
 
-                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="203">
-                  Getting testing again for COVID-19
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="203">
+            Getting testing again for COVID-19
             </Accordion.Toggle>
 
-                <Accordion.Collapse eventKey="203">
-                  <Card.Body className="accordion-answer">
-                    <p className="sick-p">
-                      If you have recovered from your symptoms after testing positive for COVID-19, you may continue to test positive for three months or more without being contagious to others. For this reason, you should be tested only if you develop new symptoms of possible COVID-19. Getting tested again should be discussed with your healthcare provider, especially if you have been in close contact with another person who has tested positive for COVID-19 in the last 14 days.<br></br>If you have symptoms and test positive for COVID-19, follow the guidance above for “I think or know I had COVID, and I had symptoms.” Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
+            <Accordion.Collapse eventKey="203">
+              <Card.Body className="accordion-answer">
+                <p className="sick-p">
+                If you have recovered from your symptoms after testing positive for COVID-19, you may continue to test positive for three months or more without being contagious to others. For this reason, you should be tested only if you develop new symptoms of possible COVID-19. Getting tested again should be discussed with your healthcare provider, especially if you have been in close contact with another person who has tested positive for COVID-19 in the last 14 days.<br></br>If you have symptoms and test positive for COVID-19, follow the guidance above for “I think or know I had COVID, and I had symptoms.” Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
                 </p>
-                  </Card.Body>
-                </Accordion.Collapse>
+              </Card.Body>
+            </Accordion.Collapse>
 
 
-              </Card>
+            </Card>
             </Accordion>
 
 
             <br></br><p className="sick-subject-header">When to Quarantine</p><br></br>
             <p className="sick-p"><b>Quarantine</b> is used to keep someone <i>who might have been exposed to COVID-19</i> away from others. Quarantine helps prevent spread of disease that can occur before a person knows they are sick or if they are infected with the virus without feeling symptoms. People in quarantine should stay home, separate themselves from others, monitor their health, and follow directions from their state or local health department.</p>
-
+            
             <br></br><p className="sick-subject">Quarantine or isolation: What's the difference?</p>
             <p className="sick-p"><b>Quarantine</b> keeps someone who might have been exposed to the virus away from others.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">Isolation</a> keeps someone who is infected with the virus away from others, even in their home.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+            <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-            <p className="sick-subject">Who needs to quarantine?</p>
+            <br></br><p className="sick-subject">Who needs to quarantine?</p>
             <p className="sick-p">
 
-              <b>People who have been in <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months.</b><br></br>People who have tested positive for COVID-19 do not need to quarantine or get tested again for up to 3 months as long as they do not develop symptoms again. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.<br></br><b>What counts as <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact?</a></b>
+              <b>People who have been in <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months.</b><br></br>People who have tested positive for COVID-19 do not need to quarantine or get tested again for up to 3 months as long as they do not develop symptoms again. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.<br></br> <br></br><b>What counts as <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact?</a></b>
               <ul>
                 <li className="sick-li">You were within 6 feet of someone who has COVID-19 for a total of 15 minutes or more</li>
                 <li className="sick-li">You provided care at home to someone who is sick with COVID-19</li>
@@ -2634,9 +2644,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
                 <li className="sick-li">You shared eating or drinking utensils</li>
                 <li className="sick-li">They sneezed, coughed, or somehow got respiratory droplets on you</li>
               </ul>
-            </p><br></br>
+            </p>
 
-            <p className="sick-subject">Steps to take</p>
+            <br></br><p className="sick-subject">Steps to take</p>
             <p className="sick-p">
               <b>Stay home and monitor your health</b>
               <ul>
@@ -2656,12 +2666,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <p className="sick-p">I had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19 and will not have further contact or interactions with the person while they are sick (e.g., co-worker, neighbor, or friend).<br></br>Your last day of quarantine is 14 days from the date you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>.<br></br>Date of last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with person who has COVID-19 + 14 days= end of quarantine
             <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-no-further-contact.png"></Image><br></br>
             Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
-
+            
 
 
             <br></br><p className="sick-subject">Scenario 2: Close contact with someone who has COVID-19—live with the person but can avoid further close contact</p>
             <p className="sick-p">
-              I live with someone who has COVID-19 (e.g., roommate, partner, family member), and that person has isolated by staying in a separate bedroom. I have had no <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person since they isolated.<br></br>Your last day of quarantine is 14 days from when the person with COVID-19 began home isolation<br></br>Date person with COVID-19 began home isolation + 14 days = end of quarantine
+            I live with someone who has COVID-19 (e.g., roommate, partner, family member), and that person has isolated by staying in a separate bedroom. I have had no <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person since they isolated.<br></br>Your last day of quarantine is 14 days from when the person with COVID-19 began home isolation<br></br>Date person with COVID-19 began home isolation + 14 days = end of quarantine
             <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-start-home-isolation.png"></Image><br></br>
             Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
@@ -2687,18 +2697,13 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <ul>
               <li className="sick-li">Help the person who is sick follow their doctor’s instructions for care and medicine.
               <ul>
-                  <li className="sick-li-li">For <i>most</i> people, symptoms last a few days, and people usually feel better after a week.</li>
+                <li className="sick-li-li">For <i>most</i> people, symptoms last a few days, and people usually feel better after a week.</li>
                 </ul></li>
               <li className="sick-li">See if over-the-counter medicines for fever help the person feel better.</li>
               <li className="sick-li">Make sure the person who is sick drinks a lot of fluids and rests.</li>
               <li className="sick-li">Help them with grocery shopping, filling prescriptions, and getting other items they may need. Consider having the items delivered through a delivery service, if possible.</li>
               <li className="sick-li">Take care of their pet(s), and limit contact between the person who is sick and their pet(s) when possible.</li>
             </ul>
-
-            <br></br><p className="sick-subject"></p>
-            <p className="sick-p">
-
-            </p>
 
 
 
@@ -2715,40 +2720,40 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             <br></br><p className="sick-subject">When to seek emergency medical attention</p>
             <p className="sick-p">Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
-              <ul>
-                <li className="sick-li">Trouble breathing</li>
-                <li className="sick-li">Persistent pain or pressure in the chest</li>
-                <li className="sick-li">New confusion</li>
-                <li className="sick-li">Inability to wake or stay awake</li>
-                <li className="sick-li">Bluish lips or face</li>
-              </ul>
+            <ul>
+              <li className="sick-li">Trouble breathing</li>
+              <li className="sick-li">Persistent pain or pressure in the chest</li>
+              <li className="sick-li">New confusion</li>
+              <li className="sick-li">Inability to wake or stay awake</li>
+              <li className="sick-li">Bluish lips or face</li>
+            </ul>
             *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
-              <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
+            <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
             </p>
 
 
 
             <br></br><p className="sick-subject">Limit contact</p>
             <p className="sick-p">
-              COVID-19 spreads between people who are in close contact (within about 6 feet) through respiratory droplets, created when someone talks, coughs or sneezes. Staying away from others helps stop the spread of COVID-19.
+            COVID-19 spreads between people who are in close contact (within about 6 feet) through respiratory droplets, created when someone talks, coughs or sneezes. Staying away from others helps stop the spread of COVID-19.
 
 <br></br>The caregiver, when possible, should not be someone who is at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness from COVID-19</a>.
 
 <br></br><b>The person who is sick should isolate</b>
 
-              <br></br>The sick person should separate themselves from others in the home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">when and how to isolate.</a>
+<br></br>The sick person should separate themselves from others in the home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">when and how to isolate.</a>
 
-              <ul>
-                <li className="sick-li">If possible, have the person who is sick use a separate bedroom and bathroom. If possible, have the person who is sick stay in their own “sick room” or area and away from others. Try to stay at least 6 feet away from the sick person.</li>
-                <li className="sick-li">Shared space: If you have to share space, make sure the room has good air flow.
+<ul>
+  <li className="sick-li">If possible, have the person who is sick use a separate bedroom and bathroom. If possible, have the person who is sick stay in their own “sick room” or area and away from others. Try to stay at least 6 feet away from the sick person.</li>
+  <li className="sick-li">Shared space: If you have to share space, make sure the room has good air flow.
   <ul>
-                    <li className="sick-li-li">Open the window to increase air circulation.</li>
-                    <li className="sick-li-li">Improving ventilation helps remove respiratory droplets from the air.</li>
-
-                  </ul></li>
-                <li className="sick-li">Avoid having visitors. Avoid having any unnecessary visitors, especially visits by <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk for severe illness</a>.</li>
-              </ul>
-              <b>Caregivers should quarantine</b><br></br>
+    <li className="sick-li-li">Open the window to increase air circulation.</li>
+    <li className="sick-li-li">Improving ventilation helps remove respiratory droplets from the air.</li>
+    
+    </ul></li>
+  <li className="sick-li">Avoid having visitors. Avoid having any unnecessary visitors, especially visits by <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk for severe illness</a>.</li>
+</ul>
+<b>Caregivers should quarantine</b><br></br>
 
 Caregivers and anyone who has been in close contact with someone who has COVID-19 should stay home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">when and how to quarantine</a>.
             </p>
@@ -2785,10 +2790,10 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
                 <li className="sick-li">Put on a mask and ask the sick person to put on a mask  before entering the room.</li>
                 <li className="sick-li">Wear gloves when you touch or have contact with the sick person’s blood, stool, or body fluids, such as saliva, mucus, vomit, and urine. Throw out gloves into a lined trash can and wash your hands right away.
                 <ul>
-                    <li className="sick-li-li">Practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> to keep from getting sick:  wash your hands often; avoid touching your eyes, nose, and mouth; and frequently clean and disinfect surfaces.</li></ul></li>
+                  <li className="sick-li-li">Practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> to keep from getting sick:  wash your hands often; avoid touching your eyes, nose, and mouth; and frequently clean and disinfect surfaces.</li></ul></li>
               </ul>
               <b>Note:</b> During the COVID-19 pandemic, medical grade masks are reserved for healthcare workers and some first responders.<br></br>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/IFqx9SG6TkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe className="iframe" src="https://www.youtube.com/embed/IFqx9SG6TkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
 
@@ -2849,19 +2854,311 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </ul>
 
             <br></br><p className="sick-subject">Track your own health</p>
-            <p className="sick-p"></p>
+            <ul>
+              <li className="sick-li">Caregivers should stay home and monitor their health for COVID-19 symptoms while caring for the person who is sick.
+                <ul>
+                  <li className="sick-li-li"><a href="https://wcms-wp.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> include fever, cough, and shortness of breath but other symptoms may be present as well. Trouble breathing is a more serious warning sign that you need medical attention.</li>
+                </ul>
+              </li>
+              <li className="sick-li">Caregivers should continue to stay home after care is complete. Caregivers can leave their home 14 days after their last close contact with the person who is sick (based on the time it takes to develop illness), or 14 days after the person who is sick meets the <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">criteria to end home isolation</a>.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Use CDC’s self-checker tool</a> to help you make decisions about seeking appropriate medical care.
 
+              </li>
+              <li className="sick-li"><b>If you are having trouble breathing, call 911.</b>
+              <ul>
+                  <li className="sick-li-li">Call your doctor or emergency room and tell them your symptoms before going in. They will tell you what to do.</li>
+                </ul>
+              </li>
+            </ul>
 
-            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p><br></br>
+            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p>
 
-            <p className="sick=header"></p>
+            <br></br><p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
+            <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
+
+            If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
+
+            <br></br><p className="sick-subject">Older children</p>
+            <p className="sick-p">The child should avoid physical contact with the sick parent or caregiver until all sick people have <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">ended their home isolation</a>. For the child to safely have no interaction with the parent or caregiver, the child should be old enough to legally be home alone and mature enough to care for themselves.</p>
+
+            <br></br><p className="sick-subject">Younger Children</p>
+            <p className="sick-p">
+            If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
+            <ul>
+              <li className="sick-li">Young children should be supervised at all times.</li>
+              <li className="sick-li">If the parent or the sole caregiver is too ill to care for the child, they should see if there is a caregiver outside of the home with whom the child can stay. The caregiver should not be someone who is <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">at higher risk for severe illness</a> from COVID-19, as the child has likely been exposed to the virus. The caregiver will need to help the child quarantine for 14 days since they last had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> (within 6 feet way from someone for a total of 15 minutes or more) with the sick person.</li>
+            </ul>
+            </p>
+
+            <br></br><p className="sick-subject">Children staying in the home with the sick parent or caregiver</p>
+            <p className="sick-p">
+            If a child needs to stay in the home with you (the parent or caregiver who is sick):
+            <ul>
+              <li className="sick-li">Both you and the child should wear a mask while in the same room.</li>
+              <li className="sick-li">Note that masks should not be placed on:
+              <ul>
+                <li className="sick-li-li">Children younger than 2 years old</li>
+                <li className="sick-li-li">Anyone who has trouble breathing or is unconscious</li>
+                <li className="sick-li-li">Anyone who is incapacitated or otherwise unable to remove the mask without assistance</li>
+                </ul></li>
+              <li className="sick-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> frequently with soap and water for at least 20 seconds. If soap and water are not available, use hand sanitizer containing at least 60% alcohol and rub your hands together until they are dry.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Try to stay 6 feet away</a> from the child, if possible and if safe.</li>
+              <li className="sick-li">Increase ventilation by opening a window in a room that you are in.</li>
+              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Disinfect any items</a> that you need to bring to the child.</li>
+              <li className="sick-li">Do not disinfect food that you bring to the child.</li>
+              <li className="sick-li">Watch for symptoms.              
+               <ul>
+                <li className="sick-li-li">During this time caregivers should monitor themselves for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>.</li>
+                <li className="sick-li-li">Check the child’s temperature twice a day and watch for symptoms of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
+                <li className="sick-li-li">If the child develops symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
+                </ul></li>
+              <li className="sick-li">If possible, the child should stay away from people who are at higher-risk for getting very sick from COVID-19.</li>
+            </ul>
+            </p>
+
+            <br></br><p className="sick-subject">Children staying outside the home with a temporary caregiver</p>
+            <p className="sick-p">
+            If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
+            <ul>
+              <li className="sick-li">The child should stay inside the caregiver’s home until 14 days after their last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the sick person.</li>
+              <li className="sick-li">Watch for symptoms.
+                <ul>
+                  <li className="sick-li-li">During this time the caregiver should monitor themselves for symptoms and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>.</li>
+                  <li className="sick-li-li">Check the child’s temperature twice a day and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
+                  <li className="sick-li-li">If the child does develop symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
+                </ul>
+              </li>
+              <li className="sick-li">
+              If possible, the child should stay away from people who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher-risk</a> for getting very sick from COVID-19.<br></br>
+The caregiver should then quarantine for 14 days after the last day the caregiver had contact with the sick child.<br></br>
+
+ 
+
+*COVID-19 <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> can look different in different people. For many people, being sick with COVID-19 would be a little bit like having the flu. People can get a fever, cough, or have a hard time taking deep breaths. Most people who have gotten COVID-19 have not gotten very sick. Only a small group of people who get it have had more serious problems. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">More information on children and COVID-19</a>.
+              </li>
+            </ul>
+            </p>
 
 
             <br></br><p className="sick-subject-header">When You Can Be Around Others</p><br></br>
-            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p><br></br>
-            <br></br><p className="sick-subject-header">Reinfection</p><br></br>
+            <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
+
+            <br></br><p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
+            <p className="sick-p">You can be around others after:
+<ul>
+  <li className="sick-li">10 days since symptoms first appeared and</li>
+  <li className="sick-li">24 hours with no fever without the use of fever-reducing medications and</li>
+  <li className="sick-li">Other symptoms of COVID-19 are improving*</li>
+</ul>
+
+*Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation​<br></br>
+
+Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
+
+Note that these recommendations do not apply to persons with severe COVID-19 or with severely weakened immune systems (immunocompromised). These persons should follow the guidance below for “I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?”</p>
+
+<br></br><p className="sick-subject">I tested positive for COVID-19 but had no symptoms</p>
+            <p className="sick-p">If you continue to have no symptoms, you can be with others after 10 days have passed since you had a positive viral test for COVID-19. Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
+
+If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID-19, and I had symptoms.”</p>
+
+<br></br><p className="sick-subject">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
+            <p className="sick-p">People who are severely ill with COVID-19 might need to stay home longer than 10 days and up to 20 days after symptoms first appeared. <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">Persons who are severely immunocompromised</a> may require testing to determine when they can be around others. Talk to your healthcare provider for more information. If testing is available in your community, it may be recommended by your healthcare provider. Your healthcare provider will let you know if you can resume being around other people based on the results of your testing.<br></br>
+
+Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert or your local health department</a> to determine whether testing will be necessary before you can be around others.</p>
+
+<br></br><p className="sick-subject">For Anyone Who Has Been Around a Person with COVID-19</p>
+            <p className="sick-p">Anyone who has had close contact with someone with COVID-19 should stay home for 14 days <b>after their last exposure</b> to that person.<br></br>
+
+However, anyone who has had close contact with someone with COVID-19 and who meets the following criteria does <b>NOT</b> need to stay home.
+<ul>
+  <li className="sick-li">Has COVID-19 illness within the previous 3 months and</li>
+  <li className="sick-li">Has recovered and</li>
+  <li className="sick-li">Remains without COVID-19 symptoms (for example, cough, shortness of breath)</li>
+</ul></p>
+
+<br></br><p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected
+            </p>
+
+            <br></br><p className="sick-subject">For Healthcare Professionals</p>
+            <p className="sick-p">If you are a healthcare professional who thinks or knows you had COVID-19, you should follow the same recommendations listed above for when you can resume being around others outside the workplace. When you can return to work depends on different factors and situations. For information on when you can return to work, see the following:<br></br>
+
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/return-to-work.html">Criteria for Return to Work for Healthcare Personnel with SARS-CoV-2 Infection (Interim Guidance)</a></p>
+
+<br></br><p className="sick-subject">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
+            <p className="sick-p">If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
+            <iframe className="iframe" src="https://www.youtube.com/embed/HNgDirLLZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+            <br></br><p className="sick-subject">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
+            <p className="sick-p">
+            If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
+            <iframe className="iframe" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+
+            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p>
+            <br></br><p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
+            <ul>
+              <li className="sick-li">Wash your hands often.</li>
+              <li className="sick-li">Avoid close contact with people who are sick and people who don’t live in your household.</li>
+              <li className="sick-li">Cover your mouth and nose with a mask when around others.</li>
+              <li className="sick-li">Cover your coughs and sneezes.</li>
+              <li className="sick-li">Clean and disinfect frequently touched surfaces.</li>
+              <li className="sick-li">Monitor your health daily.</li>
+            </ul>
+
+            <br></br><p className="sick-subject">Getting a flu vaccine is more important than ever this flu season to protect yourself, your family and your community from flu.</p>
+            <p className="sick-p">A flu vaccine can also help reduce the burden on our healthcare systems responding to the COVID-19 pandemic and save medical resources for care of COVID-19 patients.</p>
+
+            <br></br><p className="sick-subject">If you think you may have been exposed to a person with COVID-19, contact your healthcare provider.</p>
+            <ul>
+              <li className="sick-li">Stay home and away from the people you live with as much as possible.</li>
+              <li className="sick-li">Consider getting tested.</li>
+              <li className="sick-li">Monitor your symptoms.</li>
+              <li className="sick-li">If you show an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a>, seek emergency medical care immediately. Call 911 or call ahead to your local emergency facility. Emergency warning signs include:
+                <ul>
+                  <li className="sick-li-li">Trouble breathing</li>
+                  <li className="sick-li-li">Persistent pain or pressure in the chest</li>
+                  <li className="sick-li-li">New confusion</li>
+                  <li className="sick-li-li">Inability to wake or stay awake</li>
+                  <li className="sick-li-li">Bluish lips or face.</li>
+                </ul>
+              </li>
+            </ul>
+            <p className="sick-p">The Food and Drug Administration (FDA) has approved one drug, remdesivir (Veklury), to treat COVID-19. The FDA can also issue <a href="https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">emergency use authorizations</a> (EUAs) to allow healthcare providers to use products that are not yet approved, or that are approved for other uses, to treat patients with COVID-19 if certain legal requirements are met.</p>
+
+            <br></br><p className="sick-subject">Any treatments that are used for COVID-19 should be taken under the care of a healthcare provider.</p>
+            <p className="sick-p">
+            People have been <a href="https://emergency.cdc.gov/han/2020/han00431.asp">seriously harmed and even died</a> after taking unapproved products to self-treat.<br></br>
+
+The National Institutes of Health (NIH) has developed and regularly updates <a href="https://www.covid19treatmentguidelines.nih.gov/introduction/">Treatment Guidelines</a> to help guide healthcare providers caring for patients with COVID-19, including when clinicians might consider using one of the products under an EUA. Currently, there are several approaches for treating patients with severe COVID-19 who are being cared for in the hospital. In studies, some drugs have shown some benefit in reducing the severity of illness or risk of death by:
+<ul>
+  <li className="sick-li"><i>Slowing the virus</i>. Antiviral medications reduce the ability of the virus to multiply and spread through the body.
+  <ul>
+    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a620033.html">Remdesivir</a> (Veklury) is an antiviral medication approved by the FDA to treat COVID-19, that is recommended in the current <a href="https://www.covid19treatmentguidelines.nih.gov/antiviral-therapy/remdesivir/">NIH Treatment Guidelines</a> for certain patients who are hospitalized with COVID-19. Remdesivir is given to patients by infusion through their veins.</li>
+  </ul>
+  </li>
+  <li className="sick-li"><i>Reducing an overactive immune response</i>. In patients with severe COVID-19, the body’s immune system may overreact to the threat of the virus, worsening the disease. This can cause damage to the body’s organs and tissues. Some treatments can help reduce this overactive immune response.
+  <ul>
+    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a682792.html">Dexamethasone</a> is a steroid medication, similar to a natural hormone produced by the body. The <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/corticosteroids/">NIH Treatment Guidelines</a> recommend dexamethasone, or a similar medication, to prevent or reduce injury to the body for some hospitalized patients with severe COVID-19. Dexamethasone is recommended for patients who need supplemental oxygen.</li>
+    </ul></li>
+  <li className="sick-li"><i>Treating complications</i>. The virus that causes COVID-19 can damage the heart, blood vessels, kidneys, brain, skin, eyes, and gastrointestinal organs. It also can cause other complications. Depending on the complications, additional treatments might be used for severely ill hospitalized patients, such as blood thinners to prevent or treat blood clots.</li>
+  <li className="sick-li"><i>Supporting the body’s immune function</i>. Antibodies from patients who have recovered from COVID-19 (convalescent plasma) or antibodies manufactured to treat COVID-19 (like monoclonal antibodies) can attach to parts of the virus. This could help the immune system recognize and respond more effectively to the virus, but currently the <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/">NIH Treatment Guidelines</a> find there is not enough evidence to recommend these treatments.
+</li>
+  <li className="sick-li"><i>Relieving symptoms and supporting the body’s natural defenses.</i>
+  <ul>
+    <li className="sick-li-li">Taking medications, like acetaminophen or ibuprofen, can reduce fever.</li>
+    <li className="sick-li-li">Drinking water or receiving intravenous fluids can help patients stay hydrated.</li>
+    <li className="sick-li-li">Getting plenty of rest can help the body fight the virus.</li>
+    </ul></li>
+</ul>
+
+Other products are being studied as potential treatments for COVID-19. Information about these ongoing studies can be found at <a href="https://clinicaltrials.gov/ct2/results?recrs=ab&cond=covid-19&term=&cntry=US&state=&city=&dist=">ClinicalTrials.gov</a>
+            </p>
+
+
+            <br></br><p className="sick-subject-header">Reinfection</p>
+            <br></br><p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
+            <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
+            <ul>
+              <li className="sick-li">How likely is reinfection</li>
+              <li className="sick-li">How often reinfection occurs</li>
+              <li className="sick-li">How soon after the first infection can reinfection take place</li>
+              <li className="sick-li">How severe are cases of reinfection</li>
+              <li className="sick-li">Who might be at higher risk for reinfection</li>
+              <li className="sick-li">What reinfection means for a person’s immunity</li>
+              <li className="sick-li">If a person is able to spread COVID-19 to other people when reinfected</li>
+              </ul></p>
+
+              <br></br> <p className="sick-subject">What CDC is doing</p>
+            <p className="sick-p">CDC is actively working to learn more about reinfection to inform public health action. CDC developed recommendations for public health professionals to help decide when and how to test someone for suspected reinfection. CDC has also provided information for state and local health departments to help investigate suspected cases of reinfection. We will update this guidance as we learn more about reinfection.</p>
+
+            <br></br><p className="sick-subject">Prevention</p>
+            <p className="sick-p">At this time, whether you have had COVID-19 or not, the best way to prevent infection is to take steps to protect yourself:
+            <ul>
+              <li className="sick-li">Wear a mask in public places</li>
+              <li className="sick-li">Stay at least 6 feet away from other people</li>
+              <li className="sick-li">Wash your hands</li>
+              <li className="sick-li">Avoid crowds and confined spaces</li>
+              </ul></p>
+
+
+
+
             <br></br><p className="sick-subject-header">Long-Term Effects</p><br></br>
-            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p><br></br>
+            <p className="sick-p">
+            CDC is actively working to learn more about the whole range of short- and long-term health effects associated with COVID-19. As the pandemic unfolds, we are learning that many organs besides the lungs are affected by COVID-19 and there are many ways the infection can affect someone’s health.<br></br>
+
+While most persons with COVID-19 recover and return to normal health, some patients can have symptoms that can last for weeks or even months after recovery from acute illness. Even people who are not hospitalized and who have mild illness can experience persistent or late symptoms. Multi-year studies are underway to further investigate. CDC continues to work to identify how common these symptoms are, who is most likely to get them, and whether these symptoms eventually resolve.<br></br>
+
+The most commonly reported long-term symptoms include:
+<ul>
+  <li className="sick-li">Fatigue</li>
+  <li className="sick-li">Shortness of breath</li>
+  <li className="sick-li">Cough</li>
+  <li className="sick-li">Joint pain</li>
+  <li className="sick-li">Chest pain</li>
+</ul>
+
+Other reported long-term symptoms include:
+<ul>
+  <li className="sick-li">Difficulty with thinking and concentration (sometimes referred to as “brain fog”)</li>
+  <li className="sick-li">Depression</li>
+  <li className="sick-li">Muscle pain</li>
+  <li className="sick-li">Headache</li>
+  <li className="sick-li">Intermittent fever</li>
+  <li className="sick-li">Fast-beating or pounding heart (also known as heart palpitations)</li>
+</ul>
+
+
+More serious long-term complications appear to be less common but have been reported. These have been noted to affect different organ systems in the body. These include:
+<ul>
+  <li className="sick-li">Cardiovascular: inflammation of the heart muscle</li>
+  <li className="sick-li">Respiratory: lung function abnormalities</li>
+  <li className="sick-li">Renal: acute kidney injury</li>
+  <li className="sick-li">Dermatologic: rash, hair loss</li>
+  <li className="sick-li">Neurological: smell and taste problems, sleep issues, difficulty with concentration, memory problems</li>
+  <li className="sick-li">Psychiatric: depression, anxiety, changes in mood</li>
+</ul>
+
+
+The long-term significance of these effects is not yet known. CDC will continue active investigation and provide updates as new data emerge, which can inform COVID-19 clinical care as well as the public health response to COVID-19.
+            </p>
+
+            <br></br><p className="sick-subject">Preventing COVID-19</p>
+          <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
+
+            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p>
+            <br></br><p className="sick-subject">What we know about MIS-A</p>
+            <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
+
+Like children, adults who have been infected with the virus that causes COVID-19 can develop symptoms of MIS-A days to weeks after getting sick. MIS-A is a condition where problems can occur in different parts of the body like the heart, gastrointestinal tract, skin, or brain. Adults with MIS-A may have various signs and symptoms including:
+<ul>
+  <li className="sick-li">Fever</li>
+  <li className="sick-li">Low blood pressure</li>
+  <li className="sick-li">Abdominal (gut) pain</li>
+  <li className="sick-li">Vomiting</li>
+  <li className="sick-li">Diarrhea</li>
+  <li className="sick-li">Neck pain</li>
+  <li className="sick-li">Rash</li>
+  <li className="sick-li">Chest tightness/pain</li>
+  <li className="sick-li">Feeling very tired</li>
+</ul>
+MIS-A can be very serious, so it is important to seek medical care as soon as possible.
+</p>
+
+<br></br><p className="sick-subject">What we don’t know about MIS-A</p>
+            <p className="sick-p">CDC is still learning about MIS-A and how it affects adults, so we do not know why some adults have gotten sick with MIS-A and others have not. We also do not know if adults with certain health conditions are more likely to develop MIS-A. These are among the many questions CDC is working to understand.</p>
+
+            <br></br><p className="sick-subject">What CDC is doing about MIS-A</p>
+            <p className="sick-p">CDC is working with state, local, and territorial health departments; U.S. and international scientists; healthcare providers; and other partners to learn more about MIS-A. Through these partnerships, we are learning about how to recognize MIS-A in adults, how often it happens, and who is likely to get MIS-A.<br></br>
+
+All CDC recommendations are based on the best data and science available at the time, and we will update them as we learn more.</p>
+
+<br></br><p className="sick-subject">How to protect yourself from MIS-A</p>
+            <p className="sick-p">Based on what we know now about MIS-A, the best way you can <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself is by taking everyday actions to protect yourself from getting the virus that causes COVID-19</a>.</p>
 
           </Alert>
           {/* END IF SICK */}
