@@ -2023,7 +2023,8 @@ function App() {
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">Masks</Alert.Heading> */}
             <p>
-              <p className="masks-subject-header">Overview</p><br></br>
+              <p className="masks-subject-header">How to Select, Wear, and Clean Your Mask</p><br></br>
+              <p className="masks-subject">Overview</p>
               <ul>
                 <li className="masks-li">Wear masks with two or more layers to stop the spread of COVID-19</li>
                 <li className="masks-li">Wear the mask over your nose and mouth and secure it under your chin</li>
