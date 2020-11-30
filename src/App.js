@@ -2274,7 +2274,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
 
 
-            <br></br><p className="masks-subject-header">Considerations for Wearing Masks</p>
+            <br></br><p className="masks-subject-header">Considerations for Wearing Masks</p><br></br>
 
             <ul>
               <li className="masks-li">CDC recommends that people wear masks in public settings and when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintain.</li>
@@ -2441,7 +2441,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br> */}
 
-            <p className="sick-subject-header">What to Do If You Are Sick</p>
+            <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
             <br></br><p className="sick-subject">Stay home except to get medical care</p>
 
             <ul>
@@ -2871,9 +2871,9 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
               </li>
             </ul>
 
-            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p>
+            <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p><br></br>
 
-            <br></br><p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
+            <p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
             <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
 
             If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
@@ -2998,8 +2998,8 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
             </p>
 
 
-            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p>
-            <br></br><p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
+            <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p><br></br>
+            <p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
             <ul>
               <li className="sick-li">Wash your hands often.</li>
               <li className="sick-li">Avoid close contact with people who are sick and people who don’t live in your household.</li>
@@ -3059,8 +3059,8 @@ Other products are being studied as potential treatments for COVID-19. Informati
             </p>
 
 
-            <br></br><p className="sick-subject-header">Reinfection</p>
-            <br></br><p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
+            <br></br><p className="sick-subject-header">Reinfection</p><br></br>
+            <p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
             <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
             <ul>
               <li className="sick-li">How likely is reinfection</li>
@@ -3130,8 +3130,8 @@ The long-term significance of these effects is not yet known. CDC will continue 
             <br></br><p className="sick-subject">Preventing COVID-19</p>
           <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
-            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p>
-            <br></br><p className="sick-subject">What we know about MIS-A</p>
+            <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p><br></br>
+            <p className="sick-subject">What we know about MIS-A</p>
             <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
 
 Like children, adults who have been infected with the virus that causes COVID-19 can develop symptoms of MIS-A days to weeks after getting sick. MIS-A is a condition where problems can occur in different parts of the body like the heart, gastrointestinal tract, skin, or brain. Adults with MIS-A may have various signs and symptoms including:
