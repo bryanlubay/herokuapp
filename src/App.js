@@ -2068,7 +2068,7 @@ function App() {
         <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
 
 
-            <p className="masks-p"><b>How to take off a mask</b></p><br></br>
+            <p className="masks-p"><b>How to take off a mask</b></p>
               <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
             
             <p className="masks-subject">How to Clean</p>
@@ -2100,7 +2100,7 @@ function App() {
             </ul>
 
             <br></br><p className="masks-subject">Wear a Mask to Protect Others</p>
-            <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/dos-donts.jpg"></Image>
             <ul>
               <li className="masks-li">Wear a mask that covers your nose and mouth to help protect others in case you’re infected with COVID-19 but don’t have symptoms</li>
               <li className="masks-li">Wear a mask in public settings when around people who don’t live in your household, especially when it may be difficult for you to stay six feet apart</li>
@@ -2110,7 +2110,7 @@ function App() {
             </ul>
 
             <br></br><p className="masks-subject">Follow Everyday Health Habits</p>
-            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
+            <Image  src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/COVIDweb_avoidCloseContact_masks_rect-01.png"></Image>
             <ul>
               <li className="masks-li">Stay at least 6 feet away from others</li>
               <li className="masks-li">Avoid contact with people who are sick</li>
@@ -2136,7 +2136,7 @@ function App() {
         
 
         <p className="masks-subject">Store wet or dirty masks in a plastic bag</p>
-        <Image className="masks-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-mask.png"></Image><br></br>
+        <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-mask.png"></Image><br></br>
         <p className="masks-p">If your mask is wet or dirty from sweat, saliva, make-up, or other liquids or substances, keep it in a sealed plastic bag until you can wash it. Wash wet or dirty masks as soon as possible to prevent them from becoming moldy. Wet masks can be hard to breathe through and are less effective than dry masks.</p><br></br>
 
       <p className="masks-subject">Store masks that are not wet or dirty in a paper bag</p>
