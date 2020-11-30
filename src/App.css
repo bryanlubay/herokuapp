@@ -114,7 +114,7 @@
   width: 50%;
 }
 
-/* END Maskss */
+/* END Masks */
 
 /* START Symptoms */
 
@@ -327,7 +327,6 @@
 
 .iframe {
   display: -webkit-box;
-  height: -webkit-fill-available;
   margin: auto;
   width: inherit;
   border: none;
