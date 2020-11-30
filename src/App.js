@@ -382,7 +382,7 @@ function App() {
               <ul>
                 <li className="prevent-li">The best way to prevent illness is to avoid being exposed to this virus.</li>
                 <li className="prevent-li">The virus is thought to spread mainly from person-to-person.
-            <ul>
+                  <ul>
                     <li className="prevent-li-li">Between people who are in close contact with one another (within about 6 feet).</li>
                     <li className="prevent-li-li">Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
                     <li className="prevent-li-li">These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
@@ -396,7 +396,7 @@ function App() {
                 <li className="prevent-li">
                   <a target="_blank" href="https://www.cdc.gov/handwashing/when-how-handwashing.html" target="_blank">Wash your hands</a> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
                 <li className="prevent-li">It’s especially important to wash:
-            <ul>
+                  <ul>
                     <li className="prevent-li-li">Before eating or preparing food</li>
                     <li className="prevent-li-li">Before touching your face</li>
                     <li className="prevent-li-li">After using the restroom</li>
@@ -417,14 +417,14 @@ function App() {
               <ul>
 
                 <li className="prevent-li"><b>Inside your home: </b>avoid close contact with people who are sick.
-            <ul>
+                  <ul>
                     <li className="prevent-li-li">If possible, maintain 6 feet between the person who is sick and other household members.</li>
                   </ul>
                 </li>
 
 
                 <li className="prevent-li"><b>Outside your home: </b>Put 6 feet of distance between yourself and people who don’t live in your household.
-            <ul>
+                  <ul>
                     <li className="prevent-li-li">Remember that some people without symptoms may be able to spread virus.</li>
                     <li className="prevent-li-li"><a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms' length) from other people.</a></li>
                     <li className="prevent-li-li">Keeping distance from others is especially important for <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk of getting very sick.</a></li>
@@ -551,7 +551,7 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
                     What is a novel coronavirus?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="0">
                     <Card.Body className="accordion-answer">A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the <a target="_blank" href="https://www.cdc.gov/coronavirus/types.html">coronaviruses that commonly circulate among humans</a> and cause mild illness, like the common cold.</Card.Body>
@@ -559,7 +559,7 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1">
                     Why is the disease being called coronavirus disease 2019, COVID-19?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="1">
                     <Card.Body className="accordion-answer">On February 11, 2020 the World Health Organization <a target="_blank" href="https://twitter.com/DrTedros/status/1227297754499764230">announced</a> an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.<br></br><br></br>There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.</Card.Body>
@@ -573,47 +573,47 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="3">
                     How does the virus spread?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="3">
                     <Card.Body className="accordion-answer">The virus that causes COVID-19 is thought to spread mainly from person to person, mainly through respiratory droplets produced when an infected person coughs, sneezes, or talks. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another (within about 6 feet).<br></br><br></br>COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">many affected geographic areas.</a> Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="4">
                     Can I get COVID-19 from food (including restaurant take-out, produce, refrigerated, or packaged food) or drinking water?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="4">
                     <Card.Body className="accordion-answer"><b>Currently there is no evidence that people can get COVID-19 by eating or handling food.</b>It may be possible that people can get COVID-19 by touching a surface or object, such as a food package or dining ware that has the virus on it and then touching their own mouth, nose, or possibly their eyes. However, this is not thought to be the main way the virus spreads.<br></br><br></br>There is also no current evidence that people can get COVID-19 by drinking water. The COVID-19 virus has not been detected in drinking water. Conventional water treatment methods that use filtration and disinfection, such as those in most municipal drinking water systems, should remove or kill the virus that causes COVID-19.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="5">
                     Will warm weather stop the outbreak of COVID-19?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="5">
                     <Card.Body className="accordion-answer">It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="6">
                     What is community spread?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="6">
                     <Card.Body className="accordion-answer">Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. Each health department determines community spread differently based on local conditions. For information on community spread in your area, please visit your health department’s website.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="7">
                     Can mosquitoes or ticks spread the virus that causes COVID-19?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="7">
                     <Card.Body className="accordion-answer">At this time, CDC has no data to suggest that this new coronavirus or other similar coronaviruses are spread by mosquitoes or ticks. The main way that COVID-19 spreads is from person to person. See <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">How Coronavirus Spreads</a> for more information.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <a href="#Top">Return to Top</a>
@@ -624,7 +624,7 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="8">
                     How can I protect myself?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="8">
                     <Card.Body className="accordion-answer">Visit the <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a> and cause mild illness, like the common cold.</Card.Body>
@@ -632,12 +632,12 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="9">
                     Does CDC recommend the use of masks to prevent COVID-19?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="9">
                     <Card.Body className="accordion-answer">Wear masks in public settings when around people not living in your household and particularly where other social distancing measures are difficult to maintain, such as grocery stores, pharmacies, and gas stations. Masks may slow the spread of the virus and help people who may have the virus and do not know it from transmitting it to others.<br></br><br></br>COVID-19 can be spread by people who do not have symptoms and do not know that they are infected. That’s why it’s important for everyone to practice <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancings</a>  (staying at least 6 feet away from other people) and wear masks in public settings. Masks provide an extra layer to help prevent the respiratory droplets from traveling in the air and onto other people.<br></br><br></br>The masks recommended are not surgical masks or N-95 respirators. Those are critical supplies that must continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance.<br></br><br></br>More information about masks can be found on our masks site.
 
-              <ul>
+                    <ul>
                         <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html"><li>How to Wear</li></a>
 
                         <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"><li>How to Wash</li></a>
@@ -649,7 +649,7 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="10">
                     Is it safe to get care for my other medical conditions at this time?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="10">
                     <Card.Body className="accordion-answer">
@@ -674,14 +674,14 @@ function App() {
 
 
                       </ul>
-              For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">Groups at Higher Risk for Severe Illness</a>.
+                    For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">Groups at Higher Risk for Severe Illness</a>.
 
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="11">
                     Am I at risk for COVID-19 from mail, packages, or products?
-            </Accordion.Toggle>
+                  </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="11">
                     <Card.Body className="accordion-answer">There is still a lot that is unknown about COVID-19 and how it spreads. Coronaviruses are thought to be spread most often by respiratory droplets. Although the virus can survive for a short period on some surfaces, it is unlikely to be spread from domestic or international mail, products or packaging. However, it may be possible that people can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads.<br></br><br></br>Learn more about <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">safe handling of deliveries and mail</a>.</Card.Body>
@@ -704,9 +704,9 @@ function App() {
                         <li>Contact lens wearers should continue to <a href="https://www.cdc.gov/contactlenses/protect-your-eyes.html">practice safe contact lens wear and care hygiene habits</a> to help prevent against transmission of any contact lens-related infections, such as always washing hands with soap and water before handling lenses.</li>
                         <li>People who are healthy can continue to wear and care for their contact lenses as prescribed by their eye care professional.</li>
                       </ul>
-                Find more information about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html">how coronavirus spreads</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html">how to protect yourself</a>.<br></br><br></br>
-                Visit <a href="https://www.cdc.gov/contactlenses/index.html">CDC's contact lens website</a> for more information on healthy contact lens wear and care.
-              </Card.Body>
+                      Find more information about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html">how coronavirus spreads</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html">how to protect yourself</a>.<br></br><br></br>
+                      Visit <a href="https://www.cdc.gov/contactlenses/index.html">CDC's contact lens website</a> for more information on healthy contact lens wear and care.
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="14">
@@ -722,9 +722,9 @@ function App() {
                         <li><a href="https://www.cdc.gov/contactlenses/care-systems.html">Always use solution</a> to disinfect your contact lenses and case to kill germs that may be present.</li>
                         <li>Handle your lenses over a surface that has been cleaned and disinfected.</li>
                       </ul>
-                Find more information about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html">how coronavirus spreads</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html">how to protect yourself</a>.<br></br><br></br>
-                Visit <a href="https://www.cdc.gov/contactlenses/index.html">CDC's contact lens website</a> for more information on healthy contact lens wear and care.
-              </Card.Body>
+                      Find more information about <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html">how coronavirus spreads</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html">how to protect yourself</a>.<br></br><br></br>
+                      Visit <a href="https://www.cdc.gov/contactlenses/index.html">CDC's contact lens website</a> for more information on healthy contact lens wear and care.
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="15">
@@ -760,9 +760,9 @@ function App() {
                         <li>Provide your sick household member with clean disposable facemasks to wear at home, if available, to help prevent spreading COVID-19 to others.</li>
                         <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/home/cleaning-disinfection.html">Clean the sick room and bathroom</a>, as needed, to avoid unnecessary contact with the sick person.</li>
                       </ul>
-                  However, some people may need emergency medical attention. Watch for symptoms and learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">when to seek emergency medical attention</a>.<br></br><br></br>
-                  When to Seek Emergency Medical Attention<br></br><br></br>
-                  Look for <b>emergency warning signs* </b>for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately</b><br></br>
+                        However, some people may need emergency medical attention. Watch for symptoms and learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">when to seek emergency medical attention</a>.<br></br><br></br>
+                        When to Seek Emergency Medical Attention<br></br><br></br>
+                        Look for <b>emergency warning signs* </b>for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately</b><br></br>
                       <ul>
                         <li>Trouble breathing</li>
                         <li>Persistent pain or pressure in the chest</li>
@@ -770,9 +770,9 @@ function App() {
                         <li>Inability to wake or stay awake</li>
                         <li>Bluish lips or face</li>
                       </ul>
-                  *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br><br></br>
+                        *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br><br></br>
                       <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
-                </Card.Body>
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="18">
@@ -799,7 +799,7 @@ function App() {
                   <Accordion.Collapse eventKey="19">
                     <Card.Body className="accordion-answer">
                       Based on available evidence, children do not appear to be at higher risk for COVID-19 than adults. While some children and infants have been sick with COVID-19, adults make up most of the known cases to date. However, a few children have developed <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">multisystem inflammatory syndrome (MIS-C)</a>. Currently, information about this syndrome is limited. CDC is working with state and local health departments to learn more about MIS-C.
-                </Card.Body>
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="20">
@@ -816,9 +816,9 @@ function App() {
                         <li>If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</li>
                         <li>Clean and disinfect frequently touched surfaces and objects, like tables, countertops, light switches, doorknobs, and cabinet handles).</li>
                       </ul>
-                You can find additional information on preventing COVID-19 at <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a>. Additional information on how COVID-19 is spread is available at <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html">How COVID-19 Spreads</a>.<br></br><br></br>
-                More information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keeping Children Healthy during the COVID19 Outbreak</a> is available online.
-                </Card.Body>
+                      You can find additional information on preventing COVID-19 at <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a>. Additional information on how COVID-19 is spread is available at <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html">How COVID-19 Spreads</a>.<br></br><br></br>
+                      More information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keeping Children Healthy during the COVID19 Outbreak</a> is available online.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="21">
@@ -827,7 +827,7 @@ function App() {
                   <Accordion.Collapse eventKey="21">
                     <Card.Body className="accordion-answer">
                       No. The symptoms of COVID-19 are similar in children and adults. COVID-19 can look different in different people. For many people, being sick with COVID-19 would be a little bit like having the flu. People can get a fever, cough, or have a hard time taking deep breaths. Most people who have gotten COVID-19 have not gotten very sick. Only a small group of people who get it have had more serious problems.<br></br><br></br>
-                CDC and partners are investigating cases of multisystem inflammatory syndrome in children (MIS-C) associated with COVID-19. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">COVID-19 and multisystem inflammatory syndrome in children (MIS-C)</a>.</Card.Body>
+                      CDC and partners are investigating cases of multisystem inflammatory syndrome in children (MIS-C) associated with COVID-19. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">COVID-19 and multisystem inflammatory syndrome in children (MIS-C)</a>.</Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="22">
@@ -843,7 +843,7 @@ function App() {
                   <Accordion.Collapse eventKey="23">
                     <Card.Body className="accordion-answer">
                       Outbreaks can be stressful for adults and children. When you talk with your child, try to stay calm, and reassure them that they are safe. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/talking-with-children.html">Talk to your children</a> about COVID-19 and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">help them cope with stress</a>.
-                </Card.Body>
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="24">
@@ -861,9 +861,9 @@ function App() {
                   <Accordion.Collapse eventKey="25">
                     <Card.Body className="accordion-answer">
                       The key to slowing the spread of COVID-19 is to practice social distancing. While school is out, children should not have in-person playdates with children from other households. If children are playing outside their own homes, it is essential that they remain 6 feet from anyone who is not in their own household. Some children with certain underlying <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">medical conditions</a> are at higher risk for severe illness from COVID-19.<br></br><br></br>
-                Make sure children practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive behaviors</a>, such as washing their hands often with soap and water. Remember, if children meet outside of school in groups, it can put everyone at risk. <br></br><br></br>
-                For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Help Stop the Spread of COVID-19 in Children</a>.
-                </Card.Body>
+                      Make sure children practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive behaviors</a>, such as washing their hands often with soap and water. Remember, if children meet outside of school in groups, it can put everyone at risk. <br></br><br></br>
+                      For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Help Stop the Spread of COVID-19 in Children</a>.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="26">
@@ -873,20 +873,20 @@ function App() {
                     <Card.Body className="accordion-answer">
                       <ul>
                         <li>Stay in touch with your child’s school.
-                      <ul>
+                            <ul>
                             <li>Many schools are offering lessons online (virtual learning). Review assignments from the school, and help your child establish a reasonable pace for completing the work. You may need to assist your child with turning on devices, reading instructions, and typing answers.</li>
                           </ul>
                         </li>
                         <li>Create a schedule and routine for learning at home, but remain flexible.</li>
                         <li>Consider the needs and adjustment required for your child’s age group.
-                      <ul>
+                            <ul>
                             <li>The transition to being at home will be different for preschoolers, K-5, middle school students, and high school students. Talk to your child about expectations and how they are adjusting to being at home versus at school.</li>
                           </ul>
                         </li>
                         <li>Look for ways to make learning fun.</li>
                       </ul>
-                  For moe information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn at Home</a>.
-                </Card.Body>
+                        For moe information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn at Home</a>.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="27">
@@ -895,7 +895,7 @@ function App() {
                   <Accordion.Collapse eventKey="27">
                     <Card.Body className="accordion-answer">
                       Check with your school on plans to continue meal services during the school dismissal. Many schools are keeping school facilities open to allow families to pick up meals or are providing grab-and-go meals at a central location.
-                </Card.Body>
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="28">
@@ -910,8 +910,8 @@ function App() {
                         <li><b>Help your child stay active.</b></li>
                         <li><b>Help your child stay socially connected.</b></li>
                       </ul>
-                  For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy during the COVID-19 Outbreak</a>.
-                </Card.Body>
+                        For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy during the COVID-19 Outbreak</a>.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="29">
@@ -934,10 +934,10 @@ function App() {
                   <Accordion.Collapse eventKey="30">
                     <Card.Body className="accordion-answer">
                       It’s not known yet whether all children with underlying medical conditions are at higher risk for severe illness from COVID-19.<br></br><br></br>
-                Although most COVID-19 cases in children are not severe, serious illness that needs to be treated at the hospital still happens. Some data on children reported that the majority who needed hospitalization for COVID-19 had at least one underlying medical condition. The most common underlying conditions reported among children with COVID-19 include chronic lung disease (including asthma), heart disease, and conditions that weaken the immune system. This information suggests that children with these underlying medical conditions may be at risk for more severe illness from COVID-19.<br></br><br></br>
-                More data are needed to learn which underlying or complex medical conditions may put children at increased risk. CDC is monitoring new information as it becomes available and will provide updates as needed.<br></br><br></br>
-                Learn more about caring for <a href="https://www.cdc.gov/childrenindisasters/children-with-special-healthcare-needs.html">children with special healthcare needs during a disaster</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/people-at-higher-risk.html">people who are at higher risk for severe illness from COVID-19</a>.
-                </Card.Body>
+                      Although most COVID-19 cases in children are not severe, serious illness that needs to be treated at the hospital still happens. Some data on children reported that the majority who needed hospitalization for COVID-19 had at least one underlying medical condition. The most common underlying conditions reported among children with COVID-19 include chronic lung disease (including asthma), heart disease, and conditions that weaken the immune system. This information suggests that children with these underlying medical conditions may be at risk for more severe illness from COVID-19.<br></br><br></br>
+                      More data are needed to learn which underlying or complex medical conditions may put children at increased risk. CDC is monitoring new information as it becomes available and will provide updates as needed.<br></br><br></br>
+                      Learn more about caring for <a href="https://www.cdc.gov/childrenindisasters/children-with-special-healthcare-needs.html">children with special healthcare needs during a disaster</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/people-at-higher-risk.html">people who are at higher risk for severe illness from COVID-19</a>.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="31">
@@ -946,7 +946,7 @@ function App() {
                   <Accordion.Collapse eventKey="31">
                     <Card.Body className="accordion-answer">
                       In addition to following the recommendations to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">prevent getting sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, families should take extra steps recommended for persons with <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">higher risk of severe COVID-19 illness</a> and steps outlined for those with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">potential COVID-19 exposure or confirmed illness</a>.
-                <br></br>
+                      <br></br>
                       <ul>
                         <li>Identify potential alternative caregivers, if you or other regular caregivers become sick and are unable to care for your child. If possible, these alternative caregivers would not be at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk of severe illness from COVID-19</a> themselves.</li>
                         <li>Try to have at least one month of medication and medical supplies on hand. Some health plans allow for a 90-day supply of prescription medications. Consider discussing this option with your child’s healthcare provider.</li>
@@ -959,15 +959,15 @@ function App() {
                           <li>If your child or other persons in your household are sick with COVID-19 and are able to recover at home, inform your direct care providers and consider postponing or rescheduling services until the criteria for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">discontinuing home isolation</a> have been met.</li>
                           <li>Ask service providers if they are experiencing any <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>, or if they have been in contact with someone who has COVID-19.</li>
                           <li>Tell the service provider to:
-                      <ul>
+                            <ul>
                               <li>
                                 Wear a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-faq.html">mask</a> if they will be close (less than 6 feet) to you or persons in your household. Their mask helps protect you if they are infected but do not have symptoms.
-                        </li>
+                              </li>
                               <li>Ask them to wash their hands with soap and water or, if unavailable, use hand sanitizer with at least 60% alcohol when they enter your home, before and after helping your child (dressing, bathing/showering, transferring, toileting and/or diapering, feeding), after handling tissues, and after changing linens or doing laundry. <a href="https://www.youtube.com/watch?v=d914EnpU4Fo">Learn more about proper handwashing</a>.</li>
                             </ul>
                           </li>
                           <li>Service providers and families should:
-                      <ul>
+                            <ul>
                               <li>Routinely clean and disinfect frequently touched objects and surfaces (counters, tabletops, doorknobs, bathroom fixtures, toilets, phones, keyboards, tablets, bedside tables), and equipment such as wheelchairs, scooters, walkers, oxygen tanks and tubing, communication boards, and other assistive devices. Refer to CDC’s recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Cleaning and Disinfecting Your Home</a>.</li>
                             </ul>
                           </li>
@@ -989,8 +989,8 @@ function App() {
                         <li>Your child’s therapist(s) and teachers may also have resources to help successfully introduce new routines to your child.</li>
                         <li>While learning at home, continue special education services, accommodations, or services received in school through your child’s 504 plan or Individualized Educational Plan (IEP), as much as possible. Many schools are continuing interventions like speech therapy, small group classes, extended time and more. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/developmental-behavioral-disorders.html">supporting children with distance learning</a></li>
                       </ul>
-                Additional information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">caring for children</a> and on <a href="https://www.cdc.gov/ncbddd/childdevelopment/conditions.html">child development specific conditions</a> are available.
-                </Card.Body>
+                      Additional information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">caring for children</a> and on <a href="https://www.cdc.gov/ncbddd/childdevelopment/conditions.html">child development specific conditions</a> are available.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="33">
@@ -999,12 +999,12 @@ function App() {
                   <Accordion.Collapse eventKey="33">
                     <Card.Body className="accordion-answer">
                       Supporting children with special healthcare needs can put additional demands and stress on families, especially during emergency situations. You have likely found ways to manage the stress and challenges unique to your family’s situation. It is important to continue your family’s coping methods, including reaching out to other family members, friends, support groups, and organizations that have been helpful in the past.<br></br><br></br>
-                See information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">helping children cope</a> and coping with stress (such as <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">visiting parks, trails, or open spaces</a>) and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">making your family stronger</a><br></br><br></br>
-                If you, or someone you care about, are feeling overwhelmed with emotions like sadness, depression, or anxiety, or feel like you want to harm yourself or others:<br></br>
+                      See information on <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">helping children cope</a> and coping with stress (such as <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">visiting parks, trails, or open spaces</a>) and <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">making your family stronger</a><br></br><br></br>
+                      If you, or someone you care about, are feeling overwhelmed with emotions like sadness, depression, or anxiety, or feel like you want to harm yourself or others:<br></br>
                       <ul>
                         <li>Call 911</li>
                         <li>Visit the <a href="https://www.samhsa.gov/disaster-preparedness">Disaster Distress Helpline</a></li>, call 1-800-985-5990, or text TalkWithUs to 66746
-                  <li>Visit the <a href="https://www.thehotline.org/">National Domestic Violence Hotline</a> or call 1-800-799-7233 and TTY 1-800-787-3224</li>
+                        <li>Visit the <a href="https://www.thehotline.org/">National Domestic Violence Hotline</a> or call 1-800-799-7233 and TTY 1-800-787-3224</li>
                       </ul>
                     </Card.Body></Accordion.Collapse>
 
@@ -1014,9 +1014,9 @@ function App() {
                   <Accordion.Collapse eventKey="34">
                     <Card.Body className="accordion-answer">
                       If your child with special healthcare needs becomes sick with <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>, contact your child’s healthcare provider. If your child has new or worsening <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">emergency warning signs</a>, such as trouble breathing, pain or pressure in the chest, confusion or inability to wake them up, or bluish lips or face, call 911. If you think your child may have COVID-19, notify the operator so that first responders may be appropriately prepared to protect themselves and others.<br></br><br></br>
-                Notify your child’s healthcare provider if someone else in your house becomes sick with COVID-19, so they can provide any advice specific for your child.<br></br><br></br>
-                See additional information if <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">someone in the home is sick with COVID-19</a> or suspected of having COVID-19.
-                </Card.Body>
+                      Notify your child’s healthcare provider if someone else in your house becomes sick with COVID-19, so they can provide any advice specific for your child.<br></br><br></br>
+                      See additional information if <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">someone in the home is sick with COVID-19</a> or suspected of having COVID-19.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="35">
@@ -1076,7 +1076,7 @@ function App() {
                   <Accordion.Collapse eventKey="38">
                     <Card.Body className="accordion-answer">
                       Plan for potential changes at your workplace. Talk to your employer about their emergency operations plan, including sick-leave policies and telework options. <a href="https://www.cdc.govhttps//www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html">Learn how businesses and employers can plan for and respond to COVID-19</a>.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="39">
@@ -1105,7 +1105,7 @@ function App() {
                   <Accordion.Collapse eventKey="40">
                     <Card.Body className="accordion-answer">
                       People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear <b>2-14 days after exposure to the virus</b>. If you have fever, cough, or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>, you might have COVID-19.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="41">
@@ -1122,8 +1122,8 @@ function App() {
                         <li>Bluish lips or face</li>
 
                       </ul>
-              *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.
-              <b>Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19.</b>
+                    *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.
+                    <b>Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19.</b>
                     </Card.Body>
                   </Accordion.Collapse>
 
@@ -1147,10 +1147,10 @@ function App() {
                   <Accordion.Collapse eventKey="43">
                     <Card.Body className="accordion-answer">
                       Maybe; not everyone needs to be tested for COVID-19.<br></br><br></br>
-                If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and want to get tested, call your healthcare provider first. Most people will have mild illness and can recover at home without medical care and may not need to be tested.<br></br><br></br>
-                CDC has guidance for who should be tested, but decisions about testing are made by state and local health departments and healthcare providers.<br></br><br></br>
-                You can also visit your <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/open-america/hd-search/">state or local health department's website</a> to look for the latest local information on testing.
-                </Card.Body>
+                      If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and want to get tested, call your healthcare provider first. Most people will have mild illness and can recover at home without medical care and may not need to be tested.<br></br><br></br>
+                      CDC has guidance for who should be tested, but decisions about testing are made by state and local health departments and healthcare providers.<br></br><br></br>
+                      You can also visit your <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/open-america/hd-search/">state or local health department's website</a> to look for the latest local information on testing.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="44">
@@ -1159,11 +1159,11 @@ function App() {
                   <Accordion.Collapse eventKey="44">
                     <Card.Body className="accordion-answer">
                       Decisions about testing are made by <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state</a> and <a href="https://www.naccho.org/membership/lhd-directory">local</a> health departments or healthcare providers. If you have symptoms of COVID-19 and are not tested, it is important to stay home. <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a>.<br></br><br></br>
-                COVID-19 testing differs by location. If you have symptoms of COVID-19 and want to get tested, call your healthcare provider first. You can also visit your <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state</a> or <a href="https://www.naccho.org/membership/lhd-directory">local</a> health department’s website to look for the latest local information on testing. The U.S. Food and Drug Administration (FDA) has authorized viral tests that let you collect either a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-test-patient-home-sample-collection">nasal swab</a> or a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-diagnostic-test-using-home-collection-saliva">saliva sample</a> at home. However, you will still need to send your sample to a laboratory for analysis.<br></br><br></br>
+                      COVID-19 testing differs by location. If you have symptoms of COVID-19 and want to get tested, call your healthcare provider first. You can also visit your <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state</a> or <a href="https://www.naccho.org/membership/lhd-directory">local</a> health department’s website to look for the latest local information on testing. The U.S. Food and Drug Administration (FDA) has authorized viral tests that let you collect either a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-test-patient-home-sample-collection">nasal swab</a> or a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-first-diagnostic-test-using-home-collection-saliva">saliva sample</a> at home. However, you will still need to send your sample to a laboratory for analysis.<br></br><br></br>
                       <b>If you test positive for COVID-19</b>, know what protective steps to take <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">if you are sick or caring for someone</a>.<br></br><br></br>
                       <b>If you test negative for COVID-19</b>, you probably were not infected at the time your sample was collected. However, that does not mean you will not get sick. The test result only means that you did not have COVID-19 at the time of testing. You might test negative if the sample was collected early in your infection and test positive later during your illness. You could also be exposed to COVID-19 after the test and get infected then. This means you could still spread the virus. If you develop symptoms later, you might need another test to determine if you are infected with the virus that causes COVID-19.<br></br><br></br>
-                For more information about viral tests, please visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Test for Current Infection</a>.
-                </Card.Body>
+                      For more information about viral tests, please visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Test for Current Infection</a>.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="45">
@@ -1172,13 +1172,13 @@ function App() {
                   <Accordion.Collapse eventKey="45">
                     <Card.Body className="accordion-answer">
                       Antibody tests for COVID-19 are available through healthcare providers and laboratories. Check with your healthcare provider to see if they offer antibody tests and whether you should get one.<br></br><br></br>
-                A positive test result shows you might have antibodies from an infection with the virus that causes COVID-19. However, there is a chance a positive result means that you have antibodies from an infection with a virus from the same family of viruses (called coronaviruses), such as the one that causes the common cold.<br></br><br></br>
-                Having antibodies to the virus that causes COVID-19 might provide protection from getting infected with the virus again. If it does, we do not know how much protection the antibodies might provide or how long this protection might last.<br></br><br></br>
-                You should continue to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">protect yourself and others</a> since you could get infected with the virus again. <br></br><br></br>
-                If you test negative, you might not have ever had COVID-19. Talk with your healthcare provider about your test result and the type of test you took to understand what your result means.<br></br><br></br>
-                Regardless of whether you test positive or negative, the results do not confirm whether or not you are able to spread the virus that causes COVID-19. Until we know more, continue to take steps to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a>.<br></br><br></br>
-                If you want more information about antibody tests, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/serology-overview.html">Test for Past Infection</a>.
-                </Card.Body>
+                      A positive test result shows you might have antibodies from an infection with the virus that causes COVID-19. However, there is a chance a positive result means that you have antibodies from an infection with a virus from the same family of viruses (called coronaviruses), such as the one that causes the common cold.<br></br><br></br>
+                      Having antibodies to the virus that causes COVID-19 might provide protection from getting infected with the virus again. If it does, we do not know how much protection the antibodies might provide or how long this protection might last.<br></br><br></br>
+                      You should continue to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">protect yourself and others</a> since you could get infected with the virus again. <br></br><br></br>
+                      If you test negative, you might not have ever had COVID-19. Talk with your healthcare provider about your test result and the type of test you took to understand what your result means.<br></br><br></br>
+                      Regardless of whether you test positive or negative, the results do not confirm whether or not you are able to spread the virus that causes COVID-19. Until we know more, continue to take steps to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a>.<br></br><br></br>
+                      If you want more information about antibody tests, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/serology-overview.html">Test for Past Infection</a>.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="46">
@@ -1187,7 +1187,7 @@ function App() {
                   <Accordion.Collapse eventKey="46">
                     <Card.Body className="accordion-answer">
                       Yes, it is possible. You may test negative if the sample was collected early in your infection and test positive later during this illness. You could also be exposed to COVID-19 after the test and get infected then. Even if you test negative, you still should take steps to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a>. See <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Testing for Current Infection</a> for more information.
-                </Card.Body>
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <a href="#Top">Return to Top</a>
@@ -1203,7 +1203,7 @@ function App() {
                   <Accordion.Collapse eventKey="47">
                     <Card.Body className="accordion-answer">
                       COVID-19 is a new disease and there is limited information regarding risk factors for severe disease. Based on currently available information and clinical expertise, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> and <b>people with underlying </b><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">medical conditions</a> are at higher risk for severe illness from COVID-19.
-              </Card.Body>
+                    </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="48">
@@ -1233,8 +1233,8 @@ function App() {
                       <ul>
                         <li>People with certain disabilities might experience higher rates of chronic health conditions that put them at higher risk of serious illness and poorer outcomes from COVID-19. Adults with disabilities are three times more likely to have heart disease, stroke, diabetes, or cancer than adults without disabilities.</li>
                       </ul>
-                You should talk with your healthcare provider if you have a question about your health or how your health condition is being managed.
-                </Card.Body>
+                      You should talk with your healthcare provider if you have a question about your health or how your health condition is being managed.
+                      </Card.Body>
                   </Accordion.Collapse>
 
                   <a href="#Top">Return to Top</a>
@@ -1249,15 +1249,15 @@ function App() {
                   <Accordion.Collapse eventKey="50">
                     <Card.Body className="accordion-answer">
                       Contact tracing has been used for decades by state and local health departments to slow or stop the spread of infectious diseases.<br></br><br></br>
-                  Contact tracing slows the spread of COVID-19 by<br></br>
+                        Contact tracing slows the spread of COVID-19 by<br></br>
                       <ul>
                         <li>Letting people know they may have been exposed to COVID-19 and should monitor their health for signs and <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a></li>
                         <li>Helping people who may have been exposed to COVID-19 get tested</li>
 
                         <li>Asking people to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">self-isolate</a> if they have COVID-19 or <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">self-quarantine</a> if they are a close contact of someone with COVID-19</li>
                       </ul>
-                  During contact tracing, the health department staff will not ask you for
-                  <uL>
+                        During contact tracing, the health department staff will not ask you for
+                        <uL>
                         <li>Money</li>
                         <li>Social Security number</li>
                         <li>Bank account information</li>
@@ -1273,8 +1273,8 @@ function App() {
                   <Accordion.Collapse eventKey="52">
                     <Card.Body className="accordion-answer">
                       Discussions with health department staff are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your health care provider.<br></br><br></br>
-                  If you have been diagnosed with COVID-19, your name will not be shared with those you came in contact with. The health department will only notify people you were in close contact with (within 6 feet for more than 15 minutes) that they might have been exposed to COVID-19. Each state and jurisdiction use their own method for collecting and protecting health information. To learn more, contact your state or local health department.<br></br><br></br>
-                  You may also be interested in: <b>If I participate contact tracing for COVID-19 using a digital tool, is my personal health information secure?</b>
+                        If you have been diagnosed with COVID-19, your name will not be shared with those you came in contact with. The health department will only notify people you were in close contact with (within 6 feet for more than 15 minutes) that they might have been exposed to COVID-19. Each state and jurisdiction use their own method for collecting and protecting health information. To learn more, contact your state or local health department.<br></br><br></br>
+                        You may also be interested in: <b>If I participate contact tracing for COVID-19 using a digital tool, is my personal health information secure?</b>
                     </Card.Body>
                   </Accordion.Collapse>
 
@@ -1291,7 +1291,7 @@ function App() {
                   <Accordion.Collapse eventKey="54">
                     <Card.Body className="accordion-answer">
                       Yes, you are still considered a close contact even if you were wearing a mask while you were around someone with COVID-19. Masks are meant to protect other people in case you are infected, and not to protect you from becoming infected.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="55">
@@ -1300,7 +1300,7 @@ function App() {
                   <Accordion.Collapse eventKey="55">
                     <Card.Body className="accordion-answer">
                       If you have been around someone who is sick with COVID-19, CDC recommends that you get tested for COVID-19. Get tested for COVID-19 as soon as you know that you have been around a person diagnosed with COVID-19. The health department may be able to provide resources for testing in your area.
-                  <ul>
+                        <ul>
                         <li>While you are waiting for your COVID-19 test result, stay home away from others (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">self-quarantine</a>) and monitor your health <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">for symptoms of COVID-19</a>to protect your friends, family, and others from possibly getting COVID-19.</li>
                         <li>If your <b>test is positive</b>, you should continue to stay home and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">self-isolate</a> away from others and monitor your health. If you have symptoms of COVID-19 and they worsen or become severe, you should seek emergency medical care. Severe symptoms include trouble breathing, persistent pain or pressure in the chest, confusion, inability to wake or stay awake, or bluish lips or face. Someone from the health department may call you to<br></br>
                           <ul>
@@ -1325,7 +1325,7 @@ function App() {
                       <ul>
                         <li>Your name <b>will not</b>be shared with those you came in contact with.</li>
                         <li>The health department staff <b>will not</b> ask you for
-                    <ul>
+                          <ul>
                             <li>Money</li>
                             <li>Bank account information</li>
                             <li>Salary information, or</li>
@@ -1336,8 +1336,8 @@ function App() {
                         <li>Self-isolation helps slow the spread of COVID-19 and can help protect the health of your family, friends, neighbors, and others you may come in contact.</li>
                         <li>If you need support or assistance while in self-isolation, your health department or community organizations may be able to provide assistance.</li>
                       </ul>
-                Watch for or monitor your <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. If your symptoms worsen or become severe, you should seek medical care.
-                  </Card.Body>
+                      Watch for or monitor your <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. If your symptoms worsen or become severe, you should seek medical care.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="56">
@@ -1346,14 +1346,14 @@ function App() {
                   <Accordion.Collapse eventKey="56">
                     <Card.Body className="accordion-answer">
                       If you were around someone who has been diagnosed with COVID-19, someone from the health department may call you to let you know that you may have been exposed to COVID-19. <br></br><br></br>
-                  Stay home away from others for 14 days (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">self-quarantine</a>) after your last contact with that person. Health department staff will help identify the dates for your self-quarantine. Health department staff can also provide resources for COVID-19 testing in your area.<br></br>
+                        Stay home away from others for 14 days (<a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">self-quarantine</a>) after your last contact with that person. Health department staff will help identify the dates for your self-quarantine. Health department staff can also provide resources for COVID-19 testing in your area.<br></br>
                       <ul>
                         <li>Self-quarantine means staying home away from others and monitoring your health.</li>
                         <li>If you need to be around other people or animals in or outside of the home, wear a mask. This will help protect the people around you.</li>
                         <li>If you need support or assistance while in self-quarantine, your health department or community organizations may be able to provide assistance.</li>
                       </ul>
-                  Monitor your health and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. Remember, symptoms may appear 2-14 days after you were exposed to COVID-19. Tell the health department if you develop any symptoms. Tell people you were around recently if you become ill, so they can monitor their health. If your symptoms worsen or become severe, seek medical care. <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">Severe symptoms</a> include trouble breathing, persistent pain or pressure in the chest, new confusion, inability to wake or stay awake, or bluish lips or face.<br></br><br></br>
-                  The health department staff <b>will not</b> ask you for <br></br>
+                        Monitor your health and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. Remember, symptoms may appear 2-14 days after you were exposed to COVID-19. Tell the health department if you develop any symptoms. Tell people you were around recently if you become ill, so they can monitor their health. If your symptoms worsen or become severe, seek medical care. <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">Severe symptoms</a> include trouble breathing, persistent pain or pressure in the chest, new confusion, inability to wake or stay awake, or bluish lips or face.<br></br><br></br>
+                        The health department staff <b>will not</b> ask you for <br></br>
                       <ul>
                         <li>Money</li>
                         <li>Social Security number</li>
@@ -1370,7 +1370,7 @@ function App() {
                   <Accordion.Collapse eventKey="57">
                     <Card.Body className="accordion-answer">
                       Yes. You should still self-quarantine for 14 days since your last exposure. It can take up to 14 days after exposure to the virus for a person to develop COVID-19 symptoms. A negative result before end of the 14-day quarantine period does not rule out possible infection. By self-quarantining for 14 days, you lower the chance of possibly exposing others to COVID-19.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="58">
@@ -1386,7 +1386,7 @@ function App() {
                   <Accordion.Collapse eventKey="59">
                     <Card.Body className="accordion-answer">
                       If you have been around someone who was identified as a close contact to a person with COVID-19, closely monitor yourself for any <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a>. You do not need to self-quarantine unless you develop symptoms or if the person identified as a close contact develops COVID-19.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="60">
@@ -1395,7 +1395,7 @@ function App() {
                   <Accordion.Collapse eventKey="60">
                     <Card.Body className="accordion-answer">
                       No, there will not be a national app for contact tracing. There are many options available now, and it is up to each state and individual to decide which tools best fit their needs.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="61">
@@ -1404,10 +1404,10 @@ function App() {
                   <Accordion.Collapse eventKey="61">
                     <Card.Body className="accordion-answer">
                       Yes, if you agree to participate in contact tracing for COVID-19 with the health department, your information is secure.
-                  Discussions with health department staff are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your health care provider. Your name will not be shared with those you came in contact with. If you have been diagnosed with COVID-19, the health department will only notify people you were in close contact with (within 6 feet for more than 15 minutes) that they might have been exposed to COVID-19.<br></br><br></br>
-                  Health departments may use <i>case management tools</i>to help make the contact tracing process more efficient. If you choose to provide information through one of these tools, your information is secure and stored with the health department. These tools also help health departments quickly receive and analyze information about COVID-19. Case management tools are under the same laws and regulations for all sensitive health information use (e.g. HIPPA). You must provide consent for the health department to collect information using a case management tool. Just like traditional contact tracing, digital tools will not collect information regarding money, Social Security numbers, bank account information, salary information, or credit card numbers.<br></br><br></br>
+                        Discussions with health department staff are confidential. This means that your personal and medical information will be kept private and only shared with those who may need to know, like your health care provider. Your name will not be shared with those you came in contact with. If you have been diagnosed with COVID-19, the health department will only notify people you were in close contact with (within 6 feet for more than 15 minutes) that they might have been exposed to COVID-19.<br></br><br></br>
+                        Health departments may use <i>case management tools</i>to help make the contact tracing process more efficient. If you choose to provide information through one of these tools, your information is secure and stored with the health department. These tools also help health departments quickly receive and analyze information about COVID-19. Case management tools are under the same laws and regulations for all sensitive health information use (e.g. HIPPA). You must provide consent for the health department to collect information using a case management tool. Just like traditional contact tracing, digital tools will not collect information regarding money, Social Security numbers, bank account information, salary information, or credit card numbers.<br></br><br></br>
                       <i>Exposure notification tools</i> may be an app that you can download on your personal cell phone. If you choose to download an exposure <i>notification</i> app for COVID-19, your information is secure. Exposure notification apps are developed in collaboration with or endorsed by health departments. These apps undergo rigorous testing to determine their trustworthiness, security, and ability to protect people’s privacy. Until you give consent to share information with your local health department, any information you have entered into the app is stored <i>only</i> on your personal phone. Your information is stored only on your own phone and is not sent to the health department or any other third party. <b>The app and your information can be deleted any time.</b> When you consent to share your information with the local health department, your information is secure.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="62">
@@ -1416,14 +1416,14 @@ function App() {
                   <Accordion.Collapse eventKey="62">
                     <Card.Body className="accordion-answer">
                       No, you are not required to download an app to give information for contact tracing for COVID-19. Health departments commonly use <i>case management tools</i> to make the contact tracing process more efficient. These types of tools are not downloaded on personal cell phones. <br></br><br></br>
-                  If you choose to give information to your local or state health department for contact tracing for COVID-19, you do not need to download an app on your cell phone. The health department staff may call you to <br></br>
+                        If you choose to give information to your local or state health department for contact tracing for COVID-19, you do not need to download an app on your cell phone. The health department staff may call you to <br></br>
                       <ul>
                         <li>Check on your health,</li>
                         <li>Discuss who you have been around, and</li>
                         <li>Ask where you have spent time while you may have been able to spread COVID-19 to others.</li>
                       </ul>
-                  It is up to you to decide if you download an <i>exposure notification</i> app for COVID-19.
-                  </Card.Body>
+                        It is up to you to decide if you download an <i>exposure notification</i> app for COVID-19.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <a href="#Top">Return to Top</a>
@@ -1439,8 +1439,8 @@ function App() {
                   <Accordion.Collapse eventKey="63">
                     <Card.Body className="accordion-answer">
                       There is currently no known risk associated with being in the same room at a funeral or visitation service with the body of someone who died of COVID-19.<br></br><br></br>
-                  See <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a> to learn how to protect yourself from respiratory illnesses, like COVID-19, if you decide to attend a funeral or visitation.
-                  </Card.Body>
+                        See <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect Yourself and Others</a> to learn how to protect yourself from respiratory illnesses, like COVID-19, if you decide to attend a funeral or visitation.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="64">
@@ -1449,9 +1449,9 @@ function App() {
                   <Accordion.Collapse eventKey="64">
                     <Card.Body className="accordion-answer">
                       COVID-19 is a new disease and <b>we are still learning how it spreads</b>. The virus that causes COVID-19 is thought to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">spread</a> mainly from person-to-person through respiratory droplets produced when an infected person coughs, sneezes, or talks. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. This type of spread is not a concern after death. <br></br><br></br>
-                  It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes. This is not thought to be the main way the virus spreads.<br></br><br></br>
-                  People should consider not touching the body of someone who has died of COVID-19. Older people and people of all ages with severe underlying health conditions are at higher risk of severe illness from COVID-19. There may be less of a chance of the virus spreading from certain types of touching, such as holding the hand or hugging after the body has been prepared for viewing. Other activities, such as kissing, washing, and shrouding should be avoided before, during, and after the body has been prepared, if possible. If washing the body or shrouding are important religious or cultural practices, families are encouraged to work with their community’s cultural and religious leaders and funeral home staff on how to reduce their exposure as much as possible. At a minimum, people conducting these activities should wear disposable gloves. If splashing of fluids is expected, additional personal protective equipment (PPE) may be required (such as disposable gown, face shield, or goggles and N-95 respirator).
-                  </Card.Body>
+                        It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes. This is not thought to be the main way the virus spreads.<br></br><br></br>
+                        People should consider not touching the body of someone who has died of COVID-19. Older people and people of all ages with severe underlying health conditions are at higher risk of severe illness from COVID-19. There may be less of a chance of the virus spreading from certain types of touching, such as holding the hand or hugging after the body has been prepared for viewing. Other activities, such as kissing, washing, and shrouding should be avoided before, during, and after the body has been prepared, if possible. If washing the body or shrouding are important religious or cultural practices, families are encouraged to work with their community’s cultural and religious leaders and funeral home staff on how to reduce their exposure as much as possible. At a minimum, people conducting these activities should wear disposable gloves. If splashing of fluids is expected, additional personal protective equipment (PPE) may be required (such as disposable gown, face shield, or goggles and N-95 respirator).
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="65">
@@ -1460,8 +1460,8 @@ function App() {
                   <Accordion.Collapse eventKey="65">
                     <Card.Body className="accordion-answer">
                       If desired, you may retrieve the belongings of a loved one who has died of COVID-19 outside their home (for example, in a hospital setting). Depending on local rules and regulations, family members may retrieve these belongings at the funeral home or the healthcare facility.<br></br><br></br>
-                  You should use gloves and practice good hand hygiene when handling your loved ones’ belongings. Depending on the type of belongings, such as electronics, you should also follow the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">household item-specific cleaning and disinfection guidelines</a> when handling these items.
-                  </Card.Body>
+                        You should use gloves and practice good hand hygiene when handling your loved ones’ belongings. Depending on the type of belongings, such as electronics, you should also follow the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">household item-specific cleaning and disinfection guidelines</a> when handling these items.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="66">
@@ -1469,7 +1469,7 @@ function App() {
 
                   <Accordion.Collapse eventKey="66">
                     <Card.Body className="accordion-answer">When a US citizen dies outside the United States, the deceased person’s next of kin or legal representative should notify US consular officials at the Department of State. Consular personnel are available 24 hours a day, 7 days a week, to provide assistance to US citizens for overseas emergencies. If a family member, domestic partner, or legal representative is in a different country from the deceased person, he or she should call the Department of State’s Office of Overseas Citizens Services in Washington, DC, from 8 am to 5 pm Eastern time, Monday through Friday, at 888-407-4747 (toll-free) or 202-501-4444. For emergency assistance after working hours or on weekends and holidays, call the Department of State switchboard at 202-647-4000 and ask to speak with the Overseas Citizens Services duty officer. In addition, the <a href="https://www.usembassy.gov/">US Embassy</a> closest to or in the country where the US citizen died can provide assistance.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="67">
@@ -1477,8 +1477,8 @@ function App() {
 
                   <Accordion.Collapse eventKey="67">
                     <Card.Body className="accordion-answer">CDC does not require an autopsy before the remains of a person who died overseas are returned to the United States. Depending on the circumstances surrounding the death, some countries may require an autopsy. Sources of support to the family include the local consulate or embassy, travel insurance provider, tour operator, faith-based and aid organizations, and the deceased’s employer. There likely will need to be an official identification of the body and official documents issued by the consular office.<br></br><br></br>
-                  CDC requirements for importing human remains depend upon if the body has been embalmed, cremated, or if the person died from a <a href="https://www.cdc.gov/quarantine/aboutlawsregulationsquarantineisolation.html">quarantinable communicable disease</a>.<br></br><br></br>
-                  At this time, COVID-19 is a quarantinable communicable disease in the United States and the remains must meet the standards for importation found in 42 Code of Federal Regulations Part 71.55 and may be cleared, released, and authorized for entry into the United States only under the following conditions:<br></br>
+                        CDC requirements for importing human remains depend upon if the body has been embalmed, cremated, or if the person died from a <a href="https://www.cdc.gov/quarantine/aboutlawsregulationsquarantineisolation.html">quarantinable communicable disease</a>.<br></br><br></br>
+                        At this time, COVID-19 is a quarantinable communicable disease in the United States and the remains must meet the standards for importation found in 42 Code of Federal Regulations Part 71.55 and may be cleared, released, and authorized for entry into the United States only under the following conditions:<br></br>
                       <ul>
                         <li>The remains are cremated; OR</li>
                         <li>The remains are properly embalmed and placed in a leak-proof container; OR</li>
@@ -1487,8 +1487,8 @@ function App() {
                           <li>Permits for the importation of the remains of a person known or suspected to have died from a quarantinable communicable disease may be obtained through the CDC Division of Global Migration and Quarantine by calling the CDC Emergency Operations Center at 770-488-7100 or emailing dgmqpolicyoffice@cdc.gov.</li>
                         </ul>
                       </ul>
-                  Please see <a href="http://www.cdc.gov/importation/human-remains.html">CDC's guidance</a> for additional information.
-                  </Card.Body>
+                        Please see <a href="http://www.cdc.gov/importation/human-remains.html">CDC's guidance</a> for additional information.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <a href="#Top">Return to Top</a>
@@ -1503,7 +1503,7 @@ function App() {
                   <Accordion.Collapse eventKey="68">
                     <Card.Body className="accordion-answer">
                       <i>Cleaning</i> with soap and water removes germs, dirt, and impurities from surfaces. It lowers the risk of spreading infection. <i>Disinfecting</i> kills germs on surfaces. By killing germs on a surface after cleaning, it can further lower the risk of spreading infection.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="69">
@@ -1512,7 +1512,7 @@ function App() {
                   <Accordion.Collapse eventKey="69">
                     <Card.Body className="accordion-answer">
                       The risk of transmitting or spreading SARS-CoV-2, the virus that causes COVID-19, during vacuuming is unknown. In order to reduce the need for cleaning, disinfection, and vacuuming, consider removing area rugs completely, if possible. At this time, there are no reported cases of COVID-19 associated with vacuuming. If vacuuming is necessary or required in a school, business, or community facility that was used by a person with suspected or confirmed COVID-19, first follow the CDC recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/cleaning-disinfection.html#Cleaning">Cleaning and Disinfection for Community Facilities</a> that apply, which includes a wait time of 24 hours, or as long as practical.<br></br><br></br>
-                  After cleaning and disinfection, the following recommendations may help reduce the risk to workers and other individuals when vacuuming:<br></br>
+                        After cleaning and disinfection, the following recommendations may help reduce the risk to workers and other individuals when vacuuming:<br></br>
                       <ul>
                         <li>Use a vacuum equipped with a high-efficiency particulate air (HEPA) filter, if available.</li>
                         <li>Do not vacuum a room or space that has people in it. Wait until the room or space is empty to vacuum, such as at night, for common spaces, or during the day for private rooms.</li>
@@ -1551,7 +1551,7 @@ function App() {
                   <Accordion.Collapse eventKey="73">
                     <Card.Body className="accordion-answer">
                       Companies do not necessarily need to close after a person with confirmed or suspected COVID-19 has been in a company facility. The area(s) used or visited by the ill person should be closed for 24 hours or as long as possible. Open outside doors and windows as much as possible ensuring that doing so does not pose a safety risk to children using the facility (i.e. make sure that children are not able to enter the closed off area through any windows or doors). and use ventilating fans to increase air circulation in the area. Once the area has been <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/disinfecting-building-facility.html">appropriately disinfected</a>, it can be opened for use. Workers without close contact with the person with confirmed or suspected COVID-19 can return to work immediately after disinfection is completed.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="74">
@@ -1559,7 +1559,7 @@ function App() {
 
                   <Accordion.Collapse eventKey="74">
                     <Card.Body className="accordion-answer">The efficacy of these disinfection methods against the virus that causes COVID-19 is not known. EPA only recommends use of the <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">surface disinfectants identified on List N</a> against the virus that causes COVID-19. EPA does not routinely review the safety or efficacy of pesticidal devices, such as UV lights, LED lights, or ultrasonic devices. Therefore, EPA cannot confirm whether, or under what circumstances, such products might be effective against the spread of COVID-19.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="75">
@@ -1595,9 +1595,9 @@ function App() {
                   <Accordion.Collapse eventKey="78">
                     <Card.Body className="accordion-answer">
                       At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low.  A small number of pets have been reported to be infected with the virus that causes COVID-19, mostly after contact with people with COVID-19.<br></br><br></br>
-                  Pets have other types of coronaviruses that can make them sick, like canine and feline coronaviruses. These other coronaviruses cannot infect people and are not related to the current COVID-19 outbreak.<br></br><br></br>
-                  However, since animals can spread other diseases to people, it’s always a good idea to practice <a href="https://www.cdc.gov/healthypets/publications/stay-healthy-pets.html">healthy habits</a> around pets and other animals, such as washing your hands and maintaining good hygiene. For more information on the many benefits of pet ownership, as well as staying safe and healthy around animals including pets, livestock, and wildlife, visit CDC’s <a href="https://www.cdc.gov/healthypets/index.html">Healthy Pets, Healthy People website</a>.
-                  </Card.Body>
+                        Pets have other types of coronaviruses that can make them sick, like canine and feline coronaviruses. These other coronaviruses cannot infect people and are not related to the current COVID-19 outbreak.<br></br><br></br>
+                        However, since animals can spread other diseases to people, it’s always a good idea to practice <a href="https://www.cdc.gov/healthypets/publications/stay-healthy-pets.html">healthy habits</a> around pets and other animals, such as washing your hands and maintaining good hygiene. For more information on the many benefits of pet ownership, as well as staying safe and healthy around animals including pets, livestock, and wildlife, visit CDC’s <a href="https://www.cdc.gov/healthypets/index.html">Healthy Pets, Healthy People website</a>.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="79">
@@ -1613,8 +1613,8 @@ function App() {
                   <Accordion.Collapse eventKey="80">
                     <Card.Body className="accordion-answer">
                       Although we know certain bacteria and fungi can be carried on fur and hair, there is no evidence that viruses, including the virus that causes COVID-19, can spread to people from the skin, fur, or hair of pets.<br></br><br></br>
-                  However, because animals can sometimes carry other germs that can make people sick, it’s always a good idea to practice <a href="https://www.cdc.gov/healthypets/publications/stay-healthy-pets.html">healthy habits</a> around pets and other animals, including washing hands before and after interacting with them.
-                  </Card.Body>
+                        However, because animals can sometimes carry other germs that can make people sick, it’s always a good idea to practice <a href="https://www.cdc.gov/healthypets/publications/stay-healthy-pets.html">healthy habits</a> around pets and other animals, including washing hands before and after interacting with them.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="81">
@@ -1629,8 +1629,8 @@ function App() {
                         <li>Being kissed or licked</li>
                         <li>Sharing food or bedding</li>
                       </ul>
-                  If you must care for your pet or be around animals while you are sick, wash your hands before and after you interact with pets and wear a mask.
-                  </Card.Body>
+                        If you must care for your pet or be around animals while you are sick, wash your hands before and after you interact with pets and wear a mask.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="82">
@@ -1639,9 +1639,9 @@ function App() {
                   <Accordion.Collapse eventKey="82">
                     <Card.Body className="accordion-answer">
                       We don’t know for sure which animals can be infected with the virus that causes COVID-19. CDC is aware of a small number of pets, including dogs and cats, reported to be infected with the virus that causes COVID-19, mostly after close contact with people with COVID-19. A tiger at a zoo in New York has also tested positive for the virus.<br></br><br></br>
-                  Recent research shows that ferrets, cats, and golden Syrian hamsters can be experimentally infected with the virus and can spread the infection to other animals of the same species in laboratory settings. Pigs, chickens, and ducks did not become infected or spread the infection based on results from these studies. Data from one study suggested dogs are not as likely to become infected with the virus as cats and ferrets. These findings were based on a small number of animals, and do not show whether animals can spread infection to people.<br></br><br></br>
-                  At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low. Further studies are needed to understand if and how different animals could be affected by the virus that causes COVID-19 and the role animals may play in the spread of COVID-19.
-                  </Card.Body>
+                        Recent research shows that ferrets, cats, and golden Syrian hamsters can be experimentally infected with the virus and can spread the infection to other animals of the same species in laboratory settings. Pigs, chickens, and ducks did not become infected or spread the infection based on results from these studies. Data from one study suggested dogs are not as likely to become infected with the virus as cats and ferrets. These findings were based on a small number of animals, and do not show whether animals can spread infection to people.<br></br><br></br>
+                        At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low. Further studies are needed to understand if and how different animals could be affected by the virus that causes COVID-19 and the role animals may play in the spread of COVID-19.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="83">
@@ -1650,9 +1650,9 @@ function App() {
                   <Accordion.Collapse eventKey="83">
                     <Card.Body className="accordion-answer">
                       We are still learning about this virus and how it spreads, but it appears it can spread from humans to animals in some situations. CDC is aware of a small number of pets, including cats, reported to be infected with the virus that causes COVID-19, mostly after close contact with people with COVID-19. Most of these animals had contact with a person with COVID-19. A tiger at a New York zoo has also tested positive for the virus that causes COVID-19.<br></br><br></br>
-                  At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited data available, the risk of animals spreading COVID-19 to people is considered to be low. The virus that causes COVID-19 spreads mainly from person to person, typically through respiratory droplets from coughing, sneezing, or talking.<br></br><br></br>
-                  People sick with COVID-19 should isolate themselves from other people and animals, including pets, during their illness until we know more about how this virus affects animals. If you must care for your pet or be around animals while you are sick, wear a mask and wash your hands before and after you interact with pets.
-                  </Card.Body>
+                        At this time, there is no evidence that animals play a significant role in spreading the virus that causes COVID-19. Based on the limited data available, the risk of animals spreading COVID-19 to people is considered to be low. The virus that causes COVID-19 spreads mainly from person to person, typically through respiratory droplets from coughing, sneezing, or talking.<br></br><br></br>
+                        People sick with COVID-19 should isolate themselves from other people and animals, including pets, during their illness until we know more about how this virus affects animals. If you must care for your pet or be around animals while you are sick, wear a mask and wash your hands before and after you interact with pets.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="84">
@@ -1661,30 +1661,30 @@ function App() {
                   <Accordion.Collapse eventKey="84">
                     <Card.Body className="accordion-answer">
                       Walking your dog is important for both animal and human health and wellbeing. Walk dogs on a leash, and stay at least 6 feet (2 meters) away from others. Do not gather in groups, stay out of crowded places, and avoid mass gatherings. To help maintain social distancing, do not let other people pet your dog when you are out for a walk.<br></br><br></br>
-                  See "<b>Can I take my dog to a dog park?</b>" for information on dog parks.
-                  </Card.Body>
+                        See "<b>Can I take my dog to a dog park?</b>" for information on dog parks.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="85">
                     Can I take my dog to a dog park?
-                </Accordion.Toggle>
+                      </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="85">
                     <Card.Body className="accordion-answer">
                       Dog parks provide socialization and exercise for dogs, which is an important part of their wellbeing. Because there is a small risk that people with COVID-19 could spread it to animals, CDC recommends that you do not let pets interact with people outside of your household, especially in places with community spread of COVID-19. Therefore, you should consider avoiding dog parks or other places where large numbers of people and dogs gather.<br></br><br></br>
-                  Some areas are allowing dog parks to open. If you choose to go to a dog park, follow local guidelines. There are ways to reduce the risk of you or your dog getting infected with COVID-19 if you go to a dog park.<br></br><br></br>
+                        Some areas are allowing dog parks to open. If you choose to go to a dog park, follow local guidelines. There are ways to reduce the risk of you or your dog getting infected with COVID-19 if you go to a dog park.<br></br><br></br>
                       <ul>
                         <li>Do not take your dog to a dog park if you are <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">sick</a> or if you have recently been in close contact with a person with COVID-19.
-                    </li>
+                          </li>
                         <li>Do not take your dog to a dog park if your dog is sick. Signs of sickness in dogs may include fever, coughing, difficulty breathing or shortness of breath, lethargy, sneezing, discharge from the nose or eyes, vomiting, or diarrhea.</li>
                         <li>If your dog has <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">tested positive</a> for the virus that causes COVID-19, talk to your veterinarian about when it is appropriate for your pet to go back to normal activities.
-                    </li>
+                          </li>
                         <li>Try to limit your dog’s interaction with other people outside of your household while at the dog park.</li>
                         <li>As much as possible, avoid touching common items in the dog park like water bowls. <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> or use hand sanitizer after touching items from the park. To make sure your dog has fresh water, consider bringing your own portable water bowl.</li>
                         <li>Limit other pet items brought to the dog park, such as toys. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Clean and disinfect</a> anything taken to the park and returned home (leashes, toys, water bowls).</li>
                         <li>Do not wipe or bathe your dog with chemical disinfectants, alcohol, hydrogen peroxide, or any other products not approved for animal use.</li>
                       </ul>
-                  See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a>
+                        See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a>
                     </Card.Body>
                   </Accordion.Collapse>
 
@@ -1693,10 +1693,10 @@ function App() {
 
                   <Accordion.Collapse eventKey="86">
                     <Card.Body className="accordion-answer">Until we know more about how this virus affects animals, CDC encourages pet owners to treat pets as you would other human family members to protect them from possible infection. This means limiting contact between your pets and people outside your household as much as possible and avoiding places where large numbers of people gather.<br></br><br></br>
-                  Some areas are allowing groomers and boarding facilities such as dog daycares to open. If you must take your pet to a groomer or boarding facility, follow any protocols put into place at the facility, such as wearing a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">mask</a> and maintaining at least 6 feet of space between yourself and others if possible.<br></br><br></br>
-                  Limit pet items brought from home to the groomer or boarding facility, and disinfect any objects that are taken into a facility and returned home (such as leashes, bowls, and toys). Use an <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered disinfectant</a> to clean items and rinse thoroughly with clean water afterwards. <b>Do not</b> wipe or bathe your pet with chemical disinfectants, alcohol, hydrogen peroxide, or any other products not approved for animal use.<br></br><br></br>
-                  Do not put masks on pets, and do not take a sick pet to a groomer or boarding facility. Signs of sickness in animals may include:
-                  <ul>
+                        Some areas are allowing groomers and boarding facilities such as dog daycares to open. If you must take your pet to a groomer or boarding facility, follow any protocols put into place at the facility, such as wearing a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">mask</a> and maintaining at least 6 feet of space between yourself and others if possible.<br></br><br></br>
+                        Limit pet items brought from home to the groomer or boarding facility, and disinfect any objects that are taken into a facility and returned home (such as leashes, bowls, and toys). Use an <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered disinfectant</a> to clean items and rinse thoroughly with clean water afterwards. <b>Do not</b> wipe or bathe your pet with chemical disinfectants, alcohol, hydrogen peroxide, or any other products not approved for animal use.<br></br><br></br>
+                        Do not put masks on pets, and do not take a sick pet to a groomer or boarding facility. Signs of sickness in animals may include:
+                        <ul>
                         <li>Fever</li>
                         <li>Coughing</li>
                         <li>Difficulty breathing or shortness of breath</li>
@@ -1707,13 +1707,13 @@ function App() {
                         <li>Diarrhea</li>
                       </ul>
                       <br></br>If you think your pet is sick, call your veterinarian. Some veterinarians may offer telemedicine consultations or other plans for seeing sick pets. Your veterinarian can evaluate your pet and determine the next steps for your pet’s treatment and care.<br></br><br></br>
-                  See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a> and recommendations for how to help keep your pet safe.
-                  </Card.Body>
+                        See more <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">information on pets and COVID-19</a> and recommendations for how to help keep your pet safe.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="87">
                     What should I do if my pet gets sick and I think it's COVID-19?
-                </Accordion.Toggle>
+                      </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="87">
                     <Card.Body className="accordion-answer">There is a small number of animals around the world reported to be infected with the virus that causes COVID-19, mostly after having contact with a person with COVID-19. Talk to your veterinarian about any health concerns you have about your pets.<br></br><br></br>If your pet gets sick after contact with a person with COVID-19, <b>do not take your pet to the veterinary clinic yourself.</b> Call your veterinarian and let them know the pet was around a person with COVID-19. Some veterinarians may offer telemedicine consultations or other plans for seeing sick pets. Your veterinarian can evaluate your pet and determine the next steps for your pet’s treatment and care.</Card.Body>
@@ -1739,7 +1739,7 @@ function App() {
                   <Accordion.Collapse eventKey="90">
                     <Card.Body className="accordion-answer">
                       Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low. However, it appears that the virus that causes COVID-19 can spread from people to animals after close contact with people with COVID-19.<br></br><br></br>
-                  Until we learn more about how this virus affects animals, use similar precautions for pets and other animals in your facility as you would for other people in your facility. This will help protect both people and pets in your facility from COVID-19.<br></br>
+                        Until we learn more about how this virus affects animals, use similar precautions for pets and other animals in your facility as you would for other people in your facility. This will help protect both people and pets in your facility from COVID-19.<br></br>
                       <ul>
                         <li>Do not let pets in the facility interact with sick people.</li>
                         <li>Pets or other animals should not be allowed to roam freely around the facility.</li>
@@ -1750,9 +1750,9 @@ function App() {
                         <li>Cats should be kept indoors to prevent them from interacting with other animals or people outside of the facility.</li>
                       </ul>
                       <br></br>Talk to a veterinarian <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">if a pet in your facility gets sick</a> or if you have any concerns about the health of any pets in the facility. If you think a pet in the facility was exposed to or is showing <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">signs</a> consistent with COVID-19, contact your <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html">state health official</a> to discuss guidance on testing pets or other animals for the virus that causes COVID-19.<br></br><br></br>
-                  People who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness</a> from COVID-19 should avoid providing care for sick pets, if possible.<br></br><br></br>
-                  For more information, visit CDC’s <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">If You Have Pets</a> webpage.
-                  </Card.Body>
+                        People who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness</a> from COVID-19 should avoid providing care for sick pets, if possible.<br></br><br></br>
+                        For more information, visit CDC’s <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">If You Have Pets</a> webpage.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="91">
@@ -1775,7 +1775,7 @@ function App() {
                   <Accordion.Collapse eventKey="92">
                     <Card.Body className="accordion-answer">
                       Please refer to <a href="https://www.cdc.gov/importation/bringing-an-animal-into-the-united-states/index.html">CDC's requirements for brining a dog to the United States</a>. The current <a href="https://www.cdc.gov/importation/bringing-an-animal-into-the-united-states/rabies-vaccine.html">requirements for rabies vaccination</a> apply to dogs imported from high-risk countries for rabies.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="93">
@@ -1783,8 +1783,8 @@ function App() {
 
                   <Accordion.Collapse eventKey="93">
                     <Card.Body className="accordion-answer">Imported animals will need to meet <a href="https://www.cdc.gov/importation/bringing-an-animal-into-the-united-states/index.html">CDC</a> and <a href="https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/animal-and-animal-product-import-information/live-animal-imports/import-live-animals">USDA</a> requirements for entering the United States. At this time, there is no evidence that companion animals, including pets and service animals, can spread the virus that causes COVID-19. As with any animal introduced to a new environment, animals recently imported should be observed daily for signs of illness. If an animal becomes ill, the animal should be examined by a veterinarian. Call your local veterinary clinic <b>before</b> bringing the animal into the clinic and let them know that the animal was recently imported from another country.<br></br><br></br>
-                  This is a rapidly evolving situation and information will be updated as it becomes available.
-                  </Card.Body>
+                        This is a rapidly evolving situation and information will be updated as it becomes available.
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="94">
@@ -1792,8 +1792,8 @@ function App() {
 
                   <Accordion.Collapse eventKey="94">
                     <Card.Body className="accordion-answer">Currently, there is no evidence to suggest the virus that causes COVID-19 is circulating in free-living wildlife in the United States, or that wildlife might be a source of infection for people in the United States. The first case of a wild animal testing positive for the virus in the United States was a tiger with a respiratory illness at a zoo in New York City. However, this tiger was in a captive zoo environment ,and public health officials believe the tiger became sick after being exposed to a zoo employee who was infected and spreading the virus.<br></br><br></br>
-                  If a wild animal were to become infected with the virus, we don’t know whether the infection could then spread among wildlife or if it could spread to other animals, including pets. Further studies are needed to understand if and how different animals, including wildlife, could be affected by COVID-19. Because wildlife can carry other diseases, even without looking sick, it is always important to enjoy wildlife from a distance.<br></br><br></br>
-                  Take steps to prevent getting sick from wildlife in the United States:<br></br>
+                        If a wild animal were to become infected with the virus, we don’t know whether the infection could then spread among wildlife or if it could spread to other animals, including pets. Further studies are needed to understand if and how different animals, including wildlife, could be affected by COVID-19. Because wildlife can carry other diseases, even without looking sick, it is always important to enjoy wildlife from a distance.<br></br><br></br>
+                        Take steps to prevent getting sick from wildlife in the United States:<br></br>
                       <ul>
                         <li>Keep your family, including pets, a safe distance away from wildlife.</li>
                         <li>Do not feed wildlife or touch wildlife droppings.</li>
@@ -1843,10 +1843,10 @@ function App() {
                   <Accordion.Collapse eventKey="97">
                     <Card.Body className="accordion-answer">
                       You should follow your state and/or local jurisdictional guidance regarding continuing operations at your facility. <b>There have not been any reports of horses testing positive for the virus that causes COVID-19</b>. Based on the limited information available to date, the risk of animals spreading the virus that causes COVID-19 to people is considered to be low. COVID-19 is primarily spread from person to person, so steps should be taken to reduce the risks for people visiting your facility.
-                  <ul>
+                        <ul>
 
                         <li><b>Encourage employees and other visitors, including boarders, owners, farriers, veterinarians, and those taking lessons, not to enter the facility if they are sick</b>. Employees should not return to work until the <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/disposition-in-home-patients.html">criteria to discontinue home isolation</a> are met, after talking with their doctor. Implement sick leave policies that are flexible, nonpunitive, and consistent with public health guidance, allowing employees to stay home if they have symptoms of respiratory infection.
-                    </li>
+                          </li>
 
                         <li><b>Consider conducting daily health checks (e.g., symptom and/or temperature screening) of employees and others visiting the facility before they enter the premises.</b> People with a fever of 100.40(38.00C) or above or other <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">signs of illness</a> should not be admitted to the premises. If implementing health checks, conduct them safely and respectfully. See <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/general-business-faq.html">General Business FAQ</a> for more information.<br></br>
 
@@ -1858,37 +1858,37 @@ function App() {
 
                         <li>
                           <b>Limit the number of people entering the facility.</b> Consider staggering lesson and visiting times to limit the number of people in the facility and potential for person-to-person contact. If possible, you can also take steps to decrease high-traffic areas by limiting areas open to visitors/owners or staggering use of common areas like grooming or wash stalls and tack rooms.
-                    </li>
+                          </li>
 
                         <li>
                           <b>Increase distance and limit duration of contact between employees and visitors in the facility.</b> Whenever possible, people should maintain at least 6 feet of distance between each other at the facility, including instructors teaching lessons. Allow for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> and avoid large numbers of people within the facility, including in employee-only areas.
-                    </li>
+                          </li>
 
                         <li>
                           <b>Visitors and employees should wear masks </b>to protect others especially where social distancing measures are difficult to maintain. Wearing a mask does NOT replace the need to practice social distancing.
-                    </li>
+                          </li>
 
 
 
                         <li>
                           <b>Set up hand hygiene stations</b> at the entrance and within the facility, so that employees and people entering can clean their hands before they enter. Employees should <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash hands</ a> regularly with soap and water for at least 20 seconds. An alcohol-based hand sanitizer containing at least 60% alcohol can be used, but if hands are visibly dirty, they should be washed with soap and water before using an alcohol-based hand sanitizer. Examples of hand hygiene stations may be a hose and soap located at entrances to allow for handwashing before entry.
-                    </li>
+                          </li>
 
 
                         <li>
                           <b>Clean and disinfect frequently touched surfaces</b> such as grooming tools, halters, lead ropes, shared tack and equipment, and door handles/gates (including those to stall doors and pasture/turn out areas) on a routine basis. To disinfect, use products that meet <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA's criteria for use against the </a> virus that causes COVID-19 and are appropriate for the surface, diluted household bleach solutions prepared according to the manufacturer’s label for disinfection, or alcohol solutions with at least 70% alcohol. Follow manufacturer’s directions for use, especially regarding product contact time and protections from chemical hazards posed by cleaners and disinfectants.
-                    </li>
+                          </li>
 
 
 
                         <li>
                           <b>Follow local guidance</b> on shelter in place and travel recommendations when traveling for showing, training, or trail riding.
-                    </li>
+                          </li>
 
 
                         <li>
                           If traveling to a new facility, <b>limit contact between people, horses, tack, equipment, and other supplies</b> from different facilities, and maintain a distance of at least 6 feet between horses and riders.
-                          <ul>
+                                <ul>
                             <li>Follow state and local guidance on travel. People who are sick should not travel to other facilities.</li>
                             <li>People visiting other facilities should follow the same precautions as they would normally, including maintaining at least 6 feet of distance between each other, wearing a mask to protect others, and washing hands frequently with soap and water.</li>
                           </ul>
@@ -1896,14 +1896,14 @@ function App() {
 
 
                         <li>If other animals, such as barn cats, are present at the facility, be aware that a small number of <a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">pets</a> have been reported to be infected with the virus that causes COVID-19, mostly after contact with people with COVID-19.
-                    </li>
+                          </li>
 
 
                       </ul>
 
 
 
-                  For more information, see <a href="https://www.osha.gov/Publications/OSHA3990.pdf">Guidance on Preparing Workplaces for Covid-19</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html"> Interim Guidance for Businesses and Employers to Plan and Respond to Coronavirus Disease 2019</a>
+                        For more information, see <a href="https://www.osha.gov/Publications/OSHA3990.pdf">Guidance on Preparing Workplaces for Covid-19</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html"> Interim Guidance for Businesses and Employers to Plan and Respond to Coronavirus Disease 2019</a>
 
 
                     </Card.Body>
@@ -1921,7 +1921,7 @@ function App() {
                   <Accordion.Collapse eventKey="98">
                     <Card.Body className="accordion-answer">
                       Community mitigation activities are actions that people and communities can take to slow the spread of infectious diseases, and prepare for it if it occurs, including COVID-19. Community mitigation is especially important before a vaccine or drug becomes widely available.<br></br><br></br>For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/community-mitigation.html">Community Mitigation Framework</a>.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="99">
@@ -1943,14 +1943,14 @@ function App() {
 
                   <Accordion.Collapse eventKey="100">
                     <Card.Body className="accordion-answer">Individual people, communities, schools, businesses, and healthcare organizations have a role to play in community mitigation. Policies*, which include limits on large gatherings, restrictions on businesses, and school closures are often needed to fully put in place community mitigation strategies.<br></br><br></br>Each community is unique. Because some actions can be very disruptive to daily life, mitigation activities will be different depending on how much disease has spread within the community, what the community population is like, and the ability to take these actions at the local level. To identify appropriate activities, all parts of a community that might be affected need to be considered, including <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">populations most vulnerable to serve illness</a>, and those who might be more affected socially or economically. When selecting mitigation activities, states and communities need to consider the spread of disease locally, characteristics of the people who live in the community (for example, age groups, languages spoken, overall health status), and the kind of public health resources and healthcare systems (like hospitals) that are available in the community. State and local officials may need to adjust community mitigation activities and immediately take steps to scale them up or down depending on the changing local situation.<br></br><br></br>Putting mitigation into practice is based on
-                  <ul>
+                        <ul>
                         <li>Emphasizing individual responsibility for taking recommended personal-level actions</li>
                         <li>
                           Empowering businesses, schools, and community organizations to take recommended actions, particularly in ways that protect persons at increased risk of severe illness</li>
                         <li>Focusing on settings that provide critical infrastructure or services to individuals at increased risk of severe illness</li>
                         <li>Minimizing disruptions to daily life to the extent possible</li>
                       </ul>
-                  *CDC cannot address the policies of any business or organization. CDC shares recommendations based on the best available science to help people make decisions that improve their health and safety. In all cases, <b>follow the guidance of your healthcare provider and local health department</b>. Local decisions depend on local circumstances.<br></br><br></br>For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/community-mitigation.html">Community Mitigation Framework</a>
+                        *CDC cannot address the policies of any business or organization. CDC shares recommendations based on the best available science to help people make decisions that improve their health and safety. In all cases, <b>follow the guidance of your healthcare provider and local health department</b>. Local decisions depend on local circumstances.<br></br><br></br>For more information, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/community-mitigation.html">Community Mitigation Framework</a>
                     </Card.Body>
                   </Accordion.Collapse>
 
@@ -1990,22 +1990,22 @@ function App() {
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="105">
                     Should wastewater workers take extra precautions to protect themselves from the virus that causes COVID-19?
-                </Accordion.Toggle>
+                      </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="105">
                     <Card.Body className="accordion-answer">
                       Recently, ribonucleic acid (RNA) from the virus that causes COVID-19 has been found in untreated wastewater. While data are limited, there is little evidence of infectious virus in wastewater, and no information to date that anyone has become sick with COVID-19 because of exposure to wastewater.<br></br><br></br>Standard practices associated with wastewater treatment plant operations should be sufficient to protect wastewater workers from the virus that causes COVID-19. These standard practices can include engineering and administrative controls, hygiene precautions, specific safe work practices, and personal protective equipment (<a href="https://www.cdc.gov/healthywater/global/sanitation/workers_handlingwaste.html">PPE</a>) normally required when handling untreated wastewater. No additional COVID-19–specific protections are recommended for workers involved in wastewater management, including those at wastewater treatment facilities.<br></br><br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/sanitation-wastewater-workers.html">See information for Wastewater and Sanitation System Workers on COVID-19</a> for additional information.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="106">
                     If my utility has issued a Boil Water Advisory, can I still use tap water to wash my hands?
-                </Accordion.Toggle>
+                      </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="106">
                     <Card.Body className="accordion-answer">
                       In most cases, it is safe to <a href="">wash your hands</a>with soap and tap water during a <a href="">Boil Water Advisory</a>. Follow the guidance from your local public health officials. If soap and water are not available, use an alcohol-based hand sanitizer containing at least 60% alcohol.
-                  </Card.Body>
+                        </Card.Body>
                   </Accordion.Collapse>
 
                   <a href="#Top">Return to Top</a>
@@ -2056,41 +2056,42 @@ function App() {
             </p>
 
             <p className="masks-p"><b>Do wear a mask that</b>
-            <ul>
-              <li className="masks-li">Covers your nose and mouth and secure it under your chin</li>
-              <li className="masks-li">Fits snugly against the sides of your face</li><br></br>
-            </ul>
-        For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br></p>
-        <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
+              <ul>
+                <li className="masks-li">Covers your nose and mouth and secure it under your chin</li>
+                <li className="masks-li">Fits snugly against the sides of your face</li><br></br>
+              </ul>
+                  For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks</a> web page.<br></br>
+            </p>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/do-wear-mask-medium.jpg"></Image><br></br><br></br>
 
 
 
-        <p className="masks-p"><b>How NOT to wear a mask</b></p>
-        <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
+            <p className="masks-p"><b>How NOT to wear a mask</b></p>
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-NOT-to-wear-mask-large.jpg"></Image><br></br><br></br>
 
 
             <p className="masks-p"><b>How to take off a mask</b></p>
-              <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
-            
+            <Image className="masks-big-image2" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/how-to-take-off-mask-large.jpg"></Image><br></br><br></br>
+
             <p className="masks-subject">How to Clean</p>
-        Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
-        <ul>
+              Masks should be washed regularly. Always <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove masks correctly</a> and <a href="https://www.cdc.gov/handwashing/index.html">wash your hands</a> after handling or touching a used mask.
+              <ul>
               <li className="masks-li">Include your mask with your regular laundry</li>
               <li className="masks-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask</li>
               <li className="masks-li">Use the highest heat setting and leave in the dryer until completely dry</li>
             </ul>
-        For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">How to Wash Masks</a> web page.
+              For more information, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">How to Wash Masks</a> web page.
 
-        For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
+              For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
             <p className="masks-subject-header">How to Wear Masks</p><br></br>
-        Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
-        <ul>
+              Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
+              <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing</b>, is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker</b>. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
             </ul><br></br>
-        <p className="masks-subject">Wear Your Mask correctly</p>
+            <p className="masks-subject">Wear Your Mask correctly</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/fitting-cloth-facemask-small.png"></Image>
             <ul>
               <li className="masks-li">Wash your hands before putting on your mask</li>
@@ -2132,66 +2133,65 @@ function App() {
 
             <br></br><p className="masks-subject-header">Storing and Washing Masks</p><br></br>
 
-        <p className="masks-p">Store your cloth mask properly and wash it regularly to keep it clean. Consider having more than one mask on hand so that you can easily replace a dirty mask with a clean one. Make sure to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a>
-         after touching a used mask.</p>
-        
+            <p className="masks-p">Store your cloth mask properly and wash it regularly to keep it clean. Consider having more than one mask on hand so that you can easily replace a dirty mask with a clean one. Make sure to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a>
+              after touching a used mask.</p>
 
-        <p className="masks-subject">Store wet or dirty masks in a plastic bag</p>
-        <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-mask.png"></Image><br></br>
-        <p className="masks-p">If your mask is wet or dirty from sweat, saliva, make-up, or other liquids or substances, keep it in a sealed plastic bag until you can wash it. Wash wet or dirty masks as soon as possible to prevent them from becoming moldy. Wet masks can be hard to breathe through and are less effective than dry masks.</p><br></br>
 
-      <p className="masks-subject">Store masks that are not wet or dirty in a paper bag</p>
+            <p className="masks-subject">Store wet or dirty masks in a plastic bag</p>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-mask.png"></Image><br></br>
+            <p className="masks-p">If your mask is wet or dirty from sweat, saliva, make-up, or other liquids or substances, keep it in a sealed plastic bag until you can wash it. Wash wet or dirty masks as soon as possible to prevent them from becoming moldy. Wet masks can be hard to breathe through and are less effective than dry masks.</p><br></br>
 
-    <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/mask-storage.png"></Image>
-    <p className="masks-p">You can store your mask temporarily to reuse later. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">Remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a> after touching a used mask. Keep it in a dry, breathable bag (like a paper or mesh fabric bag) to keep it clean between uses. When reusing your mask, keep the same side facing out.<br></br>
+            <p className="masks-subject">Store masks that are not wet or dirty in a paper bag</p>
 
-If you are taking off your mask to eat or drink outside of your home, you can place it somewhere safe to keep it clean, such as your pocket, purse, or paper bag. Make sure to wash or sanitize your hands after removing your mask. After eating, put the mask back on with the same side facing out. Be sure to wash or sanitize your hands again after putting your mask back on.</p>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/mask-storage.png"></Image>
+            <p className="masks-p">You can store your mask temporarily to reuse later. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">Remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a> after touching a used mask. Keep it in a dry, breathable bag (like a paper or mesh fabric bag) to keep it clean between uses. When reusing your mask, keep the same side facing out.<br></br>
+              If you are taking off your mask to eat or drink outside of your home, you can place it somewhere safe to keep it clean, such as your pocket, purse, or paper bag. Make sure to wash or sanitize your hands after removing your mask. After eating, put the mask back on with the same side facing out. Be sure to wash or sanitize your hands again after putting your mask back on.</p>
 
             <p className="masks-subject">Wash your mask</p>
             <p className="masks-p">Wash your cloth mask whenever it gets dirty or at least daily. If you have a disposable face mask, throw it away after wearing it once.</p>
 
-              <br></br><p className="masks-subject">Using a washing machine</p><br></br>
-              <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
-              <ul>
-                <li className="masks-li">You can include your mask with your regular laundry.</li>
-                <li className="masks-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
-              </ul>
+            <br></br><p className="masks-subject">Using a washing machine</p><br></br>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/wash-face-covering-01-washer.png"></Image>
+            <ul>
+              <li className="masks-li">You can include your mask with your regular laundry.</li>
+              <li className="masks-li">Use regular laundry detergent and the warmest appropriate water setting for the cloth used to make the mask.</li>
+            </ul>
 
-              <br></br><b>Washing by Hand</b><br></br>
-              <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/detergent.png"></Image>
-              <ul>
-                <li className="masks-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
-          <ul>
-                    <li className="masks-nested-li">Use bleach containing 5.25%–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
-                    <li className="masks-nested-li">Ensure the bleach product is not past its expiration date. Never mix household bleach with ammonia or any other cleanser.</li>
-                    <li className="masks-nested-li">Ensure adequate ventilation.</li>
-                  </ul>
-                </li>
-                <li className="masks-li">Prepare a bleach solution by mixing:
-          <ul>
-                    <li className="masks-nested-li">5 tablespoons (1/3rd cup) of 5.25%–8.25% bleach per gallon of room temperature water or</li>
-                    <li className="masks-nested-li">4 teaspoons of 5.25%–8.25% bleach per quart of room temperature water</li>
-                  </ul></li>
-                <li className="masks-li">Soak the mask in the bleach solution for 5 minutes.</li>
-                <li className="masks-li">Discard the bleach solution down the drain and rinse the mask thoroughly with cool or room temperature water.</li>
-                <li className="masks-li"><b>Make sure to completely dry the mask after washing.</b></li>
-
-                <br></br><b>Using Bleach Safely:</b>
+            <br></br><b>Washing by Hand</b><br></br>
+            <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/detergent.png"></Image>
+            <ul>
+              <li className="masks-li">Check the label to see if your bleach is intended for disinfection. Some bleach products, such as those designed for safe use on colored clothing, may not be suitable for disinfection.
                 <ul>
-                  <li className="masks-li">Always read and follow the directions on the label to ensure safe and effective use.</li>
-                  <li className="masks-li">Be aware that bleach can damage cloth fabric over time.</li>
-                  <li className="masks-li">Wear skin protection and consider eye protection for potential splash hazards.</li>
-                  <li className="masks-li">Use water at room temperature for dilution (unless stated otherwise on the label).</li>
-                  <li className="masks-li">Store and use bleach out of the reach of children and pets.</li>
-                  <li className="masks-li">Special considerations should be made for people with asthma and they should not be present when cleaning and disinfecting is happening as this can trigger asthma exacerbations. Learn more about <a href="https://www.cdc.gov/asthma/reduce_triggers.html">reducing asthma triggers</a>.</li>
-                  <li className="masks-li">See <a href="https://www.epa.gov/pesticide-registration/six-steps-safe-effective-disinfectant-use">EPA's 6 Steps for Safe and Effective Disinfectant Use</a></li>
+                  <li className="masks-nested-li">Use bleach containing 5.25%–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
+                  <li className="masks-nested-li">Ensure the bleach product is not past its expiration date. Never mix household bleach with ammonia or any other cleanser.</li>
+                  <li className="masks-nested-li">Ensure adequate ventilation.</li>
                 </ul>
+              </li>
+              <li className="masks-li">Prepare a bleach solution by mixing:
+                <ul>
+                  <li className="masks-nested-li">5 tablespoons (1/3rd cup) of 5.25%–8.25% bleach per gallon of room temperature water or</li>
+                  <li className="masks-nested-li">4 teaspoons of 5.25%–8.25% bleach per quart of room temperature water</li>
+                </ul></li>
+              <li className="masks-li">Soak the mask in the bleach solution for 5 minutes.</li>
+              <li className="masks-li">Discard the bleach solution down the drain and rinse the mask thoroughly with cool or room temperature water.</li>
+              <li className="masks-li"><b>Make sure to completely dry the mask after washing.</b></li>
+
+              <br></br><b>Using Bleach Safely:</b>
+              <ul>
+                <li className="masks-li">Always read and follow the directions on the label to ensure safe and effective use.</li>
+                <li className="masks-li">Be aware that bleach can damage cloth fabric over time.</li>
+                <li className="masks-li">Wear skin protection and consider eye protection for potential splash hazards.</li>
+                <li className="masks-li">Use water at room temperature for dilution (unless stated otherwise on the label).</li>
+                <li className="masks-li">Store and use bleach out of the reach of children and pets.</li>
+                <li className="masks-li">Special considerations should be made for people with asthma and they should not be present when cleaning and disinfecting is happening as this can trigger asthma exacerbations. Learn more about <a href="https://www.cdc.gov/asthma/reduce_triggers.html">reducing asthma triggers</a>.</li>
+                <li className="masks-li">See <a href="https://www.epa.gov/pesticide-registration/six-steps-safe-effective-disinfectant-use">EPA's 6 Steps for Safe and Effective Disinfectant Use</a></li>
               </ul>
+            </ul>
 
 
 
 
-            
+
             <p className="masks-subject">How to Dry</p><br></br>
             <ul>
               <b>Dryer</b><br></br>
@@ -2208,18 +2208,18 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
 
             <br></br><p className="masks-subject-header">Making Masks</p><br></br>
             <p className="masks-p">CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
-        Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
-        Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.</p>
-        
-        <ul>
+              Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
+              Simple masks can be made at home using washable, breathable fabric and may help prevent the spread of COVID-19.</p>
+
+            <ul>
               <li className="masks-li"><b>CDC recommends that people wear masks in public</b> and when around people who don’t live in your household.</li>
               <li className="masks-li"><b>Masks should NOT be worn by children under age 2 or anyone who has trouble breathing,</b> is unconscious, incapacitated, or otherwise unable to remove the mask without assistance.</li>
               <li className="masks-li"><b>Do NOT use a mask meant for a healthcare worker.</b> Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
 
             </ul>
             <p className="masks-subject">Sewn Mask</p><br></br>
-        <p className="masks-p">Materials</p><br></br>
-            <Image  src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
+            <p className="masks-p">Materials</p><br></br>
+            <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
             <ul>
               <li className="masks-li">Two 10”x6” rectangles of cotton fabric</li>
               <li className="masks-li">Two 6” pieces of elastic (or rubber bands, string, cloth strips, or hair ties)</li>
@@ -2231,18 +2231,18 @@ If you are taking off your mask to eat or drink outside of your home, you can pl
             <p class="masks-p"><b>Tutorial</b></p>
 
             <b>1.</b> Cut out two 10-by-6-inch rectangles of cotton fabric. Use tightly woven cotton, such as quilting fabric or cotton sheets. T-shirt fabric will work in a pinch. Stack the two rectangles; you will sew the mask as if it was a single piece of fabric
-        <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image><br></br><br></br>
+              <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-02.png"></Image><br></br><br></br>
 
 
             <b>2.</b> Fold over the long sides ¼ inch and hem. Then fold the double layer of fabric over ½ inch along the short sides and stitch down.
-            <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-03.png"></Image><br></br><br></br>
+                  <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-03.png"></Image><br></br><br></br>
 
             <b>3.</b> Run a 6-inch length of 1/8-inch wide elastic through the wider hem on each side of the mask. These will be the ear loops. Use a large needle or a bobby pin to thread it through. Tie the ends tight.
-Don’t have elastic? Use hair ties or elastic head bands. If you only have string, you can make the ties longer and tie the mask behind your head.
-<br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-04.png"></Image><br></br><br></br>
+                  Don’t have elastic? Use hair ties or elastic head bands. If you only have string, you can make the ties longer and tie the mask behind your head.
+      <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-04.png"></Image><br></br><br></br>
 
             <b>4.</b> Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.
-            <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br><br></br>
+                  <br></br><Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-05.png"></Image><br></br><br></br>
 
             <p className="masks-subject">Non-sewn Mask</p><br></br>
             <p className="masks-p"><b>Materials</b></p>
@@ -2269,9 +2269,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="masks-li">can be laundered and machine dried without damage or change to shape</li>
             </ul><br></br>
 
-      See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
+            See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
-      <br></br><iframe className="iframe" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
+            <br></br><iframe className="iframe" src="https://www.youtube.com/embed/tPx1yqvJgf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
 
 
 
@@ -2289,7 +2289,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <p className="masks-subject">Evidence for Effectiveness of Masks</p>
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemasks-protect-others.png"></Image><br></br>
             <p className="masks-p">Masks are recommended as a simple barrier to help prevent respiratory droplets from traveling into the air and onto other people when the person wearing the mask coughs, sneezes, talks, or raises their voice. This is called source control. This recommendation is based on what we know about the role respiratory droplets play in the spread of the virus that causes COVID-19, paired with emerging evidence from clinical and laboratory studies that shows masks reduce the spray of droplets when worn over the nose and mouth. COVID-19 spreads mainly among people who are in close contact with one another (within about 6 feet), so the use of masks is particularly important in settings where people are close to each other or where social distancing is difficult to maintain. CDC’s recommendations for masks will be updated as new scientific evidence becomes available.</p>
-        
+
 
             <br></br><p className="masks-subject">Who Should Wear A Mask?</p>
             <ul>
@@ -2314,7 +2314,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="masks-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
             </ul><br></br>
             <b>Feasibility and Adaptations</b><br></br>
-        CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br>
+              CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br>
             <b>For example:</b>
             <ul>
               <li className="masks-li">People who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired—may be unable to wear masks if they rely on lipreading to communicate. In this situation, consider using a clear mask. If a clear mask isn’t available, consider whether you can use written communication, use closed captioning, or decrease background noise to make communication possible while wearing a mask that blocks your lips.</li>
@@ -2323,18 +2323,18 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
               <li className="masks-li">People should not wear masks while engaged in activities that may cause the mask to become wet, like when <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/parks-rec/public-beaches.html">swimming at the beach or pool</a>. A wet mask may make it difficult to breathe. For activities like swimming, it is particularly important to maintain physical distance from others when in the water.</li>
               <li className="masks-li">People who are engaged in high intensity activities, like running, may not be able to wear a mask if it causes difficulty breathing. If unable to wear a mask, consider conducting the activity in a location with greater ventilation and air exchange (for instance, outdoors versus indoors) and where it is possible to maintain physical distance from others.</li>
               <li className="masks-li">People who work in a setting where masks may increase the risk of <a href="https://www.cdc.gov/niosh/topics/heatstress/">heat-related illness</a> or cause safety concerns due to introduction of a hazard (for instance, straps getting caught in machinery) may consult with an occupational safety and health professional to determine the appropriate mask for their setting. Outdoor workers may prioritize use of masks when in close contact with other people, like during group travel or shift meetings, and remove masks when social distancing is possible. <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/meat-poultry-processing-workers-employers.html">Find more information here</a> and below.</li>
-        Masks are a critical preventive measure and are most essential in times when social distancing is difficult. If masks cannot be used, make sure to take other measures to reduce the risk of COVID-19 spread, including social distancing, frequent hand washing, and cleaning and disinfecting frequently touched surfaces.
-        </ul><br></br>
+              Masks are a critical preventive measure and are most essential in times when social distancing is difficult. If masks cannot be used, make sure to take other measures to reduce the risk of COVID-19 spread, including social distancing, frequent hand washing, and cleaning and disinfecting frequently touched surfaces.
+              </ul><br></br>
             <b>Masks with Exhalation Valves or Vents</b><br></br>
-        The purpose of masks is to keep respiratory droplets from reaching others to aid with source control. However, masks with one-way valves or vents allow air to be exhaled through a hole in the material, which can result in expelled respiratory droplets that can reach others.  This type of mask does not prevent the person wearing the mask from transmitting COVID-19 to others. Therefore, CDC does not recommend using masks for source control if they have an exhalation valve or vent.
+              The purpose of masks is to keep respiratory droplets from reaching others to aid with source control. However, masks with one-way valves or vents allow air to be exhaled through a hole in the material, which can result in expelled respiratory droplets that can reach others.  This type of mask does not prevent the person wearing the mask from transmitting COVID-19 to others. Therefore, CDC does not recommend using masks for source control if they have an exhalation valve or vent.
 
-        <br></br><br></br><b>Face Shields</b><br></br>
+              <br></br><br></br><b>Face Shields</b><br></br>
             <ul>
               <li className="masks-li">A face shield is primarily used for eye protection for the person wearing it. At this time, it is not known what level of protection a face shield provides to people nearby from the spray of respiratory droplets from the wearer. There is currently not enough evidence to support the effectiveness of face shields for source control. Therefore, CDC <b>does not currently recommend</b> use of face shields as a substitute for masks.</li>
               <li className="masks-li">However, wearing a mask may not be feasible in every situation for some people for example, people who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired. Here are some considerations for individuals who must wear a face shield instead of a mask:
-          <ul>
+                <ul>
                   <li className="masks-nested-li">Although evidence on face shields is limited, the available data suggest that the following face shields may provide better source control than others:
-            <ul>
+                  <ul>
                       <li>Face shields that wrap around the sides of the wearer’s face and extend below the chin.</li>
                       <li>Hooded face shields.</li>
                     </ul>
@@ -2348,7 +2348,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
 
             <br></br><b>Surgical Masks </b><br></br>
-        Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
+              Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
             <p className="masks-subject">Recent Studies:</p><br></br>
             <ul>
@@ -2381,12 +2381,12 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading> */}
-              <iframe id="frame" border="1px solid black" className="self-checker" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
+            <iframe id="frame" border="1px solid black" className="self-checker" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
-                <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white' data-cdc-language='en-us'></div>
-                <script src='https://t.cdc.gov/1M1B'></script>
+              <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white' data-cdc-language='en-us'></div>
+              <script src='https://t.cdc.gov/1M1B'></script>
 
-              </iframe>
+            </iframe>
             <br></br><p className="symptoms-header">What you need to know</p><br></br>
             <ul>
               <li className="symptoms-li">Anyone can have mild to severe symptoms.</li>
@@ -2429,9 +2429,9 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <li className="symptoms-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a></li><br></br><br></br>
             <p className="symptoms-header">What is the difference between Influenza (Flu) and COVID-19?</p><br></br>
             <p className="symptoms-p">Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. COVID-19 is caused by infection with a new coronavirus (called SARS-CoV-2) and flu is caused by infection with <a href="https://www.cdc.gov/flu/about/viruses/index.htm">influenza viruses</a>.<br></br>
-            There are some key differences between flu and COVID-19. COVID-19 seems to spread more easily than flu and causes more serious illnesses in some people. It can also take longer before people show symptoms and people can be contagious for longer. Another important difference is there is a vaccine to protect against flu. The best way to prevent infection is to avoid being exposed to the virus. More information about differences between flu and COVID-19 is available in the different sections below.<br></br>
-            Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and <a href="https://www.cdc.gov/flu/symptoms/testing.htm#anchor_1596736120603">testing</a> may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics, but there are some key differences between the two.<br></br>
-            While more is learned every day, there is still a lot that is unknown about COVID-19 and the virus that causes it. This page compares COVID-19 and flu, given the best available information to date.</p>
+                  There are some key differences between flu and COVID-19. COVID-19 seems to spread more easily than flu and causes more serious illnesses in some people. It can also take longer before people show symptoms and people can be contagious for longer. Another important difference is there is a vaccine to protect against flu. The best way to prevent infection is to avoid being exposed to the virus. More information about differences between flu and COVID-19 is available in the different sections below.<br></br>
+                  Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and <a href="https://www.cdc.gov/flu/symptoms/testing.htm#anchor_1596736120603">testing</a> may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics, but there are some key differences between the two.<br></br>
+                  While more is learned every day, there is still a lot that is unknown about COVID-19 and the virus that causes it. This page compares COVID-19 and flu, given the best available information to date.</p>
 
 
 
@@ -2469,7 +2469,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             </ul>
 
             <p className="sick-p">When to seek emergency medical attention
-          Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b></p>
+                Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b></p>
             <ul>
               <li className="sick-li">Trouble breathing</li>
               <li className="sick-li">Persistent pain or pressure in the chest</li>
@@ -2515,8 +2515,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><p className="sick-subject">Clean all “high-touch” surfaces everyday</p><ul>
               <li className="sick-li"><b>Clean and disinfect</b> high-touch surfaces in your “sick room” and bathroom; wear disposable gloves. Let someone else clean and disinfect surfaces in common areas, but you should clean your bedroom and bathroom, if possible.</li>
               <li className="sick-li"><b>If a caregiver or other person needs to clean and disinfect</b> a sick person’s bedroom or bathroom, they should do so on an as-needed basis. The caregiver/other person should wear a mask and disposable gloves prior to cleaning. They should wait as long as possible after the person who is sick has used the bathroom before coming in to clean and use the bathroom.</li>
-              High-touch surfaces include phones, remote controls, counters, tabletops, doorknobs, bathroom fixtures, toilets, keyboards, tablets, and bedside tables.
-              <li className="sick-li"><b>Clean and disinfect areas that may have blood, stool, or body fluids on them.</b></li>
+                    High-touch surfaces include phones, remote controls, counters, tabletops, doorknobs, bathroom fixtures, toilets, keyboards, tablets, and bedside tables.
+                    <li className="sick-li"><b>Clean and disinfect areas that may have blood, stool, or body fluids on them.</b></li>
               <li className="sick-li"><b>Use household cleaners and disinfectants.</b> Clean the area or item with soap and water or another detergent if it is dirty. Then, use a household disinfectant.</li>
               <ul>
                 <li className="sick-li">Be sure to follow the instructions on the label to ensure safe and effective use of the product. Many products recommend keeping the surface wet for several minutes to ensure germs are killed. Many also recommend precautions such as wearing gloves and making sure you have good ventilation during use of the product.</li>
@@ -2527,7 +2527,7 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             <br></br><p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
             <p className="sick-p"><b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
-            People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b></p>
+                  People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b></p>
             <br></br><p className="sick-subject">Isolation or Quarantine: What's the difference?</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Quarantine</a> keeps someone who might have been exposed to the virus away from others.<br></br>Isolation keeps someone who is infected with the virus away from others, even in their home.</p>
             <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br>
@@ -2536,23 +2536,23 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             <br></br><p className="sick-subject">Who needs to isolate?</p>
             <p className="sick-p">People who have COVID-19
-            <ul>
-              <li className="sick-li">People who have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and are able to recover at home</li>
-              <li className="sick-li">People who have no symptoms (are asymptomatic) but have tested positive for infection with SARS-CoV-2</li>
+                  <ul>
+                <li className="sick-li">People who have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms of COVID-19</a> and are able to recover at home</li>
+                <li className="sick-li">People who have no symptoms (are asymptomatic) but have tested positive for infection with SARS-CoV-2</li>
               </ul></p>
 
 
-              <br></br><p className="sick-subject">Steps to take</p>
+            <br></br><p className="sick-subject">Steps to take</p>
             <p className="sick-p"><b>Stay home except to get medical care</b>
-            <ul>
-            <li className="sick-li">Monitor your symptoms. If you have an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a> (including trouble breathing), seek emergency medical care immediately</li>
-            <li className="sick-li">Stay in a separate room from other household members, if possible</li>
-            <li className="sick-li">Use a separate bathroom, if possible</li>
-            <li className="sick-li">Avoid contact with other members of the household and pets</li>
-            <li className="sick-li">Don’t share personal household items, like cups, towels, and utensils</li>
-            <li className="sick-li">Wear a mask when around other people, if you are able to</li>
-            </ul>
-            <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">Learn more about what to do if you are sick.</a>
+              <ul>
+                <li className="sick-li">Monitor your symptoms. If you have an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a> (including trouble breathing), seek emergency medical care immediately</li>
+                <li className="sick-li">Stay in a separate room from other household members, if possible</li>
+                <li className="sick-li">Use a separate bathroom, if possible</li>
+                <li className="sick-li">Avoid contact with other members of the household and pets</li>
+                <li className="sick-li">Don’t share personal household items, like cups, towels, and utensils</li>
+                <li className="sick-li">Wear a mask when around other people, if you are able to</li>
+              </ul>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">Learn more about what to do if you are sick.</a>
             </p>
 
             <br></br><p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
@@ -2561,76 +2561,76 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><p className="sick-subject">When you can be around others after you had or likely had COVID-19</p>
             <p className="sick-p">When you can be around others (end home isolation) depends on different factors for different situations.<br></br></p>
             <br></br>
-            
+
             <Accordion>
-            <Card><a id="Basics"><Card.Header className="alert-subjects">Find CDC’s recommendations for your situation below.</Card.Header></a>
+              <Card><a id="Basics"><Card.Header className="alert-subjects">Find CDC’s recommendations for your situation below.</Card.Header></a>
 
-            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="200">
-            I think or know I had COVID-19, and I had symptoms
-            </Accordion.Toggle>
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="200">
+                  I think or know I had COVID-19, and I had symptoms
+                  </Accordion.Toggle>
 
-            <Accordion.Collapse eventKey="200">
-              <Card.Body className="accordion-answer">
-                <p className="sick-p">You can be with others after
-                <ul>
-                  <li className="sick-li">At least 10 days since symptoms first appeared <b>and</b></li>
-                  <li className="sick-li">At least 24 hours with no fever without fever-reducing medication <b>and</b></li>
-                  <li className="sick-li">Other symptoms of COVID-19 are improving**Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation</li>
-                </ul>
-                If you had severe illness from COVID-19 (you were admitted to a hospital and needed oxygen), your healthcare provider may recommend that you stay in isolation for longer than 10 days after your symptoms first appeared (possibly up to 20 days) and you may need to finish your period of isolation at home.
-                </p>
-                
-              </Card.Body>
-            </Accordion.Collapse>
+                <Accordion.Collapse eventKey="200">
+                  <Card.Body className="accordion-answer">
+                    <p className="sick-p">You can be with others after
+                      <ul>
+                        <li className="sick-li">At least 10 days since symptoms first appeared <b>and</b></li>
+                        <li className="sick-li">At least 24 hours with no fever without fever-reducing medication <b>and</b></li>
+                        <li className="sick-li">Other symptoms of COVID-19 are improving**Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation</li>
+                      </ul>
+                      If you had severe illness from COVID-19 (you were admitted to a hospital and needed oxygen), your healthcare provider may recommend that you stay in isolation for longer than 10 days after your symptoms first appeared (possibly up to 20 days) and you may need to finish your period of isolation at home.
+                      </p>
 
-            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="201">
-            I tested positive for COVID-19 but had no symptoms
-            </Accordion.Toggle>
+                  </Card.Body>
+                </Accordion.Collapse>
 
-            <Accordion.Collapse eventKey="201">
-              <Card.Body className="accordion-answer">
-              <p className="sick-p">If you continue to have no symptoms, you can be with others after:
-                <ul>
-                  <li className="sick-li">10 days have passed since the date you had your positive test</li>
-                </ul>
-                If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID, and I had symptoms.
-                </p>
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="201">
+                  I tested positive for COVID-19 but had no symptoms
+                  </Accordion.Toggle>
 
-              </Card.Body>
-            </Accordion.Collapse>
+                <Accordion.Collapse eventKey="201">
+                  <Card.Body className="accordion-answer">
+                    <p className="sick-p">If you continue to have no symptoms, you can be with others after:
+                      <ul>
+                        <li className="sick-li">10 days have passed since the date you had your positive test</li>
+                      </ul>
+                      If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID, and I had symptoms.
+                      </p>
 
-            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="202">
-            I had COVID-19 or I tested positive for COVID-19 and I have a weakened immune system
-            </Accordion.Toggle>
+                  </Card.Body>
+                </Accordion.Collapse>
 
-            <Accordion.Collapse eventKey="202">
-              <Card.Body className="accordion-answer">
-                <p className="sick-p">
-                If you have a <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">weakened immune system (immunocompromised)</a> due to a health condition or medication, you might need to stay home and isolate longer than 10 days. Talk to your healthcare provider for more information.<br></br>Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
-                </p>
-              </Card.Body>
-            </Accordion.Collapse>
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="202">
+                  I had COVID-19 or I tested positive for COVID-19 and I have a weakened immune system
+                  </Accordion.Toggle>
 
-            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="203">
-            Getting testing again for COVID-19
-            </Accordion.Toggle>
+                <Accordion.Collapse eventKey="202">
+                  <Card.Body className="accordion-answer">
+                    <p className="sick-p">
+                      If you have a <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">weakened immune system (immunocompromised)</a> due to a health condition or medication, you might need to stay home and isolate longer than 10 days. Talk to your healthcare provider for more information.<br></br>Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
+                      </p>
+                  </Card.Body>
+                </Accordion.Collapse>
 
-            <Accordion.Collapse eventKey="203">
-              <Card.Body className="accordion-answer">
-                <p className="sick-p">
-                If you have recovered from your symptoms after testing positive for COVID-19, you may continue to test positive for three months or more without being contagious to others. For this reason, you should be tested only if you develop new symptoms of possible COVID-19. Getting tested again should be discussed with your healthcare provider, especially if you have been in close contact with another person who has tested positive for COVID-19 in the last 14 days.<br></br>If you have symptoms and test positive for COVID-19, follow the guidance above for “I think or know I had COVID, and I had symptoms.” Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
-                </p>
-              </Card.Body>
-            </Accordion.Collapse>
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="203">
+                  Getting testing again for COVID-19
+                  </Accordion.Toggle>
+
+                <Accordion.Collapse eventKey="203">
+                  <Card.Body className="accordion-answer">
+                    <p className="sick-p">
+                      If you have recovered from your symptoms after testing positive for COVID-19, you may continue to test positive for three months or more without being contagious to others. For this reason, you should be tested only if you develop new symptoms of possible COVID-19. Getting tested again should be discussed with your healthcare provider, especially if you have been in close contact with another person who has tested positive for COVID-19 in the last 14 days.<br></br>If you have symptoms and test positive for COVID-19, follow the guidance above for “I think or know I had COVID, and I had symptoms.” Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert at your local health department</a> to determine when you can be around others.
+                      </p>
+                  </Card.Body>
+                </Accordion.Collapse>
 
 
-            </Card>
+              </Card>
             </Accordion>
 
 
             <br></br><p className="sick-subject-header">When to Quarantine</p><br></br>
             <p className="sick-p"><b>Quarantine</b> is used to keep someone <i>who might have been exposed to COVID-19</i> away from others. Quarantine helps prevent spread of disease that can occur before a person knows they are sick or if they are infected with the virus without feeling symptoms. People in quarantine should stay home, separate themselves from others, monitor their health, and follow directions from their state or local health department.</p>
-            
+
             <br></br><p className="sick-subject">Quarantine or isolation: What's the difference?</p>
             <p className="sick-p"><b>Quarantine</b> keeps someone who might have been exposed to the virus away from others.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">Isolation</a> keeps someone who is infected with the virus away from others, even in their home.</p>
             <iframe className="iframe" src="https://www.youtube.com/embed/l3s75_X8Xjs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -2667,27 +2667,27 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             <br></br><p className="sick-subject">Scenario 1: Close contact with someone who has COVID-19—will not have further close contact</p>
             <p className="sick-p">I had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with someone who has COVID-19 and will not have further contact or interactions with the person while they are sick (e.g., co-worker, neighbor, or friend).<br></br>Your last day of quarantine is 14 days from the date you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>.<br></br>Date of last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with person who has COVID-19 + 14 days= end of quarantine
-            <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-no-further-contact.png"></Image><br></br>
-            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
-            
+                  <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-no-further-contact.png"></Image><br></br>
+                  Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
+
 
 
             <br></br><p className="sick-subject">Scenario 2: Close contact with someone who has COVID-19—live with the person but can avoid further close contact</p>
             <p className="sick-p">
-            I live with someone who has COVID-19 (e.g., roommate, partner, family member), and that person has isolated by staying in a separate bedroom. I have had no <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person since they isolated.<br></br>Your last day of quarantine is 14 days from when the person with COVID-19 began home isolation<br></br>Date person with COVID-19 began home isolation + 14 days = end of quarantine
-            <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-start-home-isolation.png"></Image><br></br>
-            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
+              I live with someone who has COVID-19 (e.g., roommate, partner, family member), and that person has isolated by staying in a separate bedroom. I have had no <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person since they isolated.<br></br>Your last day of quarantine is 14 days from when the person with COVID-19 began home isolation<br></br>Date person with COVID-19 began home isolation + 14 days = end of quarantine
+                  <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-start-home-isolation.png"></Image><br></br>
+                  Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
             <br></br><p className="sick-subject">Scenario 3. Under quarantine and had additional close contact with someone who has COVID-19</p>
             <p className="sick-p">I live with someone who has COVID-19 and started my 14-day quarantine period because we had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>. What if I ended up having <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person who is sick during my quarantine? What if another household member gets sick with COVID-19? Do I need to restart my quarantine?<br></br>Yes. You will have to restart your quarantine from the last day you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with anyone in your house who has COVID-19. <b>Any time a new household member gets sick with COVID-19 and you had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a>, you will need to restart your quarantine.</b><br></br>Date of additional <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with person who has COVID-19 + 14 days = end of quarantine
-            <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-additional-contact.png"></Image><br></br>
-            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
+                  <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-additional-contact.png"></Image><br></br>
+                  Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
 
             <br></br><p className="sick-subject">Scenario 4: Live with someone who has COVID-19 and cannot avoid continued close contact</p>
             <p className="sick-p">I live in a household where I cannot avoid <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the person who has COVID-19. I am providing direct care to the person who is sick, don’t have a separate bedroom to isolate the person who is sick, or live in close quarters where I am unable to keep a physical distance of 6 feet.<br></br>You should avoid contact with others outside the home while the person is sick, and quarantine for 14 days after the person who has COVID-19 meets the <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">criteria to end home isolation</a>.<br></br>Date the person with COVID-19 ends home isolation + 14 days = end of quarantine
-            <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-continued-contact.png"></Image><br></br>
-            Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
+                  <Image className="sick-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/if-you-are-sick/calendar-graphics-continued-contact.png"></Image><br></br>
+                  Please note if your quarantine starts at noon on day 1, then it would end at noon on the last day.</p>
 
 
 
@@ -2699,8 +2699,8 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
             <br></br><p className="sick-subject">Help cover basic needs</p>
             <ul>
               <li className="sick-li">Help the person who is sick follow their doctor’s instructions for care and medicine.
-              <ul>
-                <li className="sick-li-li">For <i>most</i> people, symptoms last a few days, and people usually feel better after a week.</li>
+                    <ul>
+                  <li className="sick-li-li">For <i>most</i> people, symptoms last a few days, and people usually feel better after a week.</li>
                 </ul></li>
               <li className="sick-li">See if over-the-counter medicines for fever help the person feel better.</li>
               <li className="sick-li">Make sure the person who is sick drinks a lot of fluids and rests.</li>
@@ -2723,43 +2723,43 @@ Don’t have elastic? Use hair ties or elastic head bands. If you only have stri
 
             <br></br><p className="sick-subject">When to seek emergency medical attention</p>
             <p className="sick-p">Look for <b>emergency warning signs*</b> for COVID-19. If someone is showing any of these signs, <b>seek emergency medical care immediately:</b>
-            <ul>
-              <li className="sick-li">Trouble breathing</li>
-              <li className="sick-li">Persistent pain or pressure in the chest</li>
-              <li className="sick-li">New confusion</li>
-              <li className="sick-li">Inability to wake or stay awake</li>
-              <li className="sick-li">Bluish lips or face</li>
-            </ul>
-            *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
-            <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
-            </p>
+              <ul>
+                <li className="sick-li">Trouble breathing</li>
+                <li className="sick-li">Persistent pain or pressure in the chest</li>
+                <li className="sick-li">New confusion</li>
+                <li className="sick-li">Inability to wake or stay awake</li>
+                <li className="sick-li">Bluish lips or face</li>
+              </ul>
+                  *This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.<br></br>
+              <b>Call 911 or call ahead to your local emergency facility:</b> Notify the operator that you are seeking care for someone who has or may have COVID-19.
+                  </p>
 
 
 
             <br></br><p className="sick-subject">Limit contact</p>
             <p className="sick-p">
-            COVID-19 spreads between people who are in close contact (within about 6 feet) through respiratory droplets, created when someone talks, coughs or sneezes. Staying away from others helps stop the spread of COVID-19.
+              COVID-19 spreads between people who are in close contact (within about 6 feet) through respiratory droplets, created when someone talks, coughs or sneezes. Staying away from others helps stop the spread of COVID-19.
 
-<br></br>The caregiver, when possible, should not be someone who is at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness from COVID-19</a>.
+      <br></br>The caregiver, when possible, should not be someone who is at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher risk for severe illness from COVID-19</a>.
 
-<br></br><b>The person who is sick should isolate</b>
+      <br></br><b>The person who is sick should isolate</b>
 
-<br></br>The sick person should separate themselves from others in the home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">when and how to isolate.</a>
+              <br></br>The sick person should separate themselves from others in the home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">when and how to isolate.</a>
 
-<ul>
-  <li className="sick-li">If possible, have the person who is sick use a separate bedroom and bathroom. If possible, have the person who is sick stay in their own “sick room” or area and away from others. Try to stay at least 6 feet away from the sick person.</li>
-  <li className="sick-li">Shared space: If you have to share space, make sure the room has good air flow.
-  <ul>
-    <li className="sick-li-li">Open the window to increase air circulation.</li>
-    <li className="sick-li-li">Improving ventilation helps remove respiratory droplets from the air.</li>
-    
-    </ul></li>
-  <li className="sick-li">Avoid having visitors. Avoid having any unnecessary visitors, especially visits by <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk for severe illness</a>.</li>
-</ul>
-<b>Caregivers should quarantine</b><br></br>
+              <ul>
+                <li className="sick-li">If possible, have the person who is sick use a separate bedroom and bathroom. If possible, have the person who is sick stay in their own “sick room” or area and away from others. Try to stay at least 6 feet away from the sick person.</li>
+                <li className="sick-li">Shared space: If you have to share space, make sure the room has good air flow.
+        <ul>
+                    <li className="sick-li-li">Open the window to increase air circulation.</li>
+                    <li className="sick-li-li">Improving ventilation helps remove respiratory droplets from the air.</li>
 
-Caregivers and anyone who has been in close contact with someone who has COVID-19 should stay home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">when and how to quarantine</a>.
-            </p>
+                  </ul></li>
+                <li className="sick-li">Avoid having visitors. Avoid having any unnecessary visitors, especially visits by <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk for severe illness</a>.</li>
+              </ul>
+              <b>Caregivers should quarantine</b><br></br>
+
+      Caregivers and anyone who has been in close contact with someone who has COVID-19 should stay home. Learn <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">when and how to quarantine</a>.
+                  </p>
 
 
             <br></br><p className="sick-subject">When it's safe for a person who has been sick to be around others</p>
@@ -2792,8 +2792,8 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
               <ul>
                 <li className="sick-li">Put on a mask and ask the sick person to put on a mask  before entering the room.</li>
                 <li className="sick-li">Wear gloves when you touch or have contact with the sick person’s blood, stool, or body fluids, such as saliva, mucus, vomit, and urine. Throw out gloves into a lined trash can and wash your hands right away.
-                <ul>
-                  <li className="sick-li-li">Practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> to keep from getting sick:  wash your hands often; avoid touching your eyes, nose, and mouth; and frequently clean and disinfect surfaces.</li></ul></li>
+                      <ul>
+                    <li className="sick-li-li">Practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> to keep from getting sick:  wash your hands often; avoid touching your eyes, nose, and mouth; and frequently clean and disinfect surfaces.</li></ul></li>
               </ul>
               <b>Note:</b> During the COVID-19 pandemic, medical grade masks are reserved for healthcare workers and some first responders.<br></br>
               <iframe className="iframe" src="https://www.youtube.com/embed/IFqx9SG6TkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -2827,7 +2827,7 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             </p>
             <ul>
               <li className="sick-li"><b>If you are using a separate bedroom and bathroom:</b> Only clean the area around the person who is sick when needed, such as when the area is soiled. This will help limit your contact with the sick person.
-              <ul>
+                    <ul>
                   <li className="sick-li-li">If they feel up to it, the person who is sick can clean their own space. Give the person who is sick <b>personal cleaning supplies</b> such as tissues, paper towels, cleaners, and <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered disinfectants</a>.</li>
                 </ul>
               </li>
@@ -2859,16 +2859,16 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             <br></br><p className="sick-subject">Track your own health</p>
             <ul>
               <li className="sick-li">Caregivers should stay home and monitor their health for COVID-19 symptoms while caring for the person who is sick.
-                <ul>
+                      <ul>
                   <li className="sick-li-li"><a href="https://wcms-wp.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a> include fever, cough, and shortness of breath but other symptoms may be present as well. Trouble breathing is a more serious warning sign that you need medical attention.</li>
                 </ul>
               </li>
               <li className="sick-li">Caregivers should continue to stay home after care is complete. Caregivers can leave their home 14 days after their last close contact with the person who is sick (based on the time it takes to develop illness), or 14 days after the person who is sick meets the <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">criteria to end home isolation</a>.</li>
               <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Use CDC’s self-checker tool</a> to help you make decisions about seeking appropriate medical care.
 
-              </li>
+                    </li>
               <li className="sick-li"><b>If you are having trouble breathing, call 911.</b>
-              <ul>
+                <ul>
                   <li className="sick-li-li">Call your doctor or emergency room and tell them your symptoms before going in. They will tell you what to do.</li>
                 </ul>
               </li>
@@ -2879,67 +2879,67 @@ Caregivers and anyone who has been in close contact with someone who has COVID-1
             <p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
             <p className="sick-p">Everyone in the home should <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">practice everyday preventive actions</a>. Those in the home who are sick with COVID-19 should follow CDC’s guidance for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">what to do if you are sick</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">when it is safe to end your isolation</a>.<br></br>
 
-            If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
+                  If a child’s parent or caregiver is sick with COVID-19, follow the steps below to help protect the child from infection.</p>
 
             <br></br><p className="sick-subject">Older children</p>
             <p className="sick-p">The child should avoid physical contact with the sick parent or caregiver until all sick people have <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/when-its-safe.html">ended their home isolation</a>. For the child to safely have no interaction with the parent or caregiver, the child should be old enough to legally be home alone and mature enough to care for themselves.</p>
 
             <br></br><p className="sick-subject">Younger Children</p>
             <p className="sick-p">
-            If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
-            <ul>
-              <li className="sick-li">Young children should be supervised at all times.</li>
-              <li className="sick-li">If the parent or the sole caregiver is too ill to care for the child, they should see if there is a caregiver outside of the home with whom the child can stay. The caregiver should not be someone who is <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">at higher risk for severe illness</a> from COVID-19, as the child has likely been exposed to the virus. The caregiver will need to help the child quarantine for 14 days since they last had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> (within 6 feet way from someone for a total of 15 minutes or more) with the sick person.</li>
-            </ul>
+              If the parent or sole caregiver will be caring for the child while sick, they should contact the child’s healthcare provider for advice on how to best protect the child from infection.
+                  <ul>
+                <li className="sick-li">Young children should be supervised at all times.</li>
+                <li className="sick-li">If the parent or the sole caregiver is too ill to care for the child, they should see if there is a caregiver outside of the home with whom the child can stay. The caregiver should not be someone who is <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">at higher risk for severe illness</a> from COVID-19, as the child has likely been exposed to the virus. The caregiver will need to help the child quarantine for 14 days since they last had <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> (within 6 feet way from someone for a total of 15 minutes or more) with the sick person.</li>
+              </ul>
             </p>
 
             <br></br><p className="sick-subject">Children staying in the home with the sick parent or caregiver</p>
             <p className="sick-p">
-            If a child needs to stay in the home with you (the parent or caregiver who is sick):
-            <ul>
-              <li className="sick-li">Both you and the child should wear a mask while in the same room.</li>
-              <li className="sick-li">Note that masks should not be placed on:
-              <ul>
-                <li className="sick-li-li">Children younger than 2 years old</li>
-                <li className="sick-li-li">Anyone who has trouble breathing or is unconscious</li>
-                <li className="sick-li-li">Anyone who is incapacitated or otherwise unable to remove the mask without assistance</li>
-                </ul></li>
-              <li className="sick-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> frequently with soap and water for at least 20 seconds. If soap and water are not available, use hand sanitizer containing at least 60% alcohol and rub your hands together until they are dry.</li>
-              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Try to stay 6 feet away</a> from the child, if possible and if safe.</li>
-              <li className="sick-li">Increase ventilation by opening a window in a room that you are in.</li>
-              <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Disinfect any items</a> that you need to bring to the child.</li>
-              <li className="sick-li">Do not disinfect food that you bring to the child.</li>
-              <li className="sick-li">Watch for symptoms.              
-               <ul>
-                <li className="sick-li-li">During this time caregivers should monitor themselves for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>.</li>
-                <li className="sick-li-li">Check the child’s temperature twice a day and watch for symptoms of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
-                <li className="sick-li-li">If the child develops symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
-                </ul></li>
-              <li className="sick-li">If possible, the child should stay away from people who are at higher-risk for getting very sick from COVID-19.</li>
-            </ul>
+              If a child needs to stay in the home with you (the parent or caregiver who is sick):
+                  <ul>
+                <li className="sick-li">Both you and the child should wear a mask while in the same room.</li>
+                <li className="sick-li">Note that masks should not be placed on:
+                    <ul>
+                    <li className="sick-li-li">Children younger than 2 years old</li>
+                    <li className="sick-li-li">Anyone who has trouble breathing or is unconscious</li>
+                    <li className="sick-li-li">Anyone who is incapacitated or otherwise unable to remove the mask without assistance</li>
+                  </ul></li>
+                <li className="sick-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> frequently with soap and water for at least 20 seconds. If soap and water are not available, use hand sanitizer containing at least 60% alcohol and rub your hands together until they are dry.</li>
+                <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Try to stay 6 feet away</a> from the child, if possible and if safe.</li>
+                <li className="sick-li">Increase ventilation by opening a window in a room that you are in.</li>
+                <li className="sick-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Disinfect any items</a> that you need to bring to the child.</li>
+                <li className="sick-li">Do not disinfect food that you bring to the child.</li>
+                <li className="sick-li">Watch for symptoms.
+                    <ul>
+                    <li className="sick-li-li">During this time caregivers should monitor themselves for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a>.</li>
+                    <li className="sick-li-li">Check the child’s temperature twice a day and watch for symptoms of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
+                    <li className="sick-li-li">If the child develops symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
+                  </ul></li>
+                <li className="sick-li">If possible, the child should stay away from people who are at higher-risk for getting very sick from COVID-19.</li>
+              </ul>
             </p>
 
             <br></br><p className="sick-subject">Children staying outside the home with a temporary caregiver</p>
             <p className="sick-p">
-            If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
-            <ul>
-              <li className="sick-li">The child should stay inside the caregiver’s home until 14 days after their last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the sick person.</li>
-              <li className="sick-li">Watch for symptoms.
-                <ul>
-                  <li className="sick-li-li">During this time the caregiver should monitor themselves for symptoms and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>.</li>
-                  <li className="sick-li-li">Check the child’s temperature twice a day and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
-                  <li className="sick-li-li">If the child does develop symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
-                </ul>
-              </li>
-              <li className="sick-li">
-              If possible, the child should stay away from people who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher-risk</a> for getting very sick from COVID-19.<br></br>
-The caregiver should then quarantine for 14 days after the last day the caregiver had contact with the sick child.<br></br>
+              If the child will stay outside of their own home with a temporary caregiver, the new caregiver should help the child to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">quarantine</a> and do the following:
+                  <ul>
+                <li className="sick-li">The child should stay inside the caregiver’s home until 14 days after their last <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact">close contact</a> with the sick person.</li>
+                <li className="sick-li">Watch for symptoms.
+                      <ul>
+                    <li className="sick-li-li">During this time the caregiver should monitor themselves for symptoms and practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a>.</li>
+                    <li className="sick-li-li">Check the child’s temperature twice a day and watch for <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19, such as fever, cough or shortness of breath, or <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#clinical-presentation">symptoms specific to children</a>.*</li>
+                    <li className="sick-li-li">If the child does develop symptoms, call the child’s healthcare provider for medical advice and follow the steps for <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">caring for someone who is sick</a>.</li>
+                  </ul>
+                </li>
+                <li className="sick-li">
+                  If possible, the child should stay away from people who are at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">higher-risk</a> for getting very sick from COVID-19.<br></br>
+      The caregiver should then quarantine for 14 days after the last day the caregiver had contact with the sick child.<br></br>
 
- 
 
-*COVID-19 <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> can look different in different people. For many people, being sick with COVID-19 would be a little bit like having the flu. People can get a fever, cough, or have a hard time taking deep breaths. Most people who have gotten COVID-19 have not gotten very sick. Only a small group of people who get it have had more serious problems. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">More information on children and COVID-19</a>.
-              </li>
-            </ul>
+
+      *COVID-19 <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> can look different in different people. For many people, being sick with COVID-19 would be a little bit like having the flu. People can get a fever, cough, or have a hard time taking deep breaths. Most people who have gotten COVID-19 have not gotten very sick. Only a small group of people who get it have had more serious problems. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">More information on children and COVID-19</a>.
+                    </li>
+              </ul>
             </p>
 
 
@@ -2948,56 +2948,56 @@ The caregiver should then quarantine for 14 days after the last day the caregive
 
             <br></br><p className="sick-subject">I think or know I had COVID-19, and I had symptoms</p>
             <p className="sick-p">You can be around others after:
-<ul>
-  <li className="sick-li">10 days since symptoms first appeared and</li>
-  <li className="sick-li">24 hours with no fever without the use of fever-reducing medications and</li>
-  <li className="sick-li">Other symptoms of COVID-19 are improving*</li>
-</ul>
+      <ul>
+                <li className="sick-li">10 days since symptoms first appeared and</li>
+                <li className="sick-li">24 hours with no fever without the use of fever-reducing medications and</li>
+                <li className="sick-li">Other symptoms of COVID-19 are improving*</li>
+              </ul>
 
-*Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation​<br></br>
+      *Loss of taste and smell may persist for weeks or months after recovery and need not delay the end of isolation​<br></br>
 
-Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
+      Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
 
-Note that these recommendations do not apply to persons with severe COVID-19 or with severely weakened immune systems (immunocompromised). These persons should follow the guidance below for “I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?”</p>
+      Note that these recommendations do not apply to persons with severe COVID-19 or with severely weakened immune systems (immunocompromised). These persons should follow the guidance below for “I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?”</p>
 
-<br></br><p className="sick-subject">I tested positive for COVID-19 but had no symptoms</p>
+            <br></br><p className="sick-subject">I tested positive for COVID-19 but had no symptoms</p>
             <p className="sick-p">If you continue to have no symptoms, you can be with others after 10 days have passed since you had a positive viral test for COVID-19. Most people do not require testing to decide when they can be around others; however, if your healthcare provider recommends testing, they will let you know when you can resume being around others based on your test results.<br></br>
 
-If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID-19, and I had symptoms.”</p>
+      If you develop symptoms after testing positive, follow the guidance above for “I think or know I had COVID-19, and I had symptoms.”</p>
 
-<br></br><p className="sick-subject">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
+            <br></br><p className="sick-subject">I was severely ill with COVID-19 or have a severely weakened immune system (immunocompromised) due to a health condition or medication. When can I be around others?</p>
             <p className="sick-p">People who are severely ill with COVID-19 might need to stay home longer than 10 days and up to 20 days after symptoms first appeared. <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">Persons who are severely immunocompromised</a> may require testing to determine when they can be around others. Talk to your healthcare provider for more information. If testing is available in your community, it may be recommended by your healthcare provider. Your healthcare provider will let you know if you can resume being around other people based on the results of your testing.<br></br>
 
-Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert or your local health department</a> to determine whether testing will be necessary before you can be around others.</p>
+      Your doctor may work with <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/index.html">an infectious disease expert or your local health department</a> to determine whether testing will be necessary before you can be around others.</p>
 
-<br></br><p className="sick-subject">For Anyone Who Has Been Around a Person with COVID-19</p>
+            <br></br><p className="sick-subject">For Anyone Who Has Been Around a Person with COVID-19</p>
             <p className="sick-p">Anyone who has had close contact with someone with COVID-19 should stay home for 14 days <b>after their last exposure</b> to that person.<br></br>
 
-However, anyone who has had close contact with someone with COVID-19 and who meets the following criteria does <b>NOT</b> need to stay home.
-<ul>
-  <li className="sick-li">Has COVID-19 illness within the previous 3 months and</li>
-  <li className="sick-li">Has recovered and</li>
-  <li className="sick-li">Remains without COVID-19 symptoms (for example, cough, shortness of breath)</li>
-</ul></p>
+      However, anyone who has had close contact with someone with COVID-19 and who meets the following criteria does <b>NOT</b> need to stay home.
+      <ul>
+                <li className="sick-li">Has COVID-19 illness within the previous 3 months and</li>
+                <li className="sick-li">Has recovered and</li>
+                <li className="sick-li">Remains without COVID-19 symptoms (for example, cough, shortness of breath)</li>
+              </ul></p>
 
-<br></br><p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
+            <br></br><p className="sick-subject">Confirmed and suspected cases of reinfection of the virus that causes COVID-19</p>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/reinfection.html">Cases of reinfection</a> of COVID-19 have been reported but are rare. In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected
-            </p>
+                  </p>
 
             <br></br><p className="sick-subject">For Healthcare Professionals</p>
             <p className="sick-p">If you are a healthcare professional who thinks or knows you had COVID-19, you should follow the same recommendations listed above for when you can resume being around others outside the workplace. When you can return to work depends on different factors and situations. For information on when you can return to work, see the following:<br></br>
 
-<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/return-to-work.html">Criteria for Return to Work for Healthcare Personnel with SARS-CoV-2 Infection (Interim Guidance)</a></p>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/return-to-work.html">Criteria for Return to Work for Healthcare Personnel with SARS-CoV-2 Infection (Interim Guidance)</a></p>
 
-<br></br><p className="sick-subject">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
+            <br></br><p className="sick-subject">I Think or Know I had COVID-19, and I had Symptoms. When can I be Around Others?</p>
             <p className="sick-p">If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
-            <iframe className="iframe" src="https://www.youtube.com/embed/HNgDirLLZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe className="iframe" src="https://www.youtube.com/embed/HNgDirLLZm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
             <br></br><p className="sick-subject">I Had COVID-19, But No Symptoms. When Can I Be with Others?</p>
             <p className="sick-p">
-            If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
-            <iframe className="iframe" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              If you have or think you might have COVID-19, it is important to stay home and away from others. When you can be around others depends on different factors for different situations.<br></br>
+              <iframe className="iframe" src="https://www.youtube.com/embed/tpsOw7kkJSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
 
@@ -3021,7 +3021,7 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
               <li className="sick-li">Consider getting tested.</li>
               <li className="sick-li">Monitor your symptoms.</li>
               <li className="sick-li">If you show an <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">emergency warning sign</a>, seek emergency medical care immediately. Call 911 or call ahead to your local emergency facility. Emergency warning signs include:
-                <ul>
+                      <ul>
                   <li className="sick-li-li">Trouble breathing</li>
                   <li className="sick-li-li">Persistent pain or pressure in the chest</li>
                   <li className="sick-li-li">New confusion</li>
@@ -3034,57 +3034,57 @@ However, anyone who has had close contact with someone with COVID-19 and who mee
 
             <br></br><p className="sick-subject">Any treatments that are used for COVID-19 should be taken under the care of a healthcare provider.</p>
             <p className="sick-p">
-            People have been <a href="https://emergency.cdc.gov/han/2020/han00431.asp">seriously harmed and even died</a> after taking unapproved products to self-treat.<br></br>
+              People have been <a href="https://emergency.cdc.gov/han/2020/han00431.asp">seriously harmed and even died</a> after taking unapproved products to self-treat.<br></br>
 
-The National Institutes of Health (NIH) has developed and regularly updates <a href="https://www.covid19treatmentguidelines.nih.gov/introduction/">Treatment Guidelines</a> to help guide healthcare providers caring for patients with COVID-19, including when clinicians might consider using one of the products under an EUA. Currently, there are several approaches for treating patients with severe COVID-19 who are being cared for in the hospital. In studies, some drugs have shown some benefit in reducing the severity of illness or risk of death by:
-<ul>
-  <li className="sick-li"><i>Slowing the virus</i>. Antiviral medications reduce the ability of the virus to multiply and spread through the body.
-  <ul>
-    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a620033.html">Remdesivir</a> (Veklury) is an antiviral medication approved by the FDA to treat COVID-19, that is recommended in the current <a href="https://www.covid19treatmentguidelines.nih.gov/antiviral-therapy/remdesivir/">NIH Treatment Guidelines</a> for certain patients who are hospitalized with COVID-19. Remdesivir is given to patients by infusion through their veins.</li>
-  </ul>
-  </li>
-  <li className="sick-li"><i>Reducing an overactive immune response</i>. In patients with severe COVID-19, the body’s immune system may overreact to the threat of the virus, worsening the disease. This can cause damage to the body’s organs and tissues. Some treatments can help reduce this overactive immune response.
-  <ul>
-    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a682792.html">Dexamethasone</a> is a steroid medication, similar to a natural hormone produced by the body. The <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/corticosteroids/">NIH Treatment Guidelines</a> recommend dexamethasone, or a similar medication, to prevent or reduce injury to the body for some hospitalized patients with severe COVID-19. Dexamethasone is recommended for patients who need supplemental oxygen.</li>
-    </ul></li>
-  <li className="sick-li"><i>Treating complications</i>. The virus that causes COVID-19 can damage the heart, blood vessels, kidneys, brain, skin, eyes, and gastrointestinal organs. It also can cause other complications. Depending on the complications, additional treatments might be used for severely ill hospitalized patients, such as blood thinners to prevent or treat blood clots.</li>
-  <li className="sick-li"><i>Supporting the body’s immune function</i>. Antibodies from patients who have recovered from COVID-19 (convalescent plasma) or antibodies manufactured to treat COVID-19 (like monoclonal antibodies) can attach to parts of the virus. This could help the immune system recognize and respond more effectively to the virus, but currently the <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/">NIH Treatment Guidelines</a> find there is not enough evidence to recommend these treatments.
-</li>
-  <li className="sick-li"><i>Relieving symptoms and supporting the body’s natural defenses.</i>
-  <ul>
-    <li className="sick-li-li">Taking medications, like acetaminophen or ibuprofen, can reduce fever.</li>
-    <li className="sick-li-li">Drinking water or receiving intravenous fluids can help patients stay hydrated.</li>
-    <li className="sick-li-li">Getting plenty of rest can help the body fight the virus.</li>
-    </ul></li>
-</ul>
+      The National Institutes of Health (NIH) has developed and regularly updates <a href="https://www.covid19treatmentguidelines.nih.gov/introduction/">Treatment Guidelines</a> to help guide healthcare providers caring for patients with COVID-19, including when clinicians might consider using one of the products under an EUA. Currently, there are several approaches for treating patients with severe COVID-19 who are being cared for in the hospital. In studies, some drugs have shown some benefit in reducing the severity of illness or risk of death by:
+      <ul>
+                <li className="sick-li"><i>Slowing the virus</i>. Antiviral medications reduce the ability of the virus to multiply and spread through the body.
+        <ul>
+                    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a620033.html">Remdesivir</a> (Veklury) is an antiviral medication approved by the FDA to treat COVID-19, that is recommended in the current <a href="https://www.covid19treatmentguidelines.nih.gov/antiviral-therapy/remdesivir/">NIH Treatment Guidelines</a> for certain patients who are hospitalized with COVID-19. Remdesivir is given to patients by infusion through their veins.</li>
+                  </ul>
+                </li>
+                <li className="sick-li"><i>Reducing an overactive immune response</i>. In patients with severe COVID-19, the body’s immune system may overreact to the threat of the virus, worsening the disease. This can cause damage to the body’s organs and tissues. Some treatments can help reduce this overactive immune response.
+        <ul>
+                    <li className="sick-li-li"><a href="https://medlineplus.gov/druginfo/meds/a682792.html">Dexamethasone</a> is a steroid medication, similar to a natural hormone produced by the body. The <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/corticosteroids/">NIH Treatment Guidelines</a> recommend dexamethasone, or a similar medication, to prevent or reduce injury to the body for some hospitalized patients with severe COVID-19. Dexamethasone is recommended for patients who need supplemental oxygen.</li>
+                  </ul></li>
+                <li className="sick-li"><i>Treating complications</i>. The virus that causes COVID-19 can damage the heart, blood vessels, kidneys, brain, skin, eyes, and gastrointestinal organs. It also can cause other complications. Depending on the complications, additional treatments might be used for severely ill hospitalized patients, such as blood thinners to prevent or treat blood clots.</li>
+                <li className="sick-li"><i>Supporting the body’s immune function</i>. Antibodies from patients who have recovered from COVID-19 (convalescent plasma) or antibodies manufactured to treat COVID-19 (like monoclonal antibodies) can attach to parts of the virus. This could help the immune system recognize and respond more effectively to the virus, but currently the <a href="https://www.covid19treatmentguidelines.nih.gov/immune-based-therapy/immunomodulators/">NIH Treatment Guidelines</a> find there is not enough evidence to recommend these treatments.
+      </li>
+                <li className="sick-li"><i>Relieving symptoms and supporting the body’s natural defenses.</i>
+                  <ul>
+                    <li className="sick-li-li">Taking medications, like acetaminophen or ibuprofen, can reduce fever.</li>
+                    <li className="sick-li-li">Drinking water or receiving intravenous fluids can help patients stay hydrated.</li>
+                    <li className="sick-li-li">Getting plenty of rest can help the body fight the virus.</li>
+                  </ul></li>
+              </ul>
 
-Other products are being studied as potential treatments for COVID-19. Information about these ongoing studies can be found at <a href="https://clinicaltrials.gov/ct2/results?recrs=ab&cond=covid-19&term=&cntry=US&state=&city=&dist=">ClinicalTrials.gov</a>
+      Other products are being studied as potential treatments for COVID-19. Information about these ongoing studies can be found at <a href="https://clinicaltrials.gov/ct2/results?recrs=ab&cond=covid-19&term=&cntry=US&state=&city=&dist=">ClinicalTrials.gov</a>
             </p>
 
 
             <br></br><p className="sick-subject-header">Reinfection</p><br></br>
             <p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
             <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
-            <ul>
-              <li className="sick-li">How likely is reinfection</li>
-              <li className="sick-li">How often reinfection occurs</li>
-              <li className="sick-li">How soon after the first infection can reinfection take place</li>
-              <li className="sick-li">How severe are cases of reinfection</li>
-              <li className="sick-li">Who might be at higher risk for reinfection</li>
-              <li className="sick-li">What reinfection means for a person’s immunity</li>
-              <li className="sick-li">If a person is able to spread COVID-19 to other people when reinfected</li>
+                  <ul>
+                <li className="sick-li">How likely is reinfection</li>
+                <li className="sick-li">How often reinfection occurs</li>
+                <li className="sick-li">How soon after the first infection can reinfection take place</li>
+                <li className="sick-li">How severe are cases of reinfection</li>
+                <li className="sick-li">Who might be at higher risk for reinfection</li>
+                <li className="sick-li">What reinfection means for a person’s immunity</li>
+                <li className="sick-li">If a person is able to spread COVID-19 to other people when reinfected</li>
               </ul></p>
 
-              <br></br> <p className="sick-subject">What CDC is doing</p>
+            <br></br> <p className="sick-subject">What CDC is doing</p>
             <p className="sick-p">CDC is actively working to learn more about reinfection to inform public health action. CDC developed recommendations for public health professionals to help decide when and how to test someone for suspected reinfection. CDC has also provided information for state and local health departments to help investigate suspected cases of reinfection. We will update this guidance as we learn more about reinfection.</p>
 
             <br></br><p className="sick-subject">Prevention</p>
             <p className="sick-p">At this time, whether you have had COVID-19 or not, the best way to prevent infection is to take steps to protect yourself:
-            <ul>
-              <li className="sick-li">Wear a mask in public places</li>
-              <li className="sick-li">Stay at least 6 feet away from other people</li>
-              <li className="sick-li">Wash your hands</li>
-              <li className="sick-li">Avoid crowds and confined spaces</li>
+                  <ul>
+                <li className="sick-li">Wear a mask in public places</li>
+                <li className="sick-li">Stay at least 6 feet away from other people</li>
+                <li className="sick-li">Wash your hands</li>
+                <li className="sick-li">Avoid crowds and confined spaces</li>
               </ul></p>
 
 
@@ -3092,75 +3092,75 @@ Other products are being studied as potential treatments for COVID-19. Informati
 
             <br></br><p className="sick-subject-header">Long-Term Effects</p><br></br>
             <p className="sick-p">
-            CDC is actively working to learn more about the whole range of short- and long-term health effects associated with COVID-19. As the pandemic unfolds, we are learning that many organs besides the lungs are affected by COVID-19 and there are many ways the infection can affect someone’s health.<br></br>
+              CDC is actively working to learn more about the whole range of short- and long-term health effects associated with COVID-19. As the pandemic unfolds, we are learning that many organs besides the lungs are affected by COVID-19 and there are many ways the infection can affect someone’s health.<br></br>
 
-While most persons with COVID-19 recover and return to normal health, some patients can have symptoms that can last for weeks or even months after recovery from acute illness. Even people who are not hospitalized and who have mild illness can experience persistent or late symptoms. Multi-year studies are underway to further investigate. CDC continues to work to identify how common these symptoms are, who is most likely to get them, and whether these symptoms eventually resolve.<br></br>
+      While most persons with COVID-19 recover and return to normal health, some patients can have symptoms that can last for weeks or even months after recovery from acute illness. Even people who are not hospitalized and who have mild illness can experience persistent or late symptoms. Multi-year studies are underway to further investigate. CDC continues to work to identify how common these symptoms are, who is most likely to get them, and whether these symptoms eventually resolve.<br></br>
 
-The most commonly reported long-term symptoms include:
-<ul>
-  <li className="sick-li">Fatigue</li>
-  <li className="sick-li">Shortness of breath</li>
-  <li className="sick-li">Cough</li>
-  <li className="sick-li">Joint pain</li>
-  <li className="sick-li">Chest pain</li>
-</ul>
+      The most commonly reported long-term symptoms include:
+      <ul>
+                <li className="sick-li">Fatigue</li>
+                <li className="sick-li">Shortness of breath</li>
+                <li className="sick-li">Cough</li>
+                <li className="sick-li">Joint pain</li>
+                <li className="sick-li">Chest pain</li>
+              </ul>
 
-Other reported long-term symptoms include:
-<ul>
-  <li className="sick-li">Difficulty with thinking and concentration (sometimes referred to as “brain fog”)</li>
-  <li className="sick-li">Depression</li>
-  <li className="sick-li">Muscle pain</li>
-  <li className="sick-li">Headache</li>
-  <li className="sick-li">Intermittent fever</li>
-  <li className="sick-li">Fast-beating or pounding heart (also known as heart palpitations)</li>
-</ul>
-
-
-More serious long-term complications appear to be less common but have been reported. These have been noted to affect different organ systems in the body. These include:
-<ul>
-  <li className="sick-li">Cardiovascular: inflammation of the heart muscle</li>
-  <li className="sick-li">Respiratory: lung function abnormalities</li>
-  <li className="sick-li">Renal: acute kidney injury</li>
-  <li className="sick-li">Dermatologic: rash, hair loss</li>
-  <li className="sick-li">Neurological: smell and taste problems, sleep issues, difficulty with concentration, memory problems</li>
-  <li className="sick-li">Psychiatric: depression, anxiety, changes in mood</li>
-</ul>
+      Other reported long-term symptoms include:
+      <ul>
+                <li className="sick-li">Difficulty with thinking and concentration (sometimes referred to as “brain fog”)</li>
+                <li className="sick-li">Depression</li>
+                <li className="sick-li">Muscle pain</li>
+                <li className="sick-li">Headache</li>
+                <li className="sick-li">Intermittent fever</li>
+                <li className="sick-li">Fast-beating or pounding heart (also known as heart palpitations)</li>
+              </ul>
 
 
-The long-term significance of these effects is not yet known. CDC will continue active investigation and provide updates as new data emerge, which can inform COVID-19 clinical care as well as the public health response to COVID-19.
-            </p>
+      More serious long-term complications appear to be less common but have been reported. These have been noted to affect different organ systems in the body. These include:
+      <ul>
+                <li className="sick-li">Cardiovascular: inflammation of the heart muscle</li>
+                <li className="sick-li">Respiratory: lung function abnormalities</li>
+                <li className="sick-li">Renal: acute kidney injury</li>
+                <li className="sick-li">Dermatologic: rash, hair loss</li>
+                <li className="sick-li">Neurological: smell and taste problems, sleep issues, difficulty with concentration, memory problems</li>
+                <li className="sick-li">Psychiatric: depression, anxiety, changes in mood</li>
+              </ul>
+
+
+      The long-term significance of these effects is not yet known. CDC will continue active investigation and provide updates as new data emerge, which can inform COVID-19 clinical care as well as the public health response to COVID-19.
+                  </p>
 
             <br></br><p className="sick-subject">Preventing COVID-19</p>
-          <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
+            <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
             <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p><br></br>
             <p className="sick-subject">What we know about MIS-A</p>
             <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
 
-Like children, adults who have been infected with the virus that causes COVID-19 can develop symptoms of MIS-A days to weeks after getting sick. MIS-A is a condition where problems can occur in different parts of the body like the heart, gastrointestinal tract, skin, or brain. Adults with MIS-A may have various signs and symptoms including:
-<ul>
-  <li className="sick-li">Fever</li>
-  <li className="sick-li">Low blood pressure</li>
-  <li className="sick-li">Abdominal (gut) pain</li>
-  <li className="sick-li">Vomiting</li>
-  <li className="sick-li">Diarrhea</li>
-  <li className="sick-li">Neck pain</li>
-  <li className="sick-li">Rash</li>
-  <li className="sick-li">Chest tightness/pain</li>
-  <li className="sick-li">Feeling very tired</li>
-</ul>
-MIS-A can be very serious, so it is important to seek medical care as soon as possible.
-</p>
+      Like children, adults who have been infected with the virus that causes COVID-19 can develop symptoms of MIS-A days to weeks after getting sick. MIS-A is a condition where problems can occur in different parts of the body like the heart, gastrointestinal tract, skin, or brain. Adults with MIS-A may have various signs and symptoms including:
+      <ul>
+                <li className="sick-li">Fever</li>
+                <li className="sick-li">Low blood pressure</li>
+                <li className="sick-li">Abdominal (gut) pain</li>
+                <li className="sick-li">Vomiting</li>
+                <li className="sick-li">Diarrhea</li>
+                <li className="sick-li">Neck pain</li>
+                <li className="sick-li">Rash</li>
+                <li className="sick-li">Chest tightness/pain</li>
+                <li className="sick-li">Feeling very tired</li>
+              </ul>
+      MIS-A can be very serious, so it is important to seek medical care as soon as possible.
+      </p>
 
-<br></br><p className="sick-subject">What we don’t know about MIS-A</p>
+            <br></br><p className="sick-subject">What we don’t know about MIS-A</p>
             <p className="sick-p">CDC is still learning about MIS-A and how it affects adults, so we do not know why some adults have gotten sick with MIS-A and others have not. We also do not know if adults with certain health conditions are more likely to develop MIS-A. These are among the many questions CDC is working to understand.</p>
 
             <br></br><p className="sick-subject">What CDC is doing about MIS-A</p>
             <p className="sick-p">CDC is working with state, local, and territorial health departments; U.S. and international scientists; healthcare providers; and other partners to learn more about MIS-A. Through these partnerships, we are learning about how to recognize MIS-A in adults, how often it happens, and who is likely to get MIS-A.<br></br>
 
-All CDC recommendations are based on the best data and science available at the time, and we will update them as we learn more.</p>
+      All CDC recommendations are based on the best data and science available at the time, and we will update them as we learn more.</p>
 
-<br></br><p className="sick-subject">How to protect yourself from MIS-A</p>
+            <br></br><p className="sick-subject">How to protect yourself from MIS-A</p>
             <p className="sick-p">Based on what we know now about MIS-A, the best way you can <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself is by taking everyday actions to protect yourself from getting the virus that causes COVID-19</a>.</p>
 
           </Alert>
@@ -3168,8 +3168,8 @@ All CDC recommendations are based on the best data and science available at the 
 
         </div>
         <p>Sources:
-        <a target="_blank" href="https://coronavirusapi.com" > https://coronavirusapi.com</a> |
-        <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov" > https://www.cdc.gov/coronavirus/2019-ncov</a>
+              <a target="_blank" href="https://coronavirusapi.com" > https://coronavirusapi.com</a> |
+              <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov" > https://www.cdc.gov/coronavirus/2019-ncov</a>
         </p>
 
         <br></br>
