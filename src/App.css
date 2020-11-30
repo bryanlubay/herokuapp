@@ -43,10 +43,14 @@
 }
 /* START Prevent Getting Sick */
 
-.prevent-header {
-  font-size: calc(10px + 2vw);
-  font-weight: bold;
+.prevent-subject-header {
+  font-weight: bolder;
+  font-size: calc(10px + 2.5vw);
+}
 
+.prevent-subject {
+  font-size: calc(10px + 1.5vw);
+  font-weight: bold;
 }
 
 .prevent-li {
@@ -55,9 +59,35 @@
 }
 
 .prevent-li-li {
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(10px + .5vw);
   text-align: left;
 }
+
+.prevent-p {
+  font-size: calc(10px + 1vw);
+}
+
+.prevent-image {
+  height: 75%;
+  width: 75%;
+}
+
+.prevent-big-image {
+  height: 25%;
+  width: 25%;
+}
+
+.prevent-big-image1 {
+  height: 25%;
+  width: 25%;
+  margin-bottom: 164px;
+}
+
+.prevent-big-image2 {
+  height: 50%;
+  width: 50%;
+}
+
 
 /* END Prevent Getting Sick */
 
