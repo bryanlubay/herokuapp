@@ -355,10 +355,18 @@
 
 }
 
-.iframe {
+.iframe2 {
   display: -webkit-box;
   margin: auto;
   width: inherit;
+  border: none;
+}
+
+.iframe2 {
+  display: -webkit-box;
+  margin: auto;
+  width: inherit;
+  height: -webkit-fill-available;
   border: none;
 }
 
