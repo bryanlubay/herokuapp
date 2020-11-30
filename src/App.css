@@ -327,9 +327,9 @@
 
 .iframe {
   display: -webkit-box;
-  height: auto;
+  height: -webkit-fill-available;
   margin: auto;
-  width: auto;
+  width: inherit;
   border: none;
 }
 
