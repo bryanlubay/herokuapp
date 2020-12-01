@@ -404,7 +404,7 @@ function App() {
             <ul>
               <li className="prevent-li">COVID-19 spreads easily from person to person, mainly by the following routes:
                 <ul>
-                  <li className="prevent-li-li"></li>Between people who are in close contact with one another (within 6 feet).
+                  <li className="prevent-li-li">Between people who are in close contact with one another (within 6 feet).</li>
                   <li className="prevent-li-li">Through respiratory droplets produced when an infected person coughs, sneezes, breathes, sings or talks.
                     <ul>
                       <li className="prevent-li-li-li">Respiratory droplets cause infection when they are inhaled or deposited on mucous membranes, such as those that line the inside of the nose and mouth.</li>
