@@ -504,8 +504,8 @@ function App() {
             </ul>
 
 
-            <br></br><p className="prevent-subject-header">Hand Sanitizer</p><br></br>
-            <a href="#prevent-top">Return to Top</a>
+            <br></br><p className="prevent-subject-header">Hand Sanitizer</p><a href="#prevent-top">Return to Top</a>
+<br></br>
 
             <p className="prevent-p">To prevent the spread of germs, including COVID-19, CDC recommends washing hands with soap and water whenever possible because it reduces the amount of many types of germs and chemicals on hands. But if soap and water are not readily available, using a hand sanitizer with at least 60% alcohol can help you avoid getting sick and spreading germs to others.</p>
             <br></br><p className="prevent-subject">Overview</p>
