@@ -375,7 +375,29 @@ function App() {
 
           {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading>
+            <Alert.Heading className="card-top-heading"><a id="prevent-top">Prevent Getting Sick</a></Alert.Heading>
+
+
+            <Table className="table">
+                {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
+                <tbody>
+                  <tr >
+                    <a href="#Water"><td className="tdleft" >Water</td></a>
+
+                    <a href="#Spread"><td className="tdright" >Spread</td></a>
+                  </tr>
+                  <tr className="table-row">
+                    <a href="#Basics"><td className="tdleft" >Basics</td></a>
+                    <a href="#Testing"><td className="tdright">Testing</td></a>
+
+
+
+                  </tr>
+
+                </tbody>
+              </Table><br></br>
+
+
 
             <p className="prevent-subject-header">Protect Yourself</p><br></br>
             <p className="prevent-subject">Know how it spreads</p>
@@ -483,6 +505,7 @@ function App() {
 
 
             <br></br><p className="prevent-subject-header">Hand Sanitizer</p><br></br>
+            <a href="#prevent-top">Return to Top</a>
 
             <p className="prevent-p">To prevent the spread of germs, including COVID-19, CDC recommends washing hands with soap and water whenever possible because it reduces the amount of many types of germs and chemicals on hands. But if soap and water are not readily available, using a hand sanitizer with at least 60% alcohol can help you avoid getting sick and spreading germs to others.</p>
             <br></br><p className="prevent-subject">Overview</p>
@@ -2524,27 +2547,9 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START MASKS */}
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Masks</Alert.Heading>
+            <Alert.Heading className="card-top-heading"><a id="masks-top">Masks</a></Alert.Heading>
 
 
-            <Table className="table">
-                {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
-                <tbody>
-                  <tr >
-                    <a href="#Water"><td className="tdleft" >Water</td></a>
-
-                    <a href="#Spread"><td className="tdright" >Spread</td></a>
-                  </tr>
-                  <tr className="table-row">
-                    <a href="#Basics"><td className="tdleft" >Basics</td></a>
-                    <a href="#Testing"><td className="tdright">Testing</td></a>
-
-
-
-                  </tr>
-
-                </tbody>
-              </Table><br></br>
 
 
 
@@ -2907,7 +2912,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading>
+            <Alert.Heading className="card-top-heading"><a id="symptoms-top">Symptoms</a></Alert.Heading>
             <iframe id="frame" border="1px solid black" className="self-checker" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
               <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white' data-cdc-language='en-us'></div>
@@ -2969,7 +2974,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br>
+            <Alert.Heading className="card-top-heading"><a id="sick-top"></a>If You Are Sick</Alert.Heading><br></br><br></br>
 
             <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
             <br></br><p className="sick-subject">Stay home except to get medical care</p>
