@@ -378,6 +378,14 @@
   border: none;
 }
 
+.iframe3{
+  display: -webkit-box;
+  margin: auto;
+  width: auto;
+  border: none;
+
+}
+
 .self-checker {
   display: -webkit-box;
   height: 600px;
