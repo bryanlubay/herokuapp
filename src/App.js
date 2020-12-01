@@ -2144,7 +2144,7 @@ function App() {
             <p className="masks-subject">Store masks that are not wet or dirty in a paper bag</p>
 
             <Image className="masks-big-image" src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/mask-storage.png"></Image>
-            <p className="masks-p">You can store your mask temporarily to reuse later. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">Remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a> after touching a used mask. Keep it in a dry, breathable bag (like a paper or mesh fabric bag) to keep it clean between uses. When reusing your mask, keep the same side facing out.<br></br>
+            <p className="masks-p">You can store your mask temporarily to reuse later. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">Remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a> after touching a used mask. Keep it in a dry, breathable bag (like a paper or mesh fabric bag) to keep it clean between uses. When reusing your mask, keep the same side facing out.<br></br><br></br>
               If you are taking off your mask to eat or drink outside of your home, you can place it somewhere safe to keep it clean, such as your pocket, purse, or paper bag. Make sure to wash or sanitize your hands after removing your mask. After eating, put the mask back on with the same side facing out. Be sure to wash or sanitize your hands again after putting your mask back on.</p>
 
             <p className="masks-subject">Wash your mask</p>
@@ -2218,7 +2218,7 @@ function App() {
 
             </ul>
             <p className="masks-subject">Sewn Mask</p><br></br>
-            <p className="masks-p">Materials</p><br></br>
+            <p className="masks-p"><b>Materials</b></p><br></br>
             <Image src="https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/facemask-instructions-sewn-01.png"></Image>
             <ul>
               <li className="masks-li">Two 10”x6” rectangles of cotton fabric</li>
@@ -2267,7 +2267,7 @@ function App() {
               <li className="masks-li">includes multiple layers of fabric</li>
               <li className="masks-li">allows for breathing without restriction</li>
               <li className="masks-li">can be laundered and machine dried without damage or change to shape</li>
-            </ul><br></br>
+            </ul>
 
             See more about how to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">wear</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html"> your mask</a>.
 
@@ -2314,7 +2314,7 @@ function App() {
               <li className="masks-li">Anyone who is unconscious, incapacitated, or otherwise unable to remove the mask without assistance</li>
             </ul><br></br>
             <b>Feasibility and Adaptations</b><br></br>
-              CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br>
+              CDC recognizes that wearing masks may not be possible in every situation or for some people. In some situations, wearing a mask may exacerbate a physical or mental health condition, lead to a medical emergency, or introduce significant safety concerns. Adaptations and alternatives should be considered whenever possible to increase the feasibility of wearing a mask or to reduce the risk of COVID-19 spreading if it is not possible to wear one.<br></br><br></br>
             <b>For example:</b>
             <ul>
               <li className="masks-li">People who are deaf or hard of hearing—or those who care for or interact with a person who is hearing impaired—may be unable to wear masks if they rely on lipreading to communicate. In this situation, consider using a clear mask. If a clear mask isn’t available, consider whether you can use written communication, use closed captioning, or decrease background noise to make communication possible while wearing a mask that blocks your lips.</li>
@@ -2350,7 +2350,7 @@ function App() {
             <br></br><b>Surgical Masks </b><br></br>
               Masks are not surgical masks or respirators. Currently, those are critical supplies that should continue to be reserved for healthcare workers and other medical first responders, as recommended by current CDC guidance. Masks also are not appropriate substitutes for them in workplaces where surgical masks or respirators are recommended or required and available. <br></br><br></br>
 
-            <p className="masks-subject">Recent Studies:</p><br></br>
+            <p className="masks-subject">Recent Studies:</p>
             <ul>
 
               <li className="masks-li">Rothe C, Schunk M, Sothmann P, et al. Transmission of 2019-nCoV Infection from an Asymptomatic Contact in Germany. The New England journal of medicine. 2020;382(10):970-971. <a href="https://pubmed.ncbi.nlm.nih.gov/32003551/">PMID 32003551</a></li>
