@@ -375,7 +375,7 @@ function App() {
 
           {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
-            {/* <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading> */}
+            <Alert.Heading className="card-top-heading">Prevent Getting Sick</Alert.Heading>
 
             <p className="prevent-subject-header">Protect Yourself</p><br></br>
             <p className="prevent-subject">Know how it spreads</p>
@@ -393,13 +393,13 @@ function App() {
               <li className="prevent-li">People who are infected but do not have symptoms can also spread the virus to others.</li>
             </ul>
 
-            <br></br><p className="prevent-subject">Less common ways COVID-19 can spread</p><br></br>
+            <br></br><p className="prevent-subject">Less common ways COVID-19 can spread</p>
             <ul>
               <li className="prevent-li">Under certain circumstances (for example, when people are in enclosed spaces with poor ventilation), COVID-19 can sometimes be spread by <a href="airborne transmission">airborne transmission</a>.</li>
               <li className="prevent-li">COVID-19 spreads less commonly through contact with contaminated surfaces.</li>
             </ul>
 
-            <br></br><p className="prevent-subject">Wash your hands often</p><br></br>
+            <br></br><p className="prevent-subject">Wash your hands often</p>
             <ul>
               <li className="prevent-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
               <li className="prevent-li">It’s especially important to wash:
@@ -989,7 +989,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START FREQUENTLY ASKED QUESTIONS */}
           <Alert className="alert" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
-            {/* <Alert.Heading className="card-top-heading">Frequently Asked Questions</Alert.Heading> */}
+            <Alert.Heading className="card-top-heading">Frequently Asked Questions</Alert.Heading>
             <p>
 
 
@@ -2524,7 +2524,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START MASKS */}
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
-            {/* <Alert.Heading className="card-top-heading">Masks</Alert.Heading> */}
+            <Alert.Heading className="card-top-heading">Masks</Alert.Heading>
 
 
 
@@ -2888,7 +2888,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START SYMPTOMS */}
           <Alert className="alert" id="symptoms" variant="warning" onClose={() => hide_symptoms()} dismissible hidden="true">
-            {/* <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading> */}
+            <Alert.Heading className="card-top-heading">Symptoms</Alert.Heading>
             <iframe id="frame" border="1px solid black" className="self-checker" frameborder="1" src="https://tools.cdc.gov/medialibrary/app/detail_widget/options_templates/template_405848_preview.html?class=cdc-widget-color-white&theme=theme1&language=en">
 
               <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white' data-cdc-language='en-us'></div>
@@ -2950,7 +2950,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            {/* <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br> */}
+            <Alert.Heading className="card-top-heading">If You Are Sick</Alert.Heading><br></br><br></br>
 
             <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
             <br></br><p className="sick-subject">Stay home except to get medical care</p>
