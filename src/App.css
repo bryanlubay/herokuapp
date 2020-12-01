@@ -63,6 +63,14 @@
   text-align: left;
 }
 
+.prevent-li-li-li {
+  .prevent-li-li {
+    font-size: calc(10px + .25vw);
+    text-align: left;
+  }
+  
+}
+
 .prevent-p {
   font-size: calc(10px + 1vw);
 }

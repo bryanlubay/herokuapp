@@ -2022,6 +2022,155 @@ function App() {
           {/* START MASKS */}
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             {/* <Alert.Heading className="card-top-heading">Masks</Alert.Heading> */}
+
+
+            <p className="prevent-subject-header">Protect Yourself</p><br></br>
+            <p className="prevent-subject">Know how it spreads</p><br></br>
+            <ul>
+              <li className="prevent-li">COVID-19 spreads easily from person to person, mainly by the following routes:
+                <ul>
+                  <li className="prevent-li-li"></li>Between people who are in close contact with one another (within 6 feet).
+                  <li className="prevent-li-li">Through respiratory droplets produced when an infected person coughs, sneezes, breathes, sings or talks.
+                    <ul>
+                      <li className="prevent-li-li-li">Respiratory droplets cause infection when they are inhaled or deposited on mucous membranes, such as those that line the inside of the nose and mouth.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li className="prevent-li">People who are infected but do not have symptoms can also spread the virus to others.</li>
+            </ul>
+
+            <p className="prevent-subject">Less common ways COVID-19 can spread</p><br></br>
+            <ul>
+              <li className="prevent-li">Under certain circumstances (for example, when people are in enclosed spaces with poor ventilation), COVID-19 can sometimes be spread by <a href="airborne transmission">airborne transmission</a>.</li>
+              <li className="prevent-li">COVID-19 spreads less commonly through contact with contaminated surfaces.</li>
+            </ul>
+
+            <p className="prevent-subject">Wash your hands often</p><br></br>
+            <ul>
+              <li className="prevent-li"><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+              <li className="prevent-li">It’s especially important to wash:
+                <ul>
+                  <li className="prevent-li-li">Before eating or preparing food</li>
+                  <li className="prevent-li-li">Before touching your face</li>
+                  <li className="prevent-li-li">After using the restroom</li>
+                  <li className="prevent-li-li">After leaving a public place</li>
+                  <li className="prevent-li-li">After blowing your nose, coughing, or sneezing</li>
+                  <li className="prevent-li-li">After handling your mask</li>
+                  <li className="prevent-li-li">After changing a diaper</li>
+                  <li className="prevent-li-li">After caring for someone sick</li>
+                  <li className="prevent-li-li">After touching animals or pets</li>
+                </ul>
+              </li>
+              <li className="prevent-li">If soap and water are not readily available, <b>use a hand sanitizer that contains at least 60% alcohol.</b> Cover all surfaces of your hands and rub them together until they feel dry.</li>
+              <li className="prevent-li"><b>Avoid touching your eyes, nose, and mouth</b> with unwashed hands.</li>
+            </ul>
+
+            <p className="prevent-subject">Avoid close contact</p><br></br>
+            <ul>
+              <li className="prevent-li"><b>Inside your home:</b> Avoid close contact with people who are sick.
+                <ul>
+                  <li className="prevent-li-li">If possible, maintain 6 feet between the person who is sick and other household members.</li>
+                </ul>
+              </li>
+              <li className="prevent-li"><b>Outside your home:</b> Put 6 feet of distance between yourself and people who don’t live in your household.
+              <ul>
+                  <li className="prevent-li-li">Remember that some people without symptoms may be able to spread virus.</li>
+                  <li className="prevent-li-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms’ length) from other people.</a></li>
+                  <li className="prevent-li-li">Keeping distance from others is especially important for <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-increased-risk.html">people who are at higher risk of getting very sick.</a></li>
+                </ul>
+
+              </li>
+
+            </ul>
+            <p className="prevent-subject">Cover coughs and sneezes</p><br></br>
+            <ul>
+              <li className="prevent-li"><b>Always cover your mouth and nose</b> with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
+              <li className="prevent-li"><b>Throw used tissues</b> in the trash.</li>
+              <li className="prevent-li">Immediately <b>wash your hands</b> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+            </ul>
+
+
+            <p className="prevent-subject">Clean and disinfect</p><br></br>
+            <ul>
+              <li className="prevent-li"><b>Clean AND disinfect <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">frequently touched surfaces</a> daily.</b> This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+              <li className="prevent-li"><b>If surfaces are dirty, clean them.</b> Use detergent or soap and water prior to disinfection.</li>
+              <li className="prevent-li"><b>Then, use a household disinfectant.</b> Most common <a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">EPA-registered household disinfectants</a> will work.</li>
+            </ul>
+
+
+            <p className="prevent-subject">Monitor Your Health Daily</p><br></br>
+            <ul>
+              <li className="prevent-li"><b>Be alert for symptoms.</b> Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.
+                <ul>
+                  <li className="prevent-li-li">Especially important if you are <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, going into the office or workplace, and in settings where it may be difficult to keep a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">physical distance of 6 feet</a>.</li>
+                </ul>
+              </li>
+              <li className="prevent-li"><b>Take your temperature</b> if symptoms develop.
+              <ul>
+                  <li className="prevent-li-li">Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
+                </ul>
+
+              </li>
+              <li className="prevent-li">Follow <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidance</a> if symptoms develop.</li>
+            </ul>
+
+            <p className="prevent-subject"></p><br></br>
+            <ul>
+              <li className="prevent-li"></li>
+            </ul>
+
+
+            <p className="prevent-subject-header">Hand Sanitizer</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+            <p className="prevent-subject-header">Wearing Gloves</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+            <p className="prevent-subject-header">Cleaning Your Home</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+            <p className="prevent-subject-header">Social Distancing</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+            <p className="prevent-subject-header">Household Checklist</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+            <p className="prevent-subject-header">Living in Close Quarters</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+            <p className="prevent-subject-header">Living in Shared Housing</p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+            <p className="prevent-subject"></p><br></br>
+
+
             <p>
               <p className="masks-subject-header">How to Select, Wear, and Clean Your Mask</p><br></br>
               <p className="masks-subject">Overview</p>
