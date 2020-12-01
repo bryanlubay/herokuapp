@@ -41,6 +41,12 @@
   font-size: calc(10px + 3.5vw);
   font-weight: bolder;
 }
+
+.return-top {
+  font-size: calc(10px + .5vw);
+  text-align: left;
+
+}
 /* START Prevent Getting Sick */
 
 .prevent-subject-header {
@@ -64,11 +70,8 @@
 }
 
 .prevent-li-li-li {
-  .prevent-li-li {
     font-size: calc(10px + .25vw);
-    text-align: left;
-  }
-  
+    text-align: left;  
 }
 
 .prevent-p {
