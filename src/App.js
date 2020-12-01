@@ -989,12 +989,12 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START FREQUENTLY ASKED QUESTIONS */}
           <Alert className="alert" id="frequently_asked_questions" variant="primary" onClose={() => hide_frequently_asked_questions()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading">Frequently Asked Questions</Alert.Heading>
+            <Alert.Heading className="card-top-heading"><a id="faq-top">Frequently Asked Questions</a></Alert.Heading>
             <p>
 
 
               <Table className="table">
-                <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br>
+                {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
                 <tbody>
                   <tr >
                     <a href="#Water"><td className="tdleft" >Water</td></a>
@@ -1068,7 +1068,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     <Card.Body className="accordion-answer">On February 11, 2020 the World Health Organization <a target="_blank" href="https://twitter.com/DrTedros/status/1227297754499764230">announced</a> an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.<br></br><br></br>There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.</Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1119,7 +1119,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1244,7 +1244,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     <Card.Body className="accordion-answer">Clean and disinfect frequently touched surfaces such as tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.  If surfaces are dirty, clean them using detergent or soap and water prior to disinfection. To disinfect, most common EPA-registered household disinfectants will work. See CDC’s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">for household cleaning and disinfection</a>.</Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1290,7 +1290,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1548,7 +1548,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1596,7 +1596,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1637,7 +1637,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     <Card.Body className="accordion-answer">Yes. It is possible to test positive for flu (as well as other respiratory infections) and COVID-19 at the same time.</Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1693,7 +1693,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                       </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1740,7 +1740,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                       </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1929,7 +1929,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                         </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -1994,7 +1994,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                         </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -2086,7 +2086,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     <Card.Body className="accordion-answer">CDC does not recommend disinfection of sidewalks or roads. Spraying disinfectant on sidewalks and roads is not an efficient use of disinfectant supplies and has not been proven to reduce the risk of COVID-19 to the public. The risk of spreading the virus that causes COVID-19 from these surfaces is very low and disinfection is not effective on these surfaces.</Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -2412,7 +2412,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -2457,7 +2457,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                     </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
 
                 </Card>
 
@@ -2511,7 +2511,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                         </Card.Body>
                   </Accordion.Collapse>
 
-                  <a href="#Top">Return to Top</a>
+                  <a href="#faq-top">Return to Top</a>
                 </Card>
 
 
@@ -2526,6 +2526,25 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             <Alert.Heading className="card-top-heading">Masks</Alert.Heading>
 
+
+            <Table className="table">
+                {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
+                <tbody>
+                  <tr >
+                    <a href="#Water"><td className="tdleft" >Water</td></a>
+
+                    <a href="#Spread"><td className="tdright" >Spread</td></a>
+                  </tr>
+                  <tr className="table-row">
+                    <a href="#Basics"><td className="tdleft" >Basics</td></a>
+                    <a href="#Testing"><td className="tdright">Testing</td></a>
+
+
+
+                  </tr>
+
+                </tbody>
+              </Table><br></br>
 
 
 
