@@ -2560,12 +2560,12 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                   <a href="#storing-and-washing-masks"><td className="tdright" >Storing and Washing Masks</td></a>
                 </tr>
                 <tr >
-                  <a href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
+                  <a href="#considerations-for-wearing-masks"><td className="tdleft" >Considerations for Wearing Masks</td></a>
                   <a href="#making-masks"><td className="tdright">Making Masks</td></a>
                 </tr>
-                <tr >
+                {/* <tr >
                   <a href="#considerations-for-wearing-masks"><td className="tdcenter" >Considerations for Wearing Masks</td></a>
-                </tr>
+                </tr> */}
 
               </tbody>
             </Table><br></br>
@@ -2999,6 +2999,36 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
             <Alert.Heading className="card-top-heading"><a id="sick-top"></a>If You Are Sick</Alert.Heading><br></br><br></br>
 
+
+
+
+            <Table className="table">
+              {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
+              <tbody>
+                <tr >
+                  <a href="#isolate-if-you-are-sick"><td className="tdleft" >Isolate If You Are Sick</td></a>
+                  <a href="#when-to-quarantine"><td className="tdright" >When to Quarantine</td></a>
+                </tr>
+                <tr >
+                  <a href="#caring-for-someone"><td className="tdleft" >Caring for Someone</td></a>
+                  <a href="#parents-or-caregivers-who-are-sick"><td className="tdright">Parents or Caregivers Who Are Sick</td></a>
+                </tr>
+                <tr >
+                  <a href="#when-you-can-be-around-others"><td className="tdleft" >When You Can Be Around Others</td></a>
+                  <a href="#potential-treatments-for-severe-illness"><td className="tdright">Potential Treatments for Severe Illness</td></a>
+                </tr>
+                <tr >
+                  <a href="#reinfection"><td className="tdleft" >Reinfection</td></a>
+                  <a href="#long-term-effects"><td className="tdright">Long-Term Effects</td></a>
+                </tr>
+                <tr >
+                  <a href="#multisystem-inflammatory-syndrome-in-adults"><td className="tdcenter" >Multisystem Inflammatory Syndrome In Adults</td></a>
+                </tr>
+
+              </tbody>
+            </Table><br></br>
+
+
             <p className="sick-subject-header">What to Do If You Are Sick</p><br></br>
             <br></br><p className="sick-subject">Stay home except to get medical care</p>
 
@@ -3080,6 +3110,8 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               </ul>
             </ul>
 
+
+            <a id="isolate-if-you-are-sick" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Isolate If You Are Sick</p><br></br>
             <p className="sick-p"><b>Isolation</b> is used to separate people infected with SARS-CoV-2, the virus that causes COVID-19, from people who are not infected.<br></br>
                   People who are in isolation should stay home until it’s safe for them to be around others. In the home, anyone sick or infected should separate themselves from others by staying in a specific “sick room” or area and using a separate bathroom (if available).<b></b></p>
@@ -3183,6 +3215,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </Accordion>
 
 
+            <a id="when-to-quarantine" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">When to Quarantine</p><br></br>
             <p className="sick-p"><b>Quarantine</b> is used to keep someone <i>who might have been exposed to COVID-19</i> away from others. Quarantine helps prevent spread of disease that can occur before a person knows they are sick or if they are infected with the virus without feeling symptoms. People in quarantine should stay home, separate themselves from others, monitor their health, and follow directions from their state or local health department.</p>
 
@@ -3246,6 +3279,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
 
+            <a id="caring-for-someone" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Caring for Someone</p><br></br>
             <p className="sick-p">If you are caring for someone with COVID-19 at home or in a non-healthcare setting, follow this advice to protect yourself and others. Learn what to do when someone has <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms</a> of COVID-19 or when someone has been diagnosed with the virus. This information also should be followed when caring for people who have tested positive but are not showing symptoms.<br></br><b>*Note:</b> <i><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">Older adults and people of any age with serious underlying medical conditions</a> are at higher risk for developing more severe illness from COVID-19. People at higher risk of severe illness should call their doctor as soon as symptoms start.</i></p>
 
@@ -3429,6 +3463,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               </li>
             </ul>
 
+            <a id="parents-or-caregivers-who-are-sick" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Parents or Caregivers Who Are Sick</p><br></br>
 
             <p className="sick-subject">If a parent or a sole caregiver has COVID-19</p>
@@ -3498,6 +3533,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </p>
 
 
+            <a id="when-you-can-be-around-others" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">When You Can Be Around Others</p><br></br>
             <p className="sick-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If you have or think you might have COVID-19</a>, it is important to stay home and away from other people. Staying away from others helps stop the spread of COVID-19. <b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</p>
 
@@ -3556,6 +3592,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </p>
 
 
+            <a id="potential-treatments-for-severe-illness" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Potential Treatments for Severe Illness</p><br></br>
             <p className="sick-subject">The best way to prevent illness is to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">avoid being exposed</a> to or spreading the virus that causes COVID-19:</p>
             <ul>
@@ -3617,6 +3654,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </p>
 
 
+            <a id="reinfection" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Reinfection</p><br></br>
             <p className="sick-subject">Cases of reinfection with COVID-19 have been reported, but remain rare​.</p>
             <p className="sick-p">In general, reinfection means a person was infected (got sick) once, recovered, and then later became infected again. Based on what we know from similar viruses, some reinfections are expected. We are still learning more about COVID-19. Ongoing COVID-19 studies will help us understand:
@@ -3645,6 +3683,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
 
+            <a id="long-term-effects" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Long-Term Effects</p><br></br>
             <p className="sick-p">
               CDC is actively working to learn more about the whole range of short- and long-term health effects associated with COVID-19. As the pandemic unfolds, we are learning that many organs besides the lungs are affected by COVID-19 and there are many ways the infection can affect someone’s health.<br></br>
@@ -3688,6 +3727,8 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             <br></br><p className="sick-subject">Preventing COVID-19</p>
             <p className="sick-p">The best way to prevent these long-term complications is to prevent COVID-19. The best strategies for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">preventing COVID-19 infection</a> in youth and adults are to wear a mask in public places, stay at least 6 feet away from other people, frequently wash your hands, and avoid crowds and confined or poorly ventilated spaces.</p>
 
+
+            <a id="multisystem-inflammatory-syndrome-in-adults" className="return-top" href="#sick-top"><br></br>Return to Top</a>
             <br></br><p className="sick-subject-header">Multisystem Inflammatory Syndrome In Adults</p><br></br>
             <p className="sick-subject">What we know about MIS-A</p>
             <p className="sick-p">Multisystem inflammatory syndrome in children (MIS-C) is a rare but severe complication in children and adolescents infected with SARS-CoV-2, the virus that causes COVID-19. Since June 2020, there have been several reports of a similar multisystem inflammatory syndrome in adults (MIS-A). CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6940e1.htm">recently published</a> a number of cases that fit the description of MIS-A. This report shows the way the syndrome appears in adults may be more complicated than in children.<br></br>
