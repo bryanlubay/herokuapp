@@ -333,6 +333,7 @@ function App() {
     () => [
       {
         label: 'Series 1',
+        
         data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
       },
       {
@@ -360,6 +361,7 @@ function App() {
         height: '300px'
       }}
     >
+      <h1>Header</h1>
       <Chart data={data} axes={axes} />
     </div>
   )
