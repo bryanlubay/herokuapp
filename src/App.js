@@ -357,16 +357,16 @@ function App() {
     // space of its parent element automatically
     // <div
     //   style={{
-    //     margin: 'auto',
-    //     width: '400px',
-    //     height: '300px'
+        // margin: 'auto',
+        // width: '400px',
+        // height: '300px'
     //   }}
     // > 
 
     // Y Axis
     //   <Chart data={data} axes={axes} />
     // </div>
-          <Chart data={data} axes={axes} />
+          <Chart className="card-chart" data={data} axes={axes} />
 
   )
 

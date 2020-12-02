@@ -284,8 +284,9 @@
 }
 
 .card-chart {
-  /* height: 450px;
-  width: 450px; */
+  margin: auto;
+  width: 400px;
+  height: 300px
 }
 .chart {
   margin: auto;
