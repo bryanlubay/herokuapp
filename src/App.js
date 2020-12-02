@@ -409,7 +409,9 @@ function App() {
         </Card>
 
         <Card className="card-chart" border="secondary" bg="light" text="dark">
+          <Card.Header>Header</Card.Header>
           {lineChart}
+          <Card.Footer>Footer</Card.Footer>
         </Card>
 
 
