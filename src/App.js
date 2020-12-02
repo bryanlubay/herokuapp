@@ -414,9 +414,9 @@ function App() {
 
         <Card className="card-chart" border="secondary" bg="light" text="dark">
           <Card.Header>Work in progress :)</Card.Header>
-          {/* y axis :( */}
+          <p>y axis </p>y axis
           {lineChart}
-          <p>X axis</p>
+          x axis
           <Card.Footer>STATE is on an UPWARD/DOWNWARD trend</Card.Footer>
         </Card>
 
