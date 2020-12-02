@@ -355,18 +355,19 @@ function App() {
   const lineChart = (
     // A react-chart hyper-responsively and continuously fills the available
     // space of its parent element automatically
-    <div
-      style={{
-        margin: 'auto',
-        width: '400px',
-        height: '300px'
-      }}
-    > 
+    // <div
+    //   style={{
+    //     margin: 'auto',
+    //     width: '400px',
+    //     height: '300px'
+    //   }}
+    // > 
 
-    Y Axis
-      <Chart data={data} axes={axes} />
-      X Axis
-    </div>
+    // Y Axis
+    //   <Chart data={data} axes={axes} />
+    // </div>
+          <Chart data={data} axes={axes} />
+
   )
 
 
@@ -416,7 +417,7 @@ function App() {
           <Card.Header>Work in progress :)</Card.Header>
           {/* y axis :( */}
           {lineChart}
-          {/* <p>X axis</p> */}
+          <p>X axis</p>
           <Card.Footer>STATE is on an UPWARD/DOWNWARD trend</Card.Footer>
         </Card>
 
