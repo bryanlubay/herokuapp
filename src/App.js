@@ -559,7 +559,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
 
-            <br></br><p className="prevent-subject-header">Wearing Gloves<a className="return-top" id="wearing-gloves" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p className="prevent-subject-header" href="#prevent-top">Wearing Gloves<a className="return-top" id="wearing-gloves" ><br></br>Return to Top</a></p><br></br>
             <p className="prevent-p">Practice <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> like keeping <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distance</a> (at least 6 feet) from others, washing your hands with soap and water for 20 seconds (or using a hand sanitizer with at least 60% alcohol), and wearing a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">mask</a> when you have to go out in public.</p>
             <br></br><p className="prevent-subject">When to use gloves</p>
             <ul>
@@ -604,7 +604,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             <p className="prevent-p">Guidelines and recommendations for glove use in <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/respirator-use-faq.html#Gloves">healthcare</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/businesses-employers.html">work settings</a> will differ from recommendations for the general public.</p>
 
 
-            <br></br><p className="prevent-subject-header">Cleaning Your Home<a id="cleaning-your-home" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p className="prevent-subject-header" href="#prevent-top">Cleaning Your Home<a id="cleaning-your-home" className="return-top" ><br></br>Return to Top</a></p><br></br>
 
             <br></br><p className="prevent-subject">What you need to know</p>
             <ul>
@@ -768,7 +768,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </ul>
 
 
-            <br></br><p className="prevent-subject-header">Social Distancing<a id="social-distancing" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p className="prevent-subject-header" href="#prevent-top">Social Distancing<a id="social-distancing" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
             <br></br><p className="prevent-subject">What is social distancing?</p>
             <p className="prevent-p">Social distancing, also called “physical distancing,” means keeping a safe space between yourself and other people who are not from your household.
 
@@ -805,7 +805,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
 
-            <br></br><p className="prevent-subject-header">Household Checklist<a id="household-checklist" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p className="prevent-subject-header" href="#prevent-top">Household Checklist<a id="household-checklist" className="return-top" ><br></br>Return to Top</a></p><br></br>
             <p className="prevent-p">Get your household ready for COVID-19. As a family, you can plan and make decisions now that will protect you and your family.</p>
 
             <br></br><p className="prevent-subject">Stay informed and in touch</p>
@@ -866,7 +866,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <li className="prevent-li">Treat <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">pets</a> as you would other human family members – do not let pets interact with people outside the household.</li>
             </ul>
 
-            <br></br><p className="prevent-subject-header">Living in Close Quarters<a id="living-in-close-quarters" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p className="prevent-subject-header" href="#prevent-top">Living in Close Quarters<a id="living-in-close-quarters" className="return-top" ><br></br>Return to Top</a></p><br></br>
             <p className="prevent-p">This guidance is intended for people living together in close quarters, such as people who share a small apartment, or for people who live in the same household with large or extended families.
 
 <br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">People of any age who have certain underlying medical conditions</a> are at risk for getting COVID-19. Some groups have an <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">increased risk for severe illness</a> from coronavirus disease 2019 (COVID-19). The following information is aimed to help you protect those who are most vulnerable in your household.</p>
@@ -932,7 +932,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
 
-            <br></br><p className="prevent-subject-header">Living in Shared Housing<a id="living-in-shared-housing" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p className="prevent-subject-header" href="#prevent-top">Living in Shared Housing<a id="living-in-shared-housing" className="return-top" ><br></br>Return to Top</a></p><br></br>
             <p className="prevent-p">Shared or congregate housing includes apartments, condominiums, student or faculty housing, national and state park staff housing, transitional housing, and domestic violence and abuse shelters.<br></br>Shared housing residents often gather together closely for social, leisure, and recreational activities, shared dining, laundry facilities, stairwells, and elevators and may have challenges with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> to prevent the spread of COVID-19.</p>
 
 
