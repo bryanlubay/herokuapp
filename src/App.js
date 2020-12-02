@@ -361,7 +361,8 @@ function App() {
         width: '400px',
         height: '300px'
       }}
-    >
+    >    <p>y axis</p>
+
       <Chart className="chart" data={data} axes={axes} />
     </div>
   )
