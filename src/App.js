@@ -370,6 +370,7 @@ function App() {
   }, [])
 
   document.title = "Bryan Lubay's App :)"
+  
 
   return (
 
@@ -379,6 +380,9 @@ function App() {
       <header className="App-header">
 
         <h3 id="loading">Loading . . .</h3>
+
+
+{lineChart}
 
         {/* STATE SEARCH */}
         <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
