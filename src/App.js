@@ -382,16 +382,19 @@ function App() {
                 {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
                 <tbody>
                   <tr >
-                    <a href="#Water"><td className="tdleft" >Water</td></a>
-
-                    <a href="#Spread"><td className="tdright" >Spread</td></a>
+                    <a href="#hand-sanitizer"><td className="tdleft" >Hand Sanitizer</td></a>
+                    <a href="#wearing-gloves"><td className="tdright" >Wearing Gloves</td></a>
                   </tr>
-                  <tr className="table-row">
-                    <a href="#Basics"><td className="tdleft" >Basics</td></a>
-                    <a href="#Testing"><td className="tdright">Testing</td></a>
-
-
-
+                  <tr >
+                    <a href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
+                    <a href="#social-distancing"><td className="tdright">Social Distancing</td></a>
+                  </tr>
+                  <tr >
+                    <a href="#household-checklist"><td className="tdleft" >Household Checklist</td></a>
+                    <a href="#living-in-close-quarters"><td className="tdright">Living in Close Quarters</td></a>
+                  </tr>
+                  <tr >
+                    <a href="#living-in-shared-housing"><td className="tdleft" >Living in Shared Housing</td></a>
                   </tr>
 
                 </tbody>
@@ -1023,47 +1026,47 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
                     <a href="#Spread"><td className="tdright" >Spread</td></a>
                   </tr>
-                  <tr className="table-row">
+                  <tr >
                     <a href="#Basics"><td className="tdleft" >Basics</td></a>
                     <a href="#Testing"><td className="tdright">Testing</td></a>
 
 
 
                   </tr>
-                  <tr className="table-row">
+                  <tr >
                     <a href="#Children"><td className="tdleft" >Children</td></a>
                     <a href="#Funerals"><td className="tdright" >Funerals</td></a>
 
 
                   </tr>
-                  <tr className="table-row">
+                  <tr >
                     <a href="#Pets-and-Animals"><td className="tdleft">Pets and Animals</td></a>
                     <a href="#Prevention"><td className="tdright">Prevention</td></a>
 
 
                   </tr>
-                  <tr className="table-row">
+                  <tr >
                     <a href="#Community-Mitigation"><td className="tdleft">Community Mitigation</td></a>
                     <a href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
 
 
                   </tr>
 
-                  <tr className="table-row">
+                  <tr >
                     <a href="#Preparing-for-an-Outbreak"><td className="tdleft" >Preparing for an Outbreak</td></a>
                     <a href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
 
                   </tr>
-                  <tr className="table-row">
+                  <tr >
                     <a href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
 
                   </tr>
 
-                  <tr className="table-row">
+                  <tr >
                     <a href="#Symptoms-and-Emergency-Warning-Signs"><td className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
                   </tr>
 
-                  <tr className="table-row">
+                  <tr >
                     <a href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdcenter" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19 </td></a>
 
                   </tr>
