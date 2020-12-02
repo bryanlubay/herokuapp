@@ -356,10 +356,10 @@ function App() {
     // A react-chart hyper-responsively and continuously fills the available
     // space of its parent element automatically
     <div
-      style={{
-        width: '400px',
-        height: '300px'
-      }}
+      // style={{
+      //   width: '400px',
+      //   height: '300px'
+      // }}
     >
       <Chart className="chart" data={data} axes={axes} />
     </div>
