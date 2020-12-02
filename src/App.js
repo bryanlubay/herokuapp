@@ -412,7 +412,7 @@ function App() {
         <Card className="card-chart" border="secondary" bg="light" text="dark">
           <Card.Header>Header</Card.Header>
           {lineChart}
-          <Card.Footer>Footer</Card.Footer>
+          <Card.Footer>STATE is on an UPWARD/DOWNWARD trend</Card.Footer>
         </Card>
 
 
