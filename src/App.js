@@ -346,8 +346,8 @@ function App() {
  
   const axes = React.useMemo(
     () => [
-      { title:'x', primary: true, type: 'linear', position: 'bottom' },
-      { title:'y', type: 'linear', position: 'left' }
+      { specialLabel:'x', primary: true, type: 'linear', position: 'bottom' },
+      { specialLabel:'y', type: 'linear', position: 'left' }
     ],
     []
   )
