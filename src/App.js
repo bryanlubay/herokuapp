@@ -394,7 +394,7 @@ function App() {
                     <a href="#living-in-close-quarters"><td className="tdright">Living in Close Quarters</td></a>
                   </tr>
                   <tr >
-                    <a href="#living-in-shared-housing"><td className="tdleft" >Living in Shared Housing</td></a>
+                    <a href="#living-in-shared-housing"><td className="tdcenter" >Living in Shared Housing</td></a>
                   </tr>
 
                 </tbody>
@@ -507,7 +507,7 @@ function App() {
             </ul>
 
 
-            <br></br><p className="prevent-subject-header">Hand Sanitizer<a id="hand-sanitizer" className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <br></br><p href="#prevent-top"className="prevent-subject-header">Hand Sanitizer<a id="hand-sanitizer" className="return-top" ><br></br>Return to Top</a></p><br></br>
 
             <p className="prevent-p">To prevent the spread of germs, including COVID-19, CDC recommends washing hands with soap and water whenever possible because it reduces the amount of many types of germs and chemicals on hands. But if soap and water are not readily available, using a hand sanitizer with at least 60% alcohol can help you avoid getting sick and spreading germs to others.</p>
             <br></br><p className="prevent-subject">Overview</p>
