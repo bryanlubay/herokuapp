@@ -1008,6 +1008,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </ul>
 
 
+            <a className="return-top" href="#prevent-top"><br></br>Return to Top</a>
 
 
           </Alert>
@@ -2929,6 +2930,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <li className="masks-li">Green CF, Davidson CS, Panlilio AL, et al. Effectiveness of selected surgical masks in arresting vegetative cells and endospores when worn by simulated contagious patients. Infect Control Hosp Epidemiol. 2012;33(5):487‐494. <a href="https://pubmed.ncbi.nlm.nih.gov/22476275/">PMID: 22476275</a></li>
 
             </ul>
+            <a className="return-top" href="#masks-top"><br></br>Return to Top</a>
 
           </Alert>
           {/* END MASKS */}
@@ -2989,7 +2991,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                   While more is learned every day, there is still a lot that is unknown about COVID-19 and the virus that causes it. This page compares COVID-19 and flu, given the best available information to date.</p>
 
 
-
+                  <a className="return-top" href="#symptoms-top"><br></br>Return to Top</a>
 
 
           </Alert>
@@ -3758,6 +3760,9 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
             <br></br><p className="sick-subject">How to protect yourself from MIS-A</p>
             <p className="sick-p">Based on what we know now about MIS-A, the best way you can <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself is by taking everyday actions to protect yourself from getting the virus that causes COVID-19</a>.</p>
+
+
+            <a className="return-top" href="#sick-top"><br></br>Return to Top</a>
 
           </Alert>
           {/* END IF SICK */}
