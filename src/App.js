@@ -366,7 +366,7 @@ function App() {
     // Y Axis
     //   <Chart data={data} axes={axes} />
     // </div>
-          <Chart className="card-chart" data={data} axes={axes} />
+          <Chart className="chart" data={data} axes={axes} />
 
   )
 
