@@ -2997,7 +2997,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
           {/* START IF SICK */}
           <Alert className="alert" id="if_you_are_sick" variant="danger" onClose={() => hide_if_you_are_sick()} dismissible hidden="true">
-            <Alert.Heading className="card-top-heading"><a id="sick-top"></a>If You Are Sick</Alert.Heading><br></br><br></br>
+            <Alert.Heading className="card-top-heading"><a id="sick-top"></a>If You Are Sick</Alert.Heading>
 
 
 
