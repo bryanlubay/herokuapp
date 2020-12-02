@@ -325,6 +325,24 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
+export default function Line () {
+  const { data, randomizeData } = useChartConfig({
+    series: 10
+  })
+  const series = React.useMemo(
+    () => ({
+      showPoints: false
+    }),
+    []
+  )
+  const axes = React.useMemo(
+    () => [
+      { primary: true, type: 'time', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
+
 function App() {
 
   useEffect(() => {
@@ -368,7 +386,7 @@ function App() {
 
 
       {/* <Chart></Chart> */}
-
+      <Chart data={data} series={series} axes={axes} tooltip />
 
 
         <div>
