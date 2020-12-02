@@ -361,8 +361,9 @@ function App() {
         width: '400px',
         height: '300px'
       }}
-    > <p>Y Axis</p>
-      <Chart data={data} axes={axes} />
+    > 
+    <Chart data={data} axes={axes}>Chart</Chart>
+      {/* <Chart data={data} axes={axes} /> */}
     </div>
   )
 
