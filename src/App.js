@@ -414,7 +414,7 @@ function App() {
           </Card.Body>
         </Card>
 
-        {/* {lineChart} */}
+        {lineChart}
 
 
         <div>
