@@ -283,6 +283,11 @@
   margin-bottom: 1%;
 }
 
+.card-chart {
+  height: 450px;
+  width: 350px;
+}
+
 .alert {
   margin-top: 10px;
   margin: auto;
