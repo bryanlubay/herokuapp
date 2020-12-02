@@ -346,8 +346,8 @@ function App() {
  
   const axes = React.useMemo(
     () => [
-      { label:'x', primary: true, type: 'linear', position: 'bottom' },
-      { label:'y', type: 'linear', position: 'left' }
+      { title:'x', primary: true, type: 'linear', position: 'bottom' },
+      { title:'y', type: 'linear', position: 'left' }
     ],
     []
   )
@@ -362,7 +362,7 @@ function App() {
         height: '300px'
       }}
     > 
-      <Chart className="chart" data={data} axes={axes} />
+      <Chart data={data} axes={axes} />
     </div>
   )
 
