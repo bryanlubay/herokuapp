@@ -506,8 +506,8 @@ function App() {
               <li className="prevent-li">Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
             </ul>
 
-
-            <br></br><p className="prevent-subject-header" id="hand-sanitizer">Hand Sanitizer<a  className="return-top" href="#prevent-top"><br></br>Return to Top</a></p><br></br>
+            <a id="hand-sanitizer" className="return-top" href="#prevent-top"><br></br>Return to Top</a><br></br>
+            <br></br><p className="prevent-subject-header" >Hand Sanitizer</p><br></br>
 
             <p className="prevent-p">To prevent the spread of germs, including COVID-19, CDC recommends washing hands with soap and water whenever possible because it reduces the amount of many types of germs and chemicals on hands. But if soap and water are not readily available, using a hand sanitizer with at least 60% alcohol can help you avoid getting sick and spreading germs to others.</p>
             <br></br><p className="prevent-subject">Overview</p>
