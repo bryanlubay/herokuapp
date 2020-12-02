@@ -379,26 +379,26 @@ function App() {
 
 
             <Table className="table">
-                {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
-                <tbody>
-                  <tr >
-                    <a href="#hand-sanitizer"><td className="tdleft" >Hand Sanitizer</td></a>
-                    <a href="#wearing-gloves"><td className="tdright" >Wearing Gloves</td></a>
-                  </tr>
-                  <tr >
-                    <a href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
-                    <a href="#social-distancing"><td className="tdright">Social Distancing</td></a>
-                  </tr>
-                  <tr >
-                    <a href="#household-checklist"><td className="tdleft" >Household Checklist</td></a>
-                    <a href="#living-in-close-quarters"><td className="tdright">Living in Close Quarters</td></a>
-                  </tr>
-                  <tr >
-                    <a href="#living-in-shared-housing"><td className="tdcenter" >Living in Shared Housing</td></a>
-                  </tr>
+              {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
+              <tbody>
+                <tr >
+                  <a href="#hand-sanitizer"><td className="tdleft" >Hand Sanitizer</td></a>
+                  <a href="#wearing-gloves"><td className="tdright" >Wearing Gloves</td></a>
+                </tr>
+                <tr >
+                  <a href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
+                  <a href="#social-distancing"><td className="tdright">Social Distancing</td></a>
+                </tr>
+                <tr >
+                  <a href="#household-checklist"><td className="tdleft" >Household Checklist</td></a>
+                  <a href="#living-in-close-quarters"><td className="tdright">Living in Close Quarters</td></a>
+                </tr>
+                <tr >
+                  <a href="#living-in-shared-housing"><td className="tdcenter" >Living in Shared Housing</td></a>
+                </tr>
 
-                </tbody>
-              </Table><br></br>
+              </tbody>
+            </Table><br></br>
 
 
 
@@ -565,7 +565,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             <ul>
               <b>When Cleaning</b><br></br>
               <p className="prevent-p">When you are routinely <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">cleaning and disinfecting your home</a>.</p>
-      
+
               <li className="prevent-li">Follow precautions listed on the disinfectant product label, which may include-
                 <ul>
                   <li className="prevent-li-li">Wearing gloves (reusable or disposable)</li>
@@ -625,16 +625,16 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <li className="prevent-li">Cleaning with soap and water <b>reduces number of germs, dirt and impurities</b> on the surface. <b>Disinfecting kills germs</b> on surfaces.</li>
               <li className="prevent-li">Practice routine cleaning of frequently touched surfaces. High touch surfaces include:
               <ul>
-                <li className="prevent-li-li">Tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, sinks, etc.</li></ul></li>
+                  <li className="prevent-li-li">Tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, sinks, etc.</li></ul></li>
             </ul>
 
             <br></br><b>Disinfect</b><br></br>
             <ul>
               <li className="prevent-li">Disinfect with a household disinfectant on List N: Disinfectants for use against SARs-CoV-2external icon, the virus that causes COVID-19.<br></br>Follow the instructions on the label to ensure safe and effective use of the product. Read EPA’s infographic on how to use these disinfectant productsexternal icon safely and effectively.<br></br>Many products recommend:
               <ul>
-                <li className="prevent-li-li">Keeping surface wet for a period of time (see product label)</li>
-                <li className="prevent-li-li">Precautions such as wearing gloves and making sure you have good ventilation during use of the product</li>
-              </ul>
+                  <li className="prevent-li-li">Keeping surface wet for a period of time (see product label)</li>
+                  <li className="prevent-li-li">Precautions such as wearing gloves and making sure you have good ventilation during use of the product</li>
+                </ul>
               </li>
               <br></br><b>Always read and follow the directions on the label </b>to ensure safe and effective use.<br></br>
               <li className="prevent-li">Wear skin protection and consider eye protection for potential splash hazards</li>
@@ -647,17 +647,17 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <p className="prevent-p">You should never eat, drink, breathe or inject these products into your body or apply directly to your skin as they can cause serious harm. Do not wipe or bathe pets with these products or any other products that are not approved for animal use.<br></br>See <a href="https://www.epa.gov/pesticide-registration/six-steps-safe-effective-disinfectant-use">EPA’s 6 steps for Safe and Effective Disinfectant Use</a>.<br></br>Special considerations should be made for people with asthma and they should not be present when cleaning and disinfecting is happening as this can trigger asthma exacerbations. <a href="https://www.cdc.gov/asthma/reduce_triggers.html">Learn more about reducing asthma triggers.</a></p>
               <li className="prevent-li">Diluted household bleach solutions can be used if appropriate for the surface. Unexpired household bleach will be effective against coronaviruses when properly diluted.
               <ul>
-                <li className="prevent-li-li">Use bleach containing 5.25–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
-                <li className="prevent-li-li">Follow the manufacturer’s application instructions for the surface, ensuring a contact time of at least 1 minute.</li>
-                <li className="prevent-li-li">Ensure proper ventilation during and after application.</li>
-                <li className="prevent-li-li">Check to ensure the product is not past its expiration date.</li>
-                <li className="prevent-li-li">Never mix household bleach with ammonia or any other cleanser. This can cause fumes that may be very dangerous to breathe in.</li>
-              </ul>
+                  <li className="prevent-li-li">Use bleach containing 5.25–8.25% sodium hypochlorite. Do not use a bleach product if the percentage is not in this range or is not specified.</li>
+                  <li className="prevent-li-li">Follow the manufacturer’s application instructions for the surface, ensuring a contact time of at least 1 minute.</li>
+                  <li className="prevent-li-li">Ensure proper ventilation during and after application.</li>
+                  <li className="prevent-li-li">Check to ensure the product is not past its expiration date.</li>
+                  <li className="prevent-li-li">Never mix household bleach with ammonia or any other cleanser. This can cause fumes that may be very dangerous to breathe in.</li>
+                </ul>
               </li>
               <li className="prevent-li">Prepare a bleach solution by mixing:
               <ul>
-                <li className="prevent-li-li">5 tablespoons (1/3rd cup) of 5.25–8.25% bleach per gallon of room temperature water or</li>
-                <li className="prevent-li-li">4 teaspoons of 5.25–8.25% bleach per quart of room temperature water</li>
+                  <li className="prevent-li-li">5 tablespoons (1/3rd cup) of 5.25–8.25% bleach per gallon of room temperature water or</li>
+                  <li className="prevent-li-li">4 teaspoons of 5.25–8.25% bleach per quart of room temperature water</li>
                 </ul></li>
               <li className="prevent-li">Bleach solutions will be effective for disinfection up to 24 hours.</li>
               <li className="prevent-li"><b>Alcohol solutions with at least 70% alcohol may also be used.</b></li>
@@ -665,7 +665,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </ul>
 
             <br></br><b>Soft surfaces</b><br></br>
-          <p className="prevent-p">For soft surfaces such as carpeted floor, rugs, and drapes.</p>
+            <p className="prevent-p">For soft surfaces such as carpeted floor, rugs, and drapes.</p>
             <ul>
               <li className="prevent-li"><b>Clean the surface using soap and water</b> or with cleaners appropriate for use on these surfaces.</li>
               <li className="prevent-li"><b>Launder items</b> (if possible) according to the manufacturer’s instructions. Use the warmest appropriate water setting and dry items completely.</li>
@@ -680,7 +680,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <li className="prevent-li">Consider putting a wipeable cover on electronics.</li>
               <li className="prevent-li">Follow manufacturer’s instruction for cleaning and disinfecting.
               <ul>
-                <li className="prevent-li-li">If no guidance, use alcohol-based wipes or sprays containing at least 70% alcohol. Dry surface thoroughly.</li></ul></li>
+                  <li className="prevent-li-li">If no guidance, use alcohol-based wipes or sprays containing at least 70% alcohol. Dry surface thoroughly.</li></ul></li>
             </ul>
 
 
@@ -700,14 +700,14 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             <br></br><b>Clean hands often</b>
             <ul>
               <li className="prevent-li"><b>Key times to clean hands</b>
-              <ul>
-                <li className="prevent-li-li">Immediately after removing gloves and after contact with a person who is sick.</li>
-                <li className="prevent-li-li">After blowing one’s nose, coughing, or sneezing</li>
-                <li className="prevent-li-li">After using the restroom</li>
-                <li className="prevent-li-li">Before eating or preparing food</li>
-                <li className="prevent-li-li">After contact with animals or pets</li>
-                <li className="prevent-li-li">Before and after providing routine care for another person who needs assistance (e.g. a child)</li>
-              </ul>
+                <ul>
+                  <li className="prevent-li-li">Immediately after removing gloves and after contact with a person who is sick.</li>
+                  <li className="prevent-li-li">After blowing one’s nose, coughing, or sneezing</li>
+                  <li className="prevent-li-li">After using the restroom</li>
+                  <li className="prevent-li-li">Before eating or preparing food</li>
+                  <li className="prevent-li-li">After contact with animals or pets</li>
+                  <li className="prevent-li-li">Before and after providing routine care for another person who needs assistance (e.g. a child)</li>
+                </ul>
               </li>
               <li className="prevent-li"><b>Wash your hands often</b> with soap and water for 20 seconds.</li>
               <li className="prevent-li"><b>Hand sanitizer:</b> If soap and water are not readily available and hands are not visibly dirty, use a hand sanitizer that contains at least 60% alcohol. However, if hands are visibly dirty, always wash hands with soap and water.</li>
@@ -729,11 +729,11 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <li className="prevent-li">When used properly, air purifiers can help reduce airborne contaminants, including viruses, in a home or confined space.</li>
               <li className="prevent-li">Improve ventilation with outside air to improve indoor air quality:
               <ul>
-                <li className="prevent-li-li">Open the windows, or screened doors, if possible.</li>
-                <li className="prevent-li-li">Operate a window air conditioner that has an outdoor air intake or vent, with the vent open.</li>
-                <li className="prevent-li-li">Open the outside air intake of the HVAC system, if yours has one (this is not common).</li>
-                <li className="prevent-li-li">Operate a bathroom fan when the bathroom is in use or continuously, if possible.</li>
-                <li className="prevent-li-li">Avoid these actions when outdoor air pollution is high or when it makes your home too cold, hot, or humid.</li>
+                  <li className="prevent-li-li">Open the windows, or screened doors, if possible.</li>
+                  <li className="prevent-li-li">Operate a window air conditioner that has an outdoor air intake or vent, with the vent open.</li>
+                  <li className="prevent-li-li">Open the outside air intake of the HVAC system, if yours has one (this is not common).</li>
+                  <li className="prevent-li-li">Operate a bathroom fan when the bathroom is in use or continuously, if possible.</li>
+                  <li className="prevent-li-li">Avoid these actions when outdoor air pollution is high or when it makes your home too cold, hot, or humid.</li>
                 </ul></li>
               <li className="prevent-li">Care should be taken with portable ventilation equipment, for example, fans, to minimize air blowing from one person directly at another person to reduce the potential spread of any airborne or aerosolized viruses.</li>
               <li className="prevent-li">Running your HVAC system, using an air purifier or a portable air cleaner, and increasing ventilation <b>are not enough</b> to protect yourself and your family from COVID-19. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">Continue to follow other prevention guidelines.</a></li>
@@ -776,7 +776,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 <br></br>Social distancing should be practiced in combination with other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday preventive actions</a> to reduce the spread of COVID-19, including <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">wearing masks,</a> avoiding touching your face with unwashed hands, and frequently washing your hands with soap and water for at least 20 seconds.</p>
 
-<br></br><p className="prevent-subject">Why practice social distancing?</p>
+            <br></br><p className="prevent-subject">Why practice social distancing?</p>
             <p className="prevent-p">COVID-19 spreads mainly among people who are in close contact (within about 6 feet) for a prolonged period. Spread happens when an infected person coughs, sneezes, or talks, and droplets from their mouth or nose are launched into the air and land in the mouths or noses of people nearby. The droplets can also be inhaled into the lungs. Recent studies indicate that people who are infected but do not have symptoms likely also play a role in the spread of COVID-19. Since people can spread the virus before they know they are sick, it is important to stay at least 6 feet away from others when possible, even if you—or they—do not have any symptoms. Social distancing is especially important for <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk</a> for severe illness from COVID-19.
 
 <br></br>If you are sick with COVID-19, have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">symptoms consistent with COVID-19</a>, or have been in close contact with someone who has COVID-19, it is important to stay home and away from other people <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">until it is safe to be around others</a>.
@@ -785,7 +785,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 <br></br>Although the risk of severe illness may be different for everyone, anyone can get and spread COVID-19. Everyone has a role to play in slowing the spread and protecting themselves, their family, and their community. In addition to practicing <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday steps to prevent COVID-19</a>, keeping space between you and others is one of the best tools we have to avoid being exposed to this virus and slowing its spread in communities.</p>
 
-<br></br><p className="prevent-subject">Tips for Social Distancing</p>
+            <br></br><p className="prevent-subject">Tips for Social Distancing</p>
             <p className="prevent-p">When going out in public, it is important to stay at least 6 feet away from other people and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html">wear a mask</a> to slow the spread of COVID-19. Consider the following tips for practicing social distancing when you <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/deciding-to-go-out.html">decide to go out</a>.</p>
             <ul>
               <li className="prevent-li"><b>Know Before You Go:</b> Before going out, know and follow the guidance from local public health authorities where you live.</li>
@@ -836,17 +836,17 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               <li className="prevent-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Clean and disinfect</a> frequently touched objects and surfaces.</li>
               <li className="prevent-li">Wear a <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">mask</a> when you go out in public.
               <ul>
-                <li className="prevent-li-li">Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li></ul></li>
+                  <li className="prevent-li-li">Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li></ul></li>
               <li className="prevent-li">More on <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">how to protect yourself</a></li>
             </ul>
 
             <p className="prevent-p">If you have a fever, cough or other symptoms, you might have COVID-19. Most people have mild illness and are able to recover at home. If you think you may have been exposed to COVID-19, contact your healthcare provider.
             <ul>
-              <li className="prevent-li">Keep track of your symptoms.</li>
-              <li className="prevent-li"><b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</li>
+                <li className="prevent-li">Keep track of your symptoms.</li>
+                <li className="prevent-li"><b>If you have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html#seek-medical-attention">an emergency warning sign</a> (including trouble breathing),</b> get emergency medical care immediately.</li>
               </ul></p>
 
-              <br></br> <p className="prevent-subject">If someone in your home is sick</p>
+            <br></br> <p className="prevent-subject">If someone in your home is sick</p>
             <ul>
               <li className="prevent-li">How to <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">care for a sick household member</a>.</li>
               <li className="prevent-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick.</a></li>
@@ -2552,7 +2552,23 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
           <Alert className="alert" id="masks" variant="secondary" onClose={() => hide_masks()} dismissible hidden="true">
             <Alert.Heading className="card-top-heading"><a id="masks-top">Masks</a></Alert.Heading>
 
+            <Table className="table">
+              {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
+              <tbody>
+                <tr >
+                  <a href="#how-to-wear-masks"><td className="tdleft" >How to Wear Masks</td></a>
+                  <a href="#storing-and-washing-masks"><td className="tdright" >Storing and Washing Masks</td></a>
+                </tr>
+                <tr >
+                  <a href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
+                  <a href="#making-masks"><td className="tdright">Making Masks</td></a>
+                </tr>
+                <tr >
+                  <a href="#considerations-for-wearing-masks"><td className="tdcenter" >Considerations for Wearing Masks</td></a>
+                </tr>
 
+              </tbody>
+            </Table><br></br>
 
 
 
@@ -2619,6 +2635,8 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
               For more information, see our Masks web site. For information on the sources for our mask guidance, see <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html#recent-studies">Recent Studies</a>.<br></br><br></br>
 
+
+            <a id="how-to-wear-masks" className="return-top" href="#masks-top"><br></br>Return to Top</a><br></br>
             <p className="masks-subject-header">How to Wear Masks</p><br></br>
               Masks are an additional step to help slow the spread of COVID-19 when combined with <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">every day preventive actions</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> in public settings.
               <ul>
@@ -2666,6 +2684,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
             </ul>
 
 
+            <a id="storing-and-washing-masks" className="return-top" href="#masks-top"><br></br>Return to Top</a><br></br>
             <br></br><p className="masks-subject-header">Storing and Washing Masks</p><br></br>
 
             <p className="masks-p">Store your cloth mask properly and wash it regularly to keep it clean. Consider having more than one mask on hand so that you can easily replace a dirty mask with a clean one. Make sure to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">remove your mask correctly</a> and <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">wash your hands</a>
@@ -2741,6 +2760,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               </ul>
             </ul>
 
+            <a id="making-masks" className="return-top" href="#masks-top"><br></br>Return to Top</a><br></br>
             <br></br><p className="masks-subject-header">Making Masks</p><br></br>
             <p className="masks-p">CDC recommends that you wear masks in public settings when around people who don’t live in your household, especially when other <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">social distancing</a> measures are difficult to maintian.<br></br>
               Masks with at least 2 layers of fabric are most likely to reduce the spread of COVID-19 when they are widely used by people in public settings.<br></br>
@@ -2810,7 +2830,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
 
-
+            <a id="considerations-for-wearing-masks" className="return-top" href="#masks-top"><br></br>Return to Top</a><br></br>
             <br></br><p className="masks-subject-header">Considerations for Wearing Masks</p><br></br>
 
             <ul>
