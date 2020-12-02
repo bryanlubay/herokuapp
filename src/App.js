@@ -407,10 +407,7 @@ function App() {
           </Card.Body>
         </Card>
 
-{/* <div>
-      <Chart data={1,2,3,4,5}></Chart>
-      </div> */}
-{/* {lineChart} */}
+        {lineChart}
 
 
         <div>
