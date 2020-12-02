@@ -361,7 +361,7 @@ function App() {
         height: '300px'
       }}
     >
-      <Chart data={data} axes={axes} />
+      <Chart className="chart" data={data} axes={axes} />
     </div>
   )
 

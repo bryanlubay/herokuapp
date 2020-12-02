@@ -287,6 +287,9 @@
   height: 450px;
   width: 450px;
 }
+.chart {
+  margin: auto;
+}
 
 .alert {
   margin-top: 10px;
