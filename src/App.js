@@ -382,7 +382,6 @@ function App() {
         <h3 id="loading">Loading . . .</h3>
 
 
-{lineChart}
 
         {/* STATE SEARCH */}
         <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
@@ -411,6 +410,7 @@ function App() {
 {/* <div>
       <Chart data={1,2,3,4,5}></Chart>
       </div> */}
+{/* {lineChart} */}
 
 
         <div>
