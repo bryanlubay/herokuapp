@@ -388,19 +388,19 @@ function App() {
               {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
               <tbody>
                 <tr >
-                  <a  target="_blank" href="#hand-sanitizer"><td className="tdleft" >Hand Sanitizer</td></a>
-                  <a  target="_blank" href="#wearing-gloves"><td className="tdright" >Wearing Gloves</td></a>
+                  <a  href="#hand-sanitizer"><td className="tdleft" >Hand Sanitizer</td></a>
+                  <a  href="#wearing-gloves"><td className="tdright" >Wearing Gloves</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
-                  <a  target="_blank" href="#social-distancing"><td className="tdright">Social Distancing</td></a>
+                  <a  href="#cleaning-your-home"><td className="tdleft" >Cleaning Your Home</td></a>
+                  <a  href="#social-distancing"><td className="tdright">Social Distancing</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#household-checklist"><td className="tdleft" >Household Checklist</td></a>
-                  <a  target="_blank" href="#living-in-close-quarters"><td className="tdright">Living in Close Quarters</td></a>
+                  <a  href="#household-checklist"><td className="tdleft" >Household Checklist</td></a>
+                  <a  href="#living-in-close-quarters"><td className="tdright">Living in Close Quarters</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#living-in-shared-housing"><td className="tdcenter" >Living in Shared Housing</td></a>
+                  <a  href="#living-in-shared-housing"><td className="tdcenter" >Living in Shared Housing</td></a>
                 </tr>
 
               </tbody>
@@ -1030,52 +1030,52 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
                 {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
                 <tbody>
                   <tr >
-                    <a  target="_blank" href="#Water"><td className="tdleft" >Water</td></a>
+                    <a  href="#Water"><td className="tdleft" >Water</td></a>
 
-                    <a  target="_blank" href="#Spread"><td className="tdright" >Spread</td></a>
+                    <a  href="#Spread"><td className="tdright" >Spread</td></a>
                   </tr>
                   <tr >
-                    <a  target="_blank" href="#Basics"><td className="tdleft" >Basics</td></a>
-                    <a  target="_blank" href="#Testing"><td className="tdright">Testing</td></a>
+                    <a  href="#Basics"><td className="tdleft" >Basics</td></a>
+                    <a  href="#Testing"><td className="tdright">Testing</td></a>
 
-
-
-                  </tr>
-                  <tr >
-                    <a  target="_blank" href="#Children"><td className="tdleft" >Children</td></a>
-                    <a  target="_blank" href="#Funerals"><td className="tdright" >Funerals</td></a>
 
 
                   </tr>
                   <tr >
-                    <a  target="_blank" href="#Pets-and-Animals"><td className="tdleft">Pets and Animals</td></a>
-                    <a  target="_blank" href="#Prevention"><td className="tdright">Prevention</td></a>
+                    <a  href="#Children"><td className="tdleft" >Children</td></a>
+                    <a  href="#Funerals"><td className="tdright" >Funerals</td></a>
 
 
                   </tr>
                   <tr >
-                    <a  target="_blank" href="#Community-Mitigation"><td className="tdleft">Community Mitigation</td></a>
-                    <a  target="_blank" href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
+                    <a  href="#Pets-and-Animals"><td className="tdleft">Pets and Animals</td></a>
+                    <a  href="#Prevention"><td className="tdright">Prevention</td></a>
+
+
+                  </tr>
+                  <tr >
+                    <a  href="#Community-Mitigation"><td className="tdleft">Community Mitigation</td></a>
+                    <a  href="#Contact-Tracing"><td className="tdright" >Contact Tracing</td></a>
 
 
                   </tr>
 
                   <tr >
-                    <a  target="_blank" href="#Preparing-for-an-Outbreak"><td className="tdleft" >Preparing for an Outbreak</td></a>
-                    <a  target="_blank" href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
+                    <a  href="#Preparing-for-an-Outbreak"><td className="tdleft" >Preparing for an Outbreak</td></a>
+                    <a  href="#Cleaning-and-Disinfection"><td className="tdright" >Cleaning and Disinfection</td></a>
 
                   </tr>
                   <tr >
-                    <a  target="_blank" href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
+                    <a  href="#People-at-Higher-Risk-for-Severe-Illness"><td className="tdcenter">People at Higher Risk for Severe Illness</td></a>
 
                   </tr>
 
                   <tr >
-                    <a  target="_blank" href="#Symptoms-and-Emergency-Warning-Signs"><td className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
+                    <a  href="#Symptoms-and-Emergency-Warning-Signs"><td className="tdcenter">Symptoms and Emergency Warning Signs</td></a>
                   </tr>
 
                   <tr >
-                    <a  target="_blank" href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdcenter" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19 </td></a>
+                    <a  href="#If-You-or-Someone-You-Know-is-Sick-or-Had-Contact-with-Someone-who-Has-COVID-19"><td className="tdcenter" >If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19 </td></a>
 
                   </tr>
                 </tbody>
@@ -2563,15 +2563,15 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
               <tbody>
                 <tr >
-                  <a  target="_blank" href="#how-to-wear-masks"><td className="tdleft" >How to Wear Masks</td></a>
-                  <a  target="_blank" href="#storing-and-washing-masks"><td className="tdright" >Storing and Washing Masks</td></a>
+                  <a  href="#how-to-wear-masks"><td className="tdleft" >How to Wear Masks</td></a>
+                  <a  href="#storing-and-washing-masks"><td className="tdright" >Storing and Washing Masks</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#considerations-for-wearing-masks"><td className="tdleft" >Considerations for Wearing Masks</td></a>
-                  <a  target="_blank" href="#making-masks"><td className="tdright">Making Masks</td></a>
+                  <a  href="#considerations-for-wearing-masks"><td className="tdleft" >Considerations for Wearing Masks</td></a>
+                  <a  href="#making-masks"><td className="tdright">Making Masks</td></a>
                 </tr>
                 {/* <tr >
-                  <a  target="_blank" href="#considerations-for-wearing-masks"><td className="tdcenter" >Considerations for Wearing Masks</td></a>
+                  <a  href="#considerations-for-wearing-masks"><td className="tdcenter" >Considerations for Wearing Masks</td></a>
                 </tr> */}
 
               </tbody>
@@ -3014,23 +3014,23 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
               {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
               <tbody>
                 <tr >
-                  <a  target="_blank" href="#isolate-if-you-are-sick"><td className="tdleft" >Isolate If You Are Sick</td></a>
-                  <a  target="_blank" href="#when-to-quarantine"><td className="tdright" >When to Quarantine</td></a>
+                  <a  href="#isolate-if-you-are-sick"><td className="tdleft" >Isolate If You Are Sick</td></a>
+                  <a  href="#when-to-quarantine"><td className="tdright" >When to Quarantine</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#caring-for-someone"><td className="tdleft" >Caring for Someone</td></a>
-                  <a  target="_blank" href="#parents-or-caregivers-who-are-sick"><td className="tdright">Parents or Caregivers Who Are Sick</td></a>
+                  <a  href="#caring-for-someone"><td className="tdleft" >Caring for Someone</td></a>
+                  <a  href="#parents-or-caregivers-who-are-sick"><td className="tdright">Parents or Caregivers Who Are Sick</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#when-you-can-be-around-others"><td className="tdleft" >When You Can Be Around Others</td></a>
-                  <a  target="_blank" href="#potential-treatments-for-severe-illness"><td className="tdright">Potential Treatments for Severe Illness</td></a>
+                  <a  href="#when-you-can-be-around-others"><td className="tdleft" >When You Can Be Around Others</td></a>
+                  <a  href="#potential-treatments-for-severe-illness"><td className="tdright">Potential Treatments for Severe Illness</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#reinfection"><td className="tdleft" >Reinfection</td></a>
-                  <a  target="_blank" href="#long-term-effects"><td className="tdright">Long-Term Effects</td></a>
+                  <a  href="#reinfection"><td className="tdleft" >Reinfection</td></a>
+                  <a  href="#long-term-effects"><td className="tdright">Long-Term Effects</td></a>
                 </tr>
                 <tr >
-                  <a  target="_blank" href="#multisystem-inflammatory-syndrome-in-adults"><td className="tdcenter" >Multisystem Inflammatory Syndrome In Adults</td></a>
+                  <a  href="#multisystem-inflammatory-syndrome-in-adults"><td className="tdcenter" >Multisystem Inflammatory Syndrome In Adults</td></a>
                 </tr>
 
               </tbody>
