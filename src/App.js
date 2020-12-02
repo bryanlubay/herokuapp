@@ -328,12 +328,6 @@ function hide_symptoms() {
 
 function App() {
 
-  const series = React.useMemo(
-    () => ({
-      showPoints: false
-    }),
-    []
-  )
 
   const data = React.useMemo(
     () => [
@@ -344,7 +338,6 @@ function App() {
       {
         label: 'Series 2',
         data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
-      
       }
     ],
     []
@@ -353,7 +346,7 @@ function App() {
   const axes = React.useMemo(
     () => [
       { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'inear', position: 'left' }
+      { type: 'linear', position: 'left' }
     ],
     []
   )
@@ -367,7 +360,7 @@ function App() {
         height: '300px'
       }}
     >
-      <Chart data={data} axes={axes}  />
+      <Chart data={data} axes={axes} />
     </div>
   )
 
@@ -414,7 +407,7 @@ function App() {
           </Card.Body>
         </Card>
 
-        {lineChart}
+{lineChart}
 
 
         <div>
