@@ -405,9 +405,11 @@ function App() {
               <small id="update_before_last"></small>
             </Card.Footer>
           </Card.Body>
-        </Card>
+        </Card><br></br>
 
-{lineChart}
+        <Card className="card" border="secondary" bg="light" text="dark">
+          {lineChart}
+        </Card>
 
 
         <div>
