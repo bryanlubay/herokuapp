@@ -363,7 +363,6 @@ function App() {
       }}
     > 
 
-    Y Axis
       <Chart data={data} axes={axes} />
     </div>
     
@@ -414,7 +413,7 @@ function App() {
 
         <Card className="card-chart" border="secondary" bg="light" text="dark">
           <Card.Header>Work in progress :)</Card.Header>
-          <p>y axis </p>y axis
+          <p>y axis </p>
           {lineChart}
           x axis
           <Card.Footer>STATE is on an UPWARD/DOWNWARD trend</Card.Footer>
