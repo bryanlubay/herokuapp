@@ -367,7 +367,7 @@ function App() {
         </Card>
 
 
-      <Chart>Chart</Chart>
+      {/* <Chart>Chart</Chart> */}
 
 
 
