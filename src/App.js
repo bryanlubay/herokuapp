@@ -344,6 +344,7 @@ function App() {
       {
         label: 'Series 2',
         data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+      
       }
     ],
     []
@@ -366,7 +367,7 @@ function App() {
         height: '300px'
       }}
     >
-      <Chart data={data} axes={axes} series={series} />
+      <Chart data={data} axes={axes}  />
     </div>
   )
 
@@ -413,7 +414,7 @@ function App() {
           </Card.Body>
         </Card>
 
-        {lineChart}
+        {/* {lineChart} */}
 
 
         <div>
