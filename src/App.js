@@ -1,11 +1,12 @@
 // heroku git:remote -a bryanlubay
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect /*, useState*/ } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { HashLink as Link } from 'react-router-hash-link';
+// import AnchorLink from 'react-anchor-link-smooth-scroll'
+// import { HashLink as Link } from 'react-router-hash-link';
 import 'react-widgets/dist/css/react-widgets.css';
-import Iframe from 'react-iframe'
+// import Iframe from 'react-iframe'
+import { Chart } from 'react-charts'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -364,6 +365,11 @@ function App() {
             </Card.Footer>
           </Card.Body>
         </Card>
+
+
+      <Chart>Chart</Chart>
+
+
 
         <div>
 
