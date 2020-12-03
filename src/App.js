@@ -357,7 +357,7 @@ function App() {
     // space of its parent element automatically
     // <div style={{margin: 'auto', width: '400px', height: '300px'}}> 
     <div style={{ width: '400px', height: '300px'}}> 
-    <p>Y axis</p>
+    Y axis
     <Chart data={data} axes={axes}></Chart>
     </div> 
   )
