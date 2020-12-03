@@ -347,7 +347,11 @@
 }
 
 .chart-table {
-  border: none
+  border: none;
+}
+
+.y-axis{
+  margin-top: 200%;
 }
 
 .tbody {
