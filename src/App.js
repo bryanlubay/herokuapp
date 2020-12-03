@@ -355,19 +355,12 @@ function App() {
   const lineChart = (
     // A react-chart hyper-responsively and continuously fills the available
     // space of its parent element automatically
-    <div
-      style={{
-        margin: 'auto',
-        width: '400px',
-        height: '300px'
-      }}
-    > 
-
-<Chart data={data} axes={axes}><p>Y Axis</p></Chart>
-    </div>
-    
+    // <div style={{margin: 'auto', width: '400px', height: '300px'}}> 
+    <div style={{ width: '400px', height: '300px'}}> 
+    <p>Y axis</p>
+    <Chart data={data} axes={axes}></Chart>
+    </div> 
   )
-
 
   useEffect(() => {
     get_data('nv')
@@ -375,7 +368,6 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
   
-
   return (
 
 
