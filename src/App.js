@@ -439,7 +439,7 @@ function App() {
             </tbody>
           </Table>
 
-          <p>X Axis</p>
+          <p className="x-axis">X Axis</p>
 
         </div>
 

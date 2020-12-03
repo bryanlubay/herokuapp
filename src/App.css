@@ -354,6 +354,10 @@
   margin-top: 200%;
 }
 
+.x-axis {
+  color: black;
+}
+
 .tbody {
   column-width: inherit;
   column-span: inherit;
