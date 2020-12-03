@@ -290,8 +290,8 @@
 }
 .chart {
   margin: auto;
-  /* width: 400px;
-  height: 300px; */
+  width: calc(10px + 2vmin);
+  height: calc(10px + 2vmin);
 }
 
 .alert {
