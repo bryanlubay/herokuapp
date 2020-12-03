@@ -289,9 +289,9 @@
   height: 500px
 }
 .chart {
-  /* margin: auto; */
-  width: 600px;
-  height: 500px
+  margin: auto;
+  width: 400px;
+  height: 300px
 }
 
 .alert {
