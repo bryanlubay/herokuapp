@@ -405,18 +405,15 @@ function App() {
           <Card.Header>Work in progress :)</Card.Header>
           
 
-          <Table>
+          <Table className="chart-table">
             <tbody>
               <tr>
                 <td>
                 <p>Y Axis</p>
                 </td>
-<td>
-{lineChart}
-
-</td>
-
-
+                <td>
+                {lineChart}
+                </td>
               </tr>
             </tbody>
           </Table>
