@@ -288,11 +288,12 @@
    width: 600px;
   height: 500px
 }
-.chart {
+
+/* .chart {
   margin: auto;
   width: 400px;
   height: 300px
-}
+} */
 
 .alert {
   margin-top: 10px;
