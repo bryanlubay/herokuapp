@@ -284,9 +284,8 @@
 }
 
 .card-chart {
-  /* margin: auto; 
-   width: 600px;
-  height: 500px */
+  width: -webkit-fill-available;
+  max-width: fit-content;
 }
 
 /* .chart {
