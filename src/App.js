@@ -408,8 +408,11 @@ function App() {
           <Table>
             <tbody>
               <tr>
-              <p>Y Axis</p>
+                <td>
+                <p>Y Axis</p>
           {lineChart}
+
+                </td>
 
               </tr>
             </tbody>
