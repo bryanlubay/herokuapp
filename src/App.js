@@ -410,9 +410,12 @@ function App() {
               <tr>
                 <td>
                 <p>Y Axis</p>
-          {lineChart}
-
                 </td>
+<td>
+{lineChart}
+
+</td>
+
 
               </tr>
             </tbody>
