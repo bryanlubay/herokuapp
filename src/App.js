@@ -363,7 +363,7 @@ function App() {
       }}
     > 
 
-      <Chart data={data} axes={axes} />
+<Chart data={data} axes={axes}><p>Y Axis</p></Chart>
     </div>
     
   )
@@ -414,7 +414,6 @@ function App() {
         <Card className="card-chart" border="secondary" bg="light" text="dark">
           <Card.Header>Work in progress :)</Card.Header>
           <div>
-          <p>y axis </p>
           {lineChart}
           </div>
           x axis
