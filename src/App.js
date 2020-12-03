@@ -426,7 +426,7 @@ function App() {
 
 
         <div className="card-chart">
-        <Table>
+        <Table className="chart-table">
             <tbody>
               <tr>
                 <td className="chart-td">
