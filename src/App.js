@@ -429,10 +429,10 @@ function App() {
         <Table className="chart-table">
             <tbody>
               <tr>
-                <td>
+                <td className="chart-td">
                 <p className="y-axis">Y Axis</p>
                 </td>
-                <td>
+                <td className="chart-td">
                 {lineChart}
                 </td>
               </tr>

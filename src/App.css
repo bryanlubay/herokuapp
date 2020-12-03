@@ -288,6 +288,9 @@
   margin-bottom: 1%;
 }
 
+.chart-td {
+  border: none;
+}
 /* .chart {
   margin: auto;
   width: 400px;
