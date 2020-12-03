@@ -403,7 +403,7 @@ function App() {
           </Card.Body>
         </Card>
 
-        <Card className="card-chart" border="secondary" bg="light" text="dark">
+        {/* <Card className="card-chart" border="secondary" bg="light" text="dark">
           <Card.Header>Work in progress :)</Card.Header>
           
 
@@ -422,8 +422,26 @@ function App() {
 
           <p>X Axis</p>
           <Card.Footer>STATE is on an UPWARD/DOWNWARD trend</Card.Footer>
-        </Card>
+        </Card> */}
 
+
+        <div className="card-chart">
+        <Table className="chart-table">
+            <tbody>
+              <tr>
+                <td>
+                <p className="y-axis">Y Axis</p>
+                </td>
+                <td>
+                {lineChart}
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+
+          <p>X Axis</p>
+
+        </div>
 
         <div>
 
