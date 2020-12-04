@@ -427,7 +427,7 @@ function App() {
 
         <div className="card-chart">
           <p className="x-axis">X VS Y</p>
-        <Table className="chart-table">
+        {/* <Table className="chart-table"> */}
         {lineChart}
             {/* <tbody>
               <tr>
@@ -439,7 +439,7 @@ function App() {
                 </td>
               </tr>
             </tbody> */}
-          </Table>
+          {/* </Table> */}
           {/* <p className="x-axis">X Axis</p> */}
         </div>
 
