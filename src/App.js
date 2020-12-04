@@ -16,252 +16,202 @@ function convertState(state) {
   state = state.toUpperCase()
   if (state == "AL" || state == "ALABAMA") {
     document.getElementById('state').textContent = "Alabama"
-    document.getElementById('chart-state').textContent = "Alabama"
     return ('al')
   }
   else if (state == "AK" || state == "ALASKA") {
     document.getElementById('state').textContent = "Alaska"
-    document.getElementById('chart-state').textContent = "Alaska"
     return ('ak')
   }
   else if (state == "AZ" || state == "ARIZONA") {
     document.getElementById('state').textContent = "Arizona"
-    document.getElementById('chart-state').textContent = "Arizona"
     return ('az')
   }
   else if (state == "AR" || state == "ARKANSAS") {
     document.getElementById('state').textContent = "Arkansas"
-    document.getElementById('chart-state').textContent = "Arkansas"
     return ('ar')
   }
   else if (state == "CA" || state == "CALIFORNIA") {
     document.getElementById('state').textContent = "California"
-    document.getElementById('chart-state').textContent = "California"
     return ('ca')
   }
   else if (state == "CO" || state == "COLORADO") {
     document.getElementById('state').textContent = "Colorado"
-    document.getElementById('chart-state').textContent = "Colorado"
     return ('co')
   }
   else if (state == "CT" || state == "CONNECTICUT") {
     document.getElementById('state').textContent = "Connecticut"
-    document.getElementById('chart-state').textContent = "Connecticut"
     return ('ct')
   }
   else if (state == "DE" || state == "DELAWARE") {
     document.getElementById('state').textContent = "Delaware"
-    document.getElementById('chart-state').textContent = "Delaware"
     return ('de')
   }
   else if (state == "FL" || state == "FLORIDA") {
     document.getElementById('state').textContent = "Florida"
-    document.getElementById('chart-state').textContent = "Florida"
     return ('fl')
   }
   else if (state == "GA" || state == "GEORGIA") {
     document.getElementById('state').textContent = "Georgia"
-    document.getElementById('chart-state').textContent = "Georgia"
     return ('ga')
   }
   else if (state == "HI" || state == "HAWAII") {
     document.getElementById('state').textContent = "Hawaii"
-    document.getElementById('chart-state').textContent = "Hawaii"
     return ('hi')
   }
   else if (state == "IL" || state == "ILLINOIS") {
     document.getElementById('state').textContent = "Illinois"
-    document.getElementById('chart-state').textContent = "Illinois"
     return ('il')
   }
   else if (state == "IN" || state == "INDIANA") {
     document.getElementById('state').textContent = "Indiana"
-    document.getElementById('chart-state').textContent = "Indiana"
     return ('in')
   }
   else if (state == "IA" || state == "IOWA") {
     document.getElementById('state').textContent = "Iowa"
-    document.getElementById('chart-state').textContent = "Iowa"
     return ('ia')
   }
   else if (state == "KS" || state == "KANSAS") {
     document.getElementById('state').textContent = "Kansas"
-    document.getElementById('chart-state').textContent = "Kansas"
     return ('ks')
   }
   else if (state == "KY" || state == "KENTUCKY") {
     document.getElementById('state').textContent = "Kentucky"
-    document.getElementById('chart-state').textContent = "Kentucky"
     return ('ky')
   }
   else if (state == "LA" || state == "LOUISIANA") {
     document.getElementById('state').textContent = "Louisiana"
-    document.getElementById('chart-state').textContent = "Louisiana"
     return ('la')
   }
   else if (state == "ME" || state == "MAINE") {
     document.getElementById('state').textContent = "Maine"
-    document.getElementById('chart-state').textContent = "Maine"
     return ('me')
   }
   else if (state == "MD" || state == "MARYLAND") {
     document.getElementById('state').textContent = "Maryland"
-    document.getElementById('chart-state').textContent = "Maryland"
     return ('md')
   }
   else if (state == "MA" || state == "MASSACHUSETTS") {
     document.getElementById('state').textContent = "Massachusetts"
-    document.getElementById('chart-state').textContent = "Massachusetts"
     return ('ma')
   }
   else if (state == "MI" || state == "MICHIGAN") {
     document.getElementById('state').textContent = "Michigan"
-    document.getElementById('chart-state').textContent = "Michigan"
     return ('mi')
   }
   else if (state == "MN" || state == "MINNESOTA") {
     document.getElementById('state').textContent = "Minnesota"
-    document.getElementById('chart-state').textContent = "Minnesota"
     return ('')
   }
   else if (state == "MS" || state == "MISSISSIPPI") {
     document.getElementById('state').textContent = "Mississippi"
-    document.getElementById('chart-state').textContent = "Mississippi"
     return ('ms')
   }
   else if (state == "MO" || state == "MISSOURI") {
     document.getElementById('state').textContent = "Missouri"
-    document.getElementById('chart-state').textContent = "Missouri"
     return ('mo')
   }
   else if (state == "MT" || state == "MONTANA") {
     document.getElementById('state').textContent = "Montana"
-    document.getElementById('chart-state').textContent = "Montana"
     return ('mt')
   }
   else if (state == "NE" || state == "NEBRASKA") {
     document.getElementById('state').textContent = "Nebraska"
-    document.getElementById('chart-state').textContent = "Nebraska"
     return ('ne')
   }
   else if (state == "NV" || state == "NEVADA") {
     document.getElementById('state').textContent = "Nevada"
-    document.getElementById('chart-state').textContent = "Nevada"
     return ('nv')
   }
   else if (state == "NH" || state == "NEW HAMPSHIRE") {
     document.getElementById('state').textContent = "New Hampshire"
-    document.getElementById('chart-state').textContent = "New Hampshire"
     return ('nh')
   }
   else if (state == "NJ" || state == "NEW JERSEY") {
     document.getElementById('state').textContent = "New Jersey"
-    document.getElementById('chart-state').textContent = "New Jersey"
     return ('nj')
   }
   else if (state == "NM" || state == "NEW MEXICO") {
     document.getElementById('state').textContent = "New Mexico"
-    document.getElementById('chart-state').textContent = "New Mexico"
     return ('nm')
   }
   else if (state == "NY" || state == "NEW YORK") {
     document.getElementById('state').textContent = "New York"
-    document.getElementById('chart-state').textContent = "New York"
     return ('ny')
   }
   else if (state == "NC" || state == "NORTH CAROLINA") {
     document.getElementById('state').textContent = "North Carolina"
-    document.getElementById('chart-state').textContent = "North Carolina"
     return ('nc')
   }
   else if (state == "ND" || state == "NORTH DAKOTA") {
     document.getElementById('state').textContent = "North Dakota"
-    document.getElementById('chart-state').textContent = "North Dakota"
     return ('nd')
   }
   else if (state == "OH" || state == "OHIO") {
     document.getElementById('state').textContent = "Ohio"
-    document.getElementById('chart-state').textContent = "Ohio"
     return ('oh')
   }
   else if (state == "OK" || state == "OKLAHOMA") {
     document.getElementById('state').textContent = "Oklahoma"
-    document.getElementById('chart-state').textContent = "Oklahoma"
     return ('ok')
   }
   else if (state == "OR" || state == "OREGON") {
     document.getElementById('state').textContent = "Oregon"
-    document.getElementById('chart-state').textContent = "Oregon"
     return ('or')
   }
   else if (state == "PA" || state == "PENNSYLVANIA") {
     document.getElementById('state').textContent = "Pennsylvania"
-    document.getElementById('chart-state').textContent = "Pennsylvania"
     return ('pa')
   }
   else if (state == "RI" || state == "RHODE ISLAND") {
     document.getElementById('state').textContent = "Rhode Island"
-    document.getElementById('chart-state').textContent = "Rhode Island"
     return ('ri')
   }
   else if (state == "SC" || state == "SOUTH CAROLINA") {
     document.getElementById('state').textContent = "South Carolina"
-    document.getElementById('chart-state').textContent = "South Carolina"
     return ('sc')
   }
   else if (state == "SD" || state == "SOUTH DAKOTA") {
     document.getElementById('state').textContent = "South Dakota"
-    document.getElementById('chart-state').textContent = "South Dakota"
     return ('sd')
   }
   else if (state == "TN" || state == "TENNESSEE") {
     document.getElementById('state').textContent = "Tennessee"
-    document.getElementById('chart-state').textContent = "Tennessee"
     return ('tn')
   }
   else if (state == "TX" || state == "TEXAS") {
     document.getElementById('state').textContent = "Texas"
-    document.getElementById('chart-state').textContent = "Texas"
     return ('tx')
   }
   else if (state == "UT" || state == "UTAH") {
     document.getElementById('state').textContent = "Utah"
-    document.getElementById('chart-state').textContent = "Utah"
     return ('ut')
   }
   else if (state == "VT" || state == "VERMONT") {
     document.getElementById('state').textContent = "Vermont"
-    document.getElementById('chart-state').textContent = "Vermont"
     return ('vt')
   }
   else if (state == "VA" || state == "VIRGINIA") {
     document.getElementById('state').textContent = "Virginia"
-    document.getElementById('chart-state').textContent = "Virginia"
     return ('va')
   }
   else if (state == "WA" || state == "WASHINGTON") {
     document.getElementById('state').textContent = "Washington"
-    document.getElementById('chart-state').textContent = "Washington"
     return ('wa')
   }
   else if (state == "WV" || state == "WEST VIRGINIA") {
     document.getElementById('state').textContent = "West Virginia"
-    document.getElementById('chart-state').textContent = "West Virginia"
     return ('wv')
   }
   else if (state == "WI" || state == "WI") {
     document.getElementById('state').textContent = "Wisconsin"
-    document.getElementById('chart-state').textContent = "Wisconsin"
     return ('wi')
   }
   else if (state == "WY" || state == "WYOMING") {
     document.getElementById('state').textContent = "Wyoming"
-    document.getElementById('chart-state').textContent = "Wyoming"
     return ('wy')
   }
   else
     document.getElementById('state').textContent = "Error, invalid state"
-    document.getElementById('chart-state').textContent = "Error, invalid state"
   return ('xx')
 }
 
@@ -405,12 +355,9 @@ function App() {
   const lineChart = (
     // A react-chart hyper-responsively and continuously fills the available
     // space of its parent element automatically
-    // <div style={{margin: 'auto', width: 'calc(400px + 3.5vw)', height: 'calc(300px + 3.5vw)'}}> 
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
     <Chart data={data} axes={axes}></Chart>
     </div> 
-    // <Chart className="chart" data={data} axes={axes}></Chart>
-
 )
 
   useEffect(() => {
@@ -454,44 +401,10 @@ function App() {
           </Card.Body>
         </Card>
 
-        {/* <Card className="card-chart" border="secondary" bg="light" text="dark">
-          <Card.Header>Work in progress :)</Card.Header>
-          
-
-          <Table className="chart-table">
-            <tbody>
-              <tr>
-                <td>
-                <p className="y-axis">Y Axis</p>
-                </td>
-                <td>
-                {lineChart}
-                </td>
-              </tr>
-            </tbody>
-          </Table>
-
-          <p>X Axis</p>
-          <Card.Footer>STATE is on an UPWARD/DOWNWARD trend</Card.Footer>
-        </Card> */}
-
 
         <div className="card-chart">
-          <p id="chart-state" className="x-axis">Work in progress :)</p>
-        {/* <Table className="chart-table"> */}
+          <p className="x-axis">Days VS Infected (Work in progress :))</p>
         {lineChart}
-            {/* <tbody>
-              <tr>
-                <td className="chart-td">
-                <p className="y-axis">Y Axis</p>
-                </td>
-                <td className="chart-td">
-                {lineChart}
-                </td>
-              </tr>
-            </tbody> */}
-          {/* </Table> */}
-          {/* <p className="x-axis">X Axis</p> */}
         </div>
 
         <div>
