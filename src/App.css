@@ -285,7 +285,8 @@
 
 .card-chart {
   background-color: white;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
+  margin-top: 3%;
   /* width: calc(600px + 3.5vw);
   height: calc(450px + 3.5vw); */
 
@@ -439,6 +440,7 @@
 }
 
 .state-form {
+  margin-top: 2%;
 }
 
 .form-control {
