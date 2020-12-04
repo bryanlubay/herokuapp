@@ -426,7 +426,7 @@ function App() {
 
 
         <div className="card-chart">
-          <p>Work in progress :)</p>
+          <p className="x-axis">Work in progress :)</p>
         <Table className="chart-table">
             <tbody>
               <tr>
