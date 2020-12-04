@@ -403,7 +403,7 @@ function App() {
 
 
         <div className="card-chart">
-          <p className="x-axis">Days VS Infected (Work in progress :))</p>
+          <p className="x-axis">Days VS Infected (Work in progress :D )</p>
         {lineChart}
         </div>
 
