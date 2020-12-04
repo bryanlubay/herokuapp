@@ -332,13 +332,13 @@ function App() {
   const data = React.useMemo(
     () => [
       {
-        label: 'Series 1',
+        label: 'Series 1', // Infected
         
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
       },
       {
-        label: 'Series 2',
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
       }
     ],
     []
@@ -346,8 +346,8 @@ function App() {
  
   const axes = React.useMemo(
     () => [
-      { specialLabel:'x', primary: true, type: 'linear', position: 'bottom' },
-      { specialLabel:'y', type: 'linear', position: 'left' }
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
     ],
     []
   )
