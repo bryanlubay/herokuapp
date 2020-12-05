@@ -358,6 +358,13 @@ const axes = React.useMemo(
   []
 )
 
+const lineChart = (
+  // A react-chart hyper-responsively and continuously fills the available
+  // space of its parent element automatically
+  <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+  <Chart data={data} axes={axes}></Chart>
+  </div> 
+)
 
 function App() {
 
@@ -368,14 +375,7 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
   
-  const lineChart = (
-    // A react-chart hyper-responsively and continuously fills the available
-    // space of its parent element automatically
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart data={data} axes={axes}></Chart>
-    </div> 
-  )
-  
+
   
 
   return (
