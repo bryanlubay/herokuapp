@@ -265,7 +265,7 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
-
+}
 
 function update_chart_data() {
   let temp = convertState(document.getElementById('input').value)
