@@ -258,16 +258,23 @@ const get_data = async (state = 'nv') => {
   document.getElementById("formStateInput").hidden = false
 
 
+
+  return data
+}; // end get_data
+
+function update_data() {
+  let temp = convertState(document.getElementById('input').value)
+  get_data(temp)
   const data = React.useMemo(
     () => [
       {
         label: 'Series 1', // Infected
         
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]] // first = date (past 14 days), second = infected
       },
       {
         label: 'Series 2', // DAYS
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]] // first = date (past 14 days), second = dead
       }
     ],
     []
@@ -288,14 +295,6 @@ const get_data = async (state = 'nv') => {
     <Chart data={data} axes={axes}></Chart>
     </div> 
   )
-
-
-  return data
-};
-
-function update_data() {
-  let temp = convertState(document.getElementById('input').value)
-  get_data(temp)
 }
 
 function update_chart_data() {
