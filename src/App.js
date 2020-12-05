@@ -375,7 +375,7 @@ function App() {
     <Chart data={data} axes={axes}></Chart>
     </div> 
   )
-  }
+  
   
 
   return (
