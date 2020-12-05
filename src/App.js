@@ -257,6 +257,39 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
+
+  const data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected
+        
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
+ 
+  const axes = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
+ 
+  const lineChart = (
+    // A react-chart hyper-responsively and continuously fills the available
+    // space of its parent element automatically
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart data={data} axes={axes}></Chart>
+    </div> 
+  )
+
+
   return data
 };
 
@@ -264,6 +297,12 @@ function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
 }
+
+function update_chart_data() {
+  let temp = convertState(document.getElementById('input').value)
+  get_data(temp)
+}
+
 
 function show_prevent() {
   document.getElementById("prevent").hidden = false
@@ -329,37 +368,6 @@ function hide_symptoms() {
 function App() {
 
 
-  const data = React.useMemo(
-    () => [
-      {
-        label: 'Series 1', // Infected
-        
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
-      },
-      {
-        label: 'Series 2', // DAYS
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-      }
-    ],
-    []
-  )
- 
-  const axes = React.useMemo(
-    () => [
-      { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'linear', position: 'left' }
-    ],
-    []
-  )
- 
-  const lineChart = (
-    // A react-chart hyper-responsively and continuously fills the available
-    // space of its parent element automatically
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart data={data} axes={axes}></Chart>
-    </div> 
-)
-
   useEffect(() => {
     get_data('nv')
   }, [])
@@ -368,15 +376,9 @@ function App() {
   
   return (
 
-
     <div className="App" >
-
       <header className="App-header">
-
         <h3 id="loading">Loading . . .</h3>
-
-
-
         {/* STATE SEARCH */}
         <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
           <Form.Group controlId="formInput">
@@ -401,7 +403,6 @@ function App() {
           </Card.Body>
         </Card>
 
-
         <div className="card-chart">
           <p className="x-axis">Days VS Infected (Work in progress :D )</p>
         {lineChart}
@@ -419,9 +420,7 @@ function App() {
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
             <Alert.Heading className="card-top-heading"><a id="prevent-top">Prevent Getting Sick</a></Alert.Heading>
 
-
             <Table className="table">
-              {/* <a id="Top"><thead className="on-this-page">On This Page</thead></a><br></br> */}
               <tbody>
                 <tr >
                   <a  href="#hand-sanitizer"><td className="tdleft" >Hand Sanitizer</td></a>
@@ -438,11 +437,8 @@ function App() {
                 <tr >
                   <a  href="#living-in-shared-housing"><td className="tdcenter" >Living in Shared Housing</td></a>
                 </tr>
-
               </tbody>
             </Table><br></br>
-
-
 
             <p className="prevent-subject-header">Protect Yourself</p><br></br>
             <p className="prevent-subject">Know how it spreads</p>
