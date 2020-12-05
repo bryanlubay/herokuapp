@@ -336,6 +336,13 @@ function hide_symptoms() {
 
 function App() {
 
+
+  useEffect(() => {
+    get_data('nv')
+  }, [])
+
+  document.title = "Bryan Lubay's App :)"
+  
   const data = React.useMemo(
     () => [
       {
@@ -368,13 +375,10 @@ function App() {
   )
 }
 
-  useEffect(() => {
-    get_data('nv')
-  }, [])
 
-  document.title = "Bryan Lubay's App :)"
-  
   return (
+
+    
 
     <div className="App" >
       <header className="App-header">
