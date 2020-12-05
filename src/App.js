@@ -334,6 +334,39 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
+
+const data = React.useMemo(
+  () => [
+    {
+      label: 'Series 1', // Infected
+      
+      data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]] // first = date (past 14 days), second = infected
+    },
+    {
+      label: 'Series 2', // DAYS
+      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]] // first = date (past 14 days), second = dead
+    }
+  ],
+  []
+)
+
+const axes = React.useMemo(
+  () => [
+    { primary: true, type: 'linear', position: 'bottom' },
+    { type: 'linear', position: 'left' }
+  ],
+  []
+)
+
+const lineChart = (
+  // A react-chart hyper-responsively and continuously fills the available
+  // space of its parent element automatically
+  <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+  <Chart data={data} axes={axes}></Chart>
+  </div> 
+)
+}
+
 function App() {
 
 
@@ -343,37 +376,6 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
   
-  const data = React.useMemo(
-    () => [
-      {
-        label: 'Series 1', // Infected
-        
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]] // first = date (past 14 days), second = infected
-      },
-      {
-        label: 'Series 2', // DAYS
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]] // first = date (past 14 days), second = dead
-      }
-    ],
-    []
-  )
- 
-  const axes = React.useMemo(
-    () => [
-      { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'linear', position: 'left' }
-    ],
-    []
-  )
- 
-  const lineChart = (
-    // A react-chart hyper-responsively and continuously fills the available
-    // space of its parent element automatically
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart data={data} axes={axes}></Chart>
-    </div> 
-  )
-}
 
 
   return (
