@@ -346,7 +346,7 @@ function hide_symptoms() {
 }
 
 function test() {
-  return "Hello"
+  return 100
 }
 
 function App() {
@@ -364,8 +364,8 @@ function App() {
         {
           label: 'Series 1', // Infected
           
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]],
-          hmm: test()
+          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, test()]],
+          // hmm: test()
         },
         {
           label: 'Series 2', // DAYS
