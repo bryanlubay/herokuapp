@@ -225,29 +225,6 @@ let chart_data;
 let axes;
 let lineChart;
 
-  // do chart stuff
-  chart_data = React.useMemo(
-    () => [
-      {
-        label: 'Series 1', // Infected
-        
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
-      },
-      {
-        label: 'Series 2', // DAYS
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-      }
-    ],
-    []
-  )
- 
-   axes = React.useMemo(
-    () => [
-      { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'linear', position: 'left' }
-    ],
-    []
-  )
 
  
 
@@ -375,6 +352,30 @@ function App() {
   }, [])
 
   document.title = "Bryan Lubay's App :)"
+  
+    // do chart stuff
+    chart_data = React.useMemo(
+      () => [
+        {
+          label: 'Series 1', // Infected
+          
+          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
+        },
+        {
+          label: 'Series 2', // DAYS
+          data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+        }
+      ],
+      []
+    )
+   
+     axes = React.useMemo(
+      () => [
+        { primary: true, type: 'linear', position: 'bottom' },
+        { type: 'linear', position: 'left' }
+      ],
+      []
+    )
   
   lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
