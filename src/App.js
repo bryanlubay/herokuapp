@@ -272,6 +272,21 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
+  chart_data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected
+        
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 100]]
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 90]]
+      }
+    ],
+    []
+  )
+
   
 }
 
@@ -343,6 +358,7 @@ function show_symptoms() {
 function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
+
 
 function App() {
 
