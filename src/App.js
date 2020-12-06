@@ -391,23 +391,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault();
-            chart_data = React.useMemo(
-              () => [
-                {
-                  label: 'Series 1', // Infected
-                  
-                  data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
-                },
-                {
-                  label: 'Series 2', // DAYS
-                  data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-                }
-              ],
-              []
-            )
-        
-        }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
