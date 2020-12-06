@@ -223,6 +223,7 @@ function convertEpoch(epoch) {
 
 let chart_data;
 let axes;
+let lineChart;
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
@@ -258,6 +259,9 @@ const get_data = async (state = 'nv') => {
 
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
+
+  // do chart stuff
+
 
   return data
 };
@@ -335,7 +339,7 @@ function hide_symptoms() {
 }
 
 function App() {
-  
+
   chart_data = React.useMemo(
     () => [
       {
@@ -360,11 +364,11 @@ function App() {
   )
 
  
-  const lineChart = (
+   lineChart = (
     // A react-chart hyper-responsively and continuously fills the available
     // space of its parent element automatically
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart data={chart_data} axes={axes}></Chart>
+    <Chart id="chart" data={chart_data} axes={axes}></Chart>
     </div> 
   )
 
