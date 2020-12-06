@@ -345,6 +345,9 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
+function test() {
+  return "Hello"
+}
 
 function App() {
 
@@ -361,7 +364,8 @@ function App() {
         {
           label: 'Series 1', // Infected
           
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
+          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]],
+          hmm: test()
         },
         {
           label: 'Series 2', // DAYS
@@ -415,7 +419,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p className="x-axis">Days VS Infected (Work in progress :D )</p>
+          <p className="x-axis">Days VS Infected ( Work in progress :D )</p>
         {lineChart}
         </div>
 
