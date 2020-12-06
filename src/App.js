@@ -268,44 +268,42 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
-    // do chart stuff
-    chart_data = React.useMemo(
-      () => [
-        {
-          label: 'Series 1', // Infected
-          
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
-        },
-        {
-          label: 'Series 2', // DAYS
-          data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-        }
-      ],
-      []
-    )
-   
-     axes = React.useMemo(
-      () => [
-        { primary: true, type: 'linear', position: 'bottom' },
-        { type: 'linear', position: 'left' }
-      ],
-      []
-    )
-  
-   
-     lineChart = (
-      // A react-chart hyper-responsively and continuously fills the available
-      // space of its parent element automatically
-      <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-      <Chart id="chart" data={chart_data} axes={axes}></Chart>
-      </div> 
-    )
   
 }
 
 function update_chart_data() {
-  let temp = convertState(document.getElementById('input').value)
-  get_data(temp)
+  // let temp = convertState(document.getElementById('input').value)
+  // get_data(temp)
+  // do chart stuff
+  chart_data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected
+        
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
+ 
+   axes = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
+
+ 
+   lineChart = (
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart id="chart" data={chart_data} axes={axes}></Chart>
+    </div> 
+  )
 }
 
 
