@@ -225,30 +225,6 @@ let chart_data;
 let axes;
 const get_data = async (state = 'nv') => {
 
-   chart_data = React.useMemo(
-    () => [
-      {
-        label: 'Series 1', // Infected
-        
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
-      },
-      {
-        label: 'Series 2', // DAYS
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-      }
-    ],
-    []
-  )
- 
-   axes = React.useMemo(
-    () => [
-      { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'linear', position: 'left' }
-    ],
-    []
-  )
-
-
   document.getElementById("formStateInput").hidden = true
   document.getElementById("loading").hidden = false
 
@@ -359,6 +335,29 @@ function hide_symptoms() {
 }
 
 function App() {
+  
+  chart_data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected
+        
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 70]]
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
+ 
+   axes = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
 
  
   const lineChart = (
