@@ -357,7 +357,7 @@ var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
 function test2() {
   document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').dir
   testtemp += 50;
-  chart_data2 = [[5, 5], [6, 6], [7, 7], [8, 8], [9, testtemp]]
+  chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
 
   // chart_data = 
   //   () => [
@@ -433,7 +433,7 @@ function App() {
   }, [])
 
   document.title = "Bryan Lubay's App :)"
-  
+
   const chart_data = React.useMemo(
     () => [
       {
