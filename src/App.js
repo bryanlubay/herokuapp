@@ -388,6 +388,7 @@ function test2() {
 }
 
 function refresh_linechart() {
+
   chart_data = 
   () => [
     {
@@ -453,13 +454,13 @@ function App() {
       []
     )
   
-  // lineChart = (
-  //   <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-  //   <Chart id="chart" data={chart_data} axes={axes}></Chart>
-  //   </div> 
-  // )
+  lineChart = (
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart id="chart" data={chart_data} axes={axes}></Chart>
+    </div> 
+  )
 
-  lineChart = refresh_linechart()
+  // lineChart = refresh_linechart()
 
   return (
 
