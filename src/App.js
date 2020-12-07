@@ -352,7 +352,7 @@ function test() {
 }
 
 function test2() {
-  document.getElementById('chart-header').textContent = "Hello :D"  
+  document.getElementById('chart-header').textContent = "Hello :D"  + testtemp
   testtemp += 50;
   return testtemp;
 
