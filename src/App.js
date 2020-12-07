@@ -345,8 +345,9 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
-function test() {
-  return 100
+let testtemp = 100;
+function test() {  
+  return testtemp++;
 }
 
 function test2() {
@@ -367,8 +368,7 @@ function App() {
     chart_data = React.useMemo(
       () => [
         {
-          label: 'Series 1', // Infected
-          
+          label: 'Series 1', // Infected          
           data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, test()]],
           // hmm: test()
         },
@@ -400,23 +400,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2();
-              chart_data = React.useMemo(
-                () => [
-                  {
-                    label: 'Series 1', // Infected
-                    
-                    data: [[5, 5], [6, 6], [7, 7], [8, 8], [9, 9]],
-                    // hmm: test()
-                  },
-                  {
-                    label: 'Series 2', // DAYS
-                    data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-                  }
-                ],
-                []
-              )
-         }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
