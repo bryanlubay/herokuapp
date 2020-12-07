@@ -420,7 +420,7 @@ function refresh_linechart() {
 
 }
 
-
+var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
 
 function App() {
 
@@ -435,7 +435,8 @@ function App() {
     () => [
       {
         label: 'Series 1', // Infected          
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        data: chart_data2
         // hmm: test()
       },
       {
