@@ -355,7 +355,7 @@ function test2() {
   document.getElementById('chart-header').textContent = "Hello :D"  + testtemp
   testtemp += 50;
 
-  chart_data = React.useMemo(
+  chart_data = 
     () => [
       {
         label: 'Series 1', // Infected          
@@ -368,7 +368,7 @@ function test2() {
       }
     ],
     []
-  )
+  
 
 
   return testtemp;
