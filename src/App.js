@@ -420,18 +420,8 @@ function refresh_linechart() {
 
 }
 
-
-function App() {
-
-
-  useEffect(() => {
-    get_data('nv')
-  }, [])
-
-  document.title = "Bryan Lubay's App :)"
-  
     // do chart stuff
-    chart_data = React.useMemo(
+    const chart_data = React.useMemo(
       () => [
         {
           label: 'Series 1', // Infected          
@@ -446,13 +436,24 @@ function App() {
       []
     )
    
-     axes = React.useMemo(
+     const axes = React.useMemo(
       () => [
         { primary: true, type: 'linear', position: 'bottom' },
         { type: 'linear', position: 'left' }
       ],
       []
     )
+
+    
+function App() {
+
+
+  useEffect(() => {
+    get_data('nv')
+  }, [])
+
+  document.title = "Bryan Lubay's App :)"
+  
   
   lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
