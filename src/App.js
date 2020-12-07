@@ -385,10 +385,7 @@ function test2() {
   //     <Chart id="chart" data={chart_data} axes={axes}></Chart>
   //     </div> 
   //   )
-  useEffect(() => {
-    chart_data
-  }, [])
-
+  
 
   return testtemp;
 
