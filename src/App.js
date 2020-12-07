@@ -373,7 +373,7 @@ function App() {
       () => [
         {
           label: 'Series 1', // Infected          
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, test()]],
+          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
           // hmm: test()
         },
         {
