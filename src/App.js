@@ -416,7 +416,7 @@ function refresh_linechart() {
   //   </div> 
   // )
 
-    return lineChart
+    // return lineChart
 
 }
 
