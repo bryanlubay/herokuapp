@@ -352,7 +352,7 @@ function test() {
 }
 
 function test2() {
-  document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').textContent
+  document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').dir
   testtemp += 50;
 
   chart_data = 
@@ -384,6 +384,36 @@ function test2() {
   
 
   return testtemp;
+
+}
+
+function refresh_linechart() {
+  chart_data = 
+  () => [
+    {
+      label: 'Series 1', // Infected          
+      data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+      // hmm: test()
+    },
+    {
+      label: 'Series 2', // DAYS
+      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+    }
+  ]
+
+  axes = 
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ]
+  
+
+
+  lineChart = (
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart id="chart" data={chart_data} axes={axes}></Chart>
+    </div> 
+  )
 
 }
 
@@ -421,11 +451,13 @@ function App() {
       []
     )
   
-  lineChart = (
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={chart_data} axes={axes}></Chart>
-    </div> 
-  )
+  // lineChart = (
+  //   <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+  //   <Chart id="chart" data={chart_data} axes={axes}></Chart>
+  //   </div> 
+  // )
+
+  lineChart = refresh_linechart()
 
   return (
 
