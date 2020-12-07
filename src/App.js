@@ -422,6 +422,8 @@ function refresh_linechart() {
 
     // return lineChart
 
+    return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
+
 }
 
 
@@ -439,7 +441,7 @@ function App() {
       {
         label: 'Series 1', // Infected          
         // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-        data: chart_data2
+        data: refresh_linechart()
         // hmm: test()
       },
       {
