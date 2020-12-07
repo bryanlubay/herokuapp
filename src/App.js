@@ -420,28 +420,6 @@ function refresh_linechart() {
 
 }
 
-    const chart_data = React.useMemo(
-      () => [
-        {
-          label: 'Series 1', // Infected          
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-          // hmm: test()
-        },
-        {
-          label: 'Series 2', // DAYS
-          data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-        }
-      ],
-      []
-    )
-   
-     const axes = React.useMemo(
-      () => [
-        { primary: true, type: 'linear', position: 'bottom' },
-        { type: 'linear', position: 'left' }
-      ],
-      []
-    )
 
 
 function App() {
@@ -453,6 +431,28 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
   
+  const chart_data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected          
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        // hmm: test()
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
+ 
+   const axes = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
   
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
