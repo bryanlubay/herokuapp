@@ -349,29 +349,30 @@ function test() {
   return 100
 }
 
-function test2() {
-  document.getElementById('chart-header').textContent = "Hello :D"
-      chart_data = React.useMemo(
-        () => [
-          {
-            label: 'Series 1', // Infected
-            
-            data: [[5, 5], [6, 6], [7, 7], [8, 8], [9, 9]],
-            // hmm: test()
-          },
-          {
-            label: 'Series 2', // DAYS
-            data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-          }
-        ],
-        []
-      )
-  
-}
 
 
 function App() {
 
+  function test2() {
+    document.getElementById('chart-header').textContent = "Hello :D"
+        chart_data = React.useMemo(
+          () => [
+            {
+              label: 'Series 1', // Infected
+              
+              data: [[5, 5], [6, 6], [7, 7], [8, 8], [9, 9]],
+              // hmm: test()
+            },
+            {
+              label: 'Series 2', // DAYS
+              data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+            }
+          ],
+          []
+        )
+    
+  }
+  
 
   useEffect(() => {
     get_data('nv')
