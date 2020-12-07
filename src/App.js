@@ -366,8 +366,7 @@ function test2() {
         label: 'Series 2', // DAYS
         data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
       }
-    ],
-    []
+    ]
   
 
 
