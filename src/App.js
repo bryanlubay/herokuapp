@@ -349,6 +349,11 @@ function test() {
   return 100
 }
 
+function test2() {
+  document.getElementById('chart-header').textContent = "Hello :D"
+}
+
+
 function App() {
 
 
@@ -395,7 +400,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
@@ -419,7 +424,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p className="x-axis">Days VS Infected ( Work in progress :D )</p>
+          <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
         {lineChart}
         </div>
 
