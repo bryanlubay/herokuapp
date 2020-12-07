@@ -349,30 +349,13 @@ function test() {
   return 100
 }
 
+function test2() {
+  document.getElementById('chart-header').textContent = "Hello :D"  
+}
 
 
 function App() {
 
-  function test2() {
-    document.getElementById('chart-header').textContent = "Hello :D"
-        chart_data = React.useMemo(
-          () => [
-            {
-              label: 'Series 1', // Infected
-              
-              data: [[5, 5], [6, 6], [7, 7], [8, 8], [9, 9]],
-              // hmm: test()
-            },
-            {
-              label: 'Series 2', // DAYS
-              data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-            }
-          ],
-          []
-        )
-    
-  }
-  
 
   useEffect(() => {
     get_data('nv')
@@ -417,7 +400,23 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2();
+              chart_data = React.useMemo(
+                () => [
+                  {
+                    label: 'Series 1', // Infected
+                    
+                    data: [[5, 5], [6, 6], [7, 7], [8, 8], [9, 9]],
+                    // hmm: test()
+                  },
+                  {
+                    label: 'Series 2', // DAYS
+                    data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+                  }
+                ],
+                []
+              )
+         }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
