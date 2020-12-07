@@ -368,7 +368,12 @@ function test2() {
       }
     ]
   
-
+    lineChart = (
+      <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+      <Chart id="chart" data={chart_data} axes={axes}></Chart>
+      </div> 
+    )
+  
 
   return testtemp;
 
