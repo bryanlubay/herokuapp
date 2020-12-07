@@ -264,7 +264,7 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
-
+  // update chart data by calling other functions?
 
   return data
 };
@@ -352,7 +352,7 @@ function test() {
 
 function test2() {
   document.getElementById('chart-header').textContent = "Hello :D"  
-  return testtemp++;
+  return testtemp+= 10;
 
 }
 
