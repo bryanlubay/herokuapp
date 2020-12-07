@@ -454,7 +454,7 @@ function App() {
   document.title = "Bryan Lubay's App :)"
   
   
-  lineChart = (
+  const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
     <Chart id="chart" data={chart_data} axes={axes}></Chart>
     </div> 
