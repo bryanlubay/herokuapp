@@ -385,7 +385,10 @@ function test2() {
   //     <Chart id="chart" data={chart_data} axes={axes}></Chart>
   //     </div> 
   //   )
-  
+  useEffect(() => {
+    chart_data
+  }, [])
+
 
   return testtemp;
 
@@ -474,13 +477,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); 
-        
-        useEffect(() => {
-          chart_data
-        }, [])
-
-        }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
