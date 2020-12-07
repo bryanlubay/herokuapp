@@ -352,6 +352,8 @@ function test() {
 
 function test2() {
   document.getElementById('chart-header').textContent = "Hello :D"  
+  return testtemp++;
+
 }
 
 
