@@ -221,9 +221,9 @@ function convertEpoch(epoch) {
   return d
 }
 
-var chart_data;
-var axes;
-var lineChart;
+// var chart_data;
+// var axes;
+// var lineChart;
 
 
  
@@ -444,7 +444,7 @@ function refresh_linechart() {
       []
     )
 
-    
+
 function App() {
 
 
