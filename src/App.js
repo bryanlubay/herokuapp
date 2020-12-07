@@ -221,9 +221,9 @@ function convertEpoch(epoch) {
   return d
 }
 
-let chart_data;
-let axes;
-let lineChart;
+var chart_data;
+var axes;
+var lineChart;
 
 
  
@@ -345,8 +345,9 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
-let testtemp = 100;
+var testtemp = 100;
 function test() {  
+  testtemp += 50;
   return testtemp++;
 }
 
