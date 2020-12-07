@@ -352,7 +352,8 @@ function test() {
 
 function test2() {
   document.getElementById('chart-header').textContent = "Hello :D"  
-  return testtemp+= 10;
+  testtemp += 50;
+  return testtemp;
 
 }
 
@@ -371,7 +372,7 @@ function App() {
       () => [
         {
           label: 'Series 1', // Infected          
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, test()]],
+          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, test2()]],
           // hmm: test()
         },
         {
