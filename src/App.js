@@ -352,7 +352,7 @@ function test() {
 }
 
 function test2() {
-  document.getElementById('chart-header').textContent = "Hello :D"  + testtemp
+  document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').textContent
   testtemp += 50;
 
   chart_data = 
@@ -368,6 +368,14 @@ function test2() {
       }
     ]
   
+    axes = 
+      () => [
+        { primary: true, type: 'linear', position: 'bottom' },
+        { type: 'linear', position: 'left' }
+      ]
+    
+
+
     lineChart = (
       <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
       <Chart id="chart" data={chart_data} axes={axes}></Chart>
