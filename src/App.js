@@ -364,8 +364,8 @@ function test2() {
 }
 
 function refresh_linechart() {
-  
-    document.getElementById('chart-header').textContent = "Hmm :O "  + testtemp
+
+    document.getElementById('hmm').textContent = "Hmm :O "  + testtemp
     testtemp += 10;
     return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
 
@@ -429,7 +429,7 @@ function App() {
           </Form.Group>
         </Form>
 
-
+      <p id="hmm"></p>
       <Button onClick={chart_data}>Hmm</Button>
 
 
