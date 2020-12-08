@@ -381,7 +381,7 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  var chart_data = React.useMemo(
+  const chart_data = React.useMemo(
     () => [
       {
         label: 'Series 1', // Infected          
