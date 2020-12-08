@@ -375,7 +375,7 @@ function test() {
   return testtemp++;
 }
 
-var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
+// var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
 
 
 function test2() {
