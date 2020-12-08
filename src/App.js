@@ -227,8 +227,6 @@ function convertEpoch(epoch) {
 // var axes;
 // var lineChart;
 
- 
-
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
@@ -417,7 +415,7 @@ function App() {
       </div> 
     )
   
-    return lineChartRefreshed
+    lineChart = lineChartRefreshed
 }
 
   
@@ -430,7 +428,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); lineChart = refresh_linechart() }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); refresh_linechart() }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
