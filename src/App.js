@@ -458,7 +458,7 @@ function App() {
         </Form>
 
 
-      <button onClick={chart_data}>Hmm</button>
+      <Button onClick={chart_data}>Hmm</Button>
 
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
