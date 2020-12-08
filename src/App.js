@@ -364,7 +364,7 @@ function test2() {
 }
 
 function refresh_linechart() {
-  document.getElementById('chart-header').textContent = "Hmm :O "  + testtemp + " " + document.getElementById('chart').dir
+  // document.getElementById('chart-header').textContent = "Hmm :O "  + testtemp + " " + document.getElementById('chart').dir
 
     testtemp += 10;
     return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
