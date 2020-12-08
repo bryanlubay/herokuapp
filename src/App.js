@@ -371,6 +371,21 @@ function App() {
     get_data('nv')
   }, [])
 
+  const chart_data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected          
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        // data: refresh_linechart()
+        // hmm: test()
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
  
    const axes = React.useMemo(
     () => [
@@ -392,22 +407,7 @@ function App() {
     // document.getElementById('hmm').textContent = "Hmm :O "  + testtemp
     // testtemp += 10;
     // return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
-    const chart_data = React.useMemo(
-      () => [
-        {
-          label: 'Series 1', // Infected          
-          data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-          // data: refresh_linechart()
-          // hmm: test()
-        },
-        {
-          label: 'Series 2', // DAYS
-          data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-        }
-      ],
-      []
-    )
-  
+
 
     const lineChartRefreshed = (
       <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
