@@ -429,7 +429,7 @@ function App() {
           </Form.Group>
         </Form>
 
-  <p id="hmm">hmm = {chart_data}</p>
+  {/* <p id="hmm">hmm = {chart_data}</p> */}
       <Button onClick={chart_data}>Hmm</Button>
 
 
