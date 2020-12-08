@@ -229,7 +229,7 @@ const chart_data =
     {
       label: 'Series 1', // Infected          
       // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-      data: refresh_linechart()
+      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]] //refresh_linechart()
       // hmm: test()
     },
     {
@@ -246,8 +246,6 @@ const chart_data =
     { type: 'linear', position: 'left' }
   ]
   
-
-
 
 // var chart_data;
 // var axes;
