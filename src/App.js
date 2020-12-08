@@ -485,7 +485,7 @@ function App() {
           </Form.Group>
         </Form>
 
-        <Button onClick={chart_data}>Hmmm</Button>
+        {/* <Button onClick={chart_data}>Hmmm</Button> */}
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
