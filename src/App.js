@@ -381,7 +381,7 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  const chart_data = React.useMemo(
+  const chart_data = React.useCallback(
     () => [
       {
         label: 'Series 1', // Infected          
@@ -397,7 +397,7 @@ function App() {
     []
   )
  
-   const axes = React.useMemo(
+   const axes = React.useCallback(
     () => [
       { primary: true, type: 'linear', position: 'bottom' },
       { type: 'linear', position: 'left' }
