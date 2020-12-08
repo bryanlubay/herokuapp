@@ -227,7 +227,30 @@ function convertEpoch(epoch) {
 // var axes;
 // var lineChart;
 
- 
+const chart_data2 = React.useCallback(
+  () => [
+    {
+      label: 'Series 1', // Infected          
+      // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+      data: refresh_linechart()
+      // hmm: test()
+    },
+    {
+      label: 'Series 2', // DAYS
+      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+    }
+  ],
+  []
+)
+
+ const axes2 = React.useCallback(
+  () => [
+    { primary: true, type: 'linear', position: 'bottom' },
+    { type: 'linear', position: 'left' }
+  ],
+  []
+)
+
 
 const get_data = async (state = 'nv') => {
 
