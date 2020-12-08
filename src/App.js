@@ -381,7 +381,7 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  const chart_data = React.useCallback(
+  const chart_data = React.useMemo(
     () => [
       {
         label: 'Series 1', // Infected          
@@ -397,7 +397,7 @@ function App() {
     []
   )
  
-   const axes = React.useCallback(
+   const axes = React.useMemo(
     () => [
       { primary: true, type: 'linear', position: 'bottom' },
       { type: 'linear', position: 'left' }
@@ -429,7 +429,23 @@ function App() {
           </Form.Group>
         </Form>
 
-  <p id="hmm">hmm = {chart_data}</p>
+  <p id="hmm">hmm = {React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected          
+        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        data: refresh_linechart()
+        // hmm: test()
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )}</p>
+
+  
   <div className="card-chart">
   <Chart data={React.useMemo(
     () => [
