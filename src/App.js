@@ -430,7 +430,7 @@ function App() {
         </Form>
 
   {/* <p id="hmm">hmm = {chart_data}</p> */}
-  <div className="card-chart">
+  {/* <div className="card-chart">
   <Chart data={React.useMemo(
     () => [
       {
@@ -446,7 +446,7 @@ function App() {
     ],
     []
   )} axes={axes}></Chart>
-        </div>
+        </div> */}
 
       <Button onClick={chart_data}>Hmm</Button>
 
