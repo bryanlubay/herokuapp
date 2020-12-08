@@ -356,7 +356,7 @@ var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
 
 
 function test2() {
-  document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').dir
+  document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
   testtemp += 50;
   chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
   return testtemp;
@@ -385,8 +385,8 @@ function App() {
     () => [
       {
         label: 'Series 1', // Infected          
-        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-        data: refresh_linechart()
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        // data: refresh_linechart()
         // hmm: test()
       },
       {
