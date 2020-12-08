@@ -367,27 +367,18 @@ function test2() {
 
 function App() {
 
-
-  function refresh_linechart() {
-
-    // document.getElementById('hmm').textContent = "Hmm :O "  + testtemp
-    testtemp += 10;
-    return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
-}
-
+  document.title = "Bryan Lubay's App :)"
 
   useEffect(() => {
     get_data('nv')
   }, [])
 
-  document.title = "Bryan Lubay's App :)"
-
   const chart_data = React.useMemo(
     () => [
       {
         label: 'Series 1', // Infected          
-        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-        data: refresh_linechart()
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        // data: refresh_linechart()
         // hmm: test()
       },
       {
@@ -412,7 +403,26 @@ function App() {
     </div> 
   )
 
-  // lineChart = refresh_linechart()
+
+  function refresh_linechart() {
+
+    // document.getElementById('hmm').textContent = "Hmm :O "  + testtemp
+    // testtemp += 10;
+    // return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
+
+
+    const lineChartRefreshed = (
+      <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+      <Chart id="chart" data={chart_data} axes={axes}></Chart>
+      </div> 
+    )
+  
+    return lineChartRefreshed
+}
+
+  
+
+
 
   return (
 
