@@ -430,13 +430,13 @@ function App() {
         </Form>
 
   {/* <p id="hmm">hmm = {chart_data}</p> */}
-  {/* <div className="card-chart">
+  <div className="card-chart">
   <Chart data={React.useMemo(
     () => [
       {
         label: 'Series 1', // Infected          
-        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-        data: refresh_linechart()
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
+        // data: refresh_linechart()
         // hmm: test()
       },
       {
@@ -446,10 +446,9 @@ function App() {
     ],
     []
   )} axes={axes}></Chart>
-        </div> */}
+        </div>
 
       {/* <Button onClick={chart_data}>Hmm</Button> */}
-
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
