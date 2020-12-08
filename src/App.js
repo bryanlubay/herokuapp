@@ -227,7 +227,7 @@ function convertEpoch(epoch) {
 // var axes;
 // var lineChart;
 
-
+ 
 
 const get_data = async (state = 'nv') => {
 
@@ -348,49 +348,49 @@ function hide_symptoms() {
 
 var testtemp = 100;
 function test() {  
-  
-
   testtemp += 50;
   return testtemp++;
 }
 
-// var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
+var chart_data2 = [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]]
 
 
 function test2() {
   document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').dir
   testtemp += 50;
-  // chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]  
+  chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+
+  // chart_data = 
+  //   () => [
+  //     {
+  //       label: 'Series 1', // Infected          
+  //       data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+  //       // hmm: test()
+  //     },
+  //     {
+  //       label: 'Series 2', // DAYS
+  //       data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+  //     }
+  //   ]
+  
+  //   axes = 
+  //     () => [
+  //       { primary: true, type: 'linear', position: 'bottom' },
+  //       { type: 'linear', position: 'left' }
+  //     ]
+    
+
+
+  //   lineChart = (
+  //     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+  //     <Chart id="chart" data={chart_data} axes={axes}></Chart>
+  //     </div> 
+  //   )
+  
 
   return testtemp;
 
 }
-
-
-const chart_data2 = React.useEffect(
-  () => [
-    {
-      label: 'Series 1', // Infected          
-      // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-      data: refresh_linechart()
-      // hmm: test()
-    },
-    {
-      label: 'Series 2', // DAYS
-      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-    }
-  ],
-  []
-)
-
- const axes2 = React.useCallback(
-  () => [
-    { primary: true, type: 'linear', position: 'bottom' },
-    { type: 'linear', position: 'left' }
-  ],
-  []
-)
-
 
 function refresh_linechart() {
 
@@ -485,7 +485,9 @@ function App() {
           </Form.Group>
         </Form>
 
-        <button onClick={chart_data}>Hmmm</button>
+
+      <Button onClick={chart_data}>Hmm</Button>
+
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
