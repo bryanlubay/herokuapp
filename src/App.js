@@ -385,8 +385,8 @@ function App() {
     () => [
       {
         label: 'Series 1', // Infected          
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-        // data: refresh_linechart()
+        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        data: refresh_linechart()
         // hmm: test()
       },
       {
