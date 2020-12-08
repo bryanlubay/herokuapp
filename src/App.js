@@ -363,16 +363,17 @@ function test2() {
 
 }
 
-function refresh_linechart() {
+
+
+function App() {
+
+
+  function refresh_linechart() {
 
     // document.getElementById('hmm').textContent = "Hmm :O "  + testtemp
     testtemp += 10;
     return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
-
 }
-
-
-function App() {
 
 
   useEffect(() => {
