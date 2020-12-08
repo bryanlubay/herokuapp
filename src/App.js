@@ -282,7 +282,6 @@ function update_chart_data() {
 
 }
 
-
 function show_prevent() {
   document.getElementById("prevent").hidden = false
   document.getElementById("frequently_asked_questions").hidden = true
@@ -437,7 +436,6 @@ function App() {
             </div>
           </Form.Group>
         </Form>
-
 
   {/* <div className="card-chart">
   <Chart data={React.useMemo(
