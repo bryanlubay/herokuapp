@@ -6,7 +6,7 @@ import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootst
 // import { HashLink as Link } from 'react-router-hash-link';
 import 'react-widgets/dist/css/react-widgets.css';
 // import Iframe from 'react-iframe'
-// import useChartConfig from 'hooks/useChartConfig'
+import useChartConfig from 'hooks/useChartConfig'
 
 
 import { Chart } from 'react-charts'
@@ -223,39 +223,11 @@ function convertEpoch(epoch) {
   return d
 }
 
-
-const chart_data = 
-  () => [
-    {
-      label: 'Series 1', // Infected          
-      // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]] //refresh_linechart()
-      // hmm: test()
-    },
-    {
-      label: 'Series 2', // DAYS
-      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-    }
-  ]
-  
-
-
- const axes = 
-  () => [
-    { primary: true, type: 'linear', position: 'bottom' },
-    { type: 'linear', position: 'left' }
-  ]
-  
-
 // var chart_data;
 // var axes;
 // var lineChart;
 
-var lineChart = (
-  <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-  <Chart id="chart" data={chart_data} axes={axes}></Chart>
-  </div> 
-);
+ 
 
 const get_data = async (state = 'nv') => {
 
@@ -294,12 +266,6 @@ const get_data = async (state = 'nv') => {
   document.getElementById("formStateInput").hidden = false
 
   // update chart data by calling other functions?
-
-  lineChart = (
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={chart_data} axes={axes}></Chart>
-    </div> 
-  )
 
   return data
 };
@@ -471,35 +437,35 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  // const chart_data = React.useMemo(
-  //   () => [
-  //     {
-  //       label: 'Series 1', // Infected          
-  //       // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-  //       data: refresh_linechart()
-  //       // hmm: test()
-  //     },
-  //     {
-  //       label: 'Series 2', // DAYS
-  //       data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-  //     }
-  //   ],
-  //   []
-  // )
+  const chart_data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected          
+        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        data: refresh_linechart()
+        // hmm: test()
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
  
-  //  const axes = React.useMemo(
-  //   () => [
-  //     { primary: true, type: 'linear', position: 'bottom' },
-  //     { type: 'linear', position: 'left' }
-  //   ],
-  //   []
-  // )
+   const axes = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
   
-  // const lineChart = (
-  //   <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-  //   <Chart id="chart" data={chart_data} axes={axes}></Chart>
-  //   </div> 
-  // )
+  const lineChart = (
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart id="chart" data={chart_data} axes={axes}></Chart>
+    </div> 
+  )
 
   // lineChart = refresh_linechart()
 
