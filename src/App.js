@@ -227,7 +227,6 @@ function convertEpoch(epoch) {
 // var axes;
 // var lineChart;
 
-
  
 
 const get_data = async (state = 'nv') => {
@@ -267,6 +266,23 @@ const get_data = async (state = 'nv') => {
   document.getElementById("formStateInput").hidden = false
 
   // update chart data by calling other functions?
+
+  let hmm = React.useMemo(
+    () => [
+      {
+        label: 'Series 1', // Infected          
+        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
+        data: refresh_linechart()
+        // hmm: test()
+      },
+      {
+        label: 'Series 2', // DAYS
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
+      }
+    ],
+    []
+  )
+
 
   return data
 };
