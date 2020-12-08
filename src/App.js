@@ -430,7 +430,10 @@ function App() {
         </Form>
 
   {/* <p id="hmm">hmm = {chart_data}</p> */}
+  <div className="card-chart">
   <Chart data={chart_data} axes={axes}></Chart>
+        </div>
+
       <Button onClick={chart_data}>Hmm</Button>
 
 
