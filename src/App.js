@@ -359,40 +359,12 @@ function test2() {
   document.getElementById('chart-header').textContent = "Hello :D "  + testtemp + " " + document.getElementById('chart').dir
   testtemp += 50;
   chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-
-  // chart_data = 
-  //   () => [
-  //     {
-  //       label: 'Series 1', // Infected          
-  //       data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-  //       // hmm: test()
-  //     },
-  //     {
-  //       label: 'Series 2', // DAYS
-  //       data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-  //     }
-  //   ]
-  
-  //   axes = 
-  //     () => [
-  //       { primary: true, type: 'linear', position: 'bottom' },
-  //       { type: 'linear', position: 'left' }
-  //     ]
-    
-
-
-  //   lineChart = (
-  //     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-  //     <Chart id="chart" data={chart_data} axes={axes}></Chart>
-  //     </div> 
-  //   )
-  
-
   return testtemp;
 
 }
 
 function refresh_linechart() {
+  document.getElementById('chart-header').textContent = "Hmm :O "  + testtemp + " " + document.getElementById('chart').dir
 
     testtemp += 10;
     return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
@@ -409,7 +381,7 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  const chart_data = React.useMemo(
+  var chart_data = React.useMemo(
     () => [
       {
         label: 'Series 1', // Infected          
