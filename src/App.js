@@ -224,7 +224,7 @@ function convertEpoch(epoch) {
 }
 
 
-const chart_data = React.useMemo(
+const chart_data = 
   () => [
     {
       label: 'Series 1', // Infected          
@@ -238,15 +238,15 @@ const chart_data = React.useMemo(
     }
   ],
   []
-)
 
- const axes = React.useMemo(
+
+ const axes = 
   () => [
     { primary: true, type: 'linear', position: 'bottom' },
     { type: 'linear', position: 'left' }
   ],
   []
-)
+
 
 
 // var chart_data;
