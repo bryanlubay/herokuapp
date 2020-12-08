@@ -227,7 +227,11 @@ function convertEpoch(epoch) {
 // var axes;
 // var lineChart;
 
- 
+var lineChart = (
+  <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+  <Chart id="chart" data={chart_data} axes={axes}></Chart>
+  </div> 
+);
 
 const get_data = async (state = 'nv') => {
 
@@ -267,22 +271,11 @@ const get_data = async (state = 'nv') => {
 
   // update chart data by calling other functions?
 
-  let hmm = React.useMemo(
-    () => [
-      {
-        label: 'Series 1', // Infected          
-        // data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-        data: refresh_linechart()
-        // hmm: test()
-      },
-      {
-        label: 'Series 2', // DAYS
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-      }
-    ],
-    []
+  lineChart = (
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart id="chart" data={chart_data} axes={axes}></Chart>
+    </div> 
   )
-
 
   return data
 };
@@ -478,11 +471,11 @@ function App() {
     []
   )
   
-  const lineChart = (
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={chart_data} axes={axes}></Chart>
-    </div> 
-  )
+  // const lineChart = (
+  //   <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+  //   <Chart id="chart" data={chart_data} axes={axes}></Chart>
+  //   </div> 
+  // )
 
   // lineChart = refresh_linechart()
 
