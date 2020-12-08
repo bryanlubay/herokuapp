@@ -448,7 +448,7 @@ function App() {
   )} axes={axes}></Chart>
         </div> */}
 
-      <Button onClick={chart_data}>Hmm</Button>
+      {/* <Button onClick={chart_data}>Hmm</Button> */}
 
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
