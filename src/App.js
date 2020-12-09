@@ -649,7 +649,7 @@ function SyntaxHighlighter({ code }) {
   
   var lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
+    <Chart id="chart" data={hmm2}  axes={axes2}></Chart>
     </div> 
   )
   let sourceCode
@@ -710,8 +710,8 @@ function SyntaxHighlighter({ code }) {
 
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
-        {/* {lineChart} */}
-        <Chart className="chart-data" id="chart" data={hmm2} axes={axes2} />
+        {lineChart}
+        {/* <Chart className="chart-data" id="chart" data={hmm2} axes={axes2} /> */}
         </div>
 
       {/* <Box className="box">
