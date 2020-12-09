@@ -711,7 +711,7 @@ function SyntaxHighlighter({ code }) {
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
         {/* {lineChart} */}
-        <Chart id="chart" data={hmm2} axes={axes2} />
+        <Chart className="chart-data" id="chart" data={hmm2} axes={axes2} />
         </div>
 
       {/* <Box className="box">
