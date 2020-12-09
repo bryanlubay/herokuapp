@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
+import { ResizableBox } from 'react-resizable'
 import { Chart } from 'react-charts'
 
 import 'react-widgets/dist/css/react-widgets.css';
@@ -543,6 +544,44 @@ function App() {
     }
   }
 
+  function Box ({
+    children,
+    width = 500,
+    height = 300,
+    resizable = true,
+    style = {},
+    className,
+  }) {
+    return (
+      <div>
+        {resizable ? (
+          <ResizableBox width={width} height={height}>
+            <div
+              style={{
+                ...style,
+                width: '100%',
+                height: '100%',
+              }}
+              className={className}
+            >
+              {children}
+            </div>
+          </ResizableBox>
+        ) : (
+          <div
+            style={{
+              width: `${width}px`,
+              height: `${height}px`,
+              ...style,
+            }}
+            className={className}
+          >
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
   /// END CHART 
 
   const hmm = useChartConfig({
@@ -634,7 +673,9 @@ function App() {
         {lineChart}
         <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
         </div> */}
-        <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
+      <Box>
+        <Chart data={data} series={series} axes={axes} tooltip />
+      </Box>
 
         <div>
 
