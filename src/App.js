@@ -602,7 +602,7 @@ function App() {
 
   const {hmm, randomizeData} = useChartConfig({
     series: 10,
-    data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+    // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
   })
 
   const series = React.useMemo(
