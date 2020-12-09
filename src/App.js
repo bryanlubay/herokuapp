@@ -6,7 +6,7 @@ import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootst
 // import { HashLink as Link } from 'react-router-hash-link';
 import 'react-widgets/dist/css/react-widgets.css';
 // import Iframe from 'react-iframe'
-// import useChartConfig from 'hooks/useChartConfig'
+import useChartConfig from 'hooks/useChartConfig'
 
 
 import { Chart } from 'react-charts'
