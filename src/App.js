@@ -4,6 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { ResizableBox } from 'react-resizable'
 import { Chart } from 'react-charts'
+import { PrismLight } from 'react-syntax-highlighter'
+import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx'
+import theme from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow'
 
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -582,6 +585,16 @@ function App() {
       </div>
     )
   }
+
+  PrismLight.registerLanguage('javascript', jsx)
+
+function SyntaxHighlighter({ code }) {
+  return (
+    <PrismLight language="javascript" style={theme}>
+      {code}
+    </PrismLight>
+  )
+}
   /// END CHART 
 
   const hmm = useChartConfig({
@@ -635,6 +648,7 @@ function App() {
     <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
     </div> 
   )
+  let sourceCode
 
   return (
 
@@ -676,6 +690,7 @@ function App() {
       <Box>
         <Chart data={hmm} series={series} axes={axes} tooltip />
       </Box>
+      <SyntaxHighlighter code={sourceCode} />
 
         <div>
 
