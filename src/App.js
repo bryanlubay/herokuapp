@@ -353,9 +353,6 @@ function test2() {
   document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
   testtemp += 50;
   var chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-  useState(() => {
-    get_data('pa')
-  }, [])
 
   return testtemp;
 
@@ -365,13 +362,20 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
+  const [state, setState] = useState ({
+    chart_data
+  })
+
+  const refresh_linechart = () => 
+  setState(old => ({
+    ...old,
+    chart_data
+  }))
+
   useEffect(() => {
     get_data('nv')
   }, [])
 
-  const hmm = useEffect(() => {
-    get_data('nv')
-  }, [])
 
 
   const chart_data = React.useMemo(
@@ -404,24 +408,6 @@ function App() {
     </div> 
   )
 
-
-  function refresh_linechart() {
-
-    // document.getElementById('hmm').textContent = "Hmm :O "  + testtemp
-    // testtemp += 10;
-    // return [[testtemp, testtemp], [testtemp + 20, testtemp + 20], [testtemp + 30, testtemp + 30], [testtemp + 40, testtemp + 40], [testtemp + 50, testtemp + 50]];
-
-
-    const lineChartRefreshed = (
-      <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-      <Chart id="chart" data={chart_data} axes={axes}></Chart>
-      </div> 
-    )
-  
-    lineChart = lineChartRefreshed
-}
-
-
   return (
 
     <div className="App" >
@@ -442,9 +428,7 @@ function App() {
 
         <button onClick={
           
-          useState(() => {
-            get_data('nv')
-          }, [])
+      refresh_linechart
         
   }>Hmm</button>
 
