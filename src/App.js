@@ -708,15 +708,15 @@ function SyntaxHighlighter({ code }) {
           </Card.Body>
         </Card>
 
-        {/* <div className="card-chart">
+        <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
-        {lineChart}
-        <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
-        </div> */}
-
-      <Box className="box">
+        {/* {lineChart} */}
         <Chart id="chart" data={hmm2} axes={axes2} />
-      </Box>
+        </div>
+
+      {/* <Box className="box">
+        <Chart id="chart" data={hmm2} axes={axes2} />
+      </Box> */}
       {/* <SyntaxHighlighter code={sourceCode} /> */}
 
         <div>
