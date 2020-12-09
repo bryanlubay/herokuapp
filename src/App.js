@@ -550,54 +550,54 @@ function App() {
     }
   }
 
-  function Box ({
-    children,
-    width = 500,
-    height = 300,
-    resizable = true,
-    style = {},
-    className,
-  }) {
-    return (
-      <div>
-        {resizable ? (
-          <ResizableBox width={width} height={height}>
-            <div
-              style={{
-                ...style,
-                width: '100%',
-                height: '100%',
-              }}
-              className={className}
-            >
-              {children}
-            </div>
-          </ResizableBox>
-        ) : (
-          <div
-            style={{
-              width: `${width}px`,
-              height: `${height}px`,
-              ...style,
-            }}
-            className={className}
-          >
-            {children}
-          </div>
-        )}
-      </div>
-    )
-  }
+//   function Box ({
+//     children,
+//     width = 500,
+//     height = 300,
+//     resizable = true,
+//     style = {},
+//     className,
+//   }) {
+//     return (
+//       <div>
+//         {resizable ? (
+//           <ResizableBox width={width} height={height}>
+//             <div
+//               style={{
+//                 ...style,
+//                 width: '100%',
+//                 height: '100%',
+//               }}
+//               className={className}
+//             >
+//               {children}
+//             </div>
+//           </ResizableBox>
+//         ) : (
+//           <div
+//             style={{
+//               width: `${width}px`,
+//               height: `${height}px`,
+//               ...style,
+//             }}
+//             className={className}
+//           >
+//             {children}
+//           </div>
+//         )}
+//       </div>
+//     )
+//   }
 
-  PrismLight.registerLanguage('javascript', jsx)
+//   PrismLight.registerLanguage('javascript', jsx)
 
-function SyntaxHighlighter({ code }) {
-  return (
-    <PrismLight language="javascript" style={theme}>
-      {code}
-    </PrismLight>
-  )
-}
+// function SyntaxHighlighter({ code }) {
+//   return (
+//     <PrismLight language="javascript" style={theme}>
+//       {code}
+//     </PrismLight>
+//   )
+// }
   /// END CHART 
 
   const hmm = useChartConfig({
@@ -622,31 +622,6 @@ function SyntaxHighlighter({ code }) {
   useEffect(() => {
     get_data('nv')
   }, [])
-
-  // const chart_data = React.useMemo(
-  //   () => [
-  //     {
-  //       label: 'Series 1', // Infected          
-  //       data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, testtemp]],
-  //       // data: refresh_linechart()
-  //       // hmm: test()
-  //     },
-  //     {
-  //       label: 'Series 2', // DAYS
-  //       data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 40]]
-  //     }
-  //   ],
-  //   []
-  // )
- 
-  //  const axes = React.useMemo(
-  //   () => [
-  //     { primary: true, type: 'linear', position: 'bottom' },
-  //     { type: 'linear', position: 'left' }
-  //   ],
-  //   []
-  // )
-  
 
   const hmm2 = React.useMemo(
     () => [
