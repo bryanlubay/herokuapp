@@ -420,10 +420,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); chart_data;
-        
-      
-        
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2();         
         }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
@@ -433,6 +430,9 @@ function App() {
             </div>
           </Form.Group>
         </Form>
+
+
+        <Button onClick={chart_data}>Hmm</Button>
 
   {/* <div className="card-chart">
   <Chart data={React.useMemo(
