@@ -647,12 +647,6 @@ function SyntaxHighlighter({ code }) {
   //   []
   // )
   
-  var lineChart = (
-    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm2}  axes={axes2}></Chart>
-    </div> 
-  )
-  let sourceCode
 
   const hmm2 = React.useMemo(
     () => [
@@ -675,6 +669,13 @@ function SyntaxHighlighter({ code }) {
     ],
     []
   )
+
+  const lineChart = (
+    <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+    <Chart id="chart" data={hmm2}  axes={axes2}></Chart>
+    </div> 
+  )
+  let sourceCode
 
   return (
 
