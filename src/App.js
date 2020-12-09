@@ -442,19 +442,22 @@ function App() {
       snapCursor,
       datums,
       data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+      // data: makeDataFrom(dataType, series, useR, datums)
     })
   
     React.useEffect(() => {
       setState(old => ({
         ...old,
-        data: makeDataFrom(dataType, series, useR, datums)
+        data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
+        // data: makeDataFrom(dataType, series, useR, datums)
       }))
     }, [count, dataType, datums, series, useR])
   
     const randomizeData = () =>
       setState(old => ({
         ...old,
-        data: makeDataFrom(dataType, series, useR, datums)
+        data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+        // data: makeDataFrom(dataType, series, useR, datums)
       }))
   
     const Options = optionKeys
