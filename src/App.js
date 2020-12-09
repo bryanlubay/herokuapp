@@ -545,6 +545,10 @@ function App() {
 
   /// END CHART 
 
+  const hmm = useChartConfig({
+    series: 10
+  })
+
 
   useEffect(() => {
     get_data('nv')
@@ -597,6 +601,7 @@ function App() {
           </Form.Group>
         </Form>
 
+        <button onClick={hmm}>Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
