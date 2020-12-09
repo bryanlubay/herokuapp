@@ -687,10 +687,11 @@ function SyntaxHighlighter({ code }) {
         {lineChart}
         <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
         </div> */}
-      {/* <Box>
-        <Chart data={hmm} series={series} axes={axes} tooltip />
+
+      <Box>
+        <Chart id="chart" data={hmm} axes={axes} />
       </Box>
-      <SyntaxHighlighter code={sourceCode} /> */}
+      {/* <SyntaxHighlighter code={sourceCode} /> */}
 
         <div>
 
