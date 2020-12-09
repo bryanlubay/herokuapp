@@ -426,7 +426,7 @@ function App() {
         </Form>
 
 
-        <button onClick={
+        <button onClick={() =>
           
       refresh_linechart
         
