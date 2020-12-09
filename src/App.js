@@ -598,7 +598,8 @@ function SyntaxHighlighter({ code }) {
   /// END CHART 
 
   const hmm = useChartConfig({
-    series: 10
+    series: 10,
+    data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
   })
 
   const series = React.useMemo(
@@ -688,7 +689,7 @@ function SyntaxHighlighter({ code }) {
         <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
         </div> */}
 
-      <Box>
+      <Box className="box">
         <Chart id="chart" data={hmm} axes={axes} />
       </Box>
       {/* <SyntaxHighlighter code={sourceCode} /> */}
