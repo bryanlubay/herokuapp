@@ -353,6 +353,9 @@ function test2() {
   document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
   testtemp += 50;
   var chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+  useState(() => {
+    get_data('pa')
+  }, [])
 
   return testtemp;
 
