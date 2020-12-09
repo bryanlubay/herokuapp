@@ -436,7 +436,9 @@ function App() {
         </Form>
 
 
-        <Button onClick={hmm}>Hmm</Button>
+        <Button onClick={useEffect(() => {
+    get_data('nv')
+  }, [])}>Hmm</Button>
 
   {/* <div className="card-chart">
   <Chart data={React.useMemo(
