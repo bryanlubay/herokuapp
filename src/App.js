@@ -428,8 +428,10 @@ function App() {
 
         <button onClick={() =>
           
-      refresh_linechart
-        
+          useEffect(() => {
+            get_data('nv')
+          }, [])
+                
   }>Hmm</button>
 
   {/* <div className="card-chart">
