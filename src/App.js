@@ -674,7 +674,7 @@ function App() {
         <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
         </div> */}
       <Box>
-        <Chart data={data} series={series} axes={axes} tooltip />
+        <Chart data={hmm} series={series} axes={axes} tooltip />
       </Box>
 
         <div>
