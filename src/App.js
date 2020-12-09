@@ -631,7 +631,8 @@ function App() {
 
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
-        {lineChart}
+        {/* {lineChart} */}
+        <Chart id="chart" data={hmm} series={series} axes={axes}></Chart>
         </div>
 
         <div>
