@@ -654,6 +654,28 @@ function SyntaxHighlighter({ code }) {
   )
   let sourceCode
 
+  const hmm2 = React.useMemo(
+    () => [
+      {
+        label: 'Series 1',
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
+      },
+      {
+        label: 'Series 2',
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+      }
+    ],
+    []
+  )
+
+  const axes2 = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' }
+    ],
+    []
+  )
+
   return (
 
     <div className="App" >
@@ -693,7 +715,7 @@ function SyntaxHighlighter({ code }) {
         </div> */}
 
       <Box className="box">
-        <Chart id="chart" data={hmm} axes={axes} />
+        <Chart id="chart" data={hmm2} axes={axes2} />
       </Box>
       {/* <SyntaxHighlighter code={sourceCode} /> */}
 
