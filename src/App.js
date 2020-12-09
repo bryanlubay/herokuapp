@@ -441,7 +441,7 @@ function App() {
       grouping,
       snapCursor,
       datums,
-      data: makeDataFrom(dataType, series, useR, datums)
+      data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
     })
   
     React.useEffect(() => {
