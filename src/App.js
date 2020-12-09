@@ -600,7 +600,7 @@ function App() {
 // }
   /// END CHART 
 
-  const hmm = useChartConfig({
+  const {hmm, randomizeData} = useChartConfig({
     series: 10,
     data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
   })
@@ -647,7 +647,7 @@ function App() {
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm2}  axes={axes2}></Chart>
+    <Chart id="chart" data={hmm}  axes={axes2}></Chart>
     </div> 
   )
   let sourceCode
@@ -669,7 +669,7 @@ function App() {
           </Form.Group>
         </Form>
 
-        <button onClick={hmm}>Hmm</button>
+        <button onClick={randomizeData}>Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
