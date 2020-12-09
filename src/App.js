@@ -353,6 +353,10 @@ function test2() {
   document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
   testtemp += 50;
   var chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+  useEffect(() => {
+    get_data('nv')
+  }, [])
+
   return testtemp;
 
 }
@@ -436,9 +440,9 @@ function App() {
         </Form>
 
 
-        <button onClick={useEffect(() => {
+        {/* <button onClick={useEffect(() => {
     get_data('nv')
-  }, [])}>Hmm</button>
+  }, [])}>Hmm</button> */}
 
   {/* <div className="card-chart">
   <Chart data={React.useMemo(
