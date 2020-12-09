@@ -365,6 +365,10 @@ function App() {
     get_data('nv')
   }, [])
 
+  const hmm = useEffect(() => {
+    get_data('nv')
+  }, [])
+
 
   const chart_data = React.useMemo(
     () => [
@@ -432,7 +436,7 @@ function App() {
         </Form>
 
 
-        <Button onClick={chart_data}>Hmm</Button>
+        <Button onClick={hmm}>Hmm</Button>
 
   {/* <div className="card-chart">
   <Chart data={React.useMemo(
