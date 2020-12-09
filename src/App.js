@@ -395,7 +395,7 @@ function App() {
   
   const optionKeys = Object.keys(options)
   
-  export default function useChartConfig({
+  function useChartConfig({
     series,
     useR,
     show = [],
