@@ -320,7 +320,7 @@ const get_data = async (state = 'nv') => {
 
   // update chart data by calling other functions?
   // Two weeks stuff below
-  document.getElementById('chart-header').textContent = "Hmmm :O "
+  document.getElementById('chart-header').textContent = "Hmmm :O " + data.Date
 
   return data
 };
