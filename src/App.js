@@ -282,6 +282,7 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
+let days = []
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
@@ -320,9 +321,7 @@ const get_data = async (state = 'nv') => {
 
   // update chart data by calling other functions?
   // Two weeks stuff below
-  let count = 14
-  let i = 1
-  let days = [
+  days = [
     convertEpoch(data.Date[data.Date.length - 1]),
     convertEpoch(data.Date[data.Date.length - 2]),
     convertEpoch(data.Date[data.Date.length - 3]),
@@ -338,10 +337,21 @@ const get_data = async (state = 'nv') => {
     convertEpoch(data.Date[data.Date.length - 13]),
     convertEpoch(data.Date[data.Date.length - 14]),
   ]
-  // while (count) {
 
-  //   count--
-  // }
+  const hmm3 = React.useMemo(
+    () => [
+      {
+        label: 'Red Line',
+        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
+      },
+      {
+        label: 'Blue Line',
+        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+      }
+    ],
+    []
+  )
+
 
   let temp = (data.Date[1]) - (data.Date[2])
   document.getElementById('chart-header').textContent = "Hmmm :O " + days
