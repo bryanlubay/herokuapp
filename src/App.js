@@ -1,6 +1,6 @@
 // heroku git:remote -a bryanlubay
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { ResizableBox } from 'react-resizable'
 import { Chart } from 'react-charts'
@@ -633,7 +633,6 @@ const {hmm, randomizeData} = useChartConfig({
     get_data('nv')
   }, [])
 
-
   const hmm2 = React.useMemo(
     () => [
       {
@@ -654,7 +653,6 @@ const {hmm, randomizeData} = useChartConfig({
                [days[days.length - 3], deaths[deaths.length - 3] ], 
                [days[days.length - 2], deaths[deaths.length - 2] ], 
                [days[days.length - 1], deaths[deaths.length - 1] ]
-              //  [days[days.length], deaths[deaths.length ] ]
 
         ]},
       {
@@ -675,7 +673,6 @@ const {hmm, randomizeData} = useChartConfig({
                [days[days.length - 3], infected[infected.length - 3] ], 
                [days[days.length - 2], infected[infected.length - 2] ], 
                [days[days.length - 1], infected[infected.length - 1] ]
-              //  [days[days.length], infected[infected.length ] ]
 
     ]}
     ],
@@ -686,25 +683,14 @@ const {hmm, randomizeData} = useChartConfig({
     get_data('nv')
   }, [])
 
+  const hmm3 = useMemo(() => show_prevent(),[])
+
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
     <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
     </div> 
   )
-
-
-  function refresh_linechart() {
-
-
-    const lineChart = (
-      <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-      <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
-      </div> 
-    )
-      return lineChart
-}
-  
 
   return (
 
@@ -722,7 +708,7 @@ const {hmm, randomizeData} = useChartConfig({
           </Form.Group>
         </Form>
 
-        {/* <button onClick={() => wtf} >Hmm</button> */}
+        <button onClick={hmm3} >Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
@@ -743,12 +729,6 @@ const {hmm, randomizeData} = useChartConfig({
         {/* <Chart className="chart-data" id="chart" data={hmm} axes={axes} /> */}
         </div>
 
-        {/* <p id="temp">Hmmm</p> */}
-
-      {/* <Box className="box">
-        <Chart id="chart" data={hmm2} axes={axes2} />
-      </Box> */}
-      {/* <SyntaxHighlighter code={sourceCode} /> */}
 
         <div>
 
