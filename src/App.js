@@ -319,8 +319,8 @@ const get_data = async (state = 'nv') => {
   document.getElementById("formStateInput").hidden = false
 
   // update chart data by calling other functions?
-
-  document.getElementById("temp").textContent = "hmmm"
+  // Two weeks stuff below
+  document.getElementById('chart-header').textContent = "Hmmm :O "
 
   return data
 };
@@ -347,7 +347,7 @@ function test() {
 }
 
 function test2() {
-  document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
+  // document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
   testtemp += 50;
   var chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
 
@@ -646,7 +646,7 @@ const {hmm, randomizeData} = useChartConfig({
         {/* <Chart className="chart-data" id="chart" data={hmm} axes={axes} /> */}
         </div>
 
-        <p id="temp"></p>
+        <p id="temp">Hmmm</p>
 
       {/* <Box className="box">
         <Chart id="chart" data={hmm2} axes={axes2} />
