@@ -328,8 +328,8 @@ const get_data = async (state = 'nv') => {
   //   count--
   // }
 
-
-  document.getElementById('chart-header').textContent = "Hmmm :O " + convertEpoch(data.Date[1]) + " " + convertEpoch(data.Date[2])
+  let temp = convertEpoch(data.Date[1]) - convertEpoch(data.Date[2])
+  document.getElementById('chart-header').textContent = "Hmmm :O " + temp
 
   return data
 };
