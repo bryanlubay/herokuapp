@@ -408,6 +408,7 @@ function test2() {
 }
 
 
+// START APP
 function App() {
 
   document.title = "Bryan Lubay's App :)"
@@ -691,6 +692,19 @@ const {hmm, randomizeData} = useChartConfig({
     <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
     </div> 
   )
+
+
+  function refresh_linechart() {
+
+
+    const lineChart = (
+      <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
+      <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
+      </div> 
+    )
+      return lineChart
+    }
+  
 
   return (
 
