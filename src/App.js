@@ -282,22 +282,9 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
-
-const hmm3 = () => {React.useMemo(
-  () => [
-    {
-      label: 'Red Line',
-      data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
-    },
-    {
-      label: 'Blue Line',
-      data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
-    }
-  ],
-  []
-)}
-
 let days = []
+let infected = []
+let deaths = []
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
@@ -350,11 +337,43 @@ const get_data = async (state = 'nv') => {
     convertEpoch(data.Date[data.Date.length - 11]),
     convertEpoch(data.Date[data.Date.length - 12]),
     convertEpoch(data.Date[data.Date.length - 13]),
-    convertEpoch(data.Date[data.Date.length - 14]),
+    convertEpoch(data.Date[data.Date.length - 14])
   ]
 
+  infected = [
+    data.Positive[data.Positive.length - 1],
+    data.Positive[data.Positive.length - 2],
+    data.Positive[data.Positive.length - 3],
+    data.Positive[data.Positive.length - 4],
+    data.Positive[data.Positive.length - 5],
+    data.Positive[data.Positive.length - 6],
+    data.Positive[data.Positive.length - 7],
+    data.Positive[data.Positive.length - 8],
+    data.Positive[data.Positive.length - 9],
+    data.Positive[data.Positive.length - 10],
+    data.Positive[data.Positive.length - 11],
+    data.Positive[data.Positive.length - 12],
+    data.Positive[data.Positive.length - 13],
+    data.Positive[data.Positive.length - 14],
+  ]
 
-  let temp = (data.Date[1]) - (data.Date[2])
+  deaths = [
+    data.Deaths[data.Deaths.length - 1],
+    data.Deaths[data.Deaths.length - 2],
+    data.Deaths[data.Deaths.length - 3],
+    data.Deaths[data.Deaths.length - 4],
+    data.Deaths[data.Deaths.length - 5],
+    data.Deaths[data.Deaths.length - 6],
+    data.Deaths[data.Deaths.length - 7],
+    data.Deaths[data.Deaths.length - 8],
+    data.Deaths[data.Deaths.length - 9],
+    data.Deaths[data.Deaths.length - 10],
+    data.Deaths[data.Deaths.length - 11],
+    data.Deaths[data.Deaths.length - 12],
+    data.Deaths[data.Deaths.length - 13],
+    data.Deaths[data.Deaths.length - 14],
+  ]
+
   document.getElementById('chart-header').textContent = "Hmmm :O " + days
 
   return data
@@ -363,7 +382,6 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
-  
   
 }
 
@@ -388,9 +406,6 @@ function test2() {
 
   return testtemp;
 }
-
-
-
 
 // END CHARTS
 
@@ -622,13 +637,37 @@ const {hmm, randomizeData} = useChartConfig({
   const hmm2 = React.useMemo(
     () => [
       {
-        label: 'Red Line',
-        data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
-      },
+        label: 'Deaths',
+        data: [[deaths[deaths.length - 14], deaths[deaths.length - 13]], 
+               [deaths[deaths.length - 13], deaths[deaths.length - 12]], 
+               [deaths[deaths.length - 12], deaths[deaths.length - 11]], 
+               [deaths[deaths.length - 11], deaths[deaths.length - 10]], 
+               [deaths[deaths.length - 10], deaths[deaths.length - 9]], 
+               [deaths[deaths.length - 9], deaths[deaths.length - 8]], 
+               [deaths[deaths.length - 8], deaths[deaths.length - 7]], 
+               [deaths[deaths.length - 7], deaths[deaths.length - 6]], 
+               [deaths[deaths.length - 6], deaths[deaths.length - 5]], 
+               [deaths[deaths.length - 5], deaths[deaths.length - 4]], 
+               [deaths[deaths.length - 4], deaths[deaths.length - 3]], 
+               [deaths[deaths.length - 3], deaths[deaths.length - 2]], 
+               [deaths[deaths.length - 2], deaths[deaths.length - 1]]
+    ]},
       {
-        label: 'Blue Line',
-        data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
-      }
+        label: 'Infected',
+        data: [[infected[infected.length - 14], infected[infected.length - 13]], 
+               [infected[infected.length - 13], infected[infected.length - 12]], 
+               [infected[infected.length - 12], infected[infected.length - 11]], 
+               [infected[infected.length - 11], infected[infected.length - 10]], 
+               [infected[infected.length - 10], infected[infected.length - 9]], 
+               [infected[infected.length - 9], infected[infected.length - 8]], 
+               [infected[infected.length - 8], infected[infected.length - 7]], 
+               [infected[infected.length - 7], infected[infected.length - 6]], 
+               [infected[infected.length - 6], infected[infected.length - 5]], 
+               [infected[infected.length - 5], infected[infected.length - 4]], 
+               [infected[infected.length - 4], infected[infected.length - 3]], 
+               [infected[infected.length - 3], infected[infected.length - 2]], 
+               [infected[infected.length - 2], infected[infected.length - 1]]
+    ]}
     ],
     []
   )
