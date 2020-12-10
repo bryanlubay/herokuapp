@@ -612,7 +612,7 @@ function App() {
           </Form.Group>
         </Form>
 
-        <button onClick={randomizeData}>Hmm</button>
+        <button >Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
