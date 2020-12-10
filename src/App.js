@@ -374,7 +374,7 @@ const get_data = async (state = 'nv') => {
     data.Deaths[data.Deaths.length - 14],
   ]
 
-  document.getElementById('chart-header').textContent = "Hmmm :O " + infected + "|||||" + deaths
+  // document.getElementById('chart-header').textContent = "Hmmm :O " + infected + "|||||" + deaths
 
   return data
 };
