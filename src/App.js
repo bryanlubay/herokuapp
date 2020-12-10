@@ -720,7 +720,7 @@ const {hmm, randomizeData} = useChartConfig({
         {/* <Chart className="chart-data" id="chart" data={hmm} axes={axes} /> */}
         </div>
 
-        <p id="temp">Hmmm</p>
+        {/* <p id="temp">Hmmm</p> */}
 
       {/* <Box className="box">
         <Chart id="chart" data={hmm2} axes={axes2} />
