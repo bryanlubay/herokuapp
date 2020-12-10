@@ -622,7 +622,7 @@ const {hmm, randomizeData} = useChartConfig({
   )
   const axes = React.useMemo(
     () => [
-      { primary: true, type: 'time', position: 'bottom' },
+      { primary: true, type: 'linear', position: 'bottom' },
       { type: 'linear', position: 'left' }
     ],
     []
@@ -652,7 +652,6 @@ const {hmm, randomizeData} = useChartConfig({
                [days[days.length - 3], deaths[deaths.length - 3] ], 
                [days[days.length - 2], deaths[deaths.length - 2] ], 
                [days[days.length - 1], deaths[deaths.length - 1] ]
-              //  [deaths[deaths.length - 1], deaths[deaths.length]]
         ]},
       {
         label: 'Infected',
@@ -671,7 +670,6 @@ const {hmm, randomizeData} = useChartConfig({
                [days[days.length - 3], infected[infected.length - 3] ], 
                [days[days.length - 2], infected[infected.length - 2] ], 
                [days[days.length - 1], infected[infected.length - 1] ]
-              //  [infected[infected.length - 1], infected[infected.length]]
 
     ]}
     ],
