@@ -322,14 +322,29 @@ const get_data = async (state = 'nv') => {
   // Two weeks stuff below
   let count = 14
   let i = 1
-  let days = []
+  let days = [
+    convertEpoch(data.Date[data.Date.length - 1]),
+    convertEpoch(data.Date[data.Date.length - 2]),
+    convertEpoch(data.Date[data.Date.length - 3]),
+    convertEpoch(data.Date[data.Date.length - 4]),
+    convertEpoch(data.Date[data.Date.length - 5]),
+    convertEpoch(data.Date[data.Date.length - 6]),
+    convertEpoch(data.Date[data.Date.length - 7]),
+    convertEpoch(data.Date[data.Date.length - 8]),
+    convertEpoch(data.Date[data.Date.length - 9]),
+    convertEpoch(data.Date[data.Date.length - 10]),
+    convertEpoch(data.Date[data.Date.length - 11]),
+    convertEpoch(data.Date[data.Date.length - 12]),
+    convertEpoch(data.Date[data.Date.length - 13]),
+    convertEpoch(data.Date[data.Date.length - 14]),
+  ]
   // while (count) {
 
   //   count--
   // }
 
   let temp = (data.Date[1]) - (data.Date[2])
-  document.getElementById('chart-header').textContent = "Hmmm :O " + convertEpoch(temp)
+  document.getElementById('chart-header').textContent = "Hmmm :O " + days
 
   return data
 };
