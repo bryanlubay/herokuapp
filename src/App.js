@@ -671,7 +671,7 @@ const {hmm, randomizeData} = useChartConfig({
                [days[days.length - 4], infected[infected.length - 4] ], 
                [days[days.length - 3], infected[infected.length - 3] ], 
                [days[days.length - 2], infected[infected.length - 2] ], 
-               [days[days.length - 1], infected[infected.length - 1] ]
+               [days[days.length - 1], infected[infected.length - 1] ],
                [days[days.length], infected[infected.length ] ]
 
     ]}
