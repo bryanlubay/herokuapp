@@ -556,7 +556,7 @@ function makeSeries(i, dataType, useR, datums) {
 }
 
 const {hmm, randomizeData} = useChartConfig({
-  series: 10,
+  series: 10
   // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
 })
 
@@ -595,7 +595,7 @@ const {hmm, randomizeData} = useChartConfig({
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm2}  axes={axes}></Chart>
+    <Chart id="chart" data={hmm}  axes={axes}></Chart>
     </div> 
   )
   let sourceCode
@@ -616,7 +616,7 @@ const {hmm, randomizeData} = useChartConfig({
           </Form.Group>
         </Form>
 
-        <button >Hmm</button>
+        <button onClick={randomizeData} >Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
