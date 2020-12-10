@@ -647,7 +647,7 @@ const {hmm, randomizeData} = useChartConfig({
           </Form.Group>
         </Form>
 
-        <button onClick={wtf} >Hmm</button>
+        <button onClick={() => wtf} >Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
