@@ -446,23 +446,23 @@ function useChartConfig({
     grouping,
     snapCursor,
     datums,
-    data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-    // data: makeDataFrom(dataType, series, useR, datums)
+    // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+    data: makeDataFrom(dataType, series, useR, datums)
   })
 
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
-      // data: makeDataFrom(dataType, series, useR, datums)
+      // data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
+      data: makeDataFrom(dataType, series, useR, datums)
     }))
   }, [count, dataType, datums, series, useR])
 
   const randomizeData = () =>
     setState(old => ({
       ...old,
-      data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-      // data: makeDataFrom(dataType, series, useR, datums)
+      // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+      data: makeDataFrom(dataType, series, useR, datums)
     }))
 
   const Options = optionKeys
@@ -569,7 +569,7 @@ const {hmm, randomizeData} = useChartConfig({
   )
   const axes = React.useMemo(
     () => [
-      { primary: true, type: 'linear', position: 'bottom' },
+      { primary: true, type: 'time', position: 'bottom' },
       { type: 'linear', position: 'left' }
     ],
     []
@@ -595,7 +595,7 @@ const {hmm, randomizeData} = useChartConfig({
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm}  axes={axes}></Chart>
+    <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
     </div> 
   )
   let sourceCode
