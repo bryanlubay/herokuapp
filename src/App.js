@@ -320,6 +320,8 @@ const get_data = async (state = 'nv') => {
 
   // update chart data by calling other functions?
 
+  document.getElementById("temp").textContent = "hmmm"
+
   return data
 };
 
@@ -581,29 +583,6 @@ const {hmm, randomizeData} = useChartConfig({
     get_data('nv')
   }, [])
 
-  const [chart_state, chart_setState] = React.useState({
-    // count,
-    // resizable,
-    // canRandomize,
-    // dataType,
-    // elementType,
-    // primaryAxisType,
-    // secondaryAxisType,
-    // primaryAxisPosition,
-    // secondaryAxisPosition,
-    // primaryAxisStack,
-    // secondaryAxisStack,
-    // primaryAxisShow,
-    // secondaryAxisShow,
-    // tooltipAnchor,
-    // tooltipAlign,
-    // grouping,
-    // snapCursor,
-    // datums,
-    // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-    // data: makeDataFrom(dataType, series, useR, datums)
-    
-  })
 
   const hmm2 = React.useMemo(
     () => [
@@ -626,10 +605,9 @@ const {hmm, randomizeData} = useChartConfig({
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={chart_state} series={series} axes={axes} tooltip></Chart>
+    <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
     </div> 
   )
-  let sourceCode
 
   return (
 
@@ -647,7 +625,7 @@ const {hmm, randomizeData} = useChartConfig({
           </Form.Group>
         </Form>
 
-        <button onClick={() => wtf} >Hmm</button>
+        {/* <button onClick={() => wtf} >Hmm</button> */}
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
@@ -667,6 +645,8 @@ const {hmm, randomizeData} = useChartConfig({
         {lineChart}
         {/* <Chart className="chart-data" id="chart" data={hmm} axes={axes} /> */}
         </div>
+
+        <p id="temp"></p>
 
       {/* <Box className="box">
         <Chart id="chart" data={hmm2} axes={axes2} />
