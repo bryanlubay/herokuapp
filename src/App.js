@@ -652,7 +652,8 @@ const {hmm, randomizeData} = useChartConfig({
                [deaths[deaths.length - 5], deaths[deaths.length - 4]], 
                [deaths[deaths.length - 4], deaths[deaths.length - 3]], 
                [deaths[deaths.length - 3], deaths[deaths.length - 2]], 
-               [deaths[deaths.length - 2], deaths[deaths.length - 1]]
+               [deaths[deaths.length - 2], deaths[deaths.length - 1]],
+               [deaths[deaths.length - 1], deaths[deaths.length]]
     ]},
       {
         label: 'Infected',
@@ -671,7 +672,9 @@ const {hmm, randomizeData} = useChartConfig({
                [infected[infected.length - 5], infected[infected.length - 4]], 
                [infected[infected.length - 4], infected[infected.length - 3]], 
                [infected[infected.length - 3], infected[infected.length - 2]], 
-               [infected[infected.length - 2], infected[infected.length - 1]]
+               [infected[infected.length - 2], infected[infected.length - 1]],
+               [infected[infected.length - 1], infected[infected.length]]
+
     ]}
     ],
     []
