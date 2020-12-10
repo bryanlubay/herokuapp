@@ -328,7 +328,7 @@ const get_data = async (state = 'nv') => {
   //   count--
   // }
 
-  let temp = (data.Date[2]) - (data.Date[1])
+  let temp = (data.Date[1]) - (data.Date[2])
   document.getElementById('chart-header').textContent = "Hmmm :O " + convertEpoch(temp)
 
   return data
