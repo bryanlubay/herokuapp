@@ -678,8 +678,8 @@ function App() {
 
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
-        {lineChart}
-        {/* <Chart className="chart-data" id="chart" data={hmm2} axes={axes2} /> */}
+        {/* {lineChart} */}
+        <Chart className="chart-data" id="chart" data={hmm} axes={axes} />
         </div>
 
       {/* <Box className="box">
