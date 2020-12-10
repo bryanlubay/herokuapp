@@ -352,7 +352,21 @@ function test2() {
   return testtemp;
 }
 
-// START CHARTS
+
+const {hmm, randomizeData} = useChartConfig({
+  series: 10,
+  // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+})
+
+
+// END CHARTS
+
+function App() {
+
+  document.title = "Bryan Lubay's App :)"
+
+
+  // START CHARTS
 const options = {
   elementType: ['line', 'area', 'bar', 'bubble'],
   primaryAxisType: ['linear', 'time', 'log', 'ordinal'],
@@ -545,17 +559,7 @@ function makeSeries(i, dataType, useR, datums) {
   }
 }
 
-const {hmm, randomizeData} = useChartConfig({
-  series: 10,
-  // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-})
 
-
-// END CHARTS
-
-function App() {
-
-  document.title = "Bryan Lubay's App :)"
 
   const series = React.useMemo(
     () => ({
