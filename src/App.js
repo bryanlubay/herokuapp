@@ -283,7 +283,7 @@ function hide_symptoms() {
 }
 
 let days = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-let infected = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+let infected = [15,16,17,18,19,20,21,22,23,24,25,26,27,28]
 let deaths = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 const get_data = async (state = 'nv') => {
 
@@ -407,7 +407,6 @@ function test2() {
   return testtemp;
 }
 
-// END CHARTS
 
 function App() {
 
@@ -623,7 +622,7 @@ const {hmm, randomizeData} = useChartConfig({
   )
   const axes = React.useMemo(
     () => [
-      { primary: true, type: 'time', position: 'bottom' },
+      { primary: true, type: 'linear', position: 'bottom' },
       { type: 'linear', position: 'left' }
     ],
     []
