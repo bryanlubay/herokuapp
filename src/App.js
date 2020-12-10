@@ -654,7 +654,8 @@ const {hmm, randomizeData} = useChartConfig({
     ]},
       {
         label: 'Infected',
-        data: [[infected[infected.length - 14], infected[infected.length - 13]], 
+        data: [
+              [infected[infected.length - 14], infected[infected.length - 13]], 
                [infected[infected.length - 13], infected[infected.length - 12]], 
                [infected[infected.length - 12], infected[infected.length - 11]], 
                [infected[infected.length - 11], infected[infected.length - 10]], 
@@ -679,7 +680,7 @@ const {hmm, randomizeData} = useChartConfig({
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
+    {/* <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart> */}
     </div> 
   )
 
