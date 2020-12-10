@@ -611,11 +611,11 @@ const {hmm, randomizeData} = useChartConfig({
   const hmm2 = React.useMemo(
     () => [
       {
-        label: 'Series 1',
+        label: 'Red Line',
         data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
       },
       {
-        label: 'Series 2',
+        label: 'Blue Line',
         data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
       }
     ],
