@@ -637,17 +637,9 @@ function App() {
     []
   )
 
-  const axes2 = React.useMemo(
-    () => [
-      { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'linear', position: 'left' }
-    ],
-    []
-  )
-
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
-    <Chart id="chart" data={hmm2}  axes={axes2}></Chart>
+    <Chart id="chart" data={hmm}  axes={axes}></Chart>
     </div> 
   )
   let sourceCode
