@@ -392,7 +392,6 @@ const options = {
   snapCursor: [true, false]
 }
 
-<<<<<<< HEAD
 // START CHARTS
 const options = {
   elementType: ['line', 'area', 'bar', 'bubble'],
@@ -530,105 +529,6 @@ function useChartConfig({
   }
 }
 
-=======
-const optionKeys = Object.keys(options)
-
-function useChartConfig({
-  series,
-  useR,
-  show = [],
-  count = 1,
-  resizable = true,
-  canRandomize = true,
-  dataType = 'time',
-  elementType = 'line',
-  primaryAxisType = 'time',
-  secondaryAxisType = 'linear',
-  primaryAxisPosition = 'bottom',
-  secondaryAxisPosition = 'left',
-  primaryAxisStack = false,
-  secondaryAxisStack = true,
-  primaryAxisShow = true,
-  secondaryAxisShow = true,
-  tooltipAnchor = 'closest',
-  tooltipAlign = 'auto',
-  grouping = 'primary',
-  snapCursor = true,
-  datums = 10
-}) {
-  const [state, setState] = React.useState({
-    count,
-    resizable,
-    canRandomize,
-    dataType,
-    elementType,
-    primaryAxisType,
-    secondaryAxisType,
-    primaryAxisPosition,
-    secondaryAxisPosition,
-    primaryAxisStack,
-    secondaryAxisStack,
-    primaryAxisShow,
-    secondaryAxisShow,
-    tooltipAnchor,
-    tooltipAlign,
-    grouping,
-    snapCursor,
-    datums,
-    // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-    data: makeDataFrom(dataType, series, useR, datums)
-  })
-
-  React.useEffect(() => {
-    setState(old => ({
-      ...old,
-      // data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
-      data: makeDataFrom(dataType, series, useR, datums)
-    }))
-  }, [count, dataType, datums, series, useR])
-
-  const randomizeData = () =>
-    setState(old => ({
-      ...old,
-      // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-      data: makeDataFrom(dataType, series, useR, datums)
-    }))
-
-  const Options = optionKeys
-    .filter(option => show.indexOf(option) > -1)
-    .map(option => (
-      <div key={option}>
-        {option}: &nbsp;
-        <select
-          value={state[option]}
-          onChange={({ target: { value } }) =>
-            setState(old => ({
-              ...old,
-              [option]:
-                typeof options[option][0] === 'boolean'
-                  ? value === 'true'
-                  : value
-            }))
-          }
-        >
-          {options[option].map(d => (
-            <option value={d} key={d.toString()}>
-              {d.toString()}
-            </option>
-          ))}
-        </select>
-        <br />
-      </div>
-    ))
-
-  return {
-    ...state,
-    randomizeData,
-    Options
-  }
-}
-
->>>>>>> ccaf566fe94668aee7cf5df81ff4afa87523d1eb
 function makeDataFrom(dataType, series, useR, datums) {
   return [
     ...new Array(series || Math.max(Math.round(Math.random() * 5), 1))
@@ -684,17 +584,6 @@ function makeSeries(i, dataType, useR, datums) {
     })
   }
 }
-<<<<<<< HEAD
-=======
-
-
-function App() {
-
-  document.title = "Bryan Lubay's App :)"
-
-  // START CHART 
-
->>>>>>> ccaf566fe94668aee7cf5df81ff4afa87523d1eb
 
 const {hmm, randomizeData} = useChartConfig({
   series: 10,
