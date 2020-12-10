@@ -683,7 +683,7 @@ const {hmm, randomizeData} = useChartConfig({
     get_data('nv')
   }, [])
 
-  const hmm3 = useMemo(() => show_prevent(),[])
+  // const hmm3 = useMemo(() => show_prevent(),[])
 
 
   const lineChart = (
@@ -708,7 +708,7 @@ const {hmm, randomizeData} = useChartConfig({
           </Form.Group>
         </Form>
 
-        <button onClick={hmm3} >Hmm</button>
+        {/* <button onClick={hmm3} >Hmm</button> */}
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
