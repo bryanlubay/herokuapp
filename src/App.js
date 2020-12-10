@@ -221,61 +221,6 @@ function convertEpoch(epoch) {
   return d
 }
 
-const get_data = async (state = 'nv') => {
-
-  document.getElementById("formStateInput").hidden = true
-  document.getElementById("loading").hidden = false
-
-  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-    method: 'GET',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    params: {
-      'state': state
-    }
-  })
-
-  let data = await res.json()
-  let asterik = "*"
-  convertState(state)
-  var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
-  document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
-
-  number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-  document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
-
-  number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
-  document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
-
-  document.getElementById('last_updated').textContent = "Last Updated: " + convertEpoch(data.Date[data.Date.length - 1])
-
-  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + convertEpoch(data.Date[data.Date.length - 2])
-
-  document.getElementById("loading").hidden = true
-  document.getElementById("formStateInput").hidden = false
-
-  // update chart data by calling other functions?
-
-  return data
-};
-
-function update_data() {
-  let temp = convertState(document.getElementById('input').value)
-  get_data(temp)
-  
-  
-}
-
-function update_chart_data() {
-  // let temp = convertState(document.getElementById('input').value)
-  // get_data(temp)
-
-
-}
-
 function show_prevent() {
   document.getElementById("prevent").hidden = false
   document.getElementById("frequently_asked_questions").hidden = true
@@ -337,6 +282,62 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
+const get_data = async (state = 'nv') => {
+
+  document.getElementById("formStateInput").hidden = true
+  document.getElementById("loading").hidden = false
+
+  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    params: {
+      'state': state
+    }
+  })
+
+  let data = await res.json()
+  let asterik = "*"
+  convertState(state)
+  var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
+  document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
+
+  number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
+  document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
+
+  number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
+  document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
+
+  document.getElementById('last_updated').textContent = "Last Updated: " + convertEpoch(data.Date[data.Date.length - 1])
+
+  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + convertEpoch(data.Date[data.Date.length - 2])
+
+  document.getElementById("loading").hidden = true
+  document.getElementById("formStateInput").hidden = false
+
+  // update chart data by calling other functions?
+
+  return data
+};
+
+function update_data() {
+  let temp = convertState(document.getElementById('input').value)
+  get_data(temp)
+  
+  
+}
+
+function update_chart_data() {
+  // let temp = convertState(document.getElementById('input').value)
+  // get_data(temp)
+
+
+}
+
+
 var testtemp = 100;
 function test() {  
   testtemp += 50;
@@ -352,258 +353,210 @@ function test2() {
 
 }
 
-function App() {
+// START CHARTS
+const options = {
+  elementType: ['line', 'area', 'bar', 'bubble'],
+  primaryAxisType: ['linear', 'time', 'log', 'ordinal'],
+  secondaryAxisType: ['linear', 'time', 'log', 'ordinal'],
+  primaryAxisPosition: ['top', 'left', 'right', 'bottom'],
+  secondaryAxisPosition: ['top', 'left', 'right', 'bottom'],
+  secondaryAxisStack: [true, false],
+  primaryAxisShow: [true, false],
+  secondaryAxisShow: [true, false],
+  grouping: ['single', 'series', 'primary', 'secondary'],
+  tooltipAnchor: [
+    'closest',
+    'top',
+    'bottom',
+    'left',
+    'right',
+    'center',
+    'gridTop',
+    'gridBottom',
+    'gridLeft',
+    'gridRight',
+    'gridCenter',
+    'pointer'
+  ],
+  tooltipAlign: [
+    'auto',
+    'top',
+    'bottom',
+    'left',
+    'right',
+    'topLeft',
+    'topRight',
+    'bottomLeft',
+    'bottomRight',
+    'center'
+  ],
+  snapCursor: [true, false]
+}
 
-  document.title = "Bryan Lubay's App :)"
+const optionKeys = Object.keys(options)
 
-  // START CHART 
+function useChartConfig({
+  series,
+  useR,
+  show = [],
+  count = 1,
+  resizable = true,
+  canRandomize = true,
+  dataType = 'time',
+  elementType = 'line',
+  primaryAxisType = 'time',
+  secondaryAxisType = 'linear',
+  primaryAxisPosition = 'bottom',
+  secondaryAxisPosition = 'left',
+  primaryAxisStack = false,
+  secondaryAxisStack = true,
+  primaryAxisShow = true,
+  secondaryAxisShow = true,
+  tooltipAnchor = 'closest',
+  tooltipAlign = 'auto',
+  grouping = 'primary',
+  snapCursor = true,
+  datums = 10
+}) {
+  const [state, setState] = React.useState({
+    count,
+    resizable,
+    canRandomize,
+    dataType,
+    elementType,
+    primaryAxisType,
+    secondaryAxisType,
+    primaryAxisPosition,
+    secondaryAxisPosition,
+    primaryAxisStack,
+    secondaryAxisStack,
+    primaryAxisShow,
+    secondaryAxisShow,
+    tooltipAnchor,
+    tooltipAlign,
+    grouping,
+    snapCursor,
+    datums,
+    data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+    // data: makeDataFrom(dataType, series, useR, datums)
+  })
 
-  const options = {
-    elementType: ['line', 'area', 'bar', 'bubble'],
-    primaryAxisType: ['linear', 'time', 'log', 'ordinal'],
-    secondaryAxisType: ['linear', 'time', 'log', 'ordinal'],
-    primaryAxisPosition: ['top', 'left', 'right', 'bottom'],
-    secondaryAxisPosition: ['top', 'left', 'right', 'bottom'],
-    secondaryAxisStack: [true, false],
-    primaryAxisShow: [true, false],
-    secondaryAxisShow: [true, false],
-    grouping: ['single', 'series', 'primary', 'secondary'],
-    tooltipAnchor: [
-      'closest',
-      'top',
-      'bottom',
-      'left',
-      'right',
-      'center',
-      'gridTop',
-      'gridBottom',
-      'gridLeft',
-      'gridRight',
-      'gridCenter',
-      'pointer'
-    ],
-    tooltipAlign: [
-      'auto',
-      'top',
-      'bottom',
-      'left',
-      'right',
-      'topLeft',
-      'topRight',
-      'bottomLeft',
-      'bottomRight',
-      'center'
-    ],
-    snapCursor: [true, false]
-  }
-  
-  const optionKeys = Object.keys(options)
-  
-  function useChartConfig({
-    series,
-    useR,
-    show = [],
-    count = 1,
-    resizable = true,
-    canRandomize = true,
-    dataType = 'time',
-    elementType = 'line',
-    primaryAxisType = 'time',
-    secondaryAxisType = 'linear',
-    primaryAxisPosition = 'bottom',
-    secondaryAxisPosition = 'left',
-    primaryAxisStack = false,
-    secondaryAxisStack = true,
-    primaryAxisShow = true,
-    secondaryAxisShow = true,
-    tooltipAnchor = 'closest',
-    tooltipAlign = 'auto',
-    grouping = 'primary',
-    snapCursor = true,
-    datums = 10
-  }) {
-    const [state, setState] = React.useState({
-      count,
-      resizable,
-      canRandomize,
-      dataType,
-      elementType,
-      primaryAxisType,
-      secondaryAxisType,
-      primaryAxisPosition,
-      secondaryAxisPosition,
-      primaryAxisStack,
-      secondaryAxisStack,
-      primaryAxisShow,
-      secondaryAxisShow,
-      tooltipAnchor,
-      tooltipAlign,
-      grouping,
-      snapCursor,
-      datums,
+  React.useEffect(() => {
+    setState(old => ({
+      ...old,
+      data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
+      // data: makeDataFrom(dataType, series, useR, datums)
+    }))
+  }, [count, dataType, datums, series, useR])
+
+  const randomizeData = () =>
+    setState(old => ({
+      ...old,
       data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
       // data: makeDataFrom(dataType, series, useR, datums)
-    })
-  
-    React.useEffect(() => {
-      setState(old => ({
-        ...old,
-        data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
-        // data: makeDataFrom(dataType, series, useR, datums)
-      }))
-    }, [count, dataType, datums, series, useR])
-  
-    const randomizeData = () =>
-      setState(old => ({
-        ...old,
-        data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-        // data: makeDataFrom(dataType, series, useR, datums)
-      }))
-  
-    const Options = optionKeys
-      .filter(option => show.indexOf(option) > -1)
-      .map(option => (
-        <div key={option}>
-          {option}: &nbsp;
-          <select
-            value={state[option]}
-            onChange={({ target: { value } }) =>
-              setState(old => ({
-                ...old,
-                [option]:
-                  typeof options[option][0] === 'boolean'
-                    ? value === 'true'
-                    : value
-              }))
-            }
-          >
-            {options[option].map(d => (
-              <option value={d} key={d.toString()}>
-                {d.toString()}
-              </option>
-            ))}
-          </select>
-          <br />
-        </div>
-      ))
-  
-    return {
-      ...state,
-      randomizeData,
-      Options
-    }
+    }))
+
+  const Options = optionKeys
+    .filter(option => show.indexOf(option) > -1)
+    .map(option => (
+      <div key={option}>
+        {option}: &nbsp;
+        <select
+          value={state[option]}
+          onChange={({ target: { value } }) =>
+            setState(old => ({
+              ...old,
+              [option]:
+                typeof options[option][0] === 'boolean'
+                  ? value === 'true'
+                  : value
+            }))
+          }
+        >
+          {options[option].map(d => (
+            <option value={d} key={d.toString()}>
+              {d.toString()}
+            </option>
+          ))}
+        </select>
+        <br />
+      </div>
+    ))
+
+  return {
+    ...state,
+    randomizeData,
+    Options
   }
-  
-  function makeDataFrom(dataType, series, useR, datums) {
-    return [
-      ...new Array(series || Math.max(Math.round(Math.random() * 5), 1))
-    ].map((d, i) => makeSeries(i, dataType, useR, datums))
-  }
-  
-  function makeSeries(i, dataType, useR, datums) {
-    const start = 0
-    const startDate = new Date()
-    startDate.setMinutes(0)
-    startDate.setSeconds(0)
-    startDate.setMilliseconds(0)
-    // const length = 5 + Math.round(Math.random() * 15)
-    const length = datums
-    const min = 0
-    const max = 100
-    const rMin = 2
-    const rMax = 20
-    const nullChance = 0
-    return {
-      label: `Series ${i + 1}`,
-      datums: [...new Array(length)].map((_, i) => {
-        let x = start + i
-        if (dataType === 'ordinal') {
-          x = `Ordinal Group ${x}`
-        }
-        if (dataType === 'time') {
-          x = new Date(startDate.getTime() + 60 * 1000 * 30 * i)
-        }
-        if (dataType === 'linear') {
-          x =
-            Math.random() < nullChance
-              ? null
-              : min + Math.round(Math.random() * (max - min))
-        }
-        const distribution = 1.1
-        const y =
+}
+
+function makeDataFrom(dataType, series, useR, datums) {
+  return [
+    ...new Array(series || Math.max(Math.round(Math.random() * 5), 1))
+  ].map((d, i) => makeSeries(i, dataType, useR, datums))
+}
+
+function makeSeries(i, dataType, useR, datums) {
+  const start = 0
+  const startDate = new Date()
+  startDate.setMinutes(0)
+  startDate.setSeconds(0)
+  startDate.setMilliseconds(0)
+  // const length = 5 + Math.round(Math.random() * 15)
+  const length = datums
+  const min = 0
+  const max = 100
+  const rMin = 2
+  const rMax = 20
+  const nullChance = 0
+  return {
+    label: `Series ${i + 1}`,
+    datums: [...new Array(length)].map((_, i) => {
+      let x = start + i
+      if (dataType === 'ordinal') {
+        x = `Ordinal Group ${x}`
+      }
+      if (dataType === 'time') {
+        x = new Date(startDate.getTime() + 60 * 1000 * 30 * i)
+      }
+      if (dataType === 'linear') {
+        x =
           Math.random() < nullChance
             ? null
             : min + Math.round(Math.random() * (max - min))
-        const r = !useR
-          ? undefined
-          : rMax -
-            Math.floor(
-              Math.log(Math.random() * (distribution ** rMax - rMin) + rMin) /
-                Math.log(distribution)
-            )
-        return {
-          x,
-          y,
-          r
-        }
-      })
-    }
+      }
+      const distribution = 1.1
+      const y =
+        Math.random() < nullChance
+          ? null
+          : min + Math.round(Math.random() * (max - min))
+      const r = !useR
+        ? undefined
+        : rMax -
+          Math.floor(
+            Math.log(Math.random() * (distribution ** rMax - rMin) + rMin) /
+              Math.log(distribution)
+          )
+      return {
+        x,
+        y,
+        r
+      }
+    })
   }
+}
 
-//   function Box ({
-//     children,
-//     width = 500,
-//     height = 300,
-//     resizable = true,
-//     style = {},
-//     className,
-//   }) {
-//     return (
-//       <div>
-//         {resizable ? (
-//           <ResizableBox width={width} height={height}>
-//             <div
-//               style={{
-//                 ...style,
-//                 width: '100%',
-//                 height: '100%',
-//               }}
-//               className={className}
-//             >
-//               {children}
-//             </div>
-//           </ResizableBox>
-//         ) : (
-//           <div
-//             style={{
-//               width: `${width}px`,
-//               height: `${height}px`,
-//               ...style,
-//             }}
-//             className={className}
-//           >
-//             {children}
-//           </div>
-//         )}
-//       </div>
-//     )
-//   }
+const {hmm, randomizeData} = useChartConfig({
+  series: 10,
+  // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+})
 
-//   PrismLight.registerLanguage('javascript', jsx)
 
-// function SyntaxHighlighter({ code }) {
-//   return (
-//     <PrismLight language="javascript" style={theme}>
-//       {code}
-//     </PrismLight>
-//   )
-// }
-  /// END CHART 
+// END CHARTS
 
-  const {hmm, randomizeData} = useChartConfig({
-    series: 10,
-    // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-  })
+function App() {
+
+  document.title = "Bryan Lubay's App :)"
 
   const series = React.useMemo(
     () => ({
@@ -658,8 +611,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2();         
-        }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); test2(); {randomizeData} }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
