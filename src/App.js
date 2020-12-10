@@ -283,7 +283,7 @@ function hide_symptoms() {
 }
 
 
-const hmm3 = React.useMemo(
+const hmm3 = () => {React.useMemo(
   () => [
     {
       label: 'Red Line',
@@ -295,8 +295,7 @@ const hmm3 = React.useMemo(
     }
   ],
   []
-)
-
+)}
 
 let days = []
 const get_data = async (state = 'nv') => {
