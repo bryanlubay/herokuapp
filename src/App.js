@@ -338,7 +338,7 @@ const get_data = async (state = 'nv') => {
     convertEpoch(data.Date[data.Date.length - 14]),
   ]
 
-  const hmm3 = React.useMemo(
+  const hmm3 = () => React.useMemo(
     () => [
       {
         label: 'Red Line',
