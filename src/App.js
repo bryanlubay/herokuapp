@@ -282,9 +282,9 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
-let days = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-let infected = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-let deaths = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+let days = []
+let infected = []
+let deaths = []
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
