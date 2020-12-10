@@ -600,8 +600,9 @@ const {hmm, randomizeData} = useChartConfig({
     // grouping,
     // snapCursor,
     // datums,
-    data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
+    // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
     // data: makeDataFrom(dataType, series, useR, datums)
+    
   })
 
   const hmm2 = React.useMemo(
@@ -617,6 +618,11 @@ const {hmm, randomizeData} = useChartConfig({
     ],
     []
   )
+
+  const wtf =   useEffect(() => {
+    get_data('nv')
+  }, [])
+
 
   const lineChart = (
     <div style={{margin: 'auto', width: '80vw', height: '80vh',  maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available'}}> 
@@ -641,7 +647,7 @@ const {hmm, randomizeData} = useChartConfig({
           </Form.Group>
         </Form>
 
-        <button onClick={randomizeData} >Hmm</button>
+        <button onClick={wtf} >Hmm</button>
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
