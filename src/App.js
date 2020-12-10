@@ -352,46 +352,6 @@ function test2() {
   return testtemp;
 }
 
-// here
-const options = {
-  elementType: ['line', 'area', 'bar', 'bubble'],
-  primaryAxisType: ['linear', 'time', 'log', 'ordinal'],
-  secondaryAxisType: ['linear', 'time', 'log', 'ordinal'],
-  primaryAxisPosition: ['top', 'left', 'right', 'bottom'],
-  secondaryAxisPosition: ['top', 'left', 'right', 'bottom'],
-  secondaryAxisStack: [true, false],
-  primaryAxisShow: [true, false],
-  secondaryAxisShow: [true, false],
-  grouping: ['single', 'series', 'primary', 'secondary'],
-  tooltipAnchor: [
-    'closest',
-    'top',
-    'bottom',
-    'left',
-    'right',
-    'center',
-    'gridTop',
-    'gridBottom',
-    'gridLeft',
-    'gridRight',
-    'gridCenter',
-    'pointer'
-  ],
-  tooltipAlign: [
-    'auto',
-    'top',
-    'bottom',
-    'left',
-    'right',
-    'topLeft',
-    'topRight',
-    'bottomLeft',
-    'bottomRight',
-    'center'
-  ],
-  snapCursor: [true, false]
-}
-
 // START CHARTS
 const options = {
   elementType: ['line', 'area', 'bar', 'bubble'],
