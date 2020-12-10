@@ -320,7 +320,14 @@ const get_data = async (state = 'nv') => {
 
   // update chart data by calling other functions?
   // Two weeks stuff below
-  document.getElementById('chart-header').textContent = "Hmmm :O " + data.Date
+  let count = 14
+  let i = 1
+  let days = []
+  // while (count) {
+
+  //   count--
+  // }
+  document.getElementById('chart-header').textContent = "Hmmm :O " + convertEpoch(data.Date[1] + " " + convertEpoch(data.Date[2])
 
   return data
 };
