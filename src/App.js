@@ -703,7 +703,7 @@ const {hmm, randomizeData} = useChartConfig({
       </div> 
     )
       return lineChart
-    }
+}
   
 
   return (
