@@ -639,6 +639,7 @@ const {hmm, randomizeData} = useChartConfig({
         label: 'Deaths',
         data: [
           
+               [days[0], deaths[0]], 
                [days[days.length - 13], deaths[deaths.length - 13]], 
                [days[days.length - 12], deaths[deaths.length - 12] ], 
                [days[days.length - 11], deaths[deaths.length - 11] ], 
@@ -659,6 +660,7 @@ const {hmm, randomizeData} = useChartConfig({
         label: 'Infected',
         data: [
 
+               [days[0], infected[0]],  
                [days[days.length - 13], infected[infected.length - 13]], 
                [days[days.length - 12], infected[infected.length - 12] ], 
                [days[days.length - 11], infected[infected.length - 11] ], 
@@ -671,8 +673,8 @@ const {hmm, randomizeData} = useChartConfig({
                [days[days.length - 4], infected[infected.length - 4] ], 
                [days[days.length - 3], infected[infected.length - 3] ], 
                [days[days.length - 2], infected[infected.length - 2] ], 
-               [days[days.length - 1], infected[infected.length - 1] ],
-               [days[days.length], infected[infected.length ] ]
+               [days[days.length - 1], infected[infected.length - 1] ]
+              //  [days[days.length], infected[infected.length ] ]
 
     ]}
     ],
