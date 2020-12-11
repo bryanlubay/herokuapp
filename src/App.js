@@ -505,13 +505,13 @@ function App() {
       data: [43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
     })
 
-    // React.useEffect(() => {
-    //   setState(old => ({
-    //     ...old,
-    //     // data: [[10, 10], [20, 20], [30, 30], [40, 40], [50, testtemp]]
-    //     data: makeDataFrom(dataType, series, useR, datums)
-    //   }))
-    // }, [count, dataType, datums, series, useR])
+    React.useEffect(() => {
+      setState(old => ({
+        ...old,
+        data: [43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
+        // data: makeDataFrom(dataType, series, useR, datums)
+      }))
+    }, [])//[count, dataType, datums, series, useR])
 
     // const randomizeData = () =>
     //   setState(old => ({
