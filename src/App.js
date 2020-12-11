@@ -524,7 +524,7 @@ function App() {
   }
 
   // const { hmm, randomizeData } = useChartConfig()
-  const {hmm, hmm3} = useChartConfig()
+  const hmm = useChartConfig()
 
   const series = React.useMemo(
     () => ({
