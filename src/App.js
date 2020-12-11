@@ -423,7 +423,7 @@ function App() {
   // START CHARTS
   function useChartConfig() {
 
-    const [state, setState] = React.useState({
+    const [state, setState] = React.useMemo({
       data: [
         [100, 200],
         [100, 200],
