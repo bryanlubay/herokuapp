@@ -741,7 +741,7 @@ function App() {
 
   const lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-      <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
+      <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
     </div>
   )
 
