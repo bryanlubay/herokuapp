@@ -285,7 +285,105 @@ function hide_symptoms() {
 let days = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
 let infected = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 let deaths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+const get_data = async (state = 'nv') => {
 
+  document.getElementById("formStateInput").hidden = true
+  document.getElementById("loading").hidden = false
+
+  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    params: {
+      'state': state
+    }
+  })
+
+  let data = await res.json()
+  let asterik = "*"
+  convertState(state)
+  var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
+  document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
+
+  number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
+  document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
+
+  number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
+  document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
+
+  document.getElementById('last_updated').textContent = "Last Updated: " + convertEpoch(data.Date[data.Date.length - 1])
+
+  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + convertEpoch(data.Date[data.Date.length - 2])
+
+  document.getElementById("loading").hidden = true
+  document.getElementById("formStateInput").hidden = false
+
+  // update chart data by calling other functions?
+  // Two weeks stuff below
+  days = [
+    convertEpoch(data.Date[data.Date.length - 1]),
+    convertEpoch(data.Date[data.Date.length - 2]),
+    convertEpoch(data.Date[data.Date.length - 3]),
+    convertEpoch(data.Date[data.Date.length - 4]),
+    convertEpoch(data.Date[data.Date.length - 5]),
+    convertEpoch(data.Date[data.Date.length - 6]),
+    convertEpoch(data.Date[data.Date.length - 7]),
+    convertEpoch(data.Date[data.Date.length - 8]),
+    convertEpoch(data.Date[data.Date.length - 9]),
+    convertEpoch(data.Date[data.Date.length - 10]),
+    convertEpoch(data.Date[data.Date.length - 11]),
+    convertEpoch(data.Date[data.Date.length - 12]),
+    convertEpoch(data.Date[data.Date.length - 13]),
+    convertEpoch(data.Date[data.Date.length - 14])
+  ]
+
+  infected = [
+    data.Positive[data.Positive.length - 1],
+    data.Positive[data.Positive.length - 2],
+    data.Positive[data.Positive.length - 3],
+    data.Positive[data.Positive.length - 4],
+    data.Positive[data.Positive.length - 5],
+    data.Positive[data.Positive.length - 6],
+    data.Positive[data.Positive.length - 7],
+    data.Positive[data.Positive.length - 8],
+    data.Positive[data.Positive.length - 9],
+    data.Positive[data.Positive.length - 10],
+    data.Positive[data.Positive.length - 11],
+    data.Positive[data.Positive.length - 12],
+    data.Positive[data.Positive.length - 13],
+    data.Positive[data.Positive.length - 14],
+  ]
+
+  deaths = [
+    data.Deaths[data.Deaths.length - 1],
+    data.Deaths[data.Deaths.length - 2],
+    data.Deaths[data.Deaths.length - 3],
+    data.Deaths[data.Deaths.length - 4],
+    data.Deaths[data.Deaths.length - 5],
+    data.Deaths[data.Deaths.length - 6],
+    data.Deaths[data.Deaths.length - 7],
+    data.Deaths[data.Deaths.length - 8],
+    data.Deaths[data.Deaths.length - 9],
+    data.Deaths[data.Deaths.length - 10],
+    data.Deaths[data.Deaths.length - 11],
+    data.Deaths[data.Deaths.length - 12],
+    data.Deaths[data.Deaths.length - 13],
+    data.Deaths[data.Deaths.length - 14],
+  ]
+
+  // document.getElementById('chart-header').textContent = "Hmmm :O " + infected + "|||||" + deaths
+
+  return data
+};
+
+function update_data() {
+  let temp = convertState(document.getElementById('input').value)
+  get_data(temp)
+
+}
 
 function update_chart_data() {
   // let temp = convertState(document.getElementById('input').value)
@@ -310,158 +408,8 @@ function test2() {
 }
 
 
-// ***********************************************************************************************
-// ***********************************************************************************************
-// ***********************************************************************************************
+// START APP
 function App() {
-
-  const get_data = async (state = 'nv') => {
-
-    document.getElementById("formStateInput").hidden = true
-    document.getElementById("loading").hidden = false
-  
-    let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      params: {
-        'state': state
-      }
-    })
-  
-    let data = await res.json()
-    let asterik = "*"
-    convertState(state)
-    var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
-    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
-  
-    number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
-  
-    number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
-    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
-  
-    document.getElementById('last_updated').textContent = "Last Updated: " + convertEpoch(data.Date[data.Date.length - 1])
-  
-    document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + convertEpoch(data.Date[data.Date.length - 2])
-  
-    document.getElementById("loading").hidden = true
-    document.getElementById("formStateInput").hidden = false
-  
-    // update chart data by calling other functions?
-    // Two weeks stuff below
-    days = [
-      convertEpoch(data.Date[data.Date.length - 1]),
-      convertEpoch(data.Date[data.Date.length - 2]),
-      convertEpoch(data.Date[data.Date.length - 3]),
-      convertEpoch(data.Date[data.Date.length - 4]),
-      convertEpoch(data.Date[data.Date.length - 5]),
-      convertEpoch(data.Date[data.Date.length - 6]),
-      convertEpoch(data.Date[data.Date.length - 7]),
-      convertEpoch(data.Date[data.Date.length - 8]),
-      convertEpoch(data.Date[data.Date.length - 9]),
-      convertEpoch(data.Date[data.Date.length - 10]),
-      convertEpoch(data.Date[data.Date.length - 11]),
-      convertEpoch(data.Date[data.Date.length - 12]),
-      convertEpoch(data.Date[data.Date.length - 13]),
-      convertEpoch(data.Date[data.Date.length - 14])
-    ]
-  
-    infected = [
-      data.Positive[data.Positive.length - 1],
-      data.Positive[data.Positive.length - 2],
-      data.Positive[data.Positive.length - 3],
-      data.Positive[data.Positive.length - 4],
-      data.Positive[data.Positive.length - 5],
-      data.Positive[data.Positive.length - 6],
-      data.Positive[data.Positive.length - 7],
-      data.Positive[data.Positive.length - 8],
-      data.Positive[data.Positive.length - 9],
-      data.Positive[data.Positive.length - 10],
-      data.Positive[data.Positive.length - 11],
-      data.Positive[data.Positive.length - 12],
-      data.Positive[data.Positive.length - 13],
-      data.Positive[data.Positive.length - 14],
-    ]
-  
-    deaths = [
-      data.Deaths[data.Deaths.length - 1],
-      data.Deaths[data.Deaths.length - 2],
-      data.Deaths[data.Deaths.length - 3],
-      data.Deaths[data.Deaths.length - 4],
-      data.Deaths[data.Deaths.length - 5],
-      data.Deaths[data.Deaths.length - 6],
-      data.Deaths[data.Deaths.length - 7],
-      data.Deaths[data.Deaths.length - 8],
-      data.Deaths[data.Deaths.length - 9],
-      data.Deaths[data.Deaths.length - 10],
-      data.Deaths[data.Deaths.length - 11],
-      data.Deaths[data.Deaths.length - 12],
-      data.Deaths[data.Deaths.length - 13],
-      data.Deaths[data.Deaths.length - 14],
-    ]
-  
-    // document.getElementById('chart-header').textContent = "Hmmm :O " + infected + "|||||" + deaths
-    const hmm3 = React.useMemo(
-      () => [
-        {
-          label: 'Deaths',
-          data: [
-  
-            [days[0], deaths[0]],
-            [days[days.length - 13], deaths[deaths.length - 13]],
-            [days[days.length - 12], deaths[deaths.length - 12]],
-            [days[days.length - 11], deaths[deaths.length - 11]],
-            [days[days.length - 10], deaths[deaths.length - 10]],
-            [days[days.length - 9], deaths[deaths.length - 9]],
-            [days[days.length - 8], deaths[deaths.length - 8]],
-            [days[days.length - 7], deaths[deaths.length - 7]],
-            [days[days.length - 6], deaths[deaths.length - 6]],
-            [days[days.length - 5], deaths[deaths.length - 5]],
-            [days[days.length - 4], deaths[deaths.length - 4]],
-            [days[days.length - 3], deaths[deaths.length - 3]],
-            [days[days.length - 2], deaths[deaths.length - 2]],
-            [days[days.length - 1], deaths[deaths.length - 1]]
-  
-          ]
-        },
-        {
-          label: 'Infected',
-          data: [
-  
-            [days[0], infected[0]],
-            [days[days.length - 13], infected[infected.length - 13]],
-            [days[days.length - 12], infected[infected.length - 12]],
-            [days[days.length - 11], infected[infected.length - 11]],
-            [days[days.length - 10], infected[infected.length - 10]],
-            [days[days.length - 9], infected[infected.length - 9]],
-            [days[days.length - 8], infected[infected.length - 8]],
-            [days[days.length - 7], infected[infected.length - 7]],
-            [days[days.length - 6], infected[infected.length - 6]],
-            [days[days.length - 5], infected[infected.length - 5]],
-            [days[days.length - 4], infected[infected.length - 4]],
-            [days[days.length - 3], infected[infected.length - 3]],
-            [days[days.length - 2], infected[infected.length - 2]],
-            [days[days.length - 1], infected[infected.length - 1]]
-  
-          ]
-        }
-      ],
-      []
-    )
-  
-    return data
-  };
-  
-  function update_data() {
-    let temp = convertState(document.getElementById('input').value)
-    get_data(temp)
-  
-  }
-  
 
   document.title = "Bryan Lubay's App :)"
 
