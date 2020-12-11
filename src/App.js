@@ -459,7 +459,7 @@ function App() {
 
   const optionKeys = Object.keys(options)
 
-  function useChartConfig({
+  function useChartConfig(
     // series,
     // useR,
     // show = [],
@@ -481,7 +481,7 @@ function App() {
     // grouping = 'primary',
     // snapCursor = true,
     // datums = 10
-  }) {
+  ) {
     const [state, setState] = React.useState({
       // count,
       // resizable,
@@ -601,8 +601,8 @@ function App() {
     //   ))
 
     return {
-      ...state//,
-      // randomizeData,
+      ...state,//,
+      randomizeData
       // Options
     }
   }
