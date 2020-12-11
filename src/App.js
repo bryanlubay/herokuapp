@@ -468,19 +468,19 @@ function App() {
               data: [
       
                 [days[0], deaths[0]],
-                [days[days.length - 13] + linetemp, deaths[deaths.length - 13]] + linetemp,
-                [days[days.length - 12] + linetemp, deaths[deaths.length - 12]] + linetemp,
-                [days[days.length - 11] + linetemp, deaths[deaths.length - 11]] + linetemp,
-                [days[days.length - 10] + linetemp, deaths[deaths.length - 10]] + linetemp,
-                [days[days.length - 9] + linetemp, deaths[deaths.length - 9]] + linetemp,
-                [days[days.length - 8] + linetemp, deaths[deaths.length - 8]] + linetemp,
-                [days[days.length - 7] + linetemp, deaths[deaths.length - 7]] + linetemp,
-                [days[days.length - 6] + linetemp, deaths[deaths.length - 6]] + linetemp,
-                [days[days.length - 5] + linetemp, deaths[deaths.length - 5]] + linetemp,
-                [days[days.length - 4] + linetemp, deaths[deaths.length - 4]] + linetemp,
-                [days[days.length - 3] + linetemp, deaths[deaths.length - 3]] + linetemp,
-                [days[days.length - 2] + linetemp, deaths[deaths.length - 2]] + linetemp,
-                [days[days.length - 1] + linetemp, deaths[deaths.length - 1]]
+                [days[days.length - 13], deaths[deaths.length - 13]],
+                [days[days.length - 12], deaths[deaths.length - 12]],
+                [days[days.length - 11], deaths[deaths.length - 11]],
+                [days[days.length - 10], deaths[deaths.length - 10]],
+                [days[days.length - 9], deaths[deaths.length - 9]],
+                [days[days.length - 8], deaths[deaths.length - 8]],
+                [days[days.length - 7], deaths[deaths.length - 7]],
+                [days[days.length - 6], deaths[deaths.length - 6]],
+                [days[days.length - 5], deaths[deaths.length - 5]],
+                [days[days.length - 4], deaths[deaths.length - 4]],
+                [days[days.length - 3], deaths[deaths.length - 3]],
+                [days[days.length - 2], deaths[deaths.length - 2]],
+                [days[days.length - 1], deaths[deaths.length - 1]]
       
               ]
             },
