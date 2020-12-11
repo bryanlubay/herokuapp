@@ -459,49 +459,8 @@ function App() {
 
   const optionKeys = Object.keys(options)
 
-  function useChartConfig(
-    // series,
-    // useR,
-    // show = [],
-    // count = 1,
-    // resizable = true,
-    // canRandomize = true,
-    // dataType = 'time',
-    // elementType = 'line',
-    // primaryAxisType = 'time',
-    // secondaryAxisType = 'linear',
-    // primaryAxisPosition = 'bottom',
-    // secondaryAxisPosition = 'left',
-    // primaryAxisStack = false,
-    // secondaryAxisStack = true,
-    // primaryAxisShow = true,
-    // secondaryAxisShow = true,
-    // tooltipAnchor = 'closest',
-    // tooltipAlign = 'auto',
-    // grouping = 'primary',
-    // snapCursor = true,
-    // datums = 10
-  ) {
+  function useChartConfig() {
     const [state, setState] = React.useState({
-      // count,
-      // resizable,
-      // canRandomize,
-      // dataType,
-      // elementType,
-      // primaryAxisType,
-      // secondaryAxisType,
-      // primaryAxisPosition,
-      // secondaryAxisPosition,
-      // primaryAxisStack,
-      // secondaryAxisStack,
-      // primaryAxisShow,
-      // secondaryAxisShow,
-      // tooltipAnchor,
-      // tooltipAlign,
-      // grouping,
-      // snapCursor,
-      // datums,
-      // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
 
       data: [
 
@@ -573,95 +532,40 @@ function App() {
         // data: makeDataFrom(dataType, series, useR, datums)
       }))
 
-    // const Options = optionKeys
-    //   .filter(option => show.indexOf(option) > -1)
-    //   .map(option => (
-    //     <div key={option}>
-    //       {option}: &nbsp;
-    //       <select
-    //         value={state[option]}
-    //         onChange={({ target: { value } }) =>
-    //           setState(old => ({
-    //             ...old,
-    //             [option]:
-    //               typeof options[option][0] === 'boolean'
-    //                 ? value === 'true'
-    //                 : value
-    //           }))
-    //         }
-    //       >
-    //         {options[option].map(d => (
-    //           <option value={d} key={d.toString()}>
-    //             {d.toString()}
-    //           </option>
-    //         ))}
-    //       </select>
-    //       <br />
-    //     </div>
-    //   ))
+    const Options = optionKeys
+      .filter(option => show.indexOf(option) > -1)
+      .map(option => (
+        <div key={option}>
+          {option}: &nbsp;
+          <select
+            value={state[option]}
+            onChange={({ target: { value } }) =>
+              setState(old => ({
+                ...old,
+                [option]:
+                  typeof options[option][0] === 'boolean'
+                    ? value === 'true'
+                    : value
+              }))
+            }
+          >
+            {options[option].map(d => (
+              <option value={d} key={d.toString()}>
+                {d.toString()}
+              </option>
+            ))}
+          </select>
+          <br />
+        </div>
+      ))
 
     return {
       ...state,//,
-      randomizeData
-      // Options
+      randomizeData,
+      Options
     }
   }
 
-  // function makeDataFrom(dataType, series, useR, datums) {
-  //   return [
-  //     ...new Array(series || Math.max(Math.round(Math.random() * 5), 1))
-  //   ].map((d, i) => makeSeries(i, dataType, useR, datums))
-  // }
-
-  // function makeSeries(i, dataType, useR, datums) {
-  //   const start = 0
-  //   const startDate = new Date()
-  //   startDate.setMinutes(0)
-  //   startDate.setSeconds(0)
-  //   startDate.setMilliseconds(0)
-  //   // const length = 5 + Math.round(Math.random() * 15)
-  //   const length = datums
-  //   const min = 0
-  //   const max = 100
-  //   const rMin = 2
-  //   const rMax = 20
-  //   const nullChance = 0
-  //   return {
-  //     label: `Series ${i + 1}`,
-  //     datums: [...new Array(length)].map((_, i) => {
-  //       let x = start + i
-  //       if (dataType === 'ordinal') {
-  //         x = `Ordinal Group ${x}`
-  //       }
-  //       if (dataType === 'time') {
-  //         x = new Date(startDate.getTime() + 60 * 1000 * 30 * i)
-  //       }
-  //       if (dataType === 'linear') {
-  //         x =
-  //           Math.random() < nullChance
-  //             ? null
-  //             : min + Math.round(Math.random() * (max - min))
-  //       }
-  //       const distribution = 1.1
-  //       const y =
-  //         Math.random() < nullChance
-  //           ? null
-  //           : min + Math.round(Math.random() * (max - min))
-  //       const r = !useR
-  //         ? undefined
-  //         : rMax -
-  //         Math.floor(
-  //           Math.log(Math.random() * (distribution ** rMax - rMin) + rMin) /
-  //           Math.log(distribution)
-  //         )
-  //       return {
-  //         x,
-  //         y,
-  //         r
-  //       }
-  //     })
-  //   }
-  // }
 
   const { hmm, randomizeData } = useChartConfig()
 
@@ -741,7 +645,7 @@ function App() {
 
   const lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-      <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
+      <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
     </div>
   )
 
