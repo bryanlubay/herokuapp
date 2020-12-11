@@ -401,6 +401,8 @@ function App() {
   let linetemp = 100;
   function useChartConfig() {
 
+    linetemp += 100;
+
     const [state, setState] = React.useState({
       data: [
         [100, 200],
@@ -467,7 +469,7 @@ function App() {
               label: 'Deaths',
               data: [
       
-                [days[0], deaths[0]],
+                [days[0] + linetemp, deaths[0]] + linetemp,
                 [days[days.length - 13], deaths[deaths.length - 13]],
                 [days[days.length - 12], deaths[deaths.length - 12]],
                 [days[days.length - 11], deaths[deaths.length - 11]],
@@ -516,7 +518,6 @@ function App() {
           </div>
         )
 
-        linetemp += 100;
 
         return temp
 
