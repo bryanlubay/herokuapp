@@ -459,8 +459,49 @@ function App() {
 
   const optionKeys = Object.keys(options)
 
-  function useChartConfig() {
+  function useChartConfig(
+    // series,
+    // useR,
+    // show = [],
+    // count = 1,
+    // resizable = true,
+    // canRandomize = true,
+    // dataType = 'time',
+    // elementType = 'line',
+    // primaryAxisType = 'time',
+    // secondaryAxisType = 'linear',
+    // primaryAxisPosition = 'bottom',
+    // secondaryAxisPosition = 'left',
+    // primaryAxisStack = false,
+    // secondaryAxisStack = true,
+    // primaryAxisShow = true,
+    // secondaryAxisShow = true,
+    // tooltipAnchor = 'closest',
+    // tooltipAlign = 'auto',
+    // grouping = 'primary',
+    // snapCursor = true,
+    // datums = 10
+  ) {
     const [state, setState] = React.useState({
+      // count,
+      // resizable,
+      // canRandomize,
+      // dataType,
+      // elementType,
+      // primaryAxisType,
+      // secondaryAxisType,
+      // primaryAxisPosition,
+      // secondaryAxisPosition,
+      // primaryAxisStack,
+      // secondaryAxisStack,
+      // primaryAxisShow,
+      // secondaryAxisShow,
+      // tooltipAnchor,
+      // tooltipAlign,
+      // grouping,
+      // snapCursor,
+      // datums,
+      // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
 
       data: [
 
@@ -532,37 +573,37 @@ function App() {
         // data: makeDataFrom(dataType, series, useR, datums)
       }))
 
-    const Options = optionKeys
-      .filter(option => show.indexOf(option) > -1)
-      .map(option => (
-        <div key={option}>
-          {option}: &nbsp;
-          <select
-            value={state[option]}
-            onChange={({ target: { value } }) =>
-              setState(old => ({
-                ...old,
-                [option]:
-                  typeof options[option][0] === 'boolean'
-                    ? value === 'true'
-                    : value
-              }))
-            }
-          >
-            {options[option].map(d => (
-              <option value={d} key={d.toString()}>
-                {d.toString()}
-              </option>
-            ))}
-          </select>
-          <br />
-        </div>
-      ))
+    // const Options = optionKeys
+    //   .filter(option => show.indexOf(option) > -1)
+    //   .map(option => (
+    //     <div key={option}>
+    //       {option}: &nbsp;
+    //       <select
+    //         value={state[option]}
+    //         onChange={({ target: { value } }) =>
+    //           setState(old => ({
+    //             ...old,
+    //             [option]:
+    //               typeof options[option][0] === 'boolean'
+    //                 ? value === 'true'
+    //                 : value
+    //           }))
+    //         }
+    //       >
+    //         {options[option].map(d => (
+    //           <option value={d} key={d.toString()}>
+    //             {d.toString()}
+    //           </option>
+    //         ))}
+    //       </select>
+    //       <br />
+    //     </div>
+    //   ))
 
     return {
       ...state,//,
-      randomizeData,
-      Options
+      randomizeData
+      // Options
     }
   }
 
@@ -645,7 +686,7 @@ function App() {
 
   const lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-      <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
+      <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
     </div>
   )
 
