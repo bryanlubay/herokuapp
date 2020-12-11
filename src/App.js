@@ -392,23 +392,6 @@ function update_chart_data() {
 
 }
 
-
-var testtemp = 100;
-function test() {
-  testtemp += 50;
-  return testtemp++;
-}
-
-function test2() {
-  // document.getElementById('chart-header').textContent = "Hello :D "  + testtemp
-  testtemp += 50;
-  var chart_data2 = [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-
-  return testtemp;
-}
-
-// const [hmm3, hmm4] = React.useState({})
-
 // **********************************************************************
 // **********************************************************************
 // **********************************************************************
@@ -541,7 +524,7 @@ function App() {
   }
 
   // const { hmm, randomizeData } = useChartConfig()
-  const hmm = useChartConfig()
+  const {hmm, hmm3} = useChartConfig()
 
   const series = React.useMemo(
     () => ({
@@ -605,9 +588,6 @@ function App() {
     ],
     []
   )
-
-
-  // const hmm3 = React.useMemo(() => show_prevent(), [])
 
 
   const lineChart = (
