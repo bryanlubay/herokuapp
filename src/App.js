@@ -502,23 +502,76 @@ function App() {
       // snapCursor,
       // datums,
       // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-      data: [43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
+
+      data: [
+
+        [100, 200],
+        [100, 200],
+        [101, 201],
+        [102, 202],
+        [103, 203],
+        [104, 204],
+        [105, 205],
+        [106, 206],
+        [107, 207],
+        [108, 208],
+        [109, 209],
+        [110, 210],
+        [111, 211],
+        [112, 212]
+
+      ]
+
     })
 
     React.useEffect(() => {
       setState(old => ({
         ...old,
-        data: [43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
-        // data: makeDataFrom(dataType, series, useR, datums)
+        data: [
+
+          [300, 400],
+          [300, 400],
+          [301, 401],
+          [302, 402],
+          [303, 403],
+          [304, 404],
+          [305, 405],
+          [306, 406],
+          [307, 407],
+          [308, 408],
+          [309, 409],
+          [310, 410],
+          [311, 411],
+          [312, 412]
+  
+        ]
+          // data: makeDataFrom(dataType, series, useR, datums)
       }))
     }, [])//[count, dataType, datums, series, useR])
 
-    // const randomizeData = () =>
-    //   setState(old => ({
-    //     ...old,
-    //     // data: [[50, 50], [60, 60], [70, 70], [80, 80], [90, testtemp]]
-    //     data: makeDataFrom(dataType, series, useR, datums)
-    //   }))
+    const randomizeData = () =>
+      setState(old => ({
+        ...old,
+        data: [
+
+          [500, 600],
+          [500, 600],
+          [501, 601],
+          [502, 602],
+          [503, 603],
+          [504, 604],
+          [505, 605],
+          [506, 606],
+          [507, 607],
+          [508, 608],
+          [509, 609],
+          [510, 610],
+          [511, 611],
+          [512, 612]
+  
+        ]
+        // data: makeDataFrom(dataType, series, useR, datums)
+      }))
 
     // const Options = optionKeys
     //   .filter(option => show.indexOf(option) > -1)
