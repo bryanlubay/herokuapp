@@ -416,54 +416,15 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
+  useEffect(() => {
+    get_data('nv')
+  }, [])
 
   // START CHARTS
-  const options = {
-    elementType: ['line', 'area', 'bar', 'bubble'],
-    primaryAxisType: ['linear', 'time', 'log', 'ordinal'],
-    secondaryAxisType: ['linear', 'time', 'log', 'ordinal'],
-    primaryAxisPosition: ['top', 'left', 'right', 'bottom'],
-    secondaryAxisPosition: ['top', 'left', 'right', 'bottom'],
-    secondaryAxisStack: [true, false],
-    primaryAxisShow: [true, false],
-    secondaryAxisShow: [true, false],
-    grouping: ['single', 'series', 'primary', 'secondary'],
-    tooltipAnchor: [
-      'closest',
-      'top',
-      'bottom',
-      'left',
-      'right',
-      'center',
-      'gridTop',
-      'gridBottom',
-      'gridLeft',
-      'gridRight',
-      'gridCenter',
-      'pointer'
-    ],
-    tooltipAlign: [
-      'auto',
-      'top',
-      'bottom',
-      'left',
-      'right',
-      'topLeft',
-      'topRight',
-      'bottomLeft',
-      'bottomRight',
-      'center'
-    ],
-    snapCursor: [true, false]
-  }
-
-  const optionKeys = Object.keys(options)
-
   function useChartConfig() {
+
     const [state, setState] = React.useState({
-
       data: [
-
         [100, 200],
         [100, 200],
         [101, 201],
@@ -478,10 +439,7 @@ function App() {
         [110, 210],
         [111, 211],
         [112, 212]
-
-      ]
-
-    })
+      ]})
 
     React.useEffect(() => {
       setState(old => ({
@@ -503,16 +461,12 @@ function App() {
           [311, 411],
           [312, 412]
   
-        ]
-          // data: makeDataFrom(dataType, series, useR, datums)
-      }))
-    }, [])//[count, dataType, datums, series, useR])
+        ]}))}, [])
 
     const randomizeData = () =>
       setState(old => ({
         ...old,
         data: [
-
           [500, 600],
           [500, 600],
           [501, 601],
@@ -527,48 +481,17 @@ function App() {
           [510, 610],
           [511, 611],
           [512, 612]
-  
-        ]
-        // data: makeDataFrom(dataType, series, useR, datums)
-      }))
-
-    // const Options = optionKeys
-    //   .filter(option => show.indexOf(option) > -1)
-    //   .map(option => (
-    //     <div key={option}>
-    //       {option}: &nbsp;
-    //       <select
-    //         value={state[option]}
-    //         onChange={({ target: { value } }) =>
-    //           setState(old => ({
-    //             ...old,
-    //             [option]:
-    //               typeof options[option][0] === 'boolean'
-    //                 ? value === 'true'
-    //                 : value
-    //           }))
-    //         }
-    //       >
-    //         {options[option].map(d => (
-    //           <option value={d} key={d.toString()}>
-    //             {d.toString()}
-    //           </option>
-    //         ))}
-    //       </select>
-    //       <br />
-    //     </div>
-    //   ))
+        ]}))
 
     return {
-      ...state,//,
-      randomizeData
-      // Options
+      state
+      // ...state,
+      // randomizeData
     }
   }
 
-
-  const { hmm, randomizeData } = useChartConfig()
-
+  // const { hmm, randomizeData } = useChartConfig()
+  const hmm = useChartConfig()
 
   const series = React.useMemo(
     () => ({
@@ -584,9 +507,6 @@ function App() {
     []
   )
 
-  useEffect(() => {
-    get_data('nv')
-  }, [])
 
   const hmm2 = React.useMemo(
     () => [
@@ -636,16 +556,13 @@ function App() {
     []
   )
 
-  const wtf = useEffect(() => {
-    get_data('nv')
-  }, [])
 
   // const hmm3 = React.useMemo(() => show_prevent(), [])
 
 
   const lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-      <Chart id="chart" data={hmm2} series={series} axes={axes} tooltip></Chart>
+      <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
     </div>
   )
 
