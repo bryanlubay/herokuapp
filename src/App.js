@@ -472,7 +472,7 @@ function App() {
               label: 'Deaths',
               data: [
       
-                [test(), deaths[0]],
+                [days[0], test()],
                 [days[days.length - 13], deaths[deaths.length - 13]],
                 [days[days.length - 12], deaths[deaths.length - 12]],
                 [days[days.length - 11], deaths[deaths.length - 11]],
