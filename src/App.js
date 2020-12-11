@@ -398,67 +398,68 @@ function App() {
 
   // START CHARTS
   let lineChart;
+  let linetemp = 100;
   function useChartConfig() {
 
-    // const [state, setState] = React.useState({
-    //   data: [
-    //     [100, 200],
-    //     [100, 200],
-    //     [101, 201],
-    //     [102, 202],
-    //     [103, 203],
-    //     [104, 204],
-    //     [105, 205],
-    //     [106, 206],
-    //     [107, 207],
-    //     [108, 208],
-    //     [109, 209],
-    //     [110, 210],
-    //     [111, 211],
-    //     [112, 212]
-    //   ]})
+    const [state, setState] = React.useState({
+      data: [
+        [100, 200],
+        [100, 200],
+        [101, 201],
+        [102, 202],
+        [103, 203],
+        [104, 204],
+        [105, 205],
+        [106, 206],
+        [107, 207],
+        [108, 208],
+        [109, 209],
+        [110, 210],
+        [111, 211],
+        [112, 212]
+      ]})
 
-    // React.useEffect(() => {
-    //   setState(old => ({
-    //     ...old,
-    //     data: [
+    React.useEffect(() => {
+      setState(old => ({
+        ...old,
+        data: [
 
-    //       [300, 400],
-    //       [300, 400],
-    //       [301, 401],
-    //       [302, 402],
-    //       [303, 403],
-    //       [304, 404],
-    //       [305, 405],
-    //       [306, 406],
-    //       [307, 407],
-    //       [308, 408],
-    //       [309, 409],
-    //       [310, 410],
-    //       [311, 411],
-    //       [312, 412]
+          [300, 400],
+          [300, 400],
+          [301, 401],
+          [302, 402],
+          [303, 403],
+          [304, 404],
+          [305, 405],
+          [306, 406],
+          [307, 407],
+          [308, 408],
+          [309, 409],
+          [310, 410],
+          [311, 411],
+          [312, 412]
   
-    //     ]}))}, [])
+        ]}))}, [])
 
-    // const randomizeData = () =>
-    //   setState(old => ({
-    //     ...old,
-    //     data: [
-    //       [500, 600],
-    //       [500, 600],
-    //       [501, 601],
-    //       [502, 602],
-    //       [503, 603],
-    //       [504, 604],
-    //       [505, 605],
-    //       [506, 606],
-    //       [507, 607],
-    //       [508, 608],
-    //       [509, 609],
-    //       [510, 610],
-    //       [511, 611],
-    //       [512, 612]
-    //     ]}))
+    const randomizeData = () =>
+      setState(old => ({
+        ...old,
+        data: [
+          [500, 600],
+          [500, 600],
+          [501, 601],
+          [502, 602],
+          [503, 603],
+          [504, 604],
+          [505, 605],
+          [506, 606],
+          [507, 607],
+          [508, 608],
+          [509, 609],
+          [510, 610],
+          [511, 611],
+          [512, 612]
+        ]}))
 
         const temp = React.useMemo(
           () => [
@@ -467,19 +468,19 @@ function App() {
               data: [
       
                 [days[0], deaths[0]],
-                [days[days.length - 13], deaths[deaths.length - 13]],
-                [days[days.length - 12], deaths[deaths.length - 12]],
-                [days[days.length - 11], deaths[deaths.length - 11]],
-                [days[days.length - 10], deaths[deaths.length - 10]],
-                [days[days.length - 9], deaths[deaths.length - 9]],
-                [days[days.length - 8], deaths[deaths.length - 8]],
-                [days[days.length - 7], deaths[deaths.length - 7]],
-                [days[days.length - 6], deaths[deaths.length - 6]],
-                [days[days.length - 5], deaths[deaths.length - 5]],
-                [days[days.length - 4], deaths[deaths.length - 4]],
-                [days[days.length - 3], deaths[deaths.length - 3]],
-                [days[days.length - 2], deaths[deaths.length - 2]],
-                [days[days.length - 1], deaths[deaths.length - 1]]
+                [days[days.length - 13] + linetemp, deaths[deaths.length - 13]] + linetemp,
+                [days[days.length - 12] + linetemp, deaths[deaths.length - 12]] + linetemp,
+                [days[days.length - 11] + linetemp, deaths[deaths.length - 11]] + linetemp,
+                [days[days.length - 10] + linetemp, deaths[deaths.length - 10]] + linetemp,
+                [days[days.length - 9] + linetemp, deaths[deaths.length - 9]] + linetemp,
+                [days[days.length - 8] + linetemp, deaths[deaths.length - 8]] + linetemp,
+                [days[days.length - 7] + linetemp, deaths[deaths.length - 7]] + linetemp,
+                [days[days.length - 6] + linetemp, deaths[deaths.length - 6]] + linetemp,
+                [days[days.length - 5] + linetemp, deaths[deaths.length - 5]] + linetemp,
+                [days[days.length - 4] + linetemp, deaths[deaths.length - 4]] + linetemp,
+                [days[days.length - 3] + linetemp, deaths[deaths.length - 3]] + linetemp,
+                [days[days.length - 2] + linetemp, deaths[deaths.length - 2]] + linetemp,
+                [days[days.length - 1] + linetemp, deaths[deaths.length - 1]]
       
               ]
             },
@@ -515,6 +516,7 @@ function App() {
           </div>
         )
 
+        linetemp += 100;
 
         return temp
 
