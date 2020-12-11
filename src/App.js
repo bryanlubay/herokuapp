@@ -404,6 +404,7 @@ function App() {
   }, [])
 
   // START CHARTS
+  let lineChart;
   function useChartConfig() {
 
     const [state, setState] = React.useState({
@@ -514,6 +515,14 @@ function App() {
           []
         )
       
+
+        lineChart = (
+          <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+            <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
+          </div>
+        )
+
+
         return temp
 
     // return {
@@ -590,7 +599,7 @@ function App() {
   )
 
 
-  const lineChart = (
+  lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
     </div>
