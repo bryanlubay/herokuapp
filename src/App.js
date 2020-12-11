@@ -531,12 +531,13 @@ function App() {
           []
         )
       
+        return temp
 
-    return {
-      temp
-      // ...state,
-      // randomizeData
-    }
+    // return {
+    //   temp
+    //   // ...state,
+    //   // randomizeData
+    // }
   }
 
   // const { hmm, randomizeData } = useChartConfig()
