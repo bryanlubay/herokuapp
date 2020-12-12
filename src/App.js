@@ -444,6 +444,53 @@ function useChartConfig() {
     []
   )
 
+  const hmm3 = React.useMemo(
+    () => [
+      {
+        label: 'Deaths',
+        data: [
+
+          [100, 200,
+          [101, 201,
+          [102, 202,
+          [103, 203,
+          [104, 204,
+          [105, 205,
+          [106, 206,
+          [107, 207,
+          [108, 208,
+          [109, 209,
+          [110, 210,
+          [111, 211,
+          [112, 212,
+          [113, 213 
+
+        ]
+      },
+      {
+        label: 'Infected',
+        data: [
+
+          [days[0], infected[0]],
+          [days[days.length - 13], infected[infected.length - 13]],
+          [days[days.length - 12], infected[infected.length - 12]],
+          [days[days.length - 11], infected[infected.length - 11]],
+          [days[days.length - 10], infected[infected.length - 10]],
+          [days[days.length - 9], infected[infected.length - 9]],
+          [days[days.length - 8], infected[infected.length - 8]],
+          [days[days.length - 7], infected[infected.length - 7]],
+          [days[days.length - 6], infected[infected.length - 6]],
+          [days[days.length - 5], infected[infected.length - 5]],
+          [days[days.length - 4], infected[infected.length - 4]],
+          [days[days.length - 3], infected[infected.length - 3]],
+          [days[days.length - 2], infected[infected.length - 2]],
+          [days[days.length - 1], infected[infected.length - 1]]
+
+        ]
+      }
+    ],
+    []
+  )
 
 
 
