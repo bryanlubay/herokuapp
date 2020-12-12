@@ -417,7 +417,6 @@ function App() {
     lineChart = lineChartRefreshed
 }
 
-  
 
 
 
