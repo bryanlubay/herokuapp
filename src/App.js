@@ -504,13 +504,13 @@ function useChartConfig() {
       )
     
 
-      lineChart = (
-        <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-          <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
-        </div>
-      )
+      // lineChart = (
+      //   <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+      //     <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
+      //   </div>
+      // )
 
-      linetemp += 100;
+      // linetemp += 100;
 
       return temp
 
