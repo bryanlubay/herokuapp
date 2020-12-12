@@ -382,7 +382,6 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
-
 }
 
 
@@ -391,6 +390,137 @@ function test() {
   linetemp += 100;
   return linetemp;
 }
+
+
+let lineChart;
+function useChartConfig() {
+
+  const [state, setState] = React.useState({
+    data: [
+      [100, 200],
+      [100, 200],
+      [101, 201],
+      [102, 202],
+      [103, 203],
+      [104, 204],
+      [105, 205],
+      [106, 206],
+      [107, 207],
+      [108, 208],
+      [109, 209],
+      [110, 210],
+      [111, 211],
+      [112, 212]
+    ]})
+
+  React.useEffect(() => {
+    setState(old => ({
+      ...old,
+      data: [
+
+        [300, 400],
+        [300, 400],
+        [301, 401],
+        [302, 402],
+        [303, 403],
+        [304, 404],
+        [305, 405],
+        [306, 406],
+        [307, 407],
+        [308, 408],
+        [309, 409],
+        [310, 410],
+        [311, 411],
+        [312, 412]
+
+      ]}))}, [])
+
+  const randomizeData = () =>
+    setState(old => ({
+      ...old,
+      data: [
+        [500, 600],
+        [500, 600],
+        [501, 601],
+        [502, 602],
+        [503, 603],
+        [504, 604],
+        [505, 605],
+        [506, 606],
+        [507, 607],
+        [508, 608],
+        [509, 609],
+        [510, 610],
+        [511, 611],
+        [512, 612]
+      ]}))
+
+      const temp = React.useMemo(
+        () => [
+          {
+            label: 'Deaths',
+            data: [
+    
+              [days[0], test()],
+              [days[days.length - 13], deaths[deaths.length - 13]],
+              [days[days.length - 12], deaths[deaths.length - 12]],
+              [days[days.length - 11], deaths[deaths.length - 11]],
+              [days[days.length - 10], deaths[deaths.length - 10]],
+              [days[days.length - 9], deaths[deaths.length - 9]],
+              [days[days.length - 8], deaths[deaths.length - 8]],
+              [days[days.length - 7], deaths[deaths.length - 7]],
+              [days[days.length - 6], deaths[deaths.length - 6]],
+              [days[days.length - 5], deaths[deaths.length - 5]],
+              [days[days.length - 4], deaths[deaths.length - 4]],
+              [days[days.length - 3], deaths[deaths.length - 3]],
+              [days[days.length - 2], deaths[deaths.length - 2]],
+              [days[days.length - 1], deaths[deaths.length - 1]]
+    
+            ]
+          },
+          {
+            label: 'Infected',
+            data: [
+    
+              [days[0], infected[0]],
+              [days[days.length - 13], infected[infected.length - 13]],
+              [days[days.length - 12], infected[infected.length - 12]],
+              [days[days.length - 11], infected[infected.length - 11]],
+              [days[days.length - 10], infected[infected.length - 10]],
+              [days[days.length - 9], infected[infected.length - 9]],
+              [days[days.length - 8], infected[infected.length - 8]],
+              [days[days.length - 7], infected[infected.length - 7]],
+              [days[days.length - 6], infected[infected.length - 6]],
+              [days[days.length - 5], infected[infected.length - 5]],
+              [days[days.length - 4], infected[infected.length - 4]],
+              [days[days.length - 3], infected[infected.length - 3]],
+              [days[days.length - 2], infected[infected.length - 2]],
+              [days[days.length - 1], infected[infected.length - 1]]
+    
+            ]
+          }
+        ],
+        []
+      )
+    
+
+      lineChart = (
+        <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+          <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
+        </div>
+      )
+
+      linetemp += 100;
+
+      return temp
+
+  // return {
+  //   temp
+  //   // ...state,
+  //   // randomizeData
+  // }
+}
+
 // **********************************************************************
 // **********************************************************************
 // **********************************************************************
@@ -403,134 +533,6 @@ function App() {
   }, [])
 
   // START CHARTS
-  let lineChart;
-  function useChartConfig() {
-
-    const [state, setState] = React.useState({
-      data: [
-        [100, 200],
-        [100, 200],
-        [101, 201],
-        [102, 202],
-        [103, 203],
-        [104, 204],
-        [105, 205],
-        [106, 206],
-        [107, 207],
-        [108, 208],
-        [109, 209],
-        [110, 210],
-        [111, 211],
-        [112, 212]
-      ]})
-
-    React.useEffect(() => {
-      setState(old => ({
-        ...old,
-        data: [
-
-          [300, 400],
-          [300, 400],
-          [301, 401],
-          [302, 402],
-          [303, 403],
-          [304, 404],
-          [305, 405],
-          [306, 406],
-          [307, 407],
-          [308, 408],
-          [309, 409],
-          [310, 410],
-          [311, 411],
-          [312, 412]
-  
-        ]}))}, [])
-
-    const randomizeData = () =>
-      setState(old => ({
-        ...old,
-        data: [
-          [500, 600],
-          [500, 600],
-          [501, 601],
-          [502, 602],
-          [503, 603],
-          [504, 604],
-          [505, 605],
-          [506, 606],
-          [507, 607],
-          [508, 608],
-          [509, 609],
-          [510, 610],
-          [511, 611],
-          [512, 612]
-        ]}))
-
-        const temp = React.useMemo(
-          () => [
-            {
-              label: 'Deaths',
-              data: [
-      
-                [days[0], test()],
-                [days[days.length - 13], deaths[deaths.length - 13]],
-                [days[days.length - 12], deaths[deaths.length - 12]],
-                [days[days.length - 11], deaths[deaths.length - 11]],
-                [days[days.length - 10], deaths[deaths.length - 10]],
-                [days[days.length - 9], deaths[deaths.length - 9]],
-                [days[days.length - 8], deaths[deaths.length - 8]],
-                [days[days.length - 7], deaths[deaths.length - 7]],
-                [days[days.length - 6], deaths[deaths.length - 6]],
-                [days[days.length - 5], deaths[deaths.length - 5]],
-                [days[days.length - 4], deaths[deaths.length - 4]],
-                [days[days.length - 3], deaths[deaths.length - 3]],
-                [days[days.length - 2], deaths[deaths.length - 2]],
-                [days[days.length - 1], deaths[deaths.length - 1]]
-      
-              ]
-            },
-            {
-              label: 'Infected',
-              data: [
-      
-                [days[0], infected[0]],
-                [days[days.length - 13], infected[infected.length - 13]],
-                [days[days.length - 12], infected[infected.length - 12]],
-                [days[days.length - 11], infected[infected.length - 11]],
-                [days[days.length - 10], infected[infected.length - 10]],
-                [days[days.length - 9], infected[infected.length - 9]],
-                [days[days.length - 8], infected[infected.length - 8]],
-                [days[days.length - 7], infected[infected.length - 7]],
-                [days[days.length - 6], infected[infected.length - 6]],
-                [days[days.length - 5], infected[infected.length - 5]],
-                [days[days.length - 4], infected[infected.length - 4]],
-                [days[days.length - 3], infected[infected.length - 3]],
-                [days[days.length - 2], infected[infected.length - 2]],
-                [days[days.length - 1], infected[infected.length - 1]]
-      
-              ]
-            }
-          ],
-          []
-        )
-      
-
-        lineChart = (
-          <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-            <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
-          </div>
-        )
-
-        linetemp += 100;
-
-        return temp
-
-    // return {
-    //   temp
-    //   // ...state,
-    //   // randomizeData
-    // }
-  }
 
   // const { hmm, randomizeData } = useChartConfig()
   const hmm = useChartConfig()
