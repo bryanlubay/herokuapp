@@ -392,7 +392,7 @@ function test() {
 }
 
 
-let lineChart;
+// let lineChart;
 function useChartConfig() {
 
   const [state, setState] = React.useState({
@@ -455,53 +455,53 @@ function useChartConfig() {
         [512, 612]
       ]}))
 
-      const temp = React.useMemo(
-        () => [
-          {
-            label: 'Deaths',
-            data: [
+      // const temp = React.useMemo(
+      //   () => [
+      //     {
+      //       label: 'Deaths',
+      //       data: [
     
-              [days[0], test()],
-              [days[days.length - 13], deaths[deaths.length - 13]],
-              [days[days.length - 12], deaths[deaths.length - 12]],
-              [days[days.length - 11], deaths[deaths.length - 11]],
-              [days[days.length - 10], deaths[deaths.length - 10]],
-              [days[days.length - 9], deaths[deaths.length - 9]],
-              [days[days.length - 8], deaths[deaths.length - 8]],
-              [days[days.length - 7], deaths[deaths.length - 7]],
-              [days[days.length - 6], deaths[deaths.length - 6]],
-              [days[days.length - 5], deaths[deaths.length - 5]],
-              [days[days.length - 4], deaths[deaths.length - 4]],
-              [days[days.length - 3], deaths[deaths.length - 3]],
-              [days[days.length - 2], deaths[deaths.length - 2]],
-              [days[days.length - 1], deaths[deaths.length - 1]]
+      //         [days[0], test()],
+      //         [days[days.length - 13], deaths[deaths.length - 13]],
+      //         [days[days.length - 12], deaths[deaths.length - 12]],
+      //         [days[days.length - 11], deaths[deaths.length - 11]],
+      //         [days[days.length - 10], deaths[deaths.length - 10]],
+      //         [days[days.length - 9], deaths[deaths.length - 9]],
+      //         [days[days.length - 8], deaths[deaths.length - 8]],
+      //         [days[days.length - 7], deaths[deaths.length - 7]],
+      //         [days[days.length - 6], deaths[deaths.length - 6]],
+      //         [days[days.length - 5], deaths[deaths.length - 5]],
+      //         [days[days.length - 4], deaths[deaths.length - 4]],
+      //         [days[days.length - 3], deaths[deaths.length - 3]],
+      //         [days[days.length - 2], deaths[deaths.length - 2]],
+      //         [days[days.length - 1], deaths[deaths.length - 1]]
     
-            ]
-          },
-          {
-            label: 'Infected',
-            data: [
+      //       ]
+      //     },
+      //     {
+      //       label: 'Infected',
+      //       data: [
     
-              [days[0], infected[0]],
-              [days[days.length - 13], infected[infected.length - 13]],
-              [days[days.length - 12], infected[infected.length - 12]],
-              [days[days.length - 11], infected[infected.length - 11]],
-              [days[days.length - 10], infected[infected.length - 10]],
-              [days[days.length - 9], infected[infected.length - 9]],
-              [days[days.length - 8], infected[infected.length - 8]],
-              [days[days.length - 7], infected[infected.length - 7]],
-              [days[days.length - 6], infected[infected.length - 6]],
-              [days[days.length - 5], infected[infected.length - 5]],
-              [days[days.length - 4], infected[infected.length - 4]],
-              [days[days.length - 3], infected[infected.length - 3]],
-              [days[days.length - 2], infected[infected.length - 2]],
-              [days[days.length - 1], infected[infected.length - 1]]
+      //         [days[0], infected[0]],
+      //         [days[days.length - 13], infected[infected.length - 13]],
+      //         [days[days.length - 12], infected[infected.length - 12]],
+      //         [days[days.length - 11], infected[infected.length - 11]],
+      //         [days[days.length - 10], infected[infected.length - 10]],
+      //         [days[days.length - 9], infected[infected.length - 9]],
+      //         [days[days.length - 8], infected[infected.length - 8]],
+      //         [days[days.length - 7], infected[infected.length - 7]],
+      //         [days[days.length - 6], infected[infected.length - 6]],
+      //         [days[days.length - 5], infected[infected.length - 5]],
+      //         [days[days.length - 4], infected[infected.length - 4]],
+      //         [days[days.length - 3], infected[infected.length - 3]],
+      //         [days[days.length - 2], infected[infected.length - 2]],
+      //         [days[days.length - 1], infected[infected.length - 1]]
     
-            ]
-          }
-        ],
-        []
-      )
+      //       ]
+      //     }
+      //   ],
+      //   []
+      // )
     
 
       // lineChart = (
@@ -512,7 +512,11 @@ function useChartConfig() {
 
       // linetemp += 100;
 
-      return temp
+      return {
+        ...state,
+        randomizeData
+      }
+      // temp
 
   // return {
   //   temp
@@ -600,10 +604,13 @@ function App() {
     []
   )
 
+  const { data, randomizeData } = useChartConfig({
+  })
 
-  lineChart = (
+
+  const lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-      <Chart id="chart" data={hmm} series={series} axes={axes} tooltip></Chart>
+      <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>
   )
 
@@ -638,6 +645,7 @@ function App() {
           </Card.Body>
         </Card>
 
+        <button onClick={randomizeData}>hmmm</button>
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
