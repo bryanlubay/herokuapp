@@ -492,6 +492,53 @@ function useChartConfig() {
     []
   )
 
+  const hmm4 = React.useMemo(
+    () => [
+      {
+        label: 'Deaths',
+        data: [
+
+          [500, 600],
+          [501, 601],
+          [502, 602],
+          [503, 603],
+          [504, 604],
+          [505, 605],
+          [506, 606],
+          [507, 607],
+          [508, 608],
+          [509, 609],
+          [510, 610],
+          [511, 611],
+          [512, 612],
+          [513, 613] 
+
+        ]
+      },
+      {
+        label: 'Infected',
+        data: [
+
+          [701, 801],
+          [702, 802],
+          [703, 803],
+          [704, 804],
+          [705, 805],
+          [706, 806],
+          [707, 807],
+          [708, 808],
+          [709, 809],
+          [710, 810],
+          [711, 811],
+          [712, 812],
+          [713, 813],
+          [714, 814]
+
+        ]
+      }
+    ],
+    []
+  )
 
 
 
@@ -520,7 +567,7 @@ function useChartConfig() {
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm2
+      data: hmm3
       
       
       // [
@@ -547,7 +594,7 @@ function useChartConfig() {
   const randomizeData = () =>
     setState(old => ({
       ...old,
-      data: hmm2
+      data: hmm4
       
       
       // [
@@ -676,7 +723,7 @@ function App() {
   })
 
 
-  const lineChart = (
+  let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>
