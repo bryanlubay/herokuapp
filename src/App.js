@@ -374,7 +374,7 @@ const get_data = async (state = 'nv') => {
   ]
 
 
-  return data
+  return [days, infected, deaths]
 };
 
 function update_data() {
