@@ -475,20 +475,20 @@ function useChartConfig() {
         label: 'Deaths',
         data: [
 
-          [days[0], deaths[0]],
-          [days[days.length - 13], deaths[deaths.length - 13]],
-          [days[days.length - 12], deaths[deaths.length - 12]],
-          [days[days.length - 11], deaths[deaths.length - 11]],
-          [days[days.length - 10], deaths[deaths.length - 10]],
-          [days[days.length - 9], deaths[deaths.length - 9]],
-          [days[days.length - 8], deaths[deaths.length - 8]],
-          [days[days.length - 7], deaths[deaths.length - 7]],
-          [days[days.length - 6], deaths[deaths.length - 6]],
-          [days[days.length - 5], deaths[deaths.length - 5]],
-          [days[days.length - 4], deaths[deaths.length - 4]],
-          [days[days.length - 3], deaths[deaths.length - 3]],
-          [days[days.length - 2], deaths[deaths.length - 2]],
-          [days[days.length - 1], deaths[deaths.length - 1]]
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
 
         ]
       },
@@ -496,20 +496,22 @@ function useChartConfig() {
         label: 'Infected',
         data: [
 
-          [days[0], infected[0]],
-          [days[days.length - 13], infected[infected.length - 13]],
-          [days[days.length - 12], infected[infected.length - 12]],
-          [days[days.length - 11], infected[infected.length - 11]],
-          [days[days.length - 10], infected[infected.length - 10]],
-          [days[days.length - 9], infected[infected.length - 9]],
-          [days[days.length - 8], infected[infected.length - 8]],
-          [days[days.length - 7], infected[infected.length - 7]],
-          [days[days.length - 6], infected[infected.length - 6]],
-          [days[days.length - 5], infected[infected.length - 5]],
-          [days[days.length - 4], infected[infected.length - 4]],
-          [days[days.length - 3], infected[infected.length - 3]],
-          [days[days.length - 2], infected[infected.length - 2]],
-          [days[days.length - 1], infected[infected.length - 1]]
+
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+
 
         ]
       }
@@ -610,19 +612,21 @@ function useChartConfig() {
   )
 
   const [state, setState] = React.useState({
-    data: data
+    data: hmm4 // don't know/care
   })
+
+  
 
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm4
+      data: hmm4 // initialize
     }))}, [])
 
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: data
+      data: hmm2
     }))
     
       return {
