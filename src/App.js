@@ -387,7 +387,6 @@ function update_data() {
 
 const get_chart_data = async (state = 'nv') => {
 
-  let temp = convertState(document.getElementById('input').value)
 
 
   let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
@@ -463,8 +462,9 @@ const get_chart_data = async (state = 'nv') => {
 function useChartConfig() {
 
 
-  
-  // get_chart_data(temp)
+  let temp = convertState(document.getElementById('input').value)
+
+  get_chart_data(temp)
 
 
 
