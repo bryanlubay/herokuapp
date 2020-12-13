@@ -285,6 +285,7 @@ function hide_symptoms() {
 let days = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
 let infected = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 let deaths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
@@ -371,6 +372,8 @@ const get_data = async (state = 'nv') => {
     data.Deaths[data.Deaths.length - 13],
     data.Deaths[data.Deaths.length - 14],
   ]
+
+  useChartConfig()
 
   return data
 };
@@ -546,8 +549,6 @@ function App() {
     get_data('nv')
   }, [])
 
-  const hmm = useChartConfig()
-
   const series = React.useMemo(
     () => ({
       showPoints: false
@@ -583,7 +584,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={useChartConfig()} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" > Submit</Button>
             </div>
           </Form.Group>
         </Form>
