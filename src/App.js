@@ -464,7 +464,7 @@ function useChartConfig() {
 
   let temp = convertState(document.getElementById('input').value)
 
-  get_chart_data(temp)
+  // get_chart_data(temp)
 
 
 
