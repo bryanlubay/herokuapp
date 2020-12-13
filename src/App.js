@@ -622,7 +622,7 @@ function useChartConfig() {
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: hmm4
+      data: data
     }))
     
       return {
