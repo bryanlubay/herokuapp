@@ -380,7 +380,7 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
-}
+} 
 
 function useChartConfig(data) {
 
@@ -529,13 +529,18 @@ function useChartConfig(data) {
     setState(old => ({
       ...old,
       data: hmm4
+      document.getElementById("chart-header").textContent = "2"
+
     }))
 
+    document.getElementById("chart-header").textContent = "1"
+    
       return {
         ...state,
         updateChartData
       }
-}
+
+} // end useChartConfig
 
 // **********************************************************************
 // **********************************************************************
