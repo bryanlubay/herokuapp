@@ -533,13 +533,13 @@ function useChartConfig() {
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: data
+      data: hmm3
     }))}, [])
 
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: data
+      data: hmm4
 
     }))
     
