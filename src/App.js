@@ -380,7 +380,10 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   let temp2 = get_data(temp)
-  useChartConfig()
+  useEffect(() => {
+    useChartConfig()
+  }, [])
+
   // document.getElementById('chart-header').textContent = deaths[0]
 } 
 
