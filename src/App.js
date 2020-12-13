@@ -529,7 +529,6 @@ function useChartConfig(data) {
     setState(old => ({
       ...old,
       data: hmm4
-      document.getElementById("chart-header").textContent = "2"
 
     }))
 
