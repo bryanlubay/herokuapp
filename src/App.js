@@ -610,7 +610,7 @@ function useChartConfig() {
   )
 
   const [state, setState] = React.useState({
-    data: hmm4
+    data: data
   })
 
   React.useEffect(() => {
