@@ -373,6 +373,7 @@ const get_data = async (state = 'nv') => {
     data.Deaths[data.Deaths.length - 14],
   ]
 
+  document.getElementById('chart-header').textContent = deaths[0]
 
   return [days, infected, deaths]
 };
@@ -380,7 +381,7 @@ const get_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   let temp2 = get_data(temp)
-  document.getElementById('chart-header').textContent = deaths[0]
+  // document.getElementById('chart-header').textContent = deaths[0]
 } 
 
 function useChartConfig(data) {
