@@ -373,7 +373,6 @@ const get_data = async (state = 'nv') => {
     data.Deaths[data.Deaths.length - 14],
   ]
 
-  document.getElementById('chart-header').textContent = deaths[0]
 
   return [days, infected, deaths]
 };
@@ -384,7 +383,7 @@ function update_data() {
   // document.getElementById('chart-header').textContent = deaths[0]
 } 
 
-function useChartConfig(data) {
+function useChartConfig() {
 
 
   const hmm2 = React.useMemo(
@@ -567,7 +566,7 @@ function App() {
     []
   )
 
-  const { data, updateChartData } = useChartConfig(14)
+  const { data, updateChartData } = useChartConfig()
 
 
   let lineChart = (
@@ -582,12 +581,12 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault();  }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); useChartConfig(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData}> Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" /*onClick={updateChartData}*/ > Submit</Button>
             </div>
           </Form.Group>
         </Form>
