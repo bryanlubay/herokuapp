@@ -385,6 +385,7 @@ function update_data() {
   // document.getElementById('chart-header').textContent = temp2
 } 
 
+// updates days, infected, deaths arrays
 const get_chart_data = async (state = 'nv') => {
 
 
@@ -467,7 +468,7 @@ function useChartConfig() {
   get_chart_data()
 
 
-
+// small numbers
   const hmm2 = React.useMemo(
     () => [
       {
@@ -540,20 +541,20 @@ function useChartConfig() {
       {
         label: 'Infected',
         data: [
-          [deaths[0], days[0]],
-          [deaths[1], days[1]],
-          [deaths[2], days[2]],
-          [deaths[3], days[3]],
-          [deaths[4], days[4]],
-          [deaths[5], days[5]],
-          [deaths[6], days[6]],
-          [deaths[7], days[7]],
-          [deaths[8], days[8]],
-          [deaths[9], days[9]],
-          [deaths[10], days[10]],
-          [deaths[11], days[11]],
-          [deaths[12], days[12]],
-          [deaths[13], days[13]]
+          [infected[0], days[0]],
+          [infected[1], days[1]],
+          [infected[2], days[2]],
+          [infected[3], days[3]],
+          [infected[4], days[4]],
+          [infected[5], days[5]],
+          [infected[6], days[6]],
+          [infected[7], days[7]],
+          [infected[8], days[8]],
+          [infected[9], days[9]],
+          [infected[10], days[10]],
+          [infected[11], days[11]],
+          [infected[12], days[12]],
+          [infected[13], days[13]]
         ]
       }
     ],
@@ -621,7 +622,7 @@ function useChartConfig() {
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: hmm2
+      data: hmm4
     }))
     
       return {
