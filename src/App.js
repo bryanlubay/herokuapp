@@ -440,6 +440,22 @@ function useChartConfig() {
         label: 'Deaths',
         data: [
 
+          [801, 901],
+          [802, 902],
+          [803, 903],
+          [804, 904],
+          [805, 905],
+          [806, 906],
+          [807, 907],
+          [808, 908],
+          [809, 909],
+          [810, 910],
+          [811, 911],
+          [812, 912],
+          [813, 913],
+          [814, 914]
+
+
 
         ]
       },
@@ -581,7 +597,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); useChartConfig(); }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
