@@ -434,50 +434,44 @@ function useChartConfig() {
     []
   )
 
-  const hmm3 = React.useMemo(
+  const data = React.useMemo(
     () => [
       {
         label: 'Deaths',
         data: [
-
-          [801, 901],
-          [802, 902],
-          [803, 903],
-          [804, 904],
-          [805, 905],
-          [806, 906],
-          [807, 907],
-          [808, 908],
-          [809, 909],
-          [810, 910],
-          [811, 911],
-          [812, 912],
-          [813, 913],
-          [814, 914]
-
-
-
+          [deaths[0], days[0]],
+          [deaths[1], days[1]],
+          [deaths[2], days[2]],
+          [deaths[3], days[3]],
+          [deaths[4], days[4]],
+          [deaths[5], days[5]],
+          [deaths[6], days[6]],
+          [deaths[7], days[7]],
+          [deaths[8], days[8]],
+          [deaths[9], days[9]],
+          [deaths[10], days[10]],
+          [deaths[11], days[11]],
+          [deaths[12], days[12]],
+          [deaths[13], days[13]]
         ]
       },
       {
         label: 'Infected',
         data: [
-
-          [301, 401],
-          [302, 402],
-          [303, 403],
-          [304, 404],
-          [305, 405],
-          [306, 406],
-          [307, 407],
-          [308, 408],
-          [309, 409],
-          [310, 410],
-          [311, 411],
-          [312, 412],
-          [313, 413],
-          [314, 414]
-
+          [deaths[0], days[0]],
+          [deaths[1], days[1]],
+          [deaths[2], days[2]],
+          [deaths[3], days[3]],
+          [deaths[4], days[4]],
+          [deaths[5], days[5]],
+          [deaths[6], days[6]],
+          [deaths[7], days[7]],
+          [deaths[8], days[8]],
+          [deaths[9], days[9]],
+          [deaths[10], days[10]],
+          [deaths[11], days[11]],
+          [deaths[12], days[12]],
+          [deaths[13], days[13]]
         ]
       }
     ],
@@ -533,19 +527,19 @@ function useChartConfig() {
   )
 
   const [state, setState] = React.useState({
-    data: hmm2
+    data: data
   })
 
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm3
+      data: data
     }))}, [])
 
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: hmm4
+      data: data
 
     }))
     
@@ -602,7 +596,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" /*onClick={updateChartData}*/ > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
