@@ -390,6 +390,21 @@ function update_data() {
 function useChartConfig() {
 
 
+  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    params: {
+      'state': state
+    }
+  })
+
+  let data2 = await res.json()
+
+
   const hmm2 = React.useMemo(
     () => [
       {
@@ -544,7 +559,6 @@ function useChartConfig() {
     setState(old => ({
       ...old,
       data: hmm2
-
     }))
     
       return {
