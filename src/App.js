@@ -525,7 +525,7 @@ function useChartConfig() {
       data: hmm3
     }))}, [])
 
-  const randomizeData = () =>
+  const updateChartData = () =>
     setState(old => ({
       ...old,
       data: hmm4
@@ -533,7 +533,7 @@ function useChartConfig() {
 
       return {
         ...state,
-        randomizeData
+        updateChartData
       }
 }
 
@@ -554,6 +554,7 @@ function App() {
     }),
     []
   )
+
   const axes = React.useMemo(
     () => [
       { primary: true, type: 'linear', position: 'bottom' },
@@ -562,8 +563,7 @@ function App() {
     []
   )
 
-  const { data, randomizeData } = useChartConfig({
-  })
+  const { data, updateChartData } = useChartConfig()
 
 
   let lineChart = (
@@ -583,12 +583,10 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={randomizeData}> Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData}> Submit</Button>
             </div>
           </Form.Group>
         </Form>
-
-        {/* <button onClick={randomizeData} >Hmm</button> */}
 
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
@@ -603,7 +601,7 @@ function App() {
           </Card.Body>
         </Card>
 
-        <button onClick={randomizeData}>hmmm</button>
+        {/* <button onClick={updateChartData}>hmmm</button> */}
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
