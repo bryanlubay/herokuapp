@@ -462,7 +462,7 @@ const get_chart_data = async (state = 'nv') => {
 function useChartConfig() {
 
 
-  let temp = convertState(document.getElementById('input').value)
+  // let temp = convertState(document.getElementById('input').value)
 
   // get_chart_data(temp)
 
