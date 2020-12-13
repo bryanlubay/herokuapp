@@ -620,7 +620,7 @@ function useChartConfig() {
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm4 // initialize
+      data: hmm2 // initialize
     }))}, [])
 
   const updateChartData = () =>
