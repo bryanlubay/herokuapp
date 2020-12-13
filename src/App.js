@@ -382,7 +382,7 @@ function update_data() {
   let temp2 = get_data(temp)
   let temp3 = temp2.Positive[0]
 
-  // document.getElementById('chart-header').textContent = deaths[0]
+  document.getElementById('chart-header').textContent = temp3
 } 
 
 function useChartConfig() {
@@ -535,7 +535,7 @@ function useChartConfig() {
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm4
+      data: hmm2
     }))}, [])
 
   const updateChartData = () =>
