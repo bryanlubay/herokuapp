@@ -387,78 +387,78 @@ function update_data() {
 
 function useChartConfig() {
 
-  let temp = convertState(document.getElementById('input').value)
+  // let temp = convertState(document.getElementById('input').value)
 
-  const get_chart_data = async (state = 'nv') => {
+  // const get_chart_data = async (state = 'nv') => {
   
-    let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      params: {
-        'state': state
-      }
-    })
+  //   let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+  //     method: 'GET',
+  //     mode: 'cors',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json',
+  //     },
+  //     params: {
+  //       'state': state
+  //     }
+  //   })
   
-    let data = await res.json()
+  //   let data = await res.json()
     
-    days = [
-      convertEpoch(data.Date[data.Date.length - 1]),
-      convertEpoch(data.Date[data.Date.length - 2]),
-      convertEpoch(data.Date[data.Date.length - 3]),
-      convertEpoch(data.Date[data.Date.length - 4]),
-      convertEpoch(data.Date[data.Date.length - 5]),
-      convertEpoch(data.Date[data.Date.length - 6]),
-      convertEpoch(data.Date[data.Date.length - 7]),
-      convertEpoch(data.Date[data.Date.length - 8]),
-      convertEpoch(data.Date[data.Date.length - 9]),
-      convertEpoch(data.Date[data.Date.length - 10]),
-      convertEpoch(data.Date[data.Date.length - 11]),
-      convertEpoch(data.Date[data.Date.length - 12]),
-      convertEpoch(data.Date[data.Date.length - 13]),
-      convertEpoch(data.Date[data.Date.length - 14])
-    ]
+  //   days = [
+  //     convertEpoch(data.Date[data.Date.length - 1]),
+  //     convertEpoch(data.Date[data.Date.length - 2]),
+  //     convertEpoch(data.Date[data.Date.length - 3]),
+  //     convertEpoch(data.Date[data.Date.length - 4]),
+  //     convertEpoch(data.Date[data.Date.length - 5]),
+  //     convertEpoch(data.Date[data.Date.length - 6]),
+  //     convertEpoch(data.Date[data.Date.length - 7]),
+  //     convertEpoch(data.Date[data.Date.length - 8]),
+  //     convertEpoch(data.Date[data.Date.length - 9]),
+  //     convertEpoch(data.Date[data.Date.length - 10]),
+  //     convertEpoch(data.Date[data.Date.length - 11]),
+  //     convertEpoch(data.Date[data.Date.length - 12]),
+  //     convertEpoch(data.Date[data.Date.length - 13]),
+  //     convertEpoch(data.Date[data.Date.length - 14])
+  //   ]
   
-    infected = [
-      data.Positive[data.Positive.length - 1],
-      data.Positive[data.Positive.length - 2],
-      data.Positive[data.Positive.length - 3],
-      data.Positive[data.Positive.length - 4],
-      data.Positive[data.Positive.length - 5],
-      data.Positive[data.Positive.length - 6],
-      data.Positive[data.Positive.length - 7],
-      data.Positive[data.Positive.length - 8],
-      data.Positive[data.Positive.length - 9],
-      data.Positive[data.Positive.length - 10],
-      data.Positive[data.Positive.length - 11],
-      data.Positive[data.Positive.length - 12],
-      data.Positive[data.Positive.length - 13],
-      data.Positive[data.Positive.length - 14],
-    ]
+  //   infected = [
+  //     data.Positive[data.Positive.length - 1],
+  //     data.Positive[data.Positive.length - 2],
+  //     data.Positive[data.Positive.length - 3],
+  //     data.Positive[data.Positive.length - 4],
+  //     data.Positive[data.Positive.length - 5],
+  //     data.Positive[data.Positive.length - 6],
+  //     data.Positive[data.Positive.length - 7],
+  //     data.Positive[data.Positive.length - 8],
+  //     data.Positive[data.Positive.length - 9],
+  //     data.Positive[data.Positive.length - 10],
+  //     data.Positive[data.Positive.length - 11],
+  //     data.Positive[data.Positive.length - 12],
+  //     data.Positive[data.Positive.length - 13],
+  //     data.Positive[data.Positive.length - 14],
+  //   ]
   
-    deaths = [
-      data.Deaths[data.Deaths.length - 1],
-      data.Deaths[data.Deaths.length - 2],
-      data.Deaths[data.Deaths.length - 3],
-      data.Deaths[data.Deaths.length - 4],
-      data.Deaths[data.Deaths.length - 5],
-      data.Deaths[data.Deaths.length - 6],
-      data.Deaths[data.Deaths.length - 7],
-      data.Deaths[data.Deaths.length - 8],
-      data.Deaths[data.Deaths.length - 9],
-      data.Deaths[data.Deaths.length - 10],
-      data.Deaths[data.Deaths.length - 11],
-      data.Deaths[data.Deaths.length - 12],
-      data.Deaths[data.Deaths.length - 13],
-      data.Deaths[data.Deaths.length - 14],
-    ]
+  //   deaths = [
+  //     data.Deaths[data.Deaths.length - 1],
+  //     data.Deaths[data.Deaths.length - 2],
+  //     data.Deaths[data.Deaths.length - 3],
+  //     data.Deaths[data.Deaths.length - 4],
+  //     data.Deaths[data.Deaths.length - 5],
+  //     data.Deaths[data.Deaths.length - 6],
+  //     data.Deaths[data.Deaths.length - 7],
+  //     data.Deaths[data.Deaths.length - 8],
+  //     data.Deaths[data.Deaths.length - 9],
+  //     data.Deaths[data.Deaths.length - 10],
+  //     data.Deaths[data.Deaths.length - 11],
+  //     data.Deaths[data.Deaths.length - 12],
+  //     data.Deaths[data.Deaths.length - 13],
+  //     data.Deaths[data.Deaths.length - 14],
+  //   ]
   
 
-    return data
-  };
+  //   return data
+  // };
   
   // get_chart_data(temp)
 
