@@ -379,10 +379,10 @@ const get_data = async (state = 'nv') => {
 
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
-  get_data(temp)
+  let temp2 = get_data(temp).data
   // let temp3 = temp2.Positive[0]
 
-  // document.getElementById('chart-header').textContent = temp3
+  document.getElementById('chart-header').textContent = temp2
 } 
 
 function useChartConfig() {
