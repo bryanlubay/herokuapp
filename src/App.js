@@ -382,7 +382,7 @@ function update_data() {
   get_data(temp)
 }
 
-function useChartConfig() {
+function useChartConfig(data) {
 
 
   const hmm2 = React.useMemo(
@@ -563,7 +563,7 @@ function App() {
     []
   )
 
-  const { data, updateChartData } = useChartConfig()
+  const { data, updateChartData } = useChartConfig(14)
 
 
   let lineChart = (
