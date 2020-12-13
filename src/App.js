@@ -539,7 +539,7 @@ function useChartConfig() {
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: hmm3
+      data: data
 
     }))
     
