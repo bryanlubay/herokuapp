@@ -460,7 +460,7 @@ function useChartConfig() {
     return data
   };
   
-  get_chart_data(temp)
+  // get_chart_data(temp)
 
 
 
