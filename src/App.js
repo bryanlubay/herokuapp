@@ -552,6 +552,56 @@ function update_chart() {
   deaths[12] = deaths[12]++
   deaths[13] = deaths[13]++
 
+  // small numbers
+  const hmm2 = React.useMemo(
+    () => [
+      {
+        label: 'Deaths',
+        data: [
+
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+
+        ]
+      },
+      {
+        label: 'Infected',
+        data: [
+
+
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+
+
+        ]
+      }
+    ],
+    []
+  )
 
   
   return new Array (
@@ -750,22 +800,23 @@ function useChartConfig() {
       },
       {
         label: 'Infected',
-        data: [
-          [infected[0], days[0]],
-          [infected[1], days[1]],
-          [infected[2], days[2]],
-          [infected[3], days[3]],
-          [infected[4], days[4]],
-          [infected[5], days[5]],
-          [infected[6], days[6]],
-          [infected[7], days[7]],
-          [infected[8], days[8]],
-          [infected[9], days[9]],
-          [infected[10], days[10]],
-          [infected[11], days[11]],
-          [infected[12], days[12]],
-          [infected[13], days[13]]
-        ]
+        data: update_chart()
+        // [
+        //   [infected[0], days[0]],
+        //   [infected[1], days[1]],
+        //   [infected[2], days[2]],
+        //   [infected[3], days[3]],
+        //   [infected[4], days[4]],
+        //   [infected[5], days[5]],
+        //   [infected[6], days[6]],
+        //   [infected[7], days[7]],
+        //   [infected[8], days[8]],
+        //   [infected[9], days[9]],
+        //   [infected[10], days[10]],
+        //   [infected[11], days[11]],
+        //   [infected[12], days[12]],
+        //   [infected[13], days[13]]
+        // ]
       }
     ],
     []
