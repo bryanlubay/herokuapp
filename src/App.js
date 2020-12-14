@@ -627,7 +627,9 @@ function useChartConfig() {
           [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
           [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
           [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [date2[0], deaths2[0]]
+          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+
+          // [date2[0], deaths2[0]]
 
         ]
       },
