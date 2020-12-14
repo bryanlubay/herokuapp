@@ -286,6 +286,9 @@ let days = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
 let infected = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 let deaths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
 const get_data = async (state = 'nv') => {
 
   document.getElementById("formStateInput").hidden = true
@@ -572,6 +575,61 @@ function update_chart() {
 
 }
 
+
+let hmm2 = React.useMemo(
+  () => [
+    {
+      label: 'Deaths',
+      data: [
+
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+
+      ]
+    },
+    {
+      label: 'Infected',
+      data: [
+
+
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+
+
+      ]
+    }
+  ],
+  []
+)
+
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
 function useChartConfig() {
 
   const get_chart_data2 = async (state = 'nv') => {
