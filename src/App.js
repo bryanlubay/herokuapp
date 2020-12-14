@@ -282,10 +282,6 @@ function hide_symptoms() {
   document.getElementById("symptoms").hidden = true
 }
 
-let days = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
-let infected = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
-let deaths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
@@ -338,9 +334,9 @@ function update_data() {
 /************************************************************************/
 function useChartConfig() {
 
-  let date2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
-  let positive2 = [14,15,16,17,18,19,20,21,22,23,24,25,26,27]
-  let deaths2 = [28,29,30,31,32,33,34,35,36,37,38,39,40,41]
+  let date = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+  let positive = [14,15,16,17,18,19,20,21,22,23,24,25,26,27]
+  let deaths = [28,29,30,31,32,33,34,35,36,37,38,39,40,41]
 
   const get_chart_data2 = async (state = 'nv') => {
     state = convertState(document.getElementById('input').value)
@@ -358,11 +354,11 @@ function useChartConfig() {
   
     let data = await res.json()
 
-    date2 = data.Date
-    positive2 = data.Positive
-    deaths2 = data.Deaths
+    date = data.Date
+    positive = data.Positive
+    deaths = data.Deaths
     
-    document.getElementById('chart-header').textContent = positive2[positive2.length - 1] + " " + deaths2[deaths2.length - 1]
+    document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
 
 
     return data
@@ -375,39 +371,39 @@ function useChartConfig() {
       {
         label: 'Deaths',
         data: [
-          [positive2[positive2.length - 1], date2[date2.length - 1]],
-          [positive2[positive2.length - 2], date2[date2.length - 2]],
-          [positive2[positive2.length - 3], date2[date2.length - 3]],
-          [positive2[positive2.length - 4], date2[date2.length - 4]],
-          [positive2[positive2.length - 5], date2[date2.length - 5]],
-          [positive2[positive2.length - 6], date2[date2.length - 6]],
-          [positive2[positive2.length - 7], date2[date2.length - 7]],
-          [positive2[positive2.length - 8], date2[date2.length - 8]],
-          [positive2[positive2.length - 9], date2[date2.length - 9]],
-          [positive2[positive2.length - 10], date2[date2.length - 10]],
-          [positive2[positive2.length - 11], date2[date2.length - 11]],
-          [positive2[positive2.length - 12], date2[date2.length - 12]],
-          [positive2[positive2.length - 13], date2[date2.length - 13]],
-          [positive2[positive2.length - 14], date2[date2.length - 14]]
+          [positive[positive.length - 1], date[date.length - 1]],
+          [positive[positive.length - 2], date[date.length - 2]],
+          [positive[positive.length - 3], date[date.length - 3]],
+          [positive[positive.length - 4], date[date.length - 4]],
+          [positive[positive.length - 5], date[date.length - 5]],
+          [positive[positive.length - 6], date[date.length - 6]],
+          [positive[positive.length - 7], date[date.length - 7]],
+          [positive[positive.length - 8], date[date.length - 8]],
+          [positive[positive.length - 9], date[date.length - 9]],
+          [positive[positive.length - 10], date[date.length - 10]],
+          [positive[positive.length - 11], date[date.length - 11]],
+          [positive[positive.length - 12], date[date.length - 12]],
+          [positive[positive.length - 13], date[date.length - 13]],
+          [positive[positive.length - 14], date[date.length - 14]]
         ]
       },
       {
         label: 'Infected',
         data: [
-          [deaths2[deaths2.length - 1], date2[date2.length - 1]],
-          [deaths2[deaths2.length - 2], date2[date2.length - 2]],
-          [deaths2[deaths2.length - 3], date2[date2.length - 3]],
-          [deaths2[deaths2.length - 4], date2[date2.length - 4]],
-          [deaths2[deaths2.length - 5], date2[date2.length - 5]],
-          [deaths2[deaths2.length - 6], date2[date2.length - 6]],
-          [deaths2[deaths2.length - 7], date2[date2.length - 7]],
-          [deaths2[deaths2.length - 8], date2[date2.length - 8]],
-          [deaths2[deaths2.length - 9], date2[date2.length - 9]],
-          [deaths2[deaths2.length - 10], date2[date2.length - 10]],
-          [deaths2[deaths2.length - 11], date2[date2.length - 11]],
-          [deaths2[deaths2.length - 12], date2[date2.length - 12]],
-          [deaths2[deaths2.length - 13], date2[date2.length - 13]],
-          [deaths2[deaths2.length - 14], date2[date2.length - 14]]
+          [deaths[deaths.length - 1], date[date.length - 1]],
+          [deaths[deaths.length - 2], date[date.length - 2]],
+          [deaths[deaths.length - 3], date[date.length - 3]],
+          [deaths[deaths.length - 4], date[date.length - 4]],
+          [deaths[deaths.length - 5], date[date.length - 5]],
+          [deaths[deaths.length - 6], date[date.length - 6]],
+          [deaths[deaths.length - 7], date[date.length - 7]],
+          [deaths[deaths.length - 8], date[date.length - 8]],
+          [deaths[deaths.length - 9], date[date.length - 9]],
+          [deaths[deaths.length - 10], date[date.length - 10]],
+          [deaths[deaths.length - 11], date[date.length - 11]],
+          [deaths[deaths.length - 12], date[date.length - 12]],
+          [deaths[deaths.length - 13], date[date.length - 13]],
+          [deaths[deaths.length - 14], date[date.length - 14]]
         ]
       }
     ],
