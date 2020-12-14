@@ -364,7 +364,7 @@ function useChartConfig() {
     localStorage.setItem("deaths", data.Deaths)
 
     // document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
-    document.getElementById('chart-header').textContent = localStorage.getItem("dates") + " " + localStorage.getItem("positives") + " " + localStorage.getItem("deaths")
+    document.getElementById('chart-header').textContent = localStorage.getItem("dates")[1] + " " + localStorage.getItem("positives")[1] + " " + localStorage.getItem("deaths")[1]
 
 
     return data
@@ -378,6 +378,9 @@ function useChartConfig() {
       {
         label: 'Deaths',
         data: [
+
+
+
           [positive[positive.length - 1], date[date.length - 1]],
           [positive[positive.length - 2], date[date.length - 2]],
           [positive[positive.length - 3], date[date.length - 3]],
@@ -392,6 +395,9 @@ function useChartConfig() {
           [positive[positive.length - 12], date[date.length - 12]],
           [positive[positive.length - 13], date[date.length - 13]],
           [positive[positive.length - 14], date[date.length - 14]]
+
+
+
         ]
       },
       {
