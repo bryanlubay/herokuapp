@@ -576,57 +576,6 @@ function update_chart() {
 }
 
 
-const wtf = React.useMemo(
-  () => [
-    {
-      label: 'Deaths',
-      data: [
-
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
-
-      ]
-    },
-    {
-      label: 'Infected',
-      data: [
-
-
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-        [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
-
-
-      ]
-    }
-  ],
-  []
-)
-
-
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
@@ -945,7 +894,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={useChartConfig()} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
