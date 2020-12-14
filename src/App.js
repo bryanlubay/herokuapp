@@ -325,58 +325,6 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
-  // days = [
-  //   convertEpoch(data.Date[data.Date.length - 1]),
-  //   convertEpoch(data.Date[data.Date.length - 2]),
-  //   convertEpoch(data.Date[data.Date.length - 3]),
-  //   convertEpoch(data.Date[data.Date.length - 4]),
-  //   convertEpoch(data.Date[data.Date.length - 5]),
-  //   convertEpoch(data.Date[data.Date.length - 6]),
-  //   convertEpoch(data.Date[data.Date.length - 7]),
-  //   convertEpoch(data.Date[data.Date.length - 8]),
-  //   convertEpoch(data.Date[data.Date.length - 9]),
-  //   convertEpoch(data.Date[data.Date.length - 10]),
-  //   convertEpoch(data.Date[data.Date.length - 11]),
-  //   convertEpoch(data.Date[data.Date.length - 12]),
-  //   convertEpoch(data.Date[data.Date.length - 13]),
-  //   convertEpoch(data.Date[data.Date.length - 14])
-  // ]
-
-  // infected = [
-  //   data.Positive[data.Positive.length - 1],
-  //   data.Positive[data.Positive.length - 2],
-  //   data.Positive[data.Positive.length - 3],
-  //   data.Positive[data.Positive.length - 4],
-  //   data.Positive[data.Positive.length - 5],
-  //   data.Positive[data.Positive.length - 6],
-  //   data.Positive[data.Positive.length - 7],
-  //   data.Positive[data.Positive.length - 8],
-  //   data.Positive[data.Positive.length - 9],
-  //   data.Positive[data.Positive.length - 10],
-  //   data.Positive[data.Positive.length - 11],
-  //   data.Positive[data.Positive.length - 12],
-  //   data.Positive[data.Positive.length - 13],
-  //   data.Positive[data.Positive.length - 14],
-  // ]
-
-  // deaths = [
-  //   data.Deaths[data.Deaths.length - 1],
-  //   data.Deaths[data.Deaths.length - 2],
-  //   data.Deaths[data.Deaths.length - 3],
-  //   data.Deaths[data.Deaths.length - 4],
-  //   data.Deaths[data.Deaths.length - 5],
-  //   data.Deaths[data.Deaths.length - 6],
-  //   data.Deaths[data.Deaths.length - 7],
-  //   data.Deaths[data.Deaths.length - 8],
-  //   data.Deaths[data.Deaths.length - 9],
-  //   data.Deaths[data.Deaths.length - 10],
-  //   data.Deaths[data.Deaths.length - 11],
-  //   data.Deaths[data.Deaths.length - 12],
-  //   data.Deaths[data.Deaths.length - 13],
-  //   data.Deaths[data.Deaths.length - 14],
-  // ]
-
-  
   return data
 }; // End get_data
 
@@ -429,22 +377,22 @@ const get_chart_data = async (state = 'nv') => {
   //   convertEpoch(data.Date[data.Date.length - 14])
   // ]
 
-  // infected = [
-  //   data.Positive[data.Positive.length - 1],
-  //   data.Positive[data.Positive.length - 2],
-  //   data.Positive[data.Positive.length - 3],
-  //   data.Positive[data.Positive.length - 4],
-  //   data.Positive[data.Positive.length - 5],
-  //   data.Positive[data.Positive.length - 6],
-  //   data.Positive[data.Positive.length - 7],
-  //   data.Positive[data.Positive.length - 8],
-  //   data.Positive[data.Positive.length - 9],
-  //   data.Positive[data.Positive.length - 10],
-  //   data.Positive[data.Positive.length - 11],
-  //   data.Positive[data.Positive.length - 12],
-  //   data.Positive[data.Positive.length - 13],
-  //   data.Positive[data.Positive.length - 14],
-  // ]
+  infected = [
+    data.Positive[data.Positive.length - 1],
+    data.Positive[data.Positive.length - 2],
+    data.Positive[data.Positive.length - 3],
+    data.Positive[data.Positive.length - 4],
+    data.Positive[data.Positive.length - 5],
+    data.Positive[data.Positive.length - 6],
+    data.Positive[data.Positive.length - 7],
+    data.Positive[data.Positive.length - 8],
+    data.Positive[data.Positive.length - 9],
+    data.Positive[data.Positive.length - 10],
+    data.Positive[data.Positive.length - 11],
+    data.Positive[data.Positive.length - 12],
+    data.Positive[data.Positive.length - 13],
+    data.Positive[data.Positive.length - 14],
+  ]
 
   infected[0] =    data.Positive[0]   
   infected[1] =    data.Positive[1]   
@@ -584,6 +532,7 @@ function useChartConfig() {
   let date2
   let positive2
   let deaths2
+
   const get_chart_data2 = async (state = 'nv') => {
 
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
@@ -656,12 +605,7 @@ function useChartConfig() {
     return data
   }; // End get_chart_data
   
-
   get_chart_data2()
-
-
-
-
 
   // small numbers
   let hmm2 = React.useMemo(
@@ -670,20 +614,25 @@ function useChartConfig() {
         label: 'Deaths',
         data: [
 
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+    deaths2[deaths2.length - 1],
+    deaths2[deaths2.length - 2],
+    deaths2[deaths2.length - 3],
+    deaths2[deaths2.length - 4],
+    deaths2[deaths2.length - 5],
+    deaths2[deaths2.length - 6],
+    deaths2[deaths2.length - 7],
+    deaths2[deaths2.length - 8],
+    deaths2[deaths2.length - 9],
+    deaths2[deaths2.length - 10],
+    deaths2[deaths2.length - 11],
+    deaths2[deaths2.length - 12],
+    deaths2[deaths2.length - 13],
+    deaths2[deaths2.length - 14]
+
+
+
+
+
 
         ]
       },
@@ -692,21 +641,20 @@ function useChartConfig() {
         data: [
 
 
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
-
+          positive2[positive2.length - 1],
+          positive2[positive2.length - 2],
+          positive2[positive2.length - 3],
+          positive2[positive2.length - 4],
+          positive2[positive2.length - 5],
+          positive2[positive2.length - 6],
+          positive2[positive2.length - 7],
+          positive2[positive2.length - 8],
+          positive2[positive2.length - 9],
+          positive2[positive2.length - 10],
+          positive2[positive2.length - 11],
+          positive2[positive2.length - 12],
+          positive2[positive2.length - 13],
+          positive2[positive2.length - 14]
 
         ]
       }
@@ -718,11 +666,22 @@ function useChartConfig() {
     () => [
       {
         label: 'Deaths',
-        data: update_chart()
+        data: 
+
+
+
+        update_chart()
+
+
+
+
+
       },
       {
         label: 'Infected',
         data: update_chart()
+
+
         // [
         //   [infected[0], days[0]],
         //   [infected[1], days[1]],
@@ -739,6 +698,8 @@ function useChartConfig() {
         //   [infected[12], days[12]],
         //   [infected[13], days[13]]
         // ]
+
+
       }
     ],
     []
