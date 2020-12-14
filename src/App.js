@@ -443,22 +443,23 @@ function useChartConfig() {
         label: 'Deaths',
         data: [
 
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
+          [positive2[positive2.length - 1], date2[date2.length - 1],
+          [positive2[positive2.length - 2], date2[date2.length - 2],
+          [positive2[positive2.length - 3], date2[date2.length - 3],
+          [positive2[positive2.length - 4], date2[date2.length - 4],
+          [positive2[positive2.length - 5], date2[date2.length - 5],
+          [positive2[positive2.length - 6], date2[date2.length - 6],
+          [positive2[positive2.length - 7], date2[date2.length - 7],
+          [positive2[positive2.length - 8], date2[date2.length - 8],
+          [positive2[positive2.length - 9], date2[date2.length - 9],
+          [positive2[positive2.length - 10], date2[date2.length - 10],
+          [positive2[positive2.length - 11], date2[date2.length - 11],
+          [positive2[positive2.length - 12], date2[date2.length - 12],
+          [positive2[positive2.length - 13], date2[date2.length - 13],
+          [positive2[positive2.length - 14], date2[date2.length - 14]
           // [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
 
-          [date2[0], deaths2[0]]
+          // [date2[0], deaths2[0]]
 
         ]
       },
@@ -467,20 +468,20 @@ function useChartConfig() {
         data: [
 
 
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+          [deaths2[deaths2.length - 1], date2[date2.length - 1],
+          [deaths2[deaths2.length - 2], date2[date2.length - 2],
+          [deaths2[deaths2.length - 3], date2[date2.length - 3],
+          [deaths2[deaths2.length - 4], date2[date2.length - 4],
+          [deaths2[deaths2.length - 5], date2[date2.length - 5],
+          [deaths2[deaths2.length - 6], date2[date2.length - 6],
+          [deaths2[deaths2.length - 7], date2[date2.length - 7],
+          [deaths2[deaths2.length - 8], date2[date2.length - 8],
+          [deaths2[deaths2.length - 9], date2[date2.length - 9],
+          [deaths2[deaths2.length - 10], date2[date2.length - 10],
+          [deaths2[deaths2.length - 11], date2[date2.length - 11],
+          [deaths2[deaths2.length - 12], date2[date2.length - 12],
+          [deaths2[deaths2.length - 13], date2[date2.length - 13],
+          [deaths2[deaths2.length - 14], date2[date2.length - 14]
 
 
         ]
