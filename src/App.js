@@ -321,7 +321,7 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
-  localStorage.setItem("ohai", "ohai")
+  localStorage.setItem("ohai", "69")
 
   return data
 }; // End get_data
@@ -383,20 +383,20 @@ function useChartConfig() {
 
 
 
-          [positive[positive.length - 1], date[date.length - 1]],
-          [positive[positive.length - 2], date[date.length - 2]],
-          [positive[positive.length - 3], date[date.length - 3]],
-          [positive[positive.length - 4], date[date.length - 4]],
-          [positive[positive.length - 5], date[date.length - 5]],
-          [positive[positive.length - 6], date[date.length - 6]],
-          [positive[positive.length - 7], date[date.length - 7]],
-          [positive[positive.length - 8], date[date.length - 8]],
-          [positive[positive.length - 9], date[date.length - 9]],
-          [positive[positive.length - 10], date[date.length - 10]],
-          [positive[positive.length - 11], date[date.length - 11]],
-          [positive[positive.length - 12], date[date.length - 12]],
-          [positive[positive.length - 13], date[date.length - 13]],
-          [positive[positive.length - 14], date[date.length - 14]]
+          [localStorage.getItem("ohai"), date[date.length - 1]],
+          [localStorage.getItem("ohai"), date[date.length - 2]],
+          [localStorage.getItem("ohai"), date[date.length - 3]],
+          [localStorage.getItem("ohai"), date[date.length - 4]],
+          [localStorage.getItem("ohai"), date[date.length - 5]],
+          [localStorage.getItem("ohai"), date[date.length - 6]],
+          [localStorage.getItem("ohai"), date[date.length - 7]],
+          [localStorage.getItem("ohai"), date[date.length - 8]],
+          [localStorage.getItem("ohai"), date[date.length - 9]],
+          [localStorage.getItem("ohai"), date[date.length - 10]],
+          [localStorage.getItem("ohai"), date[date.length - 11]],
+          [localStorage.getItem("ohai"), date[date.length - 12]],
+          [localStorage.getItem("ohai"), date[date.length - 13]],
+          [localStorage.getItem("ohai"), date[date.length - 14]]
 
 
 
