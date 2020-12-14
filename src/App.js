@@ -746,7 +746,7 @@ function useChartConfig() {
     () => [
       {
         label: 'Deaths',
-        data: updateChartData()
+        data: update_chart()
       },
       {
         label: 'Infected',
@@ -820,13 +820,13 @@ function useChartConfig() {
   )
 
   const [state, setState] = React.useState({
-    data: hmm4 // don't know/care
+    data: data // don't know/care
   })
 
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm4 // initialize
+      data: data // initialize
     }))}, [])
 
   const updateChartData = () =>
