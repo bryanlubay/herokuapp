@@ -503,55 +503,10 @@ function update_data() {
   // document.getElementById('chart-header').textContent = temp2
 
 
-  days[0] = days[0]++
-  days[1] = days[1]++
-  days[2] = days[2]++
-  days[3] = days[3]++
-  days[4] = days[4]++
-  days[5] = days[5]++
-  days[6] = days[6]++
-  days[7] = days[7]++
-  days[8] = days[8]++
-  days[9] = days[9]++
-  days[10] = days[10]++
-  days[11] = days[11]++
-  days[12] = days[12]++
-  days[13] = days[13]++
-
-  infected[0] = infected[0]++
-  infected[1] = infected[1]++
-  infected[2] = infected[2]++
-  infected[3] = infected[3]++
-  infected[4] = infected[4]++
-  infected[5] = infected[5]++
-  infected[6] = infected[6]++
-  infected[7] = infected[7]++
-  infected[8] = infected[8]++
-  infected[9] = infected[9]++
-  infected[10] = infected[10]++
-  infected[11] = infected[11]++
-  infected[12] = infected[12]++
-  infected[13] = infected[13]++
-
-  deaths[0] = deaths[0]++
-  deaths[1] = deaths[1]++
-  deaths[2] = deaths[2]++
-  deaths[3] = deaths[3]++
-  deaths[4] = deaths[4]++
-  deaths[5] = deaths[5]++
-  deaths[6] = deaths[6]++
-  deaths[7] = deaths[7]++
-  deaths[8] = deaths[8]++
-  deaths[9] = deaths[9]++
-  deaths[10] = deaths[10]++
-  deaths[11] = deaths[11]++
-  deaths[12] = deaths[12]++
-  deaths[13] = deaths[13]++
 
 } 
 
-function useChartConfig() {
-
+function update_chart() {
   days[0] = days[0]++
   days[1] = days[1]++
   days[2] = days[2]++
@@ -598,8 +553,27 @@ function useChartConfig() {
   deaths[13] = deaths[13]++
 
 
+  
+  return [
+    [deaths[0], days[0]],
+    [deaths[1], days[1]],
+    [deaths[2], days[2]],
+    [deaths[3], days[3]],
+    [deaths[4], days[4]],
+    [deaths[5], days[5]],
+    [deaths[6], days[6]],
+    [deaths[7], days[7]],
+    [deaths[8], days[8]],
+    [deaths[9], days[9]],
+    [deaths[10], days[10]],
+    [deaths[11], days[11]],
+    [deaths[12], days[12]],
+    [deaths[13], days[13]]
+  ]
 
+}
 
+function useChartConfig() {
 
   const get_chart_data2 = async (state = 'nv') => {
 
@@ -717,16 +691,7 @@ function useChartConfig() {
     return data
   }; // End get_chart_data
   
-
-  // let temp = convertState(document.getElementById('input').value)
-
-  let temp2 =  get_chart_data().then().data
-
-
-  // document.getElementById('chart-header').textContent = temp2
-
-
-// small numbers
+  // small numbers
   const hmm2 = React.useMemo(
     () => [
       {
@@ -777,26 +742,11 @@ function useChartConfig() {
     []
   )
 
-  let data = React.useMemo(
+  const data = React.useMemo(
     () => [
       {
         label: 'Deaths',
-        data: [
-          [deaths[0], days[0]],
-          [deaths[1], days[1]],
-          [deaths[2], days[2]],
-          [deaths[3], days[3]],
-          [deaths[4], days[4]],
-          [deaths[5], days[5]],
-          [deaths[6], days[6]],
-          [deaths[7], days[7]],
-          [deaths[8], days[8]],
-          [deaths[9], days[9]],
-          [deaths[10], days[10]],
-          [deaths[11], days[11]],
-          [deaths[12], days[12]],
-          [deaths[13], days[13]]
-        ]
+        data: updateChartData()
       },
       {
         label: 'Infected',
