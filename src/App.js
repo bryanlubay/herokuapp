@@ -497,6 +497,7 @@ const get_chart_data = async (state = 'nv') => {
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
+
   // let temp3 = temp2.Positive[0]
 
   // document.getElementById('chart-header').textContent = temp2
@@ -776,7 +777,7 @@ deaths[13]++
     []
   )
 
-  const data = React.useMemo(
+  let data = React.useMemo(
     () => [
       {
         label: 'Deaths',
