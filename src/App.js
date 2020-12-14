@@ -819,6 +819,11 @@ function useChartConfig() {
     []
   )
 
+  useEffect(() => {
+    hmm2
+  }, [])
+
+
   const [state, setState] = React.useState({
     data: hmm2 // don't know/care
   })
@@ -882,7 +887,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault(); }}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
