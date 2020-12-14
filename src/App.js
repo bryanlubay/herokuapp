@@ -657,7 +657,7 @@ function useChartConfig() {
   }; // End get_chart_data
   
 
-
+  get_chart_data2()
 
 
 
