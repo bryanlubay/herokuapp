@@ -383,20 +383,20 @@ function useChartConfig() {
 
 
 
-          [localStorage.getItem("ohai"), date[date.length - 1]],
-          [localStorage.getItem("ohai"), date[date.length - 2]],
-          [localStorage.getItem("ohai"), date[date.length - 3]],
-          [localStorage.getItem("ohai"), date[date.length - 4]],
-          [localStorage.getItem("ohai"), date[date.length - 5]],
-          [localStorage.getItem("ohai"), date[date.length - 6]],
-          [localStorage.getItem("ohai"), date[date.length - 7]],
-          [localStorage.getItem("ohai"), date[date.length - 8]],
-          [localStorage.getItem("ohai"), date[date.length - 9]],
-          [localStorage.getItem("ohai"), date[date.length - 10]],
-          [localStorage.getItem("ohai"), date[date.length - 11]],
-          [localStorage.getItem("ohai"), date[date.length - 12]],
-          [localStorage.getItem("ohai"), date[date.length - 13]],
-          [localStorage.getItem("ohai"), date[date.length - 14]]
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 1]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 2]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 3]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 4]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 5]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 6]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 7]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 8]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 9]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 10]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 11]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 12]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 13]],
+          [parseInt( localStorage.getItem("ohai")), date[date.length - 14]]
 
 
 
