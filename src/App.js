@@ -633,7 +633,7 @@ function useChartConfig() {
   let temp2 =  get_chart_data().then()
 
 
-  document.getElementById('chart-header').textContent = temp2
+  // document.getElementById('chart-header').textContent = temp2
 
 
 // small numbers
