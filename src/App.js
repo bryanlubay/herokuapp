@@ -394,16 +394,16 @@ const get_chart_data = async (state = 'nv') => {
 
   let data = await res.json()
   
-  days[0] =   convertEpoch( data.Date[0]    )
-  days[1] =   convertEpoch( data.Date[1]    )
-  days[2] =   convertEpoch( data.Date[2]    )
-  days[3] =   convertEpoch( data.Date[3]    )
-  days[4] =   convertEpoch( data.Date[4]    )
-  days[5] =   convertEpoch( data.Date[5]    )
-  days[6] =   convertEpoch( data.Date[6]    )
-  days[7] =   convertEpoch( data.Date[7]    )
-  days[8] =   convertEpoch( data.Date[8]    )
-  days[9] =   convertEpoch( data.Date[9]    )
+  days[0]  =   convertEpoch( data.Date[0]    )
+  days[1]  =   convertEpoch( data.Date[1]    )
+  days[2]  =   convertEpoch( data.Date[2]    )
+  days[3]  =   convertEpoch( data.Date[3]    )
+  days[4]  =   convertEpoch( data.Date[4]    )
+  days[5]  =   convertEpoch( data.Date[5]    )
+  days[6]  =   convertEpoch( data.Date[6]    )
+  days[7]  =   convertEpoch( data.Date[7]    )
+  days[8]  =   convertEpoch( data.Date[8]    )
+  days[9]  =   convertEpoch( data.Date[9]    )
   days[10] =  convertEpoch(  data.Date[10]    )
   days[11] =  convertEpoch(  data.Date[11]    )
   days[12] =  convertEpoch(  data.Date[12]    )
@@ -503,6 +503,54 @@ function update_data() {
 } 
 
 function useChartConfig() {
+
+  days[0]++
+  days[1]++
+  days[2]++
+  days[3]++
+  days[4]++
+  days[5]++
+  days[6]++
+  days[7]++
+  days[8]++
+  days[9]++
+  days[10]++
+  days[11]++
+  days[12]++
+  days[13]++
+
+  infected[0]++
+  infected[1]++
+  infected[2]++
+  infected[3]++
+  infected[4]++
+  infected[5]++
+  infected[6]++
+  infected[7]++
+  infected[8]++
+  infected[9]++
+  infected[10]++
+  infected[11]++
+  infected[12]++
+  infected[13]++
+
+  deaths[0]++
+deaths[1]++
+deaths[2]++
+deaths[3]++
+deaths[4]++
+deaths[5]++
+deaths[6]++
+deaths[7]++
+deaths[8]++
+deaths[9]++
+deaths[10]++
+deaths[11]++
+deaths[12]++
+deaths[13]++
+
+
+
 
 
   const get_chart_data2 = async (state = 'nv') => {
@@ -621,12 +669,6 @@ function useChartConfig() {
     return data
   }; // End get_chart_data
   
-
-
-
-
-
-
 
   // let temp = convertState(document.getElementById('input').value)
 
