@@ -630,7 +630,7 @@ function useChartConfig() {
 
   // let temp = convertState(document.getElementById('input').value)
 
-  get_chart_data()
+  let temp2 = await  get_chart_data()
 
 // small numbers
   const hmm2 = React.useMemo(
