@@ -552,57 +552,6 @@ function update_chart() {
   deaths[12] = deaths[12]++
   deaths[13] = deaths[13]++
 
-  // small numbers
-  const hmm2 = React.useMemo(
-    () => [
-      {
-        label: 'Deaths',
-        data: [
-
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
-
-        ]
-      },
-      {
-        label: 'Infected',
-        data: [
-
-
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
-
-
-        ]
-      }
-    ],
-    []
-  )
-
   
   return new Array (
     [deaths[0], days[0]],
@@ -742,7 +691,7 @@ function useChartConfig() {
   }; // End get_chart_data
   
   // small numbers
-  const hmm2 = React.useMemo(
+  let hmm2 = React.useMemo(
     () => [
       {
         label: 'Deaths',
@@ -871,19 +820,19 @@ function useChartConfig() {
   )
 
   const [state, setState] = React.useState({
-    data: data // don't know/care
+    data: hmm2 // don't know/care
   })
 
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: data // initialize
+      data: hmm2 // initialize
     }))}, [])
 
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: data
+      data: hmm2
     }))
     
       return {
