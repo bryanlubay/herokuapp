@@ -500,6 +500,53 @@ function update_data() {
   // let temp3 = temp2.Positive[0]
 
   // document.getElementById('chart-header').textContent = temp2
+
+
+  days[0]++
+  days[1]++
+  days[2]++
+  days[3]++
+  days[4]++
+  days[5]++
+  days[6]++
+  days[7]++
+  days[8]++
+  days[9]++
+  days[10]++
+  days[11]++
+  days[12]++
+  days[13]++
+
+  infected[0]++
+  infected[1]++
+  infected[2]++
+  infected[3]++
+  infected[4]++
+  infected[5]++
+  infected[6]++
+  infected[7]++
+  infected[8]++
+  infected[9]++
+  infected[10]++
+  infected[11]++
+  infected[12]++
+  infected[13]++
+
+  deaths[0]++
+deaths[1]++
+deaths[2]++
+deaths[3]++
+deaths[4]++
+deaths[5]++
+deaths[6]++
+deaths[7]++
+deaths[8]++
+deaths[9]++
+deaths[10]++
+deaths[11]++
+deaths[12]++
+deaths[13]++
+
 } 
 
 function useChartConfig() {
