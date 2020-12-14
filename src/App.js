@@ -576,7 +576,7 @@ function update_chart() {
 }
 
 
-let hmm2 = React.useMemo(
+const wtf = React.useMemo(
   () => [
     {
       label: 'Deaths',
