@@ -819,7 +819,7 @@ function useChartConfig() {
     []
   )
 
-  hmm2 = hmm2
+  hmm2
 
   const [state, setState] = React.useState({
     data: hmm2 // don't know/care
