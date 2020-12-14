@@ -581,6 +581,9 @@ function update_chart() {
 /************************************************************************/
 function useChartConfig() {
 
+  let date2
+  let positive2
+  let deaths2
   const get_chart_data2 = async (state = 'nv') => {
 
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
@@ -596,6 +599,10 @@ function useChartConfig() {
     })
   
     let data = await res.json()
+
+    date2 = data.Date
+    positive2 = data.Positive
+    deaths2 = data.Deaths
     
     days[0] =   convertEpoch( data.Date[0]    )
     days[1] =   convertEpoch( data.Date[1]    )
@@ -612,40 +619,6 @@ function useChartConfig() {
     days[12] =  convertEpoch(  data.Date[12]    )
     days[13] =  convertEpoch(  data.Date[13]    )
   
-    // days = [
-    //   convertEpoch(data.Date[data.Date.length - 1]),
-    //   convertEpoch(data.Date[data.Date.length - 2]),
-    //   convertEpoch(data.Date[data.Date.length - 3]),
-    //   convertEpoch(data.Date[data.Date.length - 4]),
-    //   convertEpoch(data.Date[data.Date.length - 5]),
-    //   convertEpoch(data.Date[data.Date.length - 6]),
-    //   convertEpoch(data.Date[data.Date.length - 7]),
-    //   convertEpoch(data.Date[data.Date.length - 8]),
-    //   convertEpoch(data.Date[data.Date.length - 9]),
-    //   convertEpoch(data.Date[data.Date.length - 10]),
-    //   convertEpoch(data.Date[data.Date.length - 11]),
-    //   convertEpoch(data.Date[data.Date.length - 12]),
-    //   convertEpoch(data.Date[data.Date.length - 13]),
-    //   convertEpoch(data.Date[data.Date.length - 14])
-    // ]
-  
-    // infected = [
-    //   data.Positive[data.Positive.length - 1],
-    //   data.Positive[data.Positive.length - 2],
-    //   data.Positive[data.Positive.length - 3],
-    //   data.Positive[data.Positive.length - 4],
-    //   data.Positive[data.Positive.length - 5],
-    //   data.Positive[data.Positive.length - 6],
-    //   data.Positive[data.Positive.length - 7],
-    //   data.Positive[data.Positive.length - 8],
-    //   data.Positive[data.Positive.length - 9],
-    //   data.Positive[data.Positive.length - 10],
-    //   data.Positive[data.Positive.length - 11],
-    //   data.Positive[data.Positive.length - 12],
-    //   data.Positive[data.Positive.length - 13],
-    //   data.Positive[data.Positive.length - 14],
-    // ]
-  
     infected[0] =    data.Positive[0]   
     infected[1] =    data.Positive[1]   
     infected[2] =    data.Positive[2]   
@@ -660,24 +633,6 @@ function useChartConfig() {
     infected[11] =    data.Positive[11] 
     infected[12] =    data.Positive[12] 
     infected[13] =    data.Positive[13] 
-  
-  
-    // deaths = [
-    //   data.Deaths[data.Deaths.length - 1],
-    //   data.Deaths[data.Deaths.length - 2],
-    //   data.Deaths[data.Deaths.length - 3],
-    //   data.Deaths[data.Deaths.length - 4],
-    //   data.Deaths[data.Deaths.length - 5],
-    //   data.Deaths[data.Deaths.length - 6],
-    //   data.Deaths[data.Deaths.length - 7],
-    //   data.Deaths[data.Deaths.length - 8],
-    //   data.Deaths[data.Deaths.length - 9],
-    //   data.Deaths[data.Deaths.length - 10],
-    //   data.Deaths[data.Deaths.length - 11],
-    //   data.Deaths[data.Deaths.length - 12],
-    //   data.Deaths[data.Deaths.length - 13],
-    //   data.Deaths[data.Deaths.length - 14],
-    // ]
   
     deaths[0] =    data.Deaths[0]   
     deaths[1] =    data.Deaths[1]   
@@ -894,7 +849,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={useChartConfig()} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
@@ -912,13 +867,10 @@ function App() {
           </Card.Body>
         </Card>
 
-        {/* <button onClick={updateChartData}>hmmm</button> */}
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
-          {/* <Chart className="chart-data" id="chart" data={hmm} axes={axes} /> */}
         </div>
-
 
         <div>
 
