@@ -534,7 +534,7 @@ function useChartConfig() {
   let deaths2
 
   const get_chart_data2 = async (state = 'nv') => {
-
+    state = convertState(document.getElementById('input').value)
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
       method: 'GET',
       mode: 'cors',
@@ -599,7 +599,7 @@ function useChartConfig() {
     // deaths[13] =    data.Deaths[13] 
   
 
-    document.getElementById('chart-header').textContent = deaths2[0] + " " + deaths2[deaths2.length - 1]
+    document.getElementById('chart-header').textContent = deaths2[1] + " " + deaths2[deaths2.length - 1]
 
 
     return data
