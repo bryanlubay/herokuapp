@@ -554,7 +554,7 @@ function update_chart() {
 
 
   
-  return [
+  return new Array (
     [deaths[0], days[0]],
     [deaths[1], days[1]],
     [deaths[2], days[2]],
@@ -569,7 +569,7 @@ function update_chart() {
     [deaths[11], days[11]],
     [deaths[12], days[12]],
     [deaths[13], days[13]]
-  ]
+  )
 
 }
 
