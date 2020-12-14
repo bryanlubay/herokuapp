@@ -630,7 +630,7 @@ function useChartConfig() {
 
   // let temp = convertState(document.getElementById('input').value)
 
-  let temp2 =  get_chart_data().then()
+  let temp2 =  get_chart_data().then().data
 
 
   // document.getElementById('chart-header').textContent = temp2
