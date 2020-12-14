@@ -650,7 +650,7 @@ function useChartConfig() {
     // deaths[13] =    data.Deaths[13] 
   
 
-    document.getElementById('chart-header').textContent = "hmm"
+    document.getElementById('chart-header').textContent = date2
 
 
     return data
