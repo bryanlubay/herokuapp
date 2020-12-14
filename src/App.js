@@ -328,133 +328,9 @@ const get_data = async (state = 'nv') => {
   return data
 }; // End get_data
 
-// updates days, infected, deaths arrays
-const get_chart_data = async (state = 'nv') => {
-
-  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-    method: 'GET',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    params: {
-      'state': state
-    }
-  })
-
-  let data = await res.json()
-  
-  days[0]  =   convertEpoch( data.Date[0]    )
-  days[1]  =   convertEpoch( data.Date[1]    )
-  days[2]  =   convertEpoch( data.Date[2]    )
-  days[3]  =   convertEpoch( data.Date[3]    )
-  days[4]  =   convertEpoch( data.Date[4]    )
-  days[5]  =   convertEpoch( data.Date[5]    )
-  days[6]  =   convertEpoch( data.Date[6]    )
-  days[7]  =   convertEpoch( data.Date[7]    )
-  days[8]  =   convertEpoch( data.Date[8]    )
-  days[9]  =   convertEpoch( data.Date[9]    )
-  days[10] =  convertEpoch(  data.Date[10]    )
-  days[11] =  convertEpoch(  data.Date[11]    )
-  days[12] =  convertEpoch(  data.Date[12]    )
-  days[13] =  convertEpoch(  data.Date[13]    )
-
-  // days = [
-  //   convertEpoch(data.Date[data.Date.length - 1]),
-  //   convertEpoch(data.Date[data.Date.length - 2]),
-  //   convertEpoch(data.Date[data.Date.length - 3]),
-  //   convertEpoch(data.Date[data.Date.length - 4]),
-  //   convertEpoch(data.Date[data.Date.length - 5]),
-  //   convertEpoch(data.Date[data.Date.length - 6]),
-  //   convertEpoch(data.Date[data.Date.length - 7]),
-  //   convertEpoch(data.Date[data.Date.length - 8]),
-  //   convertEpoch(data.Date[data.Date.length - 9]),
-  //   convertEpoch(data.Date[data.Date.length - 10]),
-  //   convertEpoch(data.Date[data.Date.length - 11]),
-  //   convertEpoch(data.Date[data.Date.length - 12]),
-  //   convertEpoch(data.Date[data.Date.length - 13]),
-  //   convertEpoch(data.Date[data.Date.length - 14])
-  // ]
-
-  infected = [
-    data.Positive[data.Positive.length - 1],
-    data.Positive[data.Positive.length - 2],
-    data.Positive[data.Positive.length - 3],
-    data.Positive[data.Positive.length - 4],
-    data.Positive[data.Positive.length - 5],
-    data.Positive[data.Positive.length - 6],
-    data.Positive[data.Positive.length - 7],
-    data.Positive[data.Positive.length - 8],
-    data.Positive[data.Positive.length - 9],
-    data.Positive[data.Positive.length - 10],
-    data.Positive[data.Positive.length - 11],
-    data.Positive[data.Positive.length - 12],
-    data.Positive[data.Positive.length - 13],
-    data.Positive[data.Positive.length - 14],
-  ]
-
-  infected[0] =    data.Positive[0]   
-  infected[1] =    data.Positive[1]   
-  infected[2] =    data.Positive[2]   
-  infected[3] =    data.Positive[3]   
-  infected[4] =    data.Positive[4]   
-  infected[5] =    data.Positive[5]   
-  infected[6] =    data.Positive[6]   
-  infected[7] =    data.Positive[7]   
-  infected[8] =    data.Positive[8]   
-  infected[9] =    data.Positive[9]   
-  infected[10] =    data.Positive[10] 
-  infected[11] =    data.Positive[11] 
-  infected[12] =    data.Positive[12] 
-  infected[13] =    data.Positive[13] 
-
-
-  // deaths = [
-  //   data.Deaths[data.Deaths.length - 1],
-  //   data.Deaths[data.Deaths.length - 2],
-  //   data.Deaths[data.Deaths.length - 3],
-  //   data.Deaths[data.Deaths.length - 4],
-  //   data.Deaths[data.Deaths.length - 5],
-  //   data.Deaths[data.Deaths.length - 6],
-  //   data.Deaths[data.Deaths.length - 7],
-  //   data.Deaths[data.Deaths.length - 8],
-  //   data.Deaths[data.Deaths.length - 9],
-  //   data.Deaths[data.Deaths.length - 10],
-  //   data.Deaths[data.Deaths.length - 11],
-  //   data.Deaths[data.Deaths.length - 12],
-  //   data.Deaths[data.Deaths.length - 13],
-  //   data.Deaths[data.Deaths.length - 14],
-  // ]
-
-  deaths[0] =    data.Deaths[0]   
-  deaths[1] =    data.Deaths[1]   
-  deaths[2] =    data.Deaths[2]   
-  deaths[3] =    data.Deaths[3]   
-  deaths[4] =    data.Deaths[4]   
-  deaths[5] =    data.Deaths[5]   
-  deaths[6] =    data.Deaths[6]   
-  deaths[7] =    data.Deaths[7]   
-  deaths[8] =    data.Deaths[8]   
-  deaths[9] =    data.Deaths[9]   
-  deaths[10] =    data.Deaths[10] 
-  deaths[11] =    data.Deaths[11] 
-  deaths[12] =    data.Deaths[12] 
-  deaths[13] =    data.Deaths[13] 
-
-  return data
-}; // End get_chart_data
-
 function update_data() {
   let temp = convertState(document.getElementById('input').value)
   get_data(temp)
-
-  // let temp3 = temp2.Positive[0]
-
-  // document.getElementById('chart-header').textContent = temp2
-
-
-
 } 
 
 function update_chart() {
@@ -523,15 +399,14 @@ function update_chart() {
 
 }
 
-
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
 function useChartConfig() {
 
-  let date2
-  let positive2
-  let deaths2
+  let date2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  let positive2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  let deaths2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
   const get_chart_data2 = async (state = 'nv') => {
     state = convertState(document.getElementById('input').value)
@@ -581,9 +456,9 @@ function useChartConfig() {
           [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
           [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
           [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)],
-          [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
+          // [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
 
-          // [date2[0], deaths2[0]]
+          [date2[0], deaths2[0]]
 
         ]
       },
@@ -620,13 +495,7 @@ function useChartConfig() {
         label: 'Deaths',
         data: 
 
-
-
         update_chart()
-
-
-
-
 
       },
       {
