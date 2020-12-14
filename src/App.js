@@ -333,80 +333,14 @@ function update_data() {
   get_data(temp)
 } 
 
-function update_chart() {
-  days[0] = days[0]++
-  days[1] = days[1]++
-  days[2] = days[2]++
-  days[3] = days[3]++
-  days[4] = days[4]++
-  days[5] = days[5]++
-  days[6] = days[6]++
-  days[7] = days[7]++
-  days[8] = days[8]++
-  days[9] = days[9]++
-  days[10] = days[10]++
-  days[11] = days[11]++
-  days[12] = days[12]++
-  days[13] = days[13]++
-
-  infected[0] = infected[0]++
-  infected[1] = infected[1]++
-  infected[2] = infected[2]++
-  infected[3] = infected[3]++
-  infected[4] = infected[4]++
-  infected[5] = infected[5]++
-  infected[6] = infected[6]++
-  infected[7] = infected[7]++
-  infected[8] = infected[8]++
-  infected[9] = infected[9]++
-  infected[10] = infected[10]++
-  infected[11] = infected[11]++
-  infected[12] = infected[12]++
-  infected[13] = infected[13]++
-
-  deaths[0] = deaths[0]++
-  deaths[1] = deaths[1]++
-  deaths[2] = deaths[2]++
-  deaths[3] = deaths[3]++
-  deaths[4] = deaths[4]++
-  deaths[5] = deaths[5]++
-  deaths[6] = deaths[6]++
-  deaths[7] = deaths[7]++
-  deaths[8] = deaths[8]++
-  deaths[9] = deaths[9]++
-  deaths[10] = deaths[10]++
-  deaths[11] = deaths[11]++
-  deaths[12] = deaths[12]++
-  deaths[13] = deaths[13]++
-
-  
-  return new Array (
-    [deaths[0], days[0]],
-    [deaths[1], days[1]],
-    [deaths[2], days[2]],
-    [deaths[3], days[3]],
-    [deaths[4], days[4]],
-    [deaths[5], days[5]],
-    [deaths[6], days[6]],
-    [deaths[7], days[7]],
-    [deaths[8], days[8]],
-    [deaths[9], days[9]],
-    [deaths[10], days[10]],
-    [deaths[11], days[11]],
-    [deaths[12], days[12]],
-    [deaths[13], days[13]]
-  )
-
-}
-
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
 function useChartConfig() {
 
-  let date2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-  let positive2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-  let deaths2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  let date2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+  let positive2 = [14,15,16,17,18,19,20,21,22,23,24,25,26,27]
+  let deaths2 = [28,29,30,31,32,33,34,35,36,37,38,39,40,41]
 
   const get_chart_data2 = async (state = 'nv') => {
     state = convertState(document.getElementById('input').value)
@@ -434,15 +368,13 @@ function useChartConfig() {
     return data
   }; // End get_chart_data
   
-  get_chart_data2()
+  get_chart_data2() // this needs to update the arrays
 
-  // small numbers
-  let hmm2 = React.useMemo(
+  let data = React.useMemo(
     () => [
       {
         label: 'Deaths',
         data: [
-
           [positive2[positive2.length - 1], date2[date2.length - 1]],
           [positive2[positive2.length - 2], date2[date2.length - 2]],
           [positive2[positive2.length - 3], date2[date2.length - 3]],
@@ -457,17 +389,11 @@ function useChartConfig() {
           [positive2[positive2.length - 12], date2[date2.length - 12]],
           [positive2[positive2.length - 13], date2[date2.length - 13]],
           [positive2[positive2.length - 14], date2[date2.length - 14]]
-          // [Math.floor((Math.random() * 10) + 1), Math.floor((Math.random() * 10) + 1)]
-
-          // [date2[0], deaths2[0]]
-
         ]
       },
       {
         label: 'Infected',
         data: [
-
-
           [deaths2[deaths2.length - 1], date2[date2.length - 1]],
           [deaths2[deaths2.length - 2], date2[date2.length - 2]],
           [deaths2[deaths2.length - 3], date2[date2.length - 3]],
@@ -482,46 +408,7 @@ function useChartConfig() {
           [deaths2[deaths2.length - 12], date2[date2.length - 12]],
           [deaths2[deaths2.length - 13], date2[date2.length - 13]],
           [deaths2[deaths2.length - 14], date2[date2.length - 14]]
-
-
         ]
-      }
-    ],
-    []
-  )
-
-  const data = React.useMemo(
-    () => [
-      {
-        label: 'Deaths',
-        data: 
-
-        update_chart()
-
-      },
-      {
-        label: 'Infected',
-        data: update_chart()
-
-
-        // [
-        //   [infected[0], days[0]],
-        //   [infected[1], days[1]],
-        //   [infected[2], days[2]],
-        //   [infected[3], days[3]],
-        //   [infected[4], days[4]],
-        //   [infected[5], days[5]],
-        //   [infected[6], days[6]],
-        //   [infected[7], days[7]],
-        //   [infected[8], days[8]],
-        //   [infected[9], days[9]],
-        //   [infected[10], days[10]],
-        //   [infected[11], days[11]],
-        //   [infected[12], days[12]],
-        //   [infected[13], days[13]]
-        // ]
-
-
       }
     ],
     []
@@ -576,19 +463,19 @@ function useChartConfig() {
   )
 
   const [state, setState] = React.useState({
-    data: hmm2 // don't know/care
+    data: data // don't know/care
   })
 
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: hmm2 // initialize
+      data: data // initialize
     }))}, [])
 
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: hmm2
+      data: data
     }))
     
       return {
