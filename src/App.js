@@ -353,12 +353,18 @@ function useChartConfig() {
     })
   
     let data = await res.json()
+    
 
     date = data.Date
     positive = data.Positive
     deaths = data.Deaths
-    
-    document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
+
+    localStorage.setItem("dates", data.Date)
+    localStorage.setItem("positives", data.Positive)
+    localStorage.setItem("deaths", data.Deaths)
+
+    // document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
+    document.getElementById('chart-header').textContent = localStorage.getItem("dates") + " " + localStorage.getItem("positives") + " " + localStorage.getItem("deaths")
 
 
     return data
@@ -366,8 +372,9 @@ function useChartConfig() {
   
   get_chart_data() // this needs to update the arrays
 
-  const data = async() => React.useMemo(
-    () => [
+  const data = React.useMemo(
+    () =>
+     [
       {
         label: 'Deaths',
         data: [
