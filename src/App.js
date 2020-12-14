@@ -321,6 +321,8 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
+  localStorage.setItem("ohai", "ohai")
+
   return data
 }; // End get_data
 
@@ -364,7 +366,7 @@ function useChartConfig() {
     localStorage.setItem("deaths", data.Deaths)
 
     // document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
-    document.getElementById('chart-header').textContent = localStorage.getItem("dates")//. + " " + localStorage.getItem("positives")[1] + " " + localStorage.getItem("deaths")[1]
+    document.getElementById('chart-header').textContent = localStorage.getItem("ohai")//. + " " + localStorage.getItem("positives")[1] + " " + localStorage.getItem("deaths")[1]
 
 
     return data
