@@ -338,7 +338,7 @@ function useChartConfig() {
   let positive = [14,15,16,17,18,19,20,21,22,23,24,25,26,27]
   let deaths = [28,29,30,31,32,33,34,35,36,37,38,39,40,41]
 
-  const get_chart_data2 = async (state = 'nv') => {
+  const get_chart_data = async (state = 'nv') => {
     state = convertState(document.getElementById('input').value)
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
       method: 'GET',
@@ -364,9 +364,9 @@ function useChartConfig() {
     return data
   }; // End get_chart_data
   
-  get_chart_data2() // this needs to update the arrays
+  get_chart_data() // this needs to update the arrays
 
-  let data = React.useMemo(
+  const data = async() => React.useMemo(
     () => [
       {
         label: 'Deaths',
