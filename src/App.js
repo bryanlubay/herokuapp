@@ -553,53 +553,7 @@ function useChartConfig() {
     positive2 = data.Positive
     deaths2 = data.Deaths
     
-    // days[0] =   convertEpoch( data.Date[0]    )
-    // days[1] =   convertEpoch( data.Date[1]    )
-    // days[2] =   convertEpoch( data.Date[2]    )
-    // days[3] =   convertEpoch( data.Date[3]    )
-    // days[4] =   convertEpoch( data.Date[4]    )
-    // days[5] =   convertEpoch( data.Date[5]    )
-    // days[6] =   convertEpoch( data.Date[6]    )
-    // days[7] =   convertEpoch( data.Date[7]    )
-    // days[8] =   convertEpoch( data.Date[8]    )
-    // days[9] =   convertEpoch( data.Date[9]    )
-    // days[10] =  convertEpoch(  data.Date[10]    )
-    // days[11] =  convertEpoch(  data.Date[11]    )
-    // days[12] =  convertEpoch(  data.Date[12]    )
-    // days[13] =  convertEpoch(  data.Date[13]    )
-  
-    // infected[0] =    data.Positive[0]   
-    // infected[1] =    data.Positive[1]   
-    // infected[2] =    data.Positive[2]   
-    // infected[3] =    data.Positive[3]   
-    // infected[4] =    data.Positive[4]   
-    // infected[5] =    data.Positive[5]   
-    // infected[6] =    data.Positive[6]   
-    // infected[7] =    data.Positive[7]   
-    // infected[8] =    data.Positive[8]   
-    // infected[9] =    data.Positive[9]   
-    // infected[10] =    data.Positive[10] 
-    // infected[11] =    data.Positive[11] 
-    // infected[12] =    data.Positive[12] 
-    // infected[13] =    data.Positive[13] 
-  
-    // deaths[0] =    data.Deaths[0]   
-    // deaths[1] =    data.Deaths[1]   
-    // deaths[2] =    data.Deaths[2]   
-    // deaths[3] =    data.Deaths[3]   
-    // deaths[4] =    data.Deaths[4]   
-    // deaths[5] =    data.Deaths[5]   
-    // deaths[6] =    data.Deaths[6]   
-    // deaths[7] =    data.Deaths[7]   
-    // deaths[8] =    data.Deaths[8]   
-    // deaths[9] =    data.Deaths[9]   
-    // deaths[10] =    data.Deaths[10] 
-    // deaths[11] =    data.Deaths[11] 
-    // deaths[12] =    data.Deaths[12] 
-    // deaths[13] =    data.Deaths[13] 
-  
-
-    document.getElementById('chart-header').textContent = deaths2[1] + " " + deaths2[deaths2.length - 1]
+    document.getElementById('chart-header').textContent = positive2[positive2.length - 1] + " " + deaths2[deaths2.length - 1]
 
 
     return data
