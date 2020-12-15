@@ -379,7 +379,28 @@ function update_positives() {
 /************************************************************************/
 function useChartConfig() {
 
-  function update_chart () {
+  // function update_chart () {
+
+  //   let data = React.useMemo(
+  //     () =>
+  //      [
+  //       {
+  //         label: 'Deaths',
+  //         data: update_deaths()
+  //       },
+  //       {
+  //         label: 'Positives',
+  //         data: update_positives()
+  //       }
+  //     ],
+  //     []
+  //   )
+  
+  //   return data
+  // }
+  
+
+  const update_chart_data = () => {
 
     let data = React.useMemo(
       () =>
@@ -395,11 +416,9 @@ function useChartConfig() {
       ],
       []
     )
-  
-    return data
-  }
-  
 
+    return data
+  }; // End get_chart_data
 
 
 
