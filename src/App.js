@@ -375,7 +375,7 @@ function update_positives() {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
-function useChartConfig() {
+function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
   const get_chart_data = async (state = 'nv') => {
 
@@ -529,7 +529,7 @@ function App() {
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
-              <Form.Control id="input" className="form-control" type="text" defaultValue="ca"></Form.Control>
+              <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
               <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
             </div>
           </Form.Group>
