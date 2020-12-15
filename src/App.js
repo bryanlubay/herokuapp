@@ -321,44 +321,6 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
-  localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1]))
-  localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2]))
-  localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3]))
-  localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4]))
-  localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5]))
-  localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6]))
-  localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7]))
-  localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8]))
-  localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9]))
-  localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10]))
-  localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11]))
-  localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12]))
-
-  localStorage.setItem("deaths1", parseInt( data.Deaths[data.Deaths.length - 1]))
-  localStorage.setItem("deaths2", parseInt( data.Deaths[data.Deaths.length - 2]))
-  localStorage.setItem("deaths3", parseInt( data.Deaths[data.Deaths.length - 3]))
-  localStorage.setItem("deaths4", parseInt( data.Deaths[data.Deaths.length - 4]))
-  localStorage.setItem("deaths5", parseInt( data.Deaths[data.Deaths.length - 5]))
-  localStorage.setItem("deaths6", parseInt( data.Deaths[data.Deaths.length - 6]))
-  localStorage.setItem("deaths7", parseInt( data.Deaths[data.Deaths.length - 7]))
-  localStorage.setItem("deaths8", parseInt( data.Deaths[data.Deaths.length - 8]))
-  localStorage.setItem("deaths9", parseInt( data.Deaths[data.Deaths.length - 9]))
-  localStorage.setItem("deaths10", parseInt( data.Deaths[data.Deaths.length - 10]))
-  localStorage.setItem("deaths11", parseInt( data.Deaths[data.Deaths.length - 11]))
-  localStorage.setItem("deaths12", parseInt( data.Deaths[data.Deaths.length - 12]))
-
-  localStorage.setItem("positives1", parseInt( data.Positive[data.Positive.length - 1]))
-  localStorage.setItem("positives2", parseInt( data.Positive[data.Positive.length - 2]))
-  localStorage.setItem("positives3", parseInt( data.Positive[data.Positive.length - 3]))
-  localStorage.setItem("positives4", parseInt( data.Positive[data.Positive.length - 4]))
-  localStorage.setItem("positives5", parseInt( data.Positive[data.Positive.length - 5]))
-  localStorage.setItem("positives6", parseInt( data.Positive[data.Positive.length - 6]))
-  localStorage.setItem("positives7", parseInt( data.Positive[data.Positive.length - 7]))
-  localStorage.setItem("positives8", parseInt( data.Positive[data.Positive.length - 8]))
-  localStorage.setItem("positives9", parseInt( data.Positive[data.Positive.length - 9]))
-  localStorage.setItem("positives10", parseInt( data.Positive[data.Positive.length - 10]))
-  localStorage.setItem("positives11", parseInt( data.Positive[data.Positive.length - 11]))
-  localStorage.setItem("positives12", parseInt( data.Positive[data.Positive.length - 12]))
 
 
   return data
@@ -374,46 +336,70 @@ function update_data() {
 /************************************************************************/
 function useChartConfig() {
 
-  let date = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
-  let positive = [14,15,16,17,18,19,20,21,22,23,24,25,26,27]
-  let deaths = [28,29,30,31,32,33,34,35,36,37,38,39,40,41]
-
-  // const get_chart_data = async (state = 'nv') => {
-  //   state = convertState(document.getElementById('input').value)
-  //   let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-  //     method: 'GET',
-  //     mode: 'cors',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json',
-  //     },
-  //     params: {
-  //       'state': state
-  //     }
-  //   })
+  const get_chart_data = async (state = 'nv') => {
+    state = convertState(document.getElementById('input').value)
+    let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      params: {
+        'state': state
+      }
+    })
   
-  //   let data = await res.json()
+    let data = await res.json()
     
-
-  //   date = data.Date
-  //   positive = data.Positive
-  //   deaths = data.Deaths
-
-  //   localStorage.setItem("dates1", data.Date)
-
-
-
-  //   localStorage.setItem("positives", data.Positive)
-  //   localStorage.setItem("deaths", data.Deaths)
-
-  //   // document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
-  //   document.getElementById('chart-header').textContent = localStorage.getItem("ohai")//. + " " + localStorage.getItem("positives")[1] + " " + localStorage.getItem("deaths")[1]
-
-
-  //   return data
-  // }; // End get_chart_data
+    localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1]))
+    localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2]))
+    localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3]))
+    localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4]))
+    localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5]))
+    localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6]))
+    localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7]))
+    localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8]))
+    localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9]))
+    localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10]))
+    localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11]))
+    localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12]))
   
-  // get_chart_data() // this needs to update the arrays
+    localStorage.setItem("deaths1", parseInt( data.Deaths[data.Deaths.length - 1]))
+    localStorage.setItem("deaths2", parseInt( data.Deaths[data.Deaths.length - 2]))
+    localStorage.setItem("deaths3", parseInt( data.Deaths[data.Deaths.length - 3]))
+    localStorage.setItem("deaths4", parseInt( data.Deaths[data.Deaths.length - 4]))
+    localStorage.setItem("deaths5", parseInt( data.Deaths[data.Deaths.length - 5]))
+    localStorage.setItem("deaths6", parseInt( data.Deaths[data.Deaths.length - 6]))
+    localStorage.setItem("deaths7", parseInt( data.Deaths[data.Deaths.length - 7]))
+    localStorage.setItem("deaths8", parseInt( data.Deaths[data.Deaths.length - 8]))
+    localStorage.setItem("deaths9", parseInt( data.Deaths[data.Deaths.length - 9]))
+    localStorage.setItem("deaths10", parseInt( data.Deaths[data.Deaths.length - 10]))
+    localStorage.setItem("deaths11", parseInt( data.Deaths[data.Deaths.length - 11]))
+    localStorage.setItem("deaths12", parseInt( data.Deaths[data.Deaths.length - 12]))
+  
+    localStorage.setItem("positives1", parseInt( data.Positive[data.Positive.length - 1]))
+    localStorage.setItem("positives2", parseInt( data.Positive[data.Positive.length - 2]))
+    localStorage.setItem("positives3", parseInt( data.Positive[data.Positive.length - 3]))
+    localStorage.setItem("positives4", parseInt( data.Positive[data.Positive.length - 4]))
+    localStorage.setItem("positives5", parseInt( data.Positive[data.Positive.length - 5]))
+    localStorage.setItem("positives6", parseInt( data.Positive[data.Positive.length - 6]))
+    localStorage.setItem("positives7", parseInt( data.Positive[data.Positive.length - 7]))
+    localStorage.setItem("positives8", parseInt( data.Positive[data.Positive.length - 8]))
+    localStorage.setItem("positives9", parseInt( data.Positive[data.Positive.length - 9]))
+    localStorage.setItem("positives10", parseInt( data.Positive[data.Positive.length - 10]))
+    localStorage.setItem("positives11", parseInt( data.Positive[data.Positive.length - 11]))
+    localStorage.setItem("positives12", parseInt( data.Positive[data.Positive.length - 12]))
+  
+
+    // document.getElementById('chart-header').textContent = positive[positive.length - 1] + " " + deaths[deaths.length - 1]
+    // document.getElementById('chart-header').textContent = localStorage.getItem("ohai")//. + " " + localStorage.getItem("positives")[1] + " " + localStorage.getItem("deaths")[1]
+
+
+    return data
+  }; // End get_chart_data
+  
+  get_chart_data() // this needs to update the arrays
 
   const data = React.useMemo(
     () =>
@@ -421,9 +407,6 @@ function useChartConfig() {
       {
         label: 'Deaths',
         data: [
-
-
-
           [localStorage.getItem("deaths1"), localStorage.getItem("dates1")] ,
           [localStorage.getItem("deaths2"), localStorage.getItem("dates2")] ,
           [localStorage.getItem("deaths3"), localStorage.getItem("dates3")] ,
@@ -438,16 +421,11 @@ function useChartConfig() {
           [localStorage.getItem("deaths12"), localStorage.getItem("dates12")] ,
           [localStorage.getItem("deaths13"), localStorage.getItem("dates13")] ,
           [localStorage.getItem("deaths14"), localStorage.getItem("dates14")] 
-
-
-
         ]
       },
       {
         label: 'Infected',
         data: [
-
-
           [localStorage.getItem("positives1"), localStorage.getItem("dates1") ],
           [localStorage.getItem("positives2"), localStorage.getItem("dates2") ],
           [localStorage.getItem("positives3"), localStorage.getItem("dates3") ],
@@ -462,8 +440,6 @@ function useChartConfig() {
           [localStorage.getItem("positives12"), localStorage.getItem("dates12") ],
           [localStorage.getItem("positives13"), localStorage.getItem("dates13") ],
           [localStorage.getItem("positives14"), localStorage.getItem("dates14") ]
-
-
         ]
       }
     ],
@@ -472,7 +448,7 @@ function useChartConfig() {
 
 
   const [state, setState] = React.useState({
-    data: data // don't know/care
+    data: data
   })
 
   React.useEffect(() => {
