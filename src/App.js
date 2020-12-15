@@ -319,8 +319,6 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
-  useChartConfig()
-
   return data
 }; // End get_data
 
