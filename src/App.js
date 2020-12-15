@@ -452,48 +452,10 @@ function useChartConfig() {
       {
         label: 'Deaths',
         data: update_deaths()
-        
-        
-        // [
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates1")*/, localStorage.getItem("deaths1")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates2")*/, localStorage.getItem("deaths2")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates3")*/, localStorage.getItem("deaths3")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates4")*/, localStorage.getItem("deaths4")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates5")*/, localStorage.getItem("deaths5")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates6")*/, localStorage.getItem("deaths6")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates7")*/, localStorage.getItem("deaths7")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates8")*/, localStorage.getItem("deaths8")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates9")*/, localStorage.getItem("deaths9")    ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates10")*/, localStorage.getItem("deaths10")   ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates11")*/, localStorage.getItem("deaths11")   ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates12")*/, localStorage.getItem("deaths12")   ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates13")*/, localStorage.getItem("deaths13")   ],   
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates14")*/, localStorage.getItem("deaths14")   ]   
-        // ]
-
       },
       {
         label: 'Positives',
         data: update_positives()
-        
-        // [
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates1")*/, localStorage.getItem("positives1")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates2")*/, localStorage.getItem("positives2")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates3")*/, localStorage.getItem("positives3")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates4")*/, localStorage.getItem("positives4")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates5")*/, localStorage.getItem("positives5")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates6")*/, localStorage.getItem("positives6")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates7")*/, localStorage.getItem("positives7")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates8")*/, localStorage.getItem("positives8")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates9")*/, localStorage.getItem("positives9")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates10")*/, localStorage.getItem("positives10")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates11")*/, localStorage.getItem("positives11")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates12")*/, localStorage.getItem("positives12")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates13")*/, localStorage.getItem("positives13")],
-        //   [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates14")*/, localStorage.getItem("positives14")]
-        // ]
-
-
       }
     ],
     []
@@ -547,32 +509,18 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  useEffect(() => {
-    get_data('nv')
-  }, [])
+  useEffect(() => {get_data('nv')}, [])
 
-  const series = React.useMemo(
-    () => ({
-      showPoints: false
-    }),
-    []
-  )
+  const series = React.useMemo(() => ({showPoints: false}),[])
 
-  const axes = React.useMemo(
-    () => [
-      { primary: true, type: 'linear', position: 'bottom' },
-      { type: 'linear', position: 'left' }
-    ],
-    []
-  )
+  const axes = React.useMemo(() => [{ primary: true, type: 'utc', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
   const { data, updateChartData } = useChartConfig()
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
-    </div>
-  )
+    </div>)
 
   return (
 
