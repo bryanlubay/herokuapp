@@ -373,8 +373,8 @@ function update_positives() {
 
 }
 
-function update_chart () {
-  let data = React.useCallback(
+const update_chart = () => {
+  let data = React.useMemo(
     () =>
      [
       {
