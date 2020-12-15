@@ -217,7 +217,7 @@ function convertState(state) {
 
 function convertEpoch(epoch) {
   var d = new Date(epoch);
-  d.setUTCSeconds(epoch)
+  // d.setUTCSeconds(epoch)
   return d
 }
 
