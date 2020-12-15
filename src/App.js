@@ -352,18 +352,18 @@ function useChartConfig() {
   
     let data = await res.json()
     
-    localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1]))
-    localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2]))
-    localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3]))
-    localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4]))
-    localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5]))
-    localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6]))
-    localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7]))
-    localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8]))
-    localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9]))
-    localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10]))
-    localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11]))
-    localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12]))
+    localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1]).toString())
+    localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2]).toString())
+    localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3]).toString())
+    localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4]).toString())
+    localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5]).toString())
+    localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6]).toString())
+    localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7]).toString())
+    localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8]).toString())
+    localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9]).toString())
+    localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10]).toString())
+    localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11]).toString())
+    localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12]).toString())
   
     localStorage.setItem("deaths1", parseInt( data.Deaths[data.Deaths.length - 1]))
     localStorage.setItem("deaths2", parseInt( data.Deaths[data.Deaths.length - 2]))
@@ -407,39 +407,39 @@ function useChartConfig() {
       {
         label: 'Deaths',
         data: [
-          [localStorage.getItem("deaths1")  ,localStorage.getItem("dates1")   ],   
-          [localStorage.getItem("deaths2")  ,localStorage.getItem("dates2")   ],   
-          [localStorage.getItem("deaths3")  ,localStorage.getItem("dates3")   ],   
-          [localStorage.getItem("deaths4")  ,localStorage.getItem("dates4")   ],   
-          [localStorage.getItem("deaths5")  ,localStorage.getItem("dates5")   ],   
-          [localStorage.getItem("deaths6")  ,localStorage.getItem("dates6")   ],   
-          [localStorage.getItem("deaths7")  ,localStorage.getItem("dates7")   ],   
-          [localStorage.getItem("deaths8")  ,localStorage.getItem("dates8")   ],   
-          [localStorage.getItem("deaths9")  ,localStorage.getItem("dates9")   ],   
-          [localStorage.getItem("deaths10") ,localStorage.getItem("dates10")   ],   
-          [localStorage.getItem("deaths11") ,localStorage.getItem("dates11")   ],   
-          [localStorage.getItem("deaths12") ,localStorage.getItem("dates12")   ],   
-          [localStorage.getItem("deaths13") ,localStorage.getItem("dates13")   ],   
-          [localStorage.getItem("deaths14") ,localStorage.getItem("dates14")   ]   
+          [localStorage.getItem("dates1"), localStorage.getItem("deaths1")    ],   
+          [localStorage.getItem("dates2"), localStorage.getItem("deaths2")    ],   
+          [localStorage.getItem("dates3"), localStorage.getItem("deaths3")    ],   
+          [localStorage.getItem("dates4"), localStorage.getItem("deaths4")    ],   
+          [localStorage.getItem("dates5"), localStorage.getItem("deaths5")    ],   
+          [localStorage.getItem("dates6"), localStorage.getItem("deaths6")    ],   
+          [localStorage.getItem("dates7"), localStorage.getItem("deaths7")    ],   
+          [localStorage.getItem("dates8"), localStorage.getItem("deaths8")    ],   
+          [localStorage.getItem("dates9"), localStorage.getItem("deaths9")    ],   
+          [localStorage.getItem("dates10"), localStorage.getItem("deaths10")   ],   
+          [localStorage.getItem("dates11"), localStorage.getItem("deaths11")   ],   
+          [localStorage.getItem("dates12"), localStorage.getItem("deaths12")   ],   
+          [localStorage.getItem("dates13"), localStorage.getItem("deaths13")   ],   
+          [localStorage.getItem("dates14"), localStorage.getItem("deaths14")   ]   
         ]
       },
       {
         label: 'Infected',
         data: [
-          [localStorage.getItem("positives1") , localStorage.getItem("dates1")    ],
-          [localStorage.getItem("positives2") , localStorage.getItem("dates2")    ],
-          [localStorage.getItem("positives3") , localStorage.getItem("dates3")    ],
-          [localStorage.getItem("positives4") , localStorage.getItem("dates4")    ],
-          [localStorage.getItem("positives5") , localStorage.getItem("dates5")    ],
-          [localStorage.getItem("positives6") , localStorage.getItem("dates6")    ],
-          [localStorage.getItem("positives7") , localStorage.getItem("dates7")    ],
-          [localStorage.getItem("positives8") , localStorage.getItem("dates8")    ],
-          [localStorage.getItem("positives9") , localStorage.getItem("dates9")    ],
-          [localStorage.getItem("positives10") , localStorage.getItem("dates10")    ],
-          [localStorage.getItem("positives11") , localStorage.getItem("dates11")    ],
-          [localStorage.getItem("positives12") , localStorage.getItem("dates12")    ],
-          [localStorage.getItem("positives13") , localStorage.getItem("dates13")    ],
-          [localStorage.getItem("positives14") , localStorage.getItem("dates14")    ],
+          [localStorage.getItem("dates1"), localStorage.getItem("positives1")],
+          [localStorage.getItem("dates2"), localStorage.getItem("positives2")],
+          [localStorage.getItem("dates3"), localStorage.getItem("positives3")],
+          [localStorage.getItem("dates4"), localStorage.getItem("positives4")],
+          [localStorage.getItem("dates5"), localStorage.getItem("positives5")],
+          [localStorage.getItem("dates6"), localStorage.getItem("positives6")],
+          [localStorage.getItem("dates7"), localStorage.getItem("positives7")],
+          [localStorage.getItem("dates8"), localStorage.getItem("positives8")],
+          [localStorage.getItem("dates9"), localStorage.getItem("positives9")],
+          [localStorage.getItem("dates10"), localStorage.getItem("positives10")],
+          [localStorage.getItem("dates11"), localStorage.getItem("positives11")],
+          [localStorage.getItem("dates12"), localStorage.getItem("positives12")],
+          [localStorage.getItem("dates13"), localStorage.getItem("positives13")],
+          [localStorage.getItem("dates14"), localStorage.getItem("positives14")]
         ]
       }
     ],
