@@ -216,9 +216,9 @@ function convertState(state) {
 }
 
 function convertEpoch(epoch) {
-  var d = new Date(0);
-  d.setUTCSeconds(epoch)
-  d.setUTCDate(epoch)
+  var d = new Date(epoch);
+  // d.setUTCSeconds(epoch)
+  // d.setUTCDate(epoch)
   return d
 }
 
