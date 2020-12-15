@@ -350,58 +350,6 @@ function update_deaths() {
 
 function update_positives() {
 
-  const data = React.useMemo(
-    () =>
-     [
-      {
-        label: 'Deaths',
-        data: update_deaths()
-        
-        
-        // [
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates1")*/, localStorage.getItem("deaths1")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates2")*/, localStorage.getItem("deaths2")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates3")*/, localStorage.getItem("deaths3")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates4")*/, localStorage.getItem("deaths4")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates5")*/, localStorage.getItem("deaths5")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates6")*/, localStorage.getItem("deaths6")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates7")*/, localStorage.getItem("deaths7")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates8")*/, localStorage.getItem("deaths8")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates9")*/, localStorage.getItem("deaths9")    ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates10")*/, localStorage.getItem("deaths10")   ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates11")*/, localStorage.getItem("deaths11")   ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates12")*/, localStorage.getItem("deaths12")   ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates13")*/, localStorage.getItem("deaths13")   ],   
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates14")*/, localStorage.getItem("deaths14")   ]   
-        // ]
-
-      },
-      {
-        label: 'Positives',
-        data: update_positives()
-        
-        // [
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates1")*/, localStorage.getItem("positives1")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates2")*/, localStorage.getItem("positives2")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates3")*/, localStorage.getItem("positives3")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates4")*/, localStorage.getItem("positives4")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates5")*/, localStorage.getItem("positives5")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates6")*/, localStorage.getItem("positives6")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates7")*/, localStorage.getItem("positives7")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates8")*/, localStorage.getItem("positives8")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates9")*/, localStorage.getItem("positives9")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates10")*/, localStorage.getItem("positives10")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates11")*/, localStorage.getItem("positives11")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates12")*/, localStorage.getItem("positives12")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates13")*/, localStorage.getItem("positives13")],
-        //   [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates14")*/, localStorage.getItem("positives14")]
-        // ]
-
-
-      }
-    ],
-    []
-  )
 
   return [
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates1")*/, localStorage.getItem("positives1")    ],   
@@ -671,6 +619,7 @@ function App() {
           </Form.Group>
         </Form>
 
+
         <Card id="root" className="card" border="secondary" bg="light" text="dark">
           <Card.Body>
             <Card.Header id="state" as="h1"></Card.Header>
@@ -683,6 +632,8 @@ function App() {
             </Card.Footer>
           </Card.Body>
         </Card>
+
+        <button onClick={updateChartData}>Hmmmm</button>
 
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
