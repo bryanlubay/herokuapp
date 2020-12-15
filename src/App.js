@@ -441,7 +441,7 @@ function useChartConfig() {
   
   get_chart_data()
 
-  const data = React.useMemo(
+  const data = new React.useMemo(
     () =>
      [
       {
