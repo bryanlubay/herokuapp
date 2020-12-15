@@ -373,7 +373,7 @@ function update_positives() {
 
 }
 
-function update_chart () {
+function update_chart (props) {
 
   // let data = React.useMemo(
   //   () =>
