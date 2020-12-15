@@ -321,8 +321,6 @@ const get_data = async (state = 'nv') => {
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
 
-
-
   return data
 }; // End get_data
 
@@ -446,7 +444,6 @@ function useChartConfig() {
     []
   )
 
-
   const [state, setState] = React.useState({
     data: data
   })
@@ -463,10 +460,7 @@ function useChartConfig() {
       data: data
     }))
     
-      return {
-        ...state,
-        updateChartData
-      }
+  return {...state, updateChartData}
 
 } // end useChartConfig
 
@@ -490,7 +484,7 @@ function App() {
 
   const axes = React.useMemo(
     () => [
-      { primary: true, type: 'linear', position: 'bottom' },
+      { primary: true, type: 'time', position: 'bottom' },
       { type: 'linear', position: 'left' }
     ],
     []
