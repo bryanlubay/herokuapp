@@ -557,7 +557,7 @@ function useChartConfig() {
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: data2 // initialize
+      data: data // initialize
     }))}, [])
 
   const updateChartData = () =>
