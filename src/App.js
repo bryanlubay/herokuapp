@@ -215,7 +215,7 @@ function convertEpoch(epoch) {
   var d = new Date(0);
   // d.setUTCDate(epoch)
   d.setUTCDate(epoch)
-  return d
+  return d.getDate()
 }
 
 function show_prevent() {
