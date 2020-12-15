@@ -373,43 +373,37 @@ function update_positives() {
 
 }
 
-function update_chart (props) {
-
-  // let data = React.useMemo(
-  //   () =>
-  //    [
-  //     {
-  //       label: 'Deaths',
-  //       data: update_deaths()
-  //     },
-  //     {
-  //       label: 'Positives',
-  //       data: update_positives()
-  //     }
-  //   ],
-  //   []
-  // )
-
-  return React.useMemo(
-    () =>
-     [
-      {
-        label: 'Deaths',
-        data: update_deaths()
-      },
-      {
-        label: 'Positives',
-        data: update_positives()
-      }
-    ],
-    []
-  )
-}
 
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
 function useChartConfig() {
+
+  function update_chart () {
+
+    let data = React.useMemo(
+      () =>
+       [
+        {
+          label: 'Deaths',
+          data: update_deaths()
+        },
+        {
+          label: 'Positives',
+          data: update_positives()
+        }
+      ],
+      []
+    )
+  
+    return data
+  }
+  
+
+
+
+
+
 
   const get_chart_data = async (state = 'nv') => {
 
