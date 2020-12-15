@@ -561,7 +561,7 @@ function useChartConfig() {
   React.useEffect(() => {
     setState(old => ({
       ...old,
-      data: data // initialize
+      data: data // these should be functions probably
     }))}, [])
 
   const updateChartData = () =>
@@ -638,7 +638,7 @@ function App() {
           </Card.Body>
         </Card>
 
-        <button onClick={updateChartData}>Hmmmm</button>
+        {/* <button onClick={updateChartData}>Hmmmm</button> */}
 
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
