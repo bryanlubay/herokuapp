@@ -505,7 +505,7 @@ function useChartConfig() {
   const updateChartData = () =>
     setState(old => ({
       ...old,
-      data: data2
+      data: data
     }))
     
   return {...state, updateChartData}
