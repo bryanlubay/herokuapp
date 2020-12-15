@@ -2,11 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
-// import { ResizableBox } from 'react-resizable'
 import { Chart } from 'react-charts'
-// import { PrismLight } from 'react-syntax-highlighter'
-// import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx'
-// import theme from 'react-syntax-highlighter/dist/cjs/styles/prism/tomorrow'
 
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -487,7 +483,7 @@ function App() {
 
   const axes = React.useMemo(
     () => [
-      { primary: true, type: 'utc', position: 'bottom' },
+      { primary: true, type: 'linear', position: 'bottom' },
       { type: 'linear', position: 'left' }
     ],
     []
