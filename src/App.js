@@ -369,7 +369,6 @@ function update_positives() {
     [  /*Math.floor(Math.random() * 100) + 1*/  localStorage.getItem("dates14"), localStorage.getItem("positives14")   ]   
   ]
   return temp
-
 }
 
 
@@ -380,7 +379,7 @@ function useChartConfig() {
 
   const get_chart_data = async (state = 'nv') => {
 
-    // localStorage.clear()
+    localStorage.clear()
     state = convertState(document.getElementById('input').value)
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
       method: 'GET',
