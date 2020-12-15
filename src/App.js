@@ -284,7 +284,7 @@ function hide_symptoms() {
 /************************************************************************/
 const get_data = async (state = 'nv') => {
 
-  localStorage.clear()
+  // localStorage.clear()
 
   document.getElementById("formStateInput").hidden = true
   document.getElementById("loading").hidden = false
