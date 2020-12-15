@@ -330,7 +330,7 @@ function update_data() {
 
 function update_deaths() {
 
-  return [
+  return new Array [
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates1")*/, localStorage.getItem("deaths1")    ],   
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates2")*/, localStorage.getItem("deaths2")    ],   
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates3")*/, localStorage.getItem("deaths3")    ],   
@@ -351,7 +351,8 @@ function update_deaths() {
 function update_positives() {
 
 
-  return [
+  return new Array [
+    
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates1")*/, localStorage.getItem("positives1")    ],   
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates2")*/, localStorage.getItem("positives2")    ],   
     [  Math.floor(Math.random() * 100) + 1  /*localStorage.getItem("dates3")*/, localStorage.getItem("positives3")    ],   
