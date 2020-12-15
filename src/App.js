@@ -392,7 +392,7 @@ function useChartConfig() {
     localStorage.setItem("positives12", parseInt( data.Positive[data.Positive.length - 12]))
   
 
-    document.getElementById('chart-header').textContent = localStorage.getItem("dates1") + " " + localStorage.getItem("deaths1") + " " + localStorage.getItem("postives1")
+    document.getElementById('chart-header').textContent = localStorage.getItem("dates1") + " " + localStorage.getItem("deaths1") + " " + localStorage.getItem("positives1")
     // document.getElementById('chart-header').textContent = localStorage.getItem("ohai")//. + " " + localStorage.getItem("positives")[1] + " " + localStorage.getItem("deaths")[1]
 
 
