@@ -447,7 +447,7 @@ function useChartConfig() {
   
   get_chart_data()
 
-  var data = React.useMemo(
+  let data = React.useMemo(
     () =>
      [
       {
@@ -500,7 +500,7 @@ function useChartConfig() {
     []
   )
 
-  var data2 = React.useMemo(
+  let data2 = React.useMemo(
     () =>
      [
       {
