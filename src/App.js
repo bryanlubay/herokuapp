@@ -443,20 +443,20 @@ function useChartConfig() {
   
   get_chart_data()
 
-  let data = React.useMemo(
-    () =>
-     [
-      {
-        label: 'Deaths',
-        data: update_deaths()
-      },
-      {
-        label: 'Positives',
-        data: update_positives()
-      }
-    ],
-    []
-  )
+  // let data = React.useMemo(
+  //   () =>
+  //    [
+  //     {
+  //       label: 'Deaths',
+  //       data: update_deaths()
+  //     },
+  //     {
+  //       label: 'Positives',
+  //       data: update_positives()
+  //     }
+  //   ],
+  //   []
+  // )
 
   const [state, setState] = React.useState({
     data: [
