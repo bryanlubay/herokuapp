@@ -484,7 +484,7 @@ function App() {
 
   const axes = React.useMemo(
     () => [
-      { primary: true, type: 'linear', position: 'bottom' },
+      { primary: true, type: 'time', position: 'bottom' },
       { type: 'linear', position: 'left' }
     ],
     []
