@@ -353,18 +353,18 @@ function useChartConfig() {
   
     let data = await res.json()
     
-    localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1]))
-    localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2]))
-    localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3]))
-    localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4]))
-    localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5]))
-    localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6]))
-    localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7]))
-    localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8]))
-    localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9]))
-    localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10]))
-    localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11]))
-    localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12]))
+    localStorage.setItem("dates1", (data.Date[data.Date.length - 1]))
+    localStorage.setItem("dates2", (data.Date[data.Date.length - 2]))
+    localStorage.setItem("dates3", (data.Date[data.Date.length - 3]))
+    localStorage.setItem("dates4", (data.Date[data.Date.length - 4]))
+    localStorage.setItem("dates5", (data.Date[data.Date.length - 5]))
+    localStorage.setItem("dates6", (data.Date[data.Date.length - 6]))
+    localStorage.setItem("dates7", (data.Date[data.Date.length - 7]))
+    localStorage.setItem("dates8", (data.Date[data.Date.length - 8]))
+    localStorage.setItem("dates9", (data.Date[data.Date.length - 9]))
+    localStorage.setItem("dates10", (data.Date[data.Date.length - 10]))
+    localStorage.setItem("dates11", (data.Date[data.Date.length - 11]))
+    localStorage.setItem("dates12", (data.Date[data.Date.length - 12]))
   
     localStorage.setItem("deaths1", parseInt( data.Deaths[data.Deaths.length - 1]))
     localStorage.setItem("deaths2", parseInt( data.Deaths[data.Deaths.length - 2]))
@@ -400,7 +400,7 @@ function useChartConfig() {
     return data
   }; // End get_chart_data
   
-  get_chart_data() // this needs to update the arrays
+  get_chart_data()
 
   const data = React.useMemo(
     () =>
