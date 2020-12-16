@@ -312,14 +312,9 @@ const get_data = async (state = 'nv') => {
   number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
   document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
 
-  var d = new Date(0);
-  d.setUTCSeconds(data.Date[data.Date.length - 1])
+  document.getElementById('last_updated').textContent = "Last Updated: " + convertEpoch(data.Date[data.Date.length - 1])
 
-
-  document.getElementById('last_updated').textContent = "Last Updated: " + d.toDateString()
-  d.setUTCSeconds(data.Date[data.Date.length - 2])
-
-  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toDateString()
+  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + convertEpoch(data.Date[data.Date.length - 2])
 
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
