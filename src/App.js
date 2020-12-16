@@ -406,7 +406,11 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     sessionStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10]))
     sessionStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11]))
     sessionStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12]))
-  
+    sessionStorage.setItem("dates13", convertEpoch(data.Date[data.Date.length - 13]))
+    sessionStorage.setItem("dates14", convertEpoch(data.Date[data.Date.length - 14]))
+    sessionStorage.setItem("dates15", convertEpoch(data.Date[data.Date.length - 15]))
+
+    
     sessionStorage.setItem("deaths1", parseInt( data.Deaths[data.Deaths.length - 1]))
     sessionStorage.setItem("deaths2", parseInt( data.Deaths[data.Deaths.length - 2]))
     sessionStorage.setItem("deaths3", parseInt( data.Deaths[data.Deaths.length - 3]))
@@ -419,7 +423,11 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     sessionStorage.setItem("deaths10", parseInt( data.Deaths[data.Deaths.length - 10]))
     sessionStorage.setItem("deaths11", parseInt( data.Deaths[data.Deaths.length - 11]))
     sessionStorage.setItem("deaths12", parseInt( data.Deaths[data.Deaths.length - 12]))
-  
+    sessionStorage.setItem("deaths13", parseInt( data.Deaths[data.Deaths.length - 13]))
+    sessionStorage.setItem("deaths14", parseInt( data.Deaths[data.Deaths.length - 14]))
+    sessionStorage.setItem("deaths15", parseInt( data.Deaths[data.Deaths.length - 15]))
+
+    
     sessionStorage.setItem("positives1", parseInt( data.Positive[data.Positive.length - 1]))
     sessionStorage.setItem("positives2", parseInt( data.Positive[data.Positive.length - 2]))
     sessionStorage.setItem("positives3", parseInt( data.Positive[data.Positive.length - 3]))
@@ -432,6 +440,9 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     sessionStorage.setItem("positives10", parseInt( data.Positive[data.Positive.length - 10]))
     sessionStorage.setItem("positives11", parseInt( data.Positive[data.Positive.length - 11]))
     sessionStorage.setItem("positives12", parseInt( data.Positive[data.Positive.length - 12]))
+    sessionStorage.setItem("positives13", parseInt( data.Positive[data.Positive.length - 13]))
+    sessionStorage.setItem("positives14", parseInt( data.Positive[data.Positive.length - 14]))
+    sessionStorage.setItem("positives15", parseInt( data.Positive[data.Positive.length - 15]))
   
 
     document.getElementById('chart-header').textContent = sessionStorage.getItem("dates1") + " " + sessionStorage.getItem("deaths1") + " " + sessionStorage.getItem("positives1")
