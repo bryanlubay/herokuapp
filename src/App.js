@@ -384,6 +384,10 @@ function update_positives() {
 /************************************************************************/
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
+  let temp = convertState(document.getElementById('input').value)
+  get_data(temp)
+
+
   const get_chart_data = async (state = 'nv') => {
 
     state = convertState(document.getElementById('input').value)
@@ -543,7 +547,7 @@ function App() {
       <header className="App-header">
         <h3 id="loading">Loading . . .</h3>
         {/* STATE SEARCH */}
-        <Form id="formStateInput" className="state-form" onSubmit={e => { update_data(); e.preventDefault();}}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => {  e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
