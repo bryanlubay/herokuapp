@@ -316,11 +316,10 @@ const get_data = async (state = 'nv') => {
   d.setUTCSeconds(data.Date[data.Date.length - 1])
 
 
-  document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
-
+  document.getElementById('last_updated').textContent = "Last Updated: " + d.toDateString()
   d.setUTCSeconds(data.Date[data.Date.length - 2])
 
-  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
+  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toDateString()
 
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
