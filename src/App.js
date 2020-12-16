@@ -214,7 +214,7 @@ function convertState(state) {
 function convertEpoch(epoch) {
   var d = new Date(0);
   d.setUTCSeconds(epoch)
-  return d.getUTCDate() + "Nov"
+  return d.getUTCDate()
 }
 
 function show_prevent() {
@@ -312,9 +312,15 @@ const get_data = async (state = 'nv') => {
   number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
   document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
 
-  document.getElementById('last_updated').textContent = "Last Updated: " + convertEpoch(data.Date[data.Date.length - 1])
+  var d = new Date(0);
+  d.setUTCSeconds(data.Date[data.Date.length - 1])
 
-  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + convertEpoch(data.Date[data.Date.length - 2])
+
+  document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
+
+  d.setUTCSeconds(data.Date[data.Date.length - 2])
+
+  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
 
   document.getElementById("loading").hidden = true
   document.getElementById("formStateInput").hidden = false
