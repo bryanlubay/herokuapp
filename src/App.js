@@ -533,7 +533,7 @@ function App() {
   const { data, updateChartData } = useChartConfig()
 
   let lineChart = (
-    <div style={{ margin: 'auto', width: '70vw', height: '70vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+    <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
 
