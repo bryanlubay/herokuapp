@@ -318,6 +318,7 @@ const get_data = async (state = 'nv') => {
 
   document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
 
+  d = new Date(0);
   d.setUTCSeconds(data.Date[data.Date.length - 2])
 
   document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
