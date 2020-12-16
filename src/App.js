@@ -456,7 +456,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     sessionStorage.setItem("positives15", parseInt( data.Positive[data.Positive.length - 15]))
   
 
-    document.getElementById('chart-header').textContent = sessionStorage.getItem("dates1") + " " + sessionStorage.getItem("deaths1") + " " + sessionStorage.getItem("positives1")
+    // document.getElementById('chart-header').textContent = sessionStorage.getItem("dates1") + " " + sessionStorage.getItem("deaths1") + " " + sessionStorage.getItem("positives1")
     // document.getElementById('chart-header').textContent = sessionStorage.getItem("ohai")//. + " " + sessionStorage.getItem("positives")[1] + " " + sessionStorage.getItem("deaths")[1]
 
 
@@ -552,7 +552,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData, updateChartData} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
