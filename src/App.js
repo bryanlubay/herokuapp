@@ -384,7 +384,7 @@ function update_positives() {
 /************************************************************************/
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
-  let temp = convertState(document.getElementById('input').value)
+  // let temp = convertState(document.getElementById('input').value)
   get_data(temp)
 
 
