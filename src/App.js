@@ -214,7 +214,7 @@ function convertState(state) {
 function convertEpoch(epoch) {
   var d = new Date(0);
   d.setUTCSeconds(epoch)
-  return d.toUTCString()
+  return d.toLocaleTimeString()
 }
 
 function show_prevent() {
@@ -510,7 +510,7 @@ function App() {
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
-  const axes = React.useMemo(() => [{ primary: true, type: 'utc', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
+  const axes = React.useMemo(() => [{ primary: true, type: 'time', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
   const { data, updateChartData } = useChartConfig()
 
