@@ -517,7 +517,6 @@ function App() {
   // initialize
   useEffect(() => {get_data('nv')}, [])
 
-  // useEffect(() => {get_chart_data()}, [])
   const [stateInitial, setStateInitial] = React.useState({
     data: [
       {
@@ -542,8 +541,9 @@ function App() {
         label: 'Positives',
         data: update_positives()
       }]}))}, [])
+      
+  useEffect(() => {setStateInitial}, [])
 
-      setStateInitial()
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
