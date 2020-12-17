@@ -522,7 +522,7 @@ function App() {
 
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
-  const { data, updateChartData } = useChartConfig()
+  const { data, updateChartData } = useChartConfig() // gets called first
 
 
 
