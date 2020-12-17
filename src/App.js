@@ -522,7 +522,7 @@ function App() {
 
   const { data, updateChartData } = useChartConfig()
 
-  useEffect(() => {updateChartData}, [])
+  useEffect(() => {useChartConfig()}, [])
 
 
   let lineChart = (
