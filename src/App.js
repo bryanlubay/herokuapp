@@ -515,7 +515,7 @@ function App() {
   document.title = "Bryan Lubay's App :)"
 
   // initialize
-  useEffect(() => {get_data('nv')}, [])
+  // useEffect(() => {get_data('nv')}, [])
 
 
   const series = React.useMemo(() => ({showPoints: false}),[])
@@ -523,6 +523,8 @@ function App() {
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
   const { data, updateChartData } = useChartConfig()
+
+
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
@@ -532,7 +534,7 @@ function App() {
 
   return (
 
-  <div className="App" onLoad={e => {get_chart_data()}} >
+  <div className="App" onLoad={e => { get_chart_data()}} >
       <header className="App-header">
 
       
