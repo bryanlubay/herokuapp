@@ -516,6 +516,9 @@ function App() {
   // initialize
   useEffect(() => {get_data('nv')}, [])
 
+  useEffect(() => {get_chart_data()}, [])
+
+
   const series = React.useMemo(() => ({showPoints: false}),[])
 
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
