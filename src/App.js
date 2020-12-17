@@ -543,7 +543,7 @@ function App() {
         data: update_positives()
       }]}))}, [])
 
-
+      setStateInitial()
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
