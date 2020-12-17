@@ -518,6 +518,19 @@ function App() {
   useEffect(() => {get_data('nv')}, [])
 
   // useEffect(() => {get_chart_data()}, [])
+  React.useEffect(() => {
+    setState(old => ({
+      ...old,
+      data: [
+      {
+        label: 'Deaths',
+        data: update_deaths()
+      },
+      {
+        label: 'Positives',
+        data: update_positives()
+      }]}))}, [])
+
 
 
   const series = React.useMemo(() => ({showPoints: false}),[])
