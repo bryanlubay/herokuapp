@@ -529,12 +529,13 @@ function App() {
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
 
-    onload(updateChartData)
 
   return (
 
-    <div className="App" >
+  <div className="App" onLoad={e => {get_chart_data()}} >
       <header className="App-header">
+
+      
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
