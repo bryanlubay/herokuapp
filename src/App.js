@@ -522,9 +522,6 @@ function App() {
 
   const { data, updateChartData } = useChartConfig()
 
-  useEffect(() => {useChartConfig()}, [])
-
-
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
@@ -535,7 +532,7 @@ function App() {
     <div className="App" >
       <header className="App-header">
 
-      {/* {updateChartData} */}
+      {e => {updateChartData}}
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
