@@ -532,7 +532,7 @@ function App() {
     <div className="App" >
       <header className="App-header">
 
-      {e => {updateChartData}}
+        <div onLoad={updateChartData}></div>
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
