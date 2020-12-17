@@ -461,9 +461,9 @@ function update_positives() {
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
   // let temp = convertState(document.getElementById('input').value)
-  get_chart_data()
+  await get_chart_data()
 
-  await get_data()
+  get_data()
 
 
   const [state, setState] = React.useState({
