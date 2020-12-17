@@ -462,7 +462,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // let temp = convertState(document.getElementById('input').value)
   get_chart_data()
 
-  // get_data()
+  get_data()
 
   // make third const?
 
@@ -516,7 +516,7 @@ function App() {
 
   // initialize
   // useEffect(() => {get_data('nv')}, []) // lol make third const to initialize
-  get_data()
+  // get_data()
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
