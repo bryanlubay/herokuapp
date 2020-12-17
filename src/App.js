@@ -1,6 +1,6 @@
 // heroku git:remote -a bryanlubay
 
-import React, { useEffect } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { Chart } from 'react-charts'
 
@@ -517,33 +517,6 @@ function App() {
   // initialize
   useEffect(() => {get_data('nv')}, [])
 
-  const [stateInitial, setStateInitial] = React.useState({
-    data: [
-      {
-        label: 'Deaths',
-        data: update_deaths()
-      },
-      {
-        label: 'Positives',
-        data: update_positives()
-      }]})
-
-
-  React.useEffect(() => {
-    setStateInitial(old => ({
-      ...old,
-      data: [
-      {
-        label: 'Deaths',
-        data: update_deaths()
-      },
-      {
-        label: 'Positives',
-        data: update_positives()
-      }]}))}, [])
-
-  useEffect(() => {setStateInitial()}, [])
-
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
@@ -555,6 +528,8 @@ function App() {
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
+
+    onload(updateChartData)
 
   return (
 
