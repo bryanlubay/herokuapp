@@ -1,6 +1,6 @@
 // heroku git:remote -a bryanlubay
 
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { Chart } from 'react-charts'
 
@@ -524,6 +524,7 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
+
   // initialize()
 
   let lineChart = (
@@ -536,7 +537,7 @@ function App() {
 
   <div className="App" >
       <header className="App-header">
-
+      <body onLoad={updateChartData}></body>
       
 
         {/* STATE SEARCH */}
