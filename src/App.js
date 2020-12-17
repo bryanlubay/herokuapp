@@ -378,15 +378,6 @@ function update_positives() {
   return temp
 }
 
-
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
-
-  // let temp = convertState(document.getElementById('input').value)
-  // get_data()
-
   // calls api and stores data into localStorage
   const get_chart_data = async (state = 'nv') => {
 
@@ -462,7 +453,16 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 
     return data
   }; // End get_chart_data
-  
+
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
+
+  // let temp = convertState(document.getElementById('input').value)
+  get_data()
+
   get_chart_data()
 
   const [state, setState] = React.useState({
@@ -514,7 +514,7 @@ function App() {
   document.title = "Bryan Lubay's App :)"
 
   // initialize
-  // useEffect(() => {get_data('nv')}, [])
+  useEffect(() => {get_data('nv')}, [])
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
@@ -536,7 +536,7 @@ function App() {
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
-        <Form id="formStateInput" className="state-form" onSubmit={e => { get_data(); e.preventDefault();}}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
