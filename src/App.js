@@ -329,9 +329,8 @@ const get_data = async (state = 'nv') => {
   return data
 }; // End get_data
 
-function update_data() {
-  let temp = convertState(document.getElementById('input').value)
-  get_data(temp)
+function initialize() {
+  document.getElementById('state').textContent = ""
 } 
 
 function update_deaths() {
@@ -524,8 +523,7 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
-  document.getElementById('state').textContent = ""
-
+  initialize()
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
