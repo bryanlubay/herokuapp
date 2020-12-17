@@ -284,7 +284,7 @@ function hide_symptoms() {
 const get_data = async (state = 'nv') => {
 
   // sessionStorage.clear()
-  state = convertState(document.getElementById('input').value)
+  state = convertState(document.getElementById('input').value) // move/change this
   document.getElementById("formStateInput").hidden = true
   document.getElementById("loading").hidden = false
 
@@ -522,8 +522,9 @@ function App() {
 
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
-  const { data, updateChartData } = useChartConfig() // gets called first
+  const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
+  document.getElementById('state').textContent = ""
 
 
   let lineChart = (
