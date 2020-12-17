@@ -541,8 +541,8 @@ function App() {
         label: 'Positives',
         data: update_positives()
       }]}))}, [])
-      
-  useEffect(() => {setStateInitial}, [])
+
+  useEffect(() => {setStateInitial()}, [])
 
 
   const series = React.useMemo(() => ({showPoints: false}),[])
