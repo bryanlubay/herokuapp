@@ -522,7 +522,7 @@ function App() {
 
   const { data, updateChartData } = useChartConfig()
 
-  updateChartData()
+  useChartConfig()
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
