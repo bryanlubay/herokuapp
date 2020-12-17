@@ -338,20 +338,20 @@ function update_deaths() {
 
   var temp = []
   temp = [
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates1"), sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates2"), sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates3"), sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates4"), sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates5"), sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates6"), sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates7"), sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates8"), sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates9"), sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates10"), sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates11"), sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates12"), sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates13"), sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates14"), sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
+    [sessionStorage.getItem("dates1"), sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
+    [sessionStorage.getItem("dates2"), sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
+    [sessionStorage.getItem("dates3"), sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
+    [sessionStorage.getItem("dates4"), sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
+    [sessionStorage.getItem("dates5"), sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
+    [sessionStorage.getItem("dates6"), sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
+    [sessionStorage.getItem("dates7"), sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
+    [sessionStorage.getItem("dates8"), sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
+    [sessionStorage.getItem("dates9"), sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
+    [sessionStorage.getItem("dates10"), sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
+    [sessionStorage.getItem("dates11"), sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
+    [sessionStorage.getItem("dates12"), sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
+    [sessionStorage.getItem("dates13"), sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
+    [sessionStorage.getItem("dates14"), sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
   ]
   return temp
 }
@@ -360,20 +360,20 @@ function update_positives() {
 
   var temp = []
   temp = [
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
-    [  /*Math.floor(Math.random() * 100) + 1*/  sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
+    [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
+    [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
+    [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
+    [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
+    [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
+    [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
+    [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
+    [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
+    [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
+    [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
+    [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
+    [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
+    [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
+    [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
   ]
   return temp
 }
@@ -387,7 +387,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // let temp = convertState(document.getElementById('input').value)
   get_data()
 
-
+  // calls api and stores data into localStorage
   const get_chart_data = async (state = 'nv') => {
 
     state = convertState(document.getElementById('input').value)
@@ -465,21 +465,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   
   get_chart_data()
 
-  // let data = React.useMemo(
-  //   () =>
-  //    [
-  //     {
-  //       label: 'Deaths',
-  //       data: update_deaths()
-  //     },
-  //     {
-  //       label: 'Positives',
-  //       data: update_positives()
-  //     }
-  //   ],
-  //   []
-  // )
-
   const [state, setState] = React.useState({
     data: [
       {
@@ -528,7 +513,8 @@ function App() {
 
   document.title = "Bryan Lubay's App :)"
 
-  useEffect(() => {get_data('nv')}, [])
+  // initialize
+  // useEffect(() => {get_data('nv')}, [])
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
@@ -545,14 +531,15 @@ function App() {
 
     <div className="App" >
       <header className="App-header">
-        <h3 id="loading">Loading . . .</h3>
+
         {/* STATE SEARCH */}
+        <h3 id="loading">Loading . . .</h3>
         <Form id="formStateInput" className="state-form" onSubmit={e => {  e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData, updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
