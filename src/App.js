@@ -1,6 +1,6 @@
 // heroku git:remote -a bryanlubay
 
-import React, { Component, useEffect } from 'react';
+import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { Chart } from 'react-charts'
 
@@ -380,7 +380,7 @@ function update_positives() {
   // calls api and stores data into localStorage
   const get_chart_data = async (state = 'nv') => {
 
-    state = convertState(document.getElementById('input').value)
+    state = convertState(document.getElementById('input').value) // change this maybe
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
       method: 'GET',
       mode: 'cors',
@@ -462,8 +462,9 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // let temp = convertState(document.getElementById('input').value)
   get_chart_data()
 
-  // get_data()
+  get_data()
 
+  // make third const?
 
   const [state, setState] = React.useState({
     data: [
@@ -514,7 +515,7 @@ function App() {
   document.title = "Bryan Lubay's App :)"
 
   // initialize
-  // useEffect(() => {get_data('nv')}, [])
+  // useEffect(() => {get_data('nv')}, []) // lol make third const to initialize
 
 
   const series = React.useMemo(() => ({showPoints: false}),[])
