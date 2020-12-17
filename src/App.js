@@ -534,7 +534,7 @@ function App() {
 
   return (
 
-  <div className="App" onLoad={e => { get_chart_data()}} >
+  <div className="App" >
       <header className="App-header">
 
       
