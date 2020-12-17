@@ -518,8 +518,20 @@ function App() {
   useEffect(() => {get_data('nv')}, [])
 
   // useEffect(() => {get_chart_data()}, [])
+  const [stateInitial, setStateInitial] = React.useState({
+    data: [
+      {
+        label: 'Deaths',
+        data: update_deaths()
+      },
+      {
+        label: 'Positives',
+        data: update_positives()
+      }]})
+
+
   React.useEffect(() => {
-    setState(old => ({
+    setStateInitial(old => ({
       ...old,
       data: [
       {
