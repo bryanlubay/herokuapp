@@ -463,7 +463,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // let temp = convertState(document.getElementById('input').value)
   get_chart_data()
 
-  get_data()
+  // get_data()
 
 
   const [state, setState] = React.useState({
