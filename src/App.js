@@ -446,7 +446,7 @@ function update_positives() {
     sessionStorage.setItem("positives14", parseInt( data.Positive[data.Positive.length - 14]))
     sessionStorage.setItem("positives15", parseInt( data.Positive[data.Positive.length - 15]))
   
-
+  
     // document.getElementById('chart-header').textContent = sessionStorage.getItem("dates1") + " " + sessionStorage.getItem("deaths1") + " " + sessionStorage.getItem("positives1")
     // document.getElementById('chart-header').textContent = sessionStorage.getItem("ohai")//. + " " + sessionStorage.getItem("positives")[1] + " " + sessionStorage.getItem("deaths")[1]
 
@@ -461,9 +461,10 @@ function update_positives() {
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
   // let temp = convertState(document.getElementById('input').value)
+  get_chart_data()
+
   get_data()
 
-  get_chart_data()
 
   const [state, setState] = React.useState({
     data: [
@@ -516,7 +517,7 @@ function App() {
   // initialize
   useEffect(() => {get_data('nv')}, [])
 
-  useEffect(() => {get_chart_data()}, [])
+  // useEffect(() => {get_chart_data()}, [])
 
 
   const series = React.useMemo(() => ({showPoints: false}),[])
