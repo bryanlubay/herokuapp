@@ -286,7 +286,7 @@ const get_data = async (state = 'nv') => {
   // sessionStorage.clear()
   state = convertState(document.getElementById('input').value) // move/change this
   // document.getElementById("formStateInput").hidden = true
-  // document.getElementById("loading").hidden = false
+  document.getElementById("loading").hidden = false
 
   let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
     method: 'GET',
@@ -323,7 +323,7 @@ const get_data = async (state = 'nv') => {
 
   document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
 
-  // document.getElementById("loading").hidden = true
+  document.getElementById("loading").hidden = true
   // document.getElementById("formStateInput").hidden = false
 
   return data
@@ -560,11 +560,46 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       data: [
       {
         label: 'Deaths',
-        data: update_deaths()
+        data:
+        [
+          [sessionStorage.getItem("dates1"), sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
+          [sessionStorage.getItem("dates2"), sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
+          [sessionStorage.getItem("dates3"), sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
+          [sessionStorage.getItem("dates4"), sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
+          [sessionStorage.getItem("dates5"), sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
+          [sessionStorage.getItem("dates6"), sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
+          [sessionStorage.getItem("dates7"), sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
+          [sessionStorage.getItem("dates8"), sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
+          [sessionStorage.getItem("dates9"), sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
+          [sessionStorage.getItem("dates10"), sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
+          [sessionStorage.getItem("dates11"), sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
+          [sessionStorage.getItem("dates12"), sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
+          [sessionStorage.getItem("dates13"), sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
+          [sessionStorage.getItem("dates14"), sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
+        ]
+ 
+        // update_deaths()
       },
       {
         label: 'Positives',
-        data: update_positives()
+        data: 
+        [
+          [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
+          [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
+          [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
+          [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
+          [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
+          [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
+          [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
+          [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
+          [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
+          [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
+          [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
+          [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
+          [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
+          [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
+        ] 
+        // update_positives()
       }]}))
     
   return {...state, updateChartData}
