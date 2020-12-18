@@ -497,21 +497,21 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       positivestemp[13] = data.Positive[data.Positive.length - 14]
       positivestemp[14] = data.Positive[data.Positive.length - 15]
 
-      datestemp[0] = data.Date[data.Date.length - 1] // most recent
-      datestemp[1] = data.Date[data.Date.length - 2]
-      datestemp[2] = data.Date[data.Date.length - 3]
-      datestemp[3] = data.Date[data.Date.length - 4]
-      datestemp[4] = data.Date[data.Date.length - 5]
-      datestemp[5] = data.Date[data.Date.length - 6]
-      datestemp[6] = data.Date[data.Date.length - 7]
-      datestemp[7] = data.Date[data.Date.length - 8]
-      datestemp[8] = data.Date[data.Date.length - 9]
-      datestemp[9] = data.Date[data.Date.length - 10]
-      datestemp[10] = data.Date[data.Date.length - 11]
-      datestemp[11] = data.Date[data.Date.length - 12]
-      datestemp[12] = data.Date[data.Date.length - 13]
-      datestemp[13] = data.Date[data.Date.length - 14]
-      datestemp[14] = data.Date[data.Date.length - 15]
+      datestemp[0] = convertEpoch(data.Date[data.Date.length - 1] )
+      datestemp[1] = convertEpoch(data.Date[data.Date.length - 2])
+      datestemp[2] = convertEpoch(data.Date[data.Date.length - 3])
+      datestemp[3] = convertEpoch(data.Date[data.Date.length - 4])
+      datestemp[4] = convertEpoch(data.Date[data.Date.length - 5])
+      datestemp[5] = convertEpoch(data.Date[data.Date.length - 6])
+      datestemp[6] = convertEpoch(data.Date[data.Date.length - 7])
+      datestemp[7] = convertEpoch(data.Date[data.Date.length - 8])
+      datestemp[8] = convertEpoch(data.Date[data.Date.length - 9])
+      datestemp[9] = convertEpoch(data.Date[data.Date.length - 10])
+      datestemp[10] = convertEpoch(data.Date[data.Date.length - 11])
+      datestemp[11] = convertEpoch(data.Date[data.Date.length - 12])
+      datestemp[12] = convertEpoch(data.Date[data.Date.length - 13])
+      datestemp[13] = convertEpoch(data.Date[data.Date.length - 14])
+      datestemp[14] = convertEpoch(data.Date[data.Date.length - 15])
 
 
   }
@@ -527,7 +527,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 
   // make third xconst?
 
-  const [state, setState] = React.useState({
+  const [state, setState] = React.useState({ // dates not in epoch
     data: [
       {
         label: 'Deaths',
