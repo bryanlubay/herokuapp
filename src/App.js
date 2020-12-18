@@ -382,6 +382,11 @@ function update_positives() {
 
 const test = async (state = 'nv') => {
 
+  let deathstemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [15000,14000,13000,12000,11000,10000,9000,8000,7000,6000,5000,4000,3000,2000,1000]
+  let positivestemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1500,1400,1300,1200,1100,1000,900,800,700,600,500,400,300,200,100]
+  let datestemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
+
+
   // sessionStorage.clear()
   state = convertState(document.getElementById('input').value) // move/change this
   document.getElementById("formStateInput").hidden = true
