@@ -533,42 +533,76 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
         label: 'Deaths',
         data:
         [
-          [sessionStorage.getItem("dates1"), sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
-          [sessionStorage.getItem("dates2"), sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
-          [sessionStorage.getItem("dates3"), sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
-          [sessionStorage.getItem("dates4"), sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
-          [sessionStorage.getItem("dates5"), sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
-          [sessionStorage.getItem("dates6"), sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
-          [sessionStorage.getItem("dates7"), sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
-          [sessionStorage.getItem("dates8"), sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
-          [sessionStorage.getItem("dates9"), sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
-          [sessionStorage.getItem("dates10"), sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
-          [sessionStorage.getItem("dates11"), sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
-          [sessionStorage.getItem("dates12"), sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
-          [sessionStorage.getItem("dates13"), sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
-          [sessionStorage.getItem("dates14"), sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
         ] 
+
+        // [
+        //   [sessionStorage.getItem("dates1"), sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
+        //   [sessionStorage.getItem("dates2"), sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
+        //   [sessionStorage.getItem("dates3"), sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
+        //   [sessionStorage.getItem("dates4"), sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
+        //   [sessionStorage.getItem("dates5"), sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
+        //   [sessionStorage.getItem("dates6"), sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
+        //   [sessionStorage.getItem("dates7"), sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
+        //   [sessionStorage.getItem("dates8"), sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
+        //   [sessionStorage.getItem("dates9"), sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
+        //   [sessionStorage.getItem("dates10"), sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
+        //   [sessionStorage.getItem("dates11"), sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
+        //   [sessionStorage.getItem("dates12"), sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
+        //   [sessionStorage.getItem("dates13"), sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
+        //   [sessionStorage.getItem("dates14"), sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
+        // ] 
         // update_deaths()
       },
       {
         label: 'Positives',
         data:
-          [
-    [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
-    [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
-    [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
-    [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
-    [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
-    [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
-    [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
-    [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
-    [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
-    [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
-    [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
-    [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
-    [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
-    [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
-  ] 
+        [
+          [datestemp[0],  positivestemp[0] - positivestemp[1]],   
+          [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
+          [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
+          [datestemp[3],  positivestemp[3] - positivestemp[4]  ],   
+          [datestemp[4],  positivestemp[4] - positivestemp[5]  ],   
+          [datestemp[5],  positivestemp[5] - positivestemp[6]  ],   
+          [datestemp[6],  positivestemp[6] - positivestemp[7]  ],   
+          [datestemp[7],  positivestemp[7] - positivestemp[8]  ],   
+          [datestemp[8],  positivestemp[8] - positivestemp[9]  ],   
+          [datestemp[9],  positivestemp[9] - positivestemp[10]  ],   
+          [datestemp[10],  positivestemp[10] - positivestemp[11]  ],   
+          [datestemp[11],  positivestemp[11] - positivestemp[12]  ],   
+          [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
+          [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
+        ] 
+
+  //         [
+  //   [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
+  //   [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
+  //   [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
+  //   [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
+  //   [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
+  //   [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
+  //   [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
+  //   [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
+  //   [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
+  //   [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
+  //   [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
+  //   [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
+  //   [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
+  //   [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
+  // ] 
         // update_positives()
       }]})
 
@@ -580,42 +614,75 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
         label: 'Deaths',
         data: 
         [
-          [sessionStorage.getItem("dates1"),  ohh], // sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
-          [sessionStorage.getItem("dates2"),  ohh], // sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
-          [sessionStorage.getItem("dates3"),  ohh], // sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
-          [sessionStorage.getItem("dates4"),  ohh], // sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
-          [sessionStorage.getItem("dates5"),  ohh], // sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
-          [sessionStorage.getItem("dates6"),  ohh], // sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
-          [sessionStorage.getItem("dates7"),  ohh], // sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
-          [sessionStorage.getItem("dates8"),  ohh], // sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
-          [sessionStorage.getItem("dates9"),  ohh], // sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
-          [sessionStorage.getItem("dates10"),  ohh], // sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
-          [sessionStorage.getItem("dates11"),  ohh], // sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
-          [sessionStorage.getItem("dates12"),  ohh], // sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
-          [sessionStorage.getItem("dates13"),  ohh], // sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
-          [sessionStorage.getItem("dates14"),  ohh] // sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
-        ]
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+        ] 
+
+        // [
+        //   [sessionStorage.getItem("dates1"),  ohh], // sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
+        //   [sessionStorage.getItem("dates2"),  ohh], // sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
+        //   [sessionStorage.getItem("dates3"),  ohh], // sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
+        //   [sessionStorage.getItem("dates4"),  ohh], // sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
+        //   [sessionStorage.getItem("dates5"),  ohh], // sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
+        //   [sessionStorage.getItem("dates6"),  ohh], // sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
+        //   [sessionStorage.getItem("dates7"),  ohh], // sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
+        //   [sessionStorage.getItem("dates8"),  ohh], // sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
+        //   [sessionStorage.getItem("dates9"),  ohh], // sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
+        //   [sessionStorage.getItem("dates10"),  ohh], // sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
+        //   [sessionStorage.getItem("dates11"),  ohh], // sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
+        //   [sessionStorage.getItem("dates12"),  ohh], // sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
+        //   [sessionStorage.getItem("dates13"),  ohh], // sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
+        //   [sessionStorage.getItem("dates14"),  ohh] // sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
+        // ]
         // update_deaths()
       },
       {
         label: 'Positives',
         data:
-          [
-    [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
-    [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
-    [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
-    [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
-    [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
-    [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
-    [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
-    [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
-    [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
-    [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
-    [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
-    [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
-    [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
-    [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
-  ] 
+        [
+          [datestemp[0],  positivestemp[0] - positivestemp[1]],   
+          [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
+          [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
+          [datestemp[3],  positivestemp[3] - positivestemp[4]  ],   
+          [datestemp[4],  positivestemp[4] - positivestemp[5]  ],   
+          [datestemp[5],  positivestemp[5] - positivestemp[6]  ],   
+          [datestemp[6],  positivestemp[6] - positivestemp[7]  ],   
+          [datestemp[7],  positivestemp[7] - positivestemp[8]  ],   
+          [datestemp[8],  positivestemp[8] - positivestemp[9]  ],   
+          [datestemp[9],  positivestemp[9] - positivestemp[10]  ],   
+          [datestemp[10],  positivestemp[10] - positivestemp[11]  ],   
+          [datestemp[11],  positivestemp[11] - positivestemp[12]  ],   
+          [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
+          [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
+        ] 
+  //         [
+  //   [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
+  //   [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
+  //   [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
+  //   [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
+  //   [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
+  //   [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
+  //   [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
+  //   [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
+  //   [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
+  //   [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
+  //   [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
+  //   [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
+  //   [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
+  //   [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
+  // ] 
         // update_positives()
       }]}))}, [])
 
