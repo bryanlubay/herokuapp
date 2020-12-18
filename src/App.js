@@ -467,9 +467,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   }
   get_data().then(function(data) {
     ohh = data.Deaths[data.Deaths.length - 1]
-    // deathstemp = data.Deaths
-    // positivestemp = data.Positive
-    hmm(data.Deaths[data.Deaths.length - 1])
+    hmm(data)
     document.getElementById('chart-header').textContent = deathstemp
 
     // document.getElementById('chart-header').textContent = deathstemp
