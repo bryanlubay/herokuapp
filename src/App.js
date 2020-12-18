@@ -459,9 +459,9 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   get_chart_data()
 
   let ohh = 6969
-  let deathstemp = []
-  let positivestemp = []
-  let datestemp = []
+  let deathstemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
+  let positivestemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
+  let datestemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
 
   function hmm(data) {
 
@@ -692,11 +692,47 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       data: [
       {
         label: 'Deaths',
-        data: update_deaths()
+        data: 
+        [
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+        ] 
+
+        // update_deaths()
       },
       {
         label: 'Positives',
-        data: update_positives()
+        data: 
+        [
+          [datestemp[0],  positivestemp[0] - positivestemp[1]],   
+          [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
+          [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
+          [datestemp[3],  positivestemp[3] - positivestemp[4]  ],   
+          [datestemp[4],  positivestemp[4] - positivestemp[5]  ],   
+          [datestemp[5],  positivestemp[5] - positivestemp[6]  ],   
+          [datestemp[6],  positivestemp[6] - positivestemp[7]  ],   
+          [datestemp[7],  positivestemp[7] - positivestemp[8]  ],   
+          [datestemp[8],  positivestemp[8] - positivestemp[9]  ],   
+          [datestemp[9],  positivestemp[9] - positivestemp[10]  ],   
+          [datestemp[10],  positivestemp[10] - positivestemp[11]  ],   
+          [datestemp[11],  positivestemp[11] - positivestemp[12]  ],   
+          [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
+          [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
+        ] 
+
+        // update_positives()
       }]}))
     
   return {...state, updateChartData}
