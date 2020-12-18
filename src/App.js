@@ -1,6 +1,6 @@
 // heroku git:remote -a bryanlubay
 
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { Chart } from 'react-charts'
 
@@ -284,7 +284,7 @@ function hide_symptoms() {
 const get_data = async (state = 'nv') => {
 
   // sessionStorage.clear()
-  state = convertState(document.getElementById('input').value)
+  state = convertState(document.getElementById('input').value) // move/change this
   document.getElementById("formStateInput").hidden = true
   document.getElementById("loading").hidden = false
 
@@ -329,9 +329,8 @@ const get_data = async (state = 'nv') => {
   return data
 }; // End get_data
 
-function update_data() {
-  let temp = convertState(document.getElementById('input').value)
-  get_data(temp)
+function initialize() {
+  document.getElementById('state').textContent = ""
 } 
 
 function update_deaths() {
@@ -402,18 +401,10 @@ function update_positives() {
   return temp
 }
 
-
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
-
-  get_data()
-
   // calls api and stores data into localStorage
   const get_chart_data = async (state = 'nv') => {
 
-    state = convertState(document.getElementById('input').value)
+    state = convertState(document.getElementById('input').value) // change this maybe
     let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
       method: 'GET',
       mode: 'cors',
@@ -478,15 +469,26 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     sessionStorage.setItem("positives14", parseInt( data.Positive[data.Positive.length - 14]))
     sessionStorage.setItem("positives15", parseInt( data.Positive[data.Positive.length - 15]))
   
-
+  
     // document.getElementById('chart-header').textContent = sessionStorage.getItem("dates1") + " " + sessionStorage.getItem("deaths1") + " " + sessionStorage.getItem("positives1")
     // document.getElementById('chart-header').textContent = sessionStorage.getItem("ohai")//. + " " + sessionStorage.getItem("positives")[1] + " " + sessionStorage.getItem("deaths")[1]
 
 
     return data
   }; // End get_chart_data
-  
+
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
+
+  // let temp = convertState(document.getElementById('input').value)
   get_chart_data()
+
+  get_data()
+
+  // make third const?
 
   const [state, setState] = React.useState({
     data: [
@@ -537,27 +539,35 @@ function App() {
   document.title = "Bryan Lubay's App :)"
 
   // initialize
-  // useEffect(() => {get_data('nv')}, [])
+  // useEffect(() => {get_data('nv')}, []) // lol make third const to initialize
+  // get_data()
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
-  const { data, updateChartData } = useChartConfig()
+  const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
+
+  useChartConfig()
+
+  // initialize()
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
 
+
   return (
 
-    <div className="App" >
+  <div className="App" >
       <header className="App-header">
+      {/* <body onLoad={updateChartData}></body> */}
+      
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
-        <Form id="formStateInput" className="state-form" onSubmit={e => {  e.preventDefault();}}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { get_data(); e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
