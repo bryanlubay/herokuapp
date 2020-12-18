@@ -456,12 +456,12 @@ function update_positives() {
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
   // let temp = convertState(document.getElementById('input').value)
-  get_chart_data()
+  // get_chart_data()
 
   let ohh = 6969
-  let deathstemp = [15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
-  let positivestemp = [29,28,27,26,25,24,23,22,21,20,19,18,17,16]
-  let datestemp = [44,43,42,41,40,39,38,37,36,35,34,33,32,31,30] 
+  let deathstemp = [15000,14000,13000,12000,11000,10000,9000,8000,7000,6000,5000,4000,3000,2000,1000]
+  let positivestemp = [1500,1400,1300,1200,1100,1000,900,800,700,600,500,400,300,200,100]
+  let datestemp = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
 
   function hmm(data) {
 
