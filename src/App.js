@@ -358,6 +358,30 @@ function update_deaths() {
 
 function update_positives() {
 
+  const get_chart_data = async (state = 'nv') => {
+
+    state = convertState(document.getElementById('input').value)
+    let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      params: {
+        'state': state
+      }
+    })
+  
+    let data = await res.json()
+
+    return data
+  }; // End get_chart_data
+  
+  get_chart_data()
+
+
+
   var temp = []
   temp = [
     [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
@@ -384,7 +408,6 @@ function update_positives() {
 /************************************************************************/
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
-  // let temp = convertState(document.getElementById('input').value)
   get_data()
 
   // calls api and stores data into localStorage
