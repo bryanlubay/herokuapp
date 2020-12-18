@@ -458,8 +458,9 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // let temp = convertState(document.getElementById('input').value)
   get_chart_data()
 
-  let hmm = get_data().then()
-  document.getElementById('chart-header').textContent = ""
+  let hmm = get_data().then(
+    document.getElementById('chart-header').textContent = data.Date[data.Date.length - 1]
+  )
 
 
   // make third xconst?
