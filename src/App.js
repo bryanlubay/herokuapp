@@ -459,8 +459,10 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   get_chart_data()
 
   let hmm = get_data().then()
+  document.getElementById('chart-header').textContent = ""
 
-  // make third const?
+
+  // make third xconst?
 
   const [state, setState] = React.useState({
     data: [
