@@ -459,9 +459,9 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   get_chart_data()
 
   let ohh = 6969
-  let deathstemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
-  let positivestemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
-  let datestemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
+  let deathstemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  let positivestemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  let datestemp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
   function hmm(data) {
 
