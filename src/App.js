@@ -285,8 +285,8 @@ const get_data = async (state = 'nv') => {
 
   // sessionStorage.clear()
   state = convertState(document.getElementById('input').value) // move/change this
-  document.getElementById("formStateInput").hidden = true
-  document.getElementById("loading").hidden = false
+  // document.getElementById("formStateInput").hidden = true
+  // document.getElementById("loading").hidden = false
 
   let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
     method: 'GET',
@@ -323,8 +323,8 @@ const get_data = async (state = 'nv') => {
 
   document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
 
-  document.getElementById("loading").hidden = true
-  document.getElementById("formStateInput").hidden = false
+  // document.getElementById("loading").hidden = true
+  // document.getElementById("formStateInput").hidden = false
 
   return data
 }; // End get_data
@@ -458,7 +458,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // let temp = convertState(document.getElementById('input').value)
   get_chart_data()
 
-  get_data()
+  // get_data()
 
   // make third const?
 
@@ -582,6 +582,11 @@ function App() {
   // useEffect(() => {get_data('nv')}, []) // lol make third const to initialize
   // get_data()
 
+
+  // blank card but enter 
+
+
+
   const series = React.useMemo(() => ({showPoints: false}),[])
 
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
@@ -606,7 +611,7 @@ function App() {
       
 
         {/* STATE SEARCH */}
-        <h3 id="loading">Loading . . .</h3>
+        {/* <h3 id="loading">Loading . . .</h3> */}
         <Form id="formStateInput" className="state-form" onSubmit={e => { get_data(); e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
