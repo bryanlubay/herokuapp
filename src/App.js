@@ -684,8 +684,7 @@ function App() {
         <h3 id="loading">Loading . . .</h3>
         <Form id="formStateInput" className="state-form" onSubmit={e => { //get_data(); 
           
-          get_data().then(useChartConfig(data) {
-          })
+          get_data().then(useChartConfig(data))
         
           
           e.preventDefault();}}>
