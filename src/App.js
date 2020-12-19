@@ -453,82 +453,67 @@ const get_chart_data = async (state = 'nv') => {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
-function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
+function useChartConfig(data) { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
-  // let temp = convertState(document.getElementById('input').value)
-  // get_chart_data()
-
-  let ohh = 6969
   let deathstemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [15000,14000,13000,12000,11000,10000,9000,8000,7000,6000,5000,4000,3000,2000,1000]
   let positivestemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1500,1400,1300,1200,1100,1000,900,800,700,600,500,400,300,200,100]
   let datestemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
 
-  function hmm(data) {
+  // function hmm(data) {
+  //     deathstemp[0] = data.Deaths[data.Deaths.length - 1] // most recent
+  //     deathstemp[1] = data.Deaths[data.Deaths.length - 2]
+  //     deathstemp[2] = data.Deaths[data.Deaths.length - 3]
+  //     deathstemp[3] = data.Deaths[data.Deaths.length - 4]
+  //     deathstemp[4] = data.Deaths[data.Deaths.length - 5]
+  //     deathstemp[5] = data.Deaths[data.Deaths.length - 6]
+  //     deathstemp[6] = data.Deaths[data.Deaths.length - 7]
+  //     deathstemp[7] = data.Deaths[data.Deaths.length - 8]
+  //     deathstemp[8] = data.Deaths[data.Deaths.length - 9]
+  //     deathstemp[9] = data.Deaths[data.Deaths.length - 10]
+  //     deathstemp[10] = data.Deaths[data.Deaths.length - 11]
+  //     deathstemp[11] = data.Deaths[data.Deaths.length - 12]
+  //     deathstemp[12] = data.Deaths[data.Deaths.length - 13]
+  //     deathstemp[13] = data.Deaths[data.Deaths.length - 14]
+  //     deathstemp[14] = data.Deaths[data.Deaths.length - 15]
 
-      deathstemp[0] = data.Deaths[data.Deaths.length - 1] // most recent
-      deathstemp[1] = data.Deaths[data.Deaths.length - 2]
-      deathstemp[2] = data.Deaths[data.Deaths.length - 3]
-      deathstemp[3] = data.Deaths[data.Deaths.length - 4]
-      deathstemp[4] = data.Deaths[data.Deaths.length - 5]
-      deathstemp[5] = data.Deaths[data.Deaths.length - 6]
-      deathstemp[6] = data.Deaths[data.Deaths.length - 7]
-      deathstemp[7] = data.Deaths[data.Deaths.length - 8]
-      deathstemp[8] = data.Deaths[data.Deaths.length - 9]
-      deathstemp[9] = data.Deaths[data.Deaths.length - 10]
-      deathstemp[10] = data.Deaths[data.Deaths.length - 11]
-      deathstemp[11] = data.Deaths[data.Deaths.length - 12]
-      deathstemp[12] = data.Deaths[data.Deaths.length - 13]
-      deathstemp[13] = data.Deaths[data.Deaths.length - 14]
-      deathstemp[14] = data.Deaths[data.Deaths.length - 15]
+  //     positivestemp[0] = data.Positive[data.Positive.length - 1] // most recent
+  //     positivestemp[1] = data.Positive[data.Positive.length - 2]
+  //     positivestemp[2] = data.Positive[data.Positive.length - 3]
+  //     positivestemp[3] = data.Positive[data.Positive.length - 4]
+  //     positivestemp[4] = data.Positive[data.Positive.length - 5]
+  //     positivestemp[5] = data.Positive[data.Positive.length - 6]
+  //     positivestemp[6] = data.Positive[data.Positive.length - 7]
+  //     positivestemp[7] = data.Positive[data.Positive.length - 8]
+  //     positivestemp[8] = data.Positive[data.Positive.length - 9]
+  //     positivestemp[9] = data.Positive[data.Positive.length - 10]
+  //     positivestemp[10] = data.Positive[data.Positive.length - 11]
+  //     positivestemp[11] = data.Positive[data.Positive.length - 12]
+  //     positivestemp[12] = data.Positive[data.Positive.length - 13]
+  //     positivestemp[13] = data.Positive[data.Positive.length - 14]
+  //     positivestemp[14] = data.Positive[data.Positive.length - 15]
 
-      positivestemp[0] = data.Positive[data.Positive.length - 1] // most recent
-      positivestemp[1] = data.Positive[data.Positive.length - 2]
-      positivestemp[2] = data.Positive[data.Positive.length - 3]
-      positivestemp[3] = data.Positive[data.Positive.length - 4]
-      positivestemp[4] = data.Positive[data.Positive.length - 5]
-      positivestemp[5] = data.Positive[data.Positive.length - 6]
-      positivestemp[6] = data.Positive[data.Positive.length - 7]
-      positivestemp[7] = data.Positive[data.Positive.length - 8]
-      positivestemp[8] = data.Positive[data.Positive.length - 9]
-      positivestemp[9] = data.Positive[data.Positive.length - 10]
-      positivestemp[10] = data.Positive[data.Positive.length - 11]
-      positivestemp[11] = data.Positive[data.Positive.length - 12]
-      positivestemp[12] = data.Positive[data.Positive.length - 13]
-      positivestemp[13] = data.Positive[data.Positive.length - 14]
-      positivestemp[14] = data.Positive[data.Positive.length - 15]
-
-      datestemp[0] = convertEpoch(data.Date[data.Date.length - 1] )
-      datestemp[1] = convertEpoch(data.Date[data.Date.length - 2])
-      datestemp[2] = convertEpoch(data.Date[data.Date.length - 3])
-      datestemp[3] = convertEpoch(data.Date[data.Date.length - 4])
-      datestemp[4] = convertEpoch(data.Date[data.Date.length - 5])
-      datestemp[5] = convertEpoch(data.Date[data.Date.length - 6])
-      datestemp[6] = convertEpoch(data.Date[data.Date.length - 7])
-      datestemp[7] = convertEpoch(data.Date[data.Date.length - 8])
-      datestemp[8] = convertEpoch(data.Date[data.Date.length - 9])
-      datestemp[9] = convertEpoch(data.Date[data.Date.length - 10])
-      datestemp[10] = convertEpoch(data.Date[data.Date.length - 11])
-      datestemp[11] = convertEpoch(data.Date[data.Date.length - 12])
-      datestemp[12] = convertEpoch(data.Date[data.Date.length - 13])
-      datestemp[13] = convertEpoch(data.Date[data.Date.length - 14])
-      datestemp[14] = convertEpoch(data.Date[data.Date.length - 15])
-
-
-  }
+  //     datestemp[0] = convertEpoch(data.Date[data.Date.length - 1] )
+  //     datestemp[1] = convertEpoch(data.Date[data.Date.length - 2])
+  //     datestemp[2] = convertEpoch(data.Date[data.Date.length - 3])
+  //     datestemp[3] = convertEpoch(data.Date[data.Date.length - 4])
+  //     datestemp[4] = convertEpoch(data.Date[data.Date.length - 5])
+  //     datestemp[5] = convertEpoch(data.Date[data.Date.length - 6])
+  //     datestemp[6] = convertEpoch(data.Date[data.Date.length - 7])
+  //     datestemp[7] = convertEpoch(data.Date[data.Date.length - 8])
+  //     datestemp[8] = convertEpoch(data.Date[data.Date.length - 9])
+  //     datestemp[9] = convertEpoch(data.Date[data.Date.length - 10])
+  //     datestemp[10] = convertEpoch(data.Date[data.Date.length - 11])
+  //     datestemp[11] = convertEpoch(data.Date[data.Date.length - 12])
+  //     datestemp[12] = convertEpoch(data.Date[data.Date.length - 13])
+  //     datestemp[13] = convertEpoch(data.Date[data.Date.length - 14])
+  //     datestemp[14] = convertEpoch(data.Date[data.Date.length - 15])
+  // }
   
-  get_data().then(function(data) {
-    ohh = data.Deaths[data.Deaths.length - 1]
-    hmm(data)
-    document.getElementById('chart-header').textContent = deathstemp
+  // get_data().then(function(data) {
+  //   hmm(data)
+  // })
 
-    // document.getElementById('chart-header').textContent = deathstemp
-
-  })
-
-
-  // make third xconst?
-
-  const [state, setState] = React.useState({ // dates not in epoch
+  const [state, setState] = React.useState({ 
     data: [
       {
         label: 'Deaths',
@@ -549,24 +534,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
           [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
           [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
         ] 
-
-        // [
-        //   [sessionStorage.getItem("dates1"), sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
-        //   [sessionStorage.getItem("dates2"), sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
-        //   [sessionStorage.getItem("dates3"), sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
-        //   [sessionStorage.getItem("dates4"), sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
-        //   [sessionStorage.getItem("dates5"), sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
-        //   [sessionStorage.getItem("dates6"), sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
-        //   [sessionStorage.getItem("dates7"), sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
-        //   [sessionStorage.getItem("dates8"), sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
-        //   [sessionStorage.getItem("dates9"), sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
-        //   [sessionStorage.getItem("dates10"), sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
-        //   [sessionStorage.getItem("dates11"), sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
-        //   [sessionStorage.getItem("dates12"), sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
-        //   [sessionStorage.getItem("dates13"), sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
-        //   [sessionStorage.getItem("dates14"), sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
-        // ] 
-        // update_deaths()
       },
       {
         label: 'Positives',
@@ -587,24 +554,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
           [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
           [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
         ] 
-
-  //         [
-  //   [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
-  //   [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
-  //   [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
-  //   [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
-  //   [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
-  //   [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
-  //   [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
-  //   [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
-  //   [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
-  //   [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
-  //   [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
-  //   [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
-  //   [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
-  //   [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
-  // ] 
-        // update_positives()
       }]})
 
   React.useEffect(() => {
@@ -630,24 +579,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
           [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
           [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
         ] 
-
-        // [
-        //   [sessionStorage.getItem("dates1"),  ohh], // sessionStorage.getItem("deaths1")  - sessionStorage.getItem("deaths2")  ],   
-        //   [sessionStorage.getItem("dates2"),  ohh], // sessionStorage.getItem("deaths2")  - sessionStorage.getItem("deaths3")  ],   
-        //   [sessionStorage.getItem("dates3"),  ohh], // sessionStorage.getItem("deaths3")  - sessionStorage.getItem("deaths4")  ],   
-        //   [sessionStorage.getItem("dates4"),  ohh], // sessionStorage.getItem("deaths4")  - sessionStorage.getItem("deaths5")  ],   
-        //   [sessionStorage.getItem("dates5"),  ohh], // sessionStorage.getItem("deaths5")  - sessionStorage.getItem("deaths6")  ],   
-        //   [sessionStorage.getItem("dates6"),  ohh], // sessionStorage.getItem("deaths6")  - sessionStorage.getItem("deaths7")  ],   
-        //   [sessionStorage.getItem("dates7"),  ohh], // sessionStorage.getItem("deaths7")  - sessionStorage.getItem("deaths8")  ],   
-        //   [sessionStorage.getItem("dates8"),  ohh], // sessionStorage.getItem("deaths8")  - sessionStorage.getItem("deaths9")  ],   
-        //   [sessionStorage.getItem("dates9"),  ohh], // sessionStorage.getItem("deaths9")  - sessionStorage.getItem("deaths10")  ],   
-        //   [sessionStorage.getItem("dates10"),  ohh], // sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")  ],   
-        //   [sessionStorage.getItem("dates11"),  ohh], // sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")  ],   
-        //   [sessionStorage.getItem("dates12"),  ohh], // sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")  ],   
-        //   [sessionStorage.getItem("dates13"),  ohh], // sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")  ],   
-        //   [sessionStorage.getItem("dates14"),  ohh] // sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")  ]   
-        // ]
-        // update_deaths()
       },
       {
         label: 'Positives',
@@ -668,23 +599,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
           [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
           [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
         ] 
-  //         [
-  //   [sessionStorage.getItem("dates1"), sessionStorage.getItem("positives1")  - sessionStorage.getItem("positives2")  ],   
-  //   [sessionStorage.getItem("dates2"), sessionStorage.getItem("positives2")  - sessionStorage.getItem("positives3")  ],   
-  //   [sessionStorage.getItem("dates3"), sessionStorage.getItem("positives3")  - sessionStorage.getItem("positives4")  ],   
-  //   [sessionStorage.getItem("dates4"), sessionStorage.getItem("positives4")  - sessionStorage.getItem("positives5")  ],   
-  //   [sessionStorage.getItem("dates5"), sessionStorage.getItem("positives5")  - sessionStorage.getItem("positives6")  ],   
-  //   [sessionStorage.getItem("dates6"), sessionStorage.getItem("positives6")  - sessionStorage.getItem("positives7")  ],   
-  //   [sessionStorage.getItem("dates7"), sessionStorage.getItem("positives7")  - sessionStorage.getItem("positives8")  ],   
-  //   [sessionStorage.getItem("dates8"), sessionStorage.getItem("positives8")  - sessionStorage.getItem("positives9")  ],   
-  //   [sessionStorage.getItem("dates9"), sessionStorage.getItem("positives9")  - sessionStorage.getItem("positives10")  ],   
-  //   [sessionStorage.getItem("dates10"), sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")  ],   
-  //   [sessionStorage.getItem("dates11"), sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")  ],   
-  //   [sessionStorage.getItem("dates12"), sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")  ],   
-  //   [sessionStorage.getItem("dates13"), sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")  ],   
-  //   [sessionStorage.getItem("dates14"), sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")  ]   
-  // ] 
-        // update_positives()
       }]}))}, [])
 
   const updateChartData = () =>
@@ -710,8 +624,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
           [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
           [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
         ] 
-
-        // update_deaths()
       },
       {
         label: 'Positives',
@@ -732,8 +644,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
           [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
           [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
         ] 
-
-        // update_positives()
       }]}))
     
   return {...state, updateChartData}
@@ -772,7 +682,13 @@ function App() {
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
-        <Form id="formStateInput" className="state-form" onSubmit={e => { get_data(); e.preventDefault();}}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => { //get_data(); 
+          
+          get_data().then(useChartConfig(data) {
+          })
+        
+          
+          e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
