@@ -565,6 +565,8 @@ function App() {
 
   get_data()
 
+  updateChartData()
+
   const get_data = async (state = 'nv') => {
 
     // sessionStorage.clear()
@@ -636,7 +638,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={temp()}> Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData}> Submit</Button>
             </div>
           </Form.Group>
         </Form>
