@@ -555,6 +555,16 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 // **********************************************************************
 function App() {
 
+  document.title = "Bryan Lubay's App :)"
+
+  const series = React.useMemo(() => ({showPoints: false}),[])
+
+  const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
+
+  const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
+
+  get_data()
+
   const get_data = async (state = 'nv') => {
 
     // sessionStorage.clear()
@@ -599,22 +609,14 @@ function App() {
     document.getElementById("loading").hidden = true
     document.getElementById("formStateInput").hidden = false
     
-    useChartConfig()
+    updateChartData()
     
     return data
   }; // End get_data
-  
 
 
-  document.title = "Bryan Lubay's App :)"
 
-  const series = React.useMemo(() => ({showPoints: false}),[])
 
-  const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
-
-  const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
-
-  get_data()
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
@@ -633,7 +635,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData && updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData } > Submit</Button>
             </div>
           </Form.Group>
         </Form>
