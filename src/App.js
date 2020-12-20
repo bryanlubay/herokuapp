@@ -628,10 +628,7 @@ function App() {
 
 
   function temp() {
-    get_data().then( 
-      get_data()
-    )
-              // useEffect(()=> {updateChartData()},[])
+get_data()              // useEffect(()=> {updateChartData()},[])
   }
 
   
