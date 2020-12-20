@@ -616,9 +616,14 @@ function App() {
   get_data()
 
   function temp() {
-    updateChartData();
-    updateChartData();
-  }
+    function temp() {
+      useEffect(()=> {
+        updateChartData();
+      },[])}
+      useEffect(()=> {
+        updateChartData();
+      },[])}
+    }
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
