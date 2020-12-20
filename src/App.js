@@ -614,9 +614,6 @@ function App() {
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
   get_data()
-  // useChartConfig()
-
-  // initialize()
 
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
@@ -627,9 +624,7 @@ function App() {
   return (
 
   <div className="App" >
-      <header className="App-header">
-      {/* <body onLoad={updateChartData}></body> */}
-      
+      <header className="App-header">    
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
@@ -638,7 +633,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData, updateChartData} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
