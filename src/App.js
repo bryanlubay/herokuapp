@@ -634,8 +634,8 @@ function App() {
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
               <Button className="submit-button" variant="light" type="submit" onClick={() => {
-          updateChartData();
-          updateChartData();
+          useChartConfig();
+          useChartConfig();
         }}> Submit</Button>
             </div>
           </Form.Group>
