@@ -628,9 +628,8 @@ function App() {
 
 
   function temp() {
-    const { temp1, updateChartData1 } = useChartConfig()
-    const { temp2, updateChartData2 } = useChartConfig()
-    return {temp2}
+    get_data()
+    get_data()
             // useEffect(()=> {updateChartData()},[])
   }
 
