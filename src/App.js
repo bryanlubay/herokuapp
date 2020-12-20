@@ -1006,6 +1006,8 @@ function App() {
 
   useChartConfig()
 
+  updateChartData()
+
   // initialize()
 
   let lineChart = (
