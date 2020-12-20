@@ -614,8 +614,8 @@ function App() {
 
 
   function temp() {
-    updateChartData()
-    updateChartData()
+    updateChartData();
+    updateChartData();
   }
 
 
