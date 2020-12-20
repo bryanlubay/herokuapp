@@ -613,7 +613,10 @@ function App() {
   }; // End get_data
 
 
-
+  function temp() {
+    updateChartData()
+    updateChartData()
+  }
 
 
   let lineChart = (
@@ -633,10 +636,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={() => {
-          useChartConfig();
-          useChartConfig();
-        }}> Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={temp()}> Submit</Button>
             </div>
           </Form.Group>
         </Form>
