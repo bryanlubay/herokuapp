@@ -623,9 +623,11 @@ function App() {
 
 
   function temp() {
-    updateChartData()
-    updateChartData()
+    useEffect(()=> {updateChartData()},[])
+    useEffect(()=> {updateChartData()},[])
   }
+
+  
 
   return (
 
