@@ -616,8 +616,8 @@ function App() {
   get_data()
 
   function temp() {
-    updateChartData()
-    updateChartData()
+    updateChartData();
+    updateChartData();
   }
 
   let lineChart = (
