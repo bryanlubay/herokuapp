@@ -1004,6 +1004,8 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
+  const { data2, updateChartData2 } = useChartConfig() // gets called first and calls getChartData
+
   useChartConfig()
 
   useChartConfig()
