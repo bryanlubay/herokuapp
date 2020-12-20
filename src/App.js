@@ -565,7 +565,7 @@ function App() {
 
   get_data()
 
-  updateChartData()
+  // updateChartData()
 
   const get_data = async (state = 'nv') => {
 
