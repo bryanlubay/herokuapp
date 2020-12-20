@@ -615,12 +615,6 @@ function App() {
   }; // End get_data
 
 
-  function temp() {
-    updateChartData();
-    // updateChartData();
-  }
-
-
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
