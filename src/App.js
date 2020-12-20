@@ -623,9 +623,9 @@ function App() {
 
 
   function temp() {
-    useChartConfig()
-    useChartConfig()
-    // useEffect(()=> {updateChartData()},[])
+    const { data, updateChartData } = useChartConfig()
+    const { data, updateChartData } = useChartConfig()
+            // useEffect(()=> {updateChartData()},[])
   }
 
   
