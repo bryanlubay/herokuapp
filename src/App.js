@@ -609,12 +609,8 @@ function App() {
     document.getElementById("loading").hidden = true
     document.getElementById("formStateInput").hidden = false
     
-    const memoizedCallback = useCallback(
-      () => {
-        useChartConfig()
-      },
-      [],
-    );    
+    updateChartData
+    
     return data
   }; // End get_data
 
