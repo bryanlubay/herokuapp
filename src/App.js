@@ -615,6 +615,11 @@ function App() {
 
   get_data()
 
+  function temp() {
+    updateChartData()
+    updateChartData()
+  }
+
   let lineChart = (
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
@@ -633,7 +638,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData; updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={temp()} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
