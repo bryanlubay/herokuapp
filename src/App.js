@@ -1006,7 +1006,7 @@ function App() {
 
   useChartConfig()
 
-  updateChartData()
+  useChartConfig()
 
   // initialize()
 
