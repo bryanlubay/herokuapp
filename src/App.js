@@ -608,9 +608,7 @@ function App() {
   
     document.getElementById("loading").hidden = true
     document.getElementById("formStateInput").hidden = false
-    
-    updateChartData
-    
+      
     return data
   }; // End get_data
 
@@ -635,7 +633,7 @@ function App() {
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData } > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData = updateChartData } > Submit</Button>
             </div>
           </Form.Group>
         </Form>
