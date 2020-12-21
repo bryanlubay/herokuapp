@@ -393,7 +393,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 
 
   const [state, setState] = React.useState(
-    get_data().then(function(data) {})
+    get_data().then(function(data) {}),
     { 
     data: [
       {
