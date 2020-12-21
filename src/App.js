@@ -588,7 +588,7 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
-  const { data2, updateChartData } = useChartConfig() // gets called first and calls getChartData
+  // const { data2, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
   // function temp() {
   //   updateChartData()
@@ -610,10 +610,10 @@ function App() {
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
 
-let lineChart2 = (
-  <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-    <Chart id="chart" data={data2} series={series} axes={axes} tooltip></Chart>
-  </div>)
+// let lineChart2 = (
+//   <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+//     <Chart id="chart" data={data2} series={series} axes={axes} tooltip></Chart>
+//   </div>)
 
 
   return (
@@ -656,10 +656,10 @@ let lineChart2 = (
           {lineChart}
         </div>
 
-        <div className="card-chart">
+        {/* <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart2}
-        </div>
+        </div> */}
 
 
         <div>
