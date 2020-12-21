@@ -566,6 +566,11 @@ function App() {
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
 
+let lineChart2 = (
+  <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+    <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
+  </div>)
+
 
   return (
 
@@ -605,6 +610,8 @@ function App() {
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
+          {lineChart2}
+
         </div>
 
         <div>
