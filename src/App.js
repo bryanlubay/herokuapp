@@ -756,7 +756,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // }
   
   get_data().then(function(data) {
-    ohh = data.Deaths[data.Deaths.length - 1]
     // hmm(data)
     document.getElementById('chart-header').textContent = deathstemp
     deathstemp[0] = data.Deaths[data.Deaths.length - 1] // most recent
