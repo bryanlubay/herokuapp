@@ -613,10 +613,10 @@ function App() {
 
   const { data2, updateChartData2 } = useChartConfig2() // gets called first and calls getChartData
 
-  // function temp() {
-  //   updateChartData()
-  //   updateChartData2()
-  // }
+  function temp() {
+    updateChartData()
+    updateChartData2()
+  }
 
   // useChartConfig()
 
@@ -653,7 +653,7 @@ let lineChart2 = (
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={temp()} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
