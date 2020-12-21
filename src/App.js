@@ -610,9 +610,13 @@ let lineChart2 = (
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
-          {lineChart2}
-
         </div>
+
+        <div className="card-chart">
+          <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
+          {lineChart2}
+        </div>
+
 
         <div>
 
