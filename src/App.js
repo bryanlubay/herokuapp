@@ -695,15 +695,16 @@ function update_positives() {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
+let deathstemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [15000,14000,13000,12000,11000,10000,9000,8000,7000,6000,5000,4000,3000,2000,1000]
+let positivestemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1500,1400,1300,1200,1100,1000,900,800,700,600,500,400,300,200,100]
+let datestemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
+
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
   // let temp = convertState(document.getElementById('input').value)
   // get_chart_data()
 
   let ohh = 6969
-  let deathstemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [15000,14000,13000,12000,11000,10000,9000,8000,7000,6000,5000,4000,3000,2000,1000]
-  let positivestemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1500,1400,1300,1200,1100,1000,900,800,700,600,500,400,300,200,100]
-  let datestemp =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
 
   function hmm(data) {
 
@@ -1004,6 +1005,13 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
+  const { data2, updateChartData2 } = useChartConfig() // gets called first and calls getChartData
+
+  // function temp() {
+  //   updateChartData()
+  //   updateChartData2()
+  // }
+
   // useChartConfig()
 
   // useChartConfig()
@@ -1029,12 +1037,12 @@ function App() {
 
         {/* STATE SEARCH */}
         <h3 id="loading">Loading . . .</h3>
-        <Form id="formStateInput" className="state-form" onSubmit={e => { get_data(); e.preventDefault();}}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => {temp(); get_data(); e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={temp()} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
