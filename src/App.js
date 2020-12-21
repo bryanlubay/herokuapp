@@ -397,6 +397,25 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     { 
     data: [
       {
+        label: 'Deaths',
+        data:
+        [
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+        ]},
+      {
         label: 'Positives',
         data:
         [
@@ -420,6 +439,25 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     setState(old => ({
       ...old,
       data: [
+      {
+        label: 'Deaths',
+        data: 
+        [
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+        ]},
       {
         label: 'Positives',
         data:
@@ -445,6 +483,26 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       ...old,
       data: [
       {
+        label: 'Deaths',
+        data: 
+        [
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+        ] 
+      },
+      {
         label: 'Positives',
         data: 
         [
@@ -469,131 +527,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 
 } // end useChartConfig
 
-// deaths
-function useChartConfig2() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
-
-  get_data().then(function(data) {
-    document.getElementById('chart-header').textContent = deathstemp
-    deathstemp[0] = data.Deaths[data.Deaths.length - 1] // most recent
-    deathstemp[1] = data.Deaths[data.Deaths.length - 2]
-    deathstemp[2] = data.Deaths[data.Deaths.length - 3]
-    deathstemp[3] = data.Deaths[data.Deaths.length - 4]
-    deathstemp[4] = data.Deaths[data.Deaths.length - 5]
-    deathstemp[5] = data.Deaths[data.Deaths.length - 6]
-    deathstemp[6] = data.Deaths[data.Deaths.length - 7]
-    deathstemp[7] = data.Deaths[data.Deaths.length - 8]
-    deathstemp[8] = data.Deaths[data.Deaths.length - 9]
-    deathstemp[9] = data.Deaths[data.Deaths.length - 10]
-    deathstemp[10] = data.Deaths[data.Deaths.length - 11]
-    deathstemp[11] = data.Deaths[data.Deaths.length - 12]
-    deathstemp[12] = data.Deaths[data.Deaths.length - 13]
-    deathstemp[13] = data.Deaths[data.Deaths.length - 14]
-    deathstemp[14] = data.Deaths[data.Deaths.length - 15]
-
-    datestemp[0] = convertEpoch(data.Date[data.Date.length - 1] )
-    datestemp[1] = convertEpoch(data.Date[data.Date.length - 2])
-    datestemp[2] = convertEpoch(data.Date[data.Date.length - 3])
-    datestemp[3] = convertEpoch(data.Date[data.Date.length - 4])
-    datestemp[4] = convertEpoch(data.Date[data.Date.length - 5])
-    datestemp[5] = convertEpoch(data.Date[data.Date.length - 6])
-    datestemp[6] = convertEpoch(data.Date[data.Date.length - 7])
-    datestemp[7] = convertEpoch(data.Date[data.Date.length - 8])
-    datestemp[8] = convertEpoch(data.Date[data.Date.length - 9])
-    datestemp[9] = convertEpoch(data.Date[data.Date.length - 10])
-    datestemp[10] = convertEpoch(data.Date[data.Date.length - 11])
-    datestemp[11] = convertEpoch(data.Date[data.Date.length - 12])
-    datestemp[12] = convertEpoch(data.Date[data.Date.length - 13])
-    datestemp[13] = convertEpoch(data.Date[data.Date.length - 14])
-    datestemp[14] = convertEpoch(data.Date[data.Date.length - 15])
-    // document.getElementById('chart-header').textContent = deathstemp
-  })
-
-  // get_data().then(function(data) {})
-
-
-  const [state, setState] = React.useState(
-    // get_data().then(function(data) {}),
-    { 
-    data: [
-      {
-        label: 'Deaths',
-        data:
-        [
-          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
-          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
-          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
-          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
-          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
-          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
-          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
-          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
-          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
-          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
-          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
-          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
-          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
-          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
-        ]}
-      ]})
-
-  React.useEffect(() => {
-    setState(old => ({
-      ...old,
-      data: [
-      {
-        label: 'Deaths',
-        data: 
-        [
-          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
-          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
-          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
-          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
-          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
-          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
-          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
-          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
-          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
-          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
-          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
-          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
-          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
-          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
-        ]}
-      ]}))}, [])
-
-  const updateChartData = () =>
-    setState(old => ({
-      ...old,
-      data: [
-      {
-        label: 'Deaths',
-        data: 
-        [
-          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
-          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
-          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
-          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
-          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
-          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
-          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
-          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
-          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
-          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
-          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
-          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
-          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
-          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
-        ] 
-      }
-      ]}))
-    
-  return {...state, updateChartData}
-
-} // end useChartConfig
-
-
-
-
 // **********************************************************************
 // **********************************************************************
 // **********************************************************************
@@ -611,12 +544,12 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
-  const { data2, updateChartData2 } = useChartConfig2() // gets called first and calls getChartData
+  const { data2, updateChartData2 } = useChartConfig() // gets called first and calls getChartData
 
-  function temp() {
-    updateChartData()
-    updateChartData2()
-  }
+  // function temp() {
+  //   updateChartData()
+  //   updateChartData2()
+  // }
 
   // useChartConfig()
 
@@ -634,11 +567,6 @@ function App() {
     </div>)
 
 
-let lineChart2 = (
-  <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
-    <Chart id="chart" data={data2} series={series} axes={axes} tooltip></Chart>
-  </div>)
-
   return (
 
   <div className="App" >
@@ -653,7 +581,7 @@ let lineChart2 = (
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
               <Form.Control id="input" className="form-control" type="text" defaultValue="nv"></Form.Control>
-              <Button className="submit-button" variant="light" type="submit" onClick={temp()} > Submit</Button>
+              <Button className="submit-button" variant="light" type="submit" onClick={updateChartData} > Submit</Button>
             </div>
           </Form.Group>
         </Form>
@@ -677,7 +605,6 @@ let lineChart2 = (
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
-          {lineChart2}
         </div>
 
         <div>
