@@ -389,11 +389,12 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
     // document.getElementById('chart-header').textContent = deathstemp
   })
 
-  get_data().then(function(data) {
-  })
+  // get_data().then(function(data) {})
 
 
-  const [state, setState] = React.useState({ 
+  const [state, setState] = React.useState(
+    get_data().then(function(data) {})
+    { 
     data: [
       {
         label: 'Deaths',
