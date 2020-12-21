@@ -1004,9 +1004,13 @@ function App() {
 
   const { data, updateChartData } = useChartConfig() // gets called first and calls getChartData
 
-  useChartConfig()
+  // useChartConfig()
 
-  useChartConfig()
+  // useChartConfig()
+
+  useEffect(()=> {
+    updateChartData()
+  },[])
 
   // initialize()
 
