@@ -344,11 +344,9 @@ function update_chart () {
   ]
 }
 
-function update_chart2 () {
+function update_chart2 () { // initializes
   return [
-    [82,  82],
-    [81,  81],
-    [80,  80],
+    [0,  0]
   ]
 }
 
@@ -465,14 +463,14 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 
       }]})
 
-  React.useEffect(() => {
+  React.useEffect(() => { // initializes
     setState(old => ({
       ...old,
       data: [
       {
         label: 'Deaths',
-        data: 
-        update_chart2()
+        data: [[0,0]]
+        // update_chart2()
         // [
         //   [update_chart(),  update_chart()]
         // ]
@@ -497,8 +495,8 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       },
       {
         label: 'Positives',
-        data:
-        update_chart2()
+        data: [[0,0]]
+        // update_chart2()
         // [
         //   [update_chart(),  update_chart()]
         // ]
