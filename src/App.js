@@ -614,6 +614,7 @@ function App() {
 
   // React.useEffect(updateChartData)
 
+  localStorage.clear()
   return {...state, updateChartData}
 
 } // end useChartConfig
@@ -646,12 +647,7 @@ function App() {
 
         {/* STATE SEARCH */}
         <h3 hidden="true" id="loading">Loading . . .</h3>
-        <Form id="formStateInput" className="state-form" onSubmit={e => {
-          
-        
-        
-          
-          get_data(); e.preventDefault();}}>
+        <Form id="formStateInput" className="state-form" onSubmit={e => {get_data(); e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
               <Form.Label className="enter-state">Enter State </Form.Label>
