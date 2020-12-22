@@ -338,15 +338,11 @@ let initialize = 1;
 
 function update_chart () {
 
-  // get_data()
+  get_data()
 
 
-
-  return [
-    [70, 70],
-    [71, 71],
-    [72, 72]   
-  ]
+  
+  return 69
 }
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
