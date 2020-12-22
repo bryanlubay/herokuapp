@@ -529,6 +529,7 @@ function App() {
     return data
   }; // End get_data
   
+  wtf = wtf
 
   document.title = "Bryan Lubay's App :)"
 
@@ -553,7 +554,6 @@ function App() {
 
   <div className="App" >
       <header className="App-header">
-      {/* <body onLoad={updateChartData}></body> */}
       
 
         {/* STATE SEARCH */}
@@ -582,18 +582,10 @@ function App() {
           </Card.Body>
         </Card>
 
-        {/* <button onClick={updateChartData}>Hmmmm</button> */}
-
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
           {lineChart}
         </div>
-
-        {/* <div className="card-chart">
-          <p id="chart-header" className="x-axis">Days VS Infected ( Work in progress :D )</p>
-          {lineChart2}
-        </div> */}
-
 
         <div>
 
