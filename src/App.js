@@ -335,6 +335,10 @@ let deathstemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [15000,14000,13000,12
 let positivestemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1500,1400,1300,1200,1100,1000,900,800,700,600,500,400,300,200,100]
 let datestemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
 let initialize = 1;
+
+function update_chart () {
+  return 69
+}
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
     get_data().then(function(data) {
@@ -396,7 +400,8 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
         label: 'Deaths',
         data:
         [
-          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+          [update_chart(),  update_chart()],
+          [datestemp[0],  deathstemp[0] - deathstemp[1]],
           [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
           [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
           [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
