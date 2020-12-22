@@ -340,10 +340,6 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
   // 
   if (initialize == 1){
     initialize = 0;
-    document.getElementById('chart-header').textContent = "Yes " + initialize
-  }
-  else {
-    document.getElementById('chart-header').textContent = "No " + initialize
     get_data().then(function(data) {
       document.getElementById('chart-header').textContent = deathstemp
       deathstemp[0] = data.Deaths[data.Deaths.length - 1] // most recent
@@ -395,6 +391,11 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       datestemp[14] = convertEpoch(data.Date[data.Date.length - 15])
       // document.getElementById('chart-header').textContent = deathstemp
     })
+
+    document.getElementById('chart-header').textContent = "Yes " + initialize
+  }
+  else {
+    document.getElementById('chart-header').textContent = "No " + initialize
   
   }
 
