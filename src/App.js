@@ -521,7 +521,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
         label: 'Deaths',
         data: 
         [
-          // [update_chart(),  update_chart()],
+          [update_chart(),  update_chart()],
           [datestemp[0],  deathstemp[0] - deathstemp[1]],   
           [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
           [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
@@ -542,7 +542,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
         label: 'Positives',
         data: 
         [
-          // [update_chart(),  update_chart()],
+          [update_chart(),  update_chart()],
           [datestemp[0],  positivestemp[0] - positivestemp[1]],   
           [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
           [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
