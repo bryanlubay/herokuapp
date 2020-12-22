@@ -281,9 +281,9 @@ function hide_symptoms() {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
-const get_data = async (state = 'nv') => {
+const get_data = async () => {
 
-  state = convertState(document.getElementById('input').value) // move/change this
+  let state = convertState(document.getElementById('input').value) // move/change this
   document.getElementById("formStateInput").hidden = true
   document.getElementById("loading").hidden = false
 
