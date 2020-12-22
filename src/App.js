@@ -281,52 +281,6 @@ function hide_symptoms() {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
-const get_data = async (state = 'nv') => {
-
-  state = convertState(document.getElementById('input').value) // move/change this
-  document.getElementById("formStateInput").hidden = true
-  document.getElementById("loading").hidden = false
-
-  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-    method: 'GET',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    params: {
-      'state': state
-    }
-  })
-
-  let data = await res.json()
-  let asterik = "*"
-  convertState(state)
-  var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
-  document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
-
-  number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-  document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
-
-  number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
-  document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
-
-
-  var d = new Date(0);
-  d.setUTCSeconds(data.Date[data.Date.length - 1])
-
-  document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
-
-  d = new Date(0);
-  d.setUTCSeconds(data.Date[data.Date.length - 2])
-
-  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
-
-  document.getElementById("loading").hidden = true
-  document.getElementById("formStateInput").hidden = false
-
-  return data
-}; // End get_data
 
 /************************************************************************/
 /************************************************************************/
@@ -527,6 +481,54 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
 // **********************************************************************
 // **********************************************************************
 function App() {
+
+  const get_data = async (state = 'nv') => {
+
+    state = convertState(document.getElementById('input').value) // move/change this
+    document.getElementById("formStateInput").hidden = true
+    document.getElementById("loading").hidden = false
+  
+    let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      params: {
+        'state': state
+      }
+    })
+  
+    let data = await res.json()
+    let asterik = "*"
+    convertState(state)
+    var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
+    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
+  
+    number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
+    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
+  
+    number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
+    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
+  
+  
+    var d = new Date(0);
+    d.setUTCSeconds(data.Date[data.Date.length - 1])
+  
+    document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
+  
+    d = new Date(0);
+    d.setUTCSeconds(data.Date[data.Date.length - 2])
+  
+    document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
+  
+    document.getElementById("loading").hidden = true
+    document.getElementById("formStateInput").hidden = false
+  
+    return data
+  }; // End get_data
+  
 
   document.title = "Bryan Lubay's App :)"
 
