@@ -337,6 +337,9 @@ let datestemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,
 let initialize = 1;
 
 function update_chart () {
+
+  get_data()
+
   return 69
 }
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
