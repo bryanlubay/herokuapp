@@ -362,8 +362,7 @@ function App() {
     data: [
       {
         label: 'Deaths',
-        data:
-        update_chart()
+        data: [[0,0]]
         // [
         //   [update_chart(),  update_chart()]
         // ]
@@ -389,8 +388,7 @@ function App() {
       },
       {
         label: 'Positives',
-        data:
-        update_chart()
+        data: [[0,0]]
         // [
         //   [update_chart(),  update_chart()]
         // ]
@@ -414,7 +412,6 @@ function App() {
         // ]
 
       }]})
-
 
   function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
