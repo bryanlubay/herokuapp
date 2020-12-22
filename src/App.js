@@ -413,7 +413,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       {
         label: 'Deaths',
         data:
-        update_chart2()
+        update_chart()
         // [
         //   [update_chart(),  update_chart()]
         // ]
@@ -440,7 +440,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       {
         label: 'Positives',
         data:
-        update_chart2()
+        update_chart()
         // [
         //   [update_chart(),  update_chart()]
         // ]
@@ -472,7 +472,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       {
         label: 'Deaths',
         data: 
-        update_chart()
+        update_chart2()
         // [
         //   [update_chart(),  update_chart()]
         // ]
@@ -498,7 +498,7 @@ function useChartConfig() { // happens before get_data I think, fix order to fix
       {
         label: 'Positives',
         data:
-        update_chart()
+        update_chart2()
         // [
         //   [update_chart(),  update_chart()]
         // ]
