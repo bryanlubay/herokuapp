@@ -566,92 +566,10 @@ function App() {
       }]}))}, [])
 
     
-  const updateChartData = () =>
-    setState(old => ({
-      ...old,
-      data: [
-      {
-        label: 'Deaths',
-        data: 
-        [
-          // [update_chart(),  update_chart()],
-          [localStorage.getItem("dates1"),  localStorage.getItem("deaths1") - localStorage.getItem("deaths2")],   
-          [localStorage.getItem("dates2"),  localStorage.getItem("deaths2") - localStorage.getItem("deaths3")],   
-          [localStorage.getItem("dates3"),  localStorage.getItem("deaths3") - localStorage.getItem("deaths4")],   
-          [localStorage.getItem("dates4"),  localStorage.getItem("deaths4") - localStorage.getItem("deaths5")],   
-          [localStorage.getItem("dates5"),  localStorage.getItem("deaths5") - localStorage.getItem("deaths6")],   
-          [localStorage.getItem("dates6"),  localStorage.getItem("deaths6") - localStorage.getItem("deaths7")],   
-          [localStorage.getItem("dates7"),  localStorage.getItem("deaths7") - localStorage.getItem("deaths8")],   
-          [localStorage.getItem("dates8"),  localStorage.getItem("deaths8") - localStorage.getItem("deaths9")],   
-          [localStorage.getItem("dates9"),  localStorage.getItem("deaths9") - localStorage.getItem("deaths10")],   
-          [localStorage.getItem("dates10"),  localStorage.getItem("deaths10") - localStorage.getItem("deaths11")],   
-          [localStorage.getItem("dates11"),  localStorage.getItem("deaths11") - localStorage.getItem("deaths12")],   
-          [localStorage.getItem("dates12"),  localStorage.getItem("deaths12") - localStorage.getItem("deaths13")],   
-          [localStorage.getItem("dates13"),  localStorage.getItem("deaths13") - localStorage.getItem("deaths14")],   
-          [localStorage.getItem("dates14"),  localStorage.getItem("deaths14") - localStorage.getItem("deaths15")]   
-        ] 
+      React.useEffect(updateChartData)
 
-        // [
-        //   // [update_chart(),  update_chart()],
-        //   [datestemp[0],  deathstemp[0] - deathstemp[1]],   
-        //   [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
-        //   [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
-        //   [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
-        //   [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
-        //   [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
-        //   [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
-        //   [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
-        //   [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
-        //   [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
-        //   [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
-        //   [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
-        //   [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
-        //   [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
-        // ] 
-      },
-      {
-        label: 'Positives',
-        data: 
-        [
-          // [update_chart(),  update_chart()],
-          [localStorage.getItem("dates1"),  localStorage.getItem("positives1") - localStorage.getItem("positives2")],   
-          [localStorage.getItem("dates2"),  localStorage.getItem("positives2") - localStorage.getItem("positives3")],   
-          [localStorage.getItem("dates3"),  localStorage.getItem("positives3") - localStorage.getItem("positives4")],   
-          [localStorage.getItem("dates4"),  localStorage.getItem("positives4") - localStorage.getItem("positives5")],   
-          [localStorage.getItem("dates5"),  localStorage.getItem("positives5") - localStorage.getItem("positives6")],   
-          [localStorage.getItem("dates6"),  localStorage.getItem("positives6") - localStorage.getItem("positives7")],   
-          [localStorage.getItem("dates7"),  localStorage.getItem("positives7") - localStorage.getItem("positives8")],   
-          [localStorage.getItem("dates8"),  localStorage.getItem("positives8") - localStorage.getItem("positives9")],   
-          [localStorage.getItem("dates9"),  localStorage.getItem("positives9") - localStorage.getItem("positives10")],   
-          [localStorage.getItem("dates10"),  localStorage.getItem("positives10") - localStorage.getItem("positives11")],   
-          [localStorage.getItem("dates11"),  localStorage.getItem("positives11") - localStorage.getItem("positives12")],   
-          [localStorage.getItem("dates12"),  localStorage.getItem("positives12") - localStorage.getItem("positives13")],   
-          [localStorage.getItem("dates13"),  localStorage.getItem("positives13") - localStorage.getItem("positives14")],   
-          [localStorage.getItem("dates14"),  localStorage.getItem("positives14") - localStorage.getItem("positives15")]   
-        ] 
-
-        // [
-        //   // [update_chart(),  update_chart()],
-        //   [datestemp[0],  positivestemp[0] - positivestemp[1]],   
-        //   [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
-        //   [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
-        //   [datestemp[3],  positivestemp[3] - positivestemp[4]  ],   
-        //   [datestemp[4],  positivestemp[4] - positivestemp[5]  ],   
-        //   [datestemp[5],  positivestemp[5] - positivestemp[6]  ],   
-        //   [datestemp[6],  positivestemp[6] - positivestemp[7]  ],   
-        //   [datestemp[7],  positivestemp[7] - positivestemp[8]  ],   
-        //   [datestemp[8],  positivestemp[8] - positivestemp[9]  ],   
-        //   [datestemp[9],  positivestemp[9] - positivestemp[10]  ],   
-        //   [datestemp[10],  positivestemp[10] - positivestemp[11]  ],   
-        //   [datestemp[11],  positivestemp[11] - positivestemp[12]  ],   
-        //   [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
-        //   [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
-        // ] 
-
-      }]}))
-
-  updateChartData()
   
+
   return {...state, updateChartData}
 
 } // end useChartConfig
