@@ -283,6 +283,7 @@ function hide_symptoms() {
 /************************************************************************/
 const get_data = async () => {
 
+  localStorage.clear()
   let state = convertState(document.getElementById('input').value) // move/change this
   document.getElementById("formStateInput").hidden = true
   document.getElementById("loading").hidden = false
@@ -614,7 +615,6 @@ function App() {
 
   // React.useEffect(updateChartData)
 
-  localStorage.clear()
   return {...state, updateChartData}
 
 } // end useChartConfig
