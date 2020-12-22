@@ -300,6 +300,54 @@ const get_data = async (state = 'nv') => {
   })
 
   let data = await res.json()
+  localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) // newest update
+  localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2])) 
+  localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3])) 
+  localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4])) 
+  localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5])) 
+  localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6])) 
+  localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7])) 
+  localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8])) 
+  localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9])) 
+  localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10])) 
+  localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11])) 
+  localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12])) 
+  localStorage.setItem("dates13", convertEpoch(data.Date[data.Date.length - 13])) 
+  localStorage.setItem("dates14", convertEpoch(data.Date[data.Date.length - 14])) 
+  localStorage.setItem("dates15", convertEpoch(data.Date[data.Date.length - 15])) 
+
+  localStorage.setItem("positives1", parseInt(data.Positive[data.Positive.length - 1]))
+  localStorage.setItem("positives2", parseInt(data.Positive[data.Positive.length - 2]))
+  localStorage.setItem("positives3", parseInt(data.Positive[data.Positive.length - 3]))
+  localStorage.setItem("positives4", parseInt(data.Positive[data.Positive.length - 4]))
+  localStorage.setItem("positives5", parseInt(data.Positive[data.Positive.length - 5]))
+  localStorage.setItem("positives6", parseInt(data.Positive[data.Positive.length - 6]))
+  localStorage.setItem("positives7", parseInt(data.Positive[data.Positive.length - 7]))
+  localStorage.setItem("positives8", parseInt(data.Positive[data.Positive.length - 8]))
+  localStorage.setItem("positives9", parseInt(data.Positive[data.Positive.length - 9]))
+  localStorage.setItem("positives10", parseInt(data.Positive[data.Positive.length - 10]))
+  localStorage.setItem("positives11", parseInt(data.Positive[data.Positive.length - 11]))
+  localStorage.setItem("positives12", parseInt(data.Positive[data.Positive.length - 12]))
+  localStorage.setItem("positives13", parseInt(data.Positive[data.Positive.length - 13]))
+  localStorage.setItem("positives14", parseInt(data.Positive[data.Positive.length - 14]))
+  localStorage.setItem("positives15", parseInt(data.Positive[data.Positive.length - 15]))
+
+  localStorage.setItem("deaths1", parseInt(data.Deaths[data.Deaths.length - 1]))
+  localStorage.setItem("deaths2", parseInt(data.Deaths[data.Deaths.length - 2]))
+  localStorage.setItem("deaths3", parseInt(data.Deaths[data.Deaths.length - 3]))
+  localStorage.setItem("deaths4", parseInt(data.Deaths[data.Deaths.length - 4]))
+  localStorage.setItem("deaths5", parseInt(data.Deaths[data.Deaths.length - 5]))
+  localStorage.setItem("deaths6", parseInt(data.Deaths[data.Deaths.length - 6]))
+  localStorage.setItem("deaths7", parseInt(data.Deaths[data.Deaths.length - 7]))
+  localStorage.setItem("deaths8", parseInt(data.Deaths[data.Deaths.length - 8]))
+  localStorage.setItem("deaths9", parseInt(data.Deaths[data.Deaths.length - 9]))
+  localStorage.setItem("deaths10", parseInt(data.Deaths[data.Deaths.length - 10]))
+  localStorage.setItem("deaths11", parseInt(data.Deaths[data.Deaths.length - 11]))
+  localStorage.setItem("deaths12", parseInt(data.Deaths[data.Deaths.length - 12]))
+  localStorage.setItem("deaths13", parseInt(data.Deaths[data.Deaths.length - 13]))
+  localStorage.setItem("deaths14", parseInt(data.Deaths[data.Deaths.length - 14]))
+  localStorage.setItem("deaths15", parseInt(data.Deaths[data.Deaths.length - 15]))
+
   let asterik = "*"
   convertState(state)
   var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
@@ -343,14 +391,6 @@ function update_chart () {
     [72,  72],
   ]
 }
-
-function update_chart2 () { // initializes
-  return [
-    [0,  0]
-  ]
-}
-
-
 
 // **********************************************************************
 // **********************************************************************
@@ -534,42 +574,79 @@ function App() {
         data: 
         [
           // [update_chart(),  update_chart()],
-          [datestemp[0],  deathstemp[0] - deathstemp[1]],   
-          [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
-          [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
-          [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
-          [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
-          [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
-          [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
-          [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
-          [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
-          [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
-          [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
-          [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
-          [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
-          [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+          [localStorage.getItem("dates1"),  localStorage.getItem("deaths1") - localStorage.getItem("deaths2")],   
+          [localStorage.getItem("dates2"),  localStorage.getItem("deaths2") - localStorage.getItem("deaths3")],   
+          [localStorage.getItem("dates3"),  localStorage.getItem("deaths3") - localStorage.getItem("deaths4")],   
+          [localStorage.getItem("dates4"),  localStorage.getItem("deaths4") - localStorage.getItem("deaths5")],   
+          [localStorage.getItem("dates5"),  localStorage.getItem("deaths5") - localStorage.getItem("deaths6")],   
+          [localStorage.getItem("dates6"),  localStorage.getItem("deaths6") - localStorage.getItem("deaths7")],   
+          [localStorage.getItem("dates7"),  localStorage.getItem("deaths7") - localStorage.getItem("deaths8")],   
+          [localStorage.getItem("dates8"),  localStorage.getItem("deaths8") - localStorage.getItem("deaths9")],   
+          [localStorage.getItem("dates9"),  localStorage.getItem("deaths9") - localStorage.getItem("deaths10")],   
+          [localStorage.getItem("dates10"),  localStorage.getItem("deaths10") - localStorage.getItem("deaths11")],   
+          [localStorage.getItem("dates11"),  localStorage.getItem("deaths11") - localStorage.getItem("deaths12")],   
+          [localStorage.getItem("dates12"),  localStorage.getItem("deaths12") - localStorage.getItem("deaths13")],   
+          [localStorage.getItem("dates13"),  localStorage.getItem("deaths13") - localStorage.getItem("deaths14")],   
+          [localStorage.getItem("dates14"),  localStorage.getItem("deaths14") - localStorage.getItem("deaths15")]   
         ] 
+
+        // [
+        //   // [update_chart(),  update_chart()],
+        //   [datestemp[0],  deathstemp[0] - deathstemp[1]],   
+        //   [datestemp[1],  deathstemp[1] - deathstemp[2]  ],   
+        //   [datestemp[2],  deathstemp[2] - deathstemp[3]  ],   
+        //   [datestemp[3],  deathstemp[3] - deathstemp[4]  ],   
+        //   [datestemp[4],  deathstemp[4] - deathstemp[5]  ],   
+        //   [datestemp[5],  deathstemp[5] - deathstemp[6]  ],   
+        //   [datestemp[6],  deathstemp[6] - deathstemp[7]  ],   
+        //   [datestemp[7],  deathstemp[7] - deathstemp[8]  ],   
+        //   [datestemp[8],  deathstemp[8] - deathstemp[9]  ],   
+        //   [datestemp[9],  deathstemp[9] - deathstemp[10]  ],   
+        //   [datestemp[10],  deathstemp[10] - deathstemp[11]  ],   
+        //   [datestemp[11],  deathstemp[11] - deathstemp[12]  ],   
+        //   [datestemp[12],  deathstemp[12] - deathstemp[13]  ],   
+        //   [datestemp[13],  deathstemp[13] - deathstemp[14]  ]   
+        // ] 
       },
       {
         label: 'Positives',
         data: 
         [
           // [update_chart(),  update_chart()],
-          [datestemp[0],  positivestemp[0] - positivestemp[1]],   
-          [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
-          [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
-          [datestemp[3],  positivestemp[3] - positivestemp[4]  ],   
-          [datestemp[4],  positivestemp[4] - positivestemp[5]  ],   
-          [datestemp[5],  positivestemp[5] - positivestemp[6]  ],   
-          [datestemp[6],  positivestemp[6] - positivestemp[7]  ],   
-          [datestemp[7],  positivestemp[7] - positivestemp[8]  ],   
-          [datestemp[8],  positivestemp[8] - positivestemp[9]  ],   
-          [datestemp[9],  positivestemp[9] - positivestemp[10]  ],   
-          [datestemp[10],  positivestemp[10] - positivestemp[11]  ],   
-          [datestemp[11],  positivestemp[11] - positivestemp[12]  ],   
-          [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
-          [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
+          [localStorage.getItem("dates1"),  localStorage.getItem("positives1") - localStorage.getItem("positives2")],   
+          [localStorage.getItem("dates2"),  localStorage.getItem("positives2") - localStorage.getItem("positives3")],   
+          [localStorage.getItem("dates3"),  localStorage.getItem("positives3") - localStorage.getItem("positives4")],   
+          [localStorage.getItem("dates4"),  localStorage.getItem("positives4") - localStorage.getItem("positives5")],   
+          [localStorage.getItem("dates5"),  localStorage.getItem("positives5") - localStorage.getItem("positives6")],   
+          [localStorage.getItem("dates6"),  localStorage.getItem("positives6") - localStorage.getItem("positives7")],   
+          [localStorage.getItem("dates7"),  localStorage.getItem("positives7") - localStorage.getItem("positives8")],   
+          [localStorage.getItem("dates8"),  localStorage.getItem("positives8") - localStorage.getItem("positives9")],   
+          [localStorage.getItem("dates9"),  localStorage.getItem("positives9") - localStorage.getItem("positives10")],   
+          [localStorage.getItem("dates10"),  localStorage.getItem("positives10") - localStorage.getItem("positives11")],   
+          [localStorage.getItem("dates11"),  localStorage.getItem("positives11") - localStorage.getItem("positives12")],   
+          [localStorage.getItem("dates12"),  localStorage.getItem("positives12") - localStorage.getItem("positives13")],   
+          [localStorage.getItem("dates13"),  localStorage.getItem("positives13") - localStorage.getItem("positives14")],   
+          [localStorage.getItem("dates14"),  localStorage.getItem("positives14") - localStorage.getItem("positives15")]   
         ] 
+
+        // [
+        //   // [update_chart(),  update_chart()],
+        //   [datestemp[0],  positivestemp[0] - positivestemp[1]],   
+        //   [datestemp[1],  positivestemp[1] - positivestemp[2]  ],   
+        //   [datestemp[2],  positivestemp[2] - positivestemp[3]  ],   
+        //   [datestemp[3],  positivestemp[3] - positivestemp[4]  ],   
+        //   [datestemp[4],  positivestemp[4] - positivestemp[5]  ],   
+        //   [datestemp[5],  positivestemp[5] - positivestemp[6]  ],   
+        //   [datestemp[6],  positivestemp[6] - positivestemp[7]  ],   
+        //   [datestemp[7],  positivestemp[7] - positivestemp[8]  ],   
+        //   [datestemp[8],  positivestemp[8] - positivestemp[9]  ],   
+        //   [datestemp[9],  positivestemp[9] - positivestemp[10]  ],   
+        //   [datestemp[10],  positivestemp[10] - positivestemp[11]  ],   
+        //   [datestemp[11],  positivestemp[11] - positivestemp[12]  ],   
+        //   [datestemp[12],  positivestemp[12] - positivestemp[13]  ],   
+        //   [datestemp[13],  positivestemp[13] - positivestemp[14]  ]   
+        // ] 
+
       }]}))
     
   return {...state, updateChartData}
@@ -603,7 +680,7 @@ function App() {
       
 
         {/* STATE SEARCH */}
-        <h3 hidden id="loading">Loading . . .</h3>
+        <h3 hidden="true" id="loading">Loading . . .</h3>
         <Form id="formStateInput" className="state-form" onSubmit={e => {get_data(); e.preventDefault();}}>
           <Form.Group controlId="formInput">
             <div class="form-inline">
