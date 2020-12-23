@@ -467,3 +467,11 @@
 .box {
   background-color: white;
 }
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
