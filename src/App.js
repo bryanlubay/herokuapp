@@ -556,7 +556,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis">Days VS Infected <span style="background-color:blue;">Positives</span> <span style="background-color:red;">Deaths</span> ( Work in progress :D )</p>
+          <p id="chart-header" className="x-axis">Days VS Infected Positives Deaths ( Work in progress :D )</p>
           {lineChart}
         </div>
 
