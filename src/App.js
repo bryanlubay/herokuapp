@@ -281,101 +281,6 @@ function hide_symptoms() {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
-const get_data = async () => {
-
-  localStorage.clear()
-  let state = convertState(document.getElementById('input').value) // move/change this
-  document.getElementById("formStateInput").hidden = true
-  document.getElementById("loading").hidden = false
-
-  let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
-    method: 'GET',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    params: {
-      'state': state
-    }
-  })
-
-  let data = await res.json()
-  localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) // newest update
-  localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2])) 
-  localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3])) 
-  localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4])) 
-  localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5])) 
-  localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6])) 
-  localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7])) 
-  localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8])) 
-  localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9])) 
-  localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10])) 
-  localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11])) 
-  localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12])) 
-  localStorage.setItem("dates13", convertEpoch(data.Date[data.Date.length - 13])) 
-  localStorage.setItem("dates14", convertEpoch(data.Date[data.Date.length - 14])) 
-  localStorage.setItem("dates15", convertEpoch(data.Date[data.Date.length - 15])) 
-
-  localStorage.setItem("positives1", parseInt(data.Positive[data.Positive.length - 1]))
-  localStorage.setItem("positives2", parseInt(data.Positive[data.Positive.length - 2]))
-  localStorage.setItem("positives3", parseInt(data.Positive[data.Positive.length - 3]))
-  localStorage.setItem("positives4", parseInt(data.Positive[data.Positive.length - 4]))
-  localStorage.setItem("positives5", parseInt(data.Positive[data.Positive.length - 5]))
-  localStorage.setItem("positives6", parseInt(data.Positive[data.Positive.length - 6]))
-  localStorage.setItem("positives7", parseInt(data.Positive[data.Positive.length - 7]))
-  localStorage.setItem("positives8", parseInt(data.Positive[data.Positive.length - 8]))
-  localStorage.setItem("positives9", parseInt(data.Positive[data.Positive.length - 9]))
-  localStorage.setItem("positives10", parseInt(data.Positive[data.Positive.length - 10]))
-  localStorage.setItem("positives11", parseInt(data.Positive[data.Positive.length - 11]))
-  localStorage.setItem("positives12", parseInt(data.Positive[data.Positive.length - 12]))
-  localStorage.setItem("positives13", parseInt(data.Positive[data.Positive.length - 13]))
-  localStorage.setItem("positives14", parseInt(data.Positive[data.Positive.length - 14]))
-  localStorage.setItem("positives15", parseInt(data.Positive[data.Positive.length - 15]))
-
-  localStorage.setItem("deaths1", parseInt(data.Deaths[data.Deaths.length - 1]))
-  localStorage.setItem("deaths2", parseInt(data.Deaths[data.Deaths.length - 2]))
-  localStorage.setItem("deaths3", parseInt(data.Deaths[data.Deaths.length - 3]))
-  localStorage.setItem("deaths4", parseInt(data.Deaths[data.Deaths.length - 4]))
-  localStorage.setItem("deaths5", parseInt(data.Deaths[data.Deaths.length - 5]))
-  localStorage.setItem("deaths6", parseInt(data.Deaths[data.Deaths.length - 6]))
-  localStorage.setItem("deaths7", parseInt(data.Deaths[data.Deaths.length - 7]))
-  localStorage.setItem("deaths8", parseInt(data.Deaths[data.Deaths.length - 8]))
-  localStorage.setItem("deaths9", parseInt(data.Deaths[data.Deaths.length - 9]))
-  localStorage.setItem("deaths10", parseInt(data.Deaths[data.Deaths.length - 10]))
-  localStorage.setItem("deaths11", parseInt(data.Deaths[data.Deaths.length - 11]))
-  localStorage.setItem("deaths12", parseInt(data.Deaths[data.Deaths.length - 12]))
-  localStorage.setItem("deaths13", parseInt(data.Deaths[data.Deaths.length - 13]))
-  localStorage.setItem("deaths14", parseInt(data.Deaths[data.Deaths.length - 14]))
-  localStorage.setItem("deaths15", parseInt(data.Deaths[data.Deaths.length - 15]))
-
-  let asterik = "*"
-  convertState(state)
-  var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
-  document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
-
-  number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-  document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
-
-  number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
-  document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
-
-
-  var d = new Date(0);
-  d.setUTCSeconds(data.Date[data.Date.length - 1])
-
-  document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
-
-  d = new Date(0);
-  d.setUTCSeconds(data.Date[data.Date.length - 2])
-
-  document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
-
-  document.getElementById("loading").hidden = true
-  document.getElementById("formStateInput").hidden = false
-
-  return data
-}; // End get_data
 
 /************************************************************************/
 /************************************************************************/
@@ -435,6 +340,105 @@ function update_chart () {
 // **********************************************************************
 // **********************************************************************
 function App() {
+
+  const get_data = async () => {
+
+    localStorage.clear()
+    let state = convertState(document.getElementById('input').value) // move/change this
+    document.getElementById("formStateInput").hidden = true
+    document.getElementById("loading").hidden = false
+  
+    let res = await fetch('https://bryanlubayapi.herokuapp.com/get_data/' + state + '/', {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      params: {
+        'state': state
+      }
+    })
+  
+    let data = await res.json()
+    localStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) // newest update
+    localStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2])) 
+    localStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3])) 
+    localStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4])) 
+    localStorage.setItem("dates5", convertEpoch(data.Date[data.Date.length - 5])) 
+    localStorage.setItem("dates6", convertEpoch(data.Date[data.Date.length - 6])) 
+    localStorage.setItem("dates7", convertEpoch(data.Date[data.Date.length - 7])) 
+    localStorage.setItem("dates8", convertEpoch(data.Date[data.Date.length - 8])) 
+    localStorage.setItem("dates9", convertEpoch(data.Date[data.Date.length - 9])) 
+    localStorage.setItem("dates10", convertEpoch(data.Date[data.Date.length - 10])) 
+    localStorage.setItem("dates11", convertEpoch(data.Date[data.Date.length - 11])) 
+    localStorage.setItem("dates12", convertEpoch(data.Date[data.Date.length - 12])) 
+    localStorage.setItem("dates13", convertEpoch(data.Date[data.Date.length - 13])) 
+    localStorage.setItem("dates14", convertEpoch(data.Date[data.Date.length - 14])) 
+    localStorage.setItem("dates15", convertEpoch(data.Date[data.Date.length - 15])) 
+  
+    localStorage.setItem("positives1", parseInt(data.Positive[data.Positive.length - 1]))
+    localStorage.setItem("positives2", parseInt(data.Positive[data.Positive.length - 2]))
+    localStorage.setItem("positives3", parseInt(data.Positive[data.Positive.length - 3]))
+    localStorage.setItem("positives4", parseInt(data.Positive[data.Positive.length - 4]))
+    localStorage.setItem("positives5", parseInt(data.Positive[data.Positive.length - 5]))
+    localStorage.setItem("positives6", parseInt(data.Positive[data.Positive.length - 6]))
+    localStorage.setItem("positives7", parseInt(data.Positive[data.Positive.length - 7]))
+    localStorage.setItem("positives8", parseInt(data.Positive[data.Positive.length - 8]))
+    localStorage.setItem("positives9", parseInt(data.Positive[data.Positive.length - 9]))
+    localStorage.setItem("positives10", parseInt(data.Positive[data.Positive.length - 10]))
+    localStorage.setItem("positives11", parseInt(data.Positive[data.Positive.length - 11]))
+    localStorage.setItem("positives12", parseInt(data.Positive[data.Positive.length - 12]))
+    localStorage.setItem("positives13", parseInt(data.Positive[data.Positive.length - 13]))
+    localStorage.setItem("positives14", parseInt(data.Positive[data.Positive.length - 14]))
+    localStorage.setItem("positives15", parseInt(data.Positive[data.Positive.length - 15]))
+  
+    localStorage.setItem("deaths1", parseInt(data.Deaths[data.Deaths.length - 1]))
+    localStorage.setItem("deaths2", parseInt(data.Deaths[data.Deaths.length - 2]))
+    localStorage.setItem("deaths3", parseInt(data.Deaths[data.Deaths.length - 3]))
+    localStorage.setItem("deaths4", parseInt(data.Deaths[data.Deaths.length - 4]))
+    localStorage.setItem("deaths5", parseInt(data.Deaths[data.Deaths.length - 5]))
+    localStorage.setItem("deaths6", parseInt(data.Deaths[data.Deaths.length - 6]))
+    localStorage.setItem("deaths7", parseInt(data.Deaths[data.Deaths.length - 7]))
+    localStorage.setItem("deaths8", parseInt(data.Deaths[data.Deaths.length - 8]))
+    localStorage.setItem("deaths9", parseInt(data.Deaths[data.Deaths.length - 9]))
+    localStorage.setItem("deaths10", parseInt(data.Deaths[data.Deaths.length - 10]))
+    localStorage.setItem("deaths11", parseInt(data.Deaths[data.Deaths.length - 11]))
+    localStorage.setItem("deaths12", parseInt(data.Deaths[data.Deaths.length - 12]))
+    localStorage.setItem("deaths13", parseInt(data.Deaths[data.Deaths.length - 13]))
+    localStorage.setItem("deaths14", parseInt(data.Deaths[data.Deaths.length - 14]))
+    localStorage.setItem("deaths15", parseInt(data.Deaths[data.Deaths.length - 15]))
+  
+    let asterik = "*"
+    convertState(state)
+    var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
+    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number + ")" + asterik
+  
+    number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
+    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number + ")" + asterik
+  
+    number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
+    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number + ")" + asterik
+  
+  
+    var d = new Date(0);
+    d.setUTCSeconds(data.Date[data.Date.length - 1])
+  
+    document.getElementById('last_updated').textContent = "Last Updated: " + d.toUTCString()
+  
+    d = new Date(0);
+    d.setUTCSeconds(data.Date[data.Date.length - 2])
+  
+    document.getElementById('update_before_last').textContent = asterik + "Update Before Last: " + d.toUTCString()
+  
+    document.getElementById("loading").hidden = true
+    document.getElementById("formStateInput").hidden = false
+  
+    updateChartData()
+
+    return data
+  }; // End get_data
+  
 
   const [state, setState] = React.useState(
     { 
