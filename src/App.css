@@ -469,9 +469,11 @@
 }
 
 .red-text {
+  display: inline;
   color: red;
 }
 
 .blue-text {
+  display: inline;
   color: blue;
 }
