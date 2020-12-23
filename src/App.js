@@ -407,7 +407,7 @@ function App() {
     document.getElementById('tested').textContent = parseInt(data.Tested[data.Tested.length - 1]).toLocaleString() + " Tested (+" + number.toLocaleString() + ")" + asterik
   
     number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-    document.getElementById('cases').textContent = parseInt(data.Positive[data.Positive.length - 1]).toLocaleString() + " New Positive Cases (+" + number.toLocaleString() + ")" + asterik
+    document.getElementById('cases').textContent = parseInt(data.Positive[data.Positive.length - 1]).toLocaleString() + " Positive Cases (+" + number.toLocaleString() + ")" + asterik
   
     number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
     document.getElementById('deaths').textContent = parseInt(data.Deaths[data.Deaths.length - 1]).toLocaleString() + " Deaths (+" + number.toLocaleString() + ")" + asterik
