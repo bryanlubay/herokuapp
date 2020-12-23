@@ -434,11 +434,11 @@ function App() {
     data: [
       {
         label: 'Deaths',
-        data: [[0,0]]
+        data: [[10000,10000]]
       },
       {
         label: 'New Positive Cases',
-        data: [[0,0]]
+        data: [[10000,10000]]
       }]})
 
   function useChartConfig() { 
@@ -449,11 +449,11 @@ function App() {
       data: [
       {
         label: 'Deaths',
-        data: [[0,0]]
+        data: [[10000,10000]]
       },
       {
         label: 'New Positive Cases',
-        data: [[0,0]]
+        data: [[10000,10000]]
       }]}))}, [])
 
     
