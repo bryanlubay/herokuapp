@@ -521,7 +521,7 @@ function App() {
   const { data, updateChartData } = useChartConfig()
 
   let lineChart = (
-    <div style={{ margin: 'auto', width: '100rem', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
+    <div style={{ margin: 'auto', width: '50%', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} series={series} axes={axes} tooltip></Chart>
     </div>)
 
@@ -556,7 +556,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis">Days VS Infected Positives Deaths ( Work in progress :D )</p>
+          <p id="chart-header" className="x-axis">Days VS Infected <span style="color: red">Positives</span>  <span style="color: blue">Deaths</span> ( Work in progress :D )</p>
           {lineChart}
         </div>
 
