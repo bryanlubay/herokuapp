@@ -305,7 +305,7 @@ function update_chart () {
       ] 
     },
     {
-      label: 'Positives',
+      label: 'New Positive Cases',
       data: 
       [
         [sessionStorage.getItem("dates1"),  sessionStorage.getItem("positives1") - sessionStorage.getItem("positives2")],   
@@ -459,7 +459,7 @@ function App() {
 
       },
       {
-        label: 'Positives',
+        label: 'New Positive Cases',
         data: [[0,0]]
         // [
         //   [update_chart(),  update_chart()]
@@ -496,7 +496,7 @@ function App() {
         data: [[0,0]]
       },
       {
-        label: 'Positives',
+        label: 'New Positive Cases',
         data: [[0,0]]
       }]}))}, [])
 
@@ -556,7 +556,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis">Days VS Infected <span className="red-text">Positives</span> <span className="blue-text">Deaths</span>( Work in progress :D )</p>
+          <p id="chart-header" className="x-axis">Days VS Infected           <div className="red-text">New Positive Cases</div> <div className="blue-text">Deaths</div> (Work in progress :D )</p>
           {lineChart}
         </div>
 
