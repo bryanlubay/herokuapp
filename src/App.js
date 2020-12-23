@@ -403,13 +403,13 @@ function App() {
     let asterik = "*"
     convertState(state)
     var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
-    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number.toLocaleString('en') + ")" + asterik
+    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1].toLocaleString() + " Tested (+" + number.toLocaleString() + ")" + asterik
   
     number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number.toLocaleString('en') + ")" + asterik
+    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1].toLocaleString() + " Cases (+" + number.toLocaleString() + ")" + asterik
   
     number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
-    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number.toLocaleString('en') + ")" + asterik
+    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1].toLocaleString() + " Deaths (+" + number.toLocaleString() + ")" + asterik
   
     var d = new Date(0);
     d.setUTCSeconds(data.Date[data.Date.length - 1])
@@ -514,7 +514,7 @@ function App() {
         <div className="card-chart">
           <p id="chart-header" className="x-axis">Days VS Infected</p>
           {lineChart}
-          <p><div className="red-text">New Positive Cases</div> | <div className="blue-text">Deaths</div></p>
+          <p><div className="red-text">New Positive Cases</div> <div className="blue-text">Deaths</div></p>
         </div>
 
         <div>
