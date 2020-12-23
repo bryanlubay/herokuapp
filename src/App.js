@@ -403,13 +403,13 @@ function App() {
     let asterik = "*"
     convertState(state)
     var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
-    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ")" + asterik
+    document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1] + " Tested (+" + number.toLocaleString('en') + ")" + asterik
   
     number = parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1]) - parseInt(document.getElementById('cases').textContent = data.Positive[data.Positive.length - 2])
-    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ")" + asterik
+    document.getElementById('cases').textContent = data.Positive[data.Positive.length - 1] + " Cases (+" + number.toLocaleString('en') + ")" + asterik
   
     number = parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1]) - parseInt(document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 2])
-    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ")" + asterik
+    document.getElementById('deaths').textContent = data.Deaths[data.Deaths.length - 1] + " Deaths (+" + number.toLocaleString('en') + ")" + asterik
   
     var d = new Date(0);
     d.setUTCSeconds(data.Date[data.Date.length - 1])
