@@ -497,6 +497,7 @@ function App() {
       }]})
 
   function useChartConfig(data) { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
+      document.getElementById('chart-header').textContent = data
 
     // get_data().then(function(data) { // this should be called by form submit
     //   document.getElementById('chart-header').textContent = deathstemp
