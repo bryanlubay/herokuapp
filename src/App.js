@@ -513,7 +513,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Days VS <div className="red-text">New Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
+          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (December 2020) VS <div className="red-text">New Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
           {lineChart}
         </div>
 
