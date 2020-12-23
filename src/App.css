@@ -469,17 +469,15 @@
 }
 
 .red-text {
-  float: right;
   display: inline;
   color: red;
 }
 
 .blue-text {
-  float: right;
   display: inline;
   color: blue;
 }
 
 .days-vs-infected {
-  
+
 }
