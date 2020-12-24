@@ -338,7 +338,7 @@ let datestemp = [] // [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // [1,2,3,4,5,6,7,8,9,10,
 function useChartConfig() { // happens before get_data I think, fix order to fix needing to click submit twice to change graph
 
   get_data().then(function(data) {
-    document.getElementById('chart-header').textContent = deathstemp
+    // document.getElementById('chart-header').textContent = deathstemp
     deathstemp[0] = data.Deaths[data.Deaths.length - 1] // most recent
     deathstemp[1] = data.Deaths[data.Deaths.length - 2]
     deathstemp[2] = data.Deaths[data.Deaths.length - 3]
