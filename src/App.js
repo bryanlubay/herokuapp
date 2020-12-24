@@ -217,13 +217,28 @@ function convertEpoch(epoch) {
   return d.getUTCDate()
 }
 
+function show_vaccines() {
+  document.getElementById("vaccines").hidden = false
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
+
+}
+
+function hide_vaccines() {
+  document.getElementById("vaccines").hidden = true
+}
+
+
 function show_prevent() {
   document.getElementById("prevent").hidden = false
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
   document.getElementById("if_you_are_sick").hidden = true
-
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_prevent() {
@@ -236,6 +251,7 @@ function show_frequently_asked_questions() {
   document.getElementById("masks").hidden = true
   document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_frequently_asked_questions() {
@@ -248,6 +264,7 @@ function show_masks() {
   document.getElementById("masks").hidden = false
   document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_masks() {
@@ -260,6 +277,7 @@ function show_if_you_are_sick() {
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
   document.getElementById("if_you_are_sick").hidden = false
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_if_you_are_sick() {
@@ -272,6 +290,7 @@ function show_symptoms() {
   document.getElementById("masks").hidden = true
   document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = false
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_symptoms() {
@@ -519,11 +538,32 @@ function App() {
 
         <div>
 
-          <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick </Button>
+          <Button className="info-buttons" variant="light" onClick={() => show_vaccines()}>Vaccines</Button>
+          <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick</Button>
           <Button className="info-buttons" variant="primary" onClick={() => show_frequently_asked_questions()}>Frequently Asked Questions</Button>
           <Button className="info-buttons" variant="secondary" onClick={() => show_masks()}>Masks</Button>
           <Button className="info-buttons" variant="warning" onClick={() => show_symptoms()}>Symptoms</Button>
           <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
+
+          {/* START VACCINES */}
+          <Alert className="alert" id="vaccines" variant="success" onClose={() => hide_vaccines()} dismissible hidden="true">
+            <Alert.Heading className="card-top-heading"><a id="vaccines-top">Vaccines</a></Alert.Heading>
+
+            <Table className="table">
+              <tbody>
+                <tr >
+                  <a href="#"><td className="tdleft" > </td></a>
+                  <a href="#"><td className="tdright" ></td></a>
+                </tr>
+
+              </tbody>
+            </Table><br></br>
+
+            <a className="return-top" href="#vaccines-top"><br></br>Return to Top</a>
+
+          </Alert>
+
+          {/* END VACCINES */}
 
           {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
