@@ -556,7 +556,7 @@ function App() {
                   <a href="#what-to-expect"><td className="tdright">What to Expect at Your Vaccine Appointment</td></a>
                 </tr>
                 <tr >
-                  <a href="#vaccination-considerations"><td className="tdleft">COVID-19 Vaccination Considerations for Persons with Underlying Medical Conditions</td></a>
+                  <a href="#vaccination-considerations"><td className="tdleft">COVID-19 Vaccination Considerations for <br></br>Persons with Underlying Medical Conditions</td></a>
                   <a href="#vaccinated-benefits"><td className="tdright">Benefits of Getting Vaccinated</td></a>
                 </tr>
                 <tr >
@@ -902,20 +902,59 @@ function App() {
 
             <a id="different-vaccines" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Different Vaccines</p><br></br>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject">Vaccine Types</p>
+            <p className="vaccines-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">Understanding How COVID-19 Vaccines Work</a> <br></br>This web page explains how the body fights infection and how COVID-19 vaccines protect people by producing immunity. It also describes the different types of COVID-19 vaccines that currently are available or are undergoing large-scale (Phase 3) clinical trials in the United States.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">Understanding COVID-19 mRNA Vaccines</a><br></br>This fact sheet provides information about mRNA vaccines generally and about COVID-19 vaccines that use this new technology specifically.</p>
+            <p className="vaccines-subject">Authorized and Recommended Vaccines</p>
+            <p className="vaccines-p">As COVID-19 vaccines are authorized and then recommended for use in the United States, it will be important to understand what is known about each vaccine. CDC will provide information on who is and is not recommended to receive each vaccine and what to expect after vaccination, as well as ingredients, safety, and effectiveness.
+<br></br>Currently, two vaccines are authorized and recommended to prevent COVID-19:
+            <ul>
+              <li className="vaccines-li">​​​​<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">Pfizer-BioNTech COVID-19 vaccine</a></li>
+              <li className="vaccines-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html">Moderna’s COVID-19 vaccine</a></li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Vaccines in Phase 3 Clinical Trials</p>
+            <p className="vaccines-p">As of December 28, 2020, large-scale (Phase 3) clinical trials are in progress or being planned for three COVID-19 vaccines in the United States:
+              <ul>
+                <li className="vaccines-li">AstraZeneca’s COVID-19 vaccine</li>
+                <li className="vaccines-li">Janssen’s COVID-19 vaccine</li>
+                <li className="vaccines-li">Novavax’s COVID-19 vaccine</li>
+              </ul>
+              Learn more about U.S. COVID-19 vaccine clinical trials, including vaccines in earlier stages of development, by visiting <a href="http://www.clinicaltrials.gov/">clinicaltrials.gov</a>            </p>
+            <p className="vaccines-subject">The Immune System—The Body’s Defense Against Infection</p>
+            <p className="vaccines-p">To understand how COVID-19 vaccines work, it helps to first look at how our bodies fight illness. When germs, such as the virus that causes COVID-19, invade our bodies, they attack and multiply. This invasion, called an infection, is what causes illness. Our immune system uses several tools to fight infection. Blood contains red cells, which carry oxygen to tissues and organs, and white or immune cells, which fight infection. Different types of white blood cells fight infection in different ways:
+            <ul>
+              <li className="vaccines-li"><b>Macrophages</b> are white blood cells that swallow up and digest germs and dead or dying cells. The macrophages leave behind parts of the invading germs called antigens. The body identifies antigens as dangerous and stimulates antibodies to attack them.</li>
+              <li className="vaccines-li"><b>B-lymphocytes</b> are defensive white blood cells. They produce antibodies that attack the pieces of the virus left behind by the macrophages.</li>
+              <li className="vaccines-li"><b>T-lymphocytes</b> are another type of defensive white blood cell. They attack cells in the body that have already been infected.</li>
+              </ul>
+              <br></br>The first time a person is infected with the virus that causes COVID-19, it can take several days or weeks for their body to make and use all the germ-fighting tools needed to get over the infection. After the infection, the person’s immune system remembers what it learned about how to protect the body against that disease.<br></br>The body keeps a few T-lymphocytes, called memory cells, that go into action quickly if the body encounters the same virus again. When the familiar antigens are detected, B-lymphocytes produce antibodies to attack them. Experts are still learning how long these memory cells protect a person against the virus that causes COVID-19.
+              </p>
+            <p className="vaccines-subject">How COVID-19 Vaccines Work</p>
+            <p className="vaccines-p">COVID-19 vaccines help our bodies develop immunity to the virus that causes COVID-19 without us having to get the illness. Different types of vaccines work in different ways to offer protection, but with all types of vaccines, the body is left with a supply of “memory” T-lymphocytes as well as B-lymphocytes that will remember how to fight that virus in the future.<br></br>It typically takes a few weeks for the body to produce T-lymphocytes and B-lymphocytes after vaccination. Therefore, it is possible that a person could be infected with the virus that causes COVID-19 just before or just after vaccination and then get sick because the vaccine did not have enough time to provide protection.<br></br>Sometimes after vaccination, the process of building immunity can cause symptoms, such as fever. These symptoms are normal and are a sign that the body is building immunity.</p>
+            <p className="vaccines-subject">Types of Vaccines</p>
+            <p className="vaccines-p">Currently, there are three main types of COVID-19 vaccines that are or soon will be undergoing large-scale (Phase 3) clinical trials in the United States. Below is a description of how each type of vaccine prompts our bodies to recognize and protect us from the virus that causes COVID-19. None of these vaccines can give you COVID-19.
+            <ul>
+              <li className="vaccines-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mRNA.html">mRNA vaccines</a></b> contain material from the virus that causes COVID-19 that gives our cells instructions for how to make a harmless protein that is unique to the virus. After our cells make copies of the protein, they destroy the genetic material from the vaccine. Our bodies recognize that the protein should not be there and build T-lymphocytes and B-lymphocytes that will remember how to fight the virus that causes COVID-19 if we are infected in the future.</li>
+              <li className="vaccines-li"><b>Protein subunit vaccines</b> include harmless pieces (proteins) of the virus that cause COVID-19 instead of the entire germ. Once vaccinated, our immune system recognizes that the proteins don’t belong in the body and begins making T-lymphocytes and antibodies. If we are ever infected in the future, memory cells will recognize and fight the virus.</li>
+              <li className="vaccines-li"><b>Vector vaccines</b> contain a weakened version of a live virus—a different virus than the one that causes COVID-19—that has genetic material from the virus that causes COVID-19 inserted in it (this is called a viral vector). Once the viral vector is inside our cells, the genetic material gives cells instructions to make a protein that is unique to the virus that causes COVID-19. Using these instructions, our cells make copies of the protein. This prompts our bodies to build T-lymphocytes and B-lymphocytes that will remember how to fight that virus if we are infected in the future.</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Most COVID-19 Vaccines Require More Than One Shot</p>
+            <p className="vaccines-p">All but one of the COVID-19 vaccines that are currently in Phase 3 clinical trials in the United States use two shots. The first shot starts building protection. A second shot a few weeks later is needed to get the most protection the vaccine has to offer. One vaccine in Phase 3 clinical trials only needs one shot.</p>
+            <p className="vaccines-subject">The Bottom Line</p>
+            <p className="vaccines-p">Getting vaccinated is one of many steps you can take to protect yourself and others from COVID-19.  Protection from COVID-19 is critically important because for some people, it can cause severe illness or death.Stopping a pandemic requires using all the tools available. Vaccines work with your immune system so your body will be ready to fight the virus if you are exposed. Other steps, like masks and social distancing, help reduce your chance of being exposed to the virus or spreading it to others. Together, COVID-19 vaccination and following CDC’s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">to protect yourself and others</a> will offer the best protection from COVID-19.</p>
+            <p className="vaccines-subject">Understanding mRNA COVID-19 Vaccines</p>
+            <p className="vaccines-p">Messenger RNA vaccines—also called mRNA vaccines—are some of the first COVID-19 vaccines authorized for use in the United States.</p>
+            <p className="vaccines-subject">New Approach to Vaccines</p>
+            <p className="vaccines-p">mRNA vaccines are a new type of vaccine to protect against infectious diseases. To trigger an immune response, many vaccines put a weakened or inactivated germ into our bodies. Not mRNA vaccines. Instead, they teach our cells how to make a protein—or even just a piece of a protein—that triggers an immune response inside our bodies. That immune response, which produces antibodies, is what protects us from getting infected if the real virus enters our bodies.</p>
+            <p className="vaccines-subject">A Closer Look at How COVID-19 mRNA Vaccines Work</p>
+            <p className="vaccines-p">COVID-19 mRNA vaccines give instructions for our cells to make <b>a harmless piece</b> of what is called the “spike protein.” The spike protein is found on the surface of the virus that causes COVID-19.<br></br>COVID-19 mRNA vaccines are given in the upper arm muscle. Once the instructions (mRNA) are inside the immune cells, the cells use them to make the protein piece. After the protein piece is made, the cell breaks down the instructions and gets rid of them.<br></br>Next, the cell displays the protein piece on its surface. Our immune systems recognize that the protein doesn’t belong there and begin building an immune response and making antibodies, like what happens in natural infection against COVID-19.<br></br>At the end of the process, our bodies have learned how to protect against future infection. The benefit of mRNA vaccines, like all vaccines, is those vaccinated gain this protection without ever having to risk the serious consequences of getting sick with COVID-19.</p>
+            <p className="vaccines-subject">COVID-19 mRNA Vaccines Will Be Rigorously Evaluated for Safety</p>
+            <p className="vaccines-p">mRNA vaccines have been held to the same <a href="https://www.fda.gov/media/139638/download">rigorous safety and effectiveness standards</a> as all other types of vaccines in the United States. The only COVID-19 vaccines the Food and Drug Administration (FDA) will make available for use in the United States (by approval or emergency use authorization) are those that meet these standards.</p>
+            <p className="vaccines-subject">mRNA Vaccines Are New, But Not Unknown</p>
+            <p className="vaccines-p">Researchers have been studying and working with mRNA vaccines for decades. Interest has grown in these vaccines because they can be developed in a laboratory using readily available materials. This means the process can be standardized and scaled up, making vaccine development faster than traditional methods of making vaccines.<br></br>mRNA vaccines have been studied before for flu, Zika, rabies, and cytomegalovirus (CMV). As soon as the necessary information about the virus that causes COVID-19 was available, scientists began designing the mRNA instructions for cells to build the unique spike protein into an mRNA vaccine.<br></br>Future mRNA vaccine technology may allow for one vaccine to provide protection for multiple diseases, thus decreasing the number of shots needed for protection against common vaccine-preventable diseases.<br></br>Beyond vaccines, cancer research has used mRNA to trigger the immune system to target specific cancer cells.</p>
+            <p className="vaccines-subject">Information about the Pfizer-BioNTech COVID-19 Vaccine</p>
+            <p className="vaccines-p"></p>
             <p className="vaccines-subject"></p>
             <p className="vaccines-subject"></p>
             <p className="vaccines-subject"></p>
