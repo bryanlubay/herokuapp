@@ -562,6 +562,22 @@ function App() {
             <a className="return-top" href="#vaccines-top"><br></br>Return to Top</a>
 
             <p className="vaccines-subject-header">8 Things to Know</p><br></br>
+            <p className="vaccines-p">Now that there are authorized and recommended vaccines to prevent COVID-19 in the United States, here are 8 things you need to know about the new COVID-19 Vaccination Program and COVID-19 vaccines.</p>
+            <ol type="1" >
+              <li className="vaccines-li"><b>The safety of COVID-19 vaccines is a top priority.</b><br></br>
+              The U.S. vaccine safety system ensures that all vaccines are as safe as possible. Learn how federal partners are working together to <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">ensure the safety of COVID-19 vaccines</a>.
+              CDC has developed a new tool, <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html">v-safe</a>, as an additional layer of safety monitoring to increase our ability to rapidly detect any safety issues with COVID-19 vaccines. V-safe is a new smartphone-based, after-vaccination health checker for people who receive COVID-19 vaccines.</li>
+              <li className="vaccines-li"><b>COVID-19 vaccination will help protect you from getting COVID-19. Two doses are needed.</b><br></br>
+              Depending on the specific vaccine you get, a second shot 3-4 weeks after your first shot is needed to get the most protection the vaccine has to offer against this serious disease. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits.html">Learn more about the benefits of getting vaccinated</a>.</li>
+              <li className="vaccines-li"></li>
+              <li className="vaccines-li"></li>
+              <li className="vaccines-li"></li>
+              <li className="vaccines-li"></li>
+              <li className="vaccines-li"></li>
+              <li className="vaccines-li"></li>
+            </ol>
+
+            
             <p className="vaccines-subject-header">Who Gets Vaccinated First?</p><br></br>
             <p className="vaccines-subject-header">What to Expect at Your Vaccine Appointment</p><br></br>
             <p className="vaccines-subject-header">COVID-19 Vaccination Considerations - Underlying Medical Conditions</p><br></br>
