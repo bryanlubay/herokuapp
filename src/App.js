@@ -591,34 +591,113 @@ function App() {
 
             <a id="vaccinated-first" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Who Gets Vaccinated First?</p><br></br>
+            <p className="vaccines-p">Because the supply of COVID-19 vaccine in the United States is expected to be limited at first, CDC is providing recommendations to federal, state, and local governments about who should be vaccinated first. CDC’s recommendations are based on recommendations from the Advisory Committee on Immunization Practices (ACIP), an independent panel of medical and public health experts.<br></br>The recommendations were made with these goals in mind:
+            <ul>
+              <li className="vaccines-li">Decrease death and serious disease as much as possible.</li>
+              <li className="vaccines-li">Preserve functioning of society.</li>
+              <li className="vaccines-li">Reduce the extra burden COVID-19 is having on people already facing disparities.</li>
+            </ul></p>
+            <p className="vaccines-subject">Healthcare personnel and residents of long-term care facilities should be offered the first doses of COVID-19 vaccines (Phase 1a)</p>
+            <p className="vaccines-p">CDC recommends that initial supplies of COVID-19 vaccine be allocated to healthcare personnel and long-term care facility residents. This is referred to as Phase 1a. CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">made this recommendation on December 3, 2020</a>.</p>
+            
+            
+            <p className="vaccines-subject">Groups who should be offered vaccination next (Phases 1b and 1c)</p>
+            <p className="vaccines-p">CDC recommends that, in the next phases (Phase 1b and Phase 1c), vaccination should be offered to people in the following groups. CDC made <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm695152e2.htm?s_cid=mm695152e2_w">this recommendation</a> on December 22, 2020.</p>
+
+            <p className="vaccines-subject">Phase 1b</p>
+            <ul>
+              <li className="vaccines-li"><b>Frontline essential workers</b> such as fire fighters, police officers, corrections officers, food and agricultural workers, United States Postal Service workers, manufacturing workers, grocery store workers, public transit workers, and those who work in the educational sector (teachers, support staff, and daycare workers.)</li>
+              <li className="vaccines-li"><b>People aged 75 years and older</b> because they are at high risk of hospitalization, illness, and death from COVID-19. People aged 75 years and older who are also residents of long-term care facilities should be offered vaccination in Phase 1a.</li>
+            </ul>
+
+            <p className="vaccines-subject">Phase 1c</p>
+            <ul>
+              <li className="vaccines-li"><b>People aged 65—74 years</b> because they are at high risk of hospitalization, illness, and death from COVID-19. People aged 65—74 years who are also residents of long-term care facilities should be offered vaccination in Phase 1a.</li>
+              <li className="vaccines-li"><b>People aged 16—64 years with underlying medical conditions</b> which increase the risk of serious, life-threatening complications from COVID-19.</li>
+              <li className="vaccines-li"><b>Other essential workers</b>, such as people who work in transportation and logistics, food service, housing construction and finance, information technology, communications, energy, law, media, public safety, and public health.</li>
+            </ul>
+            <p className="vaccines-subject">As vaccine availability increases, vaccination recommendations will expand to include more groups</p>
+            <p className="vaccines-p">The goal is for everyone to be able to easily get a COVID-19 vaccination as soon as large quantities of vaccine are available. As vaccine supply increases but remains limited, ACIP will expand the groups recommended for vaccination.</p>
+
+            
+            <p className="vaccines-subject">The Importance of COVID-19 Vaccination for Healthcare Personnel</p>
+            <p className="vaccines-p">Based on <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">recommendations</a> from the <a href="https://www.cdc.gov/vaccines/acip/">Advisory Committee on Immunization Practices (ACIP)</a>, an independent panel of medical and public health experts, <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">CDC recommends healthcare personnel be among those offered the first doses of COVID-19 vaccines</a>. Healthcare personnel include all paid and unpaid persons serving in healthcare settings who have the potential for direct or indirect exposure to patients or infectious materials.<br></br>This recommendation pertains to paid and unpaid healthcare personnel working in a variety of healthcare settings—for example, acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes and assisted living facilities, home health care, mobile clinics, and outpatient facilities, such as dialysis centers and physicians’ offices.</p>
+
+            <p className="vaccines-subject">Examples of healthcare personnel include:</p>
+            <ul>
+              <li className="vaccines-li">Emergency medical service personnel</li>
+              <li className="vaccines-li">Nurses and nursing assistants</li>
+              <li className="vaccines-li">Physicians</li>
+              <li className="vaccines-li">Technicians</li>
+              <li className="vaccines-li">Therapists</li>
+              <li className="vaccines-li">Dentists</li>
+              <li className="vaccines-li">Dental hygienists and assistants</li>
+              <li className="vaccines-li">Phlebotomists</li>
+              <li className="vaccines-li">Pharmacists</li>
+              <li className="vaccines-li">Students and trainees</li>
+              <li className="vaccines-li">Contractual staff</li>
+              <li className="vaccines-li">Dietary and food services staff</li>
+              <li className="vaccines-li">Environmental services staff</li>
+              <li className="vaccines-li">Administrative staff</li>
+              Learn more about who is included under the broad term “<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control-recommendations.html#anchor_1604360694408">healthcare personnel</a>.”
+            </ul>
+            <p className="vaccines-subject">Healthcare personnel are at risk of exposure</p>
+            <p className="vaccines-p">Healthcare personnel continue to be on the front line of the nation’s fight against this deadly pandemic. Healthcare personnel’s race and ethnicity, underlying health conditions, occupation type, and job setting can contribute to their risk of acquiring COVID-19 and experiencing severe outcomes, including death. By providing critical care to those who are or might be infected with the virus that causes COVID-19, healthcare personnel have a high risk of being exposed to and getting sick with COVID-19. As of December 3, the day CDC published these recommendations, there were more than 249,000 confirmed COVID-19 cases and 866 deaths among healthcare personnel. <a href="https://covid.cdc.gov/covid-data-tracker/#health-care-personnel">View more recent numbers on the toll COVID-19 has taken on healthcare personnel</a>.</p>
+
+            <p className="vaccines-subject">Vaccinating healthcare personnel protects healthcare capacity</p>
+            <p className="vaccines-p">When healthcare personnel get sick with COVID-19, they are not able to work and provide key services for patients or clients. Given the evidence of ongoing COVID-19 infections among healthcare personnel and the critical role they play in caring for others, continued protection of them at work, at home, and in the community remains a national priority. Early vaccine access is critical to ensuring the health and safety of this essential workforce of approximately 21 million people, protecting not only them but also their patients, families, communities, and the broader health of our country.</p>
+            <p className="vaccines-subject">Vaccinating healthcare personnel helps prevent patients from getting COVID-19</p>
+            <p className="vaccines-p">Healthcare personnel who get COVID-19 can also spread the virus to those they are caring for—including  hospitalized patients and  residents of long-term care facilities. Many of these individuals may have underlying health conditions that put them at risk for severe COVID-19 illness. Healthcare personnel can also spread the virus to other healthcare personnel. Learn more about the importance of COVID-19 vaccination for residents of long-term care facilities.</p>
+            <p className="vaccines-subject">Benefits of vaccination must outweigh possible risks</p>
+            <p className="vaccines-p">To help make important medical products, including vaccines, available quickly during the <a href="https://www.youtube.com/results?search_query=%23COVID19">COVID-19</a> pandemic, the U.S Food and Drug Administration (FDA) can use what is known as an <a href="https://www.youtube.com/watch?v=iGkwaESsGBQ">Emergency Use Authorization (EUA)</a>. Before any vaccine can be authorized for use under an EUA, the FDA must determine that the vaccine’s known or potential benefits outweigh known or potential risks. This is true for all vaccines, including COVID-19 vaccines.Once a vaccine is authorized for use under an EUA, ACIP will review available data on the vaccine before voting and advising CDC on whether to recommend the vaccine. Learn more about how <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">CDC is making COVID-19 vaccine recommendations</a>.</p>
+            <p className="vaccines-subject">The safety of COVID-19 vaccines and of healthcare personnel receiving the vaccines is a top priority</p>
+            <p className="vaccines-p">The safety of all vaccines are studied thoroughly in clinical trials. Once healthcare personnel and other members of the public begin receiving COVID-19 vaccinations, CDC and FDA will continue to closely monitor vaccine safety. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">COVID-19 vaccine safety monitoring</a>.</p>
+            <p className="vaccines-subject">Risks and benefits will be explained to everyone offered a COVID-19 vaccination</p>
+            <p className="vaccines-p">Before anyone can receive a COVID-19 vaccine, they must be given an EUA fact sheet with detailed information about the COVID-19 vaccine they will be receiving.</p>
+            <p className="vaccines-subject">Importance of COVID-19 Vaccination for Residents of Long-term Care Facilities</p>
+            <p className="vaccines-p">Based on <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">recommendations</a> from the <a href="https://www.cdc.gov/vaccines/acip/">Advisory Committee on Immunization Practices (ACIP)</a>, an independent panel of medical and public health experts, CDC recommends residents of long-term care facilities (LTCF) be included among those offered the first supply of COVID-19 vaccines.</p>
+            <p className="vaccines-subject">Vaccinating LTCF residents will save lives</p>
+            <p className="vaccines-p">Making sure LTCF residents can receive COVID-19 vaccination as soon as vaccines are available will help save the lives of those who are most at risk of dying from COVID-19. According to ACIP’s recommendations, LTCF residents include adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently. The communal nature of LTCFs and the population served (generally older adults often with underlying medical conditions) puts facility residents at increased risk of infection and severe illness from COVID-19. By November 6, 2020, <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6946a3.htm">approximately 569,000–616,000 COVID-19 cases and 91,500 deaths</a> were reported among LTCF residents and staff members in the United States, accounting for 39% of deaths nationwide.</p>
+            <p className="vaccines-subject">Benefits of vaccination believed to outweigh possible risks</p>
+            <p className="vaccines-p">All COVID-19 vaccines were tested in clinical trials involving tens of thousands of people to make sure they meet safety standards and protect adults of different races, ethnicities, and ages, including adults over the age of 65, participated in the clinical trials. There were no serious safety concerns. The most common side effects were pain at the injection site and signs and symptoms like fever and chills. After a review of all the available information, ACIP and CDC agreed the lifesaving benefits of COVID-19 vaccination for LTCF residents outweigh the risks of possible side effects.</p>
+            <p className="vaccines-subject">The safety of COVID-19 vaccines is a top priority</p>
+            <p className="vaccines-p">To help make important unapproved medical products, including vaccines, available quickly during the <a href="https://www.youtube.com/results?search_query=%23COVID19">COVID-19</a> pandemic, the US Food and Drug Administration (FDA) can use what is known as an <a href="https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained">Emergency Use Authorization (EUA)</a>. Before any vaccine can be authorized for use under an EUA, FDA must determine that the vaccine’s benefits outweigh possible risks.CDC and FDA are monitoring vaccine safety closely. The United States is using existing robust systems and data sources to conduct ongoing safety monitoring. An additional layer of safety monitoring has also been added that allows CDC and FDA to evaluate COVID-19 vaccine safety almost immediately. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">COVID-19 vaccine safety monitoring</a>.<br></br>For LTCFs in particular, CDC will work with pharmacies and other partners to report possible side effects (called adverse events) to the <a href="https://vaers.hhs.gov/reportevent.html">Vaccine Adverse Event Reporting System (VAERS)</a>. Facility staff and residents’ families are encouraged to also report any adverse events immediately.<br></br>CDC is working with pharmacies and other partners to provide communication materials to help LTCFs educate residents and their families about the vaccine, answer their questions about vaccine safety and other issues, and prepare them for vaccination clinics. For some COVID-19 vaccines, two shots are needed to provide the best protection, and the shots are given several weeks apart. Each recipient or caregiver will receive a vaccination record card to ensure they receive the correct vaccine for the second dose.</p>
+            <p className="vaccines-subject">Risks and benefits will be explained to everyone offered a COVID-19 vaccination</p>
+            <p className="vaccines-p">Explaining the risks and benefits of any treatments to a patient – in a way that they understand – is the standard of care. Written consent is not required by federal law for COVID-19 vaccination in the United States; however, COVID-19 vaccine providers should consult with their own legal counsel for state requirements related to consent. In LTCFs, consent or assent for vaccination should be obtained from residents (or the person appointed to make medical decisions on their behalf) and documented in the resident’s chart per standard practice.<br></br>Pharmacy partners that are administering COVID-19 vaccine at LTCFs as part of the <a href="https://www.cdc.gov/vaccines/covid-19/long-term-care/pharmacy-partnerships.html">Federal Pharmacy Partnership for Long-term Care Program</a> may require verbal, email, or written consent from recipients before vaccination. This is at the discretion of the pharmacy. LTCF administrators can request pharmacy partners obtain consent from residents’ families in advance when they are serving as medical proxies.<br></br>Pharmacy partners will also work directly with LTCFs to ensure staff and residents who receive the vaccine also receive an EUA fact sheet before vaccination. The EUA fact sheet explains the risks and benefits of the COVID-19 vaccine they are receiving and what to expect. Each LTCF resident’s medical chart must note that this information was provided to the resident. If a resident is unable to make medical decisions due to decreased mental capacity or illness, the EUA fact sheet will be provided to the person appointed to make medical decisions on their behalf (the medical proxy or power of attorney).</p>
+            <p className="vaccines-subject">COVID-19 Vaccination Considerations for People Who Are Pregnant</p>
+            <p className="vaccines-p">CDC and the independent Advisory Committee on Immunization Practices (ACIP) have provided information to assist pregnant people with their decision to receive the COVID-19 vaccine. People who are pregnant may choose to be vaccinated. If they have questions around getting vaccinated, a discussion with a healthcare provider might help them make an informed decision.</p>
+            <p className="vaccines-subject">There are limited data about the safety of COVID-19 vaccines for people who are pregnant</p>
+            <p className="vaccines-p">Currently, there are limited data available on the safety of COVID-19 vaccines for people who are pregnant. Animal developmental and reproductive toxicity (DART) studies are ongoing and studies in people who are pregnant are planned. CDC and the Food and Drug Administration (FDA) have safety monitoring systems in place to capture information about vaccination during pregnancy and will closely monitor reports.<br></br>While studies have not yet been done, based on how mRNA vaccines work, experts believe they are unlikely to pose a risk for people who are pregnant. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mRNA.html">mRNA vaccines</a> do not contain the live virus that causes COVID-19 and therefore cannot give someone COVID-19. Additionally, mRNA vaccines do not interact with genetic material DNA because the mRNA does not enter the nucleus of the cell. Cells break apart the mRNA quickly. However, the potential risks of mRNA vaccines to the pregnant person and her fetus are unknown because these vaccines have not been studied in pregnant women.</p>
+            <p className="vaccines-subject">Pregnant people are at increased risk for severe illness from COVID-19</p>
+            <p className="vaccines-p">Observational data demonstrate that, while the chances for these severe health effects are infrequent, pregnant people <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/pregnancy-breastfeeding.html">with COVID-19 have an increased risk of severe illness</a>, including illness that results in ICU admission, mechanical ventilation, and death. Additionally, pregnant people with COVID-19 might be at increased risk of adverse pregnancy outcomes, such as preterm births.</p>
+            <p className="vaccines-subject">Because supplies are currently limited, CDC recommends certain groups receive the first supply of COVID-19 vaccines</p>
+            <p className="vaccines-p">At this time, healthcare personnel are recommended to be among the first to receive the vaccine because they are at increased risk of exposure to the virus that causes COVID-19.<br></br>Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">how CDC is making COVID-19 vaccination recommendations</a>, including recommendations while there is a limited supply.</p>
+            <p className="vaccines-subject">Getting vaccinated is a personal choice for people who are pregnant</p>
+            <p className="vaccines-p">People who are pregnant and part of a group recommended to receive the COVID-19 vaccine, such as healthcare personnel, may choose to be vaccinated. A conversation between pregnant patients and their clinicians may help them decide whether to get vaccinated with a vaccine that has been authorized for use under Emergency Use Authorization (EUA). While a conversation with a clinician may be helpful, it is not required prior to vaccination.<br></br>Key considerations pregnant patients can discuss with their healthcare provider include:</p>
+            <ul>
+              <li className="vaccines-li">The likelihood of exposure to SARS-CoV-2, the virus that causes COVID-19</li>
+              <li className="vaccines-li">Risks of COVID-19 to them and potential risks to their fetuses</li>
+              <li className="vaccines-li">What is known about the vaccine: how well it works to develop protection in the body, known side effects of the vaccine, and lack of data during pregnancy</li>
+            </ul>
+            Pregnant patients who decide to get vaccinated should continue to follow the current guidelines to prevent the spread of COVID-19 after they are vaccinated. That means:
+            <ul>
+              <li className="vaccines-li">Wearing a mask</li>
+              <li className="vaccines-li">Staying at least six feet away from others</li>
+              <li className="vaccines-li">Avoiding crowds</li>
+              <li className="vaccines-li">Washing hands with soap and water for 20 seconds or using hand sanitizer with at least 60% alcohol</li>
+              <li className="vaccines-li">Following <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html">CDC travel guidance</a></li>
+              <li className="vaccines-li">Following quarantine guidance after exposure to COIV-19</li>
+              <li className="vaccines-li">Following any applicable workplace guidance</li>
+            </ul>
+
+            <p className="vaccines-subject">Vaccine side effects</p>
+            <p className="vaccines-p">These mRNA COVID-19 vaccines are expected to produce some side effects after vaccination, especially after the second dose. Pregnant women who experience fever following vaccination may be counseled to take acetaminophen because fever has been associated with adverse pregnancy outcomes. Acetaminophen may be offered as an option for pregnant women experiencing other post-vaccination symptoms as well.</p>
+            <p className="vaccines-subject">Routine testing and pregnancy</p>
+            <p className="vaccines-p">Routine testing for pregnancy before COVID-19 vaccination is not recommended. Women who are trying to become pregnant do not need to avoid pregnancy after receiving an mRNA COVID-19 vaccine.</p>
+            <p className="vaccines-subject">COVID-19 vaccination considerations for people who are breastfeeding</p>
+            <p className="vaccines-p">There are no data on the safety of COVID-19 vaccines in lactating women or on the effects of mRNA vaccines on the breastfed infant or on milk production/excretion. mRNA vaccines are not thought to be a risk to the breastfeeding infant. People who are breastfeeding and are part of a group recommended to receive a COVID-19 vaccine, such as healthcare personnel, may choose to be vaccinated.</p>
+            <p className="vaccines-subject">How CDC Is Making COVID-19 Vaccine Recommendations</p>
             <p className="vaccines-p"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
-            <p className="vaccines-subject"></p>
             <p className="vaccines-subject"></p>
             <p className="vaccines-subject"></p>
             <p className="vaccines-subject"></p>
