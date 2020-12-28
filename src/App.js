@@ -552,14 +552,24 @@ function App() {
             <Table className="table">
               <tbody>
                 <tr >
-                  <a href="#"><td className="tdleft" > </td></a>
-                  <a href="#"><td className="tdright" ></td></a>
+                  <a href="#vaccinated-first"><td className="tdleft">Who Gets Vaccinated First?</td></a>
+                  <a href="#what-to-expect"><td className="tdright">What to Expect at Your Vaccine Appointment</td></a>
+                </tr>
+                <tr >
+                  <a href="#vaccination-considerations"><td className="tdleft">COVID-19</td></a>
+                  <a href="#vaccinated-benefits"><td className="tdright">Benefits of Getting Vaccinated</td></a>
+                </tr>
+                <tr >
+                  <a href="#different-vaccines"><td className="tdleft">Different Vaccines</td></a>
+                  <a href="#vaccine-safety"><td className="tdright">Ensuring the Safety of Vaccines</td></a>
+                </tr>
+                <tr >
+                  <a href="#ensuring-vaccines-work"><td className="tdleft">Ensuring Vaccines Work</td></a>
+                  <a href="#faq-vaccination"><td className="tdright">Frequently Asked Questions about Vaccination</td></a>
                 </tr>
 
               </tbody>
             </Table><br></br>
-
-            <a className="return-top" href="#vaccines-top"><br></br>Return to Top</a>
 
             <p className="vaccines-subject-header">8 Things to Know</p><br></br>
             <p className="vaccines-p">Now that there are authorized and recommended vaccines to prevent COVID-19 in the United States, here are 8 things you need to know about the new COVID-19 Vaccination Program and COVID-19 vaccines.</p>
@@ -578,14 +588,29 @@ function App() {
               <li className="vaccines-li"><b>COVID-19 vaccines are one of many important tools to help us stop this pandemic.</b><br></br>It’s important for everyone to continue using all the tools available to help stop this pandemic as we learn more about how COVID-19 vaccines work in real-world conditions. Cover your mouth and nose with a mask when around others, stay at least 6 feet away from others, avoid crowds, and wash your hands often.<br></br>CDC will continue to update this website as vaccine recommendations and supply change.</li>
             </ol>
 
-            
+
+            <a id="vaccinated-first" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Who Gets Vaccinated First?</p><br></br>
+
+            <a id="what-to-expect" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">What to Expect at Your Vaccine Appointment</p><br></br>
+
+            <a id="vaccination-considerations" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">COVID-19 Vaccination Considerations - Underlying Medical Conditions</p><br></br>
+
+            <a id="vaccinated-benefits" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Benefits of Getting Vaccinated</p><br></br>
+
+            <a id="different-vaccines" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Different Vaccines</p><br></br>
+
+            <a id="vaccine-safety" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Ensuring the Safety of Vaccines</p><br></br>
+
+            <a id="ensuring-vaccines-work" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Ensuring Vaccines Work</p><br></br>
+
+            <a id="faq-vaccination" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Frequently Asked Questions about Vaccination</p><br></br>
 
 
