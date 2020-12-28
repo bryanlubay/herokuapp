@@ -546,7 +546,7 @@ function App() {
           <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
 
           {/* START VACCINES */}
-          <Alert className="alert" id="vaccines" variant="success" onClose={() => hide_vaccines()} dismissible hidden="true">
+          <Alert className="alert" id="vaccines" variant="light" onClose={() => hide_vaccines()} dismissible hidden="true">
             <Alert.Heading className="card-top-heading"><a id="vaccines-top">Vaccines</a></Alert.Heading>
 
             <Table className="table">
