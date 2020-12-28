@@ -561,6 +561,17 @@ function App() {
 
             <a className="return-top" href="#vaccines-top"><br></br>Return to Top</a>
 
+            <p className="vaccines-subject-header">8 Things to Know</p><br></br>
+            <p className="vaccines-subject-header">Who Gets Vaccinated First?</p><br></br>
+            <p className="vaccines-subject-header">What to Expect at Your Vaccine Appointment</p><br></br>
+            <p className="vaccines-subject-header">COVID-19 Vaccination Considerations - Underlying Medical Conditions</p><br></br>
+            <p className="vaccines-subject-header">Benefits of Getting Vaccinated</p><br></br>
+            <p className="vaccines-subject-header">Different Vaccines</p><br></br>
+            <p className="vaccines-subject-header">Ensuring the Safety of Vaccines</p><br></br>
+            <p className="vaccines-subject-header">Ensuring Vaccines Work</p><br></br>
+            <p className="vaccines-subject-header">Frequently Asked Questions about Vaccination</p><br></br>
+
+
           </Alert>
 
           {/* END VACCINES */}
