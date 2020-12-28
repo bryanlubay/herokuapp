@@ -556,7 +556,7 @@ function App() {
                   <a href="#what-to-expect"><td className="tdright">What to Expect at Your Vaccine Appointment</td></a>
                 </tr>
                 <tr >
-                  <a href="#vaccination-considerations"><td className="tdleft">COVID-19</td></a>
+                  <a href="#vaccination-considerations"><td className="tdleft">COVID-19 Vaccination Considerations</td></a>
                   <a href="#vaccinated-benefits"><td className="tdright">Benefits of Getting Vaccinated</td></a>
                 </tr>
                 <tr >
@@ -591,24 +591,133 @@ function App() {
 
             <a id="vaccinated-first" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Who Gets Vaccinated First?</p><br></br>
+            <p className="vaccines-p"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+
+
 
             <a id="what-to-expect" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">What to Expect at Your Vaccine Appointment</p><br></br>
+            <p className="vaccines-p"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
 
             <a id="vaccination-considerations" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">COVID-19 Vaccination Considerations - Underlying Medical Conditions</p><br></br>
+            <p className="vaccines-p"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+
 
             <a id="vaccinated-benefits" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Benefits of Getting Vaccinated</p><br></br>
+            <p className="vaccines-p"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+
 
             <a id="different-vaccines" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Different Vaccines</p><br></br>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+
 
             <a id="vaccine-safety" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Ensuring the Safety of Vaccines</p><br></br>
+            <p className="vaccines-p"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
 
             <a id="ensuring-vaccines-work" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Ensuring Vaccines Work</p><br></br>
+            <p className="vaccines-p"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+            <p className="vaccines-subject"></p>
+
 
             <a id="faq-vaccination" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Frequently Asked Questions about Vaccination</p><br></br>
