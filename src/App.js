@@ -1106,7 +1106,7 @@ function App() {
               <li className="vaccines-li">20% Hispanic/Latino</li>
               <li className="vaccines-li">9.7% African American</li>
               <li className="vaccines-li">4.7% Asian</li>
-              <li className="vaccines-li"><3% other races/ethnicities</li>
+              <li className="vaccines-li">&#60;3% other races/ethnicities</li>
             </ul>
             Age and sex breakdown:
             <ul>
@@ -1907,6 +1907,30 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
             <a className="return-top" href="#prevent-top"><br></br>Return to Top</a>
 
+            <Accordion>
+
+<Card><a id="Basics"><Card.Header className="alert-subjects">Basics</Card.Header></a>
+
+        <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
+          What is a novel coronavirus?
+        </Accordion.Toggle>
+
+        <Accordion.Collapse eventKey="0">
+          <Card.Body className="accordion-answer">A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the <a target="_blank" href="https://www.cdc.gov/coronavirus/types.html">coronaviruses that commonly circulate among humans</a> and cause mild illness, like the common cold.</Card.Body>
+        </Accordion.Collapse>
+
+        <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1">
+          Why is the disease being called coronavirus disease 2019, COVID-19?
+        </Accordion.Toggle>
+
+        <Accordion.Collapse eventKey="1">
+          <Card.Body className="accordion-answer">On February 11, 2020 the World Health Organization <a target="_blank" href="https://twitter.com/DrTedros/status/1227297754499764230">announced</a> an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.<br></br><br></br>There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.</Card.Body>
+        </Accordion.Collapse>
+
+        <a href="#faq-top">Return to Top</a>
+
+      </Card>
+      </Accordion>
 
           </Alert>
           {/* END PREVENT */}
