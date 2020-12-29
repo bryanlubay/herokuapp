@@ -1423,9 +1423,9 @@ Experts will also conduct a case-control assessment using data from CDC and CMS.
                 </Accordion.Collapse>
 
                 <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1012">
+                Do I need to wear a mask when I receieve a COVID-19 vaccine?
                 
                 </Accordion.Toggle>
-                Do I need to wear a mask when I receieve a COVID-19 vaccine?
                 <Accordion.Collapse eventKey="1012">
                   <Card.Body className="accordion-answer">
                   Yes. CDC recommends that during the pandemic people <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">wear a mask</a> that covers their nose and mouth when in contact with others outside your household, when in healthcare facilities, and when receiving any vaccine, including a COVID-19 vaccine. Anyone who has trouble breathing or is unable to remove a mask without assistance should not wear a mask. For more information, visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html">considerations for wearing masks</a>.
