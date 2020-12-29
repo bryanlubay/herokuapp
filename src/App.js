@@ -1269,7 +1269,288 @@ Experts will also conduct a case-control assessment using data from CDC and CMS.
 
             <a id="faq-vaccination" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
             <p className="vaccines-subject-header">Frequently Asked Questions about Vaccination</p><br></br>
+            <p className="vaccines-p">The federal government, through <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Operation Warp Speed</a>, has been working since the pandemic started to make one or more COVID-19 vaccines available as soon as possible. Although CDC does not have a role in developing COVID-19 vaccines, CDC has been working closely with health departments and partners to develop vaccination plans for when a vaccine is available. CDC is working with partners at all levels, including healthcare associations, on flexible COVID-19 vaccination programs that can accommodate different vaccines and scenarios.<br></br>Below are answers to commonly asked questions. Regular updates will be made as needed.</p>
 
+
+            <Accordion>
+
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Planning for a Vaccine</Card.Header></a>
+
+              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1000">
+                What is Operation Warp Speed's role with COVID-19 vaccines?
+              </Accordion.Toggle>
+
+              <Accordion.Collapse eventKey="1000">
+                <Card.Body className="accordion-answer">Operation Warp Speed is a partnership among components of the Department of Health and Human Services (HHS) and the Department of Defense to help develop, make, and distribute millions of vaccine doses for COVID-19 as quickly as possible while ensuring that the vaccines are safe and that they work. Learn more about Operation Warp Speed:
+                <ul>
+                  <li className="vaccines-li">HHS <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Fact Sheet: Explaining Operation Warp Speed</a></li>
+                  <li className="vaccines-li">New England Journal of Medicine article: <a href="https://www.nejm.org/doi/full/10.1056/NEJMp2027405">Developing Safe and Effective COVID Vaccines — Operation Warp Speed’s Strategy and Approach</a></li>
+                  </ul></Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1001">
+                When will a COVID-19 vaccine be available in the United States?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1001">
+                  <Card.Body className="accordion-answer">The goal for <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Operation Warp Speed</a> is to deliver safe vaccines that work, with the first supply becoming available before the end of 2020. Currently, two vaccines are authorized and recommended to prevent COVID-19 in the United States. To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have published recommendations for which <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">groups should be vaccinated first</a>. Supplies will increase over time. The goal is for everyone to be able to easily get a COVID-19 vaccine as soon as large quantities are available. However, a COVID-19 vaccine may not be available for young children until more studies are completed.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1002">
+                What has been done to plan for the distribution of COVID-19 vaccines?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1002">
+                  <Card.Body className="accordion-answer">
+                  The federal government oversees a centralized system to order, distribute, and track COVID-19 vaccines. All vaccines will be ordered through CDC. Vaccine providers will receive vaccines from CDC’s centralized distributor or directly from a vaccine manufacturer.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html">Two vaccines are authorized and recommended</a> to prevent COVID-19 in the United States, other COVID-19 vaccine candidates are in development, and clinical trials are being conducted at the same time as large-scale manufacturing. With first doses now available, planning and preparing for a COVID-19 vaccination program is very important.<br></br>Planning efforts have focused on every step and detail of the process, including:
+                  <ul>
+                    <li className="vaccines-li">Establishing and testing logistics plans with manufacturers and commercial partners that are part of CDC’s centralized COVID-19 vaccine delivery system</li>
+                    <li className="vaccines-li">Coordinating the first distribution of vaccines and needed supplies from centralized locations</li>
+                    <li className="vaccines-li">Ordering processes for additional doses of the vaccine after the first supply has been shipped</li>
+                    <li className="vaccines-li">Receiving, storing, and handling vaccines properly at very specific temperatures</li>
+                    <li className="vaccines-li">Deciding who should receive a vaccine first, based on national recommendations, if there are not enough doses of the vaccine for everyone</li>
+                    <li className="vaccines-li">Giving the vaccines in a safe way during an ongoing pandemic</li>
+                    <li className="vaccines-li">Reporting on vaccine inventory, administration, and safety using a variety of new and enhanced data systems</li>
+                    <li className="vaccines-li">Expanding safety surveillance through new systems and additional information sources, as well as scaling up existing safety monitoring systems</li>
+                    <li className="vaccines-li">Developing plans to assess vaccine effectiveness, which means how well the vaccines protect against COVID-19 under real-life conditions</li>
+                    <li className="vaccines-li">Making sure timely, credible, and clear communication is provided to the public and stakeholders around all aspects of the vaccination program</li>
+                  </ul>
+                  This situation continues to change, and planning will progress as more information about any new authorized or approved vaccines becomes available. A safe and effective COVID-19 vaccine is a critical component of the U.S. strategy to reduce COVID-19-related illnesses, hospitalizations, and deaths and to help society function as it did before COVID-19. The goal of the U.S. government is to have enough COVID-19 vaccine doses for all people in the United States who choose to be vaccinated.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1003">
+                Who has CDC worked with to plan for the distribution of COVID-19 vaccines?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1003">
+                  <Card.Body className="accordion-answer">
+                  <b>State, tribal, territorial, and local jurisdictions:</b> CDC worked with state, tribal, territorial, and local jurisdictions on the development of COVID-19 vaccination plans for their respective areas. CDC released a playbook on September 16, 2020, to provide specific information to consider during vaccination plan development. The <a href="https://www.cdc.gov/vaccines/imz-managers/downloads/COVID-19-Vaccination-Program-Interim_Playbook.pdf">playbook</a> was updated on October 30, 2020.<br></br><b>Private partners and federal agencies:</b> CDC has also worked with private partners, such as chain and networks of independent pharmacies, and other federal agencies (e.g., the Indian Health Service) on plans to more widely distribute COVID-19 vaccines. For example, CDC is working with pharmacies to offer on-site COVID-19 vaccination services for residents in long-term care settings, including skilled nursing facilities, nursing homes, and assisted living facilities where most individuals are over 65 years of age.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1004">
+                Does CDC have a national campaign to address any concerns people may have about getting a COVID-19 vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1004">
+                  <Card.Body className="accordion-answer">
+                  No, CDC is not leading a national campaign on COVID-19 vaccination. CDC’s vaccination activities fit within and are guided by a <i><a href="https://www.cdc.gov/vaccines/partners/vaccinate-with-confidence.html">Vaccinate with Confidence strategic framework</a></i>. This strategic framework focuses on strengthening vaccine confidence and preventing outbreaks of vaccine-preventable diseases in the United States. It builds on longstanding practices that CDC and partners have used to talk with the public and healthcare providers about the life-saving protection of vaccines.<br></br>The <i>Vaccinate with Confidence</i> strategic framework is being customized to address the unique information and health equity needs created by the COVID-19 pandemic. The new <i>Vaccinate with Confidence for COVID-19</i> strategic framework will strive to support public and healthcare personnel acceptance of future COVID-19 vaccines. CDC will provide updates once the new strategic framework is completed.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1005">
+                How is CDC working to make sure people want to and can get vaccinated once a COVID-19 vaccine is available?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1005">
+                  <Card.Body className="accordion-answer">
+                  CDC is working with partners across the country to make sure people have the information they need to be confident in deciding to get vaccinated. Key priorities for CDC are:
+                  <ul>
+                    <li className="vaccines-li"><b>Regularly sharing clear and accurate information</b> with people to make sure they understand the risks and benefits of getting vaccinated and can make informed decisions.</li>
+                    <li className="vaccines-li"><b>Helping healthcare personnel feel confident</b> in their decision to get a COVID-19 vaccine and <b>helping healthcare providers</b> answer their patients’ questions about the vaccine.</li>
+                    <li className="vaccines-li"><b>Engaging communities and individuals in an equitable and inclusive way</b> to ensure that people have opportunities to ask questions and get clear, accurate information about the COVID-19 vaccine.</li>
+                  </ul>
+                  Easy access to COVID-19 vaccines is equally critical. CDC is working with public health, healthcare providers, and other partners to make sure people can easily get a COVID-19 vaccine and that cost is not a barrier.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1006">
+                Will there be enough vaccine for everyone?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1006">
+                  <Card.Body className="accordion-answer">
+                  Currently, two vaccines are authorized and recommended to prevent COVID-19 in the United States. To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have published recommendations for which <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">groups should be vaccinated first</a>.  It is understandable how concerning this may be for people, especially for <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">those who are at increased risk for serious illness</a> from this virus and for their loved ones.<br></br>The goal is for everyone to be able to easily get a COVID-19 vaccine as soon as large quantities are available. That is why, early in the response, the <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">federal government began investing in select vaccine manufacturers</a> to help them increase their ability to quickly make and distribute a large amount of COVID-19 vaccine. This will allow the United States to start with as much vaccine as possible and continually increase the supply in the weeks and months to follow. The goal is for everyone to be able to easily get a COVID-19 vaccine as soon as large quantities are available. Several thousand vaccination providers will be available, including doctors’ offices, retail pharmacies, hospitals, and federally qualified health centers.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1007">
+                What can I do now to help protect myself from getting COVID-19 since a vaccine is not yet available?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1007">
+                  <Card.Body className="accordion-answer">You should cover your mouth and nose with a mask when around others, avoid close contact with people who are sick, stay 6 feet away from others, avoid crowds, and wash your hands often. Get more information about these and other steps you can take to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">protect yourself and others from COVID-19</a>.</Card.Body>
+                </Accordion.Collapse>
+
+
+            </Card>
+
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Vaccine Development</Card.Header></a>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1008">
+              How many COVID-19 vaccines are under development?
+            </Accordion.Toggle>
+
+            <Accordion.Collapse eventKey="1008">
+              <Card.Body className="accordion-answer">
+              Currently, <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html">two vaccines</a> are authorized and recommended to prevent COVID-19:
+              <ul>
+                <li className="vaccines-li">​​​​<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">Pfizer-BioNTech COVID-19 vaccine</a></li>
+                <li className="vaccines-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html">Moderna’s COVID-19 vaccine</a></li>
+              </ul>
+              Multiple COVID-19 vaccines are also still under development. Large-scale (Phase 3) clinical trials are in progress or being planned for two additional COVID-19 vaccines in the United States.
+              </Card.Body>
+            </Accordion.Collapse>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1009">
+                Has there been a coronavirus vaccine developed before? What's know about it, and can it be helpful today in working toward a COVID-19 vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1009">
+                  <Card.Body className="accordion-answer"><a href="https://www.cdc.gov/sars/index.html">Severe acute respiratory syndrome (SARS)</a> and <a href="https://www.cdc.gov/coronavirus/mers/index.html">Middle East respiratory syndrome (MERS)</a> are two diseases caused by coronaviruses that are closely related to the virus that causes COVID-19. Researchers began working on developing vaccines for these diseases after they were discovered in 2003 and 2012, respectively. None of the SARS vaccines ever made it past the first stages of development and testing, in large part due to lack of interest because the virus disappeared. One MERS vaccine (MVA-MERS-S) successfully completed a phase 1 clinical trial in 2019. Lessons learned from this earlier vaccine research have been used to inform strategies for developing a COVID-19 vaccine.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1010">
+                Why is it taking so long to develop a COVID019 vaccine? It only took a few months for the H1N1 influence (flu) vaccine to be developed.
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1010">
+                  <Card.Body className="accordion-answer">When a new flu strain is identified, like H1N1 in 2009, vaccine manufacturers can use the same processes that are used to make the annual seasonal flu vaccine, saving valuable time. Unlike flu, coronaviruses do not yet have licensed vaccines or processes to build on. In addition, the coronavirus that causes COVID-19 is a new virus, so entirely new vaccines must be developed and tested to ensure they work and are safe. There are many steps in the <a href="https://www.cdc.gov/vaccines/basics/test-approve.html">vaccine testing and approval process</a>. <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Multiple agencies and groups in the United States</a> are working together to make sure that a safe and effective COVID-19 vaccine is available as quickly as possible.</Card.Body>
+                </Accordion.Collapse>
+  
+
+                </Card>
+
+                <Card><a id="Basics"><Card.Header className="alert-subjects">Getting Vaccinated</Card.Header></a>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1011">
+                  How many shots of COVID-19 vaccine will be needed?
+                </Accordion.Toggle>
+
+                <Accordion.Collapse eventKey="1011">
+                  <Card.Body className="accordion-answer">The two authorized and recommended vaccines to prevent COVID-19 in the United States both need two shots to be effective. There is one COVID-19 vaccine in Phase 3 clinical trials in the United States that uses one shot.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1012">
+                
+                </Accordion.Toggle>
+                Do I need to wear a mask when I receieve a COVID-19 vaccine?
+                <Accordion.Collapse eventKey="1012">
+                  <Card.Body className="accordion-answer">
+                  Yes. CDC recommends that during the pandemic people <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">wear a mask</a> that covers their nose and mouth when in contact with others outside your household, when in healthcare facilities, and when receiving any vaccine, including a COVID-19 vaccine. Anyone who has trouble breathing or is unable to remove a mask without assistance should not wear a mask. For more information, visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html">considerations for wearing masks</a>.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1013">
+                Who is paying for COVID-19 vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1013">
+                  <Card.Body className="accordion-answer">Vaccine doses purchased with U.S. taxpayer dollars will be given to the American people at no cost. However, vaccination providers will be able to charge an administration fee for giving the shot to someone. Vaccine providers can get this fee reimbursed by the patient’s public or private insurance company or, for uninsured patients, by the Health Resources and Services Administration’s Provider Relief Fund.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1014">
+                Are there special considerations on who sould get the COVID-19 vaccine first?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1014">
+                  <Card.Body className="accordion-answer">
+                  CDC is making recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">who should be offered COVID-19 vaccine first</a> when supplies are limited. To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have <a href="https://www.cdc.gov/vaccines/hcp/acip-recs/vacc-specific/covid-19.html">published recommendations</a> for which groups should be vaccinated first. The goal is for everyone to be able to easily get a COVID-19 vaccination as soon as large quantities of vaccine are available.<br></br>While CDC makes recommendations for who should be offered COVID-19 vaccine first, each state has its own plan for vaccine prioritization, distribution and allocation. Please contact your state health department for more information on their planning for COVID-19 vaccines.<br></br>Learn how <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">CDC is making COVID-19 vaccine recommendations</a>, including recommendations if there is a limited supply, based on input from the Advisory Committee on Immunization Practices (ACIP).
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1015">
+                If I have already had COVID-19 and recovered, do I still need to get vaccinated with a COVID-19 vaccine when it's available?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1015">
+                  <Card.Body className="accordion-answer">
+                  COVID-19 vaccination should be offered to you regardless of whether you already had COVID-19 infection. You should not be required to have an antibody test before you are vaccinated.<br></br>However, anyone currently infected with COVID-19 should wait to get vaccinated until after their illness has resolved and after they have met the <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/disposition-in-home-patients.html">criteria</a> to discontinue isolation.<br></br>Additionally, current evidence suggests that reinfection with the virus that causes COVID-19 is uncommon in the 90 days after initial infection. Therefore, people with a recent infection may delay vaccination until the end of that 90-day period if desired.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1016">
+                Why would a vaccine be needed if we can do other things, like social distancing and wearing masks, to prevent the virus that causes COVID-19 from spreading?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1016">
+                  <Card.Body className="accordion-answer">
+                  Stopping a pandemic requires using all the tools available. Vaccines work with your immune system so your body will be ready to fight the virus if you are exposed. Other steps, like covering your mouth and nose with a mask and staying at least 6 feet away from others, help reduce your chance of being exposed to the virus or spreading it to others. Together, COVID-19 vaccination and following CDC’s recommendations to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a> will offer the best protection from COVID-19.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1017">
+                Do I need to wear a mask and avoid close contact with others if I have received 2 doses of the vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1017">
+                  <Card.Body className="accordion-answer">
+                  Yes. While experts learn more about the protection that COVID-19 vaccines provide under real-life conditions, it will be important for everyone to continue using <b>all the tools</b> available to us to help stop this pandemic, like covering your mouth and nose with a mask, washing hands often, and staying at least 6 feet away from others. Together, COVID-19 vaccination and following CDC’s recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">how to protect yourself and others</a> will offer the best protection from getting and spreading COVID-19. Experts need to understand more about the protection that COVID-19 vaccines provide before deciding to change recommendations on steps everyone should take to slow the spread of the virus that causes COVID-19. Other factors, including how many people get vaccinated and how the virus is spreading in communities, will also affect this decision.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1018">
+                When can I stop wearing a mask and avoiding close contact with others after I have been vaccinated?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1018">
+                  <Card.Body className="accordion-answer">
+                  There is not enough information currently available to say if or when CDC will stop recommending that people <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">wear masks</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">avoid close contact with others</a> to help prevent the spread of the virus that causes COVID-19. Experts need to understand more about the protection that COVID-19 vaccines provide before making that decision. Other factors, including how many people get vaccinated and how the virus is spreading in communities, will also affect this decision.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1019">
+                Are there other vaccines that can help prevent me from getting COVID-19?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1019">
+                  <Card.Body className="accordion-answer">
+                  There are currently no available vaccines that will prevent COVID-19. However, <a href="https://www.hhs.gov/about/news/2020/06/16/fact-sheet-explaining-operation-warp-speed.html">multiple agencies and groups in the United States</a> are working together to make sure that a safe and effective COVID-19 vaccine is available as quickly as possible.<br></br>A flu vaccine will not protect you from getting COVID-19, but it can prevent you from getting influenza (flu) at the same time as COVID-19. This can keep you from having a more severe illness. While it’s not possible to say with certainty what will happen in the winter, CDC believes it’s likely that flu viruses and the virus that causes COVID-19 will both be spreading during that time. That means that getting a flu vaccine is more important than ever.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1020">
+                Does immunity after getting COVID-19 last longer than protection from COVID-19 vaccines?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1020">
+                  <Card.Body className="accordion-answer">
+                  The protection someone gains from having an infection (called natural immunity) varies depending on the disease, and it varies from person to person. Since this virus is new, we don’t know how long natural immunity might last. Current evidence suggests that reinfection with the virus that causes COVID-19 is uncommon in the 90 days after initial infection.<br></br>Regarding vaccination, we won’t know how long immunity lasts until we have a vaccine and more data on how well it works.<br></br>Both natural immunity and vaccine-induced immunity are important aspects of COVID-19 that experts are trying to learn more about, and CDC will keep the public informed as new evidence becomes available.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1021">
+                What percentage of the population needs to get vaccinated to have herd immunity to COVID-19?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1021">
+                  <Card.Body className="accordion-answer">Experts do not know what percentage of people would need to get vaccinated to achieve herd immunity to COVID-19. Herd immunity is a term used to describe when enough people have protection—either from previous infection or vaccination—that it is unlikely a virus or bacteria can spread and cause disease. As a result, everyone within the community is protected even if some people don’t have any protection themselves. The percentage of people who need to have protection in order to achieve herd immunity varies by disease.</Card.Body>
+                </Accordion.Collapse>
+
+
+
+
+          </Card>
+
+          <Card><a id="Basics"><Card.Header className="alert-subjects">Safety</Card.Header></a>
+
+          <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1022">
+          How do I report if I have a problem or bad reaction after getting a COVID-19 vaccine?
+            
+          </Accordion.Toggle>
+
+          <Accordion.Collapse eventKey="1022">
+            <Card.Body className="accordion-answer">
+            CDC and FDA encourage the public to report possible side effects (called adverse events) to the <a href="https://vaers.hhs.gov/reportevent.html">Vaccine Adverse Event Reporting System (VAERS)</a>. This national system collects these data to look for adverse events that are unexpected, appear to happen more often than expected, or have unusual patterns of occurrence. Learn about the <a href="https://www.cdc.gov/vaccinesafety/ensuringsafety/sideeffects/index.html">difference between a vaccine side effect and an adverse event</a>. Reports to VAERS help CDC monitor the safety of vaccines. Safety is a top priority.<br></br>Healthcare providers will be required to report certain adverse events following vaccination to VAERS. Healthcare providers also have to adhere to any revised safety reporting requirements according to FDA’s conditions of authorized use throughout the duration of any Emergency Use Authorization; these requirements would be posted on <a href="https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">FDA’s website</a>.<br></br>CDC is also implementing a new smartphone-based tool called <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html"><b>v-safe</b></a> to check-in on people’s health after they receive a COVID-19 vaccine. When you receive your vaccine, you should also receive a <b>v-safe</b> information sheet telling you how to enroll in <b>v-safe</b>. If you enroll, you will receive regular text messages directing you to surveys where you can report any problems or adverse reactions you have after receiving a COVID-19 vaccine.
+
+            </Card.Body>
+          </Accordion.Collapse>
+
+                        <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1023">
+                          What does it mean if a clinical trial is temporarily paused?
+                        </Accordion.Toggle>
+
+                        <Accordion.Collapse eventKey="1023">
+                          <Card.Body className="accordion-answer">
+                          Safety is a top priority during the vaccine approval process. It is not unusual for a clinical trial to be temporarily paused when a possible side effect (called an adverse event) is detected. Clinical trials are designed to pause when an unexpected health event (called a safety signal) is detected so scientists and physicians can investigate potential safety concerns. The approval process for COVID-19 vaccines is no different ― safety is always the focus.
+                          </Card.Body>
+                        </Accordion.Collapse>
+
+          <a href="#vaccines-top">Return to Top</a>
+
+          </Card>
+            </Accordion>
 
           </Alert>
 
