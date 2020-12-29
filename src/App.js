@@ -1169,30 +1169,30 @@ function App() {
             <p className="vaccines-subject">Register</p>
             <ol>
               <li className="vaccines-li">Go to the <b>v-safe</b> website (link provided on the <b>v-safe</b> information sheet your healthcare provider gave you during your COVID-19 vaccination). Read the onscreen instructions and click <b>Get Started.</b></li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-01-get-started-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-01-get-started-@2x.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">Enter your name, mobile number, and other requested information. Click <b>Register.</b></li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-02-register-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-02-register-@2x.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">You will receive a text message with a verification code on your smartphone. Enter the code in <b>v-safe</b> and click <b>Verify.</b></li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-03-verify-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-03-verify-@2x.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">At the top of the screen, click <b>Enter vaccine information.</b></li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-04-enter-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-04-enter-@2x.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">Select which COVID-19 vaccine you received (found on your vaccination record card; if you cannot find your card, please contact your healthcare provider) and enter the date you were vaccinated. Click <b>Next.</b></li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-05-next-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-05-next-@2x.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">Review your vaccine information. If correct, click <b>Submit.</b> If not, click <b>Go Back.</b></li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-06-submit-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-06-submit-@2x.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">Congrats! You’re all set! If you complete your registration before 2 p.m. local time, <b>v-safe</b> will start your initial health check-in around 2 p.m. that day. If you register after 2 p.m., <b>v-safe</b> will start your initial health check-in immediately after you register — just follow the instructions.</li>
               Registration before 2 p.m. local time:
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-07-checkin-b.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-07-checkin-b.png" className="vaccines-image"></img><br></br>
               Registration after 2 p.m. local time:
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-07-checkin-a-@2x.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-07-checkin-a-@2x.png" className="vaccines-image"></img><br></br>
             </ol>
             <p className="vaccines-p"><b>What happens next?</b><br></br>You will receive a reminder text message from <b>v-safe</b> around 2 p.m. local time for the next check-in. Just click the link in the text message to start the check-in.</p>
             <p className="vaccines-subject">Complete a v-safe health check-in</p>
             <ol>
               <li className="vaccines-li">When you receive a <b>v-safe</b> check-in text message on your smartphone, click the link when ready.</li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-checkin-01-2x-b.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-checkin-01-2x-b.png" className="vaccines-image"></img><br></br>
               <li className="vaccines-li">Follow the instructions to complete the check-in.</li>
-              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-checkin-02-@2x_1.png" className="vaccines-image"></img>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-checkin-02-@2x_1.png" className="vaccines-image"></img><br></br>
             </ol>
             <p className="vaccines-p"><b>Need help with v-safe?</b><br></br>Call 800-CDC-INFO (800-232-4636) TTY 888-232-6348<br></br>Open 24 hours, 7 days a week</p>
             <p className="vaccines-subject">COVID-19 Vaccines and Severe Allergic Reactions</p>
