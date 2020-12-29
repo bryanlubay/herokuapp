@@ -556,18 +556,20 @@ function App() {
                   <a href="#what-to-expect"><td className="tdright">What to Expect at Your Vaccine Appointment</td></a>
                 </tr>
                 <tr >
-                  <a href="#vaccination-considerations"><td className="tdleft">COVID-19 Vaccination Considerations for <br></br>Persons with Underlying Medical Conditions</td></a>
-                  <a href="#vaccinated-benefits"><td className="tdright">Benefits of Getting Vaccinated</td></a>
-                </tr>
-                <tr >
                   <a href="#different-vaccines"><td className="tdleft">Different Vaccines</td></a>
                   <a href="#vaccine-safety"><td className="tdright">Ensuring the Safety of Vaccines</td></a>
                 </tr>
                 <tr >
                   <a href="#ensuring-vaccines-work"><td className="tdleft">Ensuring Vaccines Work</td></a>
-                  <a href="#faq-vaccination"><td className="tdright">Frequently Asked Questions about Vaccination</td></a>
+                  <a href="#vaccinated-benefits"><td className="tdright">Benefits of Getting Vaccinated</td></a>
                 </tr>
+                <tr >
+                <a href="#faq-vaccination"><td className="tdcenter">Frequently Asked Questions about Vaccination</td></a>
+                </tr>
+                <tr>
+                <a href="#vaccination-considerations"><td className="tdcenter">COVID-19 Vaccination Considerations for Persons with Underlying Medical Conditions</td></a>
 
+                </tr>
               </tbody>
             </Table><br></br>
 
@@ -1026,7 +1028,7 @@ function App() {
               <li className="vaccines-li">26.2% Hispanic/Latino</li>
               <li className="vaccines-li">9.8% African American</li>
               <li className="vaccines-li">4.4% Asian</li>
-              <li className="vaccines-li"><3% other races/ethnicities</li>
+              <li className="vaccines-li">&#60;3% other races/ethnicities</li>
             </ul>
             Age and sex breakdown:
             <ul>
