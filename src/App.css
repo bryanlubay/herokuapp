@@ -400,8 +400,8 @@
 }
 
 .accordion-question {
-  text-align: left;
-  margin: inherit;
+  /* text-align: left; */
+  margin: 0;
 }
 
 .accordion-answer {
