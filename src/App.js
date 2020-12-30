@@ -506,6 +506,30 @@ function App() {
   <div className="App" >
       <header className="App-header">
       
+
+      <Container>
+          <Navbar fixed="top" bg="light" expand="lg">
+    <Navbar.Brand href="https://cindylus-creations.herokuapp.com/">Cindylus Creations</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="mr-auto">
+        <Nav.Link href="https://cindylus-creations.herokuapp.com/">Home</Nav.Link>
+        <Nav.Link href="#link">About Me</Nav.Link>
+        <NavDropdown title="Sports" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Las Vegas Golden Knights</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Las Vegas Raiders</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Los Angeles Dodgers</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Los Angeles Lakers</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+  </Container>
+
+
+
         {/* STATE SEARCH */}
         <h3 hidden="true" id="loading">Loading . . .</h3>
         <Form id="formStateInput" className="state-form" onSubmit={e => {get_data(); e.preventDefault();}}>
