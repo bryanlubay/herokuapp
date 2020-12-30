@@ -8,6 +8,12 @@ import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+
 function convertState(state) {
   state = state.toUpperCase()
   if (state == "AL" || state == "ALABAMA") {
