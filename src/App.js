@@ -217,13 +217,28 @@ function convertEpoch(epoch) {
   return d.getUTCDate()
 }
 
+function show_vaccines() {
+  document.getElementById("vaccines").hidden = false
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
+
+}
+
+function hide_vaccines() {
+  document.getElementById("vaccines").hidden = true
+}
+
+
 function show_prevent() {
   document.getElementById("prevent").hidden = false
   document.getElementById("frequently_asked_questions").hidden = true
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
   document.getElementById("if_you_are_sick").hidden = true
-
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_prevent() {
@@ -236,6 +251,7 @@ function show_frequently_asked_questions() {
   document.getElementById("masks").hidden = true
   document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_frequently_asked_questions() {
@@ -248,6 +264,7 @@ function show_masks() {
   document.getElementById("masks").hidden = false
   document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = true
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_masks() {
@@ -260,6 +277,7 @@ function show_if_you_are_sick() {
   document.getElementById("masks").hidden = true
   document.getElementById("symptoms").hidden = true
   document.getElementById("if_you_are_sick").hidden = false
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_if_you_are_sick() {
@@ -272,6 +290,7 @@ function show_symptoms() {
   document.getElementById("masks").hidden = true
   document.getElementById("if_you_are_sick").hidden = true
   document.getElementById("symptoms").hidden = false
+  document.getElementById("vaccines").hidden = true
 }
 
 function hide_symptoms() {
@@ -486,7 +505,9 @@ function App() {
 
   <div className="App" >
       <header className="App-header">
-      
+
+
+
         {/* STATE SEARCH */}
         <h3 hidden="true" id="loading">Loading . . .</h3>
         <Form id="formStateInput" className="state-form" onSubmit={e => {get_data(); e.preventDefault();}}>
@@ -513,17 +534,1029 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (December 2020) VS <div className="red-text">Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
+          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (December 2020 / January 2021) VS <div className="red-text">Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
           {lineChart}
         </div>
 
         <div>
 
-          <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick </Button>
+          <Button className="info-buttons" variant="light" onClick={() => show_vaccines()}>Vaccines</Button>
+          <Button className="info-buttons" variant="success" onClick={() => show_prevent()}>Prevent Getting Sick</Button>
           <Button className="info-buttons" variant="primary" onClick={() => show_frequently_asked_questions()}>Frequently Asked Questions</Button>
           <Button className="info-buttons" variant="secondary" onClick={() => show_masks()}>Masks</Button>
           <Button className="info-buttons" variant="warning" onClick={() => show_symptoms()}>Symptoms</Button>
           <Button className="info-buttons" variant="danger" onClick={() => show_if_you_are_sick()}>If You Are Sick</Button>
+
+          {/* START VACCINES */}
+          <Alert className="alert" id="vaccines" variant="light" onClose={() => hide_vaccines()} dismissible hidden="true">
+            <Alert.Heading className="card-top-heading"><a id="vaccines-top">Vaccines</a></Alert.Heading>
+
+            <Table className="table">
+              <tbody>
+                <tr >
+                  <a href="#vaccinated-first"><td className="tdleft">Who Gets Vaccinated First?</td></a>
+                  <a href="#what-to-expect"><td className="tdright">What to Expect at Your Vaccine Appointment</td></a>
+                </tr>
+                <tr >
+                  <a href="#different-vaccines"><td className="tdleft">Different Vaccines</td></a>
+                  <a href="#vaccine-safety"><td className="tdright">Ensuring the Safety of Vaccines</td></a>
+                </tr>
+                <tr >
+                  <a href="#ensuring-vaccines-work"><td className="tdleft">Ensuring Vaccines Work</td></a>
+                  <a href="#vaccinated-benefits"><td className="tdright">Benefits of Getting Vaccinated</td></a>
+                </tr>
+                <tr >
+                <a href="#faq-vaccination"><td className="tdcenter">Frequently Asked Questions about Vaccination</td></a>
+                </tr>
+                <tr>
+                <a href="#vaccination-considerations"><td className="tdcenter">COVID-19 Vaccination Considerations for Persons with Underlying Medical Conditions</td></a>
+
+                </tr>
+              </tbody>
+            </Table><br></br>
+
+            <p className="vaccines-subject-header">8 Things to Know</p><br></br>
+            <p className="vaccines-p">Now that there are authorized and recommended vaccines to prevent COVID-19 in the United States, here are 8 things you need to know about the new COVID-19 Vaccination Program and COVID-19 vaccines.</p>
+            <ol type="1" >
+              <li className="vaccines-li"><b>The safety of COVID-19 vaccines is a top priority.</b><br></br>
+              The U.S. vaccine safety system ensures that all vaccines are as safe as possible. Learn how federal partners are working together to <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">ensure the safety of COVID-19 vaccines</a>.
+              CDC has developed a new tool, <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html"><b>v-safe</b></a>, as an additional layer of safety monitoring to increase our ability to rapidly detect any safety issues with COVID-19 vaccines. V-safe is a new smartphone-based, after-vaccination health checker for people who receive COVID-19 vaccines.</li>
+              <li className="vaccines-li"><b>COVID-19 vaccination will help protect you from getting COVID-19. Two doses are needed.</b><br></br>
+              Depending on the specific vaccine you get, a second shot 3-4 weeks after your first shot is needed to get the most protection the vaccine has to offer against this serious disease. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits.html">Learn more about the benefits of getting vaccinated</a>.</li>
+              <li className="vaccines-li"><b>CDC is making recommendations for who should be offered COVID-19 vaccine first when supplies are limited.</b><br></br>To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have <a href="https://www.cdc.gov/vaccines/hcp/acip-recs/vacc-specific/covid-19.html">published recommendations</a> for which groups should be vaccinated first.<br></br>Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">who should be vaccinated first when vaccine supplies are limited</a>.</li>
+              <li className="vaccines-li"><b>There is currently a limited supply of COVID-19 vaccine in the United States, but supply will increase in the weeks and months to come.</b><br></br>The goal is for everyone to be able to easily get vaccinated against COVID-19 as soon as large enough quantities are available. Once vaccine is widely available, the plan is to have several thousand vaccination providers offering COVID-19 vaccines in doctors’ offices, retail pharmacies, hospitals, and federally qualified health centers.</li>
+              <li className="vaccines-li"><b>After COVID-19 vaccination, you may have some side effects. This is a normal sign that your body is building protection.</b><br></br>The side effects from COVID-19 vaccination may feel like flu and might even affect your ability to do daily activities, but they should go away in a few days. Learn more about what <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html">side effects to expect and get helpful tips</a> on how to reduce pain and discomfort after your vaccination.
+              <br></br><b>Making COVID-19 Vaccination Recommendations</b>CDC makes vaccination recommendations, including those for COVID-19 vaccines, based on input from the Advisory Committee on Immunization Practices. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">Learn more</a></li>
+              <li className="vaccines-li"><b>Cost is not an obstacle to getting vaccinated against COVID-19.</b>Vaccine doses purchased with U.S. taxpayer dollars will be given to the American people at no cost. However, vaccination providers may be able to charge administration fees for giving the shot. Vaccination providers can get this fee reimbursed by the patient’s public or private insurance company or, for uninsured patients, by the <a href="https://www.hhs.gov/coronavirus/cares-act-provider-relief-fund/index.html">Health Resources and Services Administration’s Provider Relief Fund</a>.</li>
+              <li className="vaccines-li"><b>The first COVID-19 vaccine is being used under an Emergency Use Authorization (EUA) from the U.S. Food and Drug Administration (FDA). Many other vaccines are still being developed and tested.</b><br></br>Learn more about <a href="https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">FDA’s Emergency Use Authorization authority</a> and watch a <a href="https://www.youtube.com/watch?v=iGkwaESsGBQ">video on what an EUA is</a>.<br></br>If more COVID-19 vaccines are authorized or approved by FDA, the <a href="https://www.cdc.gov/vaccines/acip/index.html">Advisory Committee on Immunization Practices (ACIP)</a> will quickly hold public meetings to review all available data about each vaccine and make recommendations for their use in the United States. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">Learn more about how CDC is making COVID-19 vaccine recommendations</a>.<br></br>All ACIP-recommended vaccines will be included in the U.S. COVID-19 Vaccination Program. CDC continues to work at all levels with partners, including healthcare associations, on a flexible COVID-19 vaccination program that can accommodate different vaccines and adapt to different scenarios. State, tribal, local, and territorial health departments have <a href="https://www.cdc.gov/vaccines/covid-19/covid19-vaccination-guidance.html">developed distribution plans</a> to make sure all recommended vaccines are available to their communities.</li>
+              <li className="vaccines-li"><b>COVID-19 vaccines are one of many important tools to help us stop this pandemic.</b><br></br>It’s important for everyone to continue using all the tools available to help stop this pandemic as we learn more about how COVID-19 vaccines work in real-world conditions. Cover your mouth and nose with a mask when around others, stay at least 6 feet away from others, avoid crowds, and wash your hands often.<br></br>CDC will continue to update this website as vaccine recommendations and supply change.</li>
+            </ol>
+
+
+            <a id="vaccinated-first" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">Who Gets Vaccinated First?</p><br></br>
+            <p className="vaccines-p">Because the supply of COVID-19 vaccine in the United States is expected to be limited at first, CDC is providing recommendations to federal, state, and local governments about who should be vaccinated first. CDC’s recommendations are based on recommendations from the Advisory Committee on Immunization Practices (ACIP), an independent panel of medical and public health experts.<br></br>The recommendations were made with these goals in mind:
+            <ul>
+              <li className="vaccines-li">Decrease death and serious disease as much as possible.</li>
+              <li className="vaccines-li">Preserve functioning of society.</li>
+              <li className="vaccines-li">Reduce the extra burden COVID-19 is having on people already facing disparities.</li>
+            </ul></p>
+            <p className="vaccines-subject">Healthcare personnel and residents of long-term care facilities should be offered the first doses of COVID-19 vaccines (Phase 1a)</p>
+            <p className="vaccines-p">CDC recommends that initial supplies of COVID-19 vaccine be allocated to healthcare personnel and long-term care facility residents. This is referred to as Phase 1a. CDC <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">made this recommendation on December 3, 2020</a>.</p>
+            
+            
+            <p className="vaccines-subject">Groups who should be offered vaccination next (Phases 1b and 1c)</p>
+            <p className="vaccines-p">CDC recommends that, in the next phases (Phase 1b and Phase 1c), vaccination should be offered to people in the following groups. CDC made <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm695152e2.htm?s_cid=mm695152e2_w">this recommendation</a> on December 22, 2020.</p>
+
+            <p className="vaccines-subject">Phase 1b</p>
+            <ul>
+              <li className="vaccines-li"><b>Frontline essential workers</b> such as fire fighters, police officers, corrections officers, food and agricultural workers, United States Postal Service workers, manufacturing workers, grocery store workers, public transit workers, and those who work in the educational sector (teachers, support staff, and daycare workers.)</li>
+              <li className="vaccines-li"><b>People aged 75 years and older</b> because they are at high risk of hospitalization, illness, and death from COVID-19. People aged 75 years and older who are also residents of long-term care facilities should be offered vaccination in Phase 1a.</li>
+            </ul>
+
+            <p className="vaccines-subject">Phase 1c</p>
+            <ul>
+              <li className="vaccines-li"><b>People aged 65—74 years</b> because they are at high risk of hospitalization, illness, and death from COVID-19. People aged 65—74 years who are also residents of long-term care facilities should be offered vaccination in Phase 1a.</li>
+              <li className="vaccines-li"><b>People aged 16—64 years with underlying medical conditions</b> which increase the risk of serious, life-threatening complications from COVID-19.</li>
+              <li className="vaccines-li"><b>Other essential workers</b>, such as people who work in transportation and logistics, food service, housing construction and finance, information technology, communications, energy, law, media, public safety, and public health.</li>
+            </ul>
+            <p className="vaccines-subject">As vaccine availability increases, vaccination recommendations will expand to include more groups</p>
+            <p className="vaccines-p">The goal is for everyone to be able to easily get a COVID-19 vaccination as soon as large quantities of vaccine are available. As vaccine supply increases but remains limited, ACIP will expand the groups recommended for vaccination.</p>
+
+            
+            <p className="vaccines-subject">The Importance of COVID-19 Vaccination for Healthcare Personnel</p>
+            <p className="vaccines-p">Based on <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">recommendations</a> from the <a href="https://www.cdc.gov/vaccines/acip/">Advisory Committee on Immunization Practices (ACIP)</a>, an independent panel of medical and public health experts, <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">CDC recommends healthcare personnel be among those offered the first doses of COVID-19 vaccines</a>. Healthcare personnel include all paid and unpaid persons serving in healthcare settings who have the potential for direct or indirect exposure to patients or infectious materials.<br></br>This recommendation pertains to paid and unpaid healthcare personnel working in a variety of healthcare settings—for example, acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes and assisted living facilities, home health care, mobile clinics, and outpatient facilities, such as dialysis centers and physicians’ offices.</p>
+
+            <p className="vaccines-subject">Examples of healthcare personnel include:</p>
+            <ul>
+              <li className="vaccines-li">Emergency medical service personnel</li>
+              <li className="vaccines-li">Nurses and nursing assistants</li>
+              <li className="vaccines-li">Physicians</li>
+              <li className="vaccines-li">Technicians</li>
+              <li className="vaccines-li">Therapists</li>
+              <li className="vaccines-li">Dentists</li>
+              <li className="vaccines-li">Dental hygienists and assistants</li>
+              <li className="vaccines-li">Phlebotomists</li>
+              <li className="vaccines-li">Pharmacists</li>
+              <li className="vaccines-li">Students and trainees</li>
+              <li className="vaccines-li">Contractual staff</li>
+              <li className="vaccines-li">Dietary and food services staff</li>
+              <li className="vaccines-li">Environmental services staff</li>
+              <li className="vaccines-li">Administrative staff</li>
+              Learn more about who is included under the broad term “<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control-recommendations.html#anchor_1604360694408">healthcare personnel</a>.”
+            </ul>
+            <p className="vaccines-subject">Healthcare personnel are at risk of exposure</p>
+            <p className="vaccines-p">Healthcare personnel continue to be on the front line of the nation’s fight against this deadly pandemic. Healthcare personnel’s race and ethnicity, underlying health conditions, occupation type, and job setting can contribute to their risk of acquiring COVID-19 and experiencing severe outcomes, including death. By providing critical care to those who are or might be infected with the virus that causes COVID-19, healthcare personnel have a high risk of being exposed to and getting sick with COVID-19. As of December 3, the day CDC published these recommendations, there were more than 249,000 confirmed COVID-19 cases and 866 deaths among healthcare personnel. <a href="https://covid.cdc.gov/covid-data-tracker/#health-care-personnel">View more recent numbers on the toll COVID-19 has taken on healthcare personnel</a>.</p>
+
+            <p className="vaccines-subject">Vaccinating healthcare personnel protects healthcare capacity</p>
+            <p className="vaccines-p">When healthcare personnel get sick with COVID-19, they are not able to work and provide key services for patients or clients. Given the evidence of ongoing COVID-19 infections among healthcare personnel and the critical role they play in caring for others, continued protection of them at work, at home, and in the community remains a national priority. Early vaccine access is critical to ensuring the health and safety of this essential workforce of approximately 21 million people, protecting not only them but also their patients, families, communities, and the broader health of our country.</p>
+            <p className="vaccines-subject">Vaccinating healthcare personnel helps prevent patients from getting COVID-19</p>
+            <p className="vaccines-p">Healthcare personnel who get COVID-19 can also spread the virus to those they are caring for—including  hospitalized patients and  residents of long-term care facilities. Many of these individuals may have underlying health conditions that put them at risk for severe COVID-19 illness. Healthcare personnel can also spread the virus to other healthcare personnel. Learn more about the importance of COVID-19 vaccination for residents of long-term care facilities.</p>
+            <p className="vaccines-subject">Benefits of vaccination must outweigh possible risks</p>
+            <p className="vaccines-p">To help make important medical products, including vaccines, available quickly during the <a href="https://www.youtube.com/results?search_query=%23COVID19">COVID-19</a> pandemic, the U.S Food and Drug Administration (FDA) can use what is known as an <a href="https://www.youtube.com/watch?v=iGkwaESsGBQ">Emergency Use Authorization (EUA)</a>. Before any vaccine can be authorized for use under an EUA, the FDA must determine that the vaccine’s known or potential benefits outweigh known or potential risks. This is true for all vaccines, including COVID-19 vaccines.Once a vaccine is authorized for use under an EUA, ACIP will review available data on the vaccine before voting and advising CDC on whether to recommend the vaccine. Learn more about how <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">CDC is making COVID-19 vaccine recommendations</a>.</p>
+            <p className="vaccines-subject">The safety of COVID-19 vaccines and of healthcare personnel receiving the vaccines is a top priority</p>
+            <p className="vaccines-p">The safety of all vaccines are studied thoroughly in clinical trials. Once healthcare personnel and other members of the public begin receiving COVID-19 vaccinations, CDC and FDA will continue to closely monitor vaccine safety. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">COVID-19 vaccine safety monitoring</a>.</p>
+            <p className="vaccines-subject">Risks and benefits will be explained to everyone offered a COVID-19 vaccination</p>
+            <p className="vaccines-p">Before anyone can receive a COVID-19 vaccine, they must be given an EUA fact sheet with detailed information about the COVID-19 vaccine they will be receiving.</p>
+            <p className="vaccines-subject">Importance of COVID-19 Vaccination for Residents of Long-term Care Facilities</p>
+            <p className="vaccines-p">Based on <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">recommendations</a> from the <a href="https://www.cdc.gov/vaccines/acip/">Advisory Committee on Immunization Practices (ACIP)</a>, an independent panel of medical and public health experts, CDC recommends residents of long-term care facilities (LTCF) be included among those offered the first supply of COVID-19 vaccines.</p>
+            <p className="vaccines-subject">Vaccinating LTCF residents will save lives</p>
+            <p className="vaccines-p">Making sure LTCF residents can receive COVID-19 vaccination as soon as vaccines are available will help save the lives of those who are most at risk of dying from COVID-19. According to ACIP’s recommendations, LTCF residents include adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently. The communal nature of LTCFs and the population served (generally older adults often with underlying medical conditions) puts facility residents at increased risk of infection and severe illness from COVID-19. By November 6, 2020, <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6946a3.htm">approximately 569,000–616,000 COVID-19 cases and 91,500 deaths</a> were reported among LTCF residents and staff members in the United States, accounting for 39% of deaths nationwide.</p>
+            <p className="vaccines-subject">Benefits of vaccination believed to outweigh possible risks</p>
+            <p className="vaccines-p">All COVID-19 vaccines were tested in clinical trials involving tens of thousands of people to make sure they meet safety standards and protect adults of different races, ethnicities, and ages, including adults over the age of 65, participated in the clinical trials. There were no serious safety concerns. The most common side effects were pain at the injection site and signs and symptoms like fever and chills. After a review of all the available information, ACIP and CDC agreed the lifesaving benefits of COVID-19 vaccination for LTCF residents outweigh the risks of possible side effects.</p>
+            <p className="vaccines-subject">The safety of COVID-19 vaccines is a top priority</p>
+            <p className="vaccines-p">To help make important unapproved medical products, including vaccines, available quickly during the <a href="https://www.youtube.com/results?search_query=%23COVID19">COVID-19</a> pandemic, the US Food and Drug Administration (FDA) can use what is known as an <a href="https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained">Emergency Use Authorization (EUA)</a>. Before any vaccine can be authorized for use under an EUA, FDA must determine that the vaccine’s benefits outweigh possible risks.CDC and FDA are monitoring vaccine safety closely. The United States is using existing robust systems and data sources to conduct ongoing safety monitoring. An additional layer of safety monitoring has also been added that allows CDC and FDA to evaluate COVID-19 vaccine safety almost immediately. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">COVID-19 vaccine safety monitoring</a>.<br></br>For LTCFs in particular, CDC will work with pharmacies and other partners to report possible side effects (called adverse events) to the <a href="https://vaers.hhs.gov/reportevent.html">Vaccine Adverse Event Reporting System (VAERS)</a>. Facility staff and residents’ families are encouraged to also report any adverse events immediately.<br></br>CDC is working with pharmacies and other partners to provide communication materials to help LTCFs educate residents and their families about the vaccine, answer their questions about vaccine safety and other issues, and prepare them for vaccination clinics. For some COVID-19 vaccines, two shots are needed to provide the best protection, and the shots are given several weeks apart. Each recipient or caregiver will receive a vaccination record card to ensure they receive the correct vaccine for the second dose.</p>
+            <p className="vaccines-subject">Risks and benefits will be explained to everyone offered a COVID-19 vaccination</p>
+            <p className="vaccines-p">Explaining the risks and benefits of any treatments to a patient – in a way that they understand – is the standard of care. Written consent is not required by federal law for COVID-19 vaccination in the United States; however, COVID-19 vaccine providers should consult with their own legal counsel for state requirements related to consent. In LTCFs, consent or assent for vaccination should be obtained from residents (or the person appointed to make medical decisions on their behalf) and documented in the resident’s chart per standard practice.<br></br>Pharmacy partners that are administering COVID-19 vaccine at LTCFs as part of the <a href="https://www.cdc.gov/vaccines/covid-19/long-term-care/pharmacy-partnerships.html">Federal Pharmacy Partnership for Long-term Care Program</a> may require verbal, email, or written consent from recipients before vaccination. This is at the discretion of the pharmacy. LTCF administrators can request pharmacy partners obtain consent from residents’ families in advance when they are serving as medical proxies.<br></br>Pharmacy partners will also work directly with LTCFs to ensure staff and residents who receive the vaccine also receive an EUA fact sheet before vaccination. The EUA fact sheet explains the risks and benefits of the COVID-19 vaccine they are receiving and what to expect. Each LTCF resident’s medical chart must note that this information was provided to the resident. If a resident is unable to make medical decisions due to decreased mental capacity or illness, the EUA fact sheet will be provided to the person appointed to make medical decisions on their behalf (the medical proxy or power of attorney).</p>
+            <p className="vaccines-subject">COVID-19 Vaccination Considerations for People Who Are Pregnant</p>
+            <p className="vaccines-p">CDC and the independent Advisory Committee on Immunization Practices (ACIP) have provided information to assist pregnant people with their decision to receive the COVID-19 vaccine. People who are pregnant may choose to be vaccinated. If they have questions around getting vaccinated, a discussion with a healthcare provider might help them make an informed decision.</p>
+            <p className="vaccines-subject">There are limited data about the safety of COVID-19 vaccines for people who are pregnant</p>
+            <p className="vaccines-p">Currently, there are limited data available on the safety of COVID-19 vaccines for people who are pregnant. Animal developmental and reproductive toxicity (DART) studies are ongoing and studies in people who are pregnant are planned. CDC and the Food and Drug Administration (FDA) have safety monitoring systems in place to capture information about vaccination during pregnancy and will closely monitor reports.<br></br>While studies have not yet been done, based on how mRNA vaccines work, experts believe they are unlikely to pose a risk for people who are pregnant. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mRNA.html">mRNA vaccines</a> do not contain the live virus that causes COVID-19 and therefore cannot give someone COVID-19. Additionally, mRNA vaccines do not interact with genetic material DNA because the mRNA does not enter the nucleus of the cell. Cells break apart the mRNA quickly. However, the potential risks of mRNA vaccines to the pregnant person and her fetus are unknown because these vaccines have not been studied in pregnant women.</p>
+            <p className="vaccines-subject">Pregnant people are at increased risk for severe illness from COVID-19</p>
+            <p className="vaccines-p">Observational data demonstrate that, while the chances for these severe health effects are infrequent, pregnant people <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/pregnancy-breastfeeding.html">with COVID-19 have an increased risk of severe illness</a>, including illness that results in ICU admission, mechanical ventilation, and death. Additionally, pregnant people with COVID-19 might be at increased risk of adverse pregnancy outcomes, such as preterm births.</p>
+            <p className="vaccines-subject">Because supplies are currently limited, CDC recommends certain groups receive the first supply of COVID-19 vaccines</p>
+            <p className="vaccines-p">At this time, healthcare personnel are recommended to be among the first to receive the vaccine because they are at increased risk of exposure to the virus that causes COVID-19.<br></br>Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">how CDC is making COVID-19 vaccination recommendations</a>, including recommendations while there is a limited supply.</p>
+            <p className="vaccines-subject">Getting vaccinated is a personal choice for people who are pregnant</p>
+            <p className="vaccines-p">People who are pregnant and part of a group recommended to receive the COVID-19 vaccine, such as healthcare personnel, may choose to be vaccinated. A conversation between pregnant patients and their clinicians may help them decide whether to get vaccinated with a vaccine that has been authorized for use under Emergency Use Authorization (EUA). While a conversation with a clinician may be helpful, it is not required prior to vaccination.<br></br>Key considerations pregnant patients can discuss with their healthcare provider include:</p>
+            <ul>
+              <li className="vaccines-li">The likelihood of exposure to SARS-CoV-2, the virus that causes COVID-19</li>
+              <li className="vaccines-li">Risks of COVID-19 to them and potential risks to their fetuses</li>
+              <li className="vaccines-li">What is known about the vaccine: how well it works to develop protection in the body, known side effects of the vaccine, and lack of data during pregnancy</li>
+            </ul>
+            Pregnant patients who decide to get vaccinated should continue to follow the current guidelines to prevent the spread of COVID-19 after they are vaccinated. That means:
+            <ul>
+              <li className="vaccines-li">Wearing a mask</li>
+              <li className="vaccines-li">Staying at least six feet away from others</li>
+              <li className="vaccines-li">Avoiding crowds</li>
+              <li className="vaccines-li">Washing hands with soap and water for 20 seconds or using hand sanitizer with at least 60% alcohol</li>
+              <li className="vaccines-li">Following <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html">CDC travel guidance</a></li>
+              <li className="vaccines-li">Following quarantine guidance after exposure to COIV-19</li>
+              <li className="vaccines-li">Following any applicable workplace guidance</li>
+            </ul>
+
+            <p className="vaccines-subject">Vaccine side effects</p>
+            <p className="vaccines-p">These mRNA COVID-19 vaccines are expected to produce some side effects after vaccination, especially after the second dose. Pregnant women who experience fever following vaccination may be counseled to take acetaminophen because fever has been associated with adverse pregnancy outcomes. Acetaminophen may be offered as an option for pregnant women experiencing other post-vaccination symptoms as well.</p>
+            <p className="vaccines-subject">Routine testing and pregnancy</p>
+            <p className="vaccines-p">Routine testing for pregnancy before COVID-19 vaccination is not recommended. Women who are trying to become pregnant do not need to avoid pregnancy after receiving an mRNA COVID-19 vaccine.</p>
+            <p className="vaccines-subject">COVID-19 vaccination considerations for people who are breastfeeding</p>
+            <p className="vaccines-p">There are no data on the safety of COVID-19 vaccines in lactating women or on the effects of mRNA vaccines on the breastfed infant or on milk production/excretion. mRNA vaccines are not thought to be a risk to the breastfeeding infant. People who are breastfeeding and are part of a group recommended to receive a COVID-19 vaccine, such as healthcare personnel, may choose to be vaccinated.</p>
+            <p className="vaccines-subject">How CDC Is Making COVID-19 Vaccine Recommendations</p>
+            <p className="vaccines-p">When the Food and Drug Administration (FDA) authorizes or approves a COVID-19 vaccine, the Advisory Committee on Immunization Practices (ACIP) will quickly hold a public meeting to review all available data about that vaccine (sign up to receive email updates whenever ACIP’s Meeting Information is updated). From these data, ACIP will then vote on whether to recommend the vaccine and, if so, who should receive it.</p>
+            <ul>
+              <li className="vaccines-li">On December 1, 2020, ACIP <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">recommended</a> that health care personnel and residents of long-term care facilities be offered COVID-19 vaccine in the initial phase of the vaccination program.</li>
+              <li className="vaccines-li">On December 11, 2020, the FDA issued an <a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/pfizer-biontech-covid-19-vaccine">Emergency Use Authorization for use of the Pfizer-BioNTech COVID-19 vaccine</a> in persons aged 16 years and older for the prevention of COVID-19.</li>
+              <li className="vaccines-li">On December 13, 2020, the <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6950e2.htm">ACIP issued recommendations for the use of Pfizer-BioNTech’s COVID-19 vaccine</a> for the prevention of COVID-19.</li>
+              <li className="vaccines-li">On December 18, 2020, the FDA issued an <a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/moderna-covid-19-vaccine">Emergency Use Authorization for the use of the Moderna COVID-19 vaccine</a> ​for use in individuals 18 years of age and older.​</li>
+              <li className="vaccines-li">On December 20, 2020, <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm695152e1.htm">ACIP issued recommendations for the use of Moderna COVID-19 vaccine</a> for the prevention of COVID-19.</li>
+              <li className="vaccines-li">On December 20, 2020, ACIP updated interim vaccine allocation <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm695152e2.htm">recommendations</a>.</li>
+            </ul>
+            <p className="vaccines-subject">COVID-19 Vaccination Recommendations to Date<br></br>December 1, 2020</p>
+            <p className="vaccines-p">Vaccination in the initial phase of the COVID-19 vaccination program (Phase 1a) should be offered to both 1) healthcare personnel and 2) residents of long-term care facilities.<br></br>Healthcare personnel are defined as paid and unpaid people serving in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. Long-term care facility residents are defined as adults who reside in facilities that provide a variety of services, including medical and personal care, to persons who are unable to live independently.<br></br>Read more in CDC’s <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm">Morbidity and Mortality Weekly Report</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html#groups-considered">clinical considerations for further sub-prioritization</a> within these groups as needed.<br></br>Since the pandemic began, ACIP has been holding special meetings to review U.S. data on COVID-19 and the vaccines in development to help prevent it. Before making recommendations, ACIP plans to review all available clinical trial information, including descriptions of
+            <ul>
+              <li className="vaccines-li">Who is receiving each candidate vaccine (age, race, ethnicity, underlying medical conditions)</li>
+              <li className="vaccines-li">How different groups respond to the vaccine</li>
+              <li className="vaccines-li">Side effects experienced</li>
+              </ul></p>
+            <p className="vaccines-subject">Goals for vaccination if supply is limited</p>
+            <p className="vaccines-p">
+            ACIP set the following goals for recommending which groups should receive COVID-19 vaccines if supply is limited:
+            <ul>
+              <li className="vaccines-li">Decrease death and serious disease as much as possible</li>
+              <li className="vaccines-li">Preserve functioning of society</li>
+              <li className="vaccines-li">Reduce the extra burden the disease is having on people already facing disparities</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Ethical principles</p>
+            <p className="vaccines-p">
+            ACIP identified four ethical principles to guide their decision-making process if supply is limited:
+              <ul>
+                <li className="vaccines-li"><b>Maximize benefits and minimize harms</b> — Respect and care for people using the best available data to promote public health and minimize death and severe illness.</li>
+                <li className="vaccines-li"><b>Mitigate health inequities</b> — Reduce health disparities in the burden of COVID-19 disease and death, and make sure everyone has the opportunity to be as healthy as possible.</li>
+                <li className="vaccines-li"><b>Promote justice</b> — Treat affected groups, populations, and communities fairly. Remove unfair, unjust, and avoidable barriers to COVID-19 vaccination.</li>
+                <li className="vaccines-li"><b>Promote transparency</b> — Make a decision that is clear, understandable, and open for review. Allow and seek public participation in the creation and review of the decision processes.</li>
+              </ul>
+              Learn more about <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6947e3.htm">ACIP’s Ethical Principles for Allocating Initial Supplies of COVID-19 Vaccine.</a>​
+            </p>
+            <p className="vaccines-subject">Groups considered for early vaccination if supply is limited</p>
+            <p className="vaccines-p">
+            Before making an official recommendation, ACIP considered four groups to possibly recommend for early COVID-19 vaccination if supply is limited:
+            <ul>
+              <li className="vaccines-li">Healthcare personnel</li>
+              <li className="vaccines-li">Workers in essential and critical industries</li>
+              <li className="vaccines-li">People at high risk for severe COVID-19 illness due to underlying medical conditions</li>
+              <li className="vaccines-li">People 65 years and older</li>
+            </ul>
+            <b>Healthcare personnel</b> continue to be on the front line of the nation’s fight against this deadly pandemic. By providing care to those who are or might be infected with the virus that causes COVID-19, many healthcare personnel have a high risk of being exposed to and getting sick with COVID-19. Learn more <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/hcp.html">about the importance of vaccination for healthcare personnel</a>.<br></br><b>Workers in essential and critical industries</b> are considered part of America’s critical infrastructure, as defined by the <a href="https://www.cisa.gov/publication/guidance-essential-critical-infrastructure-workforce">Cybersecurity & Infrastructure Security Agency</a>. Current data show that many of these workers are at increased risk for getting COVID-19. Early vaccine access is critical not only to protect them but also to maintain the essential services they provide U.S. communities. <br></br><b>People with certain</b> <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">underlying medical conditions</a> are at increased risk for severe COVID-19 illness, regardless of their age. Severe illness means that the person with COVID-19 may require hospitalization, intensive care, or a ventilator to help them breathe, or that they may even die. Early vaccine access is critical to ensuring the health and safety of this population that is disproportionately affected by COVID-19.<br></br><b>Among adults, the risk for severe illness and death from COVID-19 increases with age, with <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> at highest risk.</b> Early vaccine access is critical to help protect this population that is disproportionately affected by COVID-19.
+            </p>
+            <p className="vaccines-subject">Other frameworks</p>
+            <p className="vaccines-p">
+            Input from the public and the following professional groups is informing ACIP’s discussions on who should receive COVID-19 vaccines if supply is limited:
+            <ul>
+              <li className="vaccines-li"><b>Johns Hopkins Bloomberg School of Public Health:</b> <a href="https://www.centerforhealthsecurity.org/our-work/publications/interim-framework-for-covid-19-vaccine-allocation-and-distribution-in-the-us">Interim Framework for COVID-19 Vaccine Allocation and Distribution in the United States</a></li>
+              <li className="vaccines-li"><b>The National Academies of Sciences, Engineering, and Medicine:</b> <a href="https://www.nap.edu/catalog/25914/discussion-draft-of-the-preliminary-framework-for-equitable-allocation-of-covid-19-vaccine">Framework for Equitable Allocation of COVID-19 Vaccine</a></li>
+              <li className="vaccines-li"><b>World Health Organization (WHO) Strategic Advisory Group of Experts (SAGE):</b> <a href="https://apps.who.int/iris/bitstream/handle/10665/334299/WHO-2019-nCoV-SAGE_Framework-Allocation_and_prioritization-2020.1-eng.pdf">WHO SAGE Values Framework for the Allocation and Prioritization of COVID-19 Vaccination</a></li>
+              <li className="vaccines-li"><b>WHO SAGE:</b> <a href="https://www.who.int/docs/default-source/immunization/sage/covid/sage-prioritization-roadmap-covid19-vaccines.pdf?Status=Temp&sfvrsn=bf227443_2&ua=1">WHO SAGE Roadmap for Prioritizing Uses of COVID-19 Vaccines in the Context of Limited Supply</a></li>
+            </ul>
+            </p>
+
+
+
+            <a id="what-to-expect" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">What to Expect at Your Vaccine Appointment</p><br></br>
+            <p className="vaccines-p">It’s important for everyone to continue using all the tools available to help stop this pandemic as we learn more about how COVID-19 vaccines work in real-world conditions. Cover your mouth and nose with a mask when around others, stay at least 6 feet away from others, avoid crowds, and wash your hands often.<br></br>
+            Because COVID-19 is a new disease with new vaccines, you may have questions about what happens before, during, and after your appointment to get vaccinated. These tips will help you know what to expect when you get vaccinated, what information your provider will give you, and resources you can use to monitor your health after you are vaccinated.</p>
+            <p className="vaccines-subject">Before Vaccination</p>
+            <ul>
+              <li className="vaccines-li">See if COVID-19 vaccination is recommended for you right now.</li>
+              <li className="vaccines-li">Learn more about the <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">different types of COVID-19 vaccines and how they work</a>.</li>
+              <li className="vaccines-li">Learn more about the <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/vaccine-benefits.html">benefits of getting a COVID-19 vaccination</a>.</li>
+              <li className="vaccines-li">When you go to your appointment, remember to cover your mouth and nose with a mask when you are around others and stay at least 6 feet away from others. <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/doctor-visits-medicine.html">Learn more about protecting yourself from COVID-19 during visits to the doctor or a pharmacy</a>.</li>
+            </ul>
+            <p className="vaccines-subject">When You Get Vaccinated</p>
+            <ul>
+              <li className="vaccines-li">You should receive a vaccination card or printout that tells you what COVID-19 vaccine you received, the date you received it, and where you received it.</li>
+              <li className="vaccines-li">You should receive a paper or electronic version of a fact sheet that tells you more about the specific COVID-19 vaccine you are being offered. Each authorized COVID-19 vaccine has its own fact sheet that contains information to help you understand the risks and benefits of receiving that specific vaccine.</li>
+              <li className="vaccines-li">All people who get a COVID-19 vaccine should be monitored on-site. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/allergic-reaction.html">COVID-19 vaccines and rare severe allergic reactions</a>.</li>
+            </ul>
+            <p className="vaccines-subject">After Vaccination</p>
+            <ul>
+              <li className="vaccines-li">With most COVID-19 vaccines, you will need two shots in order for them to work. Get the second shot even if you have side effects after the first one, unless a vaccination provider or your doctor tells you not to get a second shot.</li>
+              <li className="vaccines-li">Ask your healthcare provider about getting started with <b>v-safe</b>, a free, smartphone-based tool that uses text messaging and web surveys to provide personalized health check-ins after you receive a COVID-19 vaccination. V-safe also reminds you to get your second dose if you need one. Learn more at <a href="http://www.cdc.gov/vsafe">www.cdc.gov/vsafe</a>.</li>
+              <li className="vaccines-li">It takes time for your body to build protection after any vaccination. COVID-19 vaccines that require 2 shots may not protect you until a week or two after your second shot.</li>
+            </ul>
+            <p className="vaccines-subject">What to Expect after Getting a COVID-19 Vaccine</p>
+            <p className="vaccines-p">COVID-19 vaccination will help protect you from getting COVID-19. You may have some side effects, which are normal signs that your body is building protection. These side effects may affect your ability to do daily activities, but they should go away in a few days.</p>
+            <p className="vaccines-subject">Common side effects</p>
+            <p className="vaccines-p">
+            On the arm where you got the shot:
+            <ul>
+              <li className="vaccines-li">Pain</li>
+              <li className="vaccines-li">Swelling</li>
+            </ul>
+            Throughout the rest of your body:
+            <ul>
+              <li className="vaccines-li">Fever</li>
+              <li className="vaccines-li">Chills</li>
+              <li className="vaccines-li">Tiredness</li>
+              <li className="vaccines-li">Headache</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Helpful tips</p>
+            <p className="vaccines-p">
+            If you have pain or discomfort, talk to your doctor about taking an over-the-counter medicine, such as ibuprofen or acetaminophen.<br></br>
+            To reduce pain and discomfort where you got the shot:
+            <ul>
+              <li className="vaccines-li">Apply a clean, cool, wet washcloth over the area.</li>
+              <li className="vaccines-li">Use or exercise your arm.</li>
+            </ul>
+            To reduce discomfort from fever:
+            <ul>
+              <li className="vaccines-li">Drink plenty of fluids.</li>
+              <li className="vaccines-li">Dress lightly.</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">When to call the doctor</p>
+            <p className="vaccines-p">
+            In most cases, discomfort from fever or pain is normal. Contact your doctor or healthcare provider:
+            <ul>
+              <li className="vaccines-li">If the redness or tenderness where you got the shot increases after 24 hours</li>
+              <li className="vaccines-li">If your side effects are worrying you or do not seem to be going away after a few days</li>
+            </ul>
+            If you get a COVID-19 vaccine and you think you might be having a severe allergic reaction after leaving the vaccination site, seek immediate medical care by calling 911. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/allergic-reaction.html">COVID-19 vaccines and rare severe allergic reactions</a>.
+            </p>
+            <p className="vaccines-subject">Remember</p>
+            <ul>
+              <li className="vaccines-li">Side effects may feel like flu and even affect your ability to do daily activities, but they should go away in a few days.</li>
+              <li className="vaccines-li">With most COVID-19 vaccines, you will need 2 shots in order for them to work. Get the second shot even if you have side effects after the first shot, unless a vaccination provider or your doctor tells you not to get a second shot.</li>
+              <li className="vaccines-li">It takes time for your body to build protection after any vaccination. COVID-19 vaccines that require 2 shots may not protect you until a week or two after your second shot.</li>
+            </ul>
+            <p className="vaccines-p">It’s important for everyone to continue using all the tools available to help stop this pandemic as we learn more about how COVID-19 vaccines work in real-world conditions. Cover your mouth and nose with a mask when around others, stay at least 6 feet away from others, avoid crowds, and wash your hands often.</p>
+
+            <a id="vaccination-considerations" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">COVID-19 Vaccination Considerations for Persons with Underlying Medical Conditions</p><br></br>
+            <p className="vaccines-p">Adults of any age with <b>certain underlying medical conditions</b> are at increased risk for severe illness from the virus that causes COVID-19. mRNA COVID-19 vaccines may be administered to people with underlying medical conditions provided they have not had <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/allergic-reaction.html">a severe allergic reaction</a> to any of the ingredients in the vaccine. The following information aims to help people in the groups listed below make an informed decision about receiving the mRNA COVID-19 vaccine.</p>
+            <p className="vaccines-subject">People who have weakened immune systems</p>
+            <p className="vaccines-p">
+            People with HIV and those with weakened immune systems due to other illnesses  or medication <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">might be at increased risk for severe COVID-19</a>. They may receive a COVID-19 vaccine. However, they should be aware of the limited safety data:
+            <ul>
+              <li className="vaccines-li">Information about the safety of mRNA COVID-19 vaccines for people who have weakened immune systems in this group is not yet available.</li>
+              <li className="vaccines-li">People living with HIV were included in clinical trials, though safety data specific to this group are not yet available at this time.</li>
+            </ul>
+            People with weakened immune systems should also be aware of the  potential for reduced immune responses to the vaccine, as well as the need to continue following all <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">current guidance</a> to protect themselves against COVID-19 (see below).
+            </p>
+            <p className="vaccines-subject">People who have autoimmune conditions</p>
+            <p className="vaccines-p">People with autoimmune conditions may receive an mRNA COVID-19 vaccine. However, they should be aware that no data are currently available on the safety of mRNA COVID-19 vaccines for them. Individuals from this group were eligible for enrollment in clinical trials.</p>
+            <p className="vaccines-subject">People who have previously had Guillain-Barre syndrome</p>
+            <p className="vaccines-p">Persons who have previously had GBS may receive an mRNA COVID-19 vaccine. To date, no cases of Guillain-Barre syndrome (GBS) have been reported following vaccination among participants in the mRNA COVID-19 vaccine clinical trials. With few exceptions, the independent Advisory Committee on Immunization Practices (ACIP) <a href="https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/index.html">general best practice guidelines for immunization</a> do not include a history of GBS as a precaution to vaccination with other vaccines.</p>
+            <p className="vaccines-subject">People who have previously had Bell’s palsy</p>
+            <p className="vaccines-p">Cases of Bell’s palsy were reported in participants in the mRNA COVID-19 vaccine clinical trials. However, the Food and Drug Administration (FDA) does not consider these to be above the rate expected in the general population. They have not concluded these cases were caused by vaccination. Therefore, persons who have previously had Bell’s Palsy may receive an mRNA COVID-19 vaccine.</p>
+            <p className="vaccines-subject">After vaccination, current guidelines to prevent the spread of COVID-19 should be followed</p>
+            <p className="vaccines-p">Until experts learn more about the protection that COVID-19 vaccines provide under real-life conditions, people who decide to get vaccinated should continue to follow all <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">current guidance</a> to protect themselves against COVID-19 after they are vaccinated. That means:
+            <ul>
+              <li className="vaccines-li">Wearing a mask</li>
+              <li className="vaccines-li">Staying at least six feet away from others</li>
+              <li className="vaccines-li">Avoiding crowds</li>
+              <li className="vaccines-li">Washing hands with soap and water for 20 seconds or using hand sanitizer with at least 60% alcohol</li>
+              <li className="vaccines-li">Following <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html">CDC travel guidance</a></li>
+              <li className="vaccines-li">Following quarantine guidance after exposure to COVID-19</li>
+              <li className="vaccines-li">Following any applicable workplace guidance</li>
+            </ul>
+            </p>
+
+
+            <a id="vaccinated-benefits" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">Benefits of Getting Vaccinated</p><br></br>
+            <p className="vaccines-p">We understand that some people may be concerned about getting vaccinated now that COVID-19 vaccines are available in the United States. While more COVID-19 vaccines are being developed as quickly as possible, routine processes and procedures remain in place to <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">ensure the safety</a> of any vaccine that is authorized or approved for use. Safety is a top priority, and there are many reasons to get vaccinated.<br></br>Below is a summary of the benefits of COVID-19 vaccination based on what we currently know. CDC will continue to update this page as more data become available.</p>
+            <p className="vaccines-subject">COVID-19 vaccination will help keep you from getting COVID-19</p>
+            <ul>
+              <li className="vaccines-li">All COVID-19 vaccines currently available in the United States have been shown to be highly effective at preventing COVID-19. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html">Learn more about the different COVID-19 vaccines</a>.</li>
+              <li className="vaccines-li">All COVID-19 vaccines that are in development are being carefully evaluated in clinical trials and will be authorized or approved only if they make it substantially less likely you’ll get COVID-19. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/effectiveness.html">Learn more about how federal partners are ensuring COVID-19 vaccines work</a>.</li>
+              <li className="vaccines-li">Based on what we know about vaccines for other diseases and early data from clinical trials, experts believe that getting a COVID-19 vaccine may also help keep you from getting seriously ill even if you do get COVID-19.</li>
+              <li className="vaccines-li">Getting vaccinated yourself may also protect people around you, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">particularly people at increased risk for severe illness from COVID-19</a>.</li>
+              <li className="vaccines-li">Experts continue to conduct more studies about the effect of COVID-19 vaccination on severity of illness from COVID-19, as well as its ability to keep people from spreading the virus that causes COVID-19.</li>
+            </ul>
+            <p className="vaccines-subject">COVID-19 vaccination is a safer way to help build protection</p>
+            <ul>
+              <li className="vaccines-li">COVID-19 can have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">serious, life-threatening complications</a>, and there is no way to know how COVID-19 will affect you. And if you get sick, you could spread the disease to friends, family, and others around you.</li>
+              <li className="vaccines-li">Clinical trials of all vaccines must first show they are safe and effective before any vaccine can be authorized or approved for use, including COVID-19 vaccines. The known and potential benefits of a COVID-19 vaccine must outweigh the known and potential risks of the vaccine for use under what is known as an Emergency Use Authorization (EUA). <a href="https://www.youtube.com/watch?v=iGkwaESsGBQ">Watch a video on what an EUA is</a>.</li>
+              <li className="vaccines-li">Getting COVID-19 may offer some natural protection, known as immunity. But experts don’t know how long this protection lasts, and the risk of severe illness and death from COVID-19 far outweighs any benefits of natural immunity. COVID-19 vaccination will help protect you by creating an antibody (immune system) response without having to experience sickness.</li>
+              <li className="vaccines-li">Both natural immunity and immunity produced by a vaccine are important parts of COVID-19 disease that experts are trying to learn more about, and CDC will keep the public informed as new evidence becomes available.</li>
+            </ul>
+            <p className="vaccines-subject">COVID-19 vaccination will be an important tool to help stop the pandemic</p>
+            <ul>
+              <li className="vaccines-li">Wearing masks and social distancing help reduce your chance of being exposed to the virus or spreading it to others, but these measures are not enough. Vaccines will work with your immune system so it will be ready to fight the virus if you are exposed.</li>
+              <li className="vaccines-li">The combination of getting vaccinated and following CDC’s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">to protect yourself and others</a> will offer the best protection from COVID-19.</li>
+              <li className="vaccines-li">Stopping a pandemic requires using all the tools we have available. As experts learn more about how COVID-19 vaccination may help reduce spread of the disease in communities, CDC will continue to update the recommendations to protect communities using the latest science.</li>
+            </ul>
+            <p className="vaccines-subject">Facts about COVID-19 Vaccines</p>
+            <p className="vaccines-p">Now that there are authorized and recommended COVID-19 vaccines in the United States, accurate vaccine information is critical.</p>
+            <p className="vaccines-subject">FACT: COVID-19 vaccines will not give you COVID-19</p>
+            <p className="vaccnies-p">None of the <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html">COVID-19 vaccines currently in development or in use in the United States</a>, contain the live virus that causes COVID-19. There are several different types of vaccines in development. However, the goal for each of them is to teach our immune systems how to recognize and fight the virus that causes COVID-19. Sometimes this process can cause symptoms, such as fever. These symptoms are normal and are a sign that the body is building immunity. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">Learn more about how COVID-19 vaccines work</a>.<br></br>It typically takes a few weeks for the body to build immunity after vaccination. That means it’s possible a person could be infected with the virus that causes COVID-19 just before or just after vaccination and get sick. This is because the vaccine has not had enough time to provide protection.</p>
+            <p className="vaccines-subject">FACT: COVID-19 vaccines will not cause you to test positive on COVID-19 viral tests</p>
+            <p className="vaccnies-p">Neither the recently authorized and recommended vaccines nor the other COVID-19 vaccines currently in clinical trials in the United States cause you to test positive on <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">viral tests</a>, which are used to see if you have a <b>current infection</b>.​If your body develops an immune response, which is the goal of vaccination, there is a possibility you may test positive on some <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/serology-overview.html">antibody tests</a>. Antibody tests indicate you had a <b>previous infection</b> and that you may have some level of protection against the virus. Experts are currently looking at how COVID-19 vaccination may affect antibody testing results.</p>
+            <p className="vaccines-subject">FACT: People who have gotten sick with COVID-19 may still benefit from getting vaccinated</p>
+            <p className="vaccnies-p">Due to the severe health risks associated with COVID-19 and the fact that re-infection with COVID-19 is possible, people may be advised to get a COVID-19 vaccine even if they have been sick with COVID-19 before.<br></br>At this time, experts do not know how long someone is protected from getting sick again after recovering from COVID-19. The immunity someone gains from having an infection, called natural immunity, varies from person to person. Some early evidence suggests natural immunity may not last very long.<br></br>We won’t know how long immunity produced by vaccination lasts until we have a vaccine and more data on how well it works.<br></br>Both natural immunity and vaccine-induced immunity are important aspects of COVID-19 that experts are trying to learn more about, and CDC will keep the public informed as new evidence becomes available.</p>
+            <p className="vaccines-subject">FACT: Getting vaccinated can help prevent getting sick with COVID-19</p>
+            <p className="vaccnies-p">While many people with COVID-19 have only a mild illness, others may get a <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">severe illness</a> or they may even die. There is no way to know how COVID-19 will affect you, even if you are not at <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">increased risk of severe complications</a>. If you get sick, you also may spread the disease to friends, family, and others around you while you are sick. COVID-19 vaccination helps protect you by creating an antibody response without having to experience sickness. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">how COVID-19 vaccines work</a>.</p>
+            <p className="vaccines-subject">FACT: Receiving an mRNA vaccine will not alter your DNA</p>
+            <p className="vaccnies-p">mRNA stands for messenger ribonucleic acid and can most easily be described as instructions for how to make a protein or even just a piece of a protein. mRNA is not able to alter or modify a person’s genetic makeup (DNA). The mRNA from a COVID-19 vaccine never enter the nucleus of the cell, which is where our DNA are kept. This means the mRNA does not affect or interact with our DNA in any way. Instead, COVID-19 vaccines that use mRNA work with the body’s natural defenses to safely develop protection (immunity) to disease. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">how COVID-19 mRNA vaccines work</a>.</p>
+            <p className="vaccines-subject">How do I know which sources of COVID-19 vaccine information are accurate?</p>
+            <p className="vaccines-p">It can be difficult to know which sources of information you can trust. Learn more about <a href="https://www.cdc.gov/vaccines/vac-gen/evalwebs.htm">finding credible vaccine information</a>.</p>
+
+
+            <a id="different-vaccines" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">Different Vaccines</p><br></br>
+            <p className="vaccines-subject">Vaccine Types</p>
+            <p className="vaccines-p"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">Understanding How COVID-19 Vaccines Work</a> <br></br>This web page explains how the body fights infection and how COVID-19 vaccines protect people by producing immunity. It also describes the different types of COVID-19 vaccines that currently are available or are undergoing large-scale (Phase 3) clinical trials in the United States.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">Understanding COVID-19 mRNA Vaccines</a><br></br>This fact sheet provides information about mRNA vaccines generally and about COVID-19 vaccines that use this new technology specifically.</p>
+            <p className="vaccines-subject">Authorized and Recommended Vaccines</p>
+            <p className="vaccines-p">As COVID-19 vaccines are authorized and then recommended for use in the United States, it will be important to understand what is known about each vaccine. CDC will provide information on who is and is not recommended to receive each vaccine and what to expect after vaccination, as well as ingredients, safety, and effectiveness.
+<br></br>Currently, two vaccines are authorized and recommended to prevent COVID-19:
+            <ul>
+              <li className="vaccines-li">​​​​<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">Pfizer-BioNTech COVID-19 vaccine</a></li>
+              <li className="vaccines-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html">Moderna’s COVID-19 vaccine</a></li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Vaccines in Phase 3 Clinical Trials</p>
+            <p className="vaccines-p">As of December 28, 2020, large-scale (Phase 3) clinical trials are in progress or being planned for three COVID-19 vaccines in the United States:
+              <ul>
+                <li className="vaccines-li">AstraZeneca’s COVID-19 vaccine</li>
+                <li className="vaccines-li">Janssen’s COVID-19 vaccine</li>
+                <li className="vaccines-li">Novavax’s COVID-19 vaccine</li>
+              </ul>
+              Learn more about U.S. COVID-19 vaccine clinical trials, including vaccines in earlier stages of development, by visiting <a href="http://www.clinicaltrials.gov/">clinicaltrials.gov</a>            </p>
+            <p className="vaccines-subject">The Immune System—The Body’s Defense Against Infection</p>
+            <p className="vaccines-p">To understand how COVID-19 vaccines work, it helps to first look at how our bodies fight illness. When germs, such as the virus that causes COVID-19, invade our bodies, they attack and multiply. This invasion, called an infection, is what causes illness. Our immune system uses several tools to fight infection. Blood contains red cells, which carry oxygen to tissues and organs, and white or immune cells, which fight infection. Different types of white blood cells fight infection in different ways:
+            <ul>
+              <li className="vaccines-li"><b>Macrophages</b> are white blood cells that swallow up and digest germs and dead or dying cells. The macrophages leave behind parts of the invading germs called antigens. The body identifies antigens as dangerous and stimulates antibodies to attack them.</li>
+              <li className="vaccines-li"><b>B-lymphocytes</b> are defensive white blood cells. They produce antibodies that attack the pieces of the virus left behind by the macrophages.</li>
+              <li className="vaccines-li"><b>T-lymphocytes</b> are another type of defensive white blood cell. They attack cells in the body that have already been infected.</li>
+              </ul>
+              <br></br>The first time a person is infected with the virus that causes COVID-19, it can take several days or weeks for their body to make and use all the germ-fighting tools needed to get over the infection. After the infection, the person’s immune system remembers what it learned about how to protect the body against that disease.<br></br>The body keeps a few T-lymphocytes, called memory cells, that go into action quickly if the body encounters the same virus again. When the familiar antigens are detected, B-lymphocytes produce antibodies to attack them. Experts are still learning how long these memory cells protect a person against the virus that causes COVID-19.
+              </p>
+            <p className="vaccines-subject">How COVID-19 Vaccines Work</p>
+            <p className="vaccines-p">COVID-19 vaccines help our bodies develop immunity to the virus that causes COVID-19 without us having to get the illness. Different types of vaccines work in different ways to offer protection, but with all types of vaccines, the body is left with a supply of “memory” T-lymphocytes as well as B-lymphocytes that will remember how to fight that virus in the future.<br></br>It typically takes a few weeks for the body to produce T-lymphocytes and B-lymphocytes after vaccination. Therefore, it is possible that a person could be infected with the virus that causes COVID-19 just before or just after vaccination and then get sick because the vaccine did not have enough time to provide protection.<br></br>Sometimes after vaccination, the process of building immunity can cause symptoms, such as fever. These symptoms are normal and are a sign that the body is building immunity.</p>
+            <p className="vaccines-subject">Types of Vaccines</p>
+            <p className="vaccines-p">Currently, there are three main types of COVID-19 vaccines that are or soon will be undergoing large-scale (Phase 3) clinical trials in the United States. Below is a description of how each type of vaccine prompts our bodies to recognize and protect us from the virus that causes COVID-19. None of these vaccines can give you COVID-19.
+            <ul>
+              <li className="vaccines-li"><b><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mRNA.html">mRNA vaccines</a></b> contain material from the virus that causes COVID-19 that gives our cells instructions for how to make a harmless protein that is unique to the virus. After our cells make copies of the protein, they destroy the genetic material from the vaccine. Our bodies recognize that the protein should not be there and build T-lymphocytes and B-lymphocytes that will remember how to fight the virus that causes COVID-19 if we are infected in the future.</li>
+              <li className="vaccines-li"><b>Protein subunit vaccines</b> include harmless pieces (proteins) of the virus that cause COVID-19 instead of the entire germ. Once vaccinated, our immune system recognizes that the proteins don’t belong in the body and begins making T-lymphocytes and antibodies. If we are ever infected in the future, memory cells will recognize and fight the virus.</li>
+              <li className="vaccines-li"><b>Vector vaccines</b> contain a weakened version of a live virus—a different virus than the one that causes COVID-19—that has genetic material from the virus that causes COVID-19 inserted in it (this is called a viral vector). Once the viral vector is inside our cells, the genetic material gives cells instructions to make a protein that is unique to the virus that causes COVID-19. Using these instructions, our cells make copies of the protein. This prompts our bodies to build T-lymphocytes and B-lymphocytes that will remember how to fight that virus if we are infected in the future.</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Most COVID-19 Vaccines Require More Than One Shot</p>
+            <p className="vaccines-p">All but one of the COVID-19 vaccines that are currently in Phase 3 clinical trials in the United States use two shots. The first shot starts building protection. A second shot a few weeks later is needed to get the most protection the vaccine has to offer. One vaccine in Phase 3 clinical trials only needs one shot.</p>
+            <p className="vaccines-subject">The Bottom Line</p>
+            <p className="vaccines-p">Getting vaccinated is one of many steps you can take to protect yourself and others from COVID-19.  Protection from COVID-19 is critically important because for some people, it can cause severe illness or death.Stopping a pandemic requires using all the tools available. Vaccines work with your immune system so your body will be ready to fight the virus if you are exposed. Other steps, like masks and social distancing, help reduce your chance of being exposed to the virus or spreading it to others. Together, COVID-19 vaccination and following CDC’s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">to protect yourself and others</a> will offer the best protection from COVID-19.</p>
+            <p className="vaccines-subject">Understanding mRNA COVID-19 Vaccines</p>
+            <p className="vaccines-p">Messenger RNA vaccines—also called mRNA vaccines—are some of the first COVID-19 vaccines authorized for use in the United States.</p>
+            <p className="vaccines-subject">New Approach to Vaccines</p>
+            <p className="vaccines-p">mRNA vaccines are a new type of vaccine to protect against infectious diseases. To trigger an immune response, many vaccines put a weakened or inactivated germ into our bodies. Not mRNA vaccines. Instead, they teach our cells how to make a protein—or even just a piece of a protein—that triggers an immune response inside our bodies. That immune response, which produces antibodies, is what protects us from getting infected if the real virus enters our bodies.</p>
+            <p className="vaccines-subject">A Closer Look at How COVID-19 mRNA Vaccines Work</p>
+            <p className="vaccines-p">COVID-19 mRNA vaccines give instructions for our cells to make <b>a harmless piece</b> of what is called the “spike protein.” The spike protein is found on the surface of the virus that causes COVID-19.<br></br>COVID-19 mRNA vaccines are given in the upper arm muscle. Once the instructions (mRNA) are inside the immune cells, the cells use them to make the protein piece. After the protein piece is made, the cell breaks down the instructions and gets rid of them.<br></br>Next, the cell displays the protein piece on its surface. Our immune systems recognize that the protein doesn’t belong there and begin building an immune response and making antibodies, like what happens in natural infection against COVID-19.<br></br>At the end of the process, our bodies have learned how to protect against future infection. The benefit of mRNA vaccines, like all vaccines, is those vaccinated gain this protection without ever having to risk the serious consequences of getting sick with COVID-19.</p>
+            <p className="vaccines-subject">COVID-19 mRNA Vaccines Will Be Rigorously Evaluated for Safety</p>
+            <p className="vaccines-p">mRNA vaccines have been held to the same <a href="https://www.fda.gov/media/139638/download">rigorous safety and effectiveness standards</a> as all other types of vaccines in the United States. The only COVID-19 vaccines the Food and Drug Administration (FDA) will make available for use in the United States (by approval or emergency use authorization) are those that meet these standards.</p>
+            <p className="vaccines-subject">mRNA Vaccines Are New, But Not Unknown</p>
+            <p className="vaccines-p">Researchers have been studying and working with mRNA vaccines for decades. Interest has grown in these vaccines because they can be developed in a laboratory using readily available materials. This means the process can be standardized and scaled up, making vaccine development faster than traditional methods of making vaccines.<br></br>mRNA vaccines have been studied before for flu, Zika, rabies, and cytomegalovirus (CMV). As soon as the necessary information about the virus that causes COVID-19 was available, scientists began designing the mRNA instructions for cells to build the unique spike protein into an mRNA vaccine.<br></br>Future mRNA vaccine technology may allow for one vaccine to provide protection for multiple diseases, thus decreasing the number of shots needed for protection against common vaccine-preventable diseases.<br></br>Beyond vaccines, cancer research has used mRNA to trigger the immune system to target specific cancer cells.</p>
+            <p className="vaccines-subject">Information about the Pfizer-BioNTech COVID-19 Vaccine</p>
+            <p className="vaccines-p"><b>General information</b>
+            <br></br><b>Name:</b> BNT162b2
+
+            <br></br><b>Manufacturer:</b> Pfizer, Inc., and BioNTech
+
+            <br></br><b>Type of vaccine:</b> mRNA
+
+            <br></br><b>Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">how COVID-19 vaccines work</a> and get a better <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">understanding of COVID-19 mRNA vaccines</a>.
+
+            <br></br><b>Number of shots:</b> 2 shots, 21 days apart
+
+            <br></br><b>How given:</b> Shot in the muscle of the upper arm
+
+            <br></br><b></b>Does not contain:</b>
+            <ul>
+              <li className="vaccines-li">Eggs</li>
+              <li className="vaccines-li">Preservatives</li>
+              <li className="vaccines-li">Latex</li>
+            </ul>
+            <a href="https://www.fda.gov/media/144414/download">For a full list of ingredients, see Pfizer’s COVID-19 Vaccine Fact Sheet for Recipients and Caregivers</a>
+           <br></br> <b>Who should get vaccinated</b>
+           <ul>
+             <li className="vaccines-li">The Pfizer-BioNTech vaccine is recommended for people aged 16 years and older. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">how CDC is making COVID-19 vaccine recommendations</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">who should be vaccinated first when supplies are limited</a>.</li>
+           </ul>
+           <br></br> <b>Who should not get vaccinated</b>
+           <ul>
+             <li className="vaccines-li">If you have had a severe allergic reaction—also known as anaphylaxis—to any ingredient in the Pfizer-BioNTech vaccine, you should not get vaccinated.* Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/allergic-reaction.html">COVID-19 vaccines and rare severe allergic reactions</a>.</li>
+           </ul>
+            *If you have had a severe allergic reaction to other vaccines or injectable therapies, ask your doctor if you should get the Pfizer-BioNTech vaccine. Your doctor will help you decide if it is safe for you to get the Pfizer-BioNTech vaccine.
+            
+            </p>
+            <p className="vaccines-subject">Side effects and safety information</p>
+            <p className="vaccines-p">
+              <b>Most common side effects</b>
+              <br></br>
+              In the arm where you got the shot:
+              <ul>
+                <li className="vaccines-li">Pain</li>
+                <li className="vaccines-li">Swelling</li>
+                <li className="vaccines-li">Redness</li>
+              </ul>
+              <br></br>
+              Throughout the rest of your body:
+              <ul>
+                <li className="vaccines-li">Chills</li>
+                <li className="vaccines-li">Tiredness</li>
+                <li className="vaccines-li">Headache</li>
+              </ul>
+              These side effects usually start within a day or two of getting the vaccine. They might feel like flu symptoms and might even affect your ability to do daily activities, but they should go away in a few days. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html">Get tips on what to expect after getting vaccinated</a>.
+              <b>Summary of safety data</b>
+              <ul>
+                <li className="vaccines-li"><a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6950e2.htm?s_cid=mm6950e2_w">In clinical trials</a>, reactogenicity symptoms (side effects that happen within 7 days of getting vaccinated) were common but were mostly mild to moderate.</li>
+                <li className="vaccines-li">Side effects (such as fever, chills, tiredness, and headache) throughout the body were more common after the second dose of the vaccine.</li>
+                <li className="vaccines-li">Most side effects were mild to moderate. However, a small number of people had severe side effects—defined as side effects affecting a person’s ability to do daily activities.</li>
+                <li className="vaccines-li">Although few people in the clinical trials went to the hospital or died, data suggest that people who got the Pfizer-BioNTech vaccine were less likely to have these more serious outcomes compared to people who got the saline placebo.</li>
+                <li className="vaccines-li">CDC will continue to provide updates as we learn more about the safety of the Pfizer-BioNTech vaccine in real-world conditions. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">Learn more about vaccine safety monitoring after a vaccine is authorized or approved for use</a>.</li>
+              </ul>
+              <a href="https://www.cdc.gov/vaccines/covid-19/info-by-manufacturer/pfizer/reactogenicity.html">Learn more about safety and reactogenicity data from the clinical trials</a>.
+            </p>
+            <p className="vaccines-subject">Information on how well the vaccine works</p>
+            <ul>
+              <li className="vaccines-li">Based on <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6950e2.htm?s_cid=mm6950e2_w">evidence from clinical trials</a>, the Pfizer-BioNTech vaccine was 95% effective at preventing laboratory-confirmed COVID-19 illness in people without evidence of previous infection.</li>
+              <li className="vaccines-li">CDC will continue to provide updates as we learn more about how well the Pfizer-BioNTech vaccine works in real-world conditions.</li>
+            </ul>
+            <p className="vaccines-subject">Demographic information from clinical trials</p>
+            <p className="vaccines-p">
+            Phase 2 and 3 clinical trials for the Pfizer-BioNTech vaccine included people from the following racial and ethnic categories:
+            <ul>
+              <li className="vaccines-li">81.9% White</li>
+              <li className="vaccines-li">26.2% Hispanic/Latino</li>
+              <li className="vaccines-li">9.8% African American</li>
+              <li className="vaccines-li">4.4% Asian</li>
+              <li className="vaccines-li">&#60;3% other races/ethnicities</li>
+            </ul>
+            Age and sex breakdown:
+            <ul>
+              <li className="vaccines-li">50.6% male</li>
+              <li className="vaccines-li">49.4% female</li>
+              <li className="vaccines-li">21.4% 65 years and older</li>
+            </ul>
+            The most frequent underlying medical conditions were obesity (35.1%), diabetes (8.4%), and pulmonary disease (7.8%).<br></br>
+            <a href="https://www.fda.gov/media/144245/download">Learn more about demographic information for people who participated in the trials</a>
+            </p>
+
+            <p className="vaccines-subject">Information about the Moderna COVID-19 Vaccine</p>
+            <p className="vaccines-p">
+            <b>General information</b>
+            <br></br><b>Name:</b> mRNA-1273
+            <br></br><b>Manufacturer:</b> ModernaTX, Inc.
+            <br></br><b>Type of vaccine:</b> mRNA
+            <br></br>Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/about-vaccines/how-they-work.html">how COVID-19 vaccines work</a> and get a better <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">understanding of COVID-19 mRNA vaccines</a>.
+            <br></br><b>Number of shots:</b> 2 shots, one month (28 days) apart
+            <br></br><b>How given:</b> Shot in the muscle of the upper arm
+            <br></br><b>Does not contain:</b>
+            <ul>
+              <li className="vaccines-li">Eggs</li>
+              <li className="vaccines-li">Preservatives</li>
+              <li className="vaccines-li">Latex</li>
+            </ul>
+            <a href="https://www.fda.gov/media/144638/download">For a full list of ingredients, see Moderna’s COVID-19 Vaccine Fact Sheet for Recipients and Caregivers</a>
+            <b>Who should get vaccinated</b>
+            <ul>
+              <li className="vaccines-li">The Moderna vaccine is recommended for people aged 18 years and older. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">how CDC is making COVID-19 vaccine recommendations</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">who should be vaccinated first when supplies are limited</a>.</li>
+            </ul>
+            <b>Who should not get vaccinated</b>
+            <ul>
+              <li className="vaccines-li">If you have had a severe allergic reaction—also known as anaphylaxis—to any ingredient in the Moderna vaccine, you should not get vaccinated.* Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/allergic-reaction.html">COVID-19 vaccines and rare severe allergic reactions</a>.</li>
+            </ul>
+            *If you have had a severe allergic reaction to other vaccines or injectable therapies, ask your doctor if you should get the Moderna vaccine. Your doctor will help you decide if it is safe for you to get the Moderna vaccine.
+            </p>
+            <p className="vaccines-subject">Side effects and safety information</p>
+            <p className="vaccines-p">
+              <b>Most common side effects</b><br></br>
+              In the arm where you got the shot:
+              <ul>
+                <li className="vaccines-li">Pain</li>
+                <li className="vaccines-li">Swelling</li>
+                <li className="vaccines-li">Redness</li>
+              </ul>
+              Throughout the rest of your body:
+              <ul>
+                <li className="vaccines-li">Chills</li>
+                <li className="vaccines-li">Tiredness</li>
+                <li className="vaccines-li">Headache</li>
+              </ul>
+              These side effects usually start within a day or two of getting the vaccine. They might feel like flu symptoms and might even affect your ability to do daily activities, but they should go away in a few days. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html">Get tips on what to expect after getting vaccinated</a>.<br></br>
+              <b>Summary of safety data</b>
+              <ul>
+                <li className="vaccines-li">In clinical trials, reactogenicity symptoms (side effects that happen within 7 days of getting vaccinated) were common but were mostly mild to moderate.</li>
+                <li className="vaccines-li">Side effects (such as fever, chills, tiredness, and headache) throughout the body were more common after the second dose of the vaccine.</li>
+                <li className="vaccines-li">Most side effects were mild to moderate. However, a small number of people had severe side effects that affected their ability to do daily activities.</li>
+                <li className="vaccines-li">CDC will continue to provide updates as we learn more about the safety of the Moderna vaccine in real-world conditions. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">Learn more about vaccine safety monitoring after a vaccine is authorized or approved for use</a>.</li>
+              </ul>
+              <a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html">Learn more about safety and reactogenicity data from the clinical trials</a>.
+            </p>
+            <p className="vaccines-subject">Information on how well the vaccine works</p>
+            <ul>
+              <li className="vaccines-li">Based on <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm695152e1.htm?s_cid=mm695152e1_w">evidence from clinical trials</a>, the Moderna vaccine was 94.1% effective at preventing laboratory-confirmed COVID-19 illness in people who received two doses who had no evidence of being previously infected.</li>
+              <li className="vaccines-li">The vaccine appeared to have high effectiveness in clinical trials (efficacy) among people of diverse age, sex, race, and ethnicity categories and among persons with underlying medical conditions.</li>
+              <li className="vaccines-li">Although few people in the clinical trials were admitted to the hospital, this happened less often in the people who got the Moderna vaccine compared to people who got the saline placebo.</li>
+              <li className="vaccines-li">CDC will continue to provide updates as we learn more about how well the Moderna vaccine works in real-world conditions.</li>
+            </ul>
+            <p className="vaccines-subject">Demographic information from clinical trials</p>
+            <p className="vaccines-p">
+            Clinical trials for the Moderna vaccine included people from the following racial and ethnic categories:
+            <ul>
+              <li className="vaccines-li">79.4% White</li>
+              <li className="vaccines-li">20% Hispanic/Latino</li>
+              <li className="vaccines-li">9.7% African American</li>
+              <li className="vaccines-li">4.7% Asian</li>
+              <li className="vaccines-li">&#60;3% other races/ethnicities</li>
+            </ul>
+            Age and sex breakdown:
+            <ul>
+              <li className="vaccines-li">52.6% male</li>
+              <li className="vaccines-li">47.4% female</li>
+              <li className="vaccines-li">25.3% 65 years and older</li>
+            </ul>
+            Most people who participated in the trials (82%) were considered to have an occupational risk of exposure, with 25.4% of them being healthcare workers.<br></br>Among people who participated in the clinical trials, 22.3% had at least one high-risk condition, which included lung disease, heart disease, obesity, diabetes, liver disease, or HIV infection. Four percent (4%) of participants had two or more high-risk conditions.<br></br><a href="https://www.fda.gov/media/144434/download">Learn more about demographic information for people who participated in the trials</a>.
+            </p>
+
+            <a id="vaccine-safety" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">Ensuring the Safety of Vaccines</p><br></br>
+            <p className="vaccines-p">The U.S. vaccine safety system ensures that all vaccines are as safe as possible. Safety is a top priority while federal partners work to make this and other COVID-19 vaccines available.</p>
+            <p className="vaccines-subject">Safety of COVID-19 Vaccines</p>
+            <p className="vaccines-p">The U.S. Food and Drug Administration (FDA) has granted Emergency Use Authorizations (EUA) for two COVID-19 vaccines which have been shown to be safe and effective as determined by data from the <a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/index.html">manufacturers</a> and findings from large clinical trials. These data demonstrate that the known and potential benefits of this vaccine outweigh the known and potential harms of becoming infected with the coronavirus disease 2019 (COVID 19).</p>
+            <p className="vaccines-subject">Clinical Trials</p>
+            <p className="vaccines-p">Clinical trials are being conducted to evaluate additional COVID-19 vaccines in many thousands of study participants. These trials will generate scientific data and other information that will be used by FDA to determine vaccine safety and effectiveness. Clinical trials on all COVID-19 vaccine candidates are being conducted according to the rigorous standards set forth by FDA in their June 2020 guidance document, <a href="https://www.fda.gov/media/139638/download">Development and Licensure of Vaccines to Prevent COVID-19</a>. If FDA determines that a vaccine meets its safety and effectiveness standards, it can make these vaccines available for use in the United States by approval or through an EUA.<br></br>After FDA determines that a COVID-19 vaccine candidate is safe and effective, the Advisory Committee on Immunization Practices (ACIP), a committee comprising medical and public health experts, reviews available data before making vaccine recommendations to CDC. Learn more about how <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">CDC is making COVID-19 vaccine recommendations</a>.</p>
+            <p className="vaccines-subject">Vaccine Safety Monitoring</p>
+            <p className="vaccines-p">After a vaccine is authorized or approved for use, many vaccine safety monitoring systems watch for adverse events (possible side effects). This continued monitoring can pick up on adverse events that may not have been seen in clinical trials. If an unexpected adverse event is seen, experts quickly study it further to assess whether it is a true safety concern. Experts then decide whether changes are needed in U.S. vaccine recommendations. This monitoring is critical to help ensure that the benefits continue to outweigh the risks for people who receive vaccines.<br></br>FDA’s June 2020 guidance document also includes important recommendations for ongoing safety evaluation after any COVID-19 vaccine is made available in the United States.<br></br><b>CDC has expanded safety surveillance</b> through new systems and additional information sources, as well as by scaling up existing safety monitoring systems.</p>
+            <p className="vaccines-subject">Expanded Safety Monitoring Systems</p>
+            <p className="vaccines-p">The following systems and information sources add an additional layer of safety monitoring, giving CDC and FDA the ability to evaluate COVID-19 vaccine safety in real time and make sure COVID-19 vaccines are as safe as possible:
+            <ul>
+              <li className="vaccines-li"><b>CDC: <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html">V-safe</a></b> — A new smartphone-based, after-vaccination health checker for people who receive COVID-19 vaccines. <b>V-safe</b> uses text messaging and web surveys from CDC to check in with vaccine recipients following COVID-19 vaccination. V-safe also provides second vaccine dose reminders if needed, and telephone follow up to anyone who reports medically significant (important) adverse events.</li>
+              <li className="vaccines-li"><b>CDC: <a href="https://www.cdc.gov/nhsn/index.html">National Healthcare Safety Network (NHSN)</a></b> — An acute and long-term care facility monitoring system with reporting to the Vaccine Adverse Event Reporting System or VAERS that will allow for determination of COVID-19 vaccine adverse event reporting rates.</li>
+              <li className="vaccines-li"><b>FDA: Other large insurer/payer databases</b> — A system of administrative and claims-based data for surveillance and research.</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">Existing Safety Monitoring Systems</p>
+            <p className="vaccines-p">
+            As people get vaccinated, CDC, FDA, and other federal partners will use the following existing, robust systems and data sources to conduct ongoing safety monitoring:<br></br>
+            <b>General public</b>
+            <ul>
+              <li className="vaccines-li"><b>CDC and FDA: <a href="https://vaers.hhs.gov/index.html">Vaccine Adverse Event Reporting System (VAERS)</a></b> — The national system that collects reports from healthcare professionals, vaccine manufacturers, and the public of adverse events that happen after vaccination; reports of adverse events that are unexpected, appear to happen more often than expected, or have unusual patterns are followed up with specific studies</li>
+              <li className="vaccines-li"><b>CDC: <a href="https://www.cdc.gov/vaccinesafety/ensuringsafety/monitoring/vsd/index.html">Vaccine Safety Datalink (VSD)</a></b> — A network of nine integrated healthcare organizations across the United States that conducts active surveillance and research; the system is also used to help determine whether possible side effects identified using VAERS are actually related to vaccination</li>
+              <li className="vaccines-li"><b>CDC: <a href="https://www.cdc.gov/vaccinesafety/ensuringsafety/monitoring/cisa/index.html">Clinical Immunization Safety Assessment (CISA) Project</a></b> — A collaboration between CDC and 7 medical research centers to provide expert consultation on individual cases and conduct clinical research studies about vaccine safety</li>
+              <li className="vaccines-li"><b>FDA and the Centers for Medicare and Medicaid Services: Medicare data</b> — A claims-based system for active surveillance and research</li>
+              <li className="vaccines-li"><b>FDA: <a href="https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/cber-biologics-effectiveness-and-safety-best-system">Biologics Effectiveness and Safety System (BEST)</a></b> — A system of electronic health record, administrative, and claims-based data for active surveillance and research</li>
+              <li className="vaccines-li"><b>FDA: <a href="https://www.fda.gov/safety/fdas-sentinel-initiative">Sentinel Initiative</a></b> — A system of electronic health record, administrative, and claims-based data for active surveillance and research</li>
+            </ul>
+            <b>Members of the military</b>
+            <ul>
+              <li className="vaccines-li"><b>Department of Defense (DOD): <a href="https://www.health.mil/Military-Health-Topics/Health-Readiness/Immunization-Healthcare/Vaccine-Safety-Adverse-Events/Reporting-Vaccine-Health-Problems/VAERS-Information">DOD VAERS data</a></b> — Adverse event reporting to VAERS for the DOD populations</li>
+              <li className="vaccines-li"><b>DOD: <a href="https://www.health.mil/Military-Health-Topics/Health-Readiness/Immunization-Healthcare/Vaccine-Safety-Adverse-Events/Reporting-Vaccine-Health-Problems">Vaccine Adverse Event Clinical System (VAECS)</a></b> — A system for case tracking and evaluation of adverse events following immunization in DOD and DOD-affiliated populations</li>
+              <li className="vaccines-li"><b>DOD: DOD Electronic Health Record and <a href="https://www.health.mil/Military-Health-Topics/Combat-Support/Armed-Forces-Health-Surveillance-Branch/Data-Management-and-Technical-Support/Defense-Medical-Surveillance-System">Defense Medical Surveillance System</a></b> — A system of electronic health record and administrative data for active surveillance and research</li>
+            </ul>
+            <b></b>
+            <ul>
+              <li className="vaccines-li"><b>Department of Veterans Affairs (VA): <a href="https://www.va.gov/MS/Professionals/medications/VHA_Adverse_Drug_Event_Reporting_Program.asp">VA Adverse Drug Event Reporting System (VA ADERS)</a></b> — A national reporting system for adverse events following receipt of drugs and immunizations</li>
+              <li className="vaccines-li"><b>VA Electronic Health Record and Active Surveillance System</b> — A system of electronic health record and administrative data for active surveillance and research</li>
+            </ul>
+            <b></b>
+            <ul>
+              <li className="vaccines-li"><b>Indian Health Service (IHS): <a href="https://www.ihs.gov/nptc/pharmacovigilance/">IHS VAERS data</a></b> — Spontaneous adverse event reporting to VAERS for populations served by IHS and Tribal facilities</li>
+            </ul>
+            </p>
+            <p className="vaccines-subject">V-safe After Vaccination Health Checker</p>
+            <p className="vaccines-p"><b>V-safe</b> is a smartphone-based tool that uses text messaging and web surveys to provide personalized health check-ins after you receive a COVID-19 vaccination. Through <b>v-safe</b>, you can quickly tell CDC if you have any side effects after getting the COVID-19 vaccine. Depending on your answers, someone from CDC may call to check on you and get more information. And <b>v-safe</b> will remind you to get your second COVID-19 vaccine dose if you need one.<br></br>Your participation in CDC’s v–safe makes a difference — it helps keep COVID-19 vaccines safe.</p>
+            <p className="vaccines-subject">How to register and use v-safe</p>
+            <p className="vaccines-p"><b>You will need your smartphone and information about the COVID-19 vaccine you received.</b> This information can be found on the vaccination record card you received during your vaccination; if you cannot find your card, please  contact your healthcare provider.</p>
+            <p className="vaccines-subject">Register</p>
+            <ol>
+              <li className="vaccines-li">Go to the <b>v-safe</b> website (link provided on the <b>v-safe</b> information sheet your healthcare provider gave you during your COVID-19 vaccination). Read the onscreen instructions and click <b>Get Started.</b></li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-01-get-started-@2x.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">Enter your name, mobile number, and other requested information. Click <b>Register.</b></li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-02-register-@2x.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">You will receive a text message with a verification code on your smartphone. Enter the code in <b>v-safe</b> and click <b>Verify.</b></li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-03-verify-@2x.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">At the top of the screen, click <b>Enter vaccine information.</b></li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-04-enter-@2x.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">Select which COVID-19 vaccine you received (found on your vaccination record card; if you cannot find your card, please contact your healthcare provider) and enter the date you were vaccinated. Click <b>Next.</b></li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-05-next-@2x.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">Review your vaccine information. If correct, click <b>Submit.</b> If not, click <b>Go Back.</b></li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-06-submit-@2x.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">Congrats! You’re all set! If you complete your registration before 2 p.m. local time, <b>v-safe</b> will start your initial health check-in around 2 p.m. that day. If you register after 2 p.m., <b>v-safe</b> will start your initial health check-in immediately after you register — just follow the instructions.</li>
+              Registration before 2 p.m. local time:
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-07-checkin-b.png" className="vaccines-image"></img><br></br>
+              Registration after 2 p.m. local time:
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-how-to-07-checkin-a-@2x.png" className="vaccines-image"></img><br></br>
+            </ol>
+            <p className="vaccines-p"><b>What happens next?</b><br></br>You will receive a reminder text message from <b>v-safe</b> around 2 p.m. local time for the next check-in. Just click the link in the text message to start the check-in.</p>
+            <p className="vaccines-subject">Complete a v-safe health check-in</p>
+            <ol>
+              <li className="vaccines-li">When you receive a <b>v-safe</b> check-in text message on your smartphone, click the link when ready.</li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-checkin-01-2x-b.png" className="vaccines-image"></img><br></br>
+              <li className="vaccines-li">Follow the instructions to complete the check-in.</li>
+              <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/vaccines/safety/v-safe-checkin-02-@2x_1.png" className="vaccines-image"></img><br></br>
+            </ol>
+            <p className="vaccines-p"><b>Need help with v-safe?</b><br></br>Call 800-CDC-INFO (800-232-4636) TTY 888-232-6348<br></br>Open 24 hours, 7 days a week</p>
+            <p className="vaccines-subject">COVID-19 Vaccines and Severe Allergic Reactions</p>
+            <p className="vaccines-p">CDC has learned of reports that some people have experienced severe allergic reactions—also known as anaphylaxis—after getting a COVID-19 vaccine. As an example, an allergic reaction is considered severe when a person needs to be treated with epinephrine or EpiPen© or if they must go to the hospital.<br></br>This page will be updated as quickly as possible when we get new information.<br></br>If you get a COVID-19 vaccine and you think you might be having a severe allergic reaction after leaving the vaccination site, seek immediate medical care by calling 911.</p>
+            <p className="vaccines-subject">What CDC Recommends</p>
+            <p className="vaccines-p">If you have ever had a severe allergic reaction to any ingredient in a COVID-19 vaccine, CDC recommends that you should not get that specific vaccine. If you have had a severe allergic reaction to other vaccines or injectable therapies, you should ask your doctor if you should get a COVID-19 vaccine. Your doctor will help you decide if it is safe for you to get vaccinated.<br></br>CDC recommends that people with a history of severe allergic reactions not related to vaccines or injectable medications—such as allergies to food, pet, venom, environmental, or latex—may still get vaccinated. People with a history of allergies to oral medications or a family history of severe allergic reactions, or who might have an milder allergy to vaccines (no anaphylaxis)—may also still get vaccinated.<br></br>If you have a severe allergic reaction after getting the first shot, you should not get the second shot. Your doctor may refer you to a specialist in allergies and immunology to provide more care or advice.</p>
+            <p className="vaccines-subject">Safeguards Are in Place</p>
+            <p className="vaccines-p">CDC has provided recommendations for COVID-19 vaccination providers about how to prepare for the possibility of a severe allergic reaction:
+            <ul>
+              <li className="vaccines-li">All people who get a COVID-19 vaccine should be monitored on-site. People with a history of severe allergic reactions should be monitored for 30 minutes after getting the vaccine. All other people should be monitored for 15 minutes after getting the vaccine.</li>
+              <li className="vaccines-li">Vaccination providers should have appropriate medications and equipment—such as epinephrine, antihistamines, stethoscopes, blood pressure cuffs, and timing devices to check your pulse—at all COVID-19 vaccination sites.</li>
+              <li className="vaccines-li">If you experience a severe allergic reaction after getting a COVID-19 vaccine, vaccination providers should provide rapid care and call for emergency medical services. You should continue to be monitored in a medical facility for at least several hours.</li>
+              </ul>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html">Learn more about what to expect after getting vaccinated for COVID-19</a>, including normal side effects and tips to reduce pain or discomfort.
+              </p>
+            <p className="vaccines-subject">CDC Is Monitoring Reports of Severe Allergic Reactions</p>
+            <p className="vaccines-p">If someone has a severe allergic reaction after getting vaccinated, their vaccination provider will send a report to the <a href="https://vaers.hhs.gov/index.html">Vaccine Adverse Reporting System (VAERS)</a> VAERS is the national system that collects reports from healthcare professionals, vaccine manufacturers, and the public about adverse events that happen after vaccination. Reports of adverse events that are unexpected, appear to happen more often than expected, or have unusual patterns are followed up with specific studies.            <br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html"></a>Learn more about how federal partners are monitoring the safety of COVID-19 vaccines in the United States.</p>
+
+            <a id="ensuring-vaccines-work" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">Ensuring Vaccines Work</p><br></br>
+            <p className="vaccines-p">Before the U.S. Food and Drug Administration (FDA) determines whether to approve a vaccine or authorize a vaccine for emergency use, clinical trials are conducted to determine <b>how well it works.</b> This is known as <b>effectiveness</b>.<br></br>After FDA approves a vaccine or authorizes a vaccine for emergency use, it continues to be studied to determine <b>how well it works under real-world conditions.</b> CDC and other federal partners will be assessing COVID-19 vaccine effectiveness under real-world conditions.<br></br>CDC will further assess vaccine effectiveness now that a COVID-19 vaccine has been authorized for emergency use by FDA. Many of these assessments will build on existing CDC programs, such as the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covid-net/purpose-methods.html">Emerging Infections Program, Coronavirus Disease 2019-Associated Hospitalization Surveillance Network (COVID-NET)</a>, and systems used to estimate the <a href="https://www.cdc.gov/flu/vaccines-work/vaccine-effectiveness-networks.htm">effectiveness of influenza vaccines</a>.<br></br>Learn about how the U.S. vaccine safety system is <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">ensuring the safety of COVID-19 vaccines</a>.</p>
+            <p className="vaccines-subject">Do clinical trial results show whether vaccines are effective?</p>
+            <p className="vaccines-p">Yes. <a href="https://clinicaltrials.gov/ct2/about-studies/learn">Clinical trials</a> provide data and information about how well a vaccine prevents an infectious disease and about how safe it is. The FDA evaluates these data, as well as manufacturing information, to assess the safety and effectiveness of vaccines. FDA then decides whether to approve a vaccine or authorize it for emergency use in the United States.<br></br>However, more assessments take place after a vaccine is either approved or authorized for emergency use by FDA and then recommended for public use. The goal of these assessments is to understand more about the protection a vaccine provides under real-world conditions, outside of clinical trials.<br></br>CDC will further assess the effectiveness of COVID-19 vaccines after they are approved or authorized for emergency use by FDA and recommended for public use. These real-world assessments will compare groups of people who do and don’t get vaccinated and people who do and don’t get COVID-19 to assess how well COVID-19 vaccines are working to protect people.</p>
+            <p className="vaccines-subject">Why do experts continue to assess vaccine effectiveness in real-world conditions?</p>
+            <p className="vaccines-p">The major reason for conducting additional vaccine effectiveness assessments is to make sure a vaccine protects people from getting a disease under real-world conditions, outside of the strict setting of clinical trials. There are many factors that can affect a vaccine’s effectiveness in real-world situations. These factors can include things such as how a vaccine is transported and stored or even how patients are vaccinated. Vaccine effectiveness can also be affected by differences in the underlying medical conditions of people vaccinated in the real-world compared to those in the clinical trials. Vaccine effectiveness assessments can also provide important information about how well a vaccine is working in groups of people not included or not well represented in clinical trials.</p>
+            <p className="vaccines-subject">How will experts evaluate the effectiveness of COVID-19 vaccines in real-world conditions?</p>
+            <p className="vaccines-p">Experts are working on many different types of real-world vaccine effectiveness assessments, and each uses a different method. These methods are described below.
+            <ul>
+              <li className="vaccines-li"><b>Case-control studies:</b> These assessments will include cases (people who have the virus that causes COVID-19) and controls (people who do not have the virus that causes COVID-19). The people who agree to participate in a case-control assessment will provide information on whether they received a COVID-19 vaccine or not. Experts will look to see if the cases were less likely to have received the vaccine than controls, which would show that the vaccine is working.
+              <ul>
+                  <li className="vaccines-li-li">Test-negative design: This is a special type of case-control study. These assessments will enroll people who are seeking medical care for symptoms that could be due to COVID-19. Experts will then compare the COVID-19 vaccination status of those who test positive (meaning they have COVID-19) to those who test negative (meaning they do not have COVID-19).</li>
+                </ul>
+              </li>
+              <li className="vaccines-li"><b>Cohort studies:</b> These assessments will follow people who have and haven’t had a COVID-19 vaccine for several months to see if getting vaccinated protects them from getting the disease. This can be done in real time (prospectively) or by looking back in time (retrospectively) using data that were already collected, such as information in participants’ electronic health records (medical records).</li>
+              <li className="vaccines-li"><b>Screening method:</b> These assessments look at vaccination coverage among a group of cases (for example, cases detected through ongoing COVID-19 surveillance) and compares it with vaccination coverage among the overall population where those cases come from (for example people from the same state). By comparing coverage among these two groups, researchers can get an early estimate of whether a vaccine is working as expected.</li>
+              <li className="vaccines-li"><b>Ecologic analyses:</b> These assessments look at groups of people – such as those in different geographic locations or at different times – and find out how many people were vaccinated and how many people were diagnosed with COVID-19. These analyses may be hard to interpret since the number of COVID-19 illnesses has changed rapidly over time and in different places.</li>
+            </ul>
+            <b>CDC will use several methods as they can all contribute different information about how a vaccine is working.</b>
+            </p>
+            <p className="vaccines-subject">How is CDC coordinating with other U.S. government agencies to ensure COVID-19 vaccines work as expected?</p>
+            <p className="vaccines-p">CDC is coordinating with several other federal agencies to assess how well COVID-19 vaccines work under real-world conditions after FDA approval or authorization for emergency use. These agencies include:
+            <ul>
+              <li className="vaccines-li"><a href="https://www.cms.gov/About-CMS/Agency-Information/Emergency/EPRO/Current-Emergencies/Current-Emergencies-page">Centers for Medicare and Medicaid Services (CMS)external icon</a></li>
+              <li className="vaccines-li"><a href="https://www.defense.gov/Explore/Spotlight/Coronavirus/">Department of Defense (DoD)external icon</a></li>
+              <li className="vaccines-li"><a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-vaccines">Food and Drug Administration (FDA)external icon</a></li>
+              <li className="vaccines-li"><a href="https://www.ihs.gov/coronavirus/">Indian Health Service (IHS)external icon</a></li>
+              <li className="vaccines-li"><a href="https://www.publichealth.va.gov/n-coronavirus/index.asp">Veteran’s Health Administration (VHA)external icon</a></li>
+              Some examples of how these agencies are working together include:
+              <li className="vaccines-li">CDC, FDA, and VHA are holding working group discussions to understand how each will use electronic health records (medical records) to see if people who received a COVID-19 vaccine are protected against developing COVID-19.</li>
+              <li className="vaccines-li">FDA and CMS are planning to further assess how well COVID-19 vaccines protect against developing COVID-19 among older adults, including those living in nursing homes and long-term care facilities.</li>
+              </ul></p>
+            <p className="vaccines-subject">Will assessments determine if the vaccines protect people from severe COVID-19 illness?</p>
+            <p className="vaccines-p">Yes. Severe illness from COVID-19 is defined as needing care in a hospital or intensive care unit (ICU), needing to be on a ventilator, or dying due to COVID-19. <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">Learn more about people at increased risk of severe illness from COVID-19</a>. Experts will assess how well COVID-19 vaccines protect people against severe illness using case-control studies among hospitalized patients. Experts will also use electronic health record cohort studies to see if people hospitalized with COVID-19 received the vaccine or not.</p>
+            <p className="vaccines-subject">Will assessments provide information about how well vaccines protect against less severe COVID-19 illness?</p>
+            <p className="vaccines-p">Yes. CDC will use case-control studies to assess how well COVID-19 vaccines protect people against less severe forms of COVID-19 – for example, people with COVID-19 who need to visit a doctor but don’t need to be hospitalized.<br></br>Will the assessments try to find out if the vaccines protect people from all kinds of infections with the virus that causes COVID-19, including those with no symptoms?<br></br>Yes. Some people can be infected with or “carry” the virus that causes COVID-19 but not feel sick or have any symptoms. Experts call this asymptomatic infection. It is important to know whether COVID-19 vaccines can help reduce the number of people that have asymptomatic infection as these people can unknowingly spread the virus to others.<br></br>A special type of cohort study will try to answer this question. People who agree to participate will be tested for COVID-19 every week, whether they have symptoms or not. Experts will then compare the proportion of people with infection who were vaccinated to the proportion of people with infection who were not vaccinated.</p>
+            <p className="vaccines-subject">What groups of people will be included in the real-world vaccine assessments?</p>
+            <p className="vaccines-p">CDC is working to make sure real-world vaccine assessments include diverse groups of people, such as healthcare personnel, essential workers, older adults and those living in nursing homes, people with underlying medical conditions, racial and ethnic minority groups, and tribal nations. It is important to measure how well COVID-19 vaccines work in groups of people who are at increased risk of getting COVID-19, as well as in those who are at increased risk of severe COVID-19.<br></br>CDC may recommend that some groups of people get COVID-19 vaccination first. If so, it will be important to see how COVID-19 vaccines work in these initial groups to be vaccinated to ensure the vaccines work as expected.  Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">how CDC is making COVID-19 vaccination recommendations</a>.
+            <b><i>Healthcare personnel and essential workers</i></b><br></br>
+            Experts will rapidly assess vaccine effectiveness among healthcare personnel working in hospitals or nursing homes in selected sites across the United States. This assessment will inform how well COVID-19 vaccines protect healthcare personnel from getting sick or severe illness. Additionally, assessments among healthcare personnel and essential workers will inform how well COVID-19 vaccines protect against getting infected, regardless of whether they have symptoms.
+            <br></br>
+            <b><i>Older adults and those living in nursing homes</i></b><br></br>
+            Making sure COVID-19 vaccines protect <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> is critical since the risk for severe illness from COVID-19 increases with age. People living in nursing homes and long-term care facilities are at especially high risk of getting COVID-19 and severe disease. FDA and CMS will assess COVID-19 vaccine effectiveness among older adults, including those living in nursing homes and long-term care facilities, using CMS Medicare billing data. These data will include information about whether people got a COVID-19 vaccine, whether they got sick with COVID-19, and if they needed to receive care in a hospital. This information will help inform how well the vaccine works in preventing COVID-19 and severe illness among older adults.
+Experts will also conduct a case-control assessment using data from CDC and CMS. Experts will identify older adults hospitalized for COVID-19 and older adults hospitalized for other reasons. They will then compare how many cases and controls received a COVID-19 vaccine to estimate vaccine effectiveness.
+            <br></br>
+            <b><i>Underlying medical conditions</i></b><br></br>
+            Adults of any age with <b>certain underlying medical conditions</b> are at increased risk for severe illness from the virus that causes COVID-19.<br></br>Making sure COVID-19 vaccines protect people with certain underlying medical conditions is important. Experts are working to make sure various real-world vaccine assessments will include enough adults with heart conditions, obesity, and diabetes to provide information about how well vaccines protect them.<br></br>The real-world vaccine effectiveness assessments will also collect information about many other underlying medical conditions. This information will be used to better understand how well COVID-19 vaccines protect people with underlying medical conditions.
+            <br></br>
+            <b><i>Racial and ethnic minority groups</i></b><br></br>
+            Long-standing systemic health and social inequities have put many people from racial and ethnic minority groups at increased risk of getting sick and dying from COVID-19. CDC is working to ensure that real-world vaccine effectiveness assessments include diverse populations, including people from racial and ethnic minority groups that are disproportionately affected by COVID-19. CDC also is working with the Indian Health Service (IHS), tribal nations, and other partners to ensure that real-world COVID-19 vaccine effectiveness assessments include American Indian and Alaska Native populations who have been disproportionately affected by COVID-19. This is important to ensure that COVID-19 vaccines can help achieve health equity so that everyone has a fair opportunity to be as healthy as possible. Learn more about <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/health-equity/race-ethnicity.html">COVID-19 and health equity considerations</a>.
+            <br></br>
+            
+            </p>
+
+
+            <a id="faq-vaccination" className="return-top" href="#vaccines-top"><br></br>Return to Top</a><br></br>
+            <p className="vaccines-subject-header">Frequently Asked Questions about Vaccination</p><br></br>
+            <p className="vaccines-p">The federal government, through <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Operation Warp Speed</a>, has been working since the pandemic started to make one or more COVID-19 vaccines available as soon as possible. Although CDC does not have a role in developing COVID-19 vaccines, CDC has been working closely with health departments and partners to develop vaccination plans for when a vaccine is available. CDC is working with partners at all levels, including healthcare associations, on flexible COVID-19 vaccination programs that can accommodate different vaccines and scenarios.<br></br>Below are answers to commonly asked questions. Regular updates will be made as needed.</p>
+
+
+            <Accordion>
+
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Planning for a Vaccine</Card.Header></a>
+
+              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1000">
+                What is Operation Warp Speed's role with COVID-19 vaccines?
+              </Accordion.Toggle>
+
+              <Accordion.Collapse eventKey="1000">
+                <Card.Body className="accordion-answer">Operation Warp Speed is a partnership among components of the Department of Health and Human Services (HHS) and the Department of Defense to help develop, make, and distribute millions of vaccine doses for COVID-19 as quickly as possible while ensuring that the vaccines are safe and that they work. Learn more about Operation Warp Speed:
+                <ul>
+                  <li className="vaccines-li">HHS <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Fact Sheet: Explaining Operation Warp Speed</a></li>
+                  <li className="vaccines-li">New England Journal of Medicine article: <a href="https://www.nejm.org/doi/full/10.1056/NEJMp2027405">Developing Safe and Effective COVID Vaccines — Operation Warp Speed’s Strategy and Approach</a></li>
+                  </ul></Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1001">
+                When will a COVID-19 vaccine be available in the United States?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1001">
+                  <Card.Body className="accordion-answer">The goal for <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Operation Warp Speed</a> is to deliver safe vaccines that work, with the first supply becoming available before the end of 2020. Currently, two vaccines are authorized and recommended to prevent COVID-19 in the United States. To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have published recommendations for which <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">groups should be vaccinated first</a>. Supplies will increase over time. The goal is for everyone to be able to easily get a COVID-19 vaccine as soon as large quantities are available. However, a COVID-19 vaccine may not be available for young children until more studies are completed.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1002">
+                What has been done to plan for the distribution of COVID-19 vaccines?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1002">
+                  <Card.Body className="accordion-answer">
+                  The federal government oversees a centralized system to order, distribute, and track COVID-19 vaccines. All vaccines will be ordered through CDC. Vaccine providers will receive vaccines from CDC’s centralized distributor or directly from a vaccine manufacturer.<br></br><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html">Two vaccines are authorized and recommended</a> to prevent COVID-19 in the United States, other COVID-19 vaccine candidates are in development, and clinical trials are being conducted at the same time as large-scale manufacturing. With first doses now available, planning and preparing for a COVID-19 vaccination program is very important.<br></br>Planning efforts have focused on every step and detail of the process, including:
+                  <ul>
+                    <li className="vaccines-li">Establishing and testing logistics plans with manufacturers and commercial partners that are part of CDC’s centralized COVID-19 vaccine delivery system</li>
+                    <li className="vaccines-li">Coordinating the first distribution of vaccines and needed supplies from centralized locations</li>
+                    <li className="vaccines-li">Ordering processes for additional doses of the vaccine after the first supply has been shipped</li>
+                    <li className="vaccines-li">Receiving, storing, and handling vaccines properly at very specific temperatures</li>
+                    <li className="vaccines-li">Deciding who should receive a vaccine first, based on national recommendations, if there are not enough doses of the vaccine for everyone</li>
+                    <li className="vaccines-li">Giving the vaccines in a safe way during an ongoing pandemic</li>
+                    <li className="vaccines-li">Reporting on vaccine inventory, administration, and safety using a variety of new and enhanced data systems</li>
+                    <li className="vaccines-li">Expanding safety surveillance through new systems and additional information sources, as well as scaling up existing safety monitoring systems</li>
+                    <li className="vaccines-li">Developing plans to assess vaccine effectiveness, which means how well the vaccines protect against COVID-19 under real-life conditions</li>
+                    <li className="vaccines-li">Making sure timely, credible, and clear communication is provided to the public and stakeholders around all aspects of the vaccination program</li>
+                  </ul>
+                  This situation continues to change, and planning will progress as more information about any new authorized or approved vaccines becomes available. A safe and effective COVID-19 vaccine is a critical component of the U.S. strategy to reduce COVID-19-related illnesses, hospitalizations, and deaths and to help society function as it did before COVID-19. The goal of the U.S. government is to have enough COVID-19 vaccine doses for all people in the United States who choose to be vaccinated.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1003">
+                Who has CDC worked with to plan for the distribution of COVID-19 vaccines?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1003">
+                  <Card.Body className="accordion-answer">
+                  <b>State, tribal, territorial, and local jurisdictions:</b> CDC worked with state, tribal, territorial, and local jurisdictions on the development of COVID-19 vaccination plans for their respective areas. CDC released a playbook on September 16, 2020, to provide specific information to consider during vaccination plan development. The <a href="https://www.cdc.gov/vaccines/imz-managers/downloads/COVID-19-Vaccination-Program-Interim_Playbook.pdf">playbook</a> was updated on October 30, 2020.<br></br><b>Private partners and federal agencies:</b> CDC has also worked with private partners, such as chain and networks of independent pharmacies, and other federal agencies (e.g., the Indian Health Service) on plans to more widely distribute COVID-19 vaccines. For example, CDC is working with pharmacies to offer on-site COVID-19 vaccination services for residents in long-term care settings, including skilled nursing facilities, nursing homes, and assisted living facilities where most individuals are over 65 years of age.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1004">
+                Does CDC have a national campaign to address any concerns people may have about getting a COVID-19 vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1004">
+                  <Card.Body className="accordion-answer">
+                  No, CDC is not leading a national campaign on COVID-19 vaccination. CDC’s vaccination activities fit within and are guided by a <i><a href="https://www.cdc.gov/vaccines/partners/vaccinate-with-confidence.html">Vaccinate with Confidence strategic framework</a></i>. This strategic framework focuses on strengthening vaccine confidence and preventing outbreaks of vaccine-preventable diseases in the United States. It builds on longstanding practices that CDC and partners have used to talk with the public and healthcare providers about the life-saving protection of vaccines.<br></br>The <i>Vaccinate with Confidence</i> strategic framework is being customized to address the unique information and health equity needs created by the COVID-19 pandemic. The new <i>Vaccinate with Confidence for COVID-19</i> strategic framework will strive to support public and healthcare personnel acceptance of future COVID-19 vaccines. CDC will provide updates once the new strategic framework is completed.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1005">
+                How is CDC working to make sure people want to and can get vaccinated once a COVID-19 vaccine is available?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1005">
+                  <Card.Body className="accordion-answer">
+                  CDC is working with partners across the country to make sure people have the information they need to be confident in deciding to get vaccinated. Key priorities for CDC are:
+                  <ul>
+                    <li className="vaccines-li"><b>Regularly sharing clear and accurate information</b> with people to make sure they understand the risks and benefits of getting vaccinated and can make informed decisions.</li>
+                    <li className="vaccines-li"><b>Helping healthcare personnel feel confident</b> in their decision to get a COVID-19 vaccine and <b>helping healthcare providers</b> answer their patients’ questions about the vaccine.</li>
+                    <li className="vaccines-li"><b>Engaging communities and individuals in an equitable and inclusive way</b> to ensure that people have opportunities to ask questions and get clear, accurate information about the COVID-19 vaccine.</li>
+                  </ul>
+                  Easy access to COVID-19 vaccines is equally critical. CDC is working with public health, healthcare providers, and other partners to make sure people can easily get a COVID-19 vaccine and that cost is not a barrier.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1006">
+                Will there be enough vaccine for everyone?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1006">
+                  <Card.Body className="accordion-answer">
+                  Currently, two vaccines are authorized and recommended to prevent COVID-19 in the United States. To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have published recommendations for which <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">groups should be vaccinated first</a>.  It is understandable how concerning this may be for people, especially for <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">those who are at increased risk for serious illness</a> from this virus and for their loved ones.<br></br>The goal is for everyone to be able to easily get a COVID-19 vaccine as soon as large quantities are available. That is why, early in the response, the <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">federal government began investing in select vaccine manufacturers</a> to help them increase their ability to quickly make and distribute a large amount of COVID-19 vaccine. This will allow the United States to start with as much vaccine as possible and continually increase the supply in the weeks and months to follow. The goal is for everyone to be able to easily get a COVID-19 vaccine as soon as large quantities are available. Several thousand vaccination providers will be available, including doctors’ offices, retail pharmacies, hospitals, and federally qualified health centers.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1007">
+                What can I do now to help protect myself from getting COVID-19 since a vaccine is not yet available?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1007">
+                  <Card.Body className="accordion-answer">You should cover your mouth and nose with a mask when around others, avoid close contact with people who are sick, stay 6 feet away from others, avoid crowds, and wash your hands often. Get more information about these and other steps you can take to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">protect yourself and others from COVID-19</a>.</Card.Body>
+                </Accordion.Collapse>
+
+
+            </Card>
+
+            <Card><a id="Basics"><Card.Header className="alert-subjects">Vaccine Development</Card.Header></a>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1008">
+              How many COVID-19 vaccines are under development?
+            </Accordion.Toggle>
+
+            <Accordion.Collapse eventKey="1008">
+              <Card.Body className="accordion-answer">
+              Currently, <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html">two vaccines</a> are authorized and recommended to prevent COVID-19:
+              <ul>
+                <li className="vaccines-li">​​​​<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">Pfizer-BioNTech COVID-19 vaccine</a></li>
+                <li className="vaccines-li"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html">Moderna’s COVID-19 vaccine</a></li>
+              </ul>
+              Multiple COVID-19 vaccines are also still under development. Large-scale (Phase 3) clinical trials are in progress or being planned for two additional COVID-19 vaccines in the United States.
+              </Card.Body>
+            </Accordion.Collapse>
+
+            <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1009">
+                Has there been a coronavirus vaccine developed before? What's know about it, and can it be helpful today in working toward a COVID-19 vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1009">
+                  <Card.Body className="accordion-answer"><a href="https://www.cdc.gov/sars/index.html">Severe acute respiratory syndrome (SARS)</a> and <a href="https://www.cdc.gov/coronavirus/mers/index.html">Middle East respiratory syndrome (MERS)</a> are two diseases caused by coronaviruses that are closely related to the virus that causes COVID-19. Researchers began working on developing vaccines for these diseases after they were discovered in 2003 and 2012, respectively. None of the SARS vaccines ever made it past the first stages of development and testing, in large part due to lack of interest because the virus disappeared. One MERS vaccine (MVA-MERS-S) successfully completed a phase 1 clinical trial in 2019. Lessons learned from this earlier vaccine research have been used to inform strategies for developing a COVID-19 vaccine.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1010">
+                Why is it taking so long to develop a COVID019 vaccine? It only took a few months for the H1N1 influence (flu) vaccine to be developed.
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1010">
+                  <Card.Body className="accordion-answer">When a new flu strain is identified, like H1N1 in 2009, vaccine manufacturers can use the same processes that are used to make the annual seasonal flu vaccine, saving valuable time. Unlike flu, coronaviruses do not yet have licensed vaccines or processes to build on. In addition, the coronavirus that causes COVID-19 is a new virus, so entirely new vaccines must be developed and tested to ensure they work and are safe. There are many steps in the <a href="https://www.cdc.gov/vaccines/basics/test-approve.html">vaccine testing and approval process</a>. <a href="https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html">Multiple agencies and groups in the United States</a> are working together to make sure that a safe and effective COVID-19 vaccine is available as quickly as possible.</Card.Body>
+                </Accordion.Collapse>
+  
+
+                </Card>
+
+                <Card><a id="Basics"><Card.Header className="alert-subjects">Getting Vaccinated</Card.Header></a>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1011">
+                  How many shots of COVID-19 vaccine will be needed?
+                </Accordion.Toggle>
+
+                <Accordion.Collapse eventKey="1011">
+                  <Card.Body className="accordion-answer">The two authorized and recommended vaccines to prevent COVID-19 in the United States both need two shots to be effective. There is one COVID-19 vaccine in Phase 3 clinical trials in the United States that uses one shot.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1012">
+                Do I need to wear a mask when I receieve a COVID-19 vaccine?
+                
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="1012">
+                  <Card.Body className="accordion-answer">
+                  Yes. CDC recommends that during the pandemic people <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">wear a mask</a> that covers their nose and mouth when in contact with others outside your household, when in healthcare facilities, and when receiving any vaccine, including a COVID-19 vaccine. Anyone who has trouble breathing or is unable to remove a mask without assistance should not wear a mask. For more information, visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html">considerations for wearing masks</a>.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1013">
+                Who is paying for COVID-19 vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1013">
+                  <Card.Body className="accordion-answer">Vaccine doses purchased with U.S. taxpayer dollars will be given to the American people at no cost. However, vaccination providers will be able to charge an administration fee for giving the shot to someone. Vaccine providers can get this fee reimbursed by the patient’s public or private insurance company or, for uninsured patients, by the Health Resources and Services Administration’s Provider Relief Fund.</Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1014">
+                Are there special considerations on who sould get the COVID-19 vaccine first?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1014">
+                  <Card.Body className="accordion-answer">
+                  CDC is making recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations.html">who should be offered COVID-19 vaccine first</a> when supplies are limited. To help guide decisions about how to distribute limited initial supplies of COVID-19 vaccine, CDC and the Advisory Committee on Immunization Practices have <a href="https://www.cdc.gov/vaccines/hcp/acip-recs/vacc-specific/covid-19.html">published recommendations</a> for which groups should be vaccinated first. The goal is for everyone to be able to easily get a COVID-19 vaccination as soon as large quantities of vaccine are available.<br></br>While CDC makes recommendations for who should be offered COVID-19 vaccine first, each state has its own plan for vaccine prioritization, distribution and allocation. Please contact your state health department for more information on their planning for COVID-19 vaccines.<br></br>Learn how <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html">CDC is making COVID-19 vaccine recommendations</a>, including recommendations if there is a limited supply, based on input from the Advisory Committee on Immunization Practices (ACIP).
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1015">
+                If I have already had COVID-19 and recovered, do I still need to get vaccinated with a COVID-19 vaccine when it's available?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1015">
+                  <Card.Body className="accordion-answer">
+                  COVID-19 vaccination should be offered to you regardless of whether you already had COVID-19 infection. You should not be required to have an antibody test before you are vaccinated.<br></br>However, anyone currently infected with COVID-19 should wait to get vaccinated until after their illness has resolved and after they have met the <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/disposition-in-home-patients.html">criteria</a> to discontinue isolation.<br></br>Additionally, current evidence suggests that reinfection with the virus that causes COVID-19 is uncommon in the 90 days after initial infection. Therefore, people with a recent infection may delay vaccination until the end of that 90-day period if desired.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1016">
+                Why would a vaccine be needed if we can do other things, like social distancing and wearing masks, to prevent the virus that causes COVID-19 from spreading?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1016">
+                  <Card.Body className="accordion-answer">
+                  Stopping a pandemic requires using all the tools available. Vaccines work with your immune system so your body will be ready to fight the virus if you are exposed. Other steps, like covering your mouth and nose with a mask and staying at least 6 feet away from others, help reduce your chance of being exposed to the virus or spreading it to others. Together, COVID-19 vaccination and following CDC’s recommendations to <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">protect yourself and others</a> will offer the best protection from COVID-19.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1017">
+                Do I need to wear a mask and avoid close contact with others if I have received 2 doses of the vaccine?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1017">
+                  <Card.Body className="accordion-answer">
+                  Yes. While experts learn more about the protection that COVID-19 vaccines provide under real-life conditions, it will be important for everyone to continue using <b>all the tools</b> available to us to help stop this pandemic, like covering your mouth and nose with a mask, washing hands often, and staying at least 6 feet away from others. Together, COVID-19 vaccination and following CDC’s recommendations for <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">how to protect yourself and others</a> will offer the best protection from getting and spreading COVID-19. Experts need to understand more about the protection that COVID-19 vaccines provide before deciding to change recommendations on steps everyone should take to slow the spread of the virus that causes COVID-19. Other factors, including how many people get vaccinated and how the virus is spreading in communities, will also affect this decision.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1018">
+                When can I stop wearing a mask and avoiding close contact with others after I have been vaccinated?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1018">
+                  <Card.Body className="accordion-answer">
+                  There is not enough information currently available to say if or when CDC will stop recommending that people <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">wear masks</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">avoid close contact with others</a> to help prevent the spread of the virus that causes COVID-19. Experts need to understand more about the protection that COVID-19 vaccines provide before making that decision. Other factors, including how many people get vaccinated and how the virus is spreading in communities, will also affect this decision.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1019">
+                Are there other vaccines that can help prevent me from getting COVID-19?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1019">
+                  <Card.Body className="accordion-answer">
+                  There are currently no available vaccines that will prevent COVID-19. However, <a href="https://www.hhs.gov/about/news/2020/06/16/fact-sheet-explaining-operation-warp-speed.html">multiple agencies and groups in the United States</a> are working together to make sure that a safe and effective COVID-19 vaccine is available as quickly as possible.<br></br>A flu vaccine will not protect you from getting COVID-19, but it can prevent you from getting influenza (flu) at the same time as COVID-19. This can keep you from having a more severe illness. While it’s not possible to say with certainty what will happen in the winter, CDC believes it’s likely that flu viruses and the virus that causes COVID-19 will both be spreading during that time. That means that getting a flu vaccine is more important than ever.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1020">
+                Does immunity after getting COVID-19 last longer than protection from COVID-19 vaccines?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1020">
+                  <Card.Body className="accordion-answer">
+                  The protection someone gains from having an infection (called natural immunity) varies depending on the disease, and it varies from person to person. Since this virus is new, we don’t know how long natural immunity might last. Current evidence suggests that reinfection with the virus that causes COVID-19 is uncommon in the 90 days after initial infection.<br></br>Regarding vaccination, we won’t know how long immunity lasts until we have a vaccine and more data on how well it works.<br></br>Both natural immunity and vaccine-induced immunity are important aspects of COVID-19 that experts are trying to learn more about, and CDC will keep the public informed as new evidence becomes available.
+                  </Card.Body>
+                </Accordion.Collapse>
+
+                <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1021">
+                What percentage of the population needs to get vaccinated to have herd immunity to COVID-19?
+                </Accordion.Toggle>
+  
+                <Accordion.Collapse eventKey="1021">
+                  <Card.Body className="accordion-answer">Experts do not know what percentage of people would need to get vaccinated to achieve herd immunity to COVID-19. Herd immunity is a term used to describe when enough people have protection—either from previous infection or vaccination—that it is unlikely a virus or bacteria can spread and cause disease. As a result, everyone within the community is protected even if some people don’t have any protection themselves. The percentage of people who need to have protection in order to achieve herd immunity varies by disease.</Card.Body>
+                </Accordion.Collapse>
+
+
+
+
+          </Card>
+
+          <Card><a id="Basics"><Card.Header className="alert-subjects">Safety</Card.Header></a>
+
+          <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1022">
+          How do I report if I have a problem or bad reaction after getting a COVID-19 vaccine?
+            
+          </Accordion.Toggle>
+
+          <Accordion.Collapse eventKey="1022">
+            <Card.Body className="accordion-answer">
+            CDC and FDA encourage the public to report possible side effects (called adverse events) to the <a href="https://vaers.hhs.gov/reportevent.html">Vaccine Adverse Event Reporting System (VAERS)</a>. This national system collects these data to look for adverse events that are unexpected, appear to happen more often than expected, or have unusual patterns of occurrence. Learn about the <a href="https://www.cdc.gov/vaccinesafety/ensuringsafety/sideeffects/index.html">difference between a vaccine side effect and an adverse event</a>. Reports to VAERS help CDC monitor the safety of vaccines. Safety is a top priority.<br></br>Healthcare providers will be required to report certain adverse events following vaccination to VAERS. Healthcare providers also have to adhere to any revised safety reporting requirements according to FDA’s conditions of authorized use throughout the duration of any Emergency Use Authorization; these requirements would be posted on <a href="https://www.fda.gov/emergency-preparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">FDA’s website</a>.<br></br>CDC is also implementing a new smartphone-based tool called <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html"><b>v-safe</b></a> to check-in on people’s health after they receive a COVID-19 vaccine. When you receive your vaccine, you should also receive a <b>v-safe</b> information sheet telling you how to enroll in <b>v-safe</b>. If you enroll, you will receive regular text messages directing you to surveys where you can report any problems or adverse reactions you have after receiving a COVID-19 vaccine.
+
+            </Card.Body>
+          </Accordion.Collapse>
+
+                        <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1023">
+                          What does it mean if a clinical trial is temporarily paused?
+                        </Accordion.Toggle>
+
+                        <Accordion.Collapse eventKey="1023">
+                          <Card.Body className="accordion-answer">
+                          Safety is a top priority during the vaccine approval process. It is not unusual for a clinical trial to be temporarily paused when a possible side effect (called an adverse event) is detected. Clinical trials are designed to pause when an unexpected health event (called a safety signal) is detected so scientists and physicians can investigate potential safety concerns. The approval process for COVID-19 vaccines is no different ― safety is always the focus.
+                          </Card.Body>
+                        </Accordion.Collapse>
+
+          <a href="#vaccines-top">Return to Top</a>
+
+          </Card>
+            </Accordion>
+
+          </Alert>
+
+          {/* END VACCINES */}
 
           {/* START PREVENT */}
           <Alert className="alert" id="prevent" variant="success" onClose={() => hide_prevent()} dismissible hidden="true">
@@ -1157,6 +2190,30 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
             <a className="return-top" href="#prevent-top"><br></br>Return to Top</a>
 
+            <Accordion>
+
+<Card><a id="Basics"><Card.Header className="alert-subjects">Basics</Card.Header></a>
+
+        <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="0">
+          What is a novel coronavirus?
+        </Accordion.Toggle>
+
+        <Accordion.Collapse eventKey="0">
+          <Card.Body className="accordion-answer">A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the <a target="_blank" href="https://www.cdc.gov/coronavirus/types.html">coronaviruses that commonly circulate among humans</a> and cause mild illness, like the common cold.</Card.Body>
+        </Accordion.Collapse>
+
+        <Accordion.Toggle className="accordion-question" as={Card.Header} eventKey="1">
+          Why is the disease being called coronavirus disease 2019, COVID-19?
+        </Accordion.Toggle>
+
+        <Accordion.Collapse eventKey="1">
+          <Card.Body className="accordion-answer">On February 11, 2020 the World Health Organization <a target="_blank" href="https://twitter.com/DrTedros/status/1227297754499764230">announced</a> an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.<br></br><br></br>There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans.</Card.Body>
+        </Accordion.Collapse>
+
+        <a href="#faq-top">Return to Top</a>
+
+      </Card>
+      </Accordion>
 
           </Alert>
           {/* END PREVENT */}
