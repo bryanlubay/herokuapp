@@ -467,3 +467,17 @@
 .box {
   background-color: white;
 }
+
+.red-text {
+  display: inline;
+  color: red;
+}
+
+.blue-text {
+  display: inline;
+  color: blue;
+}
+
+.days-vs-infected {
+
+}
