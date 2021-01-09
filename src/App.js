@@ -214,7 +214,7 @@ function convertState(state) {
 function convertEpoch(epoch) {
   var d = new Date(0);
   d.setUTCSeconds(epoch)
-  return d.getUTCDate()
+  return d.toUTCString()
 }
 
 function show_vaccines() {
@@ -371,6 +371,10 @@ function App() {
     })
   
     let data = await res.json()
+
+
+
+
     sessionStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) // newest update
     sessionStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2])) 
     sessionStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3])) 
@@ -492,7 +496,7 @@ function App() {
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
-  const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
+  const axes = React.useMemo(() => [{ primary: true, type: 'utc', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
 
   const { data, updateChartData } = useChartConfig()
 
