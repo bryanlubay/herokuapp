@@ -496,7 +496,7 @@ function App() {
 
   const series = React.useMemo(() => ({showPoints: false}),[])
 
-  const axes = React.useMemo(() => [{ primary: true, type: 'time', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
+  const axes = React.useMemo(() => [{  type: 'time', position: 'bottom' }, {primary: true, type: 'linear', position: 'left' }],[])
 
   const { data, updateChartData } = useChartConfig()
 
