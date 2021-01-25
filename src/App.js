@@ -371,10 +371,6 @@ function App() {
     })
   
     let data = await res.json()
-
-
-
-
     sessionStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) // newest update
     sessionStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2])) 
     sessionStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3])) 
@@ -422,7 +418,8 @@ function App() {
     sessionStorage.setItem("deaths13", parseInt(data.Deaths[data.Deaths.length - 13]))
     sessionStorage.setItem("deaths14", parseInt(data.Deaths[data.Deaths.length - 14]))
     sessionStorage.setItem("deaths15", parseInt(data.Deaths[data.Deaths.length - 15]))
-  
+
+
     let asterik = "*"
     convertState(state)
     var number = parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 1]) - parseInt(document.getElementById('tested').textContent = data.Tested[data.Tested.length - 2])
@@ -538,7 +535,7 @@ function App() {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (December 2020 / January 2021) VS <div className="red-text">Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
+          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (January 2021) VS <div className="red-text">Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
           {lineChart}
         </div>
 
