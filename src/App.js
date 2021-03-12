@@ -2,7 +2,10 @@
 
 import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, /*Redirect,*/ Switch } from 'react-router-dom';
 import { Chart } from 'react-charts'
+import Unity from './components/Unity'
+import CompTIA from './components/CompTIA'
 
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -4982,6 +4985,14 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
 
       </header>
+
+      <Router>
+        <Switch>
+          <Route exact path='/unity' component={Unity}/> 
+          <Route exact path='/comptia' component={CompTIA}/> 
+
+        </Switch>
+      </Router>
     </div>
 
   );
