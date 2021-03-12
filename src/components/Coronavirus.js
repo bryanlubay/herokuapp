@@ -2,8 +2,6 @@ import React from 'react';
 import { Chart } from 'react-charts'
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 
-import update_chart from '../App'
-
 
 function show_vaccines() {
   document.getElementById("vaccines").hidden = false
