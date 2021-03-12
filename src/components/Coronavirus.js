@@ -504,6 +504,7 @@ const Coronavirus = () => {
   return (
     <div>
 
+      <br></br>
       <header className="coronavirus-header">
 
         {/* STATE SEARCH */}

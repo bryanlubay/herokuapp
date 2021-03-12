@@ -16,7 +16,7 @@ import React from 'react';
 const CompTIA = () => {
   return (
     <div>
-      <h1>CompTIA</h1>
+      <h1>CompTIA flash cards app coming soon :)</h1>
     </div>
   )
 }
