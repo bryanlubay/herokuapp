@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, /*Redirect,*/ Switch } from 'react-rout
 import { Chart } from 'react-charts'
 import Container from 'react-bootstrap/Container'
 import Unity from './components/Unity'
+import Coronavirus from './components/Coronavirus'
 import CompTIA from './components/CompTIA'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -13,6 +14,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Coronavirus from './components/Coronavirus';
 
 function convertState(state) {
   state = state.toUpperCase()
@@ -515,7 +517,10 @@ function App() {
 
       <Container >
         <Navbar fixed="top"  bg="light" expand="lg">
-                <Navbar.Brand></Navbar.Brand>
+                <Navbar.Brand>Bryan Lubay's App</Navbar.Brand>
+                <Nav.Link href="/comptia">CompTIA</Nav.Link>
+                <Nav.Link href="/coronavirus">Coronavirus</Nav.Link>
+                <Nav.Link href="/unity">Unity</Nav.Link>
         </Navbar>
       </Container>
 
@@ -4999,6 +5004,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
         <Switch>
           <Route exact path='/unity' component={Unity}/> 
           <Route exact path='/comptia' component={CompTIA}/> 
+          <Route exact path='/coronavirus' component={Coronavirus}/> 
 
         </Switch>
       </Router>
