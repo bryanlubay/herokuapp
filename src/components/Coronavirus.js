@@ -296,6 +296,58 @@ function convertEpoch(epoch) {
 }
 
 
+
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+function update_chart () {
+  return       [
+    {
+      label: 'Deaths',
+      data: 
+      [
+        // [update_chart(),  update_chart()],
+        [sessionStorage.getItem("dates1"),  sessionStorage.getItem("deaths1") - sessionStorage.getItem("deaths2")],   
+        [sessionStorage.getItem("dates2"),  sessionStorage.getItem("deaths2") - sessionStorage.getItem("deaths3")],   
+        [sessionStorage.getItem("dates3"),  sessionStorage.getItem("deaths3") - sessionStorage.getItem("deaths4")],   
+        [sessionStorage.getItem("dates4"),  sessionStorage.getItem("deaths4") - sessionStorage.getItem("deaths5")],   
+        [sessionStorage.getItem("dates5"),  sessionStorage.getItem("deaths5") - sessionStorage.getItem("deaths6")],   
+        [sessionStorage.getItem("dates6"),  sessionStorage.getItem("deaths6") - sessionStorage.getItem("deaths7")],   
+        [sessionStorage.getItem("dates7"),  sessionStorage.getItem("deaths7") - sessionStorage.getItem("deaths8")],   
+        [sessionStorage.getItem("dates8"),  sessionStorage.getItem("deaths8") - sessionStorage.getItem("deaths9")],   
+        [sessionStorage.getItem("dates9"),  sessionStorage.getItem("deaths9") - sessionStorage.getItem("deaths10")],   
+        [sessionStorage.getItem("dates10"),  sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")],   
+        [sessionStorage.getItem("dates11"),  sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")],   
+        [sessionStorage.getItem("dates12"),  sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")],   
+        [sessionStorage.getItem("dates13"),  sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")],   
+        [sessionStorage.getItem("dates14"),  sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")]   
+      ] 
+    },
+    {
+      label: 'New Positive Cases',
+      data: 
+      [
+        [sessionStorage.getItem("dates1"),  sessionStorage.getItem("positives1") - sessionStorage.getItem("positives2")],   
+        [sessionStorage.getItem("dates2"),  sessionStorage.getItem("positives2") - sessionStorage.getItem("positives3")],   
+        [sessionStorage.getItem("dates3"),  sessionStorage.getItem("positives3") - sessionStorage.getItem("positives4")],   
+        [sessionStorage.getItem("dates4"),  sessionStorage.getItem("positives4") - sessionStorage.getItem("positives5")],   
+        [sessionStorage.getItem("dates5"),  sessionStorage.getItem("positives5") - sessionStorage.getItem("positives6")],   
+        [sessionStorage.getItem("dates6"),  sessionStorage.getItem("positives6") - sessionStorage.getItem("positives7")],   
+        [sessionStorage.getItem("dates7"),  sessionStorage.getItem("positives7") - sessionStorage.getItem("positives8")],   
+        [sessionStorage.getItem("dates8"),  sessionStorage.getItem("positives8") - sessionStorage.getItem("positives9")],   
+        [sessionStorage.getItem("dates9"),  sessionStorage.getItem("positives9") - sessionStorage.getItem("positives10")],   
+        [sessionStorage.getItem("dates10"),  sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")],   
+        [sessionStorage.getItem("dates11"),  sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")],   
+        [sessionStorage.getItem("dates12"),  sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")],   
+        [sessionStorage.getItem("dates13"),  sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")],   
+        [sessionStorage.getItem("dates14"),  sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")]   
+      ] 
+    }]
+
+}
+
+
 const get_data = async () => {
 
   sessionStorage.clear()
@@ -406,56 +458,6 @@ const [state, setState] = React.useState(
       label: 'New Positive Cases',
       data: [[10000,10000]]
     }]})
-
-
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-function update_chart () {
-  return       [
-    {
-      label: 'Deaths',
-      data: 
-      [
-        // [update_chart(),  update_chart()],
-        [sessionStorage.getItem("dates1"),  sessionStorage.getItem("deaths1") - sessionStorage.getItem("deaths2")],   
-        [sessionStorage.getItem("dates2"),  sessionStorage.getItem("deaths2") - sessionStorage.getItem("deaths3")],   
-        [sessionStorage.getItem("dates3"),  sessionStorage.getItem("deaths3") - sessionStorage.getItem("deaths4")],   
-        [sessionStorage.getItem("dates4"),  sessionStorage.getItem("deaths4") - sessionStorage.getItem("deaths5")],   
-        [sessionStorage.getItem("dates5"),  sessionStorage.getItem("deaths5") - sessionStorage.getItem("deaths6")],   
-        [sessionStorage.getItem("dates6"),  sessionStorage.getItem("deaths6") - sessionStorage.getItem("deaths7")],   
-        [sessionStorage.getItem("dates7"),  sessionStorage.getItem("deaths7") - sessionStorage.getItem("deaths8")],   
-        [sessionStorage.getItem("dates8"),  sessionStorage.getItem("deaths8") - sessionStorage.getItem("deaths9")],   
-        [sessionStorage.getItem("dates9"),  sessionStorage.getItem("deaths9") - sessionStorage.getItem("deaths10")],   
-        [sessionStorage.getItem("dates10"),  sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")],   
-        [sessionStorage.getItem("dates11"),  sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")],   
-        [sessionStorage.getItem("dates12"),  sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")],   
-        [sessionStorage.getItem("dates13"),  sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")],   
-        [sessionStorage.getItem("dates14"),  sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")]   
-      ] 
-    },
-    {
-      label: 'New Positive Cases',
-      data: 
-      [
-        [sessionStorage.getItem("dates1"),  sessionStorage.getItem("positives1") - sessionStorage.getItem("positives2")],   
-        [sessionStorage.getItem("dates2"),  sessionStorage.getItem("positives2") - sessionStorage.getItem("positives3")],   
-        [sessionStorage.getItem("dates3"),  sessionStorage.getItem("positives3") - sessionStorage.getItem("positives4")],   
-        [sessionStorage.getItem("dates4"),  sessionStorage.getItem("positives4") - sessionStorage.getItem("positives5")],   
-        [sessionStorage.getItem("dates5"),  sessionStorage.getItem("positives5") - sessionStorage.getItem("positives6")],   
-        [sessionStorage.getItem("dates6"),  sessionStorage.getItem("positives6") - sessionStorage.getItem("positives7")],   
-        [sessionStorage.getItem("dates7"),  sessionStorage.getItem("positives7") - sessionStorage.getItem("positives8")],   
-        [sessionStorage.getItem("dates8"),  sessionStorage.getItem("positives8") - sessionStorage.getItem("positives9")],   
-        [sessionStorage.getItem("dates9"),  sessionStorage.getItem("positives9") - sessionStorage.getItem("positives10")],   
-        [sessionStorage.getItem("dates10"),  sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")],   
-        [sessionStorage.getItem("dates11"),  sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")],   
-        [sessionStorage.getItem("dates12"),  sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")],   
-        [sessionStorage.getItem("dates13"),  sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")],   
-        [sessionStorage.getItem("dates14"),  sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")]   
-      ] 
-    }]
-
-}
 
 const Coronavirus = () => {
 
