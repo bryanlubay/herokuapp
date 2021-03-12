@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, /*Redirect,*/ Switch } from 'react-rout
 import { Chart } from 'react-charts'
 import Container from 'react-bootstrap/Container'
 import Unity from './components/Unity'
-import Coronavirus from './components/Coronavirus'
+// import Coronavirus from './components/Coronavirus'
 import CompTIA from './components/CompTIA'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -518,7 +518,7 @@ function App() {
         <Navbar fixed="top"  bg="light" expand="lg">
                 <Navbar.Brand>Bryan Lubay's App</Navbar.Brand>
                 <Nav.Link href="/comptia">CompTIA</Nav.Link>
-                <Nav.Link href="/coronavirus">Coronavirus</Nav.Link>
+                {/* <Nav.Link href="/coronavirus">Coronavirus</Nav.Link> */}
                 <Nav.Link href="/unity">Unity</Nav.Link>
         </Navbar>
       </Container>
@@ -5001,9 +5001,9 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
       <Router>
         <Switch>
-          <Route exact path='/unity' component={Unity}/> 
+          <Route exact path='/unity' render={Unity}/> 
           <Route exact path='/comptia' render={CompTIA}/> 
-          <Route exact path='/coronavirus' component={Coronavirus}/> 
+          {/* <Route exact path='/coronavirus' render={Coronavirus}/>  */}
 
         </Switch>
       </Router>

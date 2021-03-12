@@ -1,14 +1,11 @@
 import React from 'react';
 
-function Unity() {
+const Unity = () => {
   return (
     <div>
-        <h1>Unity</h1>
-
-
-
+      <h1>Unity</h1>
     </div>
   )
 }
 
-export default Unity
+export default Unity;
