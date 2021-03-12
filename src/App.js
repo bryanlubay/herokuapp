@@ -514,14 +514,14 @@ function App() {
   <div className="App" >
       <header className="App-header">
 
-      {/* <Container >
+      <Container >
         <Navbar fixed="top"  bg="light" expand="lg">
                 <Navbar.Brand>Bryan Lubay's App</Navbar.Brand>
                 <Nav.Link href="/comptia">CompTIA</Nav.Link>
                 <Nav.Link href="/coronavirus">Coronavirus</Nav.Link>
                 <Nav.Link href="/unity">Unity</Nav.Link>
         </Navbar>
-      </Container> */}
+      </Container>
 
 
 
