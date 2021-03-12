@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, /*Redirect,*/ Switch } from 'react-rout
 import { Chart } from 'react-charts'
 import Container from 'react-bootstrap/Container'
 import Unity from './components/Unity'
-// import Coronavirus from './components/Coronavirus'
+import Coronavirus from './components/Coronavirus'
 import CompTIA from './components/CompTIA'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
