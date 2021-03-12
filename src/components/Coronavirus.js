@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { Chart } from 'react-charts'
-import App from '../App'
-
 
 function show_vaccines() {
   document.getElementById("vaccines").hidden = false
@@ -346,9 +344,6 @@ function update_chart () {
     }]
 
 }
-
-
-
 
 const Coronavirus = () => {
 
