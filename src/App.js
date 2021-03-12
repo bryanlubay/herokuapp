@@ -4996,13 +4996,13 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
 
       </header>
 
-      <Router>
+      {/* <Router>
         <Switch>
           <Route exact path='/unity' component={Unity}/> 
           <Route exact path='/comptia' component={CompTIA}/> 
 
         </Switch>
-      </Router>
+      </Router> */}
     </div>
 
   );
