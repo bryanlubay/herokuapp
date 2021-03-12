@@ -2,6 +2,89 @@ import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import App from '../App'
 
+
+function show_vaccines() {
+  document.getElementById("vaccines").hidden = false
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
+
+}
+
+function hide_vaccines() {
+  document.getElementById("vaccines").hidden = true
+}
+
+
+function show_prevent() {
+  document.getElementById("prevent").hidden = false
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
+  document.getElementById("vaccines").hidden = true
+}
+
+function hide_prevent() {
+  document.getElementById("prevent").hidden = true
+}
+
+function show_frequently_asked_questions() {
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = false
+  document.getElementById("masks").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("vaccines").hidden = true
+}
+
+function hide_frequently_asked_questions() {
+  document.getElementById("frequently_asked_questions").hidden = true
+}
+
+function show_masks() {
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = false
+  document.getElementById("if_you_are_sick").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("vaccines").hidden = true
+}
+
+function hide_masks() {
+  document.getElementById("masks").hidden = true
+}
+
+function show_if_you_are_sick() {
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = true
+  document.getElementById("symptoms").hidden = true
+  document.getElementById("if_you_are_sick").hidden = false
+  document.getElementById("vaccines").hidden = true
+}
+
+function hide_if_you_are_sick() {
+  document.getElementById("if_you_are_sick").hidden = true
+}
+
+function show_symptoms() {
+  document.getElementById("prevent").hidden = true
+  document.getElementById("frequently_asked_questions").hidden = true
+  document.getElementById("masks").hidden = true
+  document.getElementById("if_you_are_sick").hidden = true
+  document.getElementById("symptoms").hidden = false
+  document.getElementById("vaccines").hidden = true
+}
+
+function hide_symptoms() {
+  document.getElementById("symptoms").hidden = true
+}
+
+
+
 const Coronavirus = () => {
   return (
     <div>
