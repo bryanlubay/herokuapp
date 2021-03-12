@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import App from '../App'
 
 const Coronavirus = () => {
