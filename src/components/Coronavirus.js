@@ -461,9 +461,6 @@ const Coronavirus = () => {
         data: [[10000,10000]]
       }]})
   
-
-
-
   function useChartConfig() { 
 
   React.useEffect(() => { 
@@ -507,6 +504,7 @@ const Coronavirus = () => {
   return (
     <div>
 
+      <header className="coronavirus-header"></header>
 
         {/* STATE SEARCH */}
         <h3 hidden="true" id="loading">Loading . . .</h3>
