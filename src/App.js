@@ -4,11 +4,11 @@ import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, /*Redirect,*/ Switch } from 'react-router-dom';
 import { Chart } from 'react-charts'
-import Container from 'react-bootstrap/Container'
+// import Container from 'react-bootstrap/Container'
 import Unity from './components/Unity'
 import CompTIA from './components/CompTIA'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
+// import Nav from 'react-bootstrap/Nav'
+// import Navbar from 'react-bootstrap/Navbar'
 
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
