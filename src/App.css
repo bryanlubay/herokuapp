@@ -507,12 +507,12 @@
 
 .form-control {
   margin: auto;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .enter-state{
   /* margin: auto; */
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .submit-button {
