@@ -451,17 +451,17 @@ const Coronavirus = () => {
     return data
   }; // End get_data
   
-  // const [state, setState] = React.useState(
-  //   { 
-  //   data: [
-  //     {
-  //       label: 'Deaths',
-  //       data: [[10000,10000]]
-  //     },
-  //     {
-  //       label: 'New Positive Cases',
-  //       data: [[10000,10000]]
-  //     }]})
+  const [state, setState] = React.useState(
+    { 
+    data: [
+      {
+        label: 'Deaths',
+        data: [[10000,10000]]
+      },
+      {
+        label: 'New Positive Cases',
+        data: [[10000,10000]]
+      }]})
   
 
 
