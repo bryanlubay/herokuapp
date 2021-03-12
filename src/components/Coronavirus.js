@@ -3,350 +3,347 @@ import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootst
 import { Chart } from 'react-charts'
 
 
-function show_vaccines() {
-  document.getElementById("vaccines").hidden = false
-  document.getElementById("prevent").hidden = true
-  document.getElementById("frequently_asked_questions").hidden = true
-  document.getElementById("masks").hidden = true
-  document.getElementById("symptoms").hidden = true
-  document.getElementById("if_you_are_sick").hidden = true
+// function show_vaccines() {
+//   document.getElementById("vaccines").hidden = false
+//   document.getElementById("prevent").hidden = true
+//   document.getElementById("frequently_asked_questions").hidden = true
+//   document.getElementById("masks").hidden = true
+//   document.getElementById("symptoms").hidden = true
+//   document.getElementById("if_you_are_sick").hidden = true
 
-}
+// }
 
-function hide_vaccines() {
-  document.getElementById("vaccines").hidden = true
-}
-
-
-function show_prevent() {
-  document.getElementById("prevent").hidden = false
-  document.getElementById("frequently_asked_questions").hidden = true
-  document.getElementById("masks").hidden = true
-  document.getElementById("symptoms").hidden = true
-  document.getElementById("if_you_are_sick").hidden = true
-  document.getElementById("vaccines").hidden = true
-}
-
-function hide_prevent() {
-  document.getElementById("prevent").hidden = true
-}
-
-function show_frequently_asked_questions() {
-  document.getElementById("prevent").hidden = true
-  document.getElementById("frequently_asked_questions").hidden = false
-  document.getElementById("masks").hidden = true
-  document.getElementById("if_you_are_sick").hidden = true
-  document.getElementById("symptoms").hidden = true
-  document.getElementById("vaccines").hidden = true
-}
-
-function hide_frequently_asked_questions() {
-  document.getElementById("frequently_asked_questions").hidden = true
-}
-
-function show_masks() {
-  document.getElementById("prevent").hidden = true
-  document.getElementById("frequently_asked_questions").hidden = true
-  document.getElementById("masks").hidden = false
-  document.getElementById("if_you_are_sick").hidden = true
-  document.getElementById("symptoms").hidden = true
-  document.getElementById("vaccines").hidden = true
-}
-
-function hide_masks() {
-  document.getElementById("masks").hidden = true
-}
-
-function show_if_you_are_sick() {
-  document.getElementById("prevent").hidden = true
-  document.getElementById("frequently_asked_questions").hidden = true
-  document.getElementById("masks").hidden = true
-  document.getElementById("symptoms").hidden = true
-  document.getElementById("if_you_are_sick").hidden = false
-  document.getElementById("vaccines").hidden = true
-}
-
-function hide_if_you_are_sick() {
-  document.getElementById("if_you_are_sick").hidden = true
-}
-
-function show_symptoms() {
-  document.getElementById("prevent").hidden = true
-  document.getElementById("frequently_asked_questions").hidden = true
-  document.getElementById("masks").hidden = true
-  document.getElementById("if_you_are_sick").hidden = true
-  document.getElementById("symptoms").hidden = false
-  document.getElementById("vaccines").hidden = true
-}
-
-function hide_symptoms() {
-  document.getElementById("symptoms").hidden = true
-}
+// function hide_vaccines() {
+//   document.getElementById("vaccines").hidden = true
+// }
 
 
+// function show_prevent() {
+//   document.getElementById("prevent").hidden = false
+//   document.getElementById("frequently_asked_questions").hidden = true
+//   document.getElementById("masks").hidden = true
+//   document.getElementById("symptoms").hidden = true
+//   document.getElementById("if_you_are_sick").hidden = true
+//   document.getElementById("vaccines").hidden = true
+// }
+
+// function hide_prevent() {
+//   document.getElementById("prevent").hidden = true
+// }
+
+// function show_frequently_asked_questions() {
+//   document.getElementById("prevent").hidden = true
+//   document.getElementById("frequently_asked_questions").hidden = false
+//   document.getElementById("masks").hidden = true
+//   document.getElementById("if_you_are_sick").hidden = true
+//   document.getElementById("symptoms").hidden = true
+//   document.getElementById("vaccines").hidden = true
+// }
+
+// function hide_frequently_asked_questions() {
+//   document.getElementById("frequently_asked_questions").hidden = true
+// }
+
+// function show_masks() {
+//   document.getElementById("prevent").hidden = true
+//   document.getElementById("frequently_asked_questions").hidden = true
+//   document.getElementById("masks").hidden = false
+//   document.getElementById("if_you_are_sick").hidden = true
+//   document.getElementById("symptoms").hidden = true
+//   document.getElementById("vaccines").hidden = true
+// }
+
+// function hide_masks() {
+//   document.getElementById("masks").hidden = true
+// }
+
+// function show_if_you_are_sick() {
+//   document.getElementById("prevent").hidden = true
+//   document.getElementById("frequently_asked_questions").hidden = true
+//   document.getElementById("masks").hidden = true
+//   document.getElementById("symptoms").hidden = true
+//   document.getElementById("if_you_are_sick").hidden = false
+//   document.getElementById("vaccines").hidden = true
+// }
+
+// function hide_if_you_are_sick() {
+//   document.getElementById("if_you_are_sick").hidden = true
+// }
+
+// function show_symptoms() {
+//   document.getElementById("prevent").hidden = true
+//   document.getElementById("frequently_asked_questions").hidden = true
+//   document.getElementById("masks").hidden = true
+//   document.getElementById("if_you_are_sick").hidden = true
+//   document.getElementById("symptoms").hidden = false
+//   document.getElementById("vaccines").hidden = true
+// }
+
+// function hide_symptoms() {
+//   document.getElementById("symptoms").hidden = true
+// }
 
 
+// function convertState(state) {
+//   state = state.toUpperCase()
+//   if (state == "AL" || state == "ALABAMA") {
+//     document.getElementById('state').textContent = "Alabama"
+//     return ('al')
+//   }
+//   else if (state == "AK" || state == "ALASKA") {
+//     document.getElementById('state').textContent = "Alaska"
+//     return ('ak')
+//   }
+//   else if (state == "AZ" || state == "ARIZONA") {
+//     document.getElementById('state').textContent = "Arizona"
+//     return ('az')
+//   }
+//   else if (state == "AR" || state == "ARKANSAS") {
+//     document.getElementById('state').textContent = "Arkansas"
+//     return ('ar')
+//   }
+//   else if (state == "CA" || state == "CALIFORNIA") {
+//     document.getElementById('state').textContent = "California"
+//     return ('ca')
+//   }
+//   else if (state == "CO" || state == "COLORADO") {
+//     document.getElementById('state').textContent = "Colorado"
+//     return ('co')
+//   }
+//   else if (state == "CT" || state == "CONNECTICUT") {
+//     document.getElementById('state').textContent = "Connecticut"
+//     return ('ct')
+//   }
+//   else if (state == "DE" || state == "DELAWARE") {
+//     document.getElementById('state').textContent = "Delaware"
+//     return ('de')
+//   }
+//   else if (state == "FL" || state == "FLORIDA") {
+//     document.getElementById('state').textContent = "Florida"
+//     return ('fl')
+//   }
+//   else if (state == "GA" || state == "GEORGIA") {
+//     document.getElementById('state').textContent = "Georgia"
+//     return ('ga')
+//   }
+//   else if (state == "HI" || state == "HAWAII") {
+//     document.getElementById('state').textContent = "Hawaii"
+//     return ('hi')
+//   }
+//   else if (state == "IL" || state == "ILLINOIS") {
+//     document.getElementById('state').textContent = "Illinois"
+//     return ('il')
+//   }
+//   else if (state == "IN" || state == "INDIANA") {
+//     document.getElementById('state').textContent = "Indiana"
+//     return ('in')
+//   }
+//   else if (state == "IA" || state == "IOWA") {
+//     document.getElementById('state').textContent = "Iowa"
+//     return ('ia')
+//   }
+//   else if (state == "KS" || state == "KANSAS") {
+//     document.getElementById('state').textContent = "Kansas"
+//     return ('ks')
+//   }
+//   else if (state == "KY" || state == "KENTUCKY") {
+//     document.getElementById('state').textContent = "Kentucky"
+//     return ('ky')
+//   }
+//   else if (state == "LA" || state == "LOUISIANA") {
+//     document.getElementById('state').textContent = "Louisiana"
+//     return ('la')
+//   }
+//   else if (state == "ME" || state == "MAINE") {
+//     document.getElementById('state').textContent = "Maine"
+//     return ('me')
+//   }
+//   else if (state == "MD" || state == "MARYLAND") {
+//     document.getElementById('state').textContent = "Maryland"
+//     return ('md')
+//   }
+//   else if (state == "MA" || state == "MASSACHUSETTS") {
+//     document.getElementById('state').textContent = "Massachusetts"
+//     return ('ma')
+//   }
+//   else if (state == "MI" || state == "MICHIGAN") {
+//     document.getElementById('state').textContent = "Michigan"
+//     return ('mi')
+//   }
+//   else if (state == "MN" || state == "MINNESOTA") {
+//     document.getElementById('state').textContent = "Minnesota"
+//     return ('')
+//   }
+//   else if (state == "MS" || state == "MISSISSIPPI") {
+//     document.getElementById('state').textContent = "Mississippi"
+//     return ('ms')
+//   }
+//   else if (state == "MO" || state == "MISSOURI") {
+//     document.getElementById('state').textContent = "Missouri"
+//     return ('mo')
+//   }
+//   else if (state == "MT" || state == "MONTANA") {
+//     document.getElementById('state').textContent = "Montana"
+//     return ('mt')
+//   }
+//   else if (state == "NE" || state == "NEBRASKA") {
+//     document.getElementById('state').textContent = "Nebraska"
+//     return ('ne')
+//   }
+//   else if (state == "NV" || state == "NEVADA") {
+//     document.getElementById('state').textContent = "Nevada"
+//     return ('nv')
+//   }
+//   else if (state == "NH" || state == "NEW HAMPSHIRE") {
+//     document.getElementById('state').textContent = "New Hampshire"
+//     return ('nh')
+//   }
+//   else if (state == "NJ" || state == "NEW JERSEY") {
+//     document.getElementById('state').textContent = "New Jersey"
+//     return ('nj')
+//   }
+//   else if (state == "NM" || state == "NEW MEXICO") {
+//     document.getElementById('state').textContent = "New Mexico"
+//     return ('nm')
+//   }
+//   else if (state == "NY" || state == "NEW YORK") {
+//     document.getElementById('state').textContent = "New York"
+//     return ('ny')
+//   }
+//   else if (state == "NC" || state == "NORTH CAROLINA") {
+//     document.getElementById('state').textContent = "North Carolina"
+//     return ('nc')
+//   }
+//   else if (state == "ND" || state == "NORTH DAKOTA") {
+//     document.getElementById('state').textContent = "North Dakota"
+//     return ('nd')
+//   }
+//   else if (state == "OH" || state == "OHIO") {
+//     document.getElementById('state').textContent = "Ohio"
+//     return ('oh')
+//   }
+//   else if (state == "OK" || state == "OKLAHOMA") {
+//     document.getElementById('state').textContent = "Oklahoma"
+//     return ('ok')
+//   }
+//   else if (state == "OR" || state == "OREGON") {
+//     document.getElementById('state').textContent = "Oregon"
+//     return ('or')
+//   }
+//   else if (state == "PA" || state == "PENNSYLVANIA") {
+//     document.getElementById('state').textContent = "Pennsylvania"
+//     return ('pa')
+//   }
+//   else if (state == "RI" || state == "RHODE ISLAND") {
+//     document.getElementById('state').textContent = "Rhode Island"
+//     return ('ri')
+//   }
+//   else if (state == "SC" || state == "SOUTH CAROLINA") {
+//     document.getElementById('state').textContent = "South Carolina"
+//     return ('sc')
+//   }
+//   else if (state == "SD" || state == "SOUTH DAKOTA") {
+//     document.getElementById('state').textContent = "South Dakota"
+//     return ('sd')
+//   }
+//   else if (state == "TN" || state == "TENNESSEE") {
+//     document.getElementById('state').textContent = "Tennessee"
+//     return ('tn')
+//   }
+//   else if (state == "TX" || state == "TEXAS") {
+//     document.getElementById('state').textContent = "Texas"
+//     return ('tx')
+//   }
+//   else if (state == "UT" || state == "UTAH") {
+//     document.getElementById('state').textContent = "Utah"
+//     return ('ut')
+//   }
+//   else if (state == "VT" || state == "VERMONT") {
+//     document.getElementById('state').textContent = "Vermont"
+//     return ('vt')
+//   }
+//   else if (state == "VA" || state == "VIRGINIA") {
+//     document.getElementById('state').textContent = "Virginia"
+//     return ('va')
+//   }
+//   else if (state == "WA" || state == "WASHINGTON") {
+//     document.getElementById('state').textContent = "Washington"
+//     return ('wa')
+//   }
+//   else if (state == "WV" || state == "WEST VIRGINIA") {
+//     document.getElementById('state').textContent = "West Virginia"
+//     return ('wv')
+//   }
+//   else if (state == "WI" || state == "WI") {
+//     document.getElementById('state').textContent = "Wisconsin"
+//     return ('wi')
+//   }
+//   else if (state == "WY" || state == "WYOMING") {
+//     document.getElementById('state').textContent = "Wyoming"
+//     return ('wy')
+//   }
+//   else
+//     document.getElementById('state').textContent = "Error, invalid state"
+//   return ('xx')
+// }
 
-function convertState(state) {
-  state = state.toUpperCase()
-  if (state == "AL" || state == "ALABAMA") {
-    document.getElementById('state').textContent = "Alabama"
-    return ('al')
-  }
-  else if (state == "AK" || state == "ALASKA") {
-    document.getElementById('state').textContent = "Alaska"
-    return ('ak')
-  }
-  else if (state == "AZ" || state == "ARIZONA") {
-    document.getElementById('state').textContent = "Arizona"
-    return ('az')
-  }
-  else if (state == "AR" || state == "ARKANSAS") {
-    document.getElementById('state').textContent = "Arkansas"
-    return ('ar')
-  }
-  else if (state == "CA" || state == "CALIFORNIA") {
-    document.getElementById('state').textContent = "California"
-    return ('ca')
-  }
-  else if (state == "CO" || state == "COLORADO") {
-    document.getElementById('state').textContent = "Colorado"
-    return ('co')
-  }
-  else if (state == "CT" || state == "CONNECTICUT") {
-    document.getElementById('state').textContent = "Connecticut"
-    return ('ct')
-  }
-  else if (state == "DE" || state == "DELAWARE") {
-    document.getElementById('state').textContent = "Delaware"
-    return ('de')
-  }
-  else if (state == "FL" || state == "FLORIDA") {
-    document.getElementById('state').textContent = "Florida"
-    return ('fl')
-  }
-  else if (state == "GA" || state == "GEORGIA") {
-    document.getElementById('state').textContent = "Georgia"
-    return ('ga')
-  }
-  else if (state == "HI" || state == "HAWAII") {
-    document.getElementById('state').textContent = "Hawaii"
-    return ('hi')
-  }
-  else if (state == "IL" || state == "ILLINOIS") {
-    document.getElementById('state').textContent = "Illinois"
-    return ('il')
-  }
-  else if (state == "IN" || state == "INDIANA") {
-    document.getElementById('state').textContent = "Indiana"
-    return ('in')
-  }
-  else if (state == "IA" || state == "IOWA") {
-    document.getElementById('state').textContent = "Iowa"
-    return ('ia')
-  }
-  else if (state == "KS" || state == "KANSAS") {
-    document.getElementById('state').textContent = "Kansas"
-    return ('ks')
-  }
-  else if (state == "KY" || state == "KENTUCKY") {
-    document.getElementById('state').textContent = "Kentucky"
-    return ('ky')
-  }
-  else if (state == "LA" || state == "LOUISIANA") {
-    document.getElementById('state').textContent = "Louisiana"
-    return ('la')
-  }
-  else if (state == "ME" || state == "MAINE") {
-    document.getElementById('state').textContent = "Maine"
-    return ('me')
-  }
-  else if (state == "MD" || state == "MARYLAND") {
-    document.getElementById('state').textContent = "Maryland"
-    return ('md')
-  }
-  else if (state == "MA" || state == "MASSACHUSETTS") {
-    document.getElementById('state').textContent = "Massachusetts"
-    return ('ma')
-  }
-  else if (state == "MI" || state == "MICHIGAN") {
-    document.getElementById('state').textContent = "Michigan"
-    return ('mi')
-  }
-  else if (state == "MN" || state == "MINNESOTA") {
-    document.getElementById('state').textContent = "Minnesota"
-    return ('')
-  }
-  else if (state == "MS" || state == "MISSISSIPPI") {
-    document.getElementById('state').textContent = "Mississippi"
-    return ('ms')
-  }
-  else if (state == "MO" || state == "MISSOURI") {
-    document.getElementById('state').textContent = "Missouri"
-    return ('mo')
-  }
-  else if (state == "MT" || state == "MONTANA") {
-    document.getElementById('state').textContent = "Montana"
-    return ('mt')
-  }
-  else if (state == "NE" || state == "NEBRASKA") {
-    document.getElementById('state').textContent = "Nebraska"
-    return ('ne')
-  }
-  else if (state == "NV" || state == "NEVADA") {
-    document.getElementById('state').textContent = "Nevada"
-    return ('nv')
-  }
-  else if (state == "NH" || state == "NEW HAMPSHIRE") {
-    document.getElementById('state').textContent = "New Hampshire"
-    return ('nh')
-  }
-  else if (state == "NJ" || state == "NEW JERSEY") {
-    document.getElementById('state').textContent = "New Jersey"
-    return ('nj')
-  }
-  else if (state == "NM" || state == "NEW MEXICO") {
-    document.getElementById('state').textContent = "New Mexico"
-    return ('nm')
-  }
-  else if (state == "NY" || state == "NEW YORK") {
-    document.getElementById('state').textContent = "New York"
-    return ('ny')
-  }
-  else if (state == "NC" || state == "NORTH CAROLINA") {
-    document.getElementById('state').textContent = "North Carolina"
-    return ('nc')
-  }
-  else if (state == "ND" || state == "NORTH DAKOTA") {
-    document.getElementById('state').textContent = "North Dakota"
-    return ('nd')
-  }
-  else if (state == "OH" || state == "OHIO") {
-    document.getElementById('state').textContent = "Ohio"
-    return ('oh')
-  }
-  else if (state == "OK" || state == "OKLAHOMA") {
-    document.getElementById('state').textContent = "Oklahoma"
-    return ('ok')
-  }
-  else if (state == "OR" || state == "OREGON") {
-    document.getElementById('state').textContent = "Oregon"
-    return ('or')
-  }
-  else if (state == "PA" || state == "PENNSYLVANIA") {
-    document.getElementById('state').textContent = "Pennsylvania"
-    return ('pa')
-  }
-  else if (state == "RI" || state == "RHODE ISLAND") {
-    document.getElementById('state').textContent = "Rhode Island"
-    return ('ri')
-  }
-  else if (state == "SC" || state == "SOUTH CAROLINA") {
-    document.getElementById('state').textContent = "South Carolina"
-    return ('sc')
-  }
-  else if (state == "SD" || state == "SOUTH DAKOTA") {
-    document.getElementById('state').textContent = "South Dakota"
-    return ('sd')
-  }
-  else if (state == "TN" || state == "TENNESSEE") {
-    document.getElementById('state').textContent = "Tennessee"
-    return ('tn')
-  }
-  else if (state == "TX" || state == "TEXAS") {
-    document.getElementById('state').textContent = "Texas"
-    return ('tx')
-  }
-  else if (state == "UT" || state == "UTAH") {
-    document.getElementById('state').textContent = "Utah"
-    return ('ut')
-  }
-  else if (state == "VT" || state == "VERMONT") {
-    document.getElementById('state').textContent = "Vermont"
-    return ('vt')
-  }
-  else if (state == "VA" || state == "VIRGINIA") {
-    document.getElementById('state').textContent = "Virginia"
-    return ('va')
-  }
-  else if (state == "WA" || state == "WASHINGTON") {
-    document.getElementById('state').textContent = "Washington"
-    return ('wa')
-  }
-  else if (state == "WV" || state == "WEST VIRGINIA") {
-    document.getElementById('state').textContent = "West Virginia"
-    return ('wv')
-  }
-  else if (state == "WI" || state == "WI") {
-    document.getElementById('state').textContent = "Wisconsin"
-    return ('wi')
-  }
-  else if (state == "WY" || state == "WYOMING") {
-    document.getElementById('state').textContent = "Wyoming"
-    return ('wy')
-  }
-  else
-    document.getElementById('state').textContent = "Error, invalid state"
-  return ('xx')
-}
-
-function convertEpoch(epoch) {
-  var d = new Date(0);
-  d.setUTCSeconds(epoch)
-  return d.getUTCDate()
-}
+// function convertEpoch(epoch) {
+//   var d = new Date(0);
+//   d.setUTCSeconds(epoch)
+//   return d.getUTCDate()
+// }
 
 
 
 
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-function update_chart () {
-  return       [
-    {
-      label: 'Deaths',
-      data: 
-      [
-        // [update_chart(),  update_chart()],
-        [sessionStorage.getItem("dates1"),  sessionStorage.getItem("deaths1") - sessionStorage.getItem("deaths2")],   
-        [sessionStorage.getItem("dates2"),  sessionStorage.getItem("deaths2") - sessionStorage.getItem("deaths3")],   
-        [sessionStorage.getItem("dates3"),  sessionStorage.getItem("deaths3") - sessionStorage.getItem("deaths4")],   
-        [sessionStorage.getItem("dates4"),  sessionStorage.getItem("deaths4") - sessionStorage.getItem("deaths5")],   
-        [sessionStorage.getItem("dates5"),  sessionStorage.getItem("deaths5") - sessionStorage.getItem("deaths6")],   
-        [sessionStorage.getItem("dates6"),  sessionStorage.getItem("deaths6") - sessionStorage.getItem("deaths7")],   
-        [sessionStorage.getItem("dates7"),  sessionStorage.getItem("deaths7") - sessionStorage.getItem("deaths8")],   
-        [sessionStorage.getItem("dates8"),  sessionStorage.getItem("deaths8") - sessionStorage.getItem("deaths9")],   
-        [sessionStorage.getItem("dates9"),  sessionStorage.getItem("deaths9") - sessionStorage.getItem("deaths10")],   
-        [sessionStorage.getItem("dates10"),  sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")],   
-        [sessionStorage.getItem("dates11"),  sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")],   
-        [sessionStorage.getItem("dates12"),  sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")],   
-        [sessionStorage.getItem("dates13"),  sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")],   
-        [sessionStorage.getItem("dates14"),  sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")]   
-      ] 
-    },
-    {
-      label: 'New Positive Cases',
-      data: 
-      [
-        [sessionStorage.getItem("dates1"),  sessionStorage.getItem("positives1") - sessionStorage.getItem("positives2")],   
-        [sessionStorage.getItem("dates2"),  sessionStorage.getItem("positives2") - sessionStorage.getItem("positives3")],   
-        [sessionStorage.getItem("dates3"),  sessionStorage.getItem("positives3") - sessionStorage.getItem("positives4")],   
-        [sessionStorage.getItem("dates4"),  sessionStorage.getItem("positives4") - sessionStorage.getItem("positives5")],   
-        [sessionStorage.getItem("dates5"),  sessionStorage.getItem("positives5") - sessionStorage.getItem("positives6")],   
-        [sessionStorage.getItem("dates6"),  sessionStorage.getItem("positives6") - sessionStorage.getItem("positives7")],   
-        [sessionStorage.getItem("dates7"),  sessionStorage.getItem("positives7") - sessionStorage.getItem("positives8")],   
-        [sessionStorage.getItem("dates8"),  sessionStorage.getItem("positives8") - sessionStorage.getItem("positives9")],   
-        [sessionStorage.getItem("dates9"),  sessionStorage.getItem("positives9") - sessionStorage.getItem("positives10")],   
-        [sessionStorage.getItem("dates10"),  sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")],   
-        [sessionStorage.getItem("dates11"),  sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")],   
-        [sessionStorage.getItem("dates12"),  sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")],   
-        [sessionStorage.getItem("dates13"),  sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")],   
-        [sessionStorage.getItem("dates14"),  sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")]   
-      ] 
-    }]
+// /************************************************************************/
+// /************************************************************************/
+// /************************************************************************/
+// function update_chart () {
+//   return       [
+//     {
+//       label: 'Deaths',
+//       data: 
+//       [
+//         // [update_chart(),  update_chart()],
+//         [sessionStorage.getItem("dates1"),  sessionStorage.getItem("deaths1") - sessionStorage.getItem("deaths2")],   
+//         [sessionStorage.getItem("dates2"),  sessionStorage.getItem("deaths2") - sessionStorage.getItem("deaths3")],   
+//         [sessionStorage.getItem("dates3"),  sessionStorage.getItem("deaths3") - sessionStorage.getItem("deaths4")],   
+//         [sessionStorage.getItem("dates4"),  sessionStorage.getItem("deaths4") - sessionStorage.getItem("deaths5")],   
+//         [sessionStorage.getItem("dates5"),  sessionStorage.getItem("deaths5") - sessionStorage.getItem("deaths6")],   
+//         [sessionStorage.getItem("dates6"),  sessionStorage.getItem("deaths6") - sessionStorage.getItem("deaths7")],   
+//         [sessionStorage.getItem("dates7"),  sessionStorage.getItem("deaths7") - sessionStorage.getItem("deaths8")],   
+//         [sessionStorage.getItem("dates8"),  sessionStorage.getItem("deaths8") - sessionStorage.getItem("deaths9")],   
+//         [sessionStorage.getItem("dates9"),  sessionStorage.getItem("deaths9") - sessionStorage.getItem("deaths10")],   
+//         [sessionStorage.getItem("dates10"),  sessionStorage.getItem("deaths10") - sessionStorage.getItem("deaths11")],   
+//         [sessionStorage.getItem("dates11"),  sessionStorage.getItem("deaths11") - sessionStorage.getItem("deaths12")],   
+//         [sessionStorage.getItem("dates12"),  sessionStorage.getItem("deaths12") - sessionStorage.getItem("deaths13")],   
+//         [sessionStorage.getItem("dates13"),  sessionStorage.getItem("deaths13") - sessionStorage.getItem("deaths14")],   
+//         [sessionStorage.getItem("dates14"),  sessionStorage.getItem("deaths14") - sessionStorage.getItem("deaths15")]   
+//       ] 
+//     },
+//     {
+//       label: 'New Positive Cases',
+//       data: 
+//       [
+//         [sessionStorage.getItem("dates1"),  sessionStorage.getItem("positives1") - sessionStorage.getItem("positives2")],   
+//         [sessionStorage.getItem("dates2"),  sessionStorage.getItem("positives2") - sessionStorage.getItem("positives3")],   
+//         [sessionStorage.getItem("dates3"),  sessionStorage.getItem("positives3") - sessionStorage.getItem("positives4")],   
+//         [sessionStorage.getItem("dates4"),  sessionStorage.getItem("positives4") - sessionStorage.getItem("positives5")],   
+//         [sessionStorage.getItem("dates5"),  sessionStorage.getItem("positives5") - sessionStorage.getItem("positives6")],   
+//         [sessionStorage.getItem("dates6"),  sessionStorage.getItem("positives6") - sessionStorage.getItem("positives7")],   
+//         [sessionStorage.getItem("dates7"),  sessionStorage.getItem("positives7") - sessionStorage.getItem("positives8")],   
+//         [sessionStorage.getItem("dates8"),  sessionStorage.getItem("positives8") - sessionStorage.getItem("positives9")],   
+//         [sessionStorage.getItem("dates9"),  sessionStorage.getItem("positives9") - sessionStorage.getItem("positives10")],   
+//         [sessionStorage.getItem("dates10"),  sessionStorage.getItem("positives10") - sessionStorage.getItem("positives11")],   
+//         [sessionStorage.getItem("dates11"),  sessionStorage.getItem("positives11") - sessionStorage.getItem("positives12")],   
+//         [sessionStorage.getItem("dates12"),  sessionStorage.getItem("positives12") - sessionStorage.getItem("positives13")],   
+//         [sessionStorage.getItem("dates13"),  sessionStorage.getItem("positives13") - sessionStorage.getItem("positives14")],   
+//         [sessionStorage.getItem("dates14"),  sessionStorage.getItem("positives14") - sessionStorage.getItem("positives15")]   
+//       ] 
+//     }]
 
-}
+// }
 
 
 
