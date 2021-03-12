@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { Chart } from 'react-charts'
-
+import '../App.css';
 
 function show_vaccines() {
   document.getElementById("vaccines").hidden = false

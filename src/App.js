@@ -523,6 +523,14 @@ function App() {
         </Navbar>
       </Container>
 
+      <Router>
+        <Switch>
+          <Route exact path='/unity' component={Unity}/> 
+          <Route exact path='/comptia' component={CompTIA}/> 
+          <Route exact path='/coronavirus' component={Coronavirus}/> 
+
+        </Switch>
+      </Router>
 
 
 
@@ -537,14 +545,6 @@ function App() {
 
       </header>
 
-      <Router>
-        <Switch>
-          <Route exact path='/unity' component={Unity}/> 
-          <Route exact path='/comptia' component={CompTIA}/> 
-          <Route exact path='/coronavirus' component={Coronavirus}/> 
-
-        </Switch>
-      </Router>
     </div>
 
   );
