@@ -14,7 +14,6 @@ import Navbar from 'react-bootstrap/Navbar'
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Coronavirus from './components/Coronavirus';
 
 function convertState(state) {
   state = state.toUpperCase()
