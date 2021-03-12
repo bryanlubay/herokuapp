@@ -516,7 +516,7 @@ function App() {
       <Container >
         <Navbar fixed="top"  bg="light" expand="lg">
                 <Navbar.Brand></Navbar.Brand>
-                <a href="https://www.instagram.com/cindylus_creations/" target="_blank"><img className="footer-image" src="https://cindyluscreations.s3-us-west-1.amazonaws.com/images/instagram_logo.png"></img></a>
+                {/* <a href="https://www.instagram.com/cindylus_creations/" target="_blank"><img className="footer-image" src="https://cindyluscreations.s3-us-west-1.amazonaws.com/images/instagram_logo.png"></img></a> */}
         </Navbar>
       </Container>
 
