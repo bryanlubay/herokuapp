@@ -5002,7 +5002,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
       <Router>
         <Switch>
           <Route exact path='/unity' component={Unity}/> 
-          <Route exact path='/comptia' component={CompTIA}/> 
+          <Route exact path='/comptia' render={CompTIA}/> 
           <Route exact path='/coronavirus' component={Coronavirus}/> 
 
         </Switch>
