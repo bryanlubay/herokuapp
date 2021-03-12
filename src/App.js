@@ -516,7 +516,7 @@ function App() {
 
       <Container >
         <Navbar fixed="top"  bg="light" expand="lg">
-                <Navbar.Brand>Bryan Lubay's App</Navbar.Brand>
+                <Navbar.Brand><a href="https://bryanlubay.herokuapp.com/">Bryan Lubay's App</a></Navbar.Brand>
                 <Nav.Link href="https://cindylus-creations.herokuapp.com/" target="_blank">Cindylu's Creations</Nav.Link>
                 <Nav.Link href="/comptia">CompTIA</Nav.Link>
                 <Nav.Link href="/coronavirus">Coronavirus</Nav.Link>
