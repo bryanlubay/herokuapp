@@ -4,8 +4,11 @@ import React from 'react';
 import { Card, Form, Button, Alert, Accordion, Table, Image } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, /*Redirect,*/ Switch } from 'react-router-dom';
 import { Chart } from 'react-charts'
+import Container from 'react-bootstrap/Container'
 import Unity from './components/Unity'
 import CompTIA from './components/CompTIA'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 
 import 'react-widgets/dist/css/react-widgets.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -509,6 +512,13 @@ function App() {
 
   <div className="App" >
       <header className="App-header">
+
+      <Container >
+        <Navbar fixed="top"  bg="light" expand="lg">
+                <Navbar.Brand></Navbar.Brand>
+                <a href="https://www.instagram.com/cindylus_creations/" target="_blank"><img className="footer-image" src="https://cindyluscreations.s3-us-west-1.amazonaws.com/images/instagram_logo.png"></img></a>
+        </Navbar>
+      </Container>
 
 
 
