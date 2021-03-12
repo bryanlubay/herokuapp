@@ -504,7 +504,7 @@ const Coronavirus = () => {
   return (
     <div>
 
-      <header className="coronavirus-header"></header>
+      <header className="coronavirus-header">
 
         {/* STATE SEARCH */}
         <h3 hidden="true" id="loading">Loading . . .</h3>
@@ -4976,7 +4976,7 @@ The FDA is warning consumers about alcohol-based hand sanitizers that are being 
         </p>
 
         <br></br>
-
+        </header>
 
     </div>
   )
