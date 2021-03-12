@@ -293,19 +293,12 @@ function convertEpoch(epoch) {
   return d.getUTCDate()
 }
 
-
-
-
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
 function update_chart () {
   return       [
     {
       label: 'Deaths',
       data: 
       [
-        // [update_chart(),  update_chart()],
         [sessionStorage.getItem("dates1"),  sessionStorage.getItem("deaths1") - sessionStorage.getItem("deaths2")],   
         [sessionStorage.getItem("dates2"),  sessionStorage.getItem("deaths2") - sessionStorage.getItem("deaths3")],   
         [sessionStorage.getItem("dates3"),  sessionStorage.getItem("deaths3") - sessionStorage.getItem("deaths4")],   
@@ -345,15 +338,13 @@ function update_chart () {
 
 }
 
-
-
 const Coronavirus = () => {
 
 
   const get_data = async () => {
 
     sessionStorage.clear()
-    let state = convertState(document.getElementById('input').value) // move/change this
+    let state = convertState(document.getElementById('input').value)
     document.getElementById("formStateInput").hidden = true
     document.getElementById("loading").hidden = false
   
@@ -370,7 +361,7 @@ const Coronavirus = () => {
     })
   
     let data = await res.json()
-    sessionStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) // newest update
+    sessionStorage.setItem("dates1", convertEpoch(data.Date[data.Date.length - 1])) 
     sessionStorage.setItem("dates2", convertEpoch(data.Date[data.Date.length - 2])) 
     sessionStorage.setItem("dates3", convertEpoch(data.Date[data.Date.length - 3])) 
     sessionStorage.setItem("dates4", convertEpoch(data.Date[data.Date.length - 4])) 
@@ -417,7 +408,6 @@ const Coronavirus = () => {
     sessionStorage.setItem("deaths13", parseInt(data.Deaths[data.Deaths.length - 13]))
     sessionStorage.setItem("deaths14", parseInt(data.Deaths[data.Deaths.length - 14]))
     sessionStorage.setItem("deaths15", parseInt(data.Deaths[data.Deaths.length - 15]))
-  
   
     let asterik = "*"
     convertState(state)
@@ -487,8 +477,6 @@ const Coronavirus = () => {
 
 } // end useChartConfig
 
-
-
   const series = React.useMemo(() => ({showPoints: false}),[])
 
   const axes = React.useMemo(() => [{ primary: true, type: 'linear', position: 'bottom' }, { type: 'linear', position: 'left' }],[])
@@ -499,7 +487,6 @@ const Coronavirus = () => {
     <div style={{ margin: 'auto', width: '80vw', height: '80vh', maxWidth: '-webkit-fill-available', maxHeight: '-webkit-fill-available' }}>
       <Chart id="chart" data={data} axes={axes} tooltip></Chart>
     </div>)
-
 
   return (
     <div>
