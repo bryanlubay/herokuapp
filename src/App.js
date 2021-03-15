@@ -35,6 +35,7 @@ function App() {
 
       <Router>
         <Switch>
+          <Route exact path='/' component={Coronavirus}/> 
           <Route exact path='/unity' component={Unity}/> 
           <Route exact path='/comptia' component={CompTIA}/> 
           <Route exact path='/coronavirus' component={Coronavirus}/> 
