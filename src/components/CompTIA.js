@@ -18,9 +18,6 @@ function hide_answer() {
 
 const CompTIA = () => {
 
-  // document.getElementById("back").hidden = true;
-  // document.getElementById("hide_button").hidden = true;
-
   return (
     <div>
 
@@ -31,7 +28,7 @@ const CompTIA = () => {
       <p id="front" className="front">
         Front
       </p>
-      <p id="back" className="back">
+      <p id="back" hidden="true" className="back">
         Back
       </p>
 
@@ -39,7 +36,7 @@ const CompTIA = () => {
         Show Answer
       </Button>
 
-      <Button id="hide_button" onClick={() => hide_answer()}>
+      <Button id="hide_button" hidden="true" onClick={() => hide_answer()}>
         Hide Answer
       </Button>
 
