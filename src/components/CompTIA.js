@@ -32,7 +32,9 @@ const CompTIA = () => {
         Back
       </p>
 
-      <Button id="show_button" onClick={() => show_answer()}>
+    </Card>
+
+    <Button id="show_button" onClick={() => show_answer()}>
         Show Answer
       </Button>
 
@@ -40,7 +42,13 @@ const CompTIA = () => {
         Hide Answer
       </Button>
 
-    </Card>
+      <Button>
+        Add New Card
+      </Button>
+
+      <Button>
+        Delete This Card
+      </Button>
 
 
     </div>
