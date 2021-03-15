@@ -1,7 +1,13 @@
+.card {
+    margin: auto;
+}
+
 .front {
-    color: red;
+    font-size: calc(10px + 2vmin);
+    color: blue;
 }
 
 .back {
-    color: blue;
+    font-size: calc(10px + 2vmin);
+    color: red;
 }
