@@ -1,23 +1,26 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
 
-class App extends React.Component {
-  constructor() {
-    super();
-      this.state = {
-      isFlipped: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+// class App extends React.Component {
+//   constructor() {
+//     super();
+//       this.state = {
+//       isFlipped: false
+//     };
+//     this.handleClick = this.handleClick.bind(this);
+//   }
 
-  handleClick(e) {
-    e.preventDefault();
-    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-  }
-}
+//   handleClick(e) {
+//     e.preventDefault();
+//     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+//   }
+// }
 
 
-
+// handleClick(e) {
+//   e.preventDefault();
+//   this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+// }
 
 
 const CompTIA = () => {
@@ -34,6 +37,13 @@ const CompTIA = () => {
   //   e.preventDefault();
   //   this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
   // }
+  this.state = {
+    isFlipped: false
+  };
+
+
+
+
 
 
   return (
