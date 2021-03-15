@@ -3,11 +3,11 @@
 }
 
 .front {
-    font-size: calc(10px + 2vmin);
+    font-size: calc(10px + 15vmin);
     color: blue;
 }
 
 .back {
-    font-size: calc(10px + 2vmin);
+    font-size: calc(10px + 15vmin);
     color: red;
 }
