@@ -18,8 +18,8 @@ function hide_answer() {
 
 const CompTIA = () => {
 
-  document.getElementById("back").hidden = true;
-  document.getElementById("hide_button").hidden = true;
+  // document.getElementById("back").hidden = true;
+  // document.getElementById("hide_button").hidden = true;
 
   return (
     <div>
