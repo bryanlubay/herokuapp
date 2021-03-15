@@ -22,7 +22,7 @@ import ReactCardFlip from 'react-card-flip';
 
 const CompTIA = () => {
 
-  constructor() {
+  constructor(); {
     super();
       this.state = {
       isFlipped: false
