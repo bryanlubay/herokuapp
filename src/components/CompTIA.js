@@ -41,8 +41,8 @@ const CompTIA = () => {
   //   isFlipped: false
   // };
 
-  
-  const [state, setState] = React.setState(
+
+  const state  = React.setState(
     { 
       isFlipped: false
     })
