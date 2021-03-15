@@ -1,8 +1,28 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
 
-class App extends React.Component {
-  constructor() {
+// class App extends React.Component {
+//   constructor() {
+//     super();
+//       this.state = {
+//       isFlipped: false
+//     };
+//     this.handleClick = this.handleClick.bind(this);
+//   }
+
+//   handleClick(e) {
+//     e.preventDefault();
+//     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+//   }
+// }
+
+
+
+
+
+const CompTIA = () => {
+
+  constructor(); {
     super();
       this.state = {
       isFlipped: false
@@ -14,9 +34,8 @@ class App extends React.Component {
     e.preventDefault();
     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
   }
-}
 
-const CompTIA = () => {
+
   return (
     <div>
       {/* <h1>CompTIA flash cards app coming soon :)</h1> */}
