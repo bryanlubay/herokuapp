@@ -39,7 +39,6 @@ const CompTIA = () => {
         Show Answer
       </Button>
 
-      <br></br>
       <Button id="hide_button" hidden="true" onClick={() => hide_answer()}>
         Hide Answer
       </Button>
