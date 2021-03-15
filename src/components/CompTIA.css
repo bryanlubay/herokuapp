@@ -2,6 +2,11 @@
     margin: auto;
 }
 
+.p {
+    color: black;
+    font-size: calc(10px + 5vmin);
+}
+
 .front {
     font-size: calc(10px + 15vmin);
     color: blue;

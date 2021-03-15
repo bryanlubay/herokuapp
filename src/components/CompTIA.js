@@ -34,19 +34,23 @@ const CompTIA = () => {
 
     </Card>
 
-    <Button id="show_button" onClick={() => show_answer()}>
+      <br></br>
+      <Button id="show_button" onClick={() => show_answer()}>
         Show Answer
       </Button>
 
+      <br></br>
       <Button id="hide_button" hidden="true" onClick={() => hide_answer()}>
         Hide Answer
       </Button>
 
-      <Button>
+      <br></br>
+      <Button variant="success">
         Add New Card
       </Button>
 
-      <Button>
+      <br></br>
+      <Button variant="danger">
         Delete This Card
       </Button>
 
