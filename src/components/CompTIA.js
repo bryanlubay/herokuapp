@@ -17,7 +17,7 @@ import ReactCardFlip from 'react-card-flip';
 // }
 
 
-// handleClick(e) {
+// function handleClick(e) {
 //   e.preventDefault();
 //   this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
 // }
@@ -37,13 +37,14 @@ const CompTIA = () => {
   //   e.preventDefault();
   //   this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
   // }
-  this.state = {
-    isFlipped: false
-  };
+  // this.state = {
+  //   isFlipped: false
+  // };
 
-
-
-
+  const [state, setState] = React.useState(
+    { 
+      isFlipped: false
+    })
 
 
   return (
