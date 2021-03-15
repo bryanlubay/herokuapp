@@ -7,15 +7,15 @@ const CompTIA = () => {
       {/* <h1>CompTIA flash cards app coming soon :)</h1> */}
 
       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-        <YOUR_FRONT_CCOMPONENT>
+        <p>
           This is the front of the card.
           <button onClick={this.handleClick}>Click to flip</button>
-        </YOUR_FRONT_CCOMPONENT>
+        </p>
 
-        <YOUR_BACK_COMPONENT>
+        <p>
           This is the back of the card.
           <button onClick={this.handleClick}>Click to flip</button>
-        </YOUR_BACK_COMPONENT>
+        </p>
       </ReactCardFlip>
 
 
