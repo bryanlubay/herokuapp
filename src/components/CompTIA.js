@@ -55,7 +55,8 @@ const CompTIA = () => {
     <div>
       {/* <h1>CompTIA flash cards app coming soon :)</h1> */}
 
-      <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
+      {/* <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical"> */}
+      <ReactCardFlip>
         <p>
           This is the front of the card.
           <button onClick={this.handleClick}>Click to flip</button>
