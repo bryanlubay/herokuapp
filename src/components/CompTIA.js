@@ -1,6 +1,8 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 
+import './CompTIA.css'
+
 const CompTIA = () => {
 
 
@@ -8,10 +10,10 @@ const CompTIA = () => {
     <div>
 
     <Card>
-      <p>
+      <p className="front">
         Front
       </p>
-      <p>
+      <p className="back">
         Back
       </p>
     </Card>
