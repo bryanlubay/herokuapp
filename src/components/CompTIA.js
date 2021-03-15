@@ -47,9 +47,9 @@ const CompTIA = () => {
   //     isFlipped: false
   //   })
 
-  this.state = {
-    isFlipped: false
-  };
+  // this.state = {
+  //   isFlipped: false
+  // };
 
   return (
     <div>
