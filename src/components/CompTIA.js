@@ -21,7 +21,7 @@ const CompTIA = () => {
   return (
     <div>
 
-    <Card>
+    <Card className="compTIAcard">
       <p id="question_number">
         Question #
       </p>
