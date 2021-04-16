@@ -520,7 +520,7 @@ const Coronavirus = () => {
         </Card>
 
         <div className="card-chart">
-          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (March 2021) VS <div className="red-text">Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
+          <p id="chart-header" className="x-axis"><div className="days-vs-infected">Date (April 2021) VS <div className="red-text">Positive Cases</div> and <div className="blue-text">Deaths</div></div> </p>
           {lineChart}
         </div>
 
